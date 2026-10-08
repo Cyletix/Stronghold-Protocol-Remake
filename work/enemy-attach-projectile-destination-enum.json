@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "type": "Torappu.Battle.Abilities.RangedAttack+ProjectileDestinationType",
+  "metadataPath": "work/client-logic/metadata/global-metadata.candidate.dat",
+  "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+  "values": [
+    {
+      "name": "TARGET",
+      "fieldIndex": 84427,
+      "value": 0,
+      "dataIndex": 144396,
+      "encodedByte": 0,
+      "absoluteMetadataOffset": 18260572
+    },
+    {
+      "name": "INPUT_POINT",
+      "fieldIndex": 84428,
+      "value": 1,
+      "dataIndex": 144397,
+      "encodedByte": 2,
+      "absoluteMetadataOffset": 18260573
+    },
+    {
+      "name": "INPUT_VECTOR3",
+      "fieldIndex": 84429,
+      "value": 2,
+      "dataIndex": 144398,
+      "encodedByte": 4,
+      "absoluteMetadataOffset": 18260574
+    },
+    {
+      "name": "TARGET_ROOT_TILE",
+      "fieldIndex": 84430,
+      "value": 3,
+      "dataIndex": 144399,
+      "encodedByte": 6,
+      "absoluteMetadataOffset": 18260575
+    },
+    {
+      "name": "INPUT_VEC3_WITH_TILE_HEIGHT",
+      "fieldIndex": 84431,
+      "value": 4,
+      "dataIndex": 144400,
+      "encodedByte": 8,
+      "absoluteMetadataOffset": 18260576
+    }
+  ],
+  "boundary": "Exact five existing cached metadata default entries only; no library/native scan or disassembly."
+}

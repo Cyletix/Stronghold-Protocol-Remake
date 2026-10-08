@@ -1,0 +1,24 @@
+/* Same speaker control in home, intel, strategy selection and battle. */
+.audio-toggle,#bgm-btn,#setup .setup-bgm{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;gap:10px;width:40px;height:40px;padding:8px;border:1px solid #55766c;border-radius:0;background:#14241fe6;color:#d4eade;opacity:1;cursor:pointer;filter:none}
+.audio-toggle svg{width:22px;height:22px;flex:none;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.audio-toggle.muted,#bgm-btn.muted{color:#9aa9a5;opacity:1;background:#12201f;filter:none}
+.audio-toggle:hover,#bgm-btn:hover{background:#29483e;border-color:#76d1af}
+.audio-toggle:focus-visible{outline:2px solid #c1ffea;outline-offset:2px}
+.audio-settings-entry{width:auto;padding-inline:14px}
+#audio-settings{box-sizing:border-box;width:min(360px,calc(100vw - 24px));max-height:calc(100dvh - 24px);overflow:auto;margin:auto;padding:22px;background:#10201ffb;color:#e2f1ec;border:1px solid #618475;border-top:4px solid #23ddb0;box-shadow:0 12px 40px #0009}
+#audio-settings::backdrop{background:#020808a6}
+#audio-settings header,#audio-settings label{display:flex;align-items:center;justify-content:space-between;gap:14px}
+#audio-settings h2{font-size:21px;margin:0}#audio-settings header{margin-bottom:24px}
+#audio-settings button{border:1px solid #56766a;background:#203c32;color:#e0f5ea;padding:7px 12px;cursor:pointer}
+#audio-settings button[aria-pressed="true"]{border-color:#27c593;color:#83f0c5}
+#audio-settings .audio-slider{margin:12px 0 24px}#audio-settings input{width:100%;min-width:0;accent-color:#23ddb0}#audio-settings output{min-width:38px;text-align:right;font:13px Consolas,monospace}#audio-settings p{font-size:12px;color:#91ada2;margin:0}
+/* Both toolbar groups share a height, baseline and button material. */
+#tb-left,#tb-util{height:40px;gap:8px}
+#tb-left button,#tb-util button{box-sizing:border-box;height:40px;margin:0;align-self:center;border-radius:0;font-size:12px;font-weight:650}
+#tb-left .tb-exit{width:40px;padding:4px}#tb-left .tb-exit img{width:30px;height:30px}
+#tb-util .tb-basic{padding:7px 10px}
+#tb-util{left:244px}
+@media(max-width:600px){#tb-util{left:8px;top:56px}#tb-left,#tb-util{gap:6px}}
+@media(max-height:540px) and (min-width:601px){#tb-util{left:8px;top:56px}}
+
+@media(max-width:380px){#debug-toggle{top:56px}}

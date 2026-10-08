@@ -1,0 +1,16 @@
+{
+  "batch": "20261003.1-toggle-warmup",
+  "before": "work/garrison-skill-batch-before-20261003-1.json",
+  "output": "work/garrison-skill-batch-acceptance-20261003-1.json",
+  "validations": [
+    "tools/test_skill_mode_toggle.py",
+    "tools/test_skill_mode_flow_warmup.py",
+    ".runtime/skill-mode-toggle-receipts.json",
+    ".runtime/skill-mode-warmup-receipts.json"
+  ],
+  "tasks": {
+    "op/char_264_f12yin/skill/skchr_f12yin_2/source-mode-body": "2026-10-03：完整双向切换源主体10等级；源模式/属性/回血、双向扣SP与通知、关闭/死亡清理保留外来层、真实赛季普通/精锐配置及主机恢复通过。维持态SP恢复及自动开后维持为模型桥接，完整天赋模组另核；见toggle回执。",
+    "op/char_172_svrash/skill/skchr_svrash_2/source-mode-body": "2026-10-03：完整双向切换源主体10等级；DEF/比例回血、近战范围与双向扣SP、关闭/死亡恢复及真实赛季配置、主机恢复通过。维持态SP恢复及自动开后维持为模型桥接，完整天赋模组另核；见toggle回执。",
+    "op/char_416_zumama/skill/skchr_zumama_3/source-mode-body": "2026-10-03：完整准备/持续/结束源主体10等级、2赛季配置、3主机恢复通过；前摇1.5秒已附属性/回血与有限免疫，主体30至35秒、单目标阻挡优先与零阻挡下限、结束自身眩晕5秒、死亡/中断及最后部分帧清理通过。动画完成映射为推断，完整天赋模组另核；见warmup回执。"
+  }
+}

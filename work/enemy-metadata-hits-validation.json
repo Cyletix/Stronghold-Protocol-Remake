@@ -1,0 +1,41 @@
+{
+  "date": "2026-09-14",
+  "runtimeVersion": "room-game-20260914.24",
+  "passed": [
+    "test_enemy_hit_sequences.py:6",
+    "test_enemy_mode_channels.py:3",
+    "test_enemy_timing_gates.py:3",
+    "test_external_combat_contracts.py:3",
+    "test_sync_enemy_animation_metadata.py:3 (source worker)",
+    "_external_combat_smoke.js: browser melee/ranged/single sequence, scale, death/interruption, authoritative VM restore",
+    "_boss_runtime_integration_smoke.js: dedicated Boss timing and targets",
+    "check_docs.js:75 current documents,2250 links",
+    "compiled real phase regressions retain gaps;metadata overlay has zero conflicts"
+  ],
+  "compilationAndDps": "DPS compiler and calculations skipped; cached 903/1001 retained",
+  "counts": {
+    "wantedEnemies": 2130,
+    "profiles": 1513,
+    "timings": 1448,
+    "animationMappedTimings": 110,
+    "projectileSpeeds": 532,
+    "channelProfiles": 41,
+    "encounterChannelProfiles": 8,
+    "rootSelectedProfiles": 1316,
+    "encounterProfiles": 266,
+    "encounterTimings": 257,
+    "encounterAnimationMappedTimings": 22,
+    "encounterProjectileSpeeds": 80,
+    "nonAttackingEnemies": 342,
+    "encounterNonAttackingEnemies": 45,
+    "pendingEnemies": 438,
+    "pendingEncounterEnemies": 38,
+    "aliasPrefabs": 12,
+    "aliasAnimations": 157,
+    "eventGateTimings": 12,
+    "encounterEventGateTimings": 2,
+    "hitSequenceProfiles": 9,
+    "encounterHitSequenceProfiles": 3,
+    "multiHitProfiles": 5
+  }
+}

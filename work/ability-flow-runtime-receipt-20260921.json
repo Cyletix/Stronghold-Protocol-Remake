@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "gameVersion": "room-game-20260921.4",
+  "scope": "Shared serializable sequence and parallel-all scheduler; existing finite Buff sequence consumer migrated. No new full source skills admitted.",
+  "sources": {
+    "web/src/simulation/ability-flow.js": "7bc70e788c3ae9ec9bbeb86ade530b422c3424ceca045854ee42d84fe8041c40",
+    "web/src/simulation/skill-modes.js": "201e638c976974e6348ce3b2df25a9445fec6f7529e0037002f0967394cf6ab4",
+    "web/src/simulation/client-programs.js": "0a70614adbba354da92c348c3017034fe1afc81ff1798d42302fbbe545eb5f25",
+    "tools/_ability_flow_smoke.js": "e787de62725b5aca3654b585dd5d8738e1caaa6fd8c8b448116b0676f2364989",
+    "tools/_skill_mode_flow_smoke.js": "a5f871295a88ca5e163b8c61e84166bbd711c76f2e3b5d1a3ecc13bd946ac5a5"
+  },
+  "checks": {
+    "nestedSequenceParallel": "passed",
+    "independentEmissionCompletion": "passed",
+    "earlyFinishCancellation": "passed",
+    "framePartitionAndJsonRestore": "passed",
+    "skillSourceLevels": 10,
+    "seasonVariants": 2,
+    "hostRestores": [
+      {
+        "skillId": "skchr_sunbr_2",
+        "phase": "stage-transition"
+      },
+      {
+        "skillId": "skchr_sunbr_2",
+        "phase": "healing"
+      },
+      {
+        "skillId": "skchr_sunbr_2",
+        "phase": "pending-heal"
+      },
+      {
+        "skillId": "skchr_sunbr_2",
+        "phase": "legacy-stage-transition"
+      },
+      {
+        "skillId": "skchr_sunbr_2",
+        "phase": "legacy-healing"
+      }
+    ]
+  },
+  "bindingDelta": 0,
+  "checklistDelta": 0,
+  "fixedRemaining": 201,
+  "flowRemaining": 16,
+  "boundary": "Parallel event ordering is a simulation convention. Pending source controllers and action/target leaves remain rejected; generic scheduler tests do not prove whole-skill equivalence."
+}

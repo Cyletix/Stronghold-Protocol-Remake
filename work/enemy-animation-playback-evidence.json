@@ -1,0 +1,638 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-09-18T03:48:59.887713+09:00",
+  "rule": "native-ordinary-enemy-animation-playback-v1",
+  "scope": "Bounded reuse of existing cached metadata, prefab fields, animation supplement and previously readable native methods; no raw-package re-extraction.",
+  "sourceVersion": {
+    "nativeClient": "JP 36.7.22",
+    "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+    "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+    "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+    "prefabSnapshot": "Pinned Tim23333-Arknights_timer snapshot at d2f6d76a7172cedc7583fc0a4eb998699abf25f5",
+    "crossSnapshotBoundary": "CN prefab and separately sourced Spine data use the verified JP native base schema as an explicit inference; no hotfix execution or full current-client reproduction claimed."
+  },
+  "inputs": [
+    {
+      "path": "work/client-logic/metadata/types.json",
+      "sha256": "30c99c16eb39696af8cf5ee76ff2888082234d62ffbd706fa02eba439cc03016"
+    },
+    {
+      "path": "work/client-logic/script-types.json",
+      "sha256": "1fc6554278c7432c6ba9aa68b6332ee6cabbc3b8ef9a8f1b6394d838d49af041"
+    },
+    {
+      "path": "work/external-ready-data-20260914/Tim23333-Arknights_timer/snapshot/Ark_emulator/ark_emulator/data_enemy_prefab_catalog_current.json",
+      "sha256": "ebe89ba77e15541b52bf117820ecf65838c840fee6e65d397ebc46c601c17ef8"
+    },
+    {
+      "path": "work/enemy-animation-supplement.json",
+      "sha256": "db4d3ef989615b5f2bcec2e6dc844dab8bd7a0201d546a4581f0e7cb3118659a"
+    },
+    {
+      "path": "work/client-logic/native-enemy-area-melee/additional-evidence.json",
+      "sha256": "bd20a1b2ff4cd3037aecbc1956c77d78f853de315710ed28c9412b35bd267c76"
+    },
+    {
+      "path": "work/client-logic/native-enemy-hit-sequence/evidence.json",
+      "sha256": "bf3c98149a8bc2ddda02b6bbe6707b1ba87ed701c9153a4a28533f158cbee21d"
+    },
+    {
+      "path": "work/client-logic/native-enemy-timing-gates/enum-values.json",
+      "sha256": "0e30b74a10b4137c19ff5c9e2e8184925bf81b21bae5958b71721e4dc1b69359"
+    }
+  ],
+  "classes": [
+    {
+      "name": "MeleeAttack",
+      "chain": [
+        {
+          "name": "Torappu.Battle.Abilities.MeleeAttack",
+          "byvalTypeIndex": 49404,
+          "parentIl2CppTypeIndex": 26995,
+          "timingDeclarations": [],
+          "lifecycleDeclarations": []
+        },
+        {
+          "name": "Torappu.Battle.Abilities.AbstractBasicAttack",
+          "byvalTypeIndex": 26995,
+          "parentIl2CppTypeIndex": 26990,
+          "timingDeclarations": [],
+          "lifecycleDeclarations": [
+            {
+              "name": "OnCastEnd",
+              "methodIndex": 74072
+            }
+          ]
+        },
+        {
+          "name": "Torappu.Battle.Abilities.AbstractAnimatedAbility",
+          "byvalTypeIndex": 26990,
+          "parentIl2CppTypeIndex": 41119,
+          "timingDeclarations": [
+            {
+              "name": "get_timeMode",
+              "methodIndex": 75477
+            },
+            {
+              "name": "get_cooldown",
+              "methodIndex": 75490
+            },
+            {
+              "name": "GetDuration",
+              "methodIndex": 75504
+            },
+            {
+              "name": "UpdatePlaybackSpeed",
+              "methodIndex": 75505
+            }
+          ],
+          "lifecycleDeclarations": [
+            {
+              "name": "OnCastEnd",
+              "methodIndex": 75499
+            }
+          ]
+        }
+      ],
+      "timingOverrideBeforeAbstractAnimatedAbility": false
+    },
+    {
+      "name": "RangedAttack",
+      "chain": [
+        {
+          "name": "Torappu.Battle.Abilities.RangedAttack",
+          "byvalTypeIndex": 54071,
+          "parentIl2CppTypeIndex": 26995,
+          "timingDeclarations": [],
+          "lifecycleDeclarations": [
+            {
+              "name": "OnWaitForPostDelay",
+              "methodIndex": 74542
+            },
+            {
+              "name": "OnCastEnd",
+              "methodIndex": 74543
+            }
+          ]
+        },
+        {
+          "name": "Torappu.Battle.Abilities.AbstractBasicAttack",
+          "byvalTypeIndex": 26995,
+          "parentIl2CppTypeIndex": 26990,
+          "timingDeclarations": [],
+          "lifecycleDeclarations": [
+            {
+              "name": "OnCastEnd",
+              "methodIndex": 74072
+            }
+          ]
+        },
+        {
+          "name": "Torappu.Battle.Abilities.AbstractAnimatedAbility",
+          "byvalTypeIndex": 26990,
+          "parentIl2CppTypeIndex": 41119,
+          "timingDeclarations": [
+            {
+              "name": "get_timeMode",
+              "methodIndex": 75477
+            },
+            {
+              "name": "get_cooldown",
+              "methodIndex": 75490
+            },
+            {
+              "name": "GetDuration",
+              "methodIndex": 75504
+            },
+            {
+              "name": "UpdatePlaybackSpeed",
+              "methodIndex": 75505
+            }
+          ],
+          "lifecycleDeclarations": [
+            {
+              "name": "OnCastEnd",
+              "methodIndex": 75499
+            }
+          ]
+        }
+      ],
+      "timingOverrideBeforeAbstractAnimatedAbility": false
+    },
+    {
+      "name": "MultiMeleeAttack",
+      "chain": [
+        {
+          "name": "Torappu.Battle.Abilities.MultiMeleeAttack",
+          "byvalTypeIndex": 50205,
+          "parentIl2CppTypeIndex": 49404,
+          "timingDeclarations": [],
+          "lifecycleDeclarations": [
+            {
+              "name": "CheckAnotherSpell",
+              "methodIndex": 74144
+            },
+            {
+              "name": "OnCastEnd",
+              "methodIndex": 74148
+            },
+            {
+              "name": "OnWaitForPreDelay",
+              "methodIndex": 74150
+            },
+            {
+              "name": "OnWaitForTriggerDelta",
+              "methodIndex": 74151
+            }
+          ]
+        },
+        {
+          "name": "Torappu.Battle.Abilities.MeleeAttack",
+          "byvalTypeIndex": 49404,
+          "parentIl2CppTypeIndex": 26995,
+          "timingDeclarations": [],
+          "lifecycleDeclarations": []
+        },
+        {
+          "name": "Torappu.Battle.Abilities.AbstractBasicAttack",
+          "byvalTypeIndex": 26995,
+          "parentIl2CppTypeIndex": 26990,
+          "timingDeclarations": [],
+          "lifecycleDeclarations": [
+            {
+              "name": "OnCastEnd",
+              "methodIndex": 74072
+            }
+          ]
+        },
+        {
+          "name": "Torappu.Battle.Abilities.AbstractAnimatedAbility",
+          "byvalTypeIndex": 26990,
+          "parentIl2CppTypeIndex": 41119,
+          "timingDeclarations": [
+            {
+              "name": "get_timeMode",
+              "methodIndex": 75477
+            },
+            {
+              "name": "get_cooldown",
+              "methodIndex": 75490
+            },
+            {
+              "name": "GetDuration",
+              "methodIndex": 75504
+            },
+            {
+              "name": "UpdatePlaybackSpeed",
+              "methodIndex": 75505
+            }
+          ],
+          "lifecycleDeclarations": [
+            {
+              "name": "OnCastEnd",
+              "methodIndex": 75499
+            }
+          ]
+        }
+      ],
+      "timingOverrideBeforeAbstractAnimatedAbility": false
+    },
+    {
+      "name": "MultiRangedAttack",
+      "chain": [
+        {
+          "name": "Torappu.Battle.Abilities.MultiRangedAttack",
+          "byvalTypeIndex": 50216,
+          "parentIl2CppTypeIndex": 54071,
+          "timingDeclarations": [],
+          "lifecycleDeclarations": [
+            {
+              "name": "CheckAnotherSpell",
+              "methodIndex": 74433
+            },
+            {
+              "name": "OnCastEnd",
+              "methodIndex": 74436
+            },
+            {
+              "name": "OnWaitForPreDelay",
+              "methodIndex": 74440
+            },
+            {
+              "name": "OnWaitForTriggerDelta",
+              "methodIndex": 74441
+            }
+          ]
+        },
+        {
+          "name": "Torappu.Battle.Abilities.RangedAttack",
+          "byvalTypeIndex": 54071,
+          "parentIl2CppTypeIndex": 26995,
+          "timingDeclarations": [],
+          "lifecycleDeclarations": [
+            {
+              "name": "OnWaitForPostDelay",
+              "methodIndex": 74542
+            },
+            {
+              "name": "OnCastEnd",
+              "methodIndex": 74543
+            }
+          ]
+        },
+        {
+          "name": "Torappu.Battle.Abilities.AbstractBasicAttack",
+          "byvalTypeIndex": 26995,
+          "parentIl2CppTypeIndex": 26990,
+          "timingDeclarations": [],
+          "lifecycleDeclarations": [
+            {
+              "name": "OnCastEnd",
+              "methodIndex": 74072
+            }
+          ]
+        },
+        {
+          "name": "Torappu.Battle.Abilities.AbstractAnimatedAbility",
+          "byvalTypeIndex": 26990,
+          "parentIl2CppTypeIndex": 41119,
+          "timingDeclarations": [
+            {
+              "name": "get_timeMode",
+              "methodIndex": 75477
+            },
+            {
+              "name": "get_cooldown",
+              "methodIndex": 75490
+            },
+            {
+              "name": "GetDuration",
+              "methodIndex": 75504
+            },
+            {
+              "name": "UpdatePlaybackSpeed",
+              "methodIndex": 75505
+            }
+          ],
+          "lifecycleDeclarations": [
+            {
+              "name": "OnCastEnd",
+              "methodIndex": 75499
+            }
+          ]
+        }
+      ],
+      "timingOverrideBeforeAbstractAnimatedAbility": false
+    }
+  ],
+  "methods": [
+    {
+      "path": "work/client-logic/native-enemy-timing-gates/AbstractAnimatedAbility.get_cooldown.asm",
+      "sha256": "306ec595d2accf7390e369206732cb9816a34f25f20ecc14a89f426e7ca27da6",
+      "rva": "0x2521658",
+      "observedBranch": "0x2521768..0x2521778",
+      "observation": "FROM_ATTACK_SPEED (timeMode 0) reads owner.attackTime.",
+      "evidenceLevel": "Verified local native base branch"
+    },
+    {
+      "path": "work/client-logic/native-enemy-timing-gates/AbstractAnimatedAbility.UpdatePlaybackSpeed.asm",
+      "sha256": "41db549339279d7c80cb54c4836e31abaf4297289b328b782955a84e53471eba",
+      "rva": "0x25223cc",
+      "observedBranch": "0x2522520..0x252256c",
+      "observation": "ratio=max(cooldown/rawAnimationDuration,0.1); when maxAnimScale>=0 take min(ratio,maxAnimScale); m_attackTime=rawAnimationDuration*ratio.",
+      "evidenceLevel": "Verified local native base branch"
+    },
+    {
+      "path": "work/client-logic/native-enemy-timing-gates/AbstractAnimatedAbility.GetDuration.asm",
+      "sha256": "ebfa07e8103057b8d36733ccbeebbf64fb29c5e182f2b564f6f533ef46cf23d4",
+      "rva": "0x2522364",
+      "observedBranch": "0x25223bc..0x25223c8",
+      "observation": "Base GetDuration returns m_attackTime at offset 0x1a8, after the playback calculation.",
+      "evidenceLevel": "Verified local native base branch"
+    },
+    {
+      "path": "work/client-logic/native-enemy-timing-gates/EasyToStartAbility.OnCastStart.asm",
+      "sha256": "a657a213aba69cf59fd0fa8a12348b885bd9bf7df029a70c46c14194285ffae1",
+      "rva": "0x2521c04",
+      "observedBranch": "0x2521c80..0x2521c94",
+      "observation": "Calls virtual duration getter and stores result at m_cachedDuration offset 0x118.",
+      "evidenceLevel": "Verified local native base branch"
+    },
+    {
+      "path": "work/client-logic/native-enemy-timing-gates/EasyToStartAbility.get_postDelay.asm",
+      "sha256": "14e4d392d3c341be07f2bd9f7ee4ab453de248e2006f3c27e5411274282ca051",
+      "rva": "0x2523984",
+      "observedBranch": "0x2523a40..0x2523aac",
+      "observation": "Base post-delay is max(0,m_cachedDuration-(fixedPlayTime-m_realStartTime)).",
+      "evidenceLevel": "Verified local native base branch"
+    },
+    {
+      "path": "work/client-logic/native-enemy-timing-gates/EasyToStartAbility+OnWaitForPostDelayd__17.MoveNext.asm",
+      "sha256": "1651eae5030e2c435f6f1e3b34116b901a5953a883a4dff731697b2d38948545",
+      "rva": "0x25246e8",
+      "observedBranch": "0x2524730..0x2524748",
+      "observation": "Base post-delay coroutine obtains the virtual post-delay and passes it to AsyncUtil.WaitForFixedSeconds.",
+      "evidenceLevel": "Verified local native base branch"
+    }
+  ],
+  "layouts": [
+    {
+      "path": "work/client-logic/native-enemy-timing-gates/AbstractAnimatedAbility-layout.json",
+      "sha256": "ecabf703fb9b01a973a4cf010c883a039f780e8ff094f040cf3d031aa2453117",
+      "type": "Torappu.Battle.Abilities.AbstractAnimatedAbility",
+      "fields": [
+        {
+          "name": "_timeMode",
+          "offset": 312,
+          "offsetStatus": "plausible"
+        },
+        {
+          "name": "_maxAnimScale",
+          "offset": 408,
+          "offsetStatus": "plausible"
+        },
+        {
+          "name": "m_attackTime",
+          "offset": 424,
+          "offsetStatus": "plausible"
+        }
+      ]
+    },
+    {
+      "path": "work/client-logic/native-enemy-timing-gates/EasyToStartAbility-layout.json",
+      "sha256": "6123fccc9cad685665794ad186c401ed860670089c8b331af61a37f7eb535ef3",
+      "type": "Torappu.Battle.Abilities.EasyToStartAbility",
+      "fields": [
+        {
+          "name": "m_cachedDuration",
+          "offset": 280,
+          "offsetStatus": "plausible"
+        },
+        {
+          "name": "m_realStartTime",
+          "offset": 296,
+          "offsetStatus": "plausible"
+        }
+      ]
+    }
+  ],
+  "minimumScaleConstant": {
+    "rva": "0x8057408",
+    "value": 0.10000000149011612
+  },
+  "ordinaryTimingContract": {
+    "timeMode": 0,
+    "timeModeName": "FROM_ATTACK_SPEED",
+    "scale": "ratio=max(effectiveOwnerAttackInterval/rawAnimationDuration,0.1); if maxAnimScale>=0 then ratio=min(ratio,maxAnimScale)",
+    "duration": "rawAnimationDuration*ratio",
+    "eventTimes": "Known animation event times use the same playback ratio. Event selection and repeated casts remain separate existing typed contracts.",
+    "negativeMaxAnimScale": "Disables only the upper cap; does not disable the 0.1 lower calculation.",
+    "exampleMKII": {
+      "rawDuration": 1.0,
+      "rawOnAttack": 0.2666667,
+      "attackInterval": 3.0,
+      "maxAnimScale": 1.0,
+      "scaledDuration": 1.0,
+      "scaledOnAttack": 0.2666667
+    },
+    "completionSupport": "Base GetDuration and cached post-delay support completing an ordinary action at its scaled animation duration, rather than forcing the action to last the entire attack interval."
+  },
+  "examples": [
+    {
+      "enemyId": "enemy_1005_yokai",
+      "prefabPointer": "/prefabs/enemy_1005_yokai/components",
+      "rootBindings": [
+        {
+          "modePathID": 2157835585545436001,
+          "combat": {
+            "m_FileID": 0,
+            "m_PathID": -502061844266288287
+          },
+          "attack": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          }
+        }
+      ],
+      "actions": [
+        {
+          "pathID": 8646020601647070049,
+          "scriptPathID": 4381884627089348317,
+          "isRoot": false,
+          "fields": {
+            "_animKey": "Attack",
+            "_endAnimKey": "Idle",
+            "_timeMode": 0,
+            "_maxAnimScale": 1.0,
+            "_waitForAttackEvent": 1,
+            "_preDelay": 0.0,
+            "_affectedBySlowDown": 1,
+            "_resetCdStrategy": 1,
+            "_interruptAbilityOnDetach": 0
+          }
+        }
+      ],
+      "animation": {
+        "duration": 1.0,
+        "events": [
+          {
+            "event": "OnAttack",
+            "t": 0.2666667
+          }
+        ]
+      },
+      "animationSource": {
+        "path": "models_enemies/1005_yokai/enemy_1005_yokai.skel",
+        "gitBlob": "23cda0cb1baf050a9fc6c40dd6061818f0d1c595",
+        "sha256": "950e17c3432d982da6abb7803082158a7b1009741beaee10650c0f88ca47473c",
+        "spineVersion": "3.8.99"
+      },
+      "importedNumericReference": {
+        "path": "web/battle_data.json",
+        "fields": {
+          "attackTime": 2.3,
+          "moveSpeed": 0.9,
+          "rangeRadius": 0.0,
+          "flying": true
+        },
+        "boundary": "Existing imported base numeric reference, not a new extraction of the source enemy database."
+      }
+    },
+    {
+      "enemyId": "enemy_1005_yokai_2",
+      "prefabPointer": "/prefabs/enemy_1005_yokai_2/components",
+      "rootBindings": [
+        {
+          "modePathID": -7159064685136076226,
+          "combat": {
+            "m_FileID": 0,
+            "m_PathID": -5419026999065206210
+          },
+          "attack": {
+            "m_FileID": 0,
+            "m_PathID": -5419026999065206210
+          }
+        }
+      ],
+      "actions": [
+        {
+          "pathID": -5419026999065206210,
+          "scriptPathID": 4381884627089348317,
+          "isRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_endAnimKey": "Move",
+            "_timeMode": 0,
+            "_maxAnimScale": 1.0,
+            "_waitForAttackEvent": 1,
+            "_preDelay": 0.0,
+            "_affectedBySlowDown": 1,
+            "_resetCdStrategy": 1,
+            "_interruptAbilityOnDetach": 0
+          }
+        }
+      ],
+      "animation": {
+        "duration": 1.0,
+        "events": [
+          {
+            "event": "OnAttack",
+            "t": 0.2666667
+          }
+        ]
+      },
+      "animationSource": {
+        "path": "models_enemies/1005_yokai_2/enemy_1005_yokai_2.skel",
+        "gitBlob": "c76b0ead6fe422c32e0b96f9951fcc0c8c84f8c1",
+        "sha256": "afba48964390f864f7b318d60429d2c2ae9563b231acd1a3bd486e8d515c00e3",
+        "spineVersion": "3.8.99"
+      },
+      "importedNumericReference": {
+        "path": "web/battle_data.json",
+        "fields": {
+          "attackTime": 3.0,
+          "moveSpeed": 0.9,
+          "rangeRadius": 2.0,
+          "flying": true
+        },
+        "boundary": "Existing imported base numeric reference, not a new extraction of the source enemy database."
+      }
+    },
+    {
+      "enemyId": "enemy_1005_yokai_3",
+      "prefabPointer": "/prefabs/enemy_1005_yokai_3/components",
+      "rootBindings": [
+        {
+          "modePathID": -1339304182669828588,
+          "combat": {
+            "m_FileID": 0,
+            "m_PathID": 297327223720123924
+          },
+          "attack": {
+            "m_FileID": 0,
+            "m_PathID": 297327223720123924
+          }
+        }
+      ],
+      "actions": [
+        {
+          "pathID": 297327223720123924,
+          "scriptPathID": 4381884627089348317,
+          "isRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_endAnimKey": "Move",
+            "_timeMode": 0,
+            "_maxAnimScale": 1.0,
+            "_waitForAttackEvent": 1,
+            "_preDelay": 0.0,
+            "_affectedBySlowDown": 1,
+            "_resetCdStrategy": 1,
+            "_interruptAbilityOnDetach": 0
+          }
+        }
+      ],
+      "animation": {
+        "duration": 1.0,
+        "events": [
+          {
+            "event": "OnAttack",
+            "t": 0.2666667
+          }
+        ]
+      },
+      "animationSource": {
+        "path": "models_enemies/5005_yokafd/enemy_1005_yokai_3.skel",
+        "gitBlob": "7de734a28c4b620e4e00e8670a20795dc8e34ff0",
+        "sha256": "d713c4d71ac757d41462001e706344b2305bb18ff804fd806fb55297c510da0f",
+        "spineVersion": "3.8.99"
+      },
+      "importedNumericReference": {
+        "path": "web/battle_data.json",
+        "fields": {
+          "attackTime": 3.8,
+          "moveSpeed": 0.5,
+          "rangeRadius": 2.0,
+          "flying": true
+        },
+        "boundary": "Existing imported base numeric reference, not a new extraction of the source enemy database."
+      }
+    }
+  ],
+  "remainingBoundaries": [
+    "MeleeAttack/RangedAttack and both Multi subclasses inherit timing calculation, but inheritance is not proof of every lifecycle branch. Multi classes override CheckAnotherSpell, OnCastEnd, OnWaitForPreDelay and OnWaitForTriggerDelta; existing fixed-multi rejection rules remain.",
+    "RangedAttack overrides OnWaitForPostDelay and OnCastEnd. Existing waitForProjectileInvalid and projectile completion callbacks must remain authoritative; scaled animation duration alone must not end those casts.",
+    "No new decoding of unreadable Multi method bodies, main enemy AI scheduler, attack cooldown reset policy, target ordering, or dynamic midcast attack-speed event ordering was performed.",
+    "The cached ordinary action end animation Move is a configuration observation. The numerical leftover movement window under the project attack-cooldown clock is an implementation inference, not a newly recovered complete native movement state machine.",
+    "No Scale-named battle subclass/method was found in this cached metadata; the observed no-upper-cap branch is maxAnimScale<0. Custom subclasses and XLua hotfix overrides are not certified by this evidence.",
+    "No game code, source snapshot, generated battle data, or package was changed by this evidence task."
+  ],
+  "priorRegressionBoundary": {
+    "docs": [
+      "docs/mechanics/enemy-basic-actions.md:45",
+      "docs/mechanics/enemy-skills.md:47"
+    ],
+    "test": "tools/_flying_block_smoke.js",
+    "observation": "The old flying regression validated no blocker displacement, then called finishEnemyAttack and set cd=999 before asserting movement. It did not verify movement between naturally timed attacks."
+  }
+}

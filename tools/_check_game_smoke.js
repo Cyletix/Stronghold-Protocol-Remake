@@ -1,0 +1,10 @@
+'use strict';
+const assert=require('assert/strict'),{checks,runChecks}=require('./check_game');
+const reports=[],report=s=>reports.push(s);
+assert.equal(runChecks([['passing',['-e','process.exit(0)']]],{report}),0);
+assert.equal(runChecks([['failing',['-e','process.exit(7)']],['must not run',['-e','process.exit(0)']]],{report}),1);
+assert.ok(reports.some(x=>x.startsWith('FAIL failing')));assert.ok(!reports.some(x=>x.includes('PASS must not run')));
+assert.equal(runChecks([['unhandled rejection',['-e',"Promise.reject(new Error('fixture rejection'))"]]],{report}),1);
+assert.equal(runChecks([['timeout',['-e','setInterval(()=>{},1000)']]],{report,timeout:100}),1);
+for(const [,args]of checks)if(args[0].includes('/build_'))assert.ok(args.includes('--check'),'builders must be read-only');
+console.log('CHECK RUNNER OK success, failure propagation, stop-on-failure, rejection, timeout and read-only builders');

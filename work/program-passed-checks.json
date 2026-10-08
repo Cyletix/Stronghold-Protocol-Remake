@@ -1,0 +1,483 @@
+{
+  "status": 0,
+  "totalRegistered": 132,
+  "selected": 67,
+  "passed": [
+    {
+      "name": "elemental source skills",
+      "args": [
+        "tools/_elemental_sources_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "operator skill levels source",
+      "args": [
+        "tools/build_operator_skill_levels.js",
+        "--check"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "operator skill levels consumers",
+      "args": [
+        "tools/_operator_skill_levels_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "marksman source skills",
+      "args": [
+        "tools/_marksman_skills_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "vanguard source skills",
+      "args": [
+        "tools/_vanguard_skills_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "medic source skills",
+      "args": [
+        "tools/_medic_skills_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "periodic medic source skills",
+      "args": [
+        "tools/_periodic_medic_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "protective medic source skills",
+      "args": [
+        "tools/_protective_medic_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "medic talent SP events",
+      "args": [
+        "tools/_medic_talents_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "medical drone inventory and deployment",
+      "args": [
+        "tools/_medic_drone_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "medical SP module effects",
+      "args": [
+        "tools/_medic_module_sp_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "medical profession attack-speed aura",
+      "args": [
+        "tools/_medic_aura_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "Beeswax source skills and obelisk",
+      "args": [
+        "tools/_beeswax_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "Dusk skills and freeling lifecycle",
+      "args": [
+        "tools/_dusk_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "Click released funnel",
+      "args": [
+        "tools/_click_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "Goldenglow and Rockrock client funnels",
+      "args": [
+        "tools/_funnel_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "operator combat",
+      "args": [
+        "tools/_operator_combat_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "operator library",
+      "args": [
+        "tools/_roster_catalog_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "season roster slots",
+      "args": [
+        "tools/_season_roster_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "loadout and items",
+      "args": [
+        "tools/_loadout_items_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "strategy item rewards",
+      "args": [
+        "tools/_items_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "mode build",
+      "args": [
+        "tools/build_mode.js",
+        "--check"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "basic attacks",
+      "args": [
+        "tools/_basic_attacks_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "common deployment-cost skills",
+      "args": [
+        "tools/_common_cost_skills_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "common skill account-level expansion",
+      "args": [
+        "tools/_common_expansion_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "client stat graph source",
+      "args": [
+        "tools/_client_stat_buff_smoke.js",
+        "--source-only"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "client stat graph execution",
+      "args": [
+        "tools/_client_stat_buff_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "client execution program source",
+      "args": [
+        "tools/_client_programs_smoke.js",
+        "--source-only"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "client execution program runtime",
+      "args": [
+        "tools/_client_programs_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "change impact selection",
+      "args": [
+        "tools/_check_impact_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "checklist revalidation receipts",
+      "args": [
+        "tools/_checklist_revalidation_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "check runner behavior",
+      "args": [
+        "tools/_check_game_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "final defense consumers",
+      "args": [
+        "tools/_final_defense_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "hunter magazines and Snow Hunter",
+      "args": [
+        "tools/_hunter_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "mystic storage and Indigo",
+      "args": [
+        "tools/_mystic_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "dollkeeper forms and source skills",
+      "args": [
+        "tools/_dollkeeper_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "tactical reinforcements and flowing shapes",
+      "args": [
+        "tools/_tactician_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "manual tactical deployment and copy",
+      "args": [
+        "tools/_tactical_controls_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "Blacknight and source sleep rules",
+      "args": [
+        "tools/_blacknight_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "tactical exclusive mechanisms",
+      "args": [
+        "tools/_tactical_specials_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "common buff families and attribute layers",
+      "args": [
+        "tools/_common_buff_skills_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "enemy cold mechanics",
+      "args": [
+        "tools/_enemy_cold_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "local solo",
+      "args": [
+        "tools/_solo_local_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "boss_runtime_integration",
+      "args": [
+        "tools/_boss_runtime_integration_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "room_game_runtime",
+      "args": [
+        "tools/_room_game_runtime_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "room_game_server",
+      "args": [
+        "tools/_room_game_server_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "room_game_client",
+      "args": [
+        "tools/_room_game_client_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "room_battle_runtime",
+      "args": [
+        "tools/_room_battle_runtime_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "room_battle_session",
+      "args": [
+        "tools/_room_battle_session_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "enemy death spawn lifecycle",
+      "args": [
+        "tools/_enemy_death_spawn_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "enemy prop hit counts",
+      "args": [
+        "tools/_enemy_prop_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "enemy permanent block-free",
+      "args": [
+        "tools/_enemy_passives_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "enemy child damage transfer",
+      "args": [
+        "tools/_enemy_transfer_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "achunt marked death cleanup",
+      "args": [
+        "tools/_achunt_cleanup_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "shop item source",
+      "args": [
+        "tools/build_equip_data.js",
+        "--check"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "shop item eligibility",
+      "args": [
+        "tools/_shop_items_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "equipment protection source",
+      "args": [
+        "tools/build_equip_protection.js",
+        "--check"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "equipment protection impacts",
+      "args": [
+        "tools/_equip_protection_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "equipment skill stacks source",
+      "args": [
+        "tools/build_equip_skill_stacks.js",
+        "--check"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "equipment skill stacks runtime",
+      "args": [
+        "tools/_equip_skill_stacks_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "training source runtime",
+      "args": [
+        "tools/_training_runtime_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "enemy template replacement",
+      "args": [
+        "tools/_enemy_replacement_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "enemy plan source phases",
+      "args": [
+        "tools/_enemy_plan_source_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "enemy runtime integration",
+      "args": [
+        "tools/_enemy_runtime_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "skill_timing",
+      "args": [
+        "tools/_skill_timing_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "simulation_clock",
+      "args": [
+        "tools/_simulation_clock_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    },
+    {
+      "name": "rest_save",
+      "args": [
+        "tools/_rest_save_smoke.js"
+      ],
+      "log": "work/program-checks.log"
+    }
+  ]
+}

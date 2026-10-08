@@ -1,0 +1,522 @@
+{
+  "schemaVersion": 1,
+  "batchRule": "garrison-self-programs-hp-ratio-until-detach-heal-free-v1",
+  "verification": {
+    "inputs": {
+      "../src/arkresearch/client_program.py": "6942bdc680d6d2a420ea34270a5f20f32c95125e9b8872afff7fa2e91e8de83c",
+      "../src/arkresearch/combat_program.py": "faf5eaf0ab1c580cd380d91bc176ab384e1c0bd3e1bd4081740992064e5ce8bc",
+      "web/src/simulation/client-programs.js": "d695bf517ed573a6406971a5c69782274f4be831f38217ce494f8344057a8670",
+      "web/client_program_data.js": "43d168f81e2e2672782633831fc96bca4942e1ccce12d96cb6922012dd9597b7",
+      "tools/test_client_program_batch.py": "486c8146f3a8b9437f5c9b73085a26abb7c662e9525144c42db3536f5032a0fd",
+      "tools/_client_program_batch_smoke.js": "b1545f3406bd6475bbcf057c76275f0b8b31b02afd7ef03a55be251096556348",
+      "tools/_program_recovery_smoke.js": "82b585894ec8e37b81eef50270c569c4baee1084cec4cef0cb28fb0f0eab5c5d",
+      "data/ArknightsGameData/zh_CN/gamedata/excel/skill_table.json": "9eaaecacd024b8e2177ddb44e0c306bed609b53ef79d2e6446dda9dae49d6435",
+      "data/ArknightsGameData/zh_CN/gamedata/excel/character_table.json": "05fddd1e746d66be22580b51e9e44be75b38aef95169477b2e55150b89a2fed7"
+    },
+    "results": {
+      "pythonContractTests": {
+        "command": "python tools/test_client_program_batch.py",
+        "passed": true,
+        "tests": 3
+      },
+      "batchRuntime": {
+        "command": "node tools/_client_program_batch_smoke.js",
+        "passed": true,
+        "sourceLevels": 10
+      },
+      "existingRecovery": {
+        "command": "node tools/_program_recovery_smoke.js",
+        "passed": true,
+        "sourceLevels": 10,
+        "hostRestore": true
+      },
+      "generatedDataCheck": {
+        "command": "python tools/build_client_programs.py --check",
+        "passed": true
+      },
+      "notRun": [
+        "DPS simulation",
+        "APP extraction"
+      ]
+    },
+    "boundary": "These are the frozen provider program/schema/data and focused-test inputs from the completed program batch. This receipt does not certify later unrelated shared engine edits or the final combined package; integration/package acceptance is recorded separately."
+  },
+  "classification": {
+    "inputs": {
+      "work/garrison-batch-inventory.json": "97d6c496e42317529b6cd70755ce9c91f684bcbcef4e0d6567a63ffcf8a8904d",
+      "work/client-logic/program-compilation.json": "972bc0d63070e03acf8733c82e8480a29a92952c01bce07ff1f8240eb169c0b3",
+      "work/client-logic/buff-templates.json": "f8cc1f74e426d0111803d68154335a748bfee377a2d826d84135f60a41280d24"
+    },
+    "result": {
+      "inputs": {
+        "work/garrison-batch-inventory.json": "97d6c496e42317529b6cd70755ce9c91f684bcbcef4e0d6567a63ffcf8a8904d",
+        "work/client-logic/program-compilation.json": "972bc0d63070e03acf8733c82e8480a29a92952c01bce07ff1f8240eb169c0b3",
+        "work/client-logic/buff-templates.json": "f8cc1f74e426d0111803d68154335a748bfee377a2d826d84135f60a41280d24"
+      },
+      "buffDuringSkill": {
+        "fixedPendingSkills": 25,
+        "completeComponentShapes": 24,
+        "groups": [
+          {
+            "components": "AbilitySequenceGroup+ActiveBuffAbility+AnimatedActionToOwnerAbility+AnimationEmitBehaviour+BuffDuringCastingFixed+MeleeAttack+UberEffectEmitter+AdvancedSelector+ConstBoxRange+MultiAppearSkill+BuffDuringSkill",
+            "skills": [
+              "skchr_texas2_2"
+            ]
+          },
+          {
+            "components": "AbilitySequenceGroup+ActiveBuffAbility+AnimatedActionToOwnerAbility+AnimationEmitBehaviour+BuffDuringCastingFixed+MultiMeleeAttack+RangedAttack+UberEffectEmitter+AdvancedSelector+AdvancedSelector+ConstBoxRange+ConstBoxRange+MultiAppearSkill+BuffDuringSkill",
+            "skills": [
+              "skchr_texas2_3"
+            ]
+          },
+          {
+            "components": "ActiveBuffAbility+CastSkillWithLimitTimes+SelectorTrigger+SelfSelectorInCertainCondition+BuffDuringSkill",
+            "skills": [
+              "skchr_excu2_3"
+            ]
+          },
+          {
+            "components": "ActiveAbilityWrapper+ActiveBuffAbility+AuraAbility+CastSkill+ConstBoxRange+BuffDuringSkill+TokenOrHostTargetValidator",
+            "skills": [
+              "skchr_jesca2_1"
+            ]
+          },
+          {
+            "components": "ActiveAbilityWrapper+ActiveBuffAbility+AnimatedActionToOwnerAbility+AnimatedActionToOwnerAbility+AnimatedActionToTargetAbility+AnimatedActionToTargetAbility+AnimationEmitBehaviour+AnimationEmitBehaviour+AnimationEmitBehaviour+BuffDuringCastingFixed+BuffDuringCastingFixed+ExtraAbilities+GlobalAuraAbility+PassiveBuffAbility+RangedAttack+RangedAttack+UberEffectEmitter+UberEffectEmitter+UberEffectEmitter+AdvancedSelector+AutoLoadBoxRange+CastSkill+SelfSelector+BuffDuringSkill+TargetValidator",
+            "skills": [
+              "skchr_svash2_3"
+            ]
+          },
+          {
+            "components": "BuffDuringCastingFixed+MeleeAttack+UberEffectEmitter+AdvancedSelector+AutoLoadBoxRange+CastSkill+BuffDuringSkill",
+            "skills": [
+              "skchr_sbell2_1"
+            ]
+          },
+          {
+            "components": "ActiveBuffAbility+CastSkillWithSuspendable+BuffDuringSkill",
+            "skills": [
+              "skchr_sbell2_2"
+            ]
+          },
+          {
+            "components": "ActiveBuffAbility+CastSkill+BuffDuringSkill",
+            "skills": [
+              "skchr_sbell2_3"
+            ]
+          },
+          {
+            "components": "AbilitySequenceGroup+ActiveBuffAbility+BuffDuringCastingFixed+BuffToOwner+MeleeAttack+UberEffectEmitter+AdvancedSelector+AutoLoadBoxRange+CastSkill+BuffDuringSkill",
+            "skills": [
+              "skchr_yu_2"
+            ]
+          },
+          {
+            "components": "AbilitySequenceGroup+ActiveAbilityWrapper+AnimatedActionToTargetAbility+BuffDuringCastingFixed+BuffToOwner+GlobalAuraAbility+ProjectileAuraAbility+ProjectileProbElimateBehaviour+CastSkill+EmptyAbility+InfiniteLineRange+InfiniteLineRange+InfiniteLineRange+ProjectileValidator+BuffAfterSkill+BuffDuringSkill+TargetValidator+TileSelector+TileSelector",
+            "skills": [
+              "skchr_yu_3"
+            ]
+          },
+          {
+            "components": "MeleeAttack+PassiveBuffAbility+UberEffectEmitter+AdvancedSelector+AutoLoadBoxRange+CastSkill+SelectorTrigger+BuffDuringSkill",
+            "skills": [
+              "skchr_gnosis_2"
+            ]
+          },
+          {
+            "components": "RangedHeal+ReplacementSkill+BuffDuringSkill",
+            "skills": [
+              "skchr_ceylon_1"
+            ]
+          },
+          {
+            "components": "ActiveBuffAbility+CastSkill+BuffAfterSkill+BuffDuringSkill",
+            "skills": [
+              "skchr_vulpis_3"
+            ]
+          },
+          {
+            "components": "Heal+PassiveBuffAbility+UberEffectEmitter+AdvancedSelector+AutoLoadBoxRange+CastSkill+BuffDuringSkill",
+            "skills": [
+              "skchr_lumen_2"
+            ]
+          },
+          {
+            "components": "MultiFunnelNormalAttack+MultiRangedAttack+PassiveBuffAbility+UberEffectEmitter+ReplacementSkillFixed+BuffDuringSkill",
+            "skills": [
+              "skchr_malist_2"
+            ]
+          },
+          {
+            "components": "AnimatedActionToTargetAbility+UberEffectEmitter+AutoLoadBoxRange+BlockedOrAdvancedSelector+CastSkill+SelectorTrigger+BuffDuringSkill",
+            "skills": [
+              "skchr_blkkgt_2"
+            ]
+          },
+          {
+            "components": "AbilityParallelGroup+AbilitySequenceGroup+AnimatedActionToTargetAbility+BuffAfterAffecting+BuffDuringCastingFixed+MultiHitUberEffectEmitter+MultiMeleeAttack+MultiRangedAttack+RangedAttack+UberEffectEmitter+AdvancedSelector+AdvancedSelector+AdvancedSelector+AutoLoadBoxRange+AutoLoadBoxRange+AutoLoadBoxRange+AutoLoadBoxRange+BlockedOrAdvancedSelector+BlockedOrAdvancedSelector+CastSkill+GlobalRange+SelectorTrigger+BuffDuringSkill",
+            "skills": [
+              "skchr_blkkgt_3"
+            ]
+          },
+          {
+            "components": "ActiveBuffAbility+ThreePartChannelingAnimation+AdvancedSelector+AutoLoadBoxRange+CastSkill+SelectorTrigger+BuffDuringSkill",
+            "skills": [
+              "skchr_grabds_2"
+            ]
+          },
+          {
+            "components": "AbilityParallelGroup+Heal+MeleeAttack+UberEffectEmitter+UberEffectEmitter+AdvancedSelector+AutoLoadBoxRange+ReplacementSkill+SelectorTrigger+BuffDuringSkill",
+            "skills": [
+              "skchr_blemsh_1"
+            ]
+          },
+          {
+            "components": "AbilitySequenceGroup+ActiveBuffAbility+AnimatedActionToTargetAbility+UberEffectEmitter+AutoLoadBoxRange+BlockedOrAdvancedSelector+CastSkill+ConstBoxRange+EmptyRangeSelector+NeverTrigger+SelectorTrigger+BuffDuringSkill",
+            "skills": [
+              "skchr_blemsh_2"
+            ]
+          },
+          {
+            "components": "ActiveBuffAbility+PassiveBuffAbility+CastSkill+BuffDuringSkill",
+            "skills": [
+              "skchr_billro_1",
+              "skchr_billro_2"
+            ]
+          },
+          {
+            "components": "ActiveBuffAbility+PassiveBuffAbility+AdvancedSelector+AutoLoadBoxRange+CastSkill+BuffDuringSkill",
+            "skills": [
+              "skchr_billro_3"
+            ]
+          },
+          {
+            "components": "BuffToOwner+RangedAttack+ThreePartChannelingAnimation+UberEffectEmitter+AdvancedSelector+AutoLoadBoxRange+CastSkill+BuffDuringSkill",
+            "skills": [
+              "skchr_necras_2"
+            ]
+          },
+          {
+            "components": "RangedHeal+AdvancedSelector+AutoLoadBoxRange+ReplacementSkill+BuffDuringSkill",
+            "skills": [
+              "skchr_mberry_1"
+            ]
+          }
+        ],
+        "templates": [
+          {
+            "template": "switch_mode_restart_fsm",
+            "skills": [
+              "skchr_texas2_2",
+              "skchr_texas2_3"
+            ],
+            "actionTypes": [
+              "Torappu.Battle.Action.Nodes+SwitchMode"
+            ]
+          },
+          {
+            "template": "texas2_inturrput",
+            "skills": [
+              "skchr_texas2_2",
+              "skchr_texas2_3"
+            ],
+            "actionTypes": [
+              "Torappu.Battle.Action.Nodes+InterruptCharacterAttack"
+            ]
+          },
+          {
+            "template": "empty",
+            "skills": [
+              "skchr_blkkgt_2",
+              "skchr_blkkgt_3",
+              "skchr_excu2_3",
+              "skchr_grabds_2",
+              "skchr_sbell2_1",
+              "skchr_sbell2_2",
+              "skchr_sbell2_3",
+              "skchr_texas2_3"
+            ],
+            "actionTypes": []
+          },
+          {
+            "template": "jesca2_s_1[trigger]",
+            "skills": [
+              "skchr_jesca2_1"
+            ],
+            "actionTypes": [
+              "Torappu.Battle.Action.Nodes+InterruptAbility",
+              "Torappu.Battle.Action.Nodes+TriggerAbility"
+            ]
+          },
+          {
+            "template": "svash2_s_3[bird_eff]",
+            "skills": [
+              "skchr_svash2_3"
+            ],
+            "actionTypes": [
+              "Torappu.Battle.Action.Nodes+CreateEffect"
+            ]
+          },
+          {
+            "template": "sbell2_s[idle_effect]",
+            "skills": [
+              "skchr_sbell2_1",
+              "skchr_sbell2_2",
+              "skchr_sbell2_3"
+            ],
+            "actionTypes": [
+              "Torappu.Battle.Action.Nodes+CreateBuff",
+              "Torappu.Battle.Action.Nodes+FinishBuffsById"
+            ]
+          },
+          {
+            "template": "sbell2_s3[snow_trigger]",
+            "skills": [
+              "skchr_sbell2_3"
+            ],
+            "actionTypes": [
+              "Torappu.Battle.Action.Nodes+ManageSbell2AttachListenerAbility",
+              "Torappu.Battle.Action.Nodes+TriggerAbility"
+            ]
+          },
+          {
+            "template": "yu_s_2[buff_eff]",
+            "skills": [
+              "skchr_yu_2"
+            ],
+            "actionTypes": [
+              "Torappu.Battle.Action.Nodes+FinishBuffsById"
+            ]
+          },
+          {
+            "template": "yu_s_3[switch_mode]",
+            "skills": [
+              "skchr_yu_3"
+            ],
+            "actionTypes": [
+              "Torappu.Battle.Action.Nodes+InterruptAbility",
+              "Torappu.Battle.Action.Nodes+SwitchMode"
+            ]
+          },
+          {
+            "template": "gnosis_s_2_enhance_judge",
+            "skills": [
+              "skchr_gnosis_2"
+            ],
+            "actionTypes": [
+              "Torappu.Battle.Action.Nodes+ClearCharacterSp",
+              "Torappu.Battle.Action.Nodes+CompareCharSkillAvailableCnt",
+              "Torappu.Battle.Action.Nodes+CreateBuff",
+              "Torappu.Battle.Action.Nodes+CreateEffect",
+              "Torappu.Battle.Action.Nodes+FinishBuffsById",
+              "Torappu.Battle.Action.Nodes+IfElse",
+              "Torappu.Battle.Action.Nodes+SwitchMode"
+            ]
+          },
+          {
+            "template": "ceylon_s_1",
+            "skills": [
+              "skchr_ceylon_1"
+            ],
+            "actionTypes": [
+              "Torappu.Battle.Action.Nodes+DisableTrait",
+              "Torappu.Battle.Action.Nodes+EnableTrait"
+            ]
+          },
+          {
+            "template": "vulpis_s_3[kill_checker]",
+            "skills": [
+              "skchr_vulpis_3"
+            ],
+            "actionTypes": [
+              "Torappu.Battle.Action.Nodes+CreateBuff",
+              "Torappu.Battle.Action.Nodes+FinishBuffsById"
+            ]
+          },
+          {
+            "template": "lumen_s_2_enhance_judge",
+            "skills": [
+              "skchr_lumen_2"
+            ],
+            "actionTypes": [
+              "Torappu.Battle.Action.Nodes+ClearCharacterSp",
+              "Torappu.Battle.Action.Nodes+CompareCharSkillAvailableCnt",
+              "Torappu.Battle.Action.Nodes+CreateBuff",
+              "Torappu.Battle.Action.Nodes+FinishBuffsById",
+              "Torappu.Battle.Action.Nodes+IfElse"
+            ]
+          },
+          {
+            "template": "malist_s_2",
+            "skills": [
+              "skchr_malist_2"
+            ],
+            "actionTypes": [
+              "Torappu.Battle.Action.Nodes+AtkScaleUp",
+              "Torappu.Battle.Action.Nodes+FilterAbilityName",
+              "Torappu.Battle.Action.Nodes+TriggerAbility"
+            ]
+          },
+          {
+            "template": "blemsh_s_1_heal",
+            "skills": [
+              "skchr_blemsh_1"
+            ],
+            "actionTypes": [
+              "Torappu.Battle.Action.Nodes+AlwaysNext",
+              "Torappu.Battle.Action.Nodes+FinishBuff",
+              "Torappu.Battle.Action.Nodes+TriggerAbilityUseSelector"
+            ]
+          },
+          {
+            "template": "blemsh_s_2[lock]",
+            "skills": [
+              "skchr_blemsh_2"
+            ],
+            "actionTypes": [
+              "Torappu.Battle.Action.Nodes+ForceCharacterAnimatorFaceFront"
+            ]
+          },
+          {
+            "template": "billro_talent_enhance_judge",
+            "skills": [
+              "skchr_billro_1",
+              "skchr_billro_2",
+              "skchr_billro_3"
+            ],
+            "actionTypes": [
+              "Torappu.Battle.Action.Nodes+ClearCharacterSp",
+              "Torappu.Battle.Action.Nodes+CompareCharSkillAvailableCnt",
+              "Torappu.Battle.Action.Nodes+CreateBuff",
+              "Torappu.Battle.Action.Nodes+IfElse"
+            ]
+          },
+          {
+            "template": "necras_s_2[damage_sleep]",
+            "skills": [
+              "skchr_necras_2"
+            ],
+            "actionTypes": [
+              "Torappu.Battle.Action.Nodes+ModifyAbilityBlackboard",
+              "Torappu.Battle.Action.Nodes+SetSharedFlag"
+            ]
+          },
+          {
+            "template": "disable_trait",
+            "skills": [
+              "skchr_mberry_1"
+            ],
+            "actionTypes": [
+              "Torappu.Battle.Action.Nodes+DisableTrait",
+              "Torappu.Battle.Action.Nodes+EnableTrait"
+            ]
+          }
+        ],
+        "sharedReady": [
+          "self Buff numeric formula layers",
+          "finite self Buff and until-detach instance teardown",
+          "healing cursor",
+          "flag7 direct-heal gate"
+        ],
+        "missing": [
+          "OnSkillStart/End source hooks with correct ordering",
+          "complete child Buff/event dispatch and namespace",
+          "mode/trait/ammo/summon/selector contracts in sibling components"
+        ],
+        "immediateCompleteMultiMemberClosure": false
+      },
+      "purePresentationCompanions": {
+        "fixedPendingSkills": 8,
+        "members": {
+          "skchr_reed2_3": [
+            "Torappu.Battle.Abilities.UberEffectEmitter"
+          ],
+          "skchr_snakek_2": [
+            "Torappu.Battle.Abilities.ThreePartChannelingAnimation"
+          ],
+          "skchr_zebra_2": [
+            "Torappu.Battle.Abilities.ThreePartChannelingAnimation",
+            "Torappu.Battle.Abilities.UberEffectEmitter"
+          ],
+          "skchr_utage_1": [
+            "Torappu.Battle.Abilities.ThreePartChannelingAnimation"
+          ],
+          "skchr_bubble_2": [
+            "Torappu.Battle.Abilities.ThreePartChannelingAnimation"
+          ],
+          "skchr_cetsyr_1": [
+            "Torappu.Battle.Abilities.ThreePartChannelingAnimation"
+          ],
+          "skchr_philae_2": [
+            "Torappu.Battle.Abilities.ThreePartChannelingAnimation"
+          ],
+          "skchr_glider_2": [
+            "Torappu.Battle.Abilities.ThreePartChannelingAnimation",
+            "Torappu.Battle.Abilities.UberEffectEmitter"
+          ]
+        },
+        "diagnosticResult": "All eight retain mode, template action, status or control blockers after diagnostics remove presentation nodes. Removal was read-only diagnostic; no production graph was weakened. Snake S2 and Utage S1 are handled by the separate mode compiler."
+      },
+      "nextCandidate": {
+        "family": "charged skill event branches",
+        "skills": [
+          "skchr_gnosis_2",
+          "skchr_lumen_2",
+          "skchr_billro_1",
+          "skchr_billro_2",
+          "skchr_billro_3"
+        ],
+        "operators": [
+          "CompareCharSkillAvailableCnt",
+          "IfElse",
+          "CreateBuff",
+          "ClearCharacterSp",
+          "FinishBuffsById"
+        ],
+        "boundary": "Five source siblings share dispatch family; complete sibling attacks, selectors and child Buffs still need their own contracts. This is not a five-skill completion claim."
+      },
+      "externalReferenceLimits": {
+        "path": "work/external-ready-data-20260914/Tim23333-Arknights_timer/snapshot/Ark_emulator/ark_emulator/buff_templates.py",
+        "DisableTrait_EnableTrait": "lines 11205 and 11208 return True without state changes",
+        "CompareCharSkillAvailableCnt": "line 1459 counts cooldown-ready controller skills; does not establish native same-skill charge-count semantics"
+      },
+      "decision": "No additional multi-member complete source family is unlocked by ignoring helper nodes. Preserve current compiled results and prioritize shared event/charge operators as a separate batch."
+    }
+  },
+  "publicCapabilities": {
+    "hpRatioRecovery": {
+      "sourceAttributeType": 19,
+      "formula": "max(0,flatRecovery)+currentMaxHp*max(0,ratioRecovery)",
+      "consumer": "web/src/simulation/client-programs.js#advance",
+      "dispatch": "single recoveryAt cursor, each Buff expiry cut; mode programs share this consumer"
+    },
+    "untilDetach": {
+      "sourceLifeTimeType": 2,
+      "sourceLifeTime": 0,
+      "boundSkillDuration": -1,
+      "consumer": "start/stop/tick",
+      "boundary": "Explicit Web opt-in; default parent compiler stays timed-only. Unknown mode graphs still block complete programs."
+    },
+    "noDirectHeal": {
+      "sourceFlag": 7,
+      "runtimeFlag": "no_direct_heal",
+      "getterRva": "0x4e062f0",
+      "consumerRva": "0x4e158a4",
+      "boundary": "Source OnTakeHeal checks ignoreHealFree and target isHealFree, no source==target bypass. Existing simulator regeneration is the separate allowed path; arbitrary native override-Heal flags are not newly implemented."
+    }
+  },
+  "sourceEvidence": {
+    "noDirectHealGetter": {
+      "path": "work/client-logic/native-self-heal/Entity.get_isHealFree.4e062f0.asm",
+      "sha256": "35ee1468326f0424fe7142a184c5981ad601a225562ebad60b1598b8b3f345ee"
+    },
+    "noDirectHealConsumer": {
+      "path": "work/client-logic/native-self-heal/Entity.OnTakeHeal.4e158a4.asm",
+      "sha256": "c6080b063738811fd04a8b3dadd87916df534d7750e6fb6550e0051725f16673"
+    },
+    "lifeTypeEnum": {
+      "path": "work/client-logic/native-enemy-block/evidence.json",
+      "sha256": "62beb53058829d67eace42d393c79dbbf79b5cccd12c8e4123a1aa470f507153"
+    }
+  }
+}

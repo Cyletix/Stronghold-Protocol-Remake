@@ -1,0 +1,2860 @@
+{
+  "schemaVersion": 1,
+  "completed": true,
+  "planCacheHit": true,
+  "bindingCacheHit": true,
+  "sourceAnalysisSkipped": true,
+  "templateQueriesSkipped": true,
+  "dpsCalculationSkipped": true,
+  "runtimeRebuildSkipped": true,
+  "plan": "work\\enemy-mode-template-plan.json",
+  "bindings": "work\\enemy-mode-buff-bindings.json",
+  "queue": "work\\enemy-mode-next-batch.json",
+  "planCounts": {
+    "enemies": 189,
+    "templates": 7,
+    "operators": 46,
+    "crossClassOperators": 23,
+    "subclasses": 37
+  },
+  "bindingsCounts": {
+    "requestedTemplates": 61,
+    "matchedTemplates": 61,
+    "missingTemplates": 0,
+    "usages": 217,
+    "affectedEnemies": 99,
+    "switchTemplates": 39,
+    "sourceParameterBindings": 152
+  },
+  "batch": "bindings",
+  "operatorJobs": 5,
+  "affectedEnemies": 8,
+  "runtimeSupportAvailable": true,
+  "runtimeRule": "shared-enemy-mode-providers-v2",
+  "alreadyBoundProviders": [
+    {
+      "enemyId": "enemy_2020_cswrtr",
+      "providerId": "enemy_2020_cswrtr|CAB-45917fb008d9d99f506436a9f5988d3d:-5214174650258908553:9",
+      "chainId": "enemy_2020_cswrtr|CAB-45917fb008d9d99f506436a9f5988d3d:-5214174650258908553:9",
+      "kind": "hp-ratio-toggle-mode",
+      "scope": "root-passive-buff-chain",
+      "runtimeScope": "Complete root passive Buff chains execute on blocked or HP condition edges. HP chains include all declared Buffs, attributes and output-damage listeners. Native predicates/parameters are known; namespace/target/attachment and FP tolerance use explicit inferences. Other mounted abilities, full enemy phases and original visual effects remain pending.",
+      "templateKeys": [
+        "switch_mode",
+        "damage_scale[out]"
+      ],
+      "events": [
+        "ON_BUFF_START",
+        "ON_BUFF_FINISH"
+      ],
+      "sourceRefs": [
+        {
+          "cache": "work/enemy-mode-template-plan.json",
+          "enemyId": "enemy_2020_cswrtr",
+          "fieldPath": "/analyses",
+          "componentKey": "CAB-45917fb008d9d99f506436a9f5988d3d:-5214174650258908553:9"
+        },
+        {
+          "cache": "work/enemy-mode-ownership-overlay.json",
+          "enemyId": "enemy_2020_cswrtr",
+          "fieldPath": "/components/CAB-45917fb008d9d99f506436a9f5988d3d:-5214174650258908553:9",
+          "componentKey": "CAB-45917fb008d9d99f506436a9f5988d3d:-5214174650258908553:9"
+        },
+        {
+          "templateKey": "switch_mode",
+          "url": "https://github.com/Tim23333/Arknights_timer/blob/d2f6d76a7172cedc7583fc0a4eb998699abf25f5/Ark_emulator/ark_emulator/data_buff_templates.json",
+          "payloadSha256": "df9bfa5d01004f3aefef17c5d33cd2840356832105534eeb8de305d3aa2e82e6"
+        },
+        {
+          "templateKey": "damage_scale[out]",
+          "url": "https://github.com/Tim23333/Arknights_timer/blob/d2f6d76a7172cedc7583fc0a4eb998699abf25f5/Ark_emulator/ark_emulator/data_buff_templates.json",
+          "payloadSha256": "2eb220c42147f47c6323ab03a1f5c63f9c91fce6fbd484ed255c5e4e390c8258"
+        },
+        {
+          "path": "data\\ArknightsGameData\\zh_CN\\gamedata\\levels\\enemydata\\enemy_database.json",
+          "enemyKey": "enemy_2020_cswrtr",
+          "field": "Value[].enemyData.talentBlackboard"
+        }
+      ]
+    },
+    {
+      "enemyId": "enemy_4001_toxcar",
+      "providerId": "enemy_4001_toxcar|CAB-cdd74f7570ad4d79415afaec31d045cf:2977638301619311933:17",
+      "chainId": "enemy_4001_toxcar|CAB-cdd74f7570ad4d79415afaec31d045cf:2977638301619311933:17",
+      "kind": "blocked-toggle-mode",
+      "scope": "mode-transition-only",
+      "runtimeScope": "Complete root passive Buff chains execute on blocked or HP condition edges. HP chains include all declared Buffs, attributes and output-damage listeners. Native predicates/parameters are known; namespace/target/attachment and FP tolerance use explicit inferences. Other mounted abilities, full enemy phases and original visual effects remain pending.",
+      "templateKeys": [
+        "switch_mode"
+      ],
+      "events": [
+        "ON_BUFF_START",
+        "ON_BUFF_FINISH"
+      ],
+      "sourceRefs": [
+        {
+          "cache": "work/enemy-mode-template-plan.json",
+          "enemyId": "enemy_4001_toxcar",
+          "fieldPath": "/analyses",
+          "componentKey": "CAB-cdd74f7570ad4d79415afaec31d045cf:2977638301619311933:17"
+        },
+        {
+          "cache": "work/enemy-mode-ownership-overlay.json",
+          "enemyId": "enemy_4001_toxcar",
+          "fieldPath": "/components/CAB-cdd74f7570ad4d79415afaec31d045cf:2977638301619311933:17",
+          "componentKey": "CAB-cdd74f7570ad4d79415afaec31d045cf:2977638301619311933:17"
+        },
+        {
+          "templateKey": "switch_mode",
+          "url": "https://github.com/Tim23333/Arknights_timer/blob/d2f6d76a7172cedc7583fc0a4eb998699abf25f5/Ark_emulator/ark_emulator/data_buff_templates.json",
+          "payloadSha256": "df9bfa5d01004f3aefef17c5d33cd2840356832105534eeb8de305d3aa2e82e6"
+        }
+      ]
+    },
+    {
+      "enemyId": "enemy_4001_toxcar_2",
+      "providerId": "enemy_4001_toxcar_2|CAB-cdd74f7570ad4d79415afaec31d045cf:3044625521396957935:17",
+      "chainId": "enemy_4001_toxcar_2|CAB-cdd74f7570ad4d79415afaec31d045cf:3044625521396957935:17",
+      "kind": "blocked-toggle-mode",
+      "scope": "mode-transition-only",
+      "runtimeScope": "Complete root passive Buff chains execute on blocked or HP condition edges. HP chains include all declared Buffs, attributes and output-damage listeners. Native predicates/parameters are known; namespace/target/attachment and FP tolerance use explicit inferences. Other mounted abilities, full enemy phases and original visual effects remain pending.",
+      "templateKeys": [
+        "switch_mode"
+      ],
+      "events": [
+        "ON_BUFF_START",
+        "ON_BUFF_FINISH"
+      ],
+      "sourceRefs": [
+        {
+          "cache": "work/enemy-mode-template-plan.json",
+          "enemyId": "enemy_4001_toxcar_2",
+          "fieldPath": "/analyses",
+          "componentKey": "CAB-cdd74f7570ad4d79415afaec31d045cf:3044625521396957935:17"
+        },
+        {
+          "cache": "work/enemy-mode-ownership-overlay.json",
+          "enemyId": "enemy_4001_toxcar_2",
+          "fieldPath": "/components/CAB-cdd74f7570ad4d79415afaec31d045cf:3044625521396957935:17",
+          "componentKey": "CAB-cdd74f7570ad4d79415afaec31d045cf:3044625521396957935:17"
+        },
+        {
+          "templateKey": "switch_mode",
+          "url": "https://github.com/Tim23333/Arknights_timer/blob/d2f6d76a7172cedc7583fc0a4eb998699abf25f5/Ark_emulator/ark_emulator/data_buff_templates.json",
+          "payloadSha256": "df9bfa5d01004f3aefef17c5d33cd2840356832105534eeb8de305d3aa2e82e6"
+        }
+      ]
+    }
+  ],
+  "nextSharedProvider": {
+    "family": "skill-trigger-dispatch",
+    "label": "技能触发与能力调度",
+    "priority": "garrison-foundation-first",
+    "scope": "garrison-shared-foundation-contract",
+    "existingContractScope": "Complete root passive Buff chains execute on blocked or HP condition edges. HP chains include all declared Buffs, attributes and output-damage listeners. Native predicates/parameters are known; namespace/target/attachment and FP tolerance use explicit inferences. Other mounted abilities, full enemy phases and original visual effects remain pending.",
+    "affectedEnemyIDs": [
+      "enemy_1040_bombd",
+      "enemy_1373_ltnhor_2",
+      "enemy_1425_lrcmra",
+      "enemy_1425_lrcmra_2",
+      "enemy_2025_syufo",
+      "enemy_9021_acduml"
+    ],
+    "affectedEncounterEnemyIDs": [
+      "enemy_1040_bombd",
+      "enemy_1373_ltnhor_2",
+      "enemy_1425_lrcmra",
+      "enemy_1425_lrcmra_2",
+      "enemy_2025_syufo",
+      "enemy_9021_acduml"
+    ],
+    "dependentEncounterCount": 6,
+    "directCandidateEncounterIDs": [],
+    "candidateIDs": [
+      "enemy_1040_bombd|CAB-c66709e8e44223eecca4bce9fbf48f83:8530485036149232392:19",
+      "enemy_1425_lrcmra_2|CAB-f35c307a9d02cd74f087114a32f11a9d:95367100273719513:17",
+      "enemy_1425_lrcmra|CAB-f35c307a9d02cd74f087114a32f11a9d:-6380628782783410879:3",
+      "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:8051568033542384596:26"
+    ],
+    "alreadyBoundSkills": [
+      {
+        "enemyId": "enemy_1373_ltnhor_2",
+        "skillId": "enemy_1373_ltnhor_2|CAB-a3aa7376bf9856a44c7dbcc30a30afbc:1959813430026055221:22",
+        "skillKey": "attackTwoTarget_enthu",
+        "modeIndices": [
+          1
+        ],
+        "sourceRef": {
+          "cache": "work/enemy-mode-dispatch-catalog.json",
+          "enemyId": "enemy_1373_ltnhor_2",
+          "componentKey": "CAB-a3aa7376bf9856a44c7dbcc30a30afbc:1959813430026055221:22",
+          "fieldPath": "/_trigger"
+        },
+        "kind": "selector-sp-ranged",
+        "initiallyMounted": false,
+        "automaticModeTransitionComplete": false,
+        "entryStatus": "explicit-mode-only-entry-pending"
+      },
+      {
+        "enemyId": "enemy_1373_ltnhor_2",
+        "skillId": "enemy_1373_ltnhor_2|CAB-a3aa7376bf9856a44c7dbcc30a30afbc:8977067208793140789:39",
+        "skillKey": "attackTwoTarget",
+        "modeIndices": [
+          0
+        ],
+        "sourceRef": {
+          "cache": "work/enemy-mode-dispatch-catalog.json",
+          "enemyId": "enemy_1373_ltnhor_2",
+          "componentKey": "CAB-a3aa7376bf9856a44c7dbcc30a30afbc:8977067208793140789:39",
+          "fieldPath": "/_trigger"
+        },
+        "kind": "selector-sp-ranged",
+        "initiallyMounted": true,
+        "automaticModeTransitionComplete": false,
+        "entryStatus": "initial-mode-bound"
+      }
+    ],
+    "boundEntryPendingSkillIDs": [
+      "enemy_1373_ltnhor_2|CAB-a3aa7376bf9856a44c7dbcc30a30afbc:1959813430026055221:22"
+    ],
+    "alreadyBoundPeriodicGroups": [],
+    "pendingSkillIDs": [
+      "enemy_1040_bombd|CAB-c66709e8e44223eecca4bce9fbf48f83:8530485036149232392:19",
+      "enemy_1425_lrcmra_2|CAB-f35c307a9d02cd74f087114a32f11a9d:95367100273719513:17",
+      "enemy_1425_lrcmra|CAB-f35c307a9d02cd74f087114a32f11a9d:-6380628782783410879:3"
+    ],
+    "allPendingSkillIDs": [
+      "enemy_1040_bombd|CAB-c66709e8e44223eecca4bce9fbf48f83:8530485036149232392:19",
+      "enemy_1425_lrcmra_2|CAB-f35c307a9d02cd74f087114a32f11a9d:95367100273719513:17",
+      "enemy_1425_lrcmra|CAB-f35c307a9d02cd74f087114a32f11a9d:-6380628782783410879:3",
+      "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:2910056970623200212:17"
+    ],
+    "deferredSkillIDs": [
+      "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:2910056970623200212:17"
+    ],
+    "executablePendingSkillIDs": [
+      "enemy_1040_bombd|CAB-c66709e8e44223eecca4bce9fbf48f83:8530485036149232392:19",
+      "enemy_1425_lrcmra_2|CAB-f35c307a9d02cd74f087114a32f11a9d:95367100273719513:17",
+      "enemy_1425_lrcmra|CAB-f35c307a9d02cd74f087114a32f11a9d:-6380628782783410879:3"
+    ],
+    "requiredOperators": [
+      "resolve-enemy-skill-trigger",
+      "trigger-enemy-skill",
+      "trigger-named-ability",
+      "ability-component-event-binding",
+      "action-sequence-control",
+      "conditional-action-tree"
+    ],
+    "dependsOn": [],
+    "sourcePriority": "work/garrison-foundation-priority.json",
+    "instruction": "按已定位的技能、触发器和能力入口补共用调度接口；先闭合可追溯的一类调用合同。 优先从池内受影响记录闭合最底层共享合同；技能只推进executablePendingSkillIDs，deferredSkillIDs保留未完成，等真实环境入口后重新开放。复用alreadyBoundPeriodicGroups的完整公共组，不把它们算成新增EnemySkill或整敌完成。非池候选保留为后续复用，已接稳定ID不得重复派工。",
+    "acceptance": "依赖影响人数不是本次可完成数量。按明确合同切片验证完整行为；不得把泛化调用定位当成一个已实现算子，不删除其他未完成能力。"
+  },
+  "providerFamilies": {
+    "blocked-toggle-mode": {
+      "label": "阻挡条件",
+      "providers": 2,
+      "enemyIDs": [
+        "enemy_4001_toxcar",
+        "enemy_4001_toxcar_2"
+      ],
+      "providerIDs": [
+        "enemy_4001_toxcar|CAB-cdd74f7570ad4d79415afaec31d045cf:2977638301619311933:17",
+        "enemy_4001_toxcar_2|CAB-cdd74f7570ad4d79415afaec31d045cf:3044625521396957935:17"
+      ],
+      "enemies": 2,
+      "encounterEnemies": 0
+    },
+    "hp-ratio-toggle-mode": {
+      "label": "HP比例条件",
+      "providers": 1,
+      "enemyIDs": [
+        "enemy_2020_cswrtr"
+      ],
+      "providerIDs": [
+        "enemy_2020_cswrtr|CAB-45917fb008d9d99f506436a9f5988d3d:-5214174650258908553:9"
+      ],
+      "enemies": 1,
+      "encounterEnemies": 0
+    }
+  },
+  "pendingCapabilities": [
+    {
+      "candidateIDs": [
+        "enemy_10105_mjcdol_2|CAB-f7d0767dfe76da4c0a422da445f8800f:8685200798056086982:30",
+        "enemy_10105_mjcdol|CAB-f7d0767dfe76da4c0a422da445f8800f:-4519548345935207114:9",
+        "enemy_1171_durokt_2|CAB-ebed69ff29aa63f68ff7b17160b28187:7462781506622874217:22",
+        "enemy_1171_durokt|CAB-ebed69ff29aa63f68ff7b17160b28187:-4909300095043148276:7",
+        "enemy_1218_bomscr_2|CAB-d5c3740664210131f56a568859981fef:6967216581211523393:14",
+        "enemy_1218_bomscr|CAB-d5c3740664210131f56a568859981fef:173117316619717052:6",
+        "enemy_1557_trcerb|CAB-0df5f4c8c8dade07e2ee475a972da576:-5252960544006153253:24",
+        "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:-407403414089153845:18",
+        "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:-4611716710902906165:10",
+        "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:3796875613975691979:28",
+        "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:8238689261767836363:42",
+        "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:8051568033542384596:26",
+        "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:-6563782339632176437:11",
+        "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:374310122205602507:59",
+        "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:5561462496884482763:91",
+        "enemy_7028_xbscp_2|CAB-ce545482313ddad0252173b3b1f77860:-2621609097606744676:14",
+        "enemy_7028_xbscp|CAB-ee7bd8607f59a8a95519a8e0801daa80:2363243709309011540:29",
+        "enemy_8010_mcnist_2|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2944100607697340055:63",
+        "enemy_8010_mcnist_3|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2944100607697340055:63",
+        "enemy_8010_mcnist|CAB-eef20e46e9f0e9e38e18bc35388f76fa:-6560448296448302055:15"
+      ],
+      "affectedEnemyIDs": [
+        "enemy_10105_mjcdol",
+        "enemy_10105_mjcdol_2",
+        "enemy_1171_durokt",
+        "enemy_1171_durokt_2",
+        "enemy_1218_bomscr",
+        "enemy_1218_bomscr_2",
+        "enemy_1557_trcerb",
+        "enemy_1580_mnchrn",
+        "enemy_2025_syufo",
+        "enemy_2089_skzjkl",
+        "enemy_7028_xbscp",
+        "enemy_7028_xbscp_2",
+        "enemy_8010_mcnist",
+        "enemy_8010_mcnist_2",
+        "enemy_8010_mcnist_3"
+      ],
+      "candidateFamilies": [
+        "blocked-toggle",
+        "hp-ratio-toggle",
+        "mode-passive"
+      ],
+      "rejectionCodes": [
+        "ability-lifecycle-unsupported",
+        "complete-ability-fields-not-retained-in-selected-caches",
+        "mode-entry-and-detach-lifecycle-required",
+        "root-shared-mount-not-closed",
+        "root-talent-ambiguous"
+      ],
+      "evidence": [
+        {
+          "candidateId": "enemy_1218_bomscr|CAB-d5c3740664210131f56a568859981fef:173117316619717052:6",
+          "enemyId": "enemy_1218_bomscr",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "root-shared-mount-not-closed",
+              "sourcePath": "/ownership",
+              "detail": "An eligible active root shared talent mount is required."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_1218_bomscr_2|CAB-d5c3740664210131f56a568859981fef:6967216581211523393:14",
+          "enemyId": "enemy_1218_bomscr_2",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "root-shared-mount-not-closed",
+              "sourcePath": "/ownership",
+              "detail": "An eligible active root shared talent mount is required."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_1557_trcerb|CAB-0df5f4c8c8dade07e2ee475a972da576:-5252960544006153253:24",
+          "enemyId": "enemy_1557_trcerb",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "root-shared-mount-not-closed",
+              "sourcePath": "/ownership",
+              "detail": "An eligible active root shared talent mount is required."
+            },
+            {
+              "code": "root-talent-ambiguous",
+              "sourcePath": "/ownership/sameGameObjectRootSharedTalents",
+              "detail": "Exactly one root shared talent must own this provider."
+            },
+            {
+              "code": "ability-lifecycle-unsupported",
+              "sourcePath": "/ability/fields/_interruptAbilityOnDetach",
+              "detail": "This batch requires 0"
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:-407403414089153845:18",
+          "enemyId": "enemy_1580_mnchrn",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "root-shared-mount-not-closed",
+              "sourcePath": "/ownership",
+              "detail": "An eligible active root shared talent mount is required."
+            },
+            {
+              "code": "root-talent-ambiguous",
+              "sourcePath": "/ownership/sameGameObjectRootSharedTalents",
+              "detail": "Exactly one root shared talent must own this provider."
+            },
+            {
+              "code": "ability-lifecycle-unsupported",
+              "sourcePath": "/ability/fields/_interruptAbilityOnDetach",
+              "detail": "This batch requires 0"
+            },
+            {
+              "code": "ability-lifecycle-unsupported",
+              "sourcePath": "/ability/fields/_setToggleFalseOnDetached",
+              "detail": "This batch requires 0"
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:-4611716710902906165:10",
+          "enemyId": "enemy_1580_mnchrn",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "ability-lifecycle-unsupported",
+              "sourcePath": "/ability/fields/_interruptAbilityOnDetach",
+              "detail": "This batch requires 0"
+            },
+            {
+              "code": "ability-lifecycle-unsupported",
+              "sourcePath": "/ability/fields/_setToggleFalseOnDetached",
+              "detail": "This batch requires 0"
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:3796875613975691979:28",
+          "enemyId": "enemy_1580_mnchrn",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "root-shared-mount-not-closed",
+              "sourcePath": "/ownership",
+              "detail": "An eligible active root shared talent mount is required."
+            },
+            {
+              "code": "root-talent-ambiguous",
+              "sourcePath": "/ownership/sameGameObjectRootSharedTalents",
+              "detail": "Exactly one root shared talent must own this provider."
+            },
+            {
+              "code": "ability-lifecycle-unsupported",
+              "sourcePath": "/ability/fields/_interruptAbilityOnDetach",
+              "detail": "This batch requires 0"
+            },
+            {
+              "code": "ability-lifecycle-unsupported",
+              "sourcePath": "/ability/fields/_setToggleFalseOnDetached",
+              "detail": "This batch requires 0"
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:8238689261767836363:42",
+          "enemyId": "enemy_1580_mnchrn",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "root-shared-mount-not-closed",
+              "sourcePath": "/ownership",
+              "detail": "An eligible active root shared talent mount is required."
+            },
+            {
+              "code": "root-talent-ambiguous",
+              "sourcePath": "/ownership/sameGameObjectRootSharedTalents",
+              "detail": "Exactly one root shared talent must own this provider."
+            },
+            {
+              "code": "ability-lifecycle-unsupported",
+              "sourcePath": "/ability/fields/_interruptAbilityOnDetach",
+              "detail": "This batch requires 0"
+            },
+            {
+              "code": "ability-lifecycle-unsupported",
+              "sourcePath": "/ability/fields/_setToggleFalseOnDetached",
+              "detail": "This batch requires 0"
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:-6563782339632176437:11",
+          "enemyId": "enemy_2089_skzjkl",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "root-shared-mount-not-closed",
+              "sourcePath": "/ownership",
+              "detail": "An eligible active root shared talent mount is required."
+            },
+            {
+              "code": "root-talent-ambiguous",
+              "sourcePath": "/ownership/sameGameObjectRootSharedTalents",
+              "detail": "Exactly one root shared talent must own this provider."
+            },
+            {
+              "code": "ability-lifecycle-unsupported",
+              "sourcePath": "/ability/fields/_interruptAbilityOnDetach",
+              "detail": "This batch requires 0"
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:374310122205602507:59",
+          "enemyId": "enemy_2089_skzjkl",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "root-shared-mount-not-closed",
+              "sourcePath": "/ownership",
+              "detail": "An eligible active root shared talent mount is required."
+            },
+            {
+              "code": "root-talent-ambiguous",
+              "sourcePath": "/ownership/sameGameObjectRootSharedTalents",
+              "detail": "Exactly one root shared talent must own this provider."
+            },
+            {
+              "code": "ability-lifecycle-unsupported",
+              "sourcePath": "/ability/fields/_interruptAbilityOnDetach",
+              "detail": "This batch requires 0"
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:5561462496884482763:91",
+          "enemyId": "enemy_2089_skzjkl",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "root-shared-mount-not-closed",
+              "sourcePath": "/ownership",
+              "detail": "An eligible active root shared talent mount is required."
+            },
+            {
+              "code": "root-talent-ambiguous",
+              "sourcePath": "/ownership/sameGameObjectRootSharedTalents",
+              "detail": "Exactly one root shared talent must own this provider."
+            },
+            {
+              "code": "ability-lifecycle-unsupported",
+              "sourcePath": "/ability/fields/_interruptAbilityOnDetach",
+              "detail": "This batch requires 0"
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_7028_xbscp|CAB-ee7bd8607f59a8a95519a8e0801daa80:2363243709309011540:29",
+          "enemyId": "enemy_7028_xbscp",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "root-shared-mount-not-closed",
+              "sourcePath": "/ownership",
+              "detail": "An eligible active root shared talent mount is required."
+            },
+            {
+              "code": "root-talent-ambiguous",
+              "sourcePath": "/ownership/sameGameObjectRootSharedTalents",
+              "detail": "Exactly one root shared talent must own this provider."
+            },
+            {
+              "code": "ability-lifecycle-unsupported",
+              "sourcePath": "/ability/fields/_interruptAbilityOnDetach",
+              "detail": "This batch requires 0"
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_7028_xbscp_2|CAB-ce545482313ddad0252173b3b1f77860:-2621609097606744676:14",
+          "enemyId": "enemy_7028_xbscp_2",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "root-shared-mount-not-closed",
+              "sourcePath": "/ownership",
+              "detail": "An eligible active root shared talent mount is required."
+            },
+            {
+              "code": "root-talent-ambiguous",
+              "sourcePath": "/ownership/sameGameObjectRootSharedTalents",
+              "detail": "Exactly one root shared talent must own this provider."
+            },
+            {
+              "code": "ability-lifecycle-unsupported",
+              "sourcePath": "/ability/fields/_interruptAbilityOnDetach",
+              "detail": "This batch requires 0"
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_8010_mcnist|CAB-eef20e46e9f0e9e38e18bc35388f76fa:-6560448296448302055:15",
+          "enemyId": "enemy_8010_mcnist",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "root-shared-mount-not-closed",
+              "sourcePath": "/ownership",
+              "detail": "An eligible active root shared talent mount is required."
+            },
+            {
+              "code": "root-talent-ambiguous",
+              "sourcePath": "/ownership/sameGameObjectRootSharedTalents",
+              "detail": "Exactly one root shared talent must own this provider."
+            },
+            {
+              "code": "ability-lifecycle-unsupported",
+              "sourcePath": "/ability/fields/_interruptAbilityOnDetach",
+              "detail": "This batch requires 0"
+            },
+            {
+              "code": "ability-lifecycle-unsupported",
+              "sourcePath": "/ability/fields/_setToggleFalseOnDetached",
+              "detail": "This batch requires 0"
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_8010_mcnist_2|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2944100607697340055:63",
+          "enemyId": "enemy_8010_mcnist_2",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "root-shared-mount-not-closed",
+              "sourcePath": "/ownership",
+              "detail": "An eligible active root shared talent mount is required."
+            },
+            {
+              "code": "root-talent-ambiguous",
+              "sourcePath": "/ownership/sameGameObjectRootSharedTalents",
+              "detail": "Exactly one root shared talent must own this provider."
+            },
+            {
+              "code": "ability-lifecycle-unsupported",
+              "sourcePath": "/ability/fields/_interruptAbilityOnDetach",
+              "detail": "This batch requires 0"
+            },
+            {
+              "code": "ability-lifecycle-unsupported",
+              "sourcePath": "/ability/fields/_setToggleFalseOnDetached",
+              "detail": "This batch requires 0"
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_8010_mcnist_3|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2944100607697340055:63",
+          "enemyId": "enemy_8010_mcnist_3",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "root-shared-mount-not-closed",
+              "sourcePath": "/ownership",
+              "detail": "An eligible active root shared talent mount is required."
+            },
+            {
+              "code": "root-talent-ambiguous",
+              "sourcePath": "/ownership/sameGameObjectRootSharedTalents",
+              "detail": "Exactly one root shared talent must own this provider."
+            },
+            {
+              "code": "ability-lifecycle-unsupported",
+              "sourcePath": "/ability/fields/_interruptAbilityOnDetach",
+              "detail": "This batch requires 0"
+            },
+            {
+              "code": "ability-lifecycle-unsupported",
+              "sourcePath": "/ability/fields/_setToggleFalseOnDetached",
+              "detail": "This batch requires 0"
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_10105_mjcdol|CAB-f7d0767dfe76da4c0a422da445f8800f:-4519548345935207114:9",
+          "enemyId": "enemy_10105_mjcdol",
+          "source": "saved-candidate-table",
+          "reasons": [
+            {
+              "code": "complete-ability-fields-not-retained-in-selected-caches"
+            },
+            {
+              "code": "mode-entry-and-detach-lifecycle-required"
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_10105_mjcdol_2|CAB-f7d0767dfe76da4c0a422da445f8800f:8685200798056086982:30",
+          "enemyId": "enemy_10105_mjcdol_2",
+          "source": "saved-candidate-table",
+          "reasons": [
+            {
+              "code": "complete-ability-fields-not-retained-in-selected-caches"
+            },
+            {
+              "code": "mode-entry-and-detach-lifecycle-required"
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_1171_durokt|CAB-ebed69ff29aa63f68ff7b17160b28187:-4909300095043148276:7",
+          "enemyId": "enemy_1171_durokt",
+          "source": "saved-candidate-table",
+          "reasons": [
+            {
+              "code": "complete-ability-fields-not-retained-in-selected-caches"
+            },
+            {
+              "code": "mode-entry-and-detach-lifecycle-required"
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_1171_durokt_2|CAB-ebed69ff29aa63f68ff7b17160b28187:7462781506622874217:22",
+          "enemyId": "enemy_1171_durokt_2",
+          "source": "saved-candidate-table",
+          "reasons": [
+            {
+              "code": "complete-ability-fields-not-retained-in-selected-caches"
+            },
+            {
+              "code": "mode-entry-and-detach-lifecycle-required"
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:8051568033542384596:26",
+          "enemyId": "enemy_2025_syufo",
+          "source": "saved-candidate-table",
+          "reasons": [
+            {
+              "code": "complete-ability-fields-not-retained-in-selected-caches"
+            },
+            {
+              "code": "mode-entry-and-detach-lifecycle-required"
+            }
+          ]
+        }
+      ],
+      "pureSwitchCandidateIDs": [
+        "enemy_10105_mjcdol_2|CAB-f7d0767dfe76da4c0a422da445f8800f:8685200798056086982:30",
+        "enemy_10105_mjcdol|CAB-f7d0767dfe76da4c0a422da445f8800f:-4519548345935207114:9",
+        "enemy_7028_xbscp_2|CAB-ce545482313ddad0252173b3b1f77860:-2621609097606744676:14",
+        "enemy_7028_xbscp|CAB-ee7bd8607f59a8a95519a8e0801daa80:2363243709309011540:29"
+      ],
+      "singleCapabilityCandidateIDs": [
+        "enemy_10105_mjcdol_2|CAB-f7d0767dfe76da4c0a422da445f8800f:8685200798056086982:30",
+        "enemy_10105_mjcdol|CAB-f7d0767dfe76da4c0a422da445f8800f:-4519548345935207114:9"
+      ],
+      "family": "mode-provider-lifecycle",
+      "label": "模式挂载能力的进入与退出生命周期",
+      "priority": "remaining-shared-capability",
+      "candidateTable": "work\\enemy-mode-auto-trigger-candidates.json",
+      "sourceReport": "work\\external-combat-import-report.json",
+      "scope": "mode-transition-only",
+      "existingContractScope": "Complete root passive Buff chains execute on blocked or HP condition edges. HP chains include all declared Buffs, attributes and output-damage listeners. Native predicates/parameters are known; namespace/target/attachment and FP tolerance use explicit inferences. Other mounted abilities, full enemy phases and original visual effects remain pending.",
+      "requiredOperators": [
+        "ability-component-event-binding",
+        "toggle-buff-lifecycle"
+      ],
+      "instruction": "复用已接provider与完整事件图，只处理本组当前拒绝原因；按共用合同一次实现，不重新研究alreadyBoundProviders，也不删除同敌人的额外动作或其他阶段缺口。",
+      "acceptance": "受影响provider的完整条件、真实目标、动作与生命周期闭合后才接入；部分条件满足不等于整敌阶段完成。"
+    },
+    {
+      "candidateIDs": [
+        "enemy_1557_trcerb|CAB-0df5f4c8c8dade07e2ee475a972da576:-5252960544006153253:24",
+        "enemy_2013_csbot|CAB-45917fb008d9d99f506436a9f5988d3d:-3249804047008976675:6",
+        "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:-6563782339632176437:11",
+        "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:374310122205602507:59",
+        "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:5561462496884482763:91",
+        "enemy_7028_xbscp_2|CAB-ce545482313ddad0252173b3b1f77860:-2621609097606744676:14",
+        "enemy_7028_xbscp|CAB-ee7bd8607f59a8a95519a8e0801daa80:2363243709309011540:29",
+        "enemy_8010_mcnist_2|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2944100607697340055:63",
+        "enemy_8010_mcnist_3|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2944100607697340055:63",
+        "enemy_8010_mcnist|CAB-eef20e46e9f0e9e38e18bc35388f76fa:-6560448296448302055:15"
+      ],
+      "affectedEnemyIDs": [
+        "enemy_1557_trcerb",
+        "enemy_2013_csbot",
+        "enemy_2089_skzjkl",
+        "enemy_7028_xbscp",
+        "enemy_7028_xbscp_2",
+        "enemy_8010_mcnist",
+        "enemy_8010_mcnist_2",
+        "enemy_8010_mcnist_3"
+      ],
+      "candidateFamilies": [
+        "blocked-toggle",
+        "hp-ratio-toggle"
+      ],
+      "rejectionCodes": [
+        "default-mode-binding-mismatch",
+        "initial-mode-not-executable",
+        "mode-actions-uncompiled",
+        "mode-index-invalid"
+      ],
+      "evidence": [
+        {
+          "candidateId": "enemy_1557_trcerb|CAB-0df5f4c8c8dade07e2ee475a972da576:-5252960544006153253:24",
+          "enemyId": "enemy_1557_trcerb",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "initial-mode-not-executable",
+              "sourcePath": "/compiled_modes",
+              "detail": "The initial/default mode and every event target must already have compiled actions."
+            },
+            {
+              "code": "default-mode-binding-mismatch",
+              "sourcePath": "/initial_mode",
+              "detail": "Use the compiled default tied to this candidate's source evidence."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_2013_csbot|CAB-45917fb008d9d99f506436a9f5988d3d:-3249804047008976675:6",
+          "enemyId": "enemy_2013_csbot",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "initial-mode-not-executable",
+              "sourcePath": "/compiled_modes",
+              "detail": "The initial/default mode and every event target must already have compiled actions."
+            },
+            {
+              "code": "default-mode-binding-mismatch",
+              "sourcePath": "/initial_mode",
+              "detail": "Use the compiled default tied to this candidate's source evidence."
+            },
+            {
+              "code": "mode-index-invalid",
+              "sourcePath": "/buffGraphs/0/default_mode",
+              "detail": "The selected mode must be a finite nonnegative integer; values are not rounded or coerced."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:-6563782339632176437:11",
+          "enemyId": "enemy_2089_skzjkl",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "initial-mode-not-executable",
+              "sourcePath": "/compiled_modes",
+              "detail": "The initial/default mode and every event target must already have compiled actions."
+            },
+            {
+              "code": "default-mode-binding-mismatch",
+              "sourcePath": "/initial_mode",
+              "detail": "Use the compiled default tied to this candidate's source evidence."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:374310122205602507:59",
+          "enemyId": "enemy_2089_skzjkl",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "initial-mode-not-executable",
+              "sourcePath": "/compiled_modes",
+              "detail": "The initial/default mode and every event target must already have compiled actions."
+            },
+            {
+              "code": "default-mode-binding-mismatch",
+              "sourcePath": "/initial_mode",
+              "detail": "Use the compiled default tied to this candidate's source evidence."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:5561462496884482763:91",
+          "enemyId": "enemy_2089_skzjkl",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "initial-mode-not-executable",
+              "sourcePath": "/compiled_modes",
+              "detail": "The initial/default mode and every event target must already have compiled actions."
+            },
+            {
+              "code": "default-mode-binding-mismatch",
+              "sourcePath": "/initial_mode",
+              "detail": "Use the compiled default tied to this candidate's source evidence."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_7028_xbscp|CAB-ee7bd8607f59a8a95519a8e0801daa80:2363243709309011540:29",
+          "enemyId": "enemy_7028_xbscp",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "initial-mode-not-executable",
+              "sourcePath": "/compiled_modes",
+              "detail": "The initial/default mode and every event target must already have compiled actions."
+            },
+            {
+              "code": "default-mode-binding-mismatch",
+              "sourcePath": "/initial_mode",
+              "detail": "Use the compiled default tied to this candidate's source evidence."
+            },
+            {
+              "code": "mode-actions-uncompiled",
+              "sourcePath": "/buffGraphs/0/blackboard/0/value",
+              "detail": "Selected mode 1 has no compiled mode actions for the bound target."
+            },
+            {
+              "code": "mode-index-invalid",
+              "sourcePath": "/buffGraphs/0/default_mode",
+              "detail": "The selected mode must be a finite nonnegative integer; values are not rounded or coerced."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_7028_xbscp_2|CAB-ce545482313ddad0252173b3b1f77860:-2621609097606744676:14",
+          "enemyId": "enemy_7028_xbscp_2",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "initial-mode-not-executable",
+              "sourcePath": "/compiled_modes",
+              "detail": "The initial/default mode and every event target must already have compiled actions."
+            },
+            {
+              "code": "default-mode-binding-mismatch",
+              "sourcePath": "/initial_mode",
+              "detail": "Use the compiled default tied to this candidate's source evidence."
+            },
+            {
+              "code": "mode-actions-uncompiled",
+              "sourcePath": "/buffGraphs/0/blackboard/0/value",
+              "detail": "Selected mode 1 has no compiled mode actions for the bound target."
+            },
+            {
+              "code": "mode-index-invalid",
+              "sourcePath": "/buffGraphs/0/default_mode",
+              "detail": "The selected mode must be a finite nonnegative integer; values are not rounded or coerced."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_8010_mcnist|CAB-eef20e46e9f0e9e38e18bc35388f76fa:-6560448296448302055:15",
+          "enemyId": "enemy_8010_mcnist",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "initial-mode-not-executable",
+              "sourcePath": "/compiled_modes",
+              "detail": "The initial/default mode and every event target must already have compiled actions."
+            },
+            {
+              "code": "default-mode-binding-mismatch",
+              "sourcePath": "/initial_mode",
+              "detail": "Use the compiled default tied to this candidate's source evidence."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_8010_mcnist_2|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2944100607697340055:63",
+          "enemyId": "enemy_8010_mcnist_2",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "initial-mode-not-executable",
+              "sourcePath": "/compiled_modes",
+              "detail": "The initial/default mode and every event target must already have compiled actions."
+            },
+            {
+              "code": "default-mode-binding-mismatch",
+              "sourcePath": "/initial_mode",
+              "detail": "Use the compiled default tied to this candidate's source evidence."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_8010_mcnist_3|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2944100607697340055:63",
+          "enemyId": "enemy_8010_mcnist_3",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "initial-mode-not-executable",
+              "sourcePath": "/compiled_modes",
+              "detail": "The initial/default mode and every event target must already have compiled actions."
+            },
+            {
+              "code": "default-mode-binding-mismatch",
+              "sourcePath": "/initial_mode",
+              "detail": "Use the compiled default tied to this candidate's source evidence."
+            }
+          ]
+        }
+      ],
+      "pureSwitchCandidateIDs": [
+        "enemy_2013_csbot|CAB-45917fb008d9d99f506436a9f5988d3d:-3249804047008976675:6",
+        "enemy_7028_xbscp_2|CAB-ce545482313ddad0252173b3b1f77860:-2621609097606744676:14",
+        "enemy_7028_xbscp|CAB-ee7bd8607f59a8a95519a8e0801daa80:2363243709309011540:29"
+      ],
+      "singleCapabilityCandidateIDs": [
+        "enemy_2013_csbot|CAB-45917fb008d9d99f506436a9f5988d3d:-3249804047008976675:6"
+      ],
+      "family": "mode-action-coverage",
+      "label": "目标模式与默认模式的完整动作",
+      "priority": "remaining-shared-capability",
+      "candidateTable": "work\\enemy-mode-auto-trigger-candidates.json",
+      "sourceReport": "work\\external-combat-import-report.json",
+      "scope": "mode-transition-only",
+      "existingContractScope": "Complete root passive Buff chains execute on blocked or HP condition edges. HP chains include all declared Buffs, attributes and output-damage listeners. Native predicates/parameters are known; namespace/target/attachment and FP tolerance use explicit inferences. Other mounted abilities, full enemy phases and original visual effects remain pending.",
+      "requiredOperators": [
+        "compile-mode-channel",
+        "switch-mode"
+      ],
+      "instruction": "复用已接provider与完整事件图，只处理本组当前拒绝原因；按共用合同一次实现，不重新研究alreadyBoundProviders，也不删除同敌人的额外动作或其他阶段缺口。",
+      "acceptance": "受影响provider的完整条件、真实目标、动作与生命周期闭合后才接入；部分条件满足不等于整敌阶段完成。"
+    },
+    {
+      "candidateIDs": [
+        "enemy_1171_durokt_2|CAB-ebed69ff29aa63f68ff7b17160b28187:7462781506622874217:22",
+        "enemy_1171_durokt|CAB-ebed69ff29aa63f68ff7b17160b28187:-4909300095043148276:7",
+        "enemy_1218_bomscr_2|CAB-d5c3740664210131f56a568859981fef:6967216581211523393:14",
+        "enemy_1218_bomscr|CAB-d5c3740664210131f56a568859981fef:173117316619717052:6",
+        "enemy_1557_trcerb|CAB-0df5f4c8c8dade07e2ee475a972da576:-5252960544006153253:24",
+        "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:-407403414089153845:18",
+        "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:-4611716710902906165:10",
+        "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:3796875613975691979:28",
+        "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:8238689261767836363:42",
+        "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:8051568033542384596:26",
+        "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:-6563782339632176437:11",
+        "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:374310122205602507:59",
+        "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:5561462496884482763:91",
+        "enemy_7028_xbscp_2|CAB-ce545482313ddad0252173b3b1f77860:-2621609097606744676:14",
+        "enemy_7028_xbscp|CAB-ee7bd8607f59a8a95519a8e0801daa80:2363243709309011540:29",
+        "enemy_8010_mcnist_2|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2944100607697340055:63",
+        "enemy_8010_mcnist_3|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2944100607697340055:63",
+        "enemy_8010_mcnist|CAB-eef20e46e9f0e9e38e18bc35388f76fa:-6560448296448302055:15"
+      ],
+      "affectedEnemyIDs": [
+        "enemy_1171_durokt",
+        "enemy_1171_durokt_2",
+        "enemy_1218_bomscr",
+        "enemy_1218_bomscr_2",
+        "enemy_1557_trcerb",
+        "enemy_1580_mnchrn",
+        "enemy_2025_syufo",
+        "enemy_2089_skzjkl",
+        "enemy_7028_xbscp",
+        "enemy_7028_xbscp_2",
+        "enemy_8010_mcnist",
+        "enemy_8010_mcnist_2",
+        "enemy_8010_mcnist_3"
+      ],
+      "candidateFamilies": [
+        "blocked-toggle",
+        "hp-ratio-toggle",
+        "mode-passive"
+      ],
+      "rejectionCodes": [
+        "additional-buff-event-lifecycle:ON_BUFF_DISABLE",
+        "buff-lifecycle-or-side-effect-unsupported",
+        "event-unsupported"
+      ],
+      "evidence": [
+        {
+          "candidateId": "enemy_1218_bomscr|CAB-d5c3740664210131f56a568859981fef:173117316619717052:6",
+          "enemyId": "enemy_1218_bomscr",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "buff-lifecycle-or-side-effect-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/triggerLifeType",
+              "detail": "This batch requires 0"
+            },
+            {
+              "code": "buff-lifecycle-or-side-effect-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/triggerInterval",
+              "detail": "This batch requires -1.0"
+            },
+            {
+              "code": "buff-lifecycle-or-side-effect-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/waitFirstTriggerInterval",
+              "detail": "This batch requires 1"
+            },
+            {
+              "code": "event-unsupported",
+              "sourcePath": "/buffGraphs/0/payload/eventToActions/ON_BUFF_TRIGGER",
+              "detail": "This nonempty event has no explicitly accepted consumer."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_1218_bomscr_2|CAB-d5c3740664210131f56a568859981fef:6967216581211523393:14",
+          "enemyId": "enemy_1218_bomscr_2",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "buff-lifecycle-or-side-effect-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/triggerLifeType",
+              "detail": "This batch requires 0"
+            },
+            {
+              "code": "buff-lifecycle-or-side-effect-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/triggerInterval",
+              "detail": "This batch requires -1.0"
+            },
+            {
+              "code": "buff-lifecycle-or-side-effect-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/waitFirstTriggerInterval",
+              "detail": "This batch requires 1"
+            },
+            {
+              "code": "event-unsupported",
+              "sourcePath": "/buffGraphs/0/payload/eventToActions/ON_BUFF_TRIGGER",
+              "detail": "This nonempty event has no explicitly accepted consumer."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_1557_trcerb|CAB-0df5f4c8c8dade07e2ee475a972da576:-5252960544006153253:24",
+          "enemyId": "enemy_1557_trcerb",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "buff-lifecycle-or-side-effect-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/lifeTimeType",
+              "detail": "This batch requires 2"
+            },
+            {
+              "code": "buff-lifecycle-or-side-effect-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/durationKey",
+              "detail": "This batch requires ''"
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:-407403414089153845:18",
+          "enemyId": "enemy_1580_mnchrn",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "buff-lifecycle-or-side-effect-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/durationKey",
+              "detail": "This batch requires ''"
+            },
+            {
+              "code": "buff-lifecycle-or-side-effect-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/triggerLifeType",
+              "detail": "This batch requires 0"
+            },
+            {
+              "code": "buff-lifecycle-or-side-effect-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/triggerCnt",
+              "detail": "This batch requires 0"
+            },
+            {
+              "code": "event-unsupported",
+              "sourcePath": "/buffGraphs/0/payload/eventToActions/ON_BUFF_TRIGGER",
+              "detail": "This nonempty event has no explicitly accepted consumer."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:-4611716710902906165:10",
+          "enemyId": "enemy_1580_mnchrn",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "buff-lifecycle-or-side-effect-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/durationKey",
+              "detail": "This batch requires ''"
+            },
+            {
+              "code": "buff-lifecycle-or-side-effect-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/triggerLifeType",
+              "detail": "This batch requires 0"
+            },
+            {
+              "code": "buff-lifecycle-or-side-effect-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/waitFirstTriggerInterval",
+              "detail": "This batch requires 1"
+            },
+            {
+              "code": "event-unsupported",
+              "sourcePath": "/buffGraphs/0/payload/eventToActions/ON_BUFF_TRIGGER",
+              "detail": "This nonempty event has no explicitly accepted consumer."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:3796875613975691979:28",
+          "enemyId": "enemy_1580_mnchrn",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "buff-lifecycle-or-side-effect-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/lifeTimeType",
+              "detail": "This batch requires 2"
+            },
+            {
+              "code": "buff-lifecycle-or-side-effect-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/durationKey",
+              "detail": "This batch requires ''"
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:8238689261767836363:42",
+          "enemyId": "enemy_1580_mnchrn",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "buff-lifecycle-or-side-effect-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/durationKey",
+              "detail": "This batch requires ''"
+            },
+            {
+              "code": "buff-lifecycle-or-side-effect-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/triggerLifeType",
+              "detail": "This batch requires 0"
+            },
+            {
+              "code": "buff-lifecycle-or-side-effect-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/triggerCnt",
+              "detail": "This batch requires 0"
+            },
+            {
+              "code": "event-unsupported",
+              "sourcePath": "/buffGraphs/0/payload/eventToActions/ON_BUFF_TRIGGER",
+              "detail": "This nonempty event has no explicitly accepted consumer."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:-6563782339632176437:11",
+          "enemyId": "enemy_2089_skzjkl",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "buff-lifecycle-or-side-effect-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/lifeTimeType",
+              "detail": "This batch requires 2"
+            },
+            {
+              "code": "buff-lifecycle-or-side-effect-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/durationKey",
+              "detail": "This batch requires ''"
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:374310122205602507:59",
+          "enemyId": "enemy_2089_skzjkl",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "buff-lifecycle-or-side-effect-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/lifeTimeType",
+              "detail": "This batch requires 2"
+            },
+            {
+              "code": "buff-lifecycle-or-side-effect-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/durationKey",
+              "detail": "This batch requires ''"
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:5561462496884482763:91",
+          "enemyId": "enemy_2089_skzjkl",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "buff-lifecycle-or-side-effect-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/lifeTimeType",
+              "detail": "This batch requires 2"
+            },
+            {
+              "code": "buff-lifecycle-or-side-effect-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/durationKey",
+              "detail": "This batch requires ''"
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_7028_xbscp|CAB-ee7bd8607f59a8a95519a8e0801daa80:2363243709309011540:29",
+          "enemyId": "enemy_7028_xbscp",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "buff-lifecycle-or-side-effect-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/durationKey",
+              "detail": "This batch requires ''"
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_7028_xbscp_2|CAB-ce545482313ddad0252173b3b1f77860:-2621609097606744676:14",
+          "enemyId": "enemy_7028_xbscp_2",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "buff-lifecycle-or-side-effect-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/durationKey",
+              "detail": "This batch requires ''"
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_8010_mcnist|CAB-eef20e46e9f0e9e38e18bc35388f76fa:-6560448296448302055:15",
+          "enemyId": "enemy_8010_mcnist",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "buff-lifecycle-or-side-effect-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/durationKey",
+              "detail": "This batch requires ''"
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_8010_mcnist_2|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2944100607697340055:63",
+          "enemyId": "enemy_8010_mcnist_2",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "buff-lifecycle-or-side-effect-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/durationKey",
+              "detail": "This batch requires ''"
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_8010_mcnist_3|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2944100607697340055:63",
+          "enemyId": "enemy_8010_mcnist_3",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "buff-lifecycle-or-side-effect-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/durationKey",
+              "detail": "This batch requires ''"
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_1171_durokt|CAB-ebed69ff29aa63f68ff7b17160b28187:-4909300095043148276:7",
+          "enemyId": "enemy_1171_durokt",
+          "source": "saved-candidate-table",
+          "reasons": [
+            {
+              "code": "additional-buff-event-lifecycle:ON_BUFF_DISABLE"
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_1171_durokt_2|CAB-ebed69ff29aa63f68ff7b17160b28187:7462781506622874217:22",
+          "enemyId": "enemy_1171_durokt_2",
+          "source": "saved-candidate-table",
+          "reasons": [
+            {
+              "code": "additional-buff-event-lifecycle:ON_BUFF_DISABLE"
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:8051568033542384596:26",
+          "enemyId": "enemy_2025_syufo",
+          "source": "saved-candidate-table",
+          "reasons": [
+            {
+              "code": "additional-buff-event-lifecycle:ON_BUFF_DISABLE"
+            }
+          ]
+        }
+      ],
+      "pureSwitchCandidateIDs": [
+        "enemy_7028_xbscp_2|CAB-ce545482313ddad0252173b3b1f77860:-2621609097606744676:14",
+        "enemy_7028_xbscp|CAB-ee7bd8607f59a8a95519a8e0801daa80:2363243709309011540:29"
+      ],
+      "singleCapabilityCandidateIDs": [],
+      "family": "buff-event-lifecycle",
+      "label": "Buff周期、计次与事件生命周期",
+      "priority": "remaining-shared-capability",
+      "candidateTable": "work\\enemy-mode-auto-trigger-candidates.json",
+      "sourceReport": "work\\external-combat-import-report.json",
+      "scope": "mode-transition-only",
+      "existingContractScope": "Complete root passive Buff chains execute on blocked or HP condition edges. HP chains include all declared Buffs, attributes and output-damage listeners. Native predicates/parameters are known; namespace/target/attachment and FP tolerance use explicit inferences. Other mounted abilities, full enemy phases and original visual effects remain pending.",
+      "requiredOperators": [
+        "toggle-buff-lifecycle",
+        "buff-template-dispatch",
+        "dispatch-ability-lifecycle-event"
+      ],
+      "instruction": "复用已接provider与完整事件图，只处理本组当前拒绝原因；按共用合同一次实现，不重新研究alreadyBoundProviders，也不删除同敌人的额外动作或其他阶段缺口。",
+      "acceptance": "受影响provider的完整条件、真实目标、动作与生命周期闭合后才接入；部分条件满足不等于整敌阶段完成。"
+    },
+    {
+      "candidateIDs": [
+        "enemy_1171_durokt_2|CAB-ebed69ff29aa63f68ff7b17160b28187:7462781506622874217:22",
+        "enemy_1171_durokt|CAB-ebed69ff29aa63f68ff7b17160b28187:-4909300095043148276:7",
+        "enemy_1557_trcerb|CAB-0df5f4c8c8dade07e2ee475a972da576:-5252960544006153253:24",
+        "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:-4611716710902906165:10",
+        "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:3796875613975691979:28",
+        "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:8051568033542384596:26",
+        "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:-6563782339632176437:11",
+        "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:374310122205602507:59",
+        "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:5561462496884482763:91",
+        "enemy_8010_mcnist_2|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2944100607697340055:63",
+        "enemy_8010_mcnist_3|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2944100607697340055:63",
+        "enemy_8010_mcnist|CAB-eef20e46e9f0e9e38e18bc35388f76fa:-6560448296448302055:15"
+      ],
+      "affectedEnemyIDs": [
+        "enemy_1171_durokt",
+        "enemy_1171_durokt_2",
+        "enemy_1557_trcerb",
+        "enemy_1580_mnchrn",
+        "enemy_2025_syufo",
+        "enemy_2089_skzjkl",
+        "enemy_8010_mcnist",
+        "enemy_8010_mcnist_2",
+        "enemy_8010_mcnist_3"
+      ],
+      "candidateFamilies": [
+        "blocked-toggle",
+        "hp-ratio-toggle",
+        "mode-passive"
+      ],
+      "rejectionCodes": [
+        "action-unsupported",
+        "extra-actions-require-full-shared-operators",
+        "graph-not-direct-switch-action-lists"
+      ],
+      "evidence": [
+        {
+          "candidateId": "enemy_1557_trcerb|CAB-0df5f4c8c8dade07e2ee475a972da576:-5252960544006153253:24",
+          "enemyId": "enemy_1557_trcerb",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "action-unsupported",
+              "sourcePath": "/buffGraphs/0/eventToActions/ON_BUFF_START/0",
+              "detail": "Every node must be SwitchMode; unknown siblings or wrappers cannot be partially executed."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:-4611716710902906165:10",
+          "enemyId": "enemy_1580_mnchrn",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "action-unsupported",
+              "sourcePath": "/buffGraphs/0/payload/eventToActions/ON_BUFF_START/0",
+              "detail": "Every node must be SwitchMode; unknown siblings or wrappers cannot be partially executed."
+            },
+            {
+              "code": "action-unsupported",
+              "sourcePath": "/buffGraphs/0/payload/eventToActions/ON_BUFF_START/1",
+              "detail": "Every node must be SwitchMode; unknown siblings or wrappers cannot be partially executed."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:3796875613975691979:28",
+          "enemyId": "enemy_1580_mnchrn",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "action-unsupported",
+              "sourcePath": "/buffGraphs/0/payload/eventToActions/ON_BUFF_START/0",
+              "detail": "Every node must be SwitchMode; unknown siblings or wrappers cannot be partially executed."
+            },
+            {
+              "code": "action-unsupported",
+              "sourcePath": "/buffGraphs/0/payload/eventToActions/ON_BUFF_START/1",
+              "detail": "Every node must be SwitchMode; unknown siblings or wrappers cannot be partially executed."
+            },
+            {
+              "code": "action-unsupported",
+              "sourcePath": "/buffGraphs/0/payload/eventToActions/ON_BUFF_START/2",
+              "detail": "Every node must be SwitchMode; unknown siblings or wrappers cannot be partially executed."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:-6563782339632176437:11",
+          "enemyId": "enemy_2089_skzjkl",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "action-unsupported",
+              "sourcePath": "/buffGraphs/0/eventToActions/ON_BUFF_START/0",
+              "detail": "Every node must be SwitchMode; unknown siblings or wrappers cannot be partially executed."
+            },
+            {
+              "code": "action-unsupported",
+              "sourcePath": "/buffGraphs/0/eventToActions/ON_BUFF_START/1",
+              "detail": "Every node must be SwitchMode; unknown siblings or wrappers cannot be partially executed."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:374310122205602507:59",
+          "enemyId": "enemy_2089_skzjkl",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "action-unsupported",
+              "sourcePath": "/buffGraphs/0/eventToActions/ON_BUFF_START/0",
+              "detail": "Every node must be SwitchMode; unknown siblings or wrappers cannot be partially executed."
+            },
+            {
+              "code": "action-unsupported",
+              "sourcePath": "/buffGraphs/0/eventToActions/ON_BUFF_START/1",
+              "detail": "Every node must be SwitchMode; unknown siblings or wrappers cannot be partially executed."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:5561462496884482763:91",
+          "enemyId": "enemy_2089_skzjkl",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "action-unsupported",
+              "sourcePath": "/buffGraphs/0/eventToActions/ON_BUFF_START/0",
+              "detail": "Every node must be SwitchMode; unknown siblings or wrappers cannot be partially executed."
+            },
+            {
+              "code": "action-unsupported",
+              "sourcePath": "/buffGraphs/0/eventToActions/ON_BUFF_START/1",
+              "detail": "Every node must be SwitchMode; unknown siblings or wrappers cannot be partially executed."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_8010_mcnist|CAB-eef20e46e9f0e9e38e18bc35388f76fa:-6560448296448302055:15",
+          "enemyId": "enemy_8010_mcnist",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "action-unsupported",
+              "sourcePath": "/buffGraphs/0/eventToActions/ON_BUFF_START/0",
+              "detail": "Every node must be SwitchMode; unknown siblings or wrappers cannot be partially executed."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_8010_mcnist_2|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2944100607697340055:63",
+          "enemyId": "enemy_8010_mcnist_2",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "action-unsupported",
+              "sourcePath": "/buffGraphs/0/eventToActions/ON_BUFF_START/0",
+              "detail": "Every node must be SwitchMode; unknown siblings or wrappers cannot be partially executed."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_8010_mcnist_3|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2944100607697340055:63",
+          "enemyId": "enemy_8010_mcnist_3",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "action-unsupported",
+              "sourcePath": "/buffGraphs/0/eventToActions/ON_BUFF_START/0",
+              "detail": "Every node must be SwitchMode; unknown siblings or wrappers cannot be partially executed."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_1171_durokt|CAB-ebed69ff29aa63f68ff7b17160b28187:-4909300095043148276:7",
+          "enemyId": "enemy_1171_durokt",
+          "source": "saved-candidate-table",
+          "reasons": [
+            {
+              "code": "extra-actions-require-full-shared-operators"
+            },
+            {
+              "code": "graph-not-direct-switch-action-lists"
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_1171_durokt_2|CAB-ebed69ff29aa63f68ff7b17160b28187:7462781506622874217:22",
+          "enemyId": "enemy_1171_durokt_2",
+          "source": "saved-candidate-table",
+          "reasons": [
+            {
+              "code": "extra-actions-require-full-shared-operators"
+            },
+            {
+              "code": "graph-not-direct-switch-action-lists"
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:8051568033542384596:26",
+          "enemyId": "enemy_2025_syufo",
+          "source": "saved-candidate-table",
+          "reasons": [
+            {
+              "code": "extra-actions-require-full-shared-operators"
+            },
+            {
+              "code": "graph-not-direct-switch-action-lists"
+            }
+          ]
+        }
+      ],
+      "pureSwitchCandidateIDs": [],
+      "singleCapabilityCandidateIDs": [],
+      "family": "complete-buff-actions",
+      "label": "Buff完整动作序列与嵌套动作",
+      "priority": "remaining-shared-capability",
+      "candidateTable": "work\\enemy-mode-auto-trigger-candidates.json",
+      "sourceReport": "work\\external-combat-import-report.json",
+      "scope": "mode-transition-only",
+      "existingContractScope": "Complete root passive Buff chains execute on blocked or HP condition edges. HP chains include all declared Buffs, attributes and output-damage listeners. Native predicates/parameters are known; namespace/target/attachment and FP tolerance use explicit inferences. Other mounted abilities, full enemy phases and original visual effects remain pending.",
+      "requiredOperators": [
+        "action-sequence-dispatch",
+        "buff-template-dispatch"
+      ],
+      "instruction": "复用已接provider与完整事件图，只处理本组当前拒绝原因；按共用合同一次实现，不重新研究alreadyBoundProviders，也不删除同敌人的额外动作或其他阶段缺口。",
+      "acceptance": "受影响provider的完整条件、真实目标、动作与生命周期闭合后才接入；部分条件满足不等于整敌阶段完成。"
+    },
+    {
+      "candidateIDs": [
+        "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:-4611716710902906165:10"
+      ],
+      "affectedEnemyIDs": [
+        "enemy_1580_mnchrn"
+      ],
+      "candidateFamilies": [
+        "blocked-toggle"
+      ],
+      "rejectionCodes": [
+        "buff-attributes-unsupported"
+      ],
+      "evidence": [
+        {
+          "candidateId": "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:-4611716710902906165:10",
+          "enemyId": "enemy_1580_mnchrn",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "buff-attributes-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/attributes",
+              "detail": "Unknown or unconsumed attribute effects cannot be silently discarded."
+            }
+          ]
+        }
+      ],
+      "pureSwitchCandidateIDs": [],
+      "singleCapabilityCandidateIDs": [],
+      "family": "buff-attribute-effects",
+      "label": "Buff属性与副作用",
+      "priority": "remaining-shared-capability",
+      "candidateTable": "work\\enemy-mode-auto-trigger-candidates.json",
+      "sourceReport": "work\\external-combat-import-report.json",
+      "scope": "mode-transition-only",
+      "existingContractScope": "Complete root passive Buff chains execute on blocked or HP condition edges. HP chains include all declared Buffs, attributes and output-damage listeners. Native predicates/parameters are known; namespace/target/attachment and FP tolerance use explicit inferences. Other mounted abilities, full enemy phases and original visual effects remain pending.",
+      "requiredOperators": [
+        "buff-template-dispatch"
+      ],
+      "instruction": "复用已接provider与完整事件图，只处理本组当前拒绝原因；按共用合同一次实现，不重新研究alreadyBoundProviders，也不删除同敌人的额外动作或其他阶段缺口。",
+      "acceptance": "受影响provider的完整条件、真实目标、动作与生命周期闭合后才接入；部分条件满足不等于整敌阶段完成。"
+    },
+    {
+      "candidateIDs": [
+        "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:-407403414089153845:18",
+        "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:-4611716710902906165:10",
+        "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:8238689261767836363:42"
+      ],
+      "affectedEnemyIDs": [
+        "enemy_1580_mnchrn"
+      ],
+      "candidateFamilies": [
+        "blocked-toggle"
+      ],
+      "rejectionCodes": [
+        "checker-predicate-unsupported"
+      ],
+      "evidence": [
+        {
+          "candidateId": "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:-407403414089153845:18",
+          "enemyId": "enemy_1580_mnchrn",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "checker-predicate-unsupported",
+              "sourcePath": "/condition/checker",
+              "detail": "This runtime batch consumes the source 1/-1 blocked predicate only."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:-4611716710902906165:10",
+          "enemyId": "enemy_1580_mnchrn",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "checker-predicate-unsupported",
+              "sourcePath": "/condition/checker",
+              "detail": "This runtime batch consumes the source 1/-1 blocked predicate only."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:8238689261767836363:42",
+          "enemyId": "enemy_1580_mnchrn",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "checker-predicate-unsupported",
+              "sourcePath": "/condition/checker",
+              "detail": "This runtime batch consumes the source 1/-1 blocked predicate only."
+            }
+          ]
+        }
+      ],
+      "pureSwitchCandidateIDs": [],
+      "singleCapabilityCandidateIDs": [],
+      "family": "shared-condition-boundaries",
+      "label": "共用条件的边界与恢复状态",
+      "priority": "remaining-shared-capability",
+      "candidateTable": "work\\enemy-mode-auto-trigger-candidates.json",
+      "sourceReport": "work\\external-combat-import-report.json",
+      "scope": "mode-transition-only",
+      "existingContractScope": "Complete root passive Buff chains execute on blocked or HP condition edges. HP chains include all declared Buffs, attributes and output-damage listeners. Native predicates/parameters are known; namespace/target/attachment and FP tolerance use explicit inferences. Other mounted abilities, full enemy phases and original visual effects remain pending.",
+      "requiredOperators": [
+        "hp-ratio-checker",
+        "blocked-state-checker"
+      ],
+      "instruction": "复用已接provider与完整事件图，只处理本组当前拒绝原因；按共用合同一次实现，不重新研究alreadyBoundProviders，也不删除同敌人的额外动作或其他阶段缺口。",
+      "acceptance": "受影响provider的完整条件、真实目标、动作与生命周期闭合后才接入；部分条件满足不等于整敌阶段完成。"
+    },
+    {
+      "candidateIDs": [
+        "enemy_1557_trcerb|CAB-0df5f4c8c8dade07e2ee475a972da576:-5252960544006153253:24",
+        "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:-6563782339632176437:11",
+        "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:374310122205602507:59",
+        "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:5561462496884482763:91",
+        "enemy_7028_xbscp_2|CAB-ce545482313ddad0252173b3b1f77860:-2621609097606744676:14",
+        "enemy_7028_xbscp|CAB-ee7bd8607f59a8a95519a8e0801daa80:2363243709309011540:29",
+        "enemy_8010_mcnist_2|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2944100607697340055:63",
+        "enemy_8010_mcnist_3|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2944100607697340055:63",
+        "enemy_8010_mcnist|CAB-eef20e46e9f0e9e38e18bc35388f76fa:-6560448296448302055:15"
+      ],
+      "affectedEnemyIDs": [
+        "enemy_1557_trcerb",
+        "enemy_2089_skzjkl",
+        "enemy_7028_xbscp",
+        "enemy_7028_xbscp_2",
+        "enemy_8010_mcnist",
+        "enemy_8010_mcnist_2",
+        "enemy_8010_mcnist_3"
+      ],
+      "candidateFamilies": [
+        "hp-ratio-toggle"
+      ],
+      "rejectionCodes": [
+        "abnormal-attributes-unsupported",
+        "buff-declaration-mismatch",
+        "extra-toggle-buff-lifecycle",
+        "hp-blackboard-key-ambiguous",
+        "hp-blackboard-source-required",
+        "hp-buff-set-incomplete",
+        "hp-carrier-blackboard-namespace-unresolved",
+        "hp-once-latch-runtime-unsupported",
+        "mode-scoped-hp-lifecycle-unsupported",
+        "supported-modes-invalid"
+      ],
+      "evidence": [
+        {
+          "candidateId": "enemy_1557_trcerb|CAB-0df5f4c8c8dade07e2ee475a972da576:-5252960544006153253:24",
+          "enemyId": "enemy_1557_trcerb",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "hp-blackboard-source-required",
+              "sourcePath": "/source_blackboard",
+              "detail": "Pass the selected enemy's inherited talent blackboard."
+            },
+            {
+              "code": "hp-carrier-blackboard-namespace-unresolved",
+              "sourcePath": "/ownership/sameGameObjectRootSharedTalents",
+              "detail": "Resolve the carrier's explicit talent key or same-GameObject name to exactly one existing source namespace."
+            },
+            {
+              "code": "supported-modes-invalid",
+              "sourcePath": "/buffGraphs/0/supported_modes",
+              "detail": "Supply a nonempty collection of nonnegative integer mode indices."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:-6563782339632176437:11",
+          "enemyId": "enemy_2089_skzjkl",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "extra-toggle-buff-lifecycle",
+              "sourcePath": "/ability/fields",
+              "detail": "The complete on/off/unmanaged Buff sets must be implemented together."
+            },
+            {
+              "code": "mode-scoped-hp-lifecycle-unsupported",
+              "sourcePath": "/ownership/modeIndices",
+              "detail": "Mode-entry/exit and restart contracts are separate from the root HP provider."
+            },
+            {
+              "code": "hp-once-latch-runtime-unsupported",
+              "sourcePath": "/condition/toggleOnce",
+              "detail": "One-shot state changes require a separate retained latch contract."
+            },
+            {
+              "code": "hp-buff-set-incomplete",
+              "sourcePath": "/buffGraphs",
+              "detail": "Every managed Buff declaration must have its complete bound graph."
+            },
+            {
+              "code": "buff-declaration-mismatch",
+              "sourcePath": "/buffGraphs/0",
+              "detail": "The complete graph declaration must match its original managed Buff and source order."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:374310122205602507:59",
+          "enemyId": "enemy_2089_skzjkl",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "extra-toggle-buff-lifecycle",
+              "sourcePath": "/ability/fields",
+              "detail": "The complete on/off/unmanaged Buff sets must be implemented together."
+            },
+            {
+              "code": "mode-scoped-hp-lifecycle-unsupported",
+              "sourcePath": "/ownership/modeIndices",
+              "detail": "Mode-entry/exit and restart contracts are separate from the root HP provider."
+            },
+            {
+              "code": "hp-once-latch-runtime-unsupported",
+              "sourcePath": "/condition/toggleOnce",
+              "detail": "One-shot state changes require a separate retained latch contract."
+            },
+            {
+              "code": "hp-buff-set-incomplete",
+              "sourcePath": "/buffGraphs",
+              "detail": "Every managed Buff declaration must have its complete bound graph."
+            },
+            {
+              "code": "buff-declaration-mismatch",
+              "sourcePath": "/buffGraphs/0",
+              "detail": "The complete graph declaration must match its original managed Buff and source order."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:5561462496884482763:91",
+          "enemyId": "enemy_2089_skzjkl",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "extra-toggle-buff-lifecycle",
+              "sourcePath": "/ability/fields",
+              "detail": "The complete on/off/unmanaged Buff sets must be implemented together."
+            },
+            {
+              "code": "mode-scoped-hp-lifecycle-unsupported",
+              "sourcePath": "/ownership/modeIndices",
+              "detail": "Mode-entry/exit and restart contracts are separate from the root HP provider."
+            },
+            {
+              "code": "hp-once-latch-runtime-unsupported",
+              "sourcePath": "/condition/toggleOnce",
+              "detail": "One-shot state changes require a separate retained latch contract."
+            },
+            {
+              "code": "hp-buff-set-incomplete",
+              "sourcePath": "/buffGraphs",
+              "detail": "Every managed Buff declaration must have its complete bound graph."
+            },
+            {
+              "code": "buff-declaration-mismatch",
+              "sourcePath": "/buffGraphs/0",
+              "detail": "The complete graph declaration must match its original managed Buff and source order."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_7028_xbscp|CAB-ee7bd8607f59a8a95519a8e0801daa80:2363243709309011540:29",
+          "enemyId": "enemy_7028_xbscp",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "mode-scoped-hp-lifecycle-unsupported",
+              "sourcePath": "/ownership/modeIndices",
+              "detail": "Mode-entry/exit and restart contracts are separate from the root HP provider."
+            },
+            {
+              "code": "hp-carrier-blackboard-namespace-unresolved",
+              "sourcePath": "/ownership/sameGameObjectRootSharedTalents",
+              "detail": "Resolve the carrier's explicit talent key or same-GameObject name to exactly one existing source namespace."
+            },
+            {
+              "code": "supported-modes-invalid",
+              "sourcePath": "/buffGraphs/0/supported_modes",
+              "detail": "Supply a nonempty collection of nonnegative integer mode indices."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_7028_xbscp_2|CAB-ce545482313ddad0252173b3b1f77860:-2621609097606744676:14",
+          "enemyId": "enemy_7028_xbscp_2",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "mode-scoped-hp-lifecycle-unsupported",
+              "sourcePath": "/ownership/modeIndices",
+              "detail": "Mode-entry/exit and restart contracts are separate from the root HP provider."
+            },
+            {
+              "code": "hp-carrier-blackboard-namespace-unresolved",
+              "sourcePath": "/ownership/sameGameObjectRootSharedTalents",
+              "detail": "Resolve the carrier's explicit talent key or same-GameObject name to exactly one existing source namespace."
+            },
+            {
+              "code": "supported-modes-invalid",
+              "sourcePath": "/buffGraphs/0/supported_modes",
+              "detail": "Supply a nonempty collection of nonnegative integer mode indices."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_8010_mcnist|CAB-eef20e46e9f0e9e38e18bc35388f76fa:-6560448296448302055:15",
+          "enemyId": "enemy_8010_mcnist",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "extra-toggle-buff-lifecycle",
+              "sourcePath": "/ability/fields",
+              "detail": "The complete on/off/unmanaged Buff sets must be implemented together."
+            },
+            {
+              "code": "mode-scoped-hp-lifecycle-unsupported",
+              "sourcePath": "/ownership/modeIndices",
+              "detail": "Mode-entry/exit and restart contracts are separate from the root HP provider."
+            },
+            {
+              "code": "hp-carrier-blackboard-namespace-unresolved",
+              "sourcePath": "/ownership/sameGameObjectRootSharedTalents",
+              "detail": "Resolve the carrier's explicit talent key or same-GameObject name to exactly one existing source namespace."
+            },
+            {
+              "code": "hp-once-latch-runtime-unsupported",
+              "sourcePath": "/condition/toggleOnce",
+              "detail": "One-shot state changes require a separate retained latch contract."
+            },
+            {
+              "code": "hp-buff-set-incomplete",
+              "sourcePath": "/buffGraphs",
+              "detail": "Every managed Buff declaration must have its complete bound graph."
+            },
+            {
+              "code": "buff-declaration-mismatch",
+              "sourcePath": "/buffGraphs/0",
+              "detail": "The complete graph declaration must match its original managed Buff and source order."
+            },
+            {
+              "code": "abnormal-attributes-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/attributes",
+              "detail": "Abnormal flags need their own consumer."
+            },
+            {
+              "code": "supported-modes-invalid",
+              "sourcePath": "/buffGraphs/0/supported_modes",
+              "detail": "Supply a nonempty collection of nonnegative integer mode indices."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_8010_mcnist_2|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2944100607697340055:63",
+          "enemyId": "enemy_8010_mcnist_2",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "extra-toggle-buff-lifecycle",
+              "sourcePath": "/ability/fields",
+              "detail": "The complete on/off/unmanaged Buff sets must be implemented together."
+            },
+            {
+              "code": "mode-scoped-hp-lifecycle-unsupported",
+              "sourcePath": "/ownership/modeIndices",
+              "detail": "Mode-entry/exit and restart contracts are separate from the root HP provider."
+            },
+            {
+              "code": "hp-blackboard-key-ambiguous",
+              "sourcePath": "/source_blackboard/20",
+              "detail": "Duplicate source keys cannot be silently overwritten."
+            },
+            {
+              "code": "hp-once-latch-runtime-unsupported",
+              "sourcePath": "/condition/toggleOnce",
+              "detail": "One-shot state changes require a separate retained latch contract."
+            },
+            {
+              "code": "hp-buff-set-incomplete",
+              "sourcePath": "/buffGraphs",
+              "detail": "Every managed Buff declaration must have its complete bound graph."
+            },
+            {
+              "code": "buff-declaration-mismatch",
+              "sourcePath": "/buffGraphs/0",
+              "detail": "The complete graph declaration must match its original managed Buff and source order."
+            },
+            {
+              "code": "abnormal-attributes-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/attributes",
+              "detail": "Abnormal flags need their own consumer."
+            },
+            {
+              "code": "supported-modes-invalid",
+              "sourcePath": "/buffGraphs/0/supported_modes",
+              "detail": "Supply a nonempty collection of nonnegative integer mode indices."
+            }
+          ]
+        },
+        {
+          "candidateId": "enemy_8010_mcnist_3|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2944100607697340055:63",
+          "enemyId": "enemy_8010_mcnist_3",
+          "source": "runtime-report",
+          "reasons": [
+            {
+              "code": "extra-toggle-buff-lifecycle",
+              "sourcePath": "/ability/fields",
+              "detail": "The complete on/off/unmanaged Buff sets must be implemented together."
+            },
+            {
+              "code": "mode-scoped-hp-lifecycle-unsupported",
+              "sourcePath": "/ownership/modeIndices",
+              "detail": "Mode-entry/exit and restart contracts are separate from the root HP provider."
+            },
+            {
+              "code": "hp-once-latch-runtime-unsupported",
+              "sourcePath": "/condition/toggleOnce",
+              "detail": "One-shot state changes require a separate retained latch contract."
+            },
+            {
+              "code": "hp-buff-set-incomplete",
+              "sourcePath": "/buffGraphs",
+              "detail": "Every managed Buff declaration must have its complete bound graph."
+            },
+            {
+              "code": "buff-declaration-mismatch",
+              "sourcePath": "/buffGraphs/0",
+              "detail": "The complete graph declaration must match its original managed Buff and source order."
+            },
+            {
+              "code": "abnormal-attributes-unsupported",
+              "sourcePath": "/buffGraphs/0/fields/attributes",
+              "detail": "Abnormal flags need their own consumer."
+            },
+            {
+              "code": "supported-modes-invalid",
+              "sourcePath": "/buffGraphs/0/supported_modes",
+              "detail": "Supply a nonempty collection of nonnegative integer mode indices."
+            }
+          ]
+        }
+      ],
+      "pureSwitchCandidateIDs": [
+        "enemy_7028_xbscp_2|CAB-ce545482313ddad0252173b3b1f77860:-2621609097606744676:14",
+        "enemy_7028_xbscp|CAB-ee7bd8607f59a8a95519a8e0801daa80:2363243709309011540:29"
+      ],
+      "singleCapabilityCandidateIDs": [],
+      "family": "remaining-provider-contract",
+      "label": "尚未归并的具体Provider合同",
+      "priority": "remaining-shared-capability",
+      "candidateTable": "work\\enemy-mode-auto-trigger-candidates.json",
+      "sourceReport": "work\\external-combat-import-report.json",
+      "scope": "mode-transition-only",
+      "existingContractScope": "Complete root passive Buff chains execute on blocked or HP condition edges. HP chains include all declared Buffs, attributes and output-damage listeners. Native predicates/parameters are known; namespace/target/attachment and FP tolerance use explicit inferences. Other mounted abilities, full enemy phases and original visual effects remain pending.",
+      "requiredOperators": [],
+      "instruction": "复用已接provider与完整事件图，只处理本组当前拒绝原因；按共用合同一次实现，不重新研究alreadyBoundProviders，也不删除同敌人的额外动作或其他阶段缺口。",
+      "acceptance": "受影响provider的完整条件、真实目标、动作与生命周期闭合后才接入；部分条件满足不等于整敌阶段完成。"
+    }
+  ],
+  "skillDispatch": {
+    "rule": "selector-triggered-sp-cost-ranged-skill-v1",
+    "sourceFingerprint": "46d8f2e49f0a107dfc096467b40c2ec9a6300cdb34211670aff6435d10646fe3",
+    "sourceReport": "work/external-combat-import-report.json#skillDispatch",
+    "candidateSkillIDs": [
+      "enemy_1040_bombd|CAB-c66709e8e44223eecca4bce9fbf48f83:8530485036149232392:19",
+      "enemy_1373_ltnhor_2|CAB-a3aa7376bf9856a44c7dbcc30a30afbc:1959813430026055221:22",
+      "enemy_1373_ltnhor_2|CAB-a3aa7376bf9856a44c7dbcc30a30afbc:8977067208793140789:39",
+      "enemy_1425_lrcmra_2|CAB-f35c307a9d02cd74f087114a32f11a9d:95367100273719513:17",
+      "enemy_1425_lrcmra|CAB-f35c307a9d02cd74f087114a32f11a9d:-6380628782783410879:3",
+      "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:2910056970623200212:17"
+    ],
+    "selectedSkillIDs": [
+      "enemy_1373_ltnhor_2|CAB-a3aa7376bf9856a44c7dbcc30a30afbc:1959813430026055221:22",
+      "enemy_1373_ltnhor_2|CAB-a3aa7376bf9856a44c7dbcc30a30afbc:8977067208793140789:39"
+    ],
+    "sourceCandidateSkillIDs": [
+      "enemy_10044_wintun|CAB-9932efcd454c1307fe7ebddc8a79559b:-4456446739223598299:4",
+      "enemy_10098_crhro|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2405922354498616231:28",
+      "enemy_10099_crvln_2|CAB-eef20e46e9f0e9e38e18bc35388f76fa:-8590087389013148367:0",
+      "enemy_10099_crvln|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2388178449942571446:18",
+      "enemy_1040_bombd|CAB-c66709e8e44223eecca4bce9fbf48f83:8530485036149232392:19",
+      "enemy_1151_dslntc_2|CAB-b3d9fed720d2cf9530017b9093a8f1e4:8575288275760284399:31",
+      "enemy_1151_dslntc|CAB-b3d9fed720d2cf9530017b9093a8f1e4:4885493106612970065:28",
+      "enemy_1373_ltnhor_2|CAB-a3aa7376bf9856a44c7dbcc30a30afbc:1959813430026055221:22",
+      "enemy_1373_ltnhor_2|CAB-a3aa7376bf9856a44c7dbcc30a30afbc:8977067208793140789:39",
+      "enemy_1425_lrcmra_2|CAB-f35c307a9d02cd74f087114a32f11a9d:95367100273719513:17",
+      "enemy_1425_lrcmra|CAB-f35c307a9d02cd74f087114a32f11a9d:-6380628782783410879:3",
+      "enemy_1512_mcmstr|CAB-0df5f4c8c8dade07e2ee475a972da576:-6583151510869566880:10",
+      "enemy_1512_mcmstr|CAB-0df5f4c8c8dade07e2ee475a972da576:3561960064050666080:20",
+      "enemy_1516_jakill|CAB-0df5f4c8c8dade07e2ee475a972da576:-3090488545889101355:11",
+      "enemy_1516_jakill|CAB-0df5f4c8c8dade07e2ee475a972da576:9066948497976449493:46",
+      "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-4294630265555608891:18",
+      "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-5267374164800791867:13",
+      "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-8818478906179413307:0",
+      "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:1246068199843470021:35",
+      "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:130561785783622341:32",
+      "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:7680127453822098117:66",
+      "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:-2530988810614148662:21",
+      "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:8351245699733844426:60",
+      "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:8737699305577116106:63",
+      "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:881252940262207946:40",
+      "enemy_2004_balloon|CAB-45917fb008d9d99f506436a9f5988d3d:3219529385410557550:14",
+      "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:2910056970623200212:17"
+    ],
+    "outOfScopeSkillIDs": [
+      "enemy_10044_wintun|CAB-9932efcd454c1307fe7ebddc8a79559b:-4456446739223598299:4",
+      "enemy_10098_crhro|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2405922354498616231:28",
+      "enemy_10099_crvln_2|CAB-eef20e46e9f0e9e38e18bc35388f76fa:-8590087389013148367:0",
+      "enemy_10099_crvln|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2388178449942571446:18",
+      "enemy_1151_dslntc_2|CAB-b3d9fed720d2cf9530017b9093a8f1e4:8575288275760284399:31",
+      "enemy_1151_dslntc|CAB-b3d9fed720d2cf9530017b9093a8f1e4:4885493106612970065:28",
+      "enemy_1512_mcmstr|CAB-0df5f4c8c8dade07e2ee475a972da576:-6583151510869566880:10",
+      "enemy_1512_mcmstr|CAB-0df5f4c8c8dade07e2ee475a972da576:3561960064050666080:20",
+      "enemy_1516_jakill|CAB-0df5f4c8c8dade07e2ee475a972da576:-3090488545889101355:11",
+      "enemy_1516_jakill|CAB-0df5f4c8c8dade07e2ee475a972da576:9066948497976449493:46",
+      "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-4294630265555608891:18",
+      "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-5267374164800791867:13",
+      "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-8818478906179413307:0",
+      "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:1246068199843470021:35",
+      "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:130561785783622341:32",
+      "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:7680127453822098117:66",
+      "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:-2530988810614148662:21",
+      "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:8351245699733844426:60",
+      "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:8737699305577116106:63",
+      "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:881252940262207946:40",
+      "enemy_2004_balloon|CAB-45917fb008d9d99f506436a9f5988d3d:3219529385410557550:14"
+    ],
+    "alreadyBoundSkills": [
+      {
+        "enemyId": "enemy_1373_ltnhor_2",
+        "skillId": "enemy_1373_ltnhor_2|CAB-a3aa7376bf9856a44c7dbcc30a30afbc:1959813430026055221:22",
+        "skillKey": "attackTwoTarget_enthu",
+        "modeIndices": [
+          1
+        ],
+        "sourceRef": {
+          "cache": "work/enemy-mode-dispatch-catalog.json",
+          "enemyId": "enemy_1373_ltnhor_2",
+          "componentKey": "CAB-a3aa7376bf9856a44c7dbcc30a30afbc:1959813430026055221:22",
+          "fieldPath": "/_trigger"
+        },
+        "kind": "selector-sp-ranged",
+        "initiallyMounted": false,
+        "automaticModeTransitionComplete": false,
+        "entryStatus": "explicit-mode-only-entry-pending"
+      },
+      {
+        "enemyId": "enemy_1373_ltnhor_2",
+        "skillId": "enemy_1373_ltnhor_2|CAB-a3aa7376bf9856a44c7dbcc30a30afbc:8977067208793140789:39",
+        "skillKey": "attackTwoTarget",
+        "modeIndices": [
+          0
+        ],
+        "sourceRef": {
+          "cache": "work/enemy-mode-dispatch-catalog.json",
+          "enemyId": "enemy_1373_ltnhor_2",
+          "componentKey": "CAB-a3aa7376bf9856a44c7dbcc30a30afbc:8977067208793140789:39",
+          "fieldPath": "/_trigger"
+        },
+        "kind": "selector-sp-ranged",
+        "initiallyMounted": true,
+        "automaticModeTransitionComplete": false,
+        "entryStatus": "initial-mode-bound"
+      }
+    ],
+    "boundEntryPendingSkillIDs": [
+      "enemy_1373_ltnhor_2|CAB-a3aa7376bf9856a44c7dbcc30a30afbc:1959813430026055221:22"
+    ],
+    "selectedEnemyIDs": [
+      "enemy_1373_ltnhor_2"
+    ],
+    "pendingSkillIDs": [
+      "enemy_1040_bombd|CAB-c66709e8e44223eecca4bce9fbf48f83:8530485036149232392:19",
+      "enemy_1425_lrcmra_2|CAB-f35c307a9d02cd74f087114a32f11a9d:95367100273719513:17",
+      "enemy_1425_lrcmra|CAB-f35c307a9d02cd74f087114a32f11a9d:-6380628782783410879:3",
+      "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:2910056970623200212:17"
+    ],
+    "pendingSkillIDsByEnemy": {
+      "enemy_1040_bombd": [
+        "enemy_1040_bombd|CAB-c66709e8e44223eecca4bce9fbf48f83:8530485036149232392:19"
+      ],
+      "enemy_1425_lrcmra_2": [
+        "enemy_1425_lrcmra_2|CAB-f35c307a9d02cd74f087114a32f11a9d:95367100273719513:17"
+      ],
+      "enemy_1425_lrcmra": [
+        "enemy_1425_lrcmra|CAB-f35c307a9d02cd74f087114a32f11a9d:-6380628782783410879:3"
+      ],
+      "enemy_2025_syufo": [
+        "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:2910056970623200212:17"
+      ]
+    },
+    "pendingEnemyIDs": [
+      "enemy_1040_bombd",
+      "enemy_1425_lrcmra",
+      "enemy_1425_lrcmra_2",
+      "enemy_2025_syufo"
+    ],
+    "deferredSkillIDs": [
+      "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:2910056970623200212:17"
+    ],
+    "deferredSkillIDsByEnemy": {
+      "enemy_2025_syufo": [
+        "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:2910056970623200212:17"
+      ]
+    },
+    "deferredEnemyIDs": [
+      "enemy_2025_syufo"
+    ],
+    "environmentDeferralsBySkillID": {
+      "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:2910056970623200212:17": {
+        "sourceContract": "work/enemy-hover-contract.json",
+        "sourceFingerprint": "5f35179fd2af0a1df78760b9779fbb1c1d7b085f8036a3bda967d5c4107673e4",
+        "reason": "source-skill-data-absent",
+        "requiredMarkerKeys": [
+          "匹配的 RecoverAnim 敌人或关卡 skills 配置"
+        ],
+        "evidenceLevel": "Verified-static-unmatched-skill-disabled",
+        "kind": "source-skill-inactive"
+      }
+    },
+    "executablePendingSkillIDs": [
+      "enemy_1040_bombd|CAB-c66709e8e44223eecca4bce9fbf48f83:8530485036149232392:19",
+      "enemy_1425_lrcmra_2|CAB-f35c307a9d02cd74f087114a32f11a9d:95367100273719513:17",
+      "enemy_1425_lrcmra|CAB-f35c307a9d02cd74f087114a32f11a9d:-6380628782783410879:3"
+    ],
+    "executablePendingSkillIDsByEnemy": {
+      "enemy_1040_bombd": [
+        "enemy_1040_bombd|CAB-c66709e8e44223eecca4bce9fbf48f83:8530485036149232392:19"
+      ],
+      "enemy_1425_lrcmra_2": [
+        "enemy_1425_lrcmra_2|CAB-f35c307a9d02cd74f087114a32f11a9d:95367100273719513:17"
+      ],
+      "enemy_1425_lrcmra": [
+        "enemy_1425_lrcmra|CAB-f35c307a9d02cd74f087114a32f11a9d:-6380628782783410879:3"
+      ]
+    },
+    "executablePendingEnemyIDs": [
+      "enemy_1040_bombd",
+      "enemy_1425_lrcmra",
+      "enemy_1425_lrcmra_2"
+    ],
+    "ignoredEnvironmentContracts": [
+      {
+        "sourceContract": "work/enemy-explicit-read-contract.json",
+        "reason": "source-input-changed:web/enemy_encounters.json"
+      },
+      {
+        "sourceContract": "work/enemy-explicit-chimera-contract.json",
+        "reason": "source-input-changed:web/enemy_encounters.json"
+      }
+    ],
+    "rejectionsBySkillID": {
+      "enemy_1040_bombd|CAB-c66709e8e44223eecca4bce9fbf48f83:8530485036149232392:19": [
+        "unresolved-or-inactive-skill-owner"
+      ],
+      "enemy_1425_lrcmra|CAB-f35c307a9d02cd74f087114a32f11a9d:-6380628782783410879:3": [
+        "unsupported-trigger:NeverTrigger"
+      ],
+      "enemy_1425_lrcmra_2|CAB-f35c307a9d02cd74f087114a32f11a9d:95367100273719513:17": [
+        "unsupported-trigger:NeverTrigger"
+      ],
+      "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:2910056970623200212:17": [
+        "unsupported-trigger:AlwaysTrigger"
+      ]
+    },
+    "counts": {
+      "candidates": 6,
+      "selectedSkills": 2,
+      "boundEntryPendingSkills": 1,
+      "selectedEnemies": 1,
+      "pendingSkills": 4,
+      "pendingEnemies": 4,
+      "deferredSkills": 1,
+      "deferredEnemies": 1,
+      "executablePendingSkills": 3,
+      "executablePendingEnemies": 3,
+      "encounterSelectedEnemies": 1
+    },
+    "boundary": "Only compiled skill component IDs leave pending totals. Source-current environment-gated NeverTrigger IDs and unmatched source-disabled skills remain pending and are deferred until a real entry is present. Executable-pending means eligible for shared-contract work, not directly ready to bind. Mode activation, other skills, source operators and whole-enemy completion remain separate."
+  },
+  "periodicAbilities": {
+    "rule": "mode-periodic-buff-named-ability-complete-group-v1",
+    "sourceFingerprint": "c209f2d8b755aba00c4135c3ac93ef96c2c5644a26208690d268bbb995834f1e",
+    "sourceReport": "work/external-combat-import-report.json#periodicAbilities",
+    "sourceContract": "work\\enemy-periodic-ability-contract.json",
+    "alreadyBoundGroups": [],
+    "alreadyBoundGroupsByEnemy": {},
+    "selectedGroupIDs": [],
+    "selectedEnemyIDs": [],
+    "capabilities": {},
+    "rejectionsByEnemy": {},
+    "counts": {
+      "groups": 0,
+      "enemies": 0,
+      "encounterGroups": 0,
+      "encounterEnemies": 0,
+      "capabilityKinds": 0,
+      "capabilityBindings": 0
+    },
+    "boundary": "These are compiled complete periodic ability groups, not EnemySkill components. Reuse their stable group IDs without redispatching them; keep the 27-skill cohort, other source operators and whole-enemy gaps unchanged. Capability bindings overlap on the same enemies and are not additive enemy coverage."
+  },
+  "alreadyBoundPeriodicGroups": [],
+  "foundationPriority": {
+    "rule": "garrison-appearance-foundations-first-v2",
+    "contentSha256": "2c7e96489f50a99b5f5ae7615ca2509f672a17407731902354c0d22b93aa9c7b",
+    "receipt": "work/garrison-foundation-priority.json"
+  },
+  "foundationPriorityCacheHit": false,
+  "nextProviderCandidate": {
+    "candidateIDs": [
+      "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:8051568033542384596:26"
+    ],
+    "affectedEnemyIDs": [
+      "enemy_2025_syufo"
+    ],
+    "candidateFamilies": [
+      "blocked-toggle",
+      "hp-ratio-toggle",
+      "mode-passive"
+    ],
+    "rejectionCodes": [
+      "ability-lifecycle-unsupported",
+      "complete-ability-fields-not-retained-in-selected-caches",
+      "mode-entry-and-detach-lifecycle-required",
+      "root-shared-mount-not-closed",
+      "root-talent-ambiguous"
+    ],
+    "evidence": [
+      {
+        "candidateId": "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:8051568033542384596:26",
+        "enemyId": "enemy_2025_syufo",
+        "source": "saved-candidate-table",
+        "reasons": [
+          {
+            "code": "complete-ability-fields-not-retained-in-selected-caches"
+          },
+          {
+            "code": "mode-entry-and-detach-lifecycle-required"
+          }
+        ]
+      }
+    ],
+    "pureSwitchCandidateIDs": [],
+    "singleCapabilityCandidateIDs": [],
+    "family": "mode-provider-lifecycle",
+    "label": "模式挂载能力的进入与退出生命周期",
+    "priority": "remaining-shared-capability",
+    "candidateTable": "work\\enemy-mode-auto-trigger-candidates.json",
+    "sourceReport": "work\\external-combat-import-report.json",
+    "scope": "mode-transition-only",
+    "existingContractScope": "Complete root passive Buff chains execute on blocked or HP condition edges. HP chains include all declared Buffs, attributes and output-damage listeners. Native predicates/parameters are known; namespace/target/attachment and FP tolerance use explicit inferences. Other mounted abilities, full enemy phases and original visual effects remain pending.",
+    "requiredOperators": [
+      "ability-component-event-binding",
+      "toggle-buff-lifecycle"
+    ],
+    "instruction": "复用已接provider与完整事件图，只处理本组当前拒绝原因；按共用合同一次实现，不重新研究alreadyBoundProviders，也不删除同敌人的额外动作或其他阶段缺口。",
+    "acceptance": "受影响provider的完整条件、真实目标、动作与生命周期闭合后才接入；部分条件满足不等于整敌阶段完成。",
+    "sourceAffectedEnemyIDs": [
+      "enemy_10105_mjcdol",
+      "enemy_10105_mjcdol_2",
+      "enemy_1171_durokt",
+      "enemy_1171_durokt_2",
+      "enemy_1218_bomscr",
+      "enemy_1218_bomscr_2",
+      "enemy_1557_trcerb",
+      "enemy_1580_mnchrn",
+      "enemy_2025_syufo",
+      "enemy_2089_skzjkl",
+      "enemy_7028_xbscp",
+      "enemy_7028_xbscp_2",
+      "enemy_8010_mcnist",
+      "enemy_8010_mcnist_2",
+      "enemy_8010_mcnist_3"
+    ],
+    "sourceCandidateIDs": [
+      "enemy_10105_mjcdol_2|CAB-f7d0767dfe76da4c0a422da445f8800f:8685200798056086982:30",
+      "enemy_10105_mjcdol|CAB-f7d0767dfe76da4c0a422da445f8800f:-4519548345935207114:9",
+      "enemy_1171_durokt_2|CAB-ebed69ff29aa63f68ff7b17160b28187:7462781506622874217:22",
+      "enemy_1171_durokt|CAB-ebed69ff29aa63f68ff7b17160b28187:-4909300095043148276:7",
+      "enemy_1218_bomscr_2|CAB-d5c3740664210131f56a568859981fef:6967216581211523393:14",
+      "enemy_1218_bomscr|CAB-d5c3740664210131f56a568859981fef:173117316619717052:6",
+      "enemy_1557_trcerb|CAB-0df5f4c8c8dade07e2ee475a972da576:-5252960544006153253:24",
+      "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:-407403414089153845:18",
+      "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:-4611716710902906165:10",
+      "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:3796875613975691979:28",
+      "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:8238689261767836363:42",
+      "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:8051568033542384596:26",
+      "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:-6563782339632176437:11",
+      "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:374310122205602507:59",
+      "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:5561462496884482763:91",
+      "enemy_7028_xbscp_2|CAB-ce545482313ddad0252173b3b1f77860:-2621609097606744676:14",
+      "enemy_7028_xbscp|CAB-ee7bd8607f59a8a95519a8e0801daa80:2363243709309011540:29",
+      "enemy_8010_mcnist_2|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2944100607697340055:63",
+      "enemy_8010_mcnist_3|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2944100607697340055:63",
+      "enemy_8010_mcnist|CAB-eef20e46e9f0e9e38e18bc35388f76fa:-6560448296448302055:15"
+    ],
+    "sourceCandidateSets": {
+      "candidateIDs": [
+        "enemy_10105_mjcdol_2|CAB-f7d0767dfe76da4c0a422da445f8800f:8685200798056086982:30",
+        "enemy_10105_mjcdol|CAB-f7d0767dfe76da4c0a422da445f8800f:-4519548345935207114:9",
+        "enemy_1171_durokt_2|CAB-ebed69ff29aa63f68ff7b17160b28187:7462781506622874217:22",
+        "enemy_1171_durokt|CAB-ebed69ff29aa63f68ff7b17160b28187:-4909300095043148276:7",
+        "enemy_1218_bomscr_2|CAB-d5c3740664210131f56a568859981fef:6967216581211523393:14",
+        "enemy_1218_bomscr|CAB-d5c3740664210131f56a568859981fef:173117316619717052:6",
+        "enemy_1557_trcerb|CAB-0df5f4c8c8dade07e2ee475a972da576:-5252960544006153253:24",
+        "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:-407403414089153845:18",
+        "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:-4611716710902906165:10",
+        "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:3796875613975691979:28",
+        "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:8238689261767836363:42",
+        "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:8051568033542384596:26",
+        "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:-6563782339632176437:11",
+        "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:374310122205602507:59",
+        "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:5561462496884482763:91",
+        "enemy_7028_xbscp_2|CAB-ce545482313ddad0252173b3b1f77860:-2621609097606744676:14",
+        "enemy_7028_xbscp|CAB-ee7bd8607f59a8a95519a8e0801daa80:2363243709309011540:29",
+        "enemy_8010_mcnist_2|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2944100607697340055:63",
+        "enemy_8010_mcnist_3|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2944100607697340055:63",
+        "enemy_8010_mcnist|CAB-eef20e46e9f0e9e38e18bc35388f76fa:-6560448296448302055:15"
+      ],
+      "pureSwitchCandidateIDs": [
+        "enemy_10105_mjcdol_2|CAB-f7d0767dfe76da4c0a422da445f8800f:8685200798056086982:30",
+        "enemy_10105_mjcdol|CAB-f7d0767dfe76da4c0a422da445f8800f:-4519548345935207114:9",
+        "enemy_7028_xbscp_2|CAB-ce545482313ddad0252173b3b1f77860:-2621609097606744676:14",
+        "enemy_7028_xbscp|CAB-ee7bd8607f59a8a95519a8e0801daa80:2363243709309011540:29"
+      ],
+      "singleCapabilityCandidateIDs": [
+        "enemy_10105_mjcdol_2|CAB-f7d0767dfe76da4c0a422da445f8800f:8685200798056086982:30",
+        "enemy_10105_mjcdol|CAB-f7d0767dfe76da4c0a422da445f8800f:-4519548345935207114:9"
+      ]
+    },
+    "sourceEvidence": [
+      {
+        "candidateId": "enemy_1218_bomscr|CAB-d5c3740664210131f56a568859981fef:173117316619717052:6",
+        "enemyId": "enemy_1218_bomscr",
+        "source": "runtime-report",
+        "reasons": [
+          {
+            "code": "root-shared-mount-not-closed",
+            "sourcePath": "/ownership",
+            "detail": "An eligible active root shared talent mount is required."
+          }
+        ]
+      },
+      {
+        "candidateId": "enemy_1218_bomscr_2|CAB-d5c3740664210131f56a568859981fef:6967216581211523393:14",
+        "enemyId": "enemy_1218_bomscr_2",
+        "source": "runtime-report",
+        "reasons": [
+          {
+            "code": "root-shared-mount-not-closed",
+            "sourcePath": "/ownership",
+            "detail": "An eligible active root shared talent mount is required."
+          }
+        ]
+      },
+      {
+        "candidateId": "enemy_1557_trcerb|CAB-0df5f4c8c8dade07e2ee475a972da576:-5252960544006153253:24",
+        "enemyId": "enemy_1557_trcerb",
+        "source": "runtime-report",
+        "reasons": [
+          {
+            "code": "root-shared-mount-not-closed",
+            "sourcePath": "/ownership",
+            "detail": "An eligible active root shared talent mount is required."
+          },
+          {
+            "code": "root-talent-ambiguous",
+            "sourcePath": "/ownership/sameGameObjectRootSharedTalents",
+            "detail": "Exactly one root shared talent must own this provider."
+          },
+          {
+            "code": "ability-lifecycle-unsupported",
+            "sourcePath": "/ability/fields/_interruptAbilityOnDetach",
+            "detail": "This batch requires 0"
+          }
+        ]
+      },
+      {
+        "candidateId": "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:-407403414089153845:18",
+        "enemyId": "enemy_1580_mnchrn",
+        "source": "runtime-report",
+        "reasons": [
+          {
+            "code": "root-shared-mount-not-closed",
+            "sourcePath": "/ownership",
+            "detail": "An eligible active root shared talent mount is required."
+          },
+          {
+            "code": "root-talent-ambiguous",
+            "sourcePath": "/ownership/sameGameObjectRootSharedTalents",
+            "detail": "Exactly one root shared talent must own this provider."
+          },
+          {
+            "code": "ability-lifecycle-unsupported",
+            "sourcePath": "/ability/fields/_interruptAbilityOnDetach",
+            "detail": "This batch requires 0"
+          },
+          {
+            "code": "ability-lifecycle-unsupported",
+            "sourcePath": "/ability/fields/_setToggleFalseOnDetached",
+            "detail": "This batch requires 0"
+          }
+        ]
+      },
+      {
+        "candidateId": "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:-4611716710902906165:10",
+        "enemyId": "enemy_1580_mnchrn",
+        "source": "runtime-report",
+        "reasons": [
+          {
+            "code": "ability-lifecycle-unsupported",
+            "sourcePath": "/ability/fields/_interruptAbilityOnDetach",
+            "detail": "This batch requires 0"
+          },
+          {
+            "code": "ability-lifecycle-unsupported",
+            "sourcePath": "/ability/fields/_setToggleFalseOnDetached",
+            "detail": "This batch requires 0"
+          }
+        ]
+      },
+      {
+        "candidateId": "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:3796875613975691979:28",
+        "enemyId": "enemy_1580_mnchrn",
+        "source": "runtime-report",
+        "reasons": [
+          {
+            "code": "root-shared-mount-not-closed",
+            "sourcePath": "/ownership",
+            "detail": "An eligible active root shared talent mount is required."
+          },
+          {
+            "code": "root-talent-ambiguous",
+            "sourcePath": "/ownership/sameGameObjectRootSharedTalents",
+            "detail": "Exactly one root shared talent must own this provider."
+          },
+          {
+            "code": "ability-lifecycle-unsupported",
+            "sourcePath": "/ability/fields/_interruptAbilityOnDetach",
+            "detail": "This batch requires 0"
+          },
+          {
+            "code": "ability-lifecycle-unsupported",
+            "sourcePath": "/ability/fields/_setToggleFalseOnDetached",
+            "detail": "This batch requires 0"
+          }
+        ]
+      },
+      {
+        "candidateId": "enemy_1580_mnchrn|CAB-ce545482313ddad0252173b3b1f77860:8238689261767836363:42",
+        "enemyId": "enemy_1580_mnchrn",
+        "source": "runtime-report",
+        "reasons": [
+          {
+            "code": "root-shared-mount-not-closed",
+            "sourcePath": "/ownership",
+            "detail": "An eligible active root shared talent mount is required."
+          },
+          {
+            "code": "root-talent-ambiguous",
+            "sourcePath": "/ownership/sameGameObjectRootSharedTalents",
+            "detail": "Exactly one root shared talent must own this provider."
+          },
+          {
+            "code": "ability-lifecycle-unsupported",
+            "sourcePath": "/ability/fields/_interruptAbilityOnDetach",
+            "detail": "This batch requires 0"
+          },
+          {
+            "code": "ability-lifecycle-unsupported",
+            "sourcePath": "/ability/fields/_setToggleFalseOnDetached",
+            "detail": "This batch requires 0"
+          }
+        ]
+      },
+      {
+        "candidateId": "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:-6563782339632176437:11",
+        "enemyId": "enemy_2089_skzjkl",
+        "source": "runtime-report",
+        "reasons": [
+          {
+            "code": "root-shared-mount-not-closed",
+            "sourcePath": "/ownership",
+            "detail": "An eligible active root shared talent mount is required."
+          },
+          {
+            "code": "root-talent-ambiguous",
+            "sourcePath": "/ownership/sameGameObjectRootSharedTalents",
+            "detail": "Exactly one root shared talent must own this provider."
+          },
+          {
+            "code": "ability-lifecycle-unsupported",
+            "sourcePath": "/ability/fields/_interruptAbilityOnDetach",
+            "detail": "This batch requires 0"
+          }
+        ]
+      },
+      {
+        "candidateId": "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:374310122205602507:59",
+        "enemyId": "enemy_2089_skzjkl",
+        "source": "runtime-report",
+        "reasons": [
+          {
+            "code": "root-shared-mount-not-closed",
+            "sourcePath": "/ownership",
+            "detail": "An eligible active root shared talent mount is required."
+          },
+          {
+            "code": "root-talent-ambiguous",
+            "sourcePath": "/ownership/sameGameObjectRootSharedTalents",
+            "detail": "Exactly one root shared talent must own this provider."
+          },
+          {
+            "code": "ability-lifecycle-unsupported",
+            "sourcePath": "/ability/fields/_interruptAbilityOnDetach",
+            "detail": "This batch requires 0"
+          }
+        ]
+      },
+      {
+        "candidateId": "enemy_2089_skzjkl|CAB-d6fd4ca05b8201d765eb078efa151e40:5561462496884482763:91",
+        "enemyId": "enemy_2089_skzjkl",
+        "source": "runtime-report",
+        "reasons": [
+          {
+            "code": "root-shared-mount-not-closed",
+            "sourcePath": "/ownership",
+            "detail": "An eligible active root shared talent mount is required."
+          },
+          {
+            "code": "root-talent-ambiguous",
+            "sourcePath": "/ownership/sameGameObjectRootSharedTalents",
+            "detail": "Exactly one root shared talent must own this provider."
+          },
+          {
+            "code": "ability-lifecycle-unsupported",
+            "sourcePath": "/ability/fields/_interruptAbilityOnDetach",
+            "detail": "This batch requires 0"
+          }
+        ]
+      },
+      {
+        "candidateId": "enemy_7028_xbscp|CAB-ee7bd8607f59a8a95519a8e0801daa80:2363243709309011540:29",
+        "enemyId": "enemy_7028_xbscp",
+        "source": "runtime-report",
+        "reasons": [
+          {
+            "code": "root-shared-mount-not-closed",
+            "sourcePath": "/ownership",
+            "detail": "An eligible active root shared talent mount is required."
+          },
+          {
+            "code": "root-talent-ambiguous",
+            "sourcePath": "/ownership/sameGameObjectRootSharedTalents",
+            "detail": "Exactly one root shared talent must own this provider."
+          },
+          {
+            "code": "ability-lifecycle-unsupported",
+            "sourcePath": "/ability/fields/_interruptAbilityOnDetach",
+            "detail": "This batch requires 0"
+          }
+        ]
+      },
+      {
+        "candidateId": "enemy_7028_xbscp_2|CAB-ce545482313ddad0252173b3b1f77860:-2621609097606744676:14",
+        "enemyId": "enemy_7028_xbscp_2",
+        "source": "runtime-report",
+        "reasons": [
+          {
+            "code": "root-shared-mount-not-closed",
+            "sourcePath": "/ownership",
+            "detail": "An eligible active root shared talent mount is required."
+          },
+          {
+            "code": "root-talent-ambiguous",
+            "sourcePath": "/ownership/sameGameObjectRootSharedTalents",
+            "detail": "Exactly one root shared talent must own this provider."
+          },
+          {
+            "code": "ability-lifecycle-unsupported",
+            "sourcePath": "/ability/fields/_interruptAbilityOnDetach",
+            "detail": "This batch requires 0"
+          }
+        ]
+      },
+      {
+        "candidateId": "enemy_8010_mcnist|CAB-eef20e46e9f0e9e38e18bc35388f76fa:-6560448296448302055:15",
+        "enemyId": "enemy_8010_mcnist",
+        "source": "runtime-report",
+        "reasons": [
+          {
+            "code": "root-shared-mount-not-closed",
+            "sourcePath": "/ownership",
+            "detail": "An eligible active root shared talent mount is required."
+          },
+          {
+            "code": "root-talent-ambiguous",
+            "sourcePath": "/ownership/sameGameObjectRootSharedTalents",
+            "detail": "Exactly one root shared talent must own this provider."
+          },
+          {
+            "code": "ability-lifecycle-unsupported",
+            "sourcePath": "/ability/fields/_interruptAbilityOnDetach",
+            "detail": "This batch requires 0"
+          },
+          {
+            "code": "ability-lifecycle-unsupported",
+            "sourcePath": "/ability/fields/_setToggleFalseOnDetached",
+            "detail": "This batch requires 0"
+          }
+        ]
+      },
+      {
+        "candidateId": "enemy_8010_mcnist_2|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2944100607697340055:63",
+        "enemyId": "enemy_8010_mcnist_2",
+        "source": "runtime-report",
+        "reasons": [
+          {
+            "code": "root-shared-mount-not-closed",
+            "sourcePath": "/ownership",
+            "detail": "An eligible active root shared talent mount is required."
+          },
+          {
+            "code": "root-talent-ambiguous",
+            "sourcePath": "/ownership/sameGameObjectRootSharedTalents",
+            "detail": "Exactly one root shared talent must own this provider."
+          },
+          {
+            "code": "ability-lifecycle-unsupported",
+            "sourcePath": "/ability/fields/_interruptAbilityOnDetach",
+            "detail": "This batch requires 0"
+          },
+          {
+            "code": "ability-lifecycle-unsupported",
+            "sourcePath": "/ability/fields/_setToggleFalseOnDetached",
+            "detail": "This batch requires 0"
+          }
+        ]
+      },
+      {
+        "candidateId": "enemy_8010_mcnist_3|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2944100607697340055:63",
+        "enemyId": "enemy_8010_mcnist_3",
+        "source": "runtime-report",
+        "reasons": [
+          {
+            "code": "root-shared-mount-not-closed",
+            "sourcePath": "/ownership",
+            "detail": "An eligible active root shared talent mount is required."
+          },
+          {
+            "code": "root-talent-ambiguous",
+            "sourcePath": "/ownership/sameGameObjectRootSharedTalents",
+            "detail": "Exactly one root shared talent must own this provider."
+          },
+          {
+            "code": "ability-lifecycle-unsupported",
+            "sourcePath": "/ability/fields/_interruptAbilityOnDetach",
+            "detail": "This batch requires 0"
+          },
+          {
+            "code": "ability-lifecycle-unsupported",
+            "sourcePath": "/ability/fields/_setToggleFalseOnDetached",
+            "detail": "This batch requires 0"
+          }
+        ]
+      },
+      {
+        "candidateId": "enemy_10105_mjcdol|CAB-f7d0767dfe76da4c0a422da445f8800f:-4519548345935207114:9",
+        "enemyId": "enemy_10105_mjcdol",
+        "source": "saved-candidate-table",
+        "reasons": [
+          {
+            "code": "complete-ability-fields-not-retained-in-selected-caches"
+          },
+          {
+            "code": "mode-entry-and-detach-lifecycle-required"
+          }
+        ]
+      },
+      {
+        "candidateId": "enemy_10105_mjcdol_2|CAB-f7d0767dfe76da4c0a422da445f8800f:8685200798056086982:30",
+        "enemyId": "enemy_10105_mjcdol_2",
+        "source": "saved-candidate-table",
+        "reasons": [
+          {
+            "code": "complete-ability-fields-not-retained-in-selected-caches"
+          },
+          {
+            "code": "mode-entry-and-detach-lifecycle-required"
+          }
+        ]
+      },
+      {
+        "candidateId": "enemy_1171_durokt|CAB-ebed69ff29aa63f68ff7b17160b28187:-4909300095043148276:7",
+        "enemyId": "enemy_1171_durokt",
+        "source": "saved-candidate-table",
+        "reasons": [
+          {
+            "code": "complete-ability-fields-not-retained-in-selected-caches"
+          },
+          {
+            "code": "mode-entry-and-detach-lifecycle-required"
+          }
+        ]
+      },
+      {
+        "candidateId": "enemy_1171_durokt_2|CAB-ebed69ff29aa63f68ff7b17160b28187:7462781506622874217:22",
+        "enemyId": "enemy_1171_durokt_2",
+        "source": "saved-candidate-table",
+        "reasons": [
+          {
+            "code": "complete-ability-fields-not-retained-in-selected-caches"
+          },
+          {
+            "code": "mode-entry-and-detach-lifecycle-required"
+          }
+        ]
+      },
+      {
+        "candidateId": "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:8051568033542384596:26",
+        "enemyId": "enemy_2025_syufo",
+        "source": "saved-candidate-table",
+        "reasons": [
+          {
+            "code": "complete-ability-fields-not-retained-in-selected-caches"
+          },
+          {
+            "code": "mode-entry-and-detach-lifecycle-required"
+          }
+        ]
+      }
+    ]
+  },
+  "fullPhaseTransitionsCompleted": 0
+}

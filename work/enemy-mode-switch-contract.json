@@ -1,0 +1,600 @@
+{
+  "schemaVersion": 1,
+  "rule": "native-switch-mode-node-contract-v2",
+  "source": {
+    "nativeVersion": "JP 36.7.22",
+    "nativeBaselineOnly": true,
+    "community": "Tim23333-Arknights_timer pinned local snapshot",
+    "crossVersionUse": "CN configuration joined to JP native semantics remains an explicitly versioned inference"
+  },
+  "sourceHashes": {
+    "work/apk-extracted/lib/arm64-v8a/libil2cpp.so": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+    "work/client-logic/metadata/global-metadata.candidate.dat": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+    "work/client-logic/metadata/types.json": "30c99c16eb39696af8cf5ee76ff2888082234d62ffbd706fa02eba439cc03016",
+    "work/client-logic/native-enemy-switch-node/54560_OnStart.asm": "6cbde707471ab780bc6ea685db26f751cb7c5762fbd3ff826865e86eaf96f321",
+    "work/client-logic/native-enemy-switch-node/54561_OnFinish.asm": "4fd05b83e87bfd2c144119e7e22f613cbb73863b1bb00ef2ad6cd9f6cc54e55f",
+    "work/client-logic/native-enemy-switch-node/54660__RunActions.asm": "12043de530f5b40a3ff89611055a780fc85dbe577038bf44eff1512b2f9ce959",
+    "work/client-logic/native-enemy-switch-node/65144_SwitchToDefaultMode.asm": "dc63010240aed56286a10d877b85600f1bbbf26b0bd15bb8ef4dd4bbfe62553d",
+    "work/client-logic/native-enemy-switch-node/65198_Unit_OnSwitchMode.asm": "da6e72e9e3b55d310ff26c04383f760798d9812b64f9e2e0d0d820b806e9c3f4",
+    "work/client-logic/native-enemy-switch-node/78312_GetActionTarget.asm": "e19f4d7815a647f2aeff14d6956d788cddd15fd72be5ed02d92bad4dab331385",
+    "work/client-logic/native-enemy-switch-node/79577_get_allowedSource.asm": "228689ac18b3e0112cc47286823112b3979abe513d057bdcb6f79ccdb574f69d",
+    "work/client-logic/native-enemy-switch-node/79578_Execute.asm": "19113e0917fda906b08b9d172053afdcb8f68914763a72fe2a6aa6266bbc96ca",
+    "work/client-logic/native-enemy-switch-node/79579__ctor.asm": "249093a111536538af53739d5872c0506a6245b810466aea1ba351170db313ad",
+    "work/client-logic/native-enemy-switch-node/ActionTargetType-layout.json": "78306b3d7f803692da1d0f50291bf2099aebd836c7befc580a125640f1564406",
+    "work/client-logic/native-enemy-switch-node/Context-layout.json": "97c001c359ddfd261c8cdd3ca5d04af8cc8f707b6f324e63d41294ad450417b1",
+    "work/client-logic/native-enemy-switch-node/node-source.json": "85b5596b7f0c11fafee1a8baf198a50e7c4b07effe3826ffde6cc565ff60c25a",
+    "work/client-logic/native-enemy-switch-node/Snapshot-layout.json": "d7787b390c30dd052ab6fe45af43bdcb200c11695348bac938b936f666c20f09",
+    "work/client-logic/native-enemy-switch-node/state-machine-layout.json": "e3be41640a5490a95236296b2eb65f31b6d63201a8270fa5e43f4b0c99452f0a",
+    "work/client-logic/native-enemy-switch-node/target-enum.json": "69d24b8dc5a931b855815ee5a35ebd6f535baca4f760e07bb5d0e0b7afff1430",
+    "work/client-logic/native-enemy-switch-node/unit-switch-signatures.json": "f4c4da7c41470436b2ba4c5adebc091d600c47cb16324b5d981f3430556f047c",
+    "work/client-logic/native-enemy-mode-dispatch/Unit.SwitchMode.0x220b7e8.asm": "b2fa30155dbf4df1c46de247cc7248d243d14abbf05ad9ad11c913a56c7a793d",
+    "work/client-logic/native-enemy-mode-dispatch/Unit.SwitchMode.0x220ba58.asm": "0bd90a8841fce7078d6426a6d8cadedff3ab382d6bae246420f07d53c53fbe9b",
+    "work/client-logic/native-enemy-mode-dispatch/Unit.SwitchMode.0x220baec.asm": "daf1c738f5e385bae06b39286950fd1e46999da2f54431403552a53ecf7a98d7",
+    "work/client-logic/native-enemy-mode-dispatch/Enemy.OnSwitchMode.0x21d5eb4.asm": "627a02348defc74c7e00aa856682808b24f042fb00936f18cedfbf4c7d334951",
+    "work/external-ready-data-20260914/Tim23333-Arknights_timer/snapshot/Ark_emulator/ark_emulator/buff_templates.py": "7dba0e26da0424356048433679a59f80563594160db7d8f8b3519a429f069922",
+    "work/external-ready-data-20260914/Tim23333-Arknights_timer/snapshot/Ark_emulator/ark_emulator/buffs.py": "a54992130c1bce84c298192abf054eaa4f9ccc3aac15caa062adc52a6c1fdff5",
+    "work/external-ready-data-20260914/Tim23333-Arknights_timer/snapshot/Ark_emulator/ark_emulator/action_nodes.py": "435420c2ecc86439de7df7a40f0e4726259fcf30480aec28b7cffd0a45782fcc",
+    "work/client-logic/native-enemy-switch-node/64022_Enemy_get_isInCombat.asm": "5e5a3cecebc4a471bab4832ed661bbdee1a9820ffbbf03b94cd254eae1cfeac8",
+    "work/client-logic/native-enemy-switch-node/76190_LoadData.asm": "c7daacd1f4e9601ebe659586190bc45686f2aafd2f9ed18cc71ad0ef1a327579",
+    "work/client-logic/native-enemy-switch-node/76191_OnTick.asm": "33979af62368bcd276ad62b10f8e0c5b9bc9d6fcc6ab0c23e7d91dbebbc0e923",
+    "work/client-logic/native-enemy-switch-node/76192_OnAttached.asm": "3a811ccf95c7adecf3391c0c41955e2f675adba085172e08378eec117b9681c4",
+    "work/client-logic/native-enemy-switch-node/76194_CheckInitialToggled.asm": "7499238c799ede955b38d9d778aa415813a3def84a3cfc06f6f5e7dd4dc4012a",
+    "work/client-logic/native-enemy-switch-node/76195__CheckCondition.asm": "f8ca2601f417a74ea2d739d00cee6d4ec78430f90a9c9ac2ed344a6e5da5fbdc",
+    "work/client-logic/native-enemy-switch-node/76343_DoSetData.asm": "1bce6eabbc4153e23928bd3e6e93c97ce14b97a4ca28cc833dd8f0d700b87f7e",
+    "work/client-logic/native-enemy-switch-node/76344_DoAttach.asm": "eb7f6cbcfcc62bb1b0a90aad6a78cc8a275cf942e2365b2f292b88edf5107944",
+    "work/client-logic/native-enemy-switch-node/76346_OnTick.asm": "669dae0cdf14497d094604c93e40cab653c14f55ecf728b85d6a8243400c357e",
+    "work/client-logic/native-enemy-switch-node/76347_AddPassiveBuffs.asm": "1a2cf0f925c9cdc3e294ba1efe394ab8bbbf8c6cbac00845f165479ef48d37a2",
+    "work/client-logic/native-enemy-switch-node/76348_OnAttached.asm": "3c98d0e6d2ca39f79ea7c0ec47433516fb4ae84d9204d681cd03c55d61e1f3d3",
+    "work/client-logic/native-enemy-switch-node/76349_OnDetached.asm": "c759ee43d510f132e2c14e2a35885b4f7bc81673f5566066810f548445410ffd",
+    "work/client-logic/native-enemy-switch-node/76350_OnToggleChanged.asm": "437b57feaa3e6af6e6240116ad8d4df678a757d25f4ed91ab465e830ec99f084",
+    "work/client-logic/native-enemy-switch-node/76351__SetToggledInternal.asm": "e713c8d7dbd6c8cac264041edc586d5a99b72cbc293ae8b1342b810721220087",
+    "work/client-logic/native-enemy-switch-node/76365_set_toggled.asm": "65c8509aab6b9cf36138a33a2f332b1e288fb87f6162c5da019591cad2051881",
+    "work/client-logic/native-enemy-switch-node/blocked-key.json": "f2af53bec6549293af74780e36ee18e546b82b74d62555452214b621546c1704",
+    "work/client-logic/native-enemy-switch-node/blocked-slot.json": "c2e1dd6b73f097b200599f9ebad284f38e9605672574d7d2fa612fa29feb222b",
+    "work/client-logic/native-enemy-switch-node/provider-source.json": "f36db69c397b8238c635812607e5323fa5eccee8db04bfc598a87adb93f003a4",
+    "work/enemy-mode-dispatch-catalog.json": "1caf9827b1988aa1253284b52bea8e45cd8eea1ef0fb77b6454a4089a990d7df"
+  },
+  "parameterContract": {
+    "status": "native-baseline-verified",
+    "blackboard": {
+      "key": "mode",
+      "reader": "Torappu.Blackboard.TryGetInt",
+      "loadFlag": "_loadModeFromBlackboard",
+      "success": "use returned integer",
+      "disabledOrLookupFailure": "use serialized _modeIndex",
+      "sourceRef": {
+        "file": "work\\client-logic\\native-enemy-switch-node\\79578_Execute.asm",
+        "rva": "0x2646ecc..0x2646efc"
+      },
+      "literalEvidence": {
+        "slotRva": "0xa6e2db0",
+        "storageRva": "0xab273e0",
+        "encoded": "0xa000dc95",
+        "metadataLiteralIndex": 28234,
+        "value": "mode"
+      },
+      "numericConversion": "TryGetInt conversion and upstream blackboard materialization have not been expanded; exact integral source values are the bounded candidate set"
+    },
+    "restoreDefault": {
+      "priority": "overrides resolved/literal index",
+      "operation": "target.SwitchToDefaultMode(_restartFSM)",
+      "default": "virtual target defaultMode; never constant zero",
+      "sourceRef": {
+        "file": "work\\client-logic\\native-enemy-switch-node\\79578_Execute.asm",
+        "rva": "0x2646f00..0x2646f1c"
+      }
+    },
+    "constructorDefaults": {
+      "modeIndex": 0,
+      "loadModeFromBlackboard": false,
+      "restoreDefault": false,
+      "restartFSM": false,
+      "targetType": 0,
+      "basis": "zero-initialized fields and no field assignment in readable constructor; hotfix branch excluded"
+    },
+    "callResult": {
+      "invalidOrNonUnitTarget": false,
+      "validUnitTarget": true,
+      "invalidModeIndex": "Unit.SwitchMode ignores negative/out-of-range indexes; node still returns true",
+      "sameMode": "force=false returns before activation or FSM restart"
+    },
+    "sourceRefs": [
+      {
+        "file": "work\\client-logic\\native-enemy-switch-node\\79578_Execute.asm"
+      },
+      {
+        "file": "work/client-logic/native-enemy-mode-dispatch/Unit.SwitchMode.0x220baec.asm"
+      }
+    ]
+  },
+  "restartFSM": {
+    "status": "native-call-order-verified-internals-partial",
+    "nodeFlags": {
+      "force": false,
+      "isInit": false
+    },
+    "modeChangeOrder": [
+      "InactiveMode(old,true)",
+      "assign currentMode",
+      "ActivateMode(next,old,isInit=false)",
+      "OnSwitchMode(next,old,restartFSM=true/false)"
+    ],
+    "whenTrueAndFSMRunning": "save currentStateId; StateMachine.Stop(); StateMachine.Start(saved currentStateId)",
+    "whenFalseOrFSMNotRunning": "do not invoke Stop/Start in this branch",
+    "sameMode": "no restart without force, even when _restartFSM=true",
+    "afterRestart": "unit virtual update hook, then BuffContainer.OnUnitSwitchMode; Enemy override also updates mode-associated skills",
+    "sourceRef": {
+      "file": "work/client-logic/native-enemy-switch-node/65198_Unit_OnSwitchMode.asm"
+    },
+    "missing": [
+      "StateMachine.Stop/Start internal state-exit/state-enter side effects",
+      "InactiveMode/ActivateMode internals (previously unreadable; not retried)"
+    ]
+  },
+  "targetContract": {
+    "enum": {
+      "TARGET": 0,
+      "SOURCE": 1,
+      "BUFF_SOURCE": 2,
+      "BUFF_OWNER": 3,
+      "MODIFIER_TARGET": 4,
+      "MODIFIER_SOURCE": 5,
+      "MAIN_TARGET": 6,
+      "MAINBUFF_SOURCE": 7,
+      "PROJECTILE_SOURCE": 8,
+      "PROJECTILE_TRACETARGET": 9,
+      "ABILITY_OWNER": 10
+    },
+    "enumStatus": "metadata-default-values-verified",
+    "resolver": "Torappu.Battle.Action.Nodes.GetActionTarget(snapshot,_targetType)",
+    "resolverStatus": "body-readable-jump-table-unresolved",
+    "observedBranches": [
+      "snapshot target field returned directly",
+      "snapshot source field returned directly",
+      "snapshot buff then Buff.get_owner/get_source",
+      "snapshot ability then Ability.get_owner",
+      "modifier/projectile/main target variants"
+    ],
+    "targetMapping": {
+      "TARGET": {
+        "candidate": "snapshot.target",
+        "evidence": "Inferred",
+        "boundary": "Not proven by protected switch table; no owner fallback appears in the direct-field branch"
+      },
+      "BUFF_OWNER": {
+        "candidate": "snapshot.buff.owner",
+        "evidence": "Inferred",
+        "boundary": "Case dispatch must remain bounded by unresolved jump table"
+      }
+    },
+    "buffEvents": {
+      "ON_BUFF_START": "native context target unresolved",
+      "ON_BUFF_FINISH": "native context target unresolved"
+    },
+    "unreadable": [
+      {
+        "method": "Buff.OnStart",
+        "rva": "0x4d9db50",
+        "decodedInstructions": 0
+      },
+      {
+        "method": "Buff.OnFinish",
+        "rva": "0x4d9dc44",
+        "decodedInstructions": 0
+      },
+      {
+        "method": "Buff._RunActions",
+        "rva": "0x4d9d6dc",
+        "decodedInstructions": 0,
+        "signature": "(Event ev, bool setMeAsTarget) -> Context.Snapshot"
+      }
+    ],
+    "boundary": "Do not equate TARGET with BUFF_OWNER from Tim fallback or infer setMeAsTarget values at unreadable event callers."
+  },
+  "communityComparison": {
+    "source": "work/external-ready-data-20260914/Tim23333-Arknights_timer/snapshot/Ark_emulator/ark_emulator/",
+    "observed": {
+      "buffTemplates": "uses mode_index, restoreDefault=0, restart ignored",
+      "actionNodes": "modeIndex or _mode loses literal zero",
+      "buffEvents": "START/FINISH pass target=None; helper falls back TARGET to owner"
+    },
+    "status": "community-implementation-observations-only-not-native-proof"
+  },
+  "reusableCapabilities": [
+    "literal-or-mode-blackboard-parameter-resolution",
+    "dynamic-default-mode-selection",
+    "invalid-index-and-same-mode-noop",
+    "restart-current-fsm-state-contract",
+    "enemy-blocker-boolean-with-cnt-threshold-condition"
+  ],
+  "pending": [
+    "Buff event TARGET snapshot construction and target enum dispatch table",
+    "protected provider attach/detach lifecycle (explicit bounded inference documented)",
+    "checker cnt blackboard scope/value binding",
+    "full state-machine exit/enter and mode activation side effects"
+  ],
+  "implementationReady": false,
+  "sourceFingerprint": "6f5c3442abbc6ad7c5225d0d988e0b0fab5731709d0b8cf765ee7de963dbde31",
+  "boundedProviderContract": {
+    "family": "BlockedToggleChecker -> ToggleablePassiveBuffAbility -> switch_mode Buff",
+    "memberIDs": [
+      "enemy_2013_csbot",
+      "enemy_4001_toxcar",
+      "enemy_4001_toxcar_2"
+    ],
+    "sourceComponents": {
+      "enemy_2013_csbot": [
+        {
+          "sourceRef": {
+            "file": "work/enemy-mode-dispatch-catalog.json",
+            "enemyId": "enemy_2013_csbot",
+            "componentKey": "CAB-45917fb008d9d99f506436a9f5988d3d:-3249804047008976675:6",
+            "scriptType": "Torappu.Battle.Abilities.ToggleablePassiveBuffAbility"
+          },
+          "fields": {
+            "_metadata": {
+              "namedAsAlias": "",
+              "blackboardPrefix": ""
+            },
+            "_interruptAbilityOnDetach": 0,
+            "_attachPassiveBuffsOnDummy": 1,
+            "_ignoreIfOwnerDead": 0,
+            "_checker": {
+              "m_FileID": 0,
+              "m_PathID": 9198245325256077533
+            },
+            "_setToggleFalseOnDetached": 0,
+            "_isInverseToggle": 0,
+            "_buffs": [
+              {
+                "buffKey": "enemy_toxcar_t[blocked]",
+                "templateKey": "switch_mode",
+                "isSilenceable": 0,
+                "blackboard": [
+                  {
+                    "key": "mode",
+                    "value": 1.0,
+                    "valueStr": ""
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "sourceRef": {
+            "file": "work/enemy-mode-dispatch-catalog.json",
+            "enemyId": "enemy_2013_csbot",
+            "componentKey": "CAB-45917fb008d9d99f506436a9f5988d3d:5571455999554564317:17",
+            "scriptType": "Torappu.Battle.Talent"
+          },
+          "fields": {
+            "_defaultModeIndex": -1
+          }
+        },
+        {
+          "sourceRef": {
+            "file": "work/enemy-mode-dispatch-catalog.json",
+            "enemyId": "enemy_2013_csbot",
+            "componentKey": "CAB-45917fb008d9d99f506436a9f5988d3d:9125401859157078237:19",
+            "scriptType": "Torappu.Battle.Talent"
+          },
+          "fields": {
+            "_defaultModeIndex": -1
+          }
+        },
+        {
+          "sourceRef": {
+            "file": "work/enemy-mode-dispatch-catalog.json",
+            "enemyId": "enemy_2013_csbot",
+            "componentKey": "CAB-45917fb008d9d99f506436a9f5988d3d:9198245325256077533:20",
+            "scriptType": "Torappu.Battle.Abilities.BlockedToggleChecker"
+          },
+          "fields": {
+            "_blockMinCnt": 1,
+            "_blockMaxCnt": -1,
+            "_useBlockAsMin": 1
+          }
+        }
+      ],
+      "enemy_4001_toxcar": [
+        {
+          "sourceRef": {
+            "file": "work/enemy-mode-dispatch-catalog.json",
+            "enemyId": "enemy_4001_toxcar",
+            "componentKey": "CAB-cdd74f7570ad4d79415afaec31d045cf:-1158421913631599299:10",
+            "scriptType": "Torappu.Battle.SilenceableTalent"
+          },
+          "fields": {
+            "_defaultModeIndex": -1,
+            "_isSilenceable": 1
+          }
+        },
+        {
+          "sourceRef": {
+            "file": "work/enemy-mode-dispatch-catalog.json",
+            "enemyId": "enemy_4001_toxcar",
+            "componentKey": "CAB-cdd74f7570ad4d79415afaec31d045cf:395170614056047933:11",
+            "scriptType": "Torappu.Battle.Abilities.BlockedToggleChecker"
+          },
+          "fields": {
+            "_blockMinCnt": 1,
+            "_blockMaxCnt": -1,
+            "_useBlockAsMin": 1
+          }
+        },
+        {
+          "sourceRef": {
+            "file": "work/enemy-mode-dispatch-catalog.json",
+            "enemyId": "enemy_4001_toxcar",
+            "componentKey": "CAB-cdd74f7570ad4d79415afaec31d045cf:697867442723673405:12",
+            "scriptType": "Torappu.Battle.SilenceableTalent"
+          },
+          "fields": {
+            "_defaultModeIndex": -1,
+            "_isSilenceable": 1
+          }
+        },
+        {
+          "sourceRef": {
+            "file": "work/enemy-mode-dispatch-catalog.json",
+            "enemyId": "enemy_4001_toxcar",
+            "componentKey": "CAB-cdd74f7570ad4d79415afaec31d045cf:2977638301619311933:17",
+            "scriptType": "Torappu.Battle.Abilities.ToggleablePassiveBuffAbility"
+          },
+          "fields": {
+            "_metadata": {
+              "namedAsAlias": "",
+              "blackboardPrefix": ""
+            },
+            "_interruptAbilityOnDetach": 0,
+            "_attachPassiveBuffsOnDummy": 1,
+            "_ignoreIfOwnerDead": 0,
+            "_checker": {
+              "m_FileID": 0,
+              "m_PathID": 395170614056047933
+            },
+            "_setToggleFalseOnDetached": 0,
+            "_isInverseToggle": 0,
+            "_buffs": [
+              {
+                "buffKey": "enemy_toxcar_t[blocked]",
+                "templateKey": "switch_mode",
+                "isSilenceable": 0,
+                "blackboard": [
+                  {
+                    "key": "mode",
+                    "value": 1.0,
+                    "valueStr": ""
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "enemy_4001_toxcar_2": [
+        {
+          "sourceRef": {
+            "file": "work/enemy-mode-dispatch-catalog.json",
+            "enemyId": "enemy_4001_toxcar_2",
+            "componentKey": "CAB-cdd74f7570ad4d79415afaec31d045cf:-3104911607628283153:6",
+            "scriptType": "Torappu.Battle.Abilities.BlockedToggleChecker"
+          },
+          "fields": {
+            "_blockMinCnt": 1,
+            "_blockMaxCnt": -1,
+            "_useBlockAsMin": 1
+          }
+        },
+        {
+          "sourceRef": {
+            "file": "work/enemy-mode-dispatch-catalog.json",
+            "enemyId": "enemy_4001_toxcar_2",
+            "componentKey": "CAB-cdd74f7570ad4d79415afaec31d045cf:-3082606684984818961:7",
+            "scriptType": "Torappu.Battle.SilenceableTalent"
+          },
+          "fields": {
+            "_defaultModeIndex": -1,
+            "_isSilenceable": 1
+          }
+        },
+        {
+          "sourceRef": {
+            "file": "work/enemy-mode-dispatch-catalog.json",
+            "enemyId": "enemy_4001_toxcar_2",
+            "componentKey": "CAB-cdd74f7570ad4d79415afaec31d045cf:3044625521396957935:17",
+            "scriptType": "Torappu.Battle.Abilities.ToggleablePassiveBuffAbility"
+          },
+          "fields": {
+            "_metadata": {
+              "namedAsAlias": "",
+              "blackboardPrefix": ""
+            },
+            "_interruptAbilityOnDetach": 0,
+            "_attachPassiveBuffsOnDummy": 1,
+            "_ignoreIfOwnerDead": 0,
+            "_checker": {
+              "m_FileID": 0,
+              "m_PathID": -3104911607628283153
+            },
+            "_setToggleFalseOnDetached": 0,
+            "_isInverseToggle": 0,
+            "_buffs": [
+              {
+                "buffKey": "enemy_toxcar_t[blocked]",
+                "templateKey": "switch_mode",
+                "isSilenceable": 0,
+                "blackboard": [
+                  {
+                    "key": "mode",
+                    "value": 1.0,
+                    "valueStr": ""
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "sourceRef": {
+            "file": "work/enemy-mode-dispatch-catalog.json",
+            "enemyId": "enemy_4001_toxcar_2",
+            "componentKey": "CAB-cdd74f7570ad4d79415afaec31d045cf:5398080726326657775:19",
+            "scriptType": "Torappu.Battle.SilenceableTalent"
+          },
+          "fields": {
+            "_defaultModeIndex": -1,
+            "_isSilenceable": 1
+          }
+        }
+      ]
+    },
+    "checker": {
+      "evidence": "Verified",
+      "nativeBaselineOnly": true,
+      "ownerBranch": "Enemy/non-Character Unit",
+      "observedValue": "int(owner.get_isInCombat()) = int(owner.get_blocker() != null)",
+      "virtualCall": {
+        "classMethodOffset": "0xa88",
+        "vtableBase": "0x138",
+        "slot": 149,
+        "method": "Torappu.Battle.Enemy.get_isInCombat",
+        "rva": "0x21cc508"
+      },
+      "condition": "observedValue >= m_blockMinCnt && (m_blockMaxCnt < 0 || observedValue <= m_blockMaxCnt)",
+      "thresholdInitialization": {
+        "min": "_blockMinCnt",
+        "max": "_blockMaxCnt",
+        "key": "cnt",
+        "reader": "Blackboard.GetIntOrDefault",
+        "whenUseBlockAsMin": "m_blockMinCnt = blackboard.GetIntOrDefault(cnt, _blockMinCnt, false)",
+        "otherwise": "m_blockMaxCnt = blackboard.GetIntOrDefault(cnt, _blockMaxCnt, false)",
+        "whenBlackboardNull": "keep both serialized thresholds",
+        "literalEvidence": {
+          "slotRva": "0xa63c2a0",
+          "storageRva": "0xab1eac0",
+          "encoded": "0xa000ba4b",
+          "metadataLiteralIndex": 23845,
+          "value": "cnt"
+        }
+      },
+      "candidateReduction": "For these sources min=1, max=-1, useBlockAsMin=true; when resolved checker cnt is absent or equals1, condition is exactly blocker!=null.",
+      "exclusions": [
+        "Do not use operator remaining block capacity",
+        "Do not use enemy block weight",
+        "Do not assume cnt always absent: bind the actual checker blackboard scope"
+      ],
+      "evaluation": {
+        "initial": "CheckInitialToggled calls _CheckCondition(m_unit)",
+        "tick": "BlockedToggleChecker.OnTick calls base Checker.OnTick then set_toggled(_CheckCondition(m_unit))",
+        "ownerBinding": "BlockedToggleChecker.OnAttached sets m_unit from checker.owner cast to Unit",
+        "setter": "Checker.set_toggled forwards to ability.set_toggled; actual toggle-effect body is protected"
+      },
+      "sourceRefs": [
+        {
+          "file": "work/client-logic/native-enemy-switch-node/76190_LoadData.asm"
+        },
+        {
+          "file": "work/client-logic/native-enemy-switch-node/76192_OnAttached.asm"
+        },
+        {
+          "file": "work/client-logic/native-enemy-switch-node/76195__CheckCondition.asm"
+        },
+        {
+          "file": "work/client-logic/native-enemy-switch-node/76191_OnTick.asm"
+        },
+        {
+          "file": "work/client-logic/native-enemy-switch-node/76194_CheckInitialToggled.asm"
+        },
+        {
+          "file": "work/client-logic/native-enemy-switch-node/76365_set_toggled.asm"
+        },
+        {
+          "file": "work/client-logic/native-enemy-switch-node/64022_Enemy_get_isInCombat.asm"
+        }
+      ]
+    },
+    "providerLifecycle": {
+      "evidence": "Inferred",
+      "runtimePolicy": "Follow active Talent/provider attachment: active and condition true applies the own switch_mode Buff; condition false or carrier suppression/detach removes it; restoring carrier re-evaluates condition before applying again.",
+      "targetPolicy": "For this explicitly attached own Buff, START and FINISH TARGET are inferred to be the mounted owner; keep this distinct from generally equating TARGET and BUFF_OWNER.",
+      "silencePolicy": "Both toxcar sources have carrier SilenceableTalent._isSilenceable=1. Buff.isSilenceable=0 only describes the Buff flag and does not disable suppression of its carrier. Model carrier suppression separately and re-evaluate on restoration.",
+      "detachFlagBoundary": "_setToggleFalseOnDetached=0 is retained; it does not prove retained Buffs on detach or removal because OnDetached/OnToggleChanged bodies are unreadable.",
+      "inaccessible": [
+        {
+          "type": "Torappu.Battle.Abilities.ToggleablePassiveBuffAbility",
+          "method": "DoSetData",
+          "rva": "0x254f41c",
+          "file": "work/client-logic/native-enemy-switch-node/76343_DoSetData.asm",
+          "decodedInstructions": 0,
+          "status": "protected-or-unreadable-not-retried"
+        },
+        {
+          "type": "Torappu.Battle.Abilities.ToggleablePassiveBuffAbility",
+          "method": "DoAttach",
+          "rva": "0x2550044",
+          "file": "work/client-logic/native-enemy-switch-node/76344_DoAttach.asm",
+          "decodedInstructions": 0,
+          "status": "protected-or-unreadable-not-retried"
+        },
+        {
+          "type": "Torappu.Battle.Abilities.ToggleablePassiveBuffAbility",
+          "method": "OnTick",
+          "rva": "0x25501bc",
+          "file": "work/client-logic/native-enemy-switch-node/76346_OnTick.asm",
+          "decodedInstructions": 1,
+          "status": "protected-or-unreadable-not-retried"
+        },
+        {
+          "type": "Torappu.Battle.Abilities.ToggleablePassiveBuffAbility",
+          "method": "AddPassiveBuffs",
+          "rva": "0x2550280",
+          "file": "work/client-logic/native-enemy-switch-node/76347_AddPassiveBuffs.asm",
+          "decodedInstructions": 1,
+          "status": "protected-or-unreadable-not-retried"
+        },
+        {
+          "type": "Torappu.Battle.Abilities.ToggleablePassiveBuffAbility",
+          "method": "OnAttached",
+          "rva": "0x25504a0",
+          "file": "work/client-logic/native-enemy-switch-node/76348_OnAttached.asm",
+          "decodedInstructions": 0,
+          "status": "protected-or-unreadable-not-retried"
+        },
+        {
+          "type": "Torappu.Battle.Abilities.ToggleablePassiveBuffAbility",
+          "method": "OnDetached",
+          "rva": "0x255065c",
+          "file": "work/client-logic/native-enemy-switch-node/76349_OnDetached.asm",
+          "decodedInstructions": 0,
+          "status": "protected-or-unreadable-not-retried"
+        },
+        {
+          "type": "Torappu.Battle.Abilities.ToggleablePassiveBuffAbility",
+          "method": "OnToggleChanged",
+          "rva": "0x254f75c",
+          "file": "work/client-logic/native-enemy-switch-node/76350_OnToggleChanged.asm",
+          "decodedInstructions": 0,
+          "status": "protected-or-unreadable-not-retried"
+        },
+        {
+          "type": "Torappu.Battle.Abilities.ToggleablePassiveBuffAbility",
+          "method": "_SetToggledInternal",
+          "rva": "0x254fc90",
+          "file": "work/client-logic/native-enemy-switch-node/76351__SetToggledInternal.asm",
+          "decodedInstructions": 0,
+          "status": "protected-or-unreadable-not-retried"
+        }
+      ],
+      "metadataSearch": "No Buff/Context CreateSnapshot, InitializeSnapshot, InitSnapshot or SetBuff method exists in the indexed native method names. Generic Context.TakeSnapshot exists but was not expanded because it cannot establish unreadable Buff event caller arguments.",
+      "remainingUnverified": [
+        "provider attach/detach/OnToggleChanged sequencing",
+        "whether retained toggle state affects reattach ordering",
+        "Buff START/FINISH target snapshot setup",
+        "the exact interaction between silence, detach and Buff removal"
+      ]
+    },
+    "implementationStatus": "bounded-runtime-inference-with-native-condition-and-node-parameters; not full native lifecycle equivalence"
+  }
+}

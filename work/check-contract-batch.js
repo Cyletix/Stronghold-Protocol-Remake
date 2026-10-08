@@ -1,0 +1,10 @@
+'use strict';
+const fs=require('fs'),assert=require('node:assert/strict');
+const {checks,runChecks}=require('../tools/check_game');
+const parity=Number(process.argv[2]);assert.ok(parity===0||parity===1);
+const deferred=new Set(['implementation checklist','content coverage','docs']);
+const selected=checks.filter(([n])=>!deferred.has(n)).filter((_,i)=>i%2===parity);
+assert.equal(checks.length,123);assert.equal(selected.length,60);
+const log=`work/contract-batch-checks-${parity?'b':'a'}.txt`;
+fs.writeFileSync(log,'');
+process.exitCode=runChecks(selected,{report:s=>{fs.appendFileSync(log,s+'\n');console.log(s);}});

@@ -1,0 +1,489 @@
+{
+  "schemaVersion": 1,
+  "rule": "frozen-garrison-projectile-priority-v1",
+  "inputs": {
+    "catalogSha256": "0e98781bf230178481d80018f6c20ef20c2d9137793adc498953adf4ec1c6eb2",
+    "catalogSourceHashes": {
+      "work\\external-ready-data-20260914\\Tim23333-Arknights_timer\\snapshot\\Ark_emulator\\ark_emulator\\data_enemy_prefab_catalog_current.json": "ebe89ba77e15541b52bf117820ecf65838c840fee6e65d397ebc46c601c17ef8",
+      "work\\external-ready-data-20260914\\Tim23333-Arknights_timer\\snapshot\\Ark_emulator\\ark_emulator\\data_enemy_spine_events.json": "22ee68e69ee716bdea3d99e3311a72763c1097ca7854767579f005a7d30d1a81",
+      "work\\external-ready-data-20260914\\Tim23333-Arknights_timer\\snapshot\\Ark_emulator\\ark_emulator\\data_projectile_speeds.json": "b739fdabae9ec304972d3ade626ea24efaa45a834882e6b33216cb86a9bc473f",
+      "web\\battle_data.json": "7270b410e4526079a986c291a152f30bf3048fce0c56528d070ddb50fa34088b",
+      "web\\enemy_encounters.json": "05c765ce4566ecef2dd592ab5b009984e3b223d998631014c9853ef61fb5a119"
+    },
+    "prefabSha256": "ebe89ba77e15541b52bf117820ecf65838c840fee6e65d397ebc46c601c17ef8",
+    "databaseSha256": "d3f494055a1ec0d672b5a8c86b291be310a2f7a458c932fd6807c0f8b67fd7a9",
+    "sourceFiles": {
+      "work/garrison-projectile-priority-resource-cache.json": "824491523dda0d3406c00ce05f77cde408c0240554293ec79115bab37f85e739",
+      "work/garrison-projectile-priority-action-cache.json": "188bf57f852a512408f767620a35ffe06ca5dcd94bcc4bd791a169556f125ad6",
+      "work/garrison-projectile-chain-blackboard-source.json": "868da0f2004784430ce07c744ad52e12c68dac6fecb7ef4bf2efb76dd7d850ea",
+      "work/garrison-projectile-chain-geometry-source.json": "9b724c027c2ed5f407347a673bc46cffc8b6a4481a3b860857233c83e044e13a",
+      "work/garrison-projectile-chain-element-enum.json": "1c5d084198870641f144772f4a062661b4fabb531d5a4fa2bbcb31290f5a0fbb"
+    },
+    "jpBundleSha256": "550ca691b8d9e96f29706c59beaaacf342c89cdace34b1bd28595b6e36c37234"
+  },
+  "frozenMembers": {
+    "garrisonPending38": [
+      "enemy_10018_sgrobh",
+      "enemy_10026_vtzepl",
+      "enemy_10026_vtzepl_2",
+      "enemy_10035_cnvdnc",
+      "enemy_10035_cnvdnc_2",
+      "enemy_10044_wintun",
+      "enemy_10098_crhro",
+      "enemy_10099_crvln",
+      "enemy_10099_crvln_2",
+      "enemy_1010_demon",
+      "enemy_1010_demon_2",
+      "enemy_10162_mnctpt",
+      "enemy_1040_bombd",
+      "enemy_1112_emppnt",
+      "enemy_1112_emppnt_2",
+      "enemy_1151_dslntc",
+      "enemy_1151_dslntc_2",
+      "enemy_1225_dkmage",
+      "enemy_1225_dkmage_2",
+      "enemy_1234_dsubrl",
+      "enemy_1234_dsubrl_2",
+      "enemy_1373_ltnhor_2",
+      "enemy_1422_lrsldr",
+      "enemy_1422_lrsldr_2",
+      "enemy_1425_lrcmra",
+      "enemy_1425_lrcmra_2",
+      "enemy_1439_dslntf",
+      "enemy_1439_dslntf_2",
+      "enemy_1512_mcmstr",
+      "enemy_1516_jakill",
+      "enemy_1517_xi",
+      "enemy_1525_blkswb",
+      "enemy_2004_balloon",
+      "enemy_2008_flking",
+      "enemy_2025_syufo",
+      "enemy_2050_smsha",
+      "enemy_9021_acduml",
+      "enemy_9021_acduml_2"
+    ],
+    "projectileRelatedPending90": [
+      "enemy_10018_sgrobh",
+      "enemy_10018_sgrobh_2",
+      "enemy_10023_vtsnky",
+      "enemy_10023_vtsnky_2",
+      "enemy_10130_pycpok",
+      "enemy_10130_pycpok_2",
+      "enemy_10152_nstree",
+      "enemy_10152_nstree_2",
+      "enemy_10162_mnctpt",
+      "enemy_10162_mnctpt_2",
+      "enemy_10202_mubow",
+      "enemy_10202_mubow_2",
+      "enemy_10230_agkiro",
+      "enemy_10230_agkiro_2",
+      "enemy_1040_bombd",
+      "enemy_1040_bombd_2",
+      "enemy_1057_gansho",
+      "enemy_1057_gansho_2",
+      "enemy_1070_iced",
+      "enemy_1112_emppnt",
+      "enemy_1112_emppnt_2",
+      "enemy_1117_liiprr",
+      "enemy_1117_liiprr_2",
+      "enemy_1179_aruarw",
+      "enemy_1179_aruarw_2",
+      "enemy_1213_mtrsnp",
+      "enemy_1213_mtrsnp_2",
+      "enemy_1214_mtrmgc",
+      "enemy_1214_mtrmgc_2",
+      "enemy_1225_dkmage",
+      "enemy_1225_dkmage_2",
+      "enemy_1278_sgbow",
+      "enemy_1278_sgbow_2",
+      "enemy_1284_sgprst",
+      "enemy_1361_dthrow",
+      "enemy_1361_dthrow_2",
+      "enemy_1373_ltnhor",
+      "enemy_1373_ltnhor_2",
+      "enemy_1382_winbal",
+      "enemy_1382_winbal_2",
+      "enemy_1386_winmag",
+      "enemy_1386_winmag_2",
+      "enemy_1391_dhbow",
+      "enemy_1391_dhbow_2",
+      "enemy_1393_dhele",
+      "enemy_1393_dhele_2",
+      "enemy_1440_dselec",
+      "enemy_1440_dselec_2",
+      "enemy_15016_dqdkma",
+      "enemy_15068_dqsui",
+      "enemy_1517_xi",
+      "enemy_1526_sfsui",
+      "enemy_1530_white",
+      "enemy_1543_cstlrs",
+      "enemy_1546_cliff",
+      "enemy_1548_ltniak",
+      "enemy_1560_cnvlap",
+      "enemy_1563_fthlgj",
+      "enemy_1565_mpprme",
+      "enemy_1568_dirctr",
+      "enemy_1575_xdmon",
+      "enemy_2007_flwitch",
+      "enemy_2014_csicer",
+      "enemy_2018_csdoll",
+      "enemy_2020_cswrtr",
+      "enemy_2028_syevil",
+      "enemy_2037_sygirl",
+      "enemy_2042_syboss",
+      "enemy_2050_smsha",
+      "enemy_2051_smsha2",
+      "enemy_2091_skzgds",
+      "enemy_2092_skzamy",
+      "enemy_2118_dylbhm",
+      "enemy_4010_mubsbl",
+      "enemy_4010_mubsbl_2",
+      "enemy_5002_lazdfd_2",
+      "enemy_5004_bombfd",
+      "enemy_5005_yokafd",
+      "enemy_5011_mstrfd",
+      "enemy_5038_dqiprr_2",
+      "enemy_5054_dqxi",
+      "enemy_5078_izsvas",
+      "enemy_6023_crane",
+      "enemy_7029_pilot",
+      "enemy_7033_xbdrcar",
+      "enemy_7051_xbcas",
+      "enemy_7053_xbcasz",
+      "enemy_7060_xbcasy",
+      "enemy_9021_acduml",
+      "enemy_9021_acduml_2"
+    ],
+    "projectileRelatedGarrison12": [
+      "enemy_10018_sgrobh",
+      "enemy_10162_mnctpt",
+      "enemy_1040_bombd",
+      "enemy_1112_emppnt",
+      "enemy_1112_emppnt_2",
+      "enemy_1225_dkmage",
+      "enemy_1225_dkmage_2",
+      "enemy_1373_ltnhor_2",
+      "enemy_1517_xi",
+      "enemy_2050_smsha",
+      "enemy_9021_acduml",
+      "enemy_9021_acduml_2"
+    ]
+  },
+  "counts": {
+    "garrisonOrdinaryActionPending": 38,
+    "projectileRelatedPending": 90,
+    "projectileRelatedGarrisonPending": 12,
+    "requestedExactProjectileKeys": 90,
+    "existingJPAssets": 86,
+    "completeJPMonoBehaviourAssets": 86,
+    "retrievedJPMonoBehaviourComponents": 305
+  },
+  "families": [
+    {
+      "id": "chain-hit",
+      "projectileKeys": [
+        "projectile_enemy_dkmage",
+        "projectile_enemy_smsha"
+      ],
+      "allCatalogReferences": [
+        "enemy_1225_dkmage",
+        "enemy_1225_dkmage_2",
+        "enemy_15016_dqdkma",
+        "enemy_2050_smsha",
+        "enemy_2051_smsha2"
+      ],
+      "pendingReferences": [
+        "enemy_1225_dkmage",
+        "enemy_1225_dkmage_2",
+        "enemy_15016_dqdkma",
+        "enemy_2050_smsha",
+        "enemy_2051_smsha2"
+      ],
+      "garrisonReferences": [
+        "enemy_1225_dkmage",
+        "enemy_1225_dkmage_2",
+        "enemy_2050_smsha"
+      ],
+      "garrisonPendingReferences": [
+        "enemy_1225_dkmage",
+        "enemy_1225_dkmage_2",
+        "enemy_2050_smsha"
+      ],
+      "counts": {
+        "projectileKeys": 2,
+        "allEnemies": 5,
+        "pendingEnemies": 5,
+        "garrisonAll": 3,
+        "garrisonPending": 3
+      },
+      "countBoundary": "Unique enemy references to only the exact projectile keys retrieved for the frozen gap cohort. Families overlap; HitBehaviour presence does not prove AoE radius/damage semantics."
+    },
+    {
+      "id": "hit-behaviour-range-candidate",
+      "projectileKeys": [
+        "projectile_enemy_acduml",
+        "projectile_enemy_cswrtr",
+        "projectile_enemy_dselec",
+        "projectile_enemy_dthrow",
+        "projectile_enemy_emppnt",
+        "projectile_enemy_lazdfd_2",
+        "projectile_enemy_mnctpt",
+        "projectile_enemy_mnctpt_offset",
+        "projectile_enemy_mubsbl",
+        "projectile_enemy_mubsbl_2",
+        "projectile_enemy_pilot",
+        "projectile_enemy_white_in_reborn",
+        "projectile_enemy_white_p1",
+        "projectile_enemy_white_p1_crazy",
+        "projectile_enemy_white_p1_stun",
+        "projectile_enemy_white_p2",
+        "projectile_enemy_white_p2_crazy",
+        "projectile_enemy_white_p2_stun"
+      ],
+      "allCatalogReferences": [
+        "enemy_10162_mnctpt",
+        "enemy_10162_mnctpt_2",
+        "enemy_1112_emppnt",
+        "enemy_1112_emppnt_2",
+        "enemy_1361_dthrow",
+        "enemy_1361_dthrow_2",
+        "enemy_1440_dselec",
+        "enemy_1440_dselec_2",
+        "enemy_1530_white",
+        "enemy_2020_cswrtr",
+        "enemy_4010_mubsbl",
+        "enemy_4010_mubsbl_2",
+        "enemy_5002_lazdfd_2",
+        "enemy_5005_yokafd",
+        "enemy_5011_mstrfd",
+        "enemy_7029_pilot",
+        "enemy_9021_acduml",
+        "enemy_9021_acduml_2"
+      ],
+      "pendingReferences": [
+        "enemy_10162_mnctpt",
+        "enemy_10162_mnctpt_2",
+        "enemy_1112_emppnt",
+        "enemy_1112_emppnt_2",
+        "enemy_1361_dthrow",
+        "enemy_1361_dthrow_2",
+        "enemy_1440_dselec",
+        "enemy_1440_dselec_2",
+        "enemy_1530_white",
+        "enemy_2020_cswrtr",
+        "enemy_4010_mubsbl",
+        "enemy_4010_mubsbl_2",
+        "enemy_5002_lazdfd_2",
+        "enemy_5005_yokafd",
+        "enemy_5011_mstrfd",
+        "enemy_7029_pilot",
+        "enemy_9021_acduml",
+        "enemy_9021_acduml_2"
+      ],
+      "garrisonReferences": [
+        "enemy_10162_mnctpt",
+        "enemy_1112_emppnt",
+        "enemy_1112_emppnt_2",
+        "enemy_9021_acduml",
+        "enemy_9021_acduml_2"
+      ],
+      "garrisonPendingReferences": [
+        "enemy_10162_mnctpt",
+        "enemy_1112_emppnt",
+        "enemy_1112_emppnt_2",
+        "enemy_9021_acduml",
+        "enemy_9021_acduml_2"
+      ],
+      "counts": {
+        "projectileKeys": 18,
+        "allEnemies": 18,
+        "pendingEnemies": 18,
+        "garrisonAll": 5,
+        "garrisonPending": 5
+      },
+      "countBoundary": "Unique enemy references to only the exact projectile keys retrieved for the frozen gap cohort. Families overlap; HitBehaviour presence does not prove AoE radius/damage semantics."
+    },
+    {
+      "id": "lasso-split-hit",
+      "projectileKeys": [
+        "projectile_enemy_sgrobh_1",
+        "projectile_enemy_sgrobh_2",
+        "projectile_xbdrcar"
+      ],
+      "allCatalogReferences": [
+        "enemy_10018_sgrobh",
+        "enemy_10018_sgrobh_2",
+        "enemy_7033_xbdrcar"
+      ],
+      "pendingReferences": [
+        "enemy_10018_sgrobh",
+        "enemy_10018_sgrobh_2",
+        "enemy_7033_xbdrcar"
+      ],
+      "garrisonReferences": [
+        "enemy_10018_sgrobh"
+      ],
+      "garrisonPendingReferences": [
+        "enemy_10018_sgrobh"
+      ],
+      "counts": {
+        "projectileKeys": 3,
+        "allEnemies": 3,
+        "pendingEnemies": 3,
+        "garrisonAll": 1,
+        "garrisonPending": 1
+      },
+      "countBoundary": "Unique enemy references to only the exact projectile keys retrieved for the frozen gap cohort. Families overlap; HitBehaviour presence does not prove AoE radius/damage semantics."
+    },
+    {
+      "id": "attached-delayed-projectile",
+      "projectileKeys": [
+        "projectile_enemy_csdoll",
+        "projectile_enemy_dselec",
+        "projectile_enemy_emppnt",
+        "projectile_enemy_nstree",
+        "projectile_enemy_skzgds",
+        "projectile_enemy_xdmon[m2]"
+      ],
+      "allCatalogReferences": [
+        "enemy_10152_nstree",
+        "enemy_10152_nstree_2",
+        "enemy_1112_emppnt",
+        "enemy_1112_emppnt_2",
+        "enemy_1440_dselec",
+        "enemy_1440_dselec_2",
+        "enemy_1575_xdmon",
+        "enemy_2018_csdoll",
+        "enemy_2091_skzgds"
+      ],
+      "pendingReferences": [
+        "enemy_10152_nstree",
+        "enemy_10152_nstree_2",
+        "enemy_1112_emppnt",
+        "enemy_1112_emppnt_2",
+        "enemy_1440_dselec",
+        "enemy_1440_dselec_2",
+        "enemy_1575_xdmon",
+        "enemy_2018_csdoll",
+        "enemy_2091_skzgds"
+      ],
+      "garrisonReferences": [
+        "enemy_1112_emppnt",
+        "enemy_1112_emppnt_2"
+      ],
+      "garrisonPendingReferences": [
+        "enemy_1112_emppnt",
+        "enemy_1112_emppnt_2"
+      ],
+      "counts": {
+        "projectileKeys": 6,
+        "allEnemies": 9,
+        "pendingEnemies": 9,
+        "garrisonAll": 2,
+        "garrisonPending": 2
+      },
+      "countBoundary": "Unique enemy references to only the exact projectile keys retrieved for the frozen gap cohort. Families overlap; HitBehaviour presence does not prove AoE radius/damage semantics."
+    }
+  ],
+  "fieldFindings": {
+    "aoeRadiusTargetCnt": "The fixed basic-action catalog omits _aoeRadius/_targetCnt; exact CN action/component queries for the 90 requested enemies are retained in the action cache. The selected garrison chain source uses ChainedSelector._maxTarget, attack@ blackboards and CircleCollider2D, not guessed action fields.",
+    "chain": "5 unique enemies / 3 garrison; pure subgroup 3 / 2; both cold siblings also have ChainBuff skills and remain unresolved.",
+    "simpleArea": "HitBehaviour resource references touch 5 pending garrison enemies. Three also need MultiRanged timing; two emppnt use AttachToTarget delayToStart=3 and destination=2. Do not reinterpret as ordinary straight-flight AoE.",
+    "missingAssets": [
+      "projectile_enemy_agkiro",
+      "projectile_enemy_mubow",
+      "projectile_enemy_mubow_magic",
+      "projectile_enemy_pycpok"
+    ],
+    "misleadingGap": "The current nonstandard-or-missing-projectile-speed reason conflates known speeds with unsupported shape/lifetime. Every 5 chain candidate already has speed 15.",
+    "observedFieldCounts": {
+      "_aoeRadius": {
+        "componentOccurrences": 0,
+        "values": {}
+      },
+      "_targetCnt": {
+        "componentOccurrences": 0,
+        "values": {}
+      },
+      "_maxTarget": {
+        "componentOccurrences": 2,
+        "values": {
+          "0": 1,
+          "1": 1
+        }
+      },
+      "_maxHitNum": {
+        "componentOccurrences": 83,
+        "values": {
+          "1": 83
+        }
+      },
+      "_atkScale": {
+        "componentOccurrences": 465,
+        "values": {
+          "1.0": 448,
+          "0.0": 14,
+          "0.5": 2,
+          "0.8500000238418579": 1
+        }
+      },
+      "_interval": {
+        "componentOccurrences": 4,
+        "values": {
+          "0.0": 4
+        }
+      },
+      "_canHitSameTargetMultipleTimes": {
+        "componentOccurrences": 86,
+        "values": {
+          "0": 86
+        }
+      }
+    }
+  },
+  "recommendation": {
+    "family": "chain-hit-with-cast-invalidation",
+    "candidatePath": "work/enemy-chain-projectile-candidates.json",
+    "candidateIDs": [
+      "enemy_1225_dkmage",
+      "enemy_1225_dkmage_2",
+      "enemy_15016_dqdkma",
+      "enemy_2050_smsha",
+      "enemy_2051_smsha2"
+    ],
+    "acceptedTemplateCandidates": [
+      "enemy_1225_dkmage",
+      "enemy_1225_dkmage_2",
+      "enemy_15016_dqdkma"
+    ],
+    "deferred": {
+      "enemy_2050_smsha": [
+        "chain-hit-buffs-and-skill-overrides-not-supported"
+      ],
+      "enemy_2051_smsha2": [
+        "chain-hit-buffs-and-skill-overrides-not-supported"
+      ]
+    },
+    "netGarrisonCandidateCount": 2,
+    "runtimeImplementation": "reuse spawnProjectile/pool, enemyDamageToOperator, inflictDamage, applyEnemyEpDamage; one first-target flight then same-frame chained target iteration with independent damage/EP and a serializable castToken completion callback. No live JS closure in checkpoints.",
+    "existingCoverage": "Current ordinary projectiles hit one trace target and have no generic chain/AoE callback. Operator chain targeting and dedicated bomb impact loops are existing implementation references, not enemy native proof.",
+    "evidenceLevel": "Inferred",
+    "boundaries": [
+      "exact-name CN→JP resource association is cross-version inferred",
+      "attack@ namespace/range override is inferred; JP collider1.7 and CN projectile_range1.6 both retained",
+      "nearest eligible target and deterministic tie policy are implementation conventions",
+      "interval0 same-frame chain and cast invalidation lifecycle are shared inferences",
+      "only ordinary attack import gap can close; deathrattle/other enemy abilities are separate"
+    ],
+    "candidateFingerprint": "9a510b9ba16cdc16db675ce346db8e34dd43657816f232f2c43f68fb05eb6b71"
+  },
+  "sourceCachePaths": [
+    "work/garrison-projectile-priority-source-request.json",
+    "work/garrison-projectile-priority-action-cache.json",
+    "work/garrison-projectile-priority-resource-cache.json",
+    "work/garrison-projectile-chain-blackboard-source.json",
+    "work/garrison-projectile-chain-geometry-source.json",
+    "work/garrison-projectile-chain-element-enum.json"
+  ],
+  "sourceFingerprint": "e9eb774209013abe75d3df6e380cc274481eae6208be5b38433c6518cb652821"
+}

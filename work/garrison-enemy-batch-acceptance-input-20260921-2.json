@@ -1,0 +1,13 @@
+{
+  "batch": "20260921.2-attached-projectile",
+  "before": "work/garrison-enemy-batch-before-20260921-2.json",
+  "output": "work/garrison-enemy-batch-acceptance-20260921-2.json",
+  "scope": "enemy-attached-projectiles",
+  "validations": [
+    "tools/test_enemy_attach_projectiles.py",
+    ".runtime/enemy-attached-projectiles-receipts.json"
+  ],
+  "tasks": {
+    "enemy/enemy_1112_emppnt/basic/source-attached-projectile-body": "2026-09-21：实际源双普通动作通道、射程2/范围1.2、3秒固定落点物理伤害、来源死亡/追踪目标离场后的圈内结算、待发中断、轮末等待、池复用及3次主机恢复通过。标记优先仅fixture，不宣称自然环境生产者或整敌完成。"
+  }
+}

@@ -1,0 +1,6686 @@
+{
+  "char_498_inside": {
+    "uniEquipId": "uniequip_002_inside",
+    "name": "“最初的惊喜”",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 80,
+      "atk": 22,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_199_yak": {
+    "uniEquipId": "uniequip_002_yak",
+    "name": "父亲的袍子",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 200,
+      "atk": 0,
+      "def": 30,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_306_leizi": {
+    "uniEquipId": "uniequip_002_leizi",
+    "name": "“天地通明”",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 80,
+      "atk": 55,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4137_udflow": {
+    "uniEquipId": "uniequip_002_udflow",
+    "name": "基于咖啡的神经活性剂",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 38,
+      "def": 30,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_290_vigna": {
+    "uniEquipId": "uniequip_002_vigna",
+    "name": "伟大的摇滚",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 80,
+      "atk": 40,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_494_vendla": {
+    "uniEquipId": "uniequip_002_vendla",
+    "name": "碎片",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 105,
+      "atk": 23,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_145_prove": {
+    "uniEquipId": "uniequip_002_prove",
+    "name": "尾巴养护套装",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 40,
+      "def": 30,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_102_texas": {
+    "uniEquipId": "uniequip_002_texas",
+    "name": "外勤私人补给包",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 100,
+      "atk": 35,
+      "def": 15,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4100_caper": {
+    "uniEquipId": "uniequip_002_caper",
+    "name": "暖意的归宿",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 130,
+      "atk": 15,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_196_sunbr": {
+    "uniEquipId": "uniequip_002_sunbr",
+    "name": "蜜糖馅饼礼包",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 150,
+      "atk": 40,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_183_skgoat": {
+    "uniEquipId": "uniequip_002_skgoat",
+    "name": "待确认的申请表",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 90,
+      "atk": 0,
+      "def": 20,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_127_estell": {
+    "uniEquipId": "uniequip_002_estell",
+    "name": "荒野地的饯别礼",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 70,
+      "atk": 32,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_258_podego": {
+    "uniEquipId": "uniequip_002_podego",
+    "name": "“不谢的苗圃”",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 70,
+      "atk": 25,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_253_greyy": {
+    "uniEquipId": "uniequip_002_greyy",
+    "name": "新的开始",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 75,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0.03,
+      "magicRes": 0
+    }
+  },
+  "char_616_pithst": {
+    "uniEquipId": "uniequip_002_pithst",
+    "name": "盟约·辅助干员证章",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 90,
+      "atk": 23,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4151_tinman": {
+    "uniEquipId": "uniequip_002_tinman",
+    "name": "“颅相学”",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 80,
+      "atk": 20,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_469_indigo": {
+    "uniEquipId": "uniequip_002_indigo",
+    "name": "法杖保养套装",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 45,
+      "def": 0,
+      "aspd": 0.03,
+      "magicRes": 0
+    }
+  },
+  "char_337_utage": {
+    "uniEquipId": "uniequip_002_utage",
+    "name": "翻盖手机",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 160,
+      "atk": 45,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_496_wildmn": {
+    "uniEquipId": "uniequip_002_wildmn",
+    "name": "长枪替补套装",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 40,
+      "def": 0,
+      "aspd": 0.03,
+      "magicRes": 0
+    }
+  },
+  "char_107_liskam": {
+    "uniEquipId": "uniequip_002_liskam",
+    "name": "震撼存储",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 38,
+      "def": 30,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_279_excu": {
+    "uniEquipId": "uniequip_002_excu",
+    "name": "执行者随身包",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 38,
+      "def": 0,
+      "aspd": 0.03,
+      "magicRes": 0
+    }
+  },
+  "char_108_silent": {
+    "uniEquipId": "uniequip_002_silent",
+    "name": "紧急防卫程序",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 70,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0.04,
+      "magicRes": 0
+    }
+  },
+  "char_173_slchan": {
+    "uniEquipId": "uniequip_002_slchan",
+    "name": "“凌绝顶”",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 25,
+      "def": 22,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4122_grabds": {
+    "uniEquipId": "uniequip_002_grabds",
+    "name": "在田野上",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 90,
+      "atk": 33,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4114_harold": {
+    "uniEquipId": "uniequip_002_harold",
+    "name": "腿部护理套装",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 70,
+      "atk": 20,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4139_papyrs": {
+    "uniEquipId": "uniequip_002_papyrs",
+    "name": "小小的种子",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 38,
+      "def": 23,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_143_ghost": {
+    "uniEquipId": "uniequip_002_ghost",
+    "name": "幽明烛光",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 34,
+      "def": 30,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_381_bubble": {
+    "uniEquipId": "uniequip_002_bubble",
+    "name": "泡泡闪光必杀剑",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 180,
+      "atk": 0,
+      "def": 50,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_491_humus": {
+    "uniEquipId": "uniequip_002_humus",
+    "name": "恶地奇异工具套组",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 100,
+      "atk": 10,
+      "def": 14,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4040_rockr": {
+    "uniEquipId": "uniequip_002_rockr",
+    "name": "未命名的无人机",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 50,
+      "atk": 13,
+      "def": 11,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4016_kazema": {
+    "uniEquipId": "uniequip_002_kazema",
+    "name": "旧物",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 45,
+      "def": 25,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_237_gravel": {
+    "uniEquipId": "uniequip_002_gravel",
+    "name": "隐秘行动工具包",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 100,
+      "atk": 0,
+      "def": 40,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_181_flower": {
+    "uniEquipId": "uniequip_002_flower",
+    "name": "“爱琴之吻”",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 55,
+      "atk": 25,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4051_akkord": {
+    "uniEquipId": "uniequip_002_akkord",
+    "name": "移动八音盒",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 145,
+      "atk": 40,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_140_whitew": {
+    "uniEquipId": "uniequip_002_whitew",
+    "name": "“幼狼的牙齿”",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 110,
+      "atk": 20,
+      "def": 0,
+      "aspd": 0.04,
+      "magicRes": 0
+    }
+  },
+  "char_4207_branch": {
+    "uniEquipId": "uniequip_002_branch",
+    "name": "“时间的痕迹”",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 210,
+      "atk": 0,
+      "def": 35,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_431_ashlok": {
+    "uniEquipId": "uniequip_002_ashlok",
+    "name": "出门必备套装",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 235,
+      "atk": 45,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_103_angel": {
+    "uniEquipId": "uniequip_002_angel",
+    "name": "能天使的杰作",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 110,
+      "atk": 27,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_294_ayer": {
+    "uniEquipId": "uniequip_002_ayer",
+    "name": "荒野便携提神剂",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 120,
+      "atk": 37,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_308_swire": {
+    "uniEquipId": "uniequip_002_swire",
+    "name": "防身口红",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 120,
+      "atk": 50,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_1033_swire2": {
+    "uniEquipId": "uniequip_002_swire2",
+    "name": "“金币辉煌”",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 130,
+      "atk": 25,
+      "def": 35,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_263_skadi": {
+    "uniEquipId": "uniequip_002_skadi",
+    "name": "潮湿的剑袋",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 300,
+      "atk": 55,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4148_philae": {
+    "uniEquipId": "uniequip_002_philae",
+    "name": "被摩挲的日子",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 150,
+      "atk": 45,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4036_forcer": {
+    "uniEquipId": "uniequip_002_forcer",
+    "name": "可执行的幻想",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 170,
+      "atk": 45,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_388_mint": {
+    "uniEquipId": "uniequip_002_mint",
+    "name": "注意力保持装置",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 130,
+      "atk": 40,
+      "def": 15,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4079_haini": {
+    "uniEquipId": "uniequip_002_haini",
+    "name": "多功能测绘仪-改良版",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 13,
+      "def": 13,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_440_pinecn": {
+    "uniEquipId": "uniequip_002_pinecn",
+    "name": "移动电箱",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 30,
+      "def": 15,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4211_snhunt": {
+    "uniEquipId": "uniequip_002_snhunt",
+    "name": "过去的狩猎",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 140,
+      "atk": 50,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_423_blemsh": {
+    "uniEquipId": "uniequip_002_blemsh",
+    "name": "工匠团的回响",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 160,
+      "atk": 35,
+      "def": 35,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4054_malist": {
+    "uniEquipId": "uniequip_002_malist",
+    "name": "“新家园”",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 60,
+      "atk": 20,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_174_slbell": {
+    "uniEquipId": "uniequip_002_slbell",
+    "name": "“续针”",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 100,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0.04,
+      "magicRes": 0
+    }
+  },
+  "char_254_vodfox": {
+    "uniEquipId": "uniequip_002_vodfox",
+    "name": "布艺苹果",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 10,
+      "def": 15,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_150_snakek": {
+    "uniEquipId": "uniequip_002_snakek",
+    "name": "超强棒球套装",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 130,
+      "atk": 0,
+      "def": 60,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_126_shotst": {
+    "uniEquipId": "uniequip_002_shotst",
+    "name": "猎刀",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 100,
+      "atk": 22,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4026_vulpis": {
+    "uniEquipId": "uniequip_002_vulpis",
+    "name": "杀手也有假期",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 175,
+      "atk": 35,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_427_vigil": {
+    "uniEquipId": "uniequip_002_vigil",
+    "name": "叙拉古式入门礼",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 150,
+      "atk": 20,
+      "def": 15,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4013_kjera": {
+    "uniEquipId": "uniequip_002_kjera",
+    "name": "以雪为线",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 65,
+      "atk": 18,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_332_archet": {
+    "uniEquipId": "uniequip_002_archet",
+    "name": "“明天的种子”",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 17,
+      "def": 17,
+      "aspd": 0.02,
+      "magicRes": 0
+    }
+  },
+  "char_4194_rmixer": {
+    "uniEquipId": "uniequip_002_rmixer",
+    "name": "毛刷套装",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 210,
+      "atk": 40,
+      "def": 30,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_213_mostma": {
+    "uniEquipId": "uniequip_002_mostma",
+    "name": "锁与匙之家",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 51,
+      "def": 0,
+      "aspd": 0.05,
+      "magicRes": 0
+    }
+  },
+  "char_4087_ines": {
+    "uniEquipId": "uniequip_002_ines",
+    "name": "角部“护理”套组",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 150,
+      "atk": 20,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_344_beewax": {
+    "uniEquipId": "uniequip_002_beewax",
+    "name": "“司祭的祝福”",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 150,
+      "atk": 55,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_1021_kroos2": {
+    "uniEquipId": "uniequip_002_kroos2",
+    "name": "真心的话和想冒的险",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 110,
+      "atk": 22,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_222_bpipe": {
+    "uniEquipId": "uniequip_002_bpipe",
+    "name": "破城矛弹夹",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 150,
+      "atk": 50,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4163_rosesa": {
+    "uniEquipId": "uniequip_002_rosesa",
+    "name": "多彩盐漠生活",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 70,
+      "atk": 25,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_437_mizuki": {
+    "uniEquipId": "uniequip_002_mizuki",
+    "name": "使者之约",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 120,
+      "atk": 60,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_446_aroma": {
+    "uniEquipId": "uniequip_002_aroma",
+    "name": "柠檬味的童年",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 150,
+      "atk": 49,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4162_cathy": {
+    "uniEquipId": "uniequip_002_cathy",
+    "name": "闲暇时分",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 100,
+      "atk": 20,
+      "def": 20,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_474_glady": {
+    "uniEquipId": "uniequip_002_glady",
+    "name": "执政官手镜",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 110,
+      "atk": 45,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_206_gnosis": {
+    "uniEquipId": "uniequip_002_gnosis",
+    "name": "“誓言”",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 105,
+      "atk": 15,
+      "def": 15,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_373_lionhd": {
+    "uniEquipId": "uniequip_002_lionhd",
+    "name": "传承与开拓",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 80,
+      "atk": 45,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4196_reckpr": {
+    "uniEquipId": "uniequip_002_reckpr",
+    "name": "未完成的录武簿",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 70,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0.04,
+      "magicRes": 0
+    }
+  },
+  "char_1028_texas2": {
+    "uniEquipId": "uniequip_002_texas2",
+    "name": "蓝莓与黑巧",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 140,
+      "atk": 40,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_136_hsguma": {
+    "uniEquipId": "uniequip_002_hsguma",
+    "name": "友人们的赠礼",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 50,
+      "def": 70,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_311_mudrok": {
+    "uniEquipId": "uniequip_002_mudrok",
+    "name": "土石的根系",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 245,
+      "atk": 55,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_420_flamtl": {
+    "uniEquipId": "uniequip_002_flamtl",
+    "name": "红松的起点",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 175,
+      "atk": 35,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_430_fartth": {
+    "uniEquipId": "uniequip_002_fartth",
+    "name": "首战支援套组",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 70,
+      "def": 0,
+      "aspd": 0.05,
+      "magicRes": 0
+    }
+  },
+  "char_128_plosis": {
+    "uniEquipId": "uniequip_002_plosis",
+    "name": "医疗环境分析装置",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 60,
+      "atk": 30,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_172_svrash": {
+    "uniEquipId": "uniequip_002_svrash",
+    "name": "雪境羽兽护理套组",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 190,
+      "atk": 45,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_1026_gvial2": {
+    "uniEquipId": "uniequip_002_gvial2",
+    "name": "嘉维尔的折磨",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 150,
+      "atk": 45,
+      "def": 23,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_426_billro": {
+    "uniEquipId": "uniequip_002_billro",
+    "name": "风信子与匕首",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 200,
+      "atk": 66,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4134_cetsyr": {
+    "uniEquipId": "uniequip_002_cetsyr",
+    "name": "故事的结局",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 180,
+      "atk": 20,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_171_bldsk": {
+    "uniEquipId": "uniequip_002_bldsk",
+    "name": "应急储备",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 40,
+      "atk": 30,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4146_nymph": {
+    "uniEquipId": "uniequip_002_nymph",
+    "name": "心声",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 100,
+      "atk": 50,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_1032_excu2": {
+    "uniEquipId": "uniequip_002_excu2",
+    "name": "待解答",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 40,
+      "def": 24,
+      "aspd": 0.05,
+      "magicRes": 0
+    }
+  },
+  "char_4056_titi": {
+    "uniEquipId": "uniequip_002_titi",
+    "name": "远方的礼物",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 100,
+      "atk": 35,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_1040_blaze2": {
+    "uniEquipId": "uniequip_002_blaze2",
+    "name": "热切的期盼",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 52,
+      "def": 10,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4145_ulpia": {
+    "uniEquipId": "uniequip_002_ulpia",
+    "name": "乌尔比安的衣橱",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 330,
+      "atk": 84,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4010_etlchi": {
+    "uniEquipId": "uniequip_002_etlchi",
+    "name": "易枯萎的航船",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 50,
+      "def": 20,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_350_surtr": {
+    "uniEquipId": "uniequip_002_surtr",
+    "name": "萨米的不灭心脏碎片",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 30,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 5
+    }
+  },
+  "char_4039_horn": {
+    "uniEquipId": "uniequip_002_horn",
+    "name": "“典范之人”",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 65,
+      "def": 52,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_358_lisa": {
+    "uniEquipId": "uniequip_002_lisa",
+    "name": "怀中御守",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 100,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0.04,
+      "magicRes": 0
+    }
+  },
+  "char_202_demkni": {
+    "uniEquipId": "uniequip_002_demkni",
+    "name": "闲置的拳击手套",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 150,
+      "atk": 50,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_2015_dusk": {
+    "uniEquipId": "uniequip_002_dusk",
+    "name": "无题长卷",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 120,
+      "atk": 55,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_1023_ghost2": {
+    "uniEquipId": "uniequip_002_ghost2",
+    "name": "“唱片”收藏箱",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 200,
+      "atk": 50,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_1039_thorn2": {
+    "uniEquipId": "uniequip_002_thorn2",
+    "name": "三面的金币",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 80,
+      "atk": 30,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_264_f12yin": {
+    "uniEquipId": "uniequip_002_f12yin",
+    "name": "“自由的代价”",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 160,
+      "atk": 35,
+      "def": 15,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4064_mlynar": {
+    "uniEquipId": "uniequip_002_mlynar",
+    "name": "“鞘中人”",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 225,
+      "atk": 18,
+      "def": 0,
+      "aspd": 0.05,
+      "magicRes": 0
+    }
+  },
+  "char_291_aglina": {
+    "uniEquipId": "uniequip_002_aglina",
+    "name": "重力校准模块",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 90,
+      "atk": 35,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_341_sntlla": {
+    "uniEquipId": "uniequip_002_sntlla",
+    "name": "“冰焰”",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 80,
+      "atk": 40,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4193_lemuen": {
+    "uniEquipId": "uniequip_002_lemuen",
+    "name": "“弹匣与花窗”",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 120,
+      "atk": 120,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_1046_sbell2": {
+    "uniEquipId": "uniequip_002_sbell2",
+    "name": "千分之一的心",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 75,
+      "def": 38,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_2026_yu": {
+    "uniEquipId": "uniequip_002_yu",
+    "name": "人间百味",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 400,
+      "atk": 85,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_1012_skadi2": {
+    "uniEquipId": "uniequip_002_skadi2",
+    "name": "蜕化的残迹",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 130,
+      "atk": 35,
+      "def": 17,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_472_pasngr": {
+    "uniEquipId": "uniequip_002_pasngr",
+    "name": "电磁调节器",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 90,
+      "def": 0,
+      "aspd": 0.05,
+      "magicRes": 0
+    }
+  },
+  "char_4058_pepe": {
+    "uniEquipId": "uniequip_002_pepe",
+    "name": "晴雨",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 300,
+      "atk": 113,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_1019_siege2": {
+    "uniEquipId": "uniequip_002_siege2",
+    "name": "城主的冒险",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 440,
+      "atk": 56,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_1020_reed2": {
+    "uniEquipId": "uniequip_002_reed2",
+    "name": "“赠予红龙的花冠”",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 160,
+      "atk": 50,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_245_cello": {
+    "uniEquipId": "uniequip_002_cello",
+    "name": "强弱法",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 210,
+      "atk": 40,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_249_mlyss": {
+    "uniEquipId": "uniequip_002_mlyss",
+    "name": "梳妆流形",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 190,
+      "atk": 25,
+      "def": 30,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_391_rosmon": {
+    "uniEquipId": "uniequip_002_rosmon",
+    "name": "“记事”",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 275,
+      "atk": 75,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_1041_angel2": {
+    "uniEquipId": "uniequip_002_angel2",
+    "name": "新朋友圣城生活套组",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 210,
+      "atk": 65,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4042_lumen": {
+    "uniEquipId": "uniequip_002_lumen",
+    "name": "纯铜单筒望远镜",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 160,
+      "atk": 45,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4082_qiubai": {
+    "uniEquipId": "uniequip_002_qiubai",
+    "name": "雪浸过的斗笠",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 55,
+      "def": 45,
+      "aspd": 0.07,
+      "magicRes": 0
+    }
+  },
+  "char_1047_halo2": {
+    "uniEquipId": "uniequip_002_halo2",
+    "name": "探索者的收藏",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 115,
+      "atk": 50,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_1014_nearl2": {
+    "uniEquipId": "uniequip_002_nearl2",
+    "name": "耀阳锋刃",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 330,
+      "atk": 105,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_1038_whitw2": {
+    "uniEquipId": "uniequip_002_whitw2",
+    "name": "狼时",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 160,
+      "atk": 33,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4116_blkkgt": {
+    "uniEquipId": "uniequip_002_blkkgt",
+    "name": "“过往的注脚”",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 120,
+      "atk": 50,
+      "def": 50,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_1016_agoat2": {
+    "uniEquipId": "uniequip_002_agoat2",
+    "name": "想要留住的声音",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 140,
+      "atk": 44,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_198_blackd": {
+    "uniEquipId": "uniequip_002_blackd",
+    "name": "耐低温通讯设备",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 135,
+      "atk": 0,
+      "def": 24,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_133_mm": {
+    "uniEquipId": "uniequip_002_mm",
+    "name": "新手侦探礼包",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 18,
+      "def": 0,
+      "aspd": 0.01,
+      "magicRes": 0
+    }
+  },
+  "char_109_fmout": {
+    "uniEquipId": "uniequip_002_fmout",
+    "name": "占卜师旅行套装",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 80,
+      "atk": 35,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_215_mantic": {
+    "uniEquipId": "uniequip_002_mantic",
+    "name": "训练用尾部防护套装",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 58,
+      "def": 22,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_230_savage": {
+    "uniEquipId": "uniequip_002_savage",
+    "name": "未竟的旅程",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 30,
+      "def": 22,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4004_pudd": {
+    "uniEquipId": "uniequip_002_pudd",
+    "name": "便携测电设备",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 70,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0.04,
+      "magicRes": 0
+    }
+  },
+  "char_4119_wanqin": {
+    "uniEquipId": "uniequip_002_wanqin",
+    "name": "牵风",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 105,
+      "atk": 0,
+      "def": 45,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_304_zebra": {
+    "uniEquipId": "uniequip_002_zebra",
+    "name": "人气角色贴纸",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 200,
+      "atk": 0,
+      "def": 50,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_348_ceylon": {
+    "uniEquipId": "uniequip_002_ceylon",
+    "name": "野外考察套装",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 25,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 5
+    }
+  },
+  "char_271_spikes": {
+    "uniEquipId": "uniequip_002_spikes",
+    "name": "芳汀之书",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 120,
+      "atk": 33,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_422_aurora": {
+    "uniEquipId": "uniequip_002_aurora",
+    "name": "盾用摄制模块",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 250,
+      "atk": 60,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_243_waaifu": {
+    "uniEquipId": "uniequip_002_waaifu",
+    "name": "红眉咏春拳谱",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 70,
+      "atk": 45,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4045_heidi": {
+    "uniEquipId": "uniequip_002_heidi",
+    "name": "华贵璀璨的死斗",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 70,
+      "atk": 13,
+      "def": 12,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_449_glider": {
+    "uniEquipId": "uniequip_002_glider",
+    "name": "落地之后",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 120,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0.04,
+      "magicRes": 0
+    }
+  },
+  "char_218_cuttle": {
+    "uniEquipId": "uniequip_002_cuttle",
+    "name": "枪支调试工具组",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 70,
+      "atk": 65,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_355_ethan": {
+    "uniEquipId": "uniequip_002_ethan",
+    "name": "超级喷漆套装",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 160,
+      "atk": 35,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_300_phenxi": {
+    "uniEquipId": "uniequip_002_phenxi",
+    "name": "“律外”特种弹药配给组",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 48,
+      "def": 26,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_416_zumama": {
+    "uniEquipId": "uniequip_002_zumama",
+    "name": "祖玛玛的工具箱",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 80,
+      "def": 70,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_135_halo": {
+    "uniEquipId": "uniequip_002_halo",
+    "name": "未组装的钟表",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 50,
+      "atk": 45,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_473_mberry": {
+    "uniEquipId": "uniequip_002_mberry",
+    "name": "宁心静神",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 60,
+      "atk": 22,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_017_huang": {
+    "uniEquipId": "uniequip_002_huang",
+    "name": "过载的武器与过热的心脏",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 240,
+      "atk": 50,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_345_folnic": {
+    "uniEquipId": "uniequip_002_folnic",
+    "name": "母亲的领巾",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 70,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0.04,
+      "magicRes": 0
+    }
+  },
+  "char_4121_zuole": {
+    "uniEquipId": "uniequip_002_zuole",
+    "name": "“岂苦夜长”",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 55,
+      "def": 40,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_1034_jesca2": {
+    "uniEquipId": "uniequip_002_jesca2",
+    "name": "“私家英雄”",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 180,
+      "atk": 50,
+      "def": 25,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4080_lin": {
+    "uniEquipId": "uniequip_002_lin",
+    "name": "“七窍玲珑”",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 62,
+      "def": 45,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_2012_typhon": {
+    "uniEquipId": "uniequip_002_typhon",
+    "name": "自然的包容",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 120,
+      "atk": 60,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_4138_narant": {
+    "uniEquipId": "uniequip_002_narant",
+    "name": "“吹尽狂沙”",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 35,
+      "def": 35,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_377_gdglow": {
+    "uniEquipId": "uniequip_002_gdglow",
+    "name": "“辛劳之翼”",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 110,
+      "atk": 32,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_450_necras": {
+    "uniEquipId": "uniequip_002_necras",
+    "name": "未处理的遗产",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 160,
+      "atk": 45,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "char_134_ifrit": {
+    "uniEquipId": "uniequip_002_ifrit",
+    "name": "“同熔”",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 0,
+      "atk": 64,
+      "def": 0,
+      "aspd": 0.06,
+      "magicRes": 0
+    }
+  },
+  "char_1031_slent2": {
+    "uniEquipId": "uniequip_002_slent2",
+    "name": "难得清醒",
+    "normal": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    },
+    "elite": {
+      "hp": 130,
+      "atk": 60,
+      "def": 0,
+      "aspd": 0,
+      "magicRes": 0
+    }
+  },
+  "bySeason": {
+    "act2autochess": {
+      "chess_char_1_01_a": {
+        "uniEquipId": "uniequip_002_inside",
+        "name": "“最初的惊喜”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 80,
+          "atk": 22,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_02_a": {
+        "uniEquipId": "uniequip_002_yak",
+        "name": "父亲的袍子",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 200,
+          "atk": 0,
+          "def": 30,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_03_a": {
+        "uniEquipId": "uniequip_002_leizi",
+        "name": "“天地通明”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 80,
+          "atk": 55,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_04_a": {
+        "uniEquipId": "uniequip_002_udflow",
+        "name": "基于咖啡的神经活性剂",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 38,
+          "def": 30,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_05_a": {
+        "uniEquipId": "uniequip_002_vigna",
+        "name": "伟大的摇滚",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 80,
+          "atk": 40,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_06_a": {
+        "uniEquipId": "uniequip_002_vendla",
+        "name": "碎片",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 105,
+          "atk": 23,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_07_a": {
+        "uniEquipId": "uniequip_002_prove",
+        "name": "尾巴养护套装",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 40,
+          "def": 30,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_08_a": {
+        "uniEquipId": "uniequip_002_texas",
+        "name": "外勤私人补给包",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 100,
+          "atk": 35,
+          "def": 15,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_09_a": {
+        "uniEquipId": "uniequip_002_caper",
+        "name": "暖意的归宿",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 130,
+          "atk": 15,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_10_a": {
+        "uniEquipId": "uniequip_002_sunbr",
+        "name": "蜜糖馅饼礼包",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 150,
+          "atk": 40,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_11_a": {
+        "uniEquipId": "uniequip_002_skgoat",
+        "name": "待确认的申请表",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 90,
+          "atk": 0,
+          "def": 20,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_12_a": {
+        "uniEquipId": "uniequip_002_estell",
+        "name": "荒野地的饯别礼",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 70,
+          "atk": 32,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_13_a": {
+        "uniEquipId": "uniequip_002_podego",
+        "name": "“不谢的苗圃”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 70,
+          "atk": 25,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_14_a": {
+        "uniEquipId": "uniequip_002_greyy",
+        "name": "新的开始",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 75,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0.03,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_15_a": {
+        "uniEquipId": "uniequip_002_pithst",
+        "name": "盟约·辅助干员证章",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 90,
+          "atk": 23,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_16_a": {
+        "uniEquipId": "uniequip_002_tinman",
+        "name": "“颅相学”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 80,
+          "atk": 20,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_17_a": {
+        "uniEquipId": "uniequip_002_indigo",
+        "name": "法杖保养套装",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 45,
+          "def": 0,
+          "aspd": 0.03,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_18_a": {
+        "uniEquipId": "uniequip_002_utage",
+        "name": "翻盖手机",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 160,
+          "atk": 45,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_19_a": {
+        "uniEquipId": "uniequip_002_wildmn",
+        "name": "长枪替补套装",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 40,
+          "def": 0,
+          "aspd": 0.03,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_20_a": {
+        "uniEquipId": "uniequip_002_liskam",
+        "name": "震撼存储",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 38,
+          "def": 30,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_01_a": {
+        "uniEquipId": "uniequip_002_excu",
+        "name": "执行者随身包",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 38,
+          "def": 0,
+          "aspd": 0.03,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_02_a": {
+        "uniEquipId": "uniequip_002_silent",
+        "name": "紧急防卫程序",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 70,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0.04,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_03_a": {
+        "uniEquipId": "uniequip_002_slchan",
+        "name": "“凌绝顶”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 25,
+          "def": 22,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_04_a": {
+        "uniEquipId": "uniequip_002_grabds",
+        "name": "在田野上",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 90,
+          "atk": 33,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_05_a": {
+        "uniEquipId": "uniequip_002_harold",
+        "name": "腿部护理套装",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 70,
+          "atk": 20,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_06_a": {
+        "uniEquipId": "uniequip_002_papyrs",
+        "name": "小小的种子",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 38,
+          "def": 23,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_07_a": {
+        "uniEquipId": "uniequip_002_ghost",
+        "name": "幽明烛光",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 34,
+          "def": 30,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_08_a": {
+        "uniEquipId": "uniequip_002_bubble",
+        "name": "泡泡闪光必杀剑",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 180,
+          "atk": 0,
+          "def": 50,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_09_a": {
+        "uniEquipId": "uniequip_002_humus",
+        "name": "恶地奇异工具套组",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 100,
+          "atk": 10,
+          "def": 14,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_10_a": {
+        "uniEquipId": "uniequip_002_rockr",
+        "name": "未命名的无人机",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 50,
+          "atk": 13,
+          "def": 11,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_11_a": {
+        "uniEquipId": "uniequip_002_kazema",
+        "name": "旧物",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 45,
+          "def": 25,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_12_a": {
+        "uniEquipId": "uniequip_002_gravel",
+        "name": "隐秘行动工具包",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 100,
+          "atk": 0,
+          "def": 40,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_14_a": {
+        "uniEquipId": "uniequip_002_flower",
+        "name": "“爱琴之吻”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 55,
+          "atk": 25,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_15_a": {
+        "uniEquipId": "uniequip_002_akkord",
+        "name": "移动八音盒",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 145,
+          "atk": 40,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_16_a": {
+        "uniEquipId": "uniequip_002_whitew",
+        "name": "“幼狼的牙齿”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 110,
+          "atk": 20,
+          "def": 0,
+          "aspd": 0.04,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_17_a": {
+        "uniEquipId": "uniequip_002_branch",
+        "name": "“时间的痕迹”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 210,
+          "atk": 0,
+          "def": 35,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_18_a": {
+        "uniEquipId": "uniequip_002_ashlok",
+        "name": "出门必备套装",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 235,
+          "atk": 45,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_19_a": {
+        "uniEquipId": "uniequip_002_tinman",
+        "name": "“颅相学”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 80,
+          "atk": 20,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_01_a": {
+        "uniEquipId": "uniequip_002_angel",
+        "name": "能天使的杰作",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 110,
+          "atk": 27,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_02_a": {
+        "uniEquipId": "uniequip_002_ayer",
+        "name": "荒野便携提神剂",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 120,
+          "atk": 37,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_03_a": {
+        "uniEquipId": "uniequip_002_swire",
+        "name": "防身口红",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 120,
+          "atk": 50,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_04_a": {
+        "uniEquipId": "uniequip_002_swire2",
+        "name": "“金币辉煌”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 130,
+          "atk": 25,
+          "def": 35,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_05_a": {
+        "uniEquipId": "uniequip_002_skadi",
+        "name": "潮湿的剑袋",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 300,
+          "atk": 55,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_06_a": {
+        "uniEquipId": "uniequip_002_philae",
+        "name": "被摩挲的日子",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 150,
+          "atk": 45,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_07_a": {
+        "uniEquipId": "uniequip_002_forcer",
+        "name": "可执行的幻想",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 170,
+          "atk": 45,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_08_a": {
+        "uniEquipId": "uniequip_002_mint",
+        "name": "注意力保持装置",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 130,
+          "atk": 40,
+          "def": 15,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_09_a": {
+        "uniEquipId": "uniequip_002_haini",
+        "name": "多功能测绘仪-改良版",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 13,
+          "def": 13,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_10_a": {
+        "uniEquipId": "uniequip_002_pinecn",
+        "name": "移动电箱",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 30,
+          "def": 15,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_11_a": {
+        "uniEquipId": "uniequip_002_snhunt",
+        "name": "过去的狩猎",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 140,
+          "atk": 50,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_12_a": {
+        "uniEquipId": "uniequip_002_blemsh",
+        "name": "工匠团的回响",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 160,
+          "atk": 35,
+          "def": 35,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_13_a": {
+        "uniEquipId": "uniequip_002_malist",
+        "name": "“新家园”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 60,
+          "atk": 20,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_14_a": {
+        "uniEquipId": "uniequip_002_slbell",
+        "name": "“续针”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 100,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0.04,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_15_a": {
+        "uniEquipId": "uniequip_002_vodfox",
+        "name": "布艺苹果",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 10,
+          "def": 15,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_16_a": {
+        "uniEquipId": "uniequip_002_snakek",
+        "name": "超强棒球套装",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 130,
+          "atk": 0,
+          "def": 60,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_17_a": {
+        "uniEquipId": "uniequip_002_shotst",
+        "name": "猎刀",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 100,
+          "atk": 22,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_18_a": {
+        "uniEquipId": "uniequip_002_vulpis",
+        "name": "杀手也有假期",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 175,
+          "atk": 35,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_19_a": {
+        "uniEquipId": "uniequip_002_vigil",
+        "name": "叙拉古式入门礼",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 150,
+          "atk": 20,
+          "def": 15,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_20_a": {
+        "uniEquipId": "uniequip_002_kjera",
+        "name": "以雪为线",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 65,
+          "atk": 18,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_21_a": {
+        "uniEquipId": "uniequip_002_archet",
+        "name": "“明天的种子”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 17,
+          "def": 17,
+          "aspd": 0.02,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_01_a": {
+        "uniEquipId": "uniequip_002_rmixer",
+        "name": "毛刷套装",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 210,
+          "atk": 40,
+          "def": 30,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_02_a": {
+        "uniEquipId": "uniequip_002_mostma",
+        "name": "锁与匙之家",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 51,
+          "def": 0,
+          "aspd": 0.05,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_03_a": {
+        "uniEquipId": "uniequip_002_kjera",
+        "name": "以雪为线",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 65,
+          "atk": 18,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_04_a": {
+        "uniEquipId": "uniequip_002_ines",
+        "name": "角部“护理”套组",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 150,
+          "atk": 20,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_05_a": {
+        "uniEquipId": "uniequip_002_beewax",
+        "name": "“司祭的祝福”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 150,
+          "atk": 55,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_06_a": {
+        "uniEquipId": "uniequip_002_kroos2",
+        "name": "真心的话和想冒的险",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 110,
+          "atk": 22,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_07_a": {
+        "uniEquipId": "uniequip_002_bpipe",
+        "name": "破城矛弹夹",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 150,
+          "atk": 50,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_08_a": {
+        "uniEquipId": "uniequip_002_rosesa",
+        "name": "多彩盐漠生活",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 70,
+          "atk": 25,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_09_a": {
+        "uniEquipId": "uniequip_002_mizuki",
+        "name": "使者之约",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 120,
+          "atk": 60,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_10_a": {
+        "uniEquipId": "uniequip_002_aroma",
+        "name": "柠檬味的童年",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 150,
+          "atk": 49,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_11_a": {
+        "uniEquipId": "uniequip_002_cathy",
+        "name": "闲暇时分",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 100,
+          "atk": 20,
+          "def": 20,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_12_a": {
+        "uniEquipId": "uniequip_002_glady",
+        "name": "执政官手镜",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 110,
+          "atk": 45,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_13_a": {
+        "uniEquipId": "uniequip_002_gnosis",
+        "name": "“誓言”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 105,
+          "atk": 15,
+          "def": 15,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_14_a": {
+        "uniEquipId": "uniequip_002_lionhd",
+        "name": "传承与开拓",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 80,
+          "atk": 45,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_15_a": {
+        "uniEquipId": "uniequip_002_reckpr",
+        "name": "未完成的录武簿",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 70,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0.04,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_16_a": {
+        "uniEquipId": "uniequip_002_texas2",
+        "name": "蓝莓与黑巧",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 140,
+          "atk": 40,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_17_a": {
+        "uniEquipId": "uniequip_002_hsguma",
+        "name": "友人们的赠礼",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 50,
+          "def": 70,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_18_a": {
+        "uniEquipId": "uniequip_002_mudrok",
+        "name": "土石的根系",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 245,
+          "atk": 55,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_19_a": {
+        "uniEquipId": "uniequip_002_flamtl",
+        "name": "红松的起点",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 175,
+          "atk": 35,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_20_a": {
+        "uniEquipId": "uniequip_002_fartth",
+        "name": "首战支援套组",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 70,
+          "def": 0,
+          "aspd": 0.05,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_21_a": {
+        "uniEquipId": "uniequip_002_plosis",
+        "name": "医疗环境分析装置",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 60,
+          "atk": 30,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_22_a": {
+        "uniEquipId": "uniequip_002_svrash",
+        "name": "雪境羽兽护理套组",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 190,
+          "atk": 45,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_23_a": {
+        "uniEquipId": "uniequip_002_gvial2",
+        "name": "嘉维尔的折磨",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 150,
+          "atk": 45,
+          "def": 23,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_24_a": {
+        "uniEquipId": "uniequip_002_billro",
+        "name": "风信子与匕首",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 200,
+          "atk": 66,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_25_a": {
+        "uniEquipId": "uniequip_002_cetsyr",
+        "name": "故事的结局",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 180,
+          "atk": 20,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_26_a": {
+        "uniEquipId": "uniequip_002_bldsk",
+        "name": "应急储备",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 40,
+          "atk": 30,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_22_a": {
+        "uniEquipId": "uniequip_002_nymph",
+        "name": "心声",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 100,
+          "atk": 50,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_01_a": {
+        "uniEquipId": "uniequip_002_excu2",
+        "name": "待解答",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 40,
+          "def": 24,
+          "aspd": 0.05,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_02_a": {
+        "uniEquipId": "uniequip_002_titi",
+        "name": "远方的礼物",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 100,
+          "atk": 35,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_03_a": {
+        "uniEquipId": "uniequip_002_blaze2",
+        "name": "热切的期盼",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 52,
+          "def": 10,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_04_a": {
+        "uniEquipId": "uniequip_002_bldsk",
+        "name": "应急储备",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 40,
+          "atk": 30,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_05_a": {
+        "uniEquipId": "uniequip_002_ulpia",
+        "name": "乌尔比安的衣橱",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 330,
+          "atk": 84,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_06_a": {
+        "uniEquipId": "uniequip_002_etlchi",
+        "name": "易枯萎的航船",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 50,
+          "def": 20,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_07_a": {
+        "uniEquipId": "uniequip_002_surtr",
+        "name": "萨米的不灭心脏碎片",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 30,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 5
+        }
+      },
+      "chess_char_5_08_a": {
+        "uniEquipId": "uniequip_002_horn",
+        "name": "“典范之人”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 65,
+          "def": 52,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_09_a": {
+        "uniEquipId": "uniequip_002_cetsyr",
+        "name": "故事的结局",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 180,
+          "atk": 20,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_10_a": {
+        "uniEquipId": "uniequip_002_lisa",
+        "name": "怀中御守",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 100,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0.04,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_11_a": {
+        "uniEquipId": "uniequip_002_demkni",
+        "name": "闲置的拳击手套",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 150,
+          "atk": 50,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_12_a": {
+        "uniEquipId": "uniequip_002_dusk",
+        "name": "无题长卷",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 120,
+          "atk": 55,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_13_a": {
+        "uniEquipId": "uniequip_002_ghost2",
+        "name": "“唱片”收藏箱",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 200,
+          "atk": 50,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_15_a": {
+        "uniEquipId": "uniequip_002_thorn2",
+        "name": "三面的金币",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 80,
+          "atk": 30,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_16_a": {
+        "uniEquipId": "uniequip_002_plosis",
+        "name": "医疗环境分析装置",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 60,
+          "atk": 30,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_17_a": {
+        "uniEquipId": "uniequip_002_f12yin",
+        "name": "“自由的代价”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 160,
+          "atk": 35,
+          "def": 15,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_18_a": {
+        "uniEquipId": "uniequip_002_gvial2",
+        "name": "嘉维尔的折磨",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 150,
+          "atk": 45,
+          "def": 23,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_19_a": {
+        "uniEquipId": "uniequip_002_mlynar",
+        "name": "“鞘中人”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 225,
+          "atk": 18,
+          "def": 0,
+          "aspd": 0.05,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_20_a": {
+        "uniEquipId": "uniequip_002_aglina",
+        "name": "重力校准模块",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 90,
+          "atk": 35,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_21_a": {
+        "uniEquipId": "uniequip_002_sntlla",
+        "name": "“冰焰”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 80,
+          "atk": 40,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_23_a": {
+        "uniEquipId": "uniequip_002_reckpr",
+        "name": "未完成的录武簿",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 70,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0.04,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_01_a": {
+        "uniEquipId": "uniequip_002_lemuen",
+        "name": "“弹匣与花窗”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 120,
+          "atk": 120,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_02_a": {
+        "uniEquipId": "uniequip_002_sbell2",
+        "name": "千分之一的心",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 75,
+          "def": 38,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_03_a": {
+        "uniEquipId": "uniequip_002_yu",
+        "name": "人间百味",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 400,
+          "atk": 85,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_04_a": {
+        "uniEquipId": "uniequip_002_skadi2",
+        "name": "蜕化的残迹",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 130,
+          "atk": 35,
+          "def": 17,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_05_a": {
+        "uniEquipId": "uniequip_002_pasngr",
+        "name": "电磁调节器",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 90,
+          "def": 0,
+          "aspd": 0.05,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_06_a": {
+        "uniEquipId": "uniequip_002_pepe",
+        "name": "晴雨",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 300,
+          "atk": 113,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_07_a": {
+        "uniEquipId": "uniequip_002_siege2",
+        "name": "城主的冒险",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 440,
+          "atk": 56,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_08_a": {
+        "uniEquipId": "uniequip_002_reed2",
+        "name": "“赠予红龙的花冠”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 160,
+          "atk": 50,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_09_a": {
+        "uniEquipId": "uniequip_002_cello",
+        "name": "强弱法",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 210,
+          "atk": 40,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_10_a": {
+        "uniEquipId": "uniequip_002_nymph",
+        "name": "心声",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 150,
+          "atk": 80,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_11_a": {
+        "uniEquipId": "uniequip_002_mlyss",
+        "name": "梳妆流形",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 190,
+          "atk": 25,
+          "def": 30,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_12_a": {
+        "uniEquipId": "uniequip_002_rosmon",
+        "name": "“记事”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 275,
+          "atk": 75,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_13_a": {
+        "uniEquipId": "uniequip_002_angel2",
+        "name": "新朋友圣城生活套组",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 210,
+          "atk": 65,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_14_a": {
+        "uniEquipId": "uniequip_002_lumen",
+        "name": "纯铜单筒望远镜",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 160,
+          "atk": 45,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_15_a": {
+        "uniEquipId": "uniequip_002_qiubai",
+        "name": "雪浸过的斗笠",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 55,
+          "def": 45,
+          "aspd": 0.07,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_16_a": {
+        "uniEquipId": "uniequip_002_halo2",
+        "name": "探索者的收藏",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 115,
+          "atk": 50,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_17_a": {
+        "uniEquipId": "uniequip_002_nearl2",
+        "name": "耀阳锋刃",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 330,
+          "atk": 105,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_18_a": {
+        "uniEquipId": "uniequip_002_whitw2",
+        "name": "狼时",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 160,
+          "atk": 33,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_19_a": {
+        "uniEquipId": "uniequip_002_blkkgt",
+        "name": "“过往的注脚”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 120,
+          "atk": 50,
+          "def": 50,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_20_a": {
+        "uniEquipId": "uniequip_002_agoat2",
+        "name": "想要留住的声音",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 140,
+          "atk": 44,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      }
+    },
+    "act1autochess": {
+      "chess_char_1_01_a": {
+        "uniEquipId": "uniequip_002_inside",
+        "name": "“最初的惊喜”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 80,
+          "atk": 22,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_02_a": {
+        "uniEquipId": "uniequip_002_blackd",
+        "name": "耐低温通讯设备",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 135,
+          "atk": 0,
+          "def": 24,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_03_a": {
+        "uniEquipId": "uniequip_002_leizi",
+        "name": "“天地通明”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 80,
+          "atk": 55,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_04_a": {
+        "uniEquipId": "uniequip_002_ghost",
+        "name": "幽明烛光",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 34,
+          "def": 30,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_05_a": {
+        "uniEquipId": "uniequip_002_vigna",
+        "name": "伟大的摇滚",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 80,
+          "atk": 40,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_06_a": {
+        "uniEquipId": "uniequip_002_mm",
+        "name": "新手侦探礼包",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 18,
+          "def": 0,
+          "aspd": 0.01,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_07_a": {
+        "uniEquipId": "uniequip_002_whitew",
+        "name": "“幼狼的牙齿”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 110,
+          "atk": 20,
+          "def": 0,
+          "aspd": 0.04,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_08_a": {
+        "uniEquipId": "uniequip_002_texas",
+        "name": "外勤私人补给包",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 100,
+          "atk": 35,
+          "def": 15,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_09_a": {
+        "uniEquipId": "uniequip_002_caper",
+        "name": "暖意的归宿",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 130,
+          "atk": 15,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_10_a": {
+        "uniEquipId": "uniequip_002_snakek",
+        "name": "超强棒球套装",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 130,
+          "atk": 0,
+          "def": 60,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_11_a": {
+        "uniEquipId": "uniequip_002_fmout",
+        "name": "占卜师旅行套装",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 80,
+          "atk": 35,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_12_a": {
+        "uniEquipId": "uniequip_002_mantic",
+        "name": "训练用尾部防护套装",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 58,
+          "def": 22,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_13_a": {
+        "uniEquipId": "uniequip_002_savage",
+        "name": "未竟的旅程",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 30,
+          "def": 22,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_14_a": {
+        "uniEquipId": "uniequip_002_pudd",
+        "name": "便携测电设备",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 70,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0.04,
+          "magicRes": 0
+        }
+      },
+      "chess_char_1_15_a": {
+        "uniEquipId": "uniequip_002_pithst",
+        "name": "盟约·辅助干员证章",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 90,
+          "atk": 23,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_01_a": {
+        "uniEquipId": "uniequip_002_excu",
+        "name": "执行者随身包",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 38,
+          "def": 0,
+          "aspd": 0.03,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_02_a": {
+        "uniEquipId": "uniequip_002_silent",
+        "name": "紧急防卫程序",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 70,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0.04,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_03_a": {
+        "uniEquipId": "uniequip_002_yak",
+        "name": "父亲的袍子",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 200,
+          "atk": 0,
+          "def": 30,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_04_a": {
+        "uniEquipId": "uniequip_002_wanqin",
+        "name": "牵风",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 105,
+          "atk": 0,
+          "def": 45,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_05_a": {
+        "uniEquipId": "uniequip_002_harold",
+        "name": "腿部护理套装",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 70,
+          "atk": 20,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_06_a": {
+        "uniEquipId": "uniequip_002_papyrs",
+        "name": "小小的种子",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 38,
+          "def": 23,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_07_a": {
+        "uniEquipId": "uniequip_002_udflow",
+        "name": "基于咖啡的神经活性剂",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 38,
+          "def": 30,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_08_a": {
+        "uniEquipId": "uniequip_002_zebra",
+        "name": "人气角色贴纸",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 200,
+          "atk": 0,
+          "def": 50,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_09_a": {
+        "uniEquipId": "uniequip_002_utage",
+        "name": "翻盖手机",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 160,
+          "atk": 45,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_10_a": {
+        "uniEquipId": "uniequip_002_rockr",
+        "name": "未命名的无人机",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 50,
+          "atk": 13,
+          "def": 11,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_11_a": {
+        "uniEquipId": "uniequip_002_kazema",
+        "name": "旧物",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 45,
+          "def": 25,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_12_a": {
+        "uniEquipId": "uniequip_002_gravel",
+        "name": "隐秘行动工具包",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 100,
+          "atk": 0,
+          "def": 40,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_13_a": {
+        "uniEquipId": "uniequip_002_tinman",
+        "name": "“颅相学”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 80,
+          "atk": 20,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_2_14_a": {
+        "uniEquipId": "uniequip_002_ceylon",
+        "name": "野外考察套装",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 25,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 5
+        }
+      },
+      "chess_char_2_15_a": {
+        "uniEquipId": "uniequip_002_spikes",
+        "name": "芳汀之书",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 120,
+          "atk": 33,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_01_a": {
+        "uniEquipId": "uniequip_002_angel",
+        "name": "能天使的杰作",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 110,
+          "atk": 27,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_02_a": {
+        "uniEquipId": "uniequip_002_aurora",
+        "name": "盾用摄制模块",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 250,
+          "atk": 60,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_03_a": {
+        "uniEquipId": "uniequip_002_waaifu",
+        "name": "红眉咏春拳谱",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 70,
+          "atk": 45,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_04_a": {
+        "uniEquipId": "uniequip_002_swire2",
+        "name": "“金币辉煌”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 130,
+          "atk": 25,
+          "def": 35,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_05_a": {
+        "uniEquipId": "uniequip_002_skadi",
+        "name": "潮湿的剑袋",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 300,
+          "atk": 55,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_07_a": {
+        "uniEquipId": "uniequip_002_forcer",
+        "name": "可执行的幻想",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 170,
+          "atk": 45,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_08_a": {
+        "uniEquipId": "uniequip_002_heidi",
+        "name": "华贵璀璨的死斗",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 70,
+          "atk": 13,
+          "def": 12,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_09_a": {
+        "uniEquipId": "uniequip_002_glider",
+        "name": "落地之后",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 120,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0.04,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_10_a": {
+        "uniEquipId": "uniequip_002_cuttle",
+        "name": "枪支调试工具组",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 70,
+          "atk": 65,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_11_a": {
+        "uniEquipId": "uniequip_002_snhunt",
+        "name": "过去的狩猎",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 140,
+          "atk": 50,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_12_a": {
+        "uniEquipId": "uniequip_002_ethan",
+        "name": "超级喷漆套装",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 160,
+          "atk": 35,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_13_a": {
+        "uniEquipId": "uniequip_002_malist",
+        "name": "“新家园”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 60,
+          "atk": 20,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_3_14_a": {
+        "uniEquipId": "uniequip_002_kjera",
+        "name": "以雪为线",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 65,
+          "atk": 18,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_01_a": {
+        "uniEquipId": "uniequip_002_rmixer",
+        "name": "毛刷套装",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 210,
+          "atk": 40,
+          "def": 30,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_02_a": {
+        "uniEquipId": "uniequip_002_phenxi",
+        "name": "“律外”特种弹药配给组",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 48,
+          "def": 26,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_03_a": {
+        "uniEquipId": "uniequip_002_slbell",
+        "name": "“续针”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 100,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0.04,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_04_a": {
+        "uniEquipId": "uniequip_002_ines",
+        "name": "角部“护理”套组",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 150,
+          "atk": 20,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_05_a": {
+        "uniEquipId": "uniequip_002_zumama",
+        "name": "祖玛玛的工具箱",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 80,
+          "def": 70,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_06_a": {
+        "uniEquipId": "uniequip_002_kroos2",
+        "name": "真心的话和想冒的险",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 110,
+          "atk": 22,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_07_a": {
+        "uniEquipId": "uniequip_002_bpipe",
+        "name": "破城矛弹夹",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 150,
+          "atk": 50,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_08_a": {
+        "uniEquipId": "uniequip_002_f12yin",
+        "name": "“自由的代价”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 160,
+          "atk": 35,
+          "def": 15,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_09_a": {
+        "uniEquipId": "uniequip_002_mizuki",
+        "name": "使者之约",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 120,
+          "atk": 60,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_10_a": {
+        "uniEquipId": "uniequip_002_vulpis",
+        "name": "杀手也有假期",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 175,
+          "atk": 35,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_11_a": {
+        "uniEquipId": "uniequip_002_bldsk",
+        "name": "应急储备",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 40,
+          "atk": 30,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_12_a": {
+        "uniEquipId": "uniequip_002_halo",
+        "name": "未组装的钟表",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 50,
+          "atk": 45,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_13_a": {
+        "uniEquipId": "uniequip_002_gnosis",
+        "name": "“誓言”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 105,
+          "atk": 15,
+          "def": 15,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_14_a": {
+        "uniEquipId": "uniequip_002_lionhd",
+        "name": "传承与开拓",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 80,
+          "atk": 45,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_15_a": {
+        "uniEquipId": "uniequip_002_mberry",
+        "name": "宁心静神",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 60,
+          "atk": 22,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_16_a": {
+        "uniEquipId": "uniequip_002_texas2",
+        "name": "蓝莓与黑巧",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 140,
+          "atk": 40,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_17_a": {
+        "uniEquipId": "uniequip_002_huang",
+        "name": "过载的武器与过热的心脏",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 240,
+          "atk": 50,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_4_18_a": {
+        "uniEquipId": "uniequip_002_folnic",
+        "name": "母亲的领巾",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 70,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0.04,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_01_a": {
+        "uniEquipId": "uniequip_002_excu2",
+        "name": "待解答",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 40,
+          "def": 24,
+          "aspd": 0.05,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_02_a": {
+        "uniEquipId": "uniequip_002_pasngr",
+        "name": "电磁调节器",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 65,
+          "def": 0,
+          "aspd": 0.05,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_03_a": {
+        "uniEquipId": "uniequip_002_blaze2",
+        "name": "热切的期盼",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 52,
+          "def": 10,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_04_a": {
+        "uniEquipId": "uniequip_002_zuole",
+        "name": "“岂苦夜长”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 55,
+          "def": 40,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_05_a": {
+        "uniEquipId": "uniequip_002_ulpia",
+        "name": "乌尔比安的衣橱",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 330,
+          "atk": 84,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_06_a": {
+        "uniEquipId": "uniequip_002_glady",
+        "name": "执政官手镜",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 110,
+          "atk": 45,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_07_a": {
+        "uniEquipId": "uniequip_002_surtr",
+        "name": "萨米的不灭心脏碎片",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 30,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 5
+        }
+      },
+      "chess_char_5_08_a": {
+        "uniEquipId": "uniequip_002_jesca2",
+        "name": "“私家英雄”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 180,
+          "atk": 50,
+          "def": 25,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_09_a": {
+        "uniEquipId": "uniequip_002_cetsyr",
+        "name": "故事的结局",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 180,
+          "atk": 20,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_10_a": {
+        "uniEquipId": "uniequip_002_lisa",
+        "name": "怀中御守",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 100,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0.04,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_11_a": {
+        "uniEquipId": "uniequip_002_demkni",
+        "name": "闲置的拳击手套",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 150,
+          "atk": 50,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_12_a": {
+        "uniEquipId": "uniequip_002_lin",
+        "name": "“七窍玲珑”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 62,
+          "def": 45,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_13_a": {
+        "uniEquipId": "uniequip_002_ghost2",
+        "name": "“唱片”收藏箱",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 200,
+          "atk": 50,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_14_a": {
+        "uniEquipId": "uniequip_002_svrash",
+        "name": "雪境羽兽护理套组",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 190,
+          "atk": 45,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_15_a": {
+        "uniEquipId": "uniequip_002_thorn2",
+        "name": "三面的金币",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 80,
+          "atk": 30,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_16_a": {
+        "uniEquipId": "uniequip_002_plosis",
+        "name": "医疗环境分析装置",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 60,
+          "atk": 30,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_17_a": {
+        "uniEquipId": "uniequip_002_rosesa",
+        "name": "多彩盐漠生活",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 70,
+          "atk": 25,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_5_18_a": {
+        "uniEquipId": "uniequip_002_typhon",
+        "name": "自然的包容",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 120,
+          "atk": 60,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_01_a": {
+        "uniEquipId": "uniequip_002_lemuen",
+        "name": "“弹匣与花窗”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 100,
+          "atk": 100,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_02_a": {
+        "uniEquipId": "uniequip_002_blkkgt",
+        "name": "“过往的注脚”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 100,
+          "atk": 44,
+          "def": 44,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_04_a": {
+        "uniEquipId": "uniequip_002_skadi2",
+        "name": "蜕化的残迹",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 110,
+          "atk": 32,
+          "def": 15,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_05_a": {
+        "uniEquipId": "uniequip_002_narant",
+        "name": "“吹尽狂沙”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 35,
+          "def": 35,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_06_a": {
+        "uniEquipId": "uniequip_002_pepe",
+        "name": "晴雨",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 250,
+          "atk": 102,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_07_a": {
+        "uniEquipId": "uniequip_002_siege2",
+        "name": "城主的冒险",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 360,
+          "atk": 45,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_08_a": {
+        "uniEquipId": "uniequip_002_gdglow",
+        "name": "“辛劳之翼”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 110,
+          "atk": 32,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_09_a": {
+        "uniEquipId": "uniequip_002_agoat2",
+        "name": "想要留住的声音",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 125,
+          "atk": 36,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_10_a": {
+        "uniEquipId": "uniequip_002_necras",
+        "name": "未处理的遗产",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 160,
+          "atk": 45,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_11_a": {
+        "uniEquipId": "uniequip_002_mlyss",
+        "name": "梳妆流形",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 180,
+          "atk": 20,
+          "def": 25,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_12_a": {
+        "uniEquipId": "uniequip_002_ifrit",
+        "name": "“同熔”",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 0,
+          "atk": 64,
+          "def": 0,
+          "aspd": 0.06,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_13_a": {
+        "uniEquipId": "uniequip_002_angel2",
+        "name": "新朋友圣城生活套组",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 160,
+          "atk": 58,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_14_a": {
+        "uniEquipId": "uniequip_002_lumen",
+        "name": "纯铜单筒望远镜",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 140,
+          "atk": 40,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_15_a": {
+        "uniEquipId": "uniequip_002_slent2",
+        "name": "难得清醒",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 130,
+          "atk": 60,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      },
+      "chess_char_6_16_a": {
+        "uniEquipId": "uniequip_002_mudrok",
+        "name": "土石的根系",
+        "normal": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        },
+        "elite": {
+          "hp": 325,
+          "atk": 70,
+          "def": 0,
+          "aspd": 0,
+          "magicRes": 0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "completed": true,
+  "recordedAt": "2026-09-14T14:48:39.962024+00:00",
+  "gameVersion": "room-game-20260914.30",
+  "scope": "HP listener explicit named self-cast, dormant no-output actions and environment-aware skill work queue",
+  "sourceContracts": {
+    "work/enemy-awake-contract.json": "32454aade6017fdccaae6a3a09a70dc538535132904de6f44f4c2b8934522353",
+    "work/enemy-explicit-read-contract.json": "0a33a233c20ff80b402d5b0b28026451ec65cd9e10aa609b483afce9122ef65c",
+    "work/enemy-explicit-chimera-contract.json": "bcf34b851e0b08ab25c54836d6b9e11cda54d8dc601a7ac5ad87ad7c7a270b07"
+  },
+  "skillCounts": {
+    "candidates": 27,
+    "selectedSkills": 4,
+    "selectedEnemies": 3,
+    "pendingSkills": 23,
+    "pendingEnemies": 13,
+    "deferredSkills": 5,
+    "deferredEnemies": 5,
+    "executablePendingSkills": 18,
+    "executablePendingEnemies": 8,
+    "encounterSelectedEnemies": 3
+  },
+  "boundSkillIDs": [
+    "enemy_1151_dslntc_2|CAB-b3d9fed720d2cf9530017b9093a8f1e4:8575288275760284399:31",
+    "enemy_1151_dslntc|CAB-b3d9fed720d2cf9530017b9093a8f1e4:4885493106612970065:28",
+    "enemy_1373_ltnhor_2|CAB-a3aa7376bf9856a44c7dbcc30a30afbc:1959813430026055221:22",
+    "enemy_1373_ltnhor_2|CAB-a3aa7376bf9856a44c7dbcc30a30afbc:8977067208793140789:39"
+  ],
+  "pendingSkillIDs": [
+    "enemy_10044_wintun|CAB-9932efcd454c1307fe7ebddc8a79559b:-4456446739223598299:4",
+    "enemy_10098_crhro|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2405922354498616231:28",
+    "enemy_10099_crvln_2|CAB-eef20e46e9f0e9e38e18bc35388f76fa:-8590087389013148367:0",
+    "enemy_10099_crvln|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2388178449942571446:18",
+    "enemy_1040_bombd|CAB-c66709e8e44223eecca4bce9fbf48f83:8530485036149232392:19",
+    "enemy_1425_lrcmra_2|CAB-f35c307a9d02cd74f087114a32f11a9d:95367100273719513:17",
+    "enemy_1425_lrcmra|CAB-f35c307a9d02cd74f087114a32f11a9d:-6380628782783410879:3",
+    "enemy_1512_mcmstr|CAB-0df5f4c8c8dade07e2ee475a972da576:-6583151510869566880:10",
+    "enemy_1512_mcmstr|CAB-0df5f4c8c8dade07e2ee475a972da576:3561960064050666080:20",
+    "enemy_1516_jakill|CAB-0df5f4c8c8dade07e2ee475a972da576:-3090488545889101355:11",
+    "enemy_1516_jakill|CAB-0df5f4c8c8dade07e2ee475a972da576:9066948497976449493:46",
+    "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-4294630265555608891:18",
+    "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-5267374164800791867:13",
+    "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-8818478906179413307:0",
+    "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:1246068199843470021:35",
+    "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:130561785783622341:32",
+    "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:7680127453822098117:66",
+    "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:-2530988810614148662:21",
+    "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:8351245699733844426:60",
+    "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:8737699305577116106:63",
+    "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:881252940262207946:40",
+    "enemy_2004_balloon|CAB-45917fb008d9d99f506436a9f5988d3d:3219529385410557550:14",
+    "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:2910056970623200212:17"
+  ],
+  "deferredSkillIDs": [
+    "enemy_10098_crhro|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2405922354498616231:28",
+    "enemy_10099_crvln_2|CAB-eef20e46e9f0e9e38e18bc35388f76fa:-8590087389013148367:0",
+    "enemy_10099_crvln|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2388178449942571446:18",
+    "enemy_1425_lrcmra_2|CAB-f35c307a9d02cd74f087114a32f11a9d:95367100273719513:17",
+    "enemy_1425_lrcmra|CAB-f35c307a9d02cd74f087114a32f11a9d:-6380628782783410879:3"
+  ],
+  "executablePendingSkillIDs": [
+    "enemy_10044_wintun|CAB-9932efcd454c1307fe7ebddc8a79559b:-4456446739223598299:4",
+    "enemy_1040_bombd|CAB-c66709e8e44223eecca4bce9fbf48f83:8530485036149232392:19",
+    "enemy_1512_mcmstr|CAB-0df5f4c8c8dade07e2ee475a972da576:-6583151510869566880:10",
+    "enemy_1512_mcmstr|CAB-0df5f4c8c8dade07e2ee475a972da576:3561960064050666080:20",
+    "enemy_1516_jakill|CAB-0df5f4c8c8dade07e2ee475a972da576:-3090488545889101355:11",
+    "enemy_1516_jakill|CAB-0df5f4c8c8dade07e2ee475a972da576:9066948497976449493:46",
+    "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-4294630265555608891:18",
+    "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-5267374164800791867:13",
+    "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-8818478906179413307:0",
+    "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:1246068199843470021:35",
+    "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:130561785783622341:32",
+    "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:7680127453822098117:66",
+    "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:-2530988810614148662:21",
+    "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:8351245699733844426:60",
+    "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:8737699305577116106:63",
+    "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:881252940262207946:40",
+    "enemy_2004_balloon|CAB-45917fb008d9d99f506436a9f5988d3d:3219529385410557550:14",
+    "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:2910056970623200212:17"
+  ],
+  "basicActionGaps": {
+    "allEnemies": 435,
+    "encounterEnemies": 36
+  },
+  "validation": [
+    {
+      "suite": "tools/test_enemy_self_cast_skills.py",
+      "result": "passed",
+      "groups": 5
+    },
+    {
+      "suite": "environment deferral and queue propagation fixtures",
+      "result": "passed",
+      "tests": 15
+    },
+    {
+      "suite": "node tools/_enemy_self_cast_smoke.js",
+      "result": "passed",
+      "scope": "Both real source variants; exact HP threshold; full HP does not auto-cast; timer releases only movement; force/mark/no-output/mode detach and host VM save restore."
+    },
+    {
+      "suite": "node tools/_enemy_skill_dispatch_smoke.js",
+      "result": "passed"
+    },
+    {
+      "suite": "node tools/_external_combat_smoke.js",
+      "result": "passed"
+    },
+    {
+      "suite": "node tools/check_docs.js",
+      "result": "passed",
+      "documents": 80,
+      "localLinks": 2321
+    }
+  ],
+  "fixesFoundInValidation": [
+    "Non-interrupting self-casts now survive mode detach.",
+    "Self recipient uses a plain owner descriptor to avoid cyclic JSON snapshots."
+  ],
+  "refresh": {
+    "rawClassificationCacheHit": true,
+    "refreshedAnimationRows": 0,
+    "refreshedPrefabRows": 0,
+    "sourceAnalysisSkipped": true,
+    "templateQueriesSkipped": true,
+    "dpsCompilationSkipped": true,
+    "dpsCalculationSkipped": true
+  },
+  "limitations": [
+    "Mode 1 attributes, periodic self-damage, named ScreamAttack and elemental packets remain separate pending work.",
+    "Managed mode-buff detach and engine abnormal-state timing remain explicitly inferred.",
+    "Environment-gated skills are pending, not completed."
+  ],
+  "next": "Reuse frozen mode-1 graphs to extend shared periodic Buff events, named ability execution and attribute/element packets.",
+  "inputs": {
+    "tools/enemy_self_cast_skills.py": "014e537f72ab07b6cc83808dc2bdec78d24ce90247cf3b6d4239c8ac9059f034",
+    "tools/enemy_skill_dispatch.py": "aa4698a515bd2c3b2ed367ad6e102ebb49e1e5071a464335de0a03e6b33b905b",
+    "tools/enemy_skill_dispatch_status.py": "fe248e75bf6d8f35dfe52762c6f6f7c6cf54f05ccce1f247838317d3bd87bf21",
+    "tools/build_external_combat_data.py": "ed9164a2dd9102daa4fd1f2a4573511b1dbc8ac501da7d13cedd1b3e2d9b654d",
+    "web/src/simulation/enemy-skill-lifecycle.js": "052d3b7275fe5f229d7be0bde2b4fcc4bba060cca987706d8b09a005a22f2e63",
+    "web/src/simulation/enemy-skills.js": "b0704fc8db09bf0b6a4088ee3a999818356748a188e2e4cb3d1ed994f3b14a9f",
+    "web/src/simulation/external-combat.js": "75119bdcb133af0d95e3d12a860566bf79c47db76cb9a839ae3e833d5ccc5540",
+    "web/engine.js": "53e8b355fdefe1ed295a1ae7ca9e673deef73b76e7f02edeeb760b9c818a8f69",
+    "web/external_combat_data.js": "b564d51b32400da70f0884e212f285b426867a75e85571ff22a549057ff0724b"
+  }
+}

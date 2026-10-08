@@ -1,0 +1,17 @@
+{
+  "batch": "20260921.1-passive-flow",
+  "before": "work/garrison-skill-batch-before-20260921-1.json",
+  "output": "work/garrison-skill-batch-acceptance-20260921-1.json",
+  "scope": "garrison-batches",
+  "validations": [
+    "tools/test_skill_mode_passive.py",
+    "tools/test_skill_mode_flow.py",
+    ".runtime/skill-passive-receipts.json",
+    ".runtime/skill-mode-flow-receipts.json"
+  ],
+  "tasks": {
+    "op/char_416_zumama/skill/skchr_zumama_1/source-mode-body": "2026-09-21：完整常驻属性源10等级，真实赛季普通/精锐、无SP/主动状态、死亡/重新部署与主机恢复通过；属性只加入一次，完整天赋模组另核。",
+    "op/char_215_mantic/skill/skchr_mantic_1/source-mode-body": "2026-09-21：完整被动模式及有限命中减速10等级，真实赛季普通/精锐、地面多目标/范围/飞行排除、独立到期/来源死亡与主机恢复通过；不勾整技能。",
+    "op/char_196_sunbr/skill/skchr_sunbr_2/source-mode-body": "2026-09-21：顺序组10等级、2实际普通/精锐配置、3主机恢复通过；10秒准备接30秒治疗，.4333秒动画事件、动作占用、冻结治疗及来源/目标失效取消；精确原生协程帧和天赋模组另核。"
+  }
+}

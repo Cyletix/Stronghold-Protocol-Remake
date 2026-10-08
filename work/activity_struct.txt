@@ -1,0 +1,19 @@
+=== zh_CN top-level keys ===
+['basicInfo', 'zoneToActivity', 'missionData', 'missionGroup', 'activity', 'activityItems', 'syncPoints', 'dynActs']
+  [basicInfo] dict keys: ['act18d3d3', 'act18d3d2', 'act18d3d1', 'act18d3', 'act18d0', 'act17d7', 'act17d5', 'act17d1', 'act17d0d2', 'act17d0d1', 'act17d0', 'act16d6', 'act16d5d2', 'act16d5d1', 'act16d5', 'act15d5', 'act15d1', 'act15d0', 'act14d7', 'act14d0d2']
+  [zoneToActivity] dict keys: ['act18d3_zone1', 'act18d3_zone2', 'act18d0_zone1', 'act18d0_zone2', 'act17d7_zone1', 'act17d5_zone1', 'act17d5_zone2', 'act17d5_zone3', 'act17d0_zone1', 'act17d0_zone2', 'act16d5_zone1', 'act16d5_zone2', 'act15d5_zone1', 'act15d0_zone1', 'act15d0_zone2', 'act14d7_zone1', 'act14d7_zone2', 'act13d5_zone1', 'act13d5_zone2', 'act13d2_zone1']
+  [missionData] list len=540
+  [missionGroup] list len=20
+  [activity] dict keys: ['DEFAULT', 'CHECKIN_ONLY', 'TYPE_ACT3D0', 'TYPE_ACT4D0', 'TYPE_ACT5D0', 'TYPE_ACT5D1', 'COLLECTION', 'TYPE_ACT9D0', 'LOGIN_ONLY', 'MINISTORY', 'ROGUELIKE', 'MULTIPLAY']
+  [activityItems] dict keys: ['act18d3', 'act18d0', 'act17d5', 'act17d0', 'act16d5', 'act15d5', 'act15d0', 'act14d7', 'act13d5', 'act13d2', 'act13d0', 'act12d6', 'act12d0', 'act11d7', 'act11d0', 'act10d5', 'act9d4', 'act9d0', 'act7d5', 'act6d8']
+  [syncPoints] dict keys: ['act11d7', 'act18d3', 'act18d0', 'act17d5', 'act17d0', 'act16d5', 'act15d0', 'act13d5', 'act13d2', 'act12d0', 'act11d0', 'act9d0', 'act15d5', 'act13d0', 'act10d5']
+  [dynActs] dict keys: ['act16d5d2', 'act17d7', 'act18d3d2']
+=== ja_JP top-level keys ===
+['basicInfo', 'zoneToActivity', 'missionData', 'missionGroup', 'activity', 'activityItems', 'syncPoints']
+  [basicInfo] dict keys: ['act14d0d1', 'act14d0d2', 'act13d5', 'act13d0', 'act12d6', 'act12d0', 'act13d2d1', 'act11d7', 'act9d4', 'act9d1d2', 'act9d1d1', 'act9d0', 'act13d2', 'act13d2d2', 'act10d6', 'act11d0', 'act10d5', 'act7d5', 'act6d8', 'act6d7']
+  [zoneToActivity] dict keys: ['act13d5_zone1', 'act13d5_zone2', 'act13d0_zone1', 'act12d0_zone1', 'act12d0_zone2', 'act11d7_zone1', 'act11d7_zone2', 'act11d7_zone3', 'act9d0_zone1', 'act9d0_zone2', 'act9d0_zone3', 'act13d2_zone1', 'act13d2_zone2', 'act11d0_zone1', 'act11d0_zone2', 'act11d0_zone3', 'act10d5_zone1', 'act5d0_zone1', 'act5d0_zone2', 'A003_zone1']
+  [missionData] list len=300
+  [missionGroup] list len=11
+  [activity] dict keys: ['DEFAULT', 'CHECKIN_ONLY', 'TYPE_ACT3D0', 'TYPE_ACT4D0', 'TYPE_ACT5D0', 'TYPE_ACT5D1', 'COLLECTION', 'TYPE_ACT9D0', 'LOGIN_ONLY', 'MINISTORY', 'ROGUELIKE']
+  [activityItems] dict keys: ['act13d5', 'act13d0', 'act12d6', 'act12d0', 'act11d7', 'act9d4', 'act9d0', 'act13d2', 'act11d0', 'act10d5', 'act7d5', 'act6d8', 'act6d5', 'act5d1', 'act5d0', 'act3d5', 'act3d0', 'act4d0']
+  [syncPoints] dict keys: ['act11d7', 'act13d5', 'act12d0', 'act9d0', 'act13d2', 'act11d0', 'act13d0', 'act10d5']

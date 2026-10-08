@@ -1,0 +1,898 @@
+{
+  "version": {
+    "version": "room-game-20260914.15",
+    "previousFingerprint": "8e3af03c5c2f0554",
+    "fingerprint": "d1480e625b962d1a"
+  },
+  "checks": [
+    {
+      "name": "elemental combat",
+      "args": [
+        "tools/_elemental_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "elemental source skills",
+      "args": [
+        "tools/_elemental_sources_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "elemental source",
+      "args": [
+        "tools/build_elemental_data.js",
+        "--check"
+      ],
+      "passed": true
+    },
+    {
+      "name": "operator skill levels source",
+      "args": [
+        "tools/build_operator_skill_levels.js",
+        "--check"
+      ],
+      "passed": true
+    },
+    {
+      "name": "operator skill levels consumers",
+      "args": [
+        "tools/_operator_skill_levels_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "marksman source skills",
+      "args": [
+        "tools/_marksman_skills_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "vanguard source skills",
+      "args": [
+        "tools/_vanguard_skills_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "medic source skills",
+      "args": [
+        "tools/_medic_skills_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "periodic medic source skills",
+      "args": [
+        "tools/_periodic_medic_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "protective medic source skills",
+      "args": [
+        "tools/_protective_medic_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "medic talent SP events",
+      "args": [
+        "tools/_medic_talents_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "medical drone inventory and deployment",
+      "args": [
+        "tools/_medic_drone_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "medical SP module effects",
+      "args": [
+        "tools/_medic_module_sp_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "medical profession attack-speed aura",
+      "args": [
+        "tools/_medic_aura_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Beeswax source skills and obelisk",
+      "args": [
+        "tools/_beeswax_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Dusk skills and freeling lifecycle",
+      "args": [
+        "tools/_dusk_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Click released funnel",
+      "args": [
+        "tools/_click_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Goldenglow and Rockrock client funnels",
+      "args": [
+        "tools/_funnel_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "operator combat",
+      "args": [
+        "tools/_operator_combat_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "contact and attack boundaries",
+      "args": [
+        "tools/_contact_range_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "flying enemies and blocking",
+      "args": [
+        "tools/_flying_block_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "operator library",
+      "args": [
+        "tools/_roster_catalog_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "season roster slots",
+      "args": [
+        "tools/_season_roster_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "DIY roster source",
+      "args": [
+        "tools/build_diy_roster.js",
+        "--check"
+      ],
+      "passed": true
+    },
+    {
+      "name": "DIY selection and runtime",
+      "args": [
+        "tools/_diy_roster_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "operator mechanics audit",
+      "args": [
+        "tools/audit_operator_mechanics.js",
+        "--check"
+      ],
+      "passed": true
+    },
+    {
+      "name": "implementation checklist",
+      "args": [
+        "tools/audit_implementation_checklist.js",
+        "--check"
+      ],
+      "passed": true
+    },
+    {
+      "name": "loadout and items",
+      "args": [
+        "tools/_loadout_items_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "strategy item rewards",
+      "args": [
+        "tools/_items_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "detail catalogs",
+      "args": [
+        "tools/build_detail_catalogs.js",
+        "--check"
+      ],
+      "passed": true
+    },
+    {
+      "name": "mode build",
+      "args": [
+        "tools/build_mode.js",
+        "--check"
+      ],
+      "passed": true
+    },
+    {
+      "name": "garrison source",
+      "args": [
+        "tools/build_garrison.js",
+        "--check"
+      ],
+      "passed": true
+    },
+    {
+      "name": "operator garrisons",
+      "args": [
+        "tools/_garrison_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "basic attack profiles",
+      "args": [
+        "tools/build_basic_attacks.js",
+        "--check"
+      ],
+      "passed": true
+    },
+    {
+      "name": "basic attacks",
+      "args": [
+        "tools/_basic_attacks_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "common deployment-cost skills",
+      "args": [
+        "tools/_common_cost_skills_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "common skill level data",
+      "args": [
+        "tools/build_common_skill_data.js",
+        "--check"
+      ],
+      "passed": true
+    },
+    {
+      "name": "common skill account-level expansion",
+      "args": [
+        "tools/_common_expansion_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "client stat graph source",
+      "args": [
+        "tools/_client_stat_buff_smoke.js",
+        "--source-only"
+      ],
+      "passed": true
+    },
+    {
+      "name": "client stat graph execution",
+      "args": [
+        "tools/_client_stat_buff_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "hunter magazines and Snow Hunter",
+      "args": [
+        "tools/_hunter_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "mystic storage and Indigo",
+      "args": [
+        "tools/_mystic_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "dollkeeper forms and source skills",
+      "args": [
+        "tools/_dollkeeper_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "tactical reinforcements and flowing shapes",
+      "args": [
+        "tools/_tactician_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "manual tactical deployment and copy",
+      "args": [
+        "tools/_tactical_controls_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Blacknight and source sleep rules",
+      "args": [
+        "tools/_blacknight_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "tactical exclusive mechanisms",
+      "args": [
+        "tools/_tactical_specials_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "common buff families and attribute layers",
+      "args": [
+        "tools/_common_buff_skills_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "playability repairs",
+      "args": [
+        "tools/_playability_repair_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "debug and enemy effects",
+      "args": [
+        "tools/_debug_enemy_fx_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "enemy cold source",
+      "args": [
+        "tools/build_enemy_cold.js",
+        "--check"
+      ],
+      "passed": true
+    },
+    {
+      "name": "enemy cold mechanics",
+      "args": [
+        "tools/_enemy_cold_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "preview, training and audio",
+      "args": [
+        "tools/_preview_audio_training_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "local solo",
+      "args": [
+        "tools/_solo_local_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "keyboard shortcuts",
+      "args": [
+        "tools/_shortcuts_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "HUD feedback",
+      "args": [
+        "tools/_hud_feedback_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "render policy",
+      "args": [
+        "tools/_render_policy_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "render surfaces and recovery",
+      "args": [
+        "tools/_render_surface_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "frozen shop refill",
+      "args": [
+        "tools/_frozen_shop_refill_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "terrain placement",
+      "args": [
+        "tools/_terrain_placement_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "boss mechanics profiles",
+      "args": [
+        "tools/build_boss_mechanics.js",
+        "--check"
+      ],
+      "passed": true
+    },
+    {
+      "name": "boss_mechanics",
+      "args": [
+        "tools/_boss_mechanics_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "boss_runtime_integration",
+      "args": [
+        "tools/_boss_runtime_integration_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "boss_victory",
+      "args": [
+        "tools/_boss_victory_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "boss_art",
+      "args": [
+        "tools/_boss_art_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "paired_battle",
+      "args": [
+        "tools/_paired_battle_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "hidden_boss_rules",
+      "args": [
+        "tools/_hidden_boss_rules_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "decision_confirm",
+      "args": [
+        "tools/_decision_confirm_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "settlement",
+      "args": [
+        "tools/_settlement_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "settlement_review",
+      "args": [
+        "tools/_settlement_review_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "boss_source",
+      "args": [
+        "tools/_boss_source_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "boss_formation",
+      "args": [
+        "tools/_boss_formation_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "video_flow",
+      "args": [
+        "tools/_video_flow_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "decision_reward",
+      "args": [
+        "tools/_decision_reward_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "deployment_cost",
+      "args": [
+        "tools/_deployment_cost_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "battle_feedback",
+      "args": [
+        "tools/_battle_feedback_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "shop_source",
+      "args": [
+        "tools/_shop_source_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "room_server",
+      "args": [
+        "tools/_room_server_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "room_game_runtime",
+      "args": [
+        "tools/_room_game_runtime_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "room_game_server",
+      "args": [
+        "tools/_room_game_server_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "room_game_client",
+      "args": [
+        "tools/_room_game_client_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "room_battle_runtime",
+      "args": [
+        "tools/_room_battle_runtime_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "room_battle_session",
+      "args": [
+        "tools/_room_battle_session_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "room_battle_server",
+      "args": [
+        "tools/_room_battle_server_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "room_launcher",
+      "args": [
+        "tools/_room_launcher_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "round data",
+      "args": [
+        "tools/build_mode_rounds.js",
+        "--check"
+      ],
+      "passed": true
+    },
+    {
+      "name": "battle data",
+      "args": [
+        "tools/build_source_battles.js",
+        "--check"
+      ],
+      "passed": true
+    },
+    {
+      "name": "enemy encounter inputs",
+      "args": [
+        "tools/build_enemy_encounters.js",
+        "--check"
+      ],
+      "passed": true
+    },
+    {
+      "name": "enemy death spawn source",
+      "args": [
+        "tools/build_enemy_death_spawn.js",
+        "--check"
+      ],
+      "passed": true
+    },
+    {
+      "name": "enemy death spawn lifecycle",
+      "args": [
+        "tools/_enemy_death_spawn_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "enemy prop hit counts",
+      "args": [
+        "tools/_enemy_prop_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "enemy passive source",
+      "args": [
+        "tools/build_enemy_passives.js",
+        "--check"
+      ],
+      "passed": true
+    },
+    {
+      "name": "enemy permanent block-free",
+      "args": [
+        "tools/_enemy_passives_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "enemy child damage transfer",
+      "args": [
+        "tools/_enemy_transfer_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "shop item source",
+      "args": [
+        "tools/build_equip_data.js",
+        "--check"
+      ],
+      "passed": true
+    },
+    {
+      "name": "shop item eligibility",
+      "args": [
+        "tools/_shop_items_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "equipment protection source",
+      "args": [
+        "tools/build_equip_protection.js",
+        "--check"
+      ],
+      "passed": true
+    },
+    {
+      "name": "equipment protection impacts",
+      "args": [
+        "tools/_equip_protection_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "training config source",
+      "args": [
+        "tools/_training_economy_smoke.js",
+        "--source-only"
+      ],
+      "passed": true
+    },
+    {
+      "name": "training source economy",
+      "args": [
+        "tools/_training_economy_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "training source runtime",
+      "args": [
+        "tools/_training_runtime_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "enemy template replacement",
+      "args": [
+        "tools/_enemy_replacement_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "enemy plan source phases",
+      "args": [
+        "tools/_enemy_plan_source_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "enemy runtime integration",
+      "args": [
+        "tools/_enemy_runtime_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "content coverage",
+      "args": [
+        "tools/audit_content_coverage.js",
+        "--check"
+      ],
+      "passed": true
+    },
+    {
+      "name": "setup/routes",
+      "args": [
+        "tools/_setup_routes_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "economy/terrain",
+      "args": [
+        "tools/_economy_terrain_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "training",
+      "args": [
+        "tools/_training_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "skill_timing",
+      "args": [
+        "tools/_skill_timing_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "mode_rounds",
+      "args": [
+        "tools/_mode_rounds_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "source_battles",
+      "args": [
+        "tools/_source_battles_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "source_wave",
+      "args": [
+        "tools/_source_wave_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "source_mode",
+      "args": [
+        "tools/_source_mode_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "source_consumers",
+      "args": [
+        "tools/_source_consumers_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "source_coordinates",
+      "args": [
+        "tools/_source_coordinates_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "shop_economy",
+      "args": [
+        "tools/_shop_economy_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "projectile_lifecycle",
+      "args": [
+        "tools/_projectile_lifecycle_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "simulation_clock",
+      "args": [
+        "tools/_simulation_clock_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "rest_save",
+      "args": [
+        "tools/_rest_save_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "bond_shop_regression",
+      "args": [
+        "tools/_bond_shop_regression_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "responsive_camera",
+      "args": [
+        "tools/_responsive_camera_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "audio_preference",
+      "args": [
+        "tools/_audio_preference_smoke.js"
+      ],
+      "passed": true
+    },
+    {
+      "name": "docs",
+      "args": [
+        "tools/check_docs.js"
+      ],
+      "passed": true
+    }
+  ],
+  "additional": {
+    "parentRelatedTests": 122,
+    "candidateTests": 9,
+    "webCompilerTestsIncludedInSourceGroup": 7
+  },
+  "checklist": 497
+}

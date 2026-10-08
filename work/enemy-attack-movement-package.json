@@ -1,0 +1,272 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-09-18T04:06:30.830190+09:00",
+  "gameVersion": "room-game-20260918.1",
+  "catalog": "d43760160e588f3a",
+  "packageDirectory": "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\dist\\Arknights-Game-Universal-Windows-x64-20260918-040150-53c05e",
+  "fullPackage": {
+    "path": "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\dist\\Arknights-Game-Universal-Windows-x64-20260918-040150-53c05e.zip",
+    "bytes": 339250044,
+    "sha256": "0368c1dd11ca50492ba9cf6c5150c15cf08200a53ed2f5ab967ce20dcfacfe0d",
+    "sidecarMatches": true
+  },
+  "updatePackage": {
+    "path": "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\dist\\Arknights-Room-Update-Windows-x64-20260918-040529-b65032.zip",
+    "bytes": 254925,
+    "sha256": "3cb2f83c74f2732f2f4d584e8797ba39cc2c252afc954381ada54dc48f9b4367",
+    "sidecarMatches": true,
+    "baseDirectory": "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\dist\\Arknights-Game-Universal-Windows-x64-20260918-025154-da88f5",
+    "targetDirectory": "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\dist\\Arknights-Game-Universal-Windows-x64-20260918-040150-53c05e",
+    "changedFileCount": 9,
+    "changedFiles": [
+      "package-info.json",
+      "tools/room_server.js",
+      "web/engine.js",
+      "web/external_combat_data.js",
+      "web/mode.js",
+      "web/mode/save.js",
+      "web/room-game.js",
+      "web/room-presence.js",
+      "web/src/simulation/external-combat.js"
+    ],
+    "readme": "卫戍协议-覆盖更新说明.txt",
+    "allPayloadsMatchFullZip": true
+  },
+  "metadata": {
+    "createdAt": "2026-09-18T04:02:03.9110715+09:00",
+    "platform": "Windows",
+    "architecture": "x64",
+    "bundledNode": true,
+    "bundledEasyTier": true,
+    "role": "universal",
+    "entry": "开始游戏.cmd",
+    "scope": "universal room runtime and full game assets"
+  },
+  "criticalFileChecks": [
+    {
+      "path": "web/src/simulation/external-combat.js",
+      "sha256": "399bdc88656d54e5d703481cef5ebf249ec867fdb08cfbb9c06b0576cb5446bd",
+      "sourcePackageZipMatch": true,
+      "includedInUpdate": true,
+      "updateZipMatches": true
+    },
+    {
+      "path": "web/external_combat_data.js",
+      "sha256": "9315a5c9b5981865baa7b45d646b03a431c70f33d3ca988eafd833102201650c",
+      "sourcePackageZipMatch": true,
+      "includedInUpdate": true,
+      "updateZipMatches": true
+    },
+    {
+      "path": "web/engine.js",
+      "sha256": "86caa87d842efdb2832a26312ce9e3e0642e6967cbd55bfb919281ca3f8f7a63",
+      "sourcePackageZipMatch": true,
+      "includedInUpdate": true,
+      "updateZipMatches": true
+    },
+    {
+      "path": "web/mode/save.js",
+      "sha256": "0e3bb932978545c628bf1a5581df3a7bdf3590ba49ef98c6864f148039b0b67f",
+      "sourcePackageZipMatch": true,
+      "includedInUpdate": true,
+      "updateZipMatches": true
+    },
+    {
+      "path": "web/mode.js",
+      "sha256": "7741143eb6483771973cabe477a2029fd68c3a51358fa21bbe68ced9337ba43d",
+      "sourcePackageZipMatch": true,
+      "includedInUpdate": true,
+      "updateZipMatches": true
+    },
+    {
+      "path": "web/index.html",
+      "sha256": "f5b778f0a4b0af4b3322ed6fffd3f180e04a1502efdf80edb39a387d3ab507a8",
+      "sourcePackageZipMatch": true,
+      "includedInUpdate": false
+    },
+    {
+      "path": "tools/room_server.js",
+      "sha256": "9cf8bdbd5d5f3bde6ac0f0ab3e9c6156ef2d720417eaee9702d28b93bb8ecc95",
+      "sourcePackageZipMatch": true,
+      "includedInUpdate": true,
+      "updateZipMatches": true
+    },
+    {
+      "path": "web/room-game.js",
+      "sha256": "1b3362d46ba26e457e7534925c449718fde41fb34b90a5019a57887230ef9c9c",
+      "sourcePackageZipMatch": true,
+      "includedInUpdate": true,
+      "updateZipMatches": true
+    },
+    {
+      "path": "web/room-presence.js",
+      "sha256": "b4903507348c5adcdccff327e6a4c53f6bbec24a324850a00700d6687b2de4f8",
+      "sourcePackageZipMatch": true,
+      "includedInUpdate": true,
+      "updateZipMatches": true
+    },
+    {
+      "path": "tools/lib/listen-port.js",
+      "sha256": "caeb7f93cc720cd4f5d5455d0d88a3b8081bb49abb4939c50a0b4f191eb32d18",
+      "sourcePackageZipMatch": true,
+      "includedInUpdate": false
+    },
+    {
+      "path": "tools/room-launcher.js",
+      "sha256": "519baf60f31b56061a8e1782340f64555b051a4a51c676de17385430d0dc59fd",
+      "sourcePackageZipMatch": true,
+      "includedInUpdate": false
+    },
+    {
+      "path": "tools/room-online.js",
+      "sha256": "e92d33a9988e928f1970c0011fbb1a45eec81c2053721b194ac579371d58f4e3",
+      "sourcePackageZipMatch": true,
+      "includedInUpdate": false
+    },
+    {
+      "path": "tools/start-room.js",
+      "sha256": "931d05690da3c10690a0225e7f728d2ea7bff849b98b7cdbe5d559d8a719697b",
+      "sourcePackageZipMatch": true,
+      "includedInUpdate": false
+    }
+  ],
+  "playbackData": {
+    "rule": "native-attack-time-capped-animation",
+    "acceptedAbilityTypes": [
+      "MeleeAttack",
+      "RangedAttack",
+      "MultiMeleeAttack",
+      "MultiRangedAttack"
+    ],
+    "exampleMKII": {
+      "animation": "Attack",
+      "duration": 1.0,
+      "hit": 0.2666667,
+      "playback": {
+        "rule": "native-attack-time-capped-animation",
+        "timeMode": 0,
+        "minScale": 0.1,
+        "maxScale": 1.0
+      }
+    },
+    "generatedCounts": {
+      "wantedEnemies": 2130,
+      "profiles": 1555,
+      "timings": 1440,
+      "animationMappedTimings": 105,
+      "projectileSpeeds": 535,
+      "channelProfiles": 49,
+      "encounterChannelProfiles": 7,
+      "rootSelectedProfiles": 1338,
+      "encounterProfiles": 143,
+      "encounterTimings": 142,
+      "encounterAnimationMappedTimings": 15,
+      "encounterProjectileSpeeds": 38,
+      "nonAttackingEnemies": 342,
+      "encounterNonAttackingEnemies": 12,
+      "pendingEnemies": 433,
+      "pendingEncounterEnemies": 13,
+      "aliasPrefabs": 12,
+      "aliasAnimations": 157,
+      "eventGateTimings": 12,
+      "encounterEventGateTimings": 0,
+      "hitSequenceProfiles": 9,
+      "encounterHitSequenceProfiles": 0,
+      "multiHitProfiles": 5,
+      "modeProfileEnemies": 143,
+      "modeProfiles": 253,
+      "encounterModeProfileEnemies": 7,
+      "initialModeProfiles": 93,
+      "encounterInitialModeProfiles": 6,
+      "autoModeProviderEnemies": 3,
+      "autoModeProviders": 3,
+      "encounterAutoModeProviderEnemies": 0,
+      "chainProjectileProfiles": 3,
+      "encounterChainProjectileProfiles": 0,
+      "skillDispatchEnemies": 5,
+      "skillDispatchSkills": 7,
+      "encounterSkillDispatchEnemies": 1,
+      "encounterSkillDispatchSkills": 2,
+      "periodicAbilityEnemies": 2,
+      "periodicAbilityGroups": 2,
+      "encounterPeriodicAbilityEnemies": 0,
+      "nativePlaybackEnemies": 1327,
+      "nativePlaybackTimingSlots": 1665,
+      "encounterNativePlaybackEnemies": 125,
+      "encounterNativePlaybackTimingSlots": 145
+    },
+    "compilerSourceHashMatchesPackagedData": true
+  },
+  "sourceBuildInputs": [
+    {
+      "path": "tools/build_external_combat_data.py",
+      "sha256": "a2dacb5eb3b54e39601c3050ead52126f22f05a51651514c7a2351f902132de4",
+      "scope": "build or evidence source; not required by the game at runtime"
+    },
+    {
+      "path": "tools/enemy_animation_playback.py",
+      "sha256": "469190114bbed4efdf1fe6db76783f9d38070bb444f377fdc5502f9fa587d540",
+      "scope": "build or evidence source; not required by the game at runtime"
+    },
+    {
+      "path": "tools/enemy_mode_channels.py",
+      "sha256": "c31c543ffbe2bc0a373a5c850993bdc2f9a2cf9515d39cf53d5a50cab5fb9091",
+      "scope": "build or evidence source; not required by the game at runtime"
+    },
+    {
+      "path": "work/enemy-animation-playback-evidence.json",
+      "sha256": "6fc91e99fbad7503d18ffb92a687789ac4d730efd529b9ac42a538c5b7d3de48",
+      "scope": "build or evidence source; not required by the game at runtime"
+    }
+  ],
+  "checks": [
+    {
+      "name": "complete Universal package",
+      "command": "powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File tools/package-room.ps1",
+      "exitCode": 0
+    },
+    {
+      "name": "packaged LAN and default Universal launcher",
+      "command": "node tools/_room_package_smoke.js dist/Arknights-Game-Universal-Windows-x64-20260918-040150-53c05e",
+      "exitCode": 0,
+      "actualGameInfo": {
+        "gameVersion": "room-game-20260918.1",
+        "catalog": "d43760160e588f3a"
+      },
+      "defaultPreferredPort": 8100,
+      "defaultActualPort": 1096,
+      "results": [
+        "ROOM PACKAGE OK bundled Node x64, no system Node, unrelated CWD, actual lobby and game runtime",
+        "ROOM DEFAULT PACKAGE LAUNCHER OK preferred 8100 -> 1096, no system Node, unrelated CWD, actual homepage, authenticated status and solo page"
+      ]
+    },
+    {
+      "name": "natural attack-stop-move cycles from distributed files",
+      "command": "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\dist\\Arknights-Game-Universal-Windows-x64-20260918-040150-53c05e\\.runtime\\node-win-x64\\node.exe tools/_flying_block_smoke.js D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\dist\\Arknights-Game-Universal-Windows-x64-20260918-040150-53c05e\\web",
+      "exitCode": 0,
+      "result": "FLYING BLOCK OK: real 妖怪/MKII spawn, three occupied ground slots, both array orders, natural armed-air/ground-ranged attack-stop-move cycles, durable targets, no forced enemy cooldown"
+    },
+    {
+      "name": "existing SHA-based update generator",
+      "command": "powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File tools/package-room-update.ps1 -BasePath dist\\Arknights-Game-Universal-Windows-x64-20260918-025154-da88f5 -NewPath dist\\Arknights-Game-Universal-Windows-x64-20260918-040150-53c05e",
+      "exitCode": 0
+    },
+    {
+      "name": "critical runtime hashes, four-type playback data fields and game version",
+      "exitCode": 0
+    }
+  ],
+  "workspaceChecksReportedByRoot": [
+    "New ordinary timing/source/restoration checks",
+    "Chain projectile, hover, pre-attack, area-melee skill, contact plus authoritative host, rest save (6 groups)",
+    "Final external combat smoke after six newly accepted source channels",
+    "node tools/build_mode.js --check",
+    "node tools/check_docs.js"
+  ],
+  "previousPackagesPreserved": true,
+  "notes": [
+    "No repeated workspace regression suites or duplicate full-package overlay copy.",
+    "Game version/catalog were obtained from the actual packaged HTTP runtime during the existing package smoke.",
+    "The previous default-port fallback remains present and was exercised by the package smoke."
+  ]
+}

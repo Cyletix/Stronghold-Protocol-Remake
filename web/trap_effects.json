@@ -1,0 +1,3453 @@
+[
+ {
+  "chessId": "chess_item_3_04_e_a",
+  "charId": "trap_1040_acarm040",
+  "effectId": "eff_acarm040",
+  "giveBondId": "yanShip",
+  "purchasePrice": 2,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1vautochess_equip_acarm024_global_buff"
+     },
+     {
+      "k": "prob",
+      "v": 1
+     },
+     {
+      "k": "atk",
+      "v": 0.05
+     },
+     {
+      "k": "atk_buff_cnt",
+      "v": 10
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_1_01_e_a",
+  "charId": "trap_1041_acarm041",
+  "effectId": "eff_acarm041",
+  "giveBondId": "victoriaShip",
+  "purchasePrice": 1,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "atk",
+      "v": 0.15
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_4_09_e_a",
+  "charId": "trap_1042_acarm042",
+  "effectId": "eff_acarm042",
+  "giveBondId": "victoriaShip",
+  "purchasePrice": 2,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "atk",
+      "v": 0.3
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm042_global_buff"
+     },
+     {
+      "k": "damage_scale",
+      "v": 0.1
+     },
+     {
+      "k": "big_hammer",
+      "v": "chess_item_6_05_e"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_3_09_e_a",
+  "charId": "trap_1043_acarm043",
+  "effectId": "eff_acarm043",
+  "giveBondId": "victoriaShip",
+  "purchasePrice": 2,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "atk",
+      "v": 0.25
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm043_global_buff"
+     },
+     {
+      "k": "undeadable_duration",
+      "v": 8
+     },
+     {
+      "k": "big_hammer",
+      "v": "chess_item_6_05_e"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_3_10_e_a",
+  "charId": "trap_1044_acarm044",
+  "effectId": "eff_acarm044",
+  "giveBondId": "victoriaShip",
+  "purchasePrice": 2,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "atk",
+      "v": 0.25
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm044_global_buff"
+     },
+     {
+      "k": "attack_speed",
+      "v": 30
+     },
+     {
+      "k": "big_hammer",
+      "v": "chess_item_6_05_e"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_2_03_e_a",
+  "charId": "trap_1045_acarm045",
+  "effectId": "eff_acarm045",
+  "giveBondId": "victoriaShip",
+  "purchasePrice": 2,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "atk",
+      "v": 0.2
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm045_global_buff"
+     },
+     {
+      "k": "prob",
+      "v": 0.1
+     },
+     {
+      "k": "disarmed_duration",
+      "v": 2
+     },
+     {
+      "k": "big_hammer",
+      "v": "chess_item_6_05_e"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_3_07_e_a",
+  "charId": "trap_1046_acarm046",
+  "effectId": "eff_acarm046",
+  "giveBondId": "egirShip",
+  "purchasePrice": 2,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "atk",
+      "v": 0.4
+     },
+     {
+      "k": "attack_speed",
+      "v": -10
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_1_02_e_a",
+  "charId": "trap_1047_acarm047",
+  "effectId": "eff_acarm047",
+  "giveBondId": "steadShip",
+  "purchasePrice": 1,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "def",
+      "v": 0.2
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_3_08_e_a",
+  "charId": "trap_1048_acarm048",
+  "effectId": "eff_acarm048",
+  "giveBondId": "arcaneShip",
+  "purchasePrice": 1,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "magic_resistance",
+      "v": 20
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "silence_attachment"
+     },
+     {
+      "k": "silence",
+      "v": 5
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_3_06_e_a",
+  "charId": "trap_1049_acarm049",
+  "effectId": "eff_acarm049",
+  "giveBondId": null,
+  "purchasePrice": 2,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm049_global_buff"
+     },
+     {
+      "k": "init_max_hp",
+      "v": 0.25
+     },
+     {
+      "k": "ex_max_hp",
+      "v": 0.15
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_2_04_e_a",
+  "charId": "trap_1050_acarm050",
+  "effectId": "eff_acarm050",
+  "giveBondId": "sargonShip",
+  "purchasePrice": 2,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm050_global_buff"
+     },
+     {
+      "k": "sp_recovery_per_sec",
+      "v": 0.15
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_3_05_e_a",
+  "charId": "trap_1051_acarm051",
+  "effectId": "eff_acarm051",
+  "giveBondId": "swiftShip",
+  "purchasePrice": 2,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm051_global_buff"
+     },
+     {
+      "k": "sp_each_person",
+      "v": 3
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_4_03_e_a",
+  "charId": "trap_1052_acarm052",
+  "effectId": "eff_acarm052",
+  "giveBondId": null,
+  "purchasePrice": 2,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1vautochess_equip_acarm037_global_buff"
+     },
+     {
+      "k": "attack_speed",
+      "v": 1
+     },
+     {
+      "k": "max_buff_cnt",
+      "v": 60
+     },
+     {
+      "k": "atk",
+      "v": 0
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_3_03_e_a",
+  "charId": "trap_1053_acarm053",
+  "effectId": "eff_acarm053",
+  "giveBondId": null,
+  "purchasePrice": 2,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "magic_penetrate_global_buff"
+     },
+     {
+      "k": "magic_resist_penetrate",
+      "v": 0.25
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_4_02_e_a",
+  "charId": "trap_1054_acarm054",
+  "effectId": "eff_acarm054",
+  "giveBondId": null,
+  "purchasePrice": 1,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm054_global_buff"
+     },
+     {
+      "k": "taunt_level",
+      "v": 1
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "max_hp",
+      "v": 0.4
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_4_04_e_a",
+  "charId": "trap_1055_acarm055",
+  "effectId": "eff_acarm055",
+  "giveBondId": null,
+  "purchasePrice": 1,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act2autochess_equip_acarm055_global_buff"
+     },
+     {
+      "k": "duration",
+      "v": 15
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_2_01_e_a",
+  "charId": "trap_1056_acarm056",
+  "effectId": "eff_acarm056",
+  "giveBondId": "indomShip",
+  "purchasePrice": 1,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm056_global_buff"
+     },
+     {
+      "k": "respawn_time",
+      "v": -0.3
+     },
+     {
+      "k": "max_hp",
+      "v": -0.3
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_4_08_e_a",
+  "charId": "trap_1057_acarm057",
+  "effectId": "eff_acarm057",
+  "giveBondId": "lateranoShip",
+  "purchasePrice": 1,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm057_global_buff"
+     },
+     {
+      "k": "prob",
+      "v": 0.5
+     },
+     {
+      "k": "ammo_percent",
+      "v": 0.4
+     },
+     {
+      "k": "max_trigger_cnt",
+      "v": 3
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_5_01_e_a",
+  "charId": "trap_1058_acarm058",
+  "effectId": "eff_acarm058",
+  "giveBondId": null,
+  "purchasePrice": 2,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm058_global_buff"
+     },
+     {
+      "k": "prob",
+      "v": 0.03
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_4_10_e_a",
+  "charId": "trap_1059_acarm059",
+  "effectId": "eff_acarm059",
+  "giveBondId": null,
+  "purchasePrice": 2,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm059_global_buff"
+     },
+     {
+      "k": "hp_ratio",
+      "v": 0.7
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_4_05_e_a",
+  "charId": "trap_1060_acarm060",
+  "effectId": "eff_acarm060",
+  "giveBondId": null,
+  "purchasePrice": 2,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm060_global_buff"
+     },
+     {
+      "k": "damage_scale",
+      "v": 0.6
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_4_11_e_a",
+  "charId": "trap_1061_acarm061",
+  "effectId": "eff_acarm061",
+  "giveBondId": null,
+  "purchasePrice": 2,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm061_global_buff"
+     },
+     {
+      "k": "prob",
+      "v": 0.1
+     },
+     {
+      "k": "max_stack_cnt",
+      "v": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_5_02_e_a",
+  "charId": "trap_1062_acarm062",
+  "effectId": "eff_acarm062",
+  "giveBondId": "kjeragShip",
+  "purchasePrice": 2,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1vautochess_equip_acarm003_global_buff"
+     },
+     {
+      "k": "prob",
+      "v": 0.12
+     },
+     {
+      "k": "cold",
+      "v": 1.5
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_3_02_e_a",
+  "charId": "trap_1063_acarm063",
+  "effectId": "eff_acarm063",
+  "giveBondId": "preciShip",
+  "purchasePrice": 2,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm063_global_buff"
+     },
+     {
+      "k": "radius",
+      "v": 3
+     },
+     {
+      "k": "damage_scale",
+      "v": 1.3
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_3_11_e_a",
+  "charId": "trap_1064_acarm064",
+  "effectId": "eff_acarm064",
+  "giveBondId": "raidShip",
+  "purchasePrice": 1,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm064_global_buff"
+     },
+     {
+      "k": "stun",
+      "v": 2
+     },
+     {
+      "k": "duration",
+      "v": 10
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_4_06_e_a",
+  "charId": "trap_1065_acarm065",
+  "effectId": "eff_acarm065",
+  "giveBondId": null,
+  "purchasePrice": 2,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1vautochess_equip_acarm025_global_buff"
+     },
+     {
+      "k": "hp_ratio",
+      "v": 0.02
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_1_03_e_a",
+  "charId": "trap_1066_acarm066",
+  "effectId": "eff_acarm066",
+  "giveBondId": null,
+  "purchasePrice": 1,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "equip_destory_gain_random_coin",
+    "bb": [
+     {
+      "k": "min",
+      "v": 1
+     },
+     {
+      "k": "max",
+      "v": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_5_03_e_a",
+  "charId": "trap_1067_acarm067",
+  "effectId": "eff_acarm067",
+  "giveBondId": null,
+  "purchasePrice": 3,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm067_global_buff"
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "atk",
+      "v": 0.3
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_4_12_e_a",
+  "charId": "trap_1068_acarm068",
+  "effectId": "eff_acarm068",
+  "giveBondId": null,
+  "purchasePrice": 3,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm068_global_buff"
+     },
+     {
+      "k": "max_respawn_cnt",
+      "v": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_5_05_e_a",
+  "charId": "trap_1069_acarm069",
+  "effectId": "eff_acarm069",
+  "giveBondId": null,
+  "purchasePrice": 4,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "use_equip_reward_char_chess",
+    "bb": []
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_6_08_e_a",
+  "charId": "trap_1070_acarm070",
+  "effectId": "eff_acarm070",
+  "giveBondId": null,
+  "purchasePrice": 4,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "equip_destory_deployment_cnt_change",
+    "bb": [
+     {
+      "k": "count",
+      "v": 9
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_5_06_e_a",
+  "charId": "trap_1071_acarm071",
+  "effectId": "eff_acarm071",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "equip_round_start_upgrade_char",
+    "bb": []
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_5_08_e_a",
+  "charId": "trap_1072_acarm072",
+  "effectId": "eff_acarm072",
+  "giveBondId": null,
+  "purchasePrice": 2,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "char_chess_transformation_equip",
+    "bb": []
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_6_09_e_a",
+  "charId": "trap_1073_acarm073",
+  "effectId": "eff_acarm073",
+  "giveBondId": null,
+  "purchasePrice": 3,
+  "isGolden": false,
+  "effects": []
+ },
+ {
+  "chessId": "chess_item_5_07_e_a",
+  "charId": "trap_1074_acarm074",
+  "effectId": "eff_acarm074",
+  "giveBondId": null,
+  "purchasePrice": 3,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "sell_char_count_gain_equip_owner_bond",
+    "bb": [
+     {
+      "k": "count",
+      "v": 8
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_4_01_e_a",
+  "charId": "trap_1075_acarm075",
+  "effectId": "eff_acarm075",
+  "giveBondId": null,
+  "purchasePrice": 4,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "use_equip_reward_special_goods_char_chess",
+    "bb": [
+     {
+      "k": "refresh_cnt",
+      "v": 3
+     },
+     {
+      "k": "choice_cnt",
+      "v": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_5_04_e_a",
+  "charId": "trap_1109_acarm109",
+  "effectId": "eff_acarm109",
+  "giveBondId": null,
+  "purchasePrice": 3,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "use_equip_recruit_new_char_and_give_char_to_player_most_bond",
+    "bb": [
+     {
+      "k": "refresh_cnt",
+      "v": 2
+     },
+     {
+      "k": "choice_cnt",
+      "v": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_6_02_e_a",
+  "charId": "trap_1076_acarm076",
+  "effectId": "eff_acarm076",
+  "giveBondId": null,
+  "purchasePrice": 4,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm076_global_buff"
+     },
+     {
+      "k": "equip_chess_id",
+      "v": "chess_item_4_08_e"
+     },
+     {
+      "k": "prob",
+      "v": 0.35
+     },
+     {
+      "k": "atk_scale_1",
+      "v": 1.5
+     },
+     {
+      "k": "atk_scale_2",
+      "v": 3
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "atk",
+      "v": 0.4
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_6_03_e_a",
+  "charId": "trap_1077_acarm077",
+  "effectId": "eff_acarm077",
+  "giveBondId": null,
+  "purchasePrice": 4,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm077_global_buff"
+     },
+     {
+      "k": "equip_chess_id",
+      "v": "chess_item_3_04_e"
+     },
+     {
+      "k": "attack_speed",
+      "v": 25
+     },
+     {
+      "k": "max_cnt",
+      "v": 3
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "max_hp",
+      "v": 0.45
+     }
+    ]
+   },
+   {
+    "key": "equip_with_another_gain_coin_when_gain_char",
+    "bb": [
+     {
+      "k": "other_equip",
+      "v": "chess_item_3_04_e_a,chess_item_3_04_e_b"
+     },
+     {
+      "k": "count",
+      "v": 2
+     },
+     {
+      "k": "max",
+      "v": 3
+     },
+     {
+      "k": "bond",
+      "v": "yanShip"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_6_04_e_a",
+  "charId": "trap_1078_acarm078",
+  "effectId": "eff_acarm078",
+  "giveBondId": null,
+  "purchasePrice": 4,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act2autochess_equip_acarm078_global_buff"
+     },
+     {
+      "k": "equip_chess_id",
+      "v": "chess_item_3_07_e"
+     },
+     {
+      "k": "lock_duration",
+      "v": 0.5
+     },
+     {
+      "k": "atk_scale",
+      "v": 0.5
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "halfidle_block_fixed_damage"
+     },
+     {
+      "k": "value",
+      "v": 180
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_6_05_e_a",
+  "charId": "trap_1079_acarm079",
+  "effectId": "eff_acarm079",
+  "giveBondId": null,
+  "purchasePrice": 4,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm079_global_buff"
+     },
+     {
+      "k": "hammer_1",
+      "v": "chess_item_4_09_e"
+     },
+     {
+      "k": "hammer_2",
+      "v": "chess_item_3_09_e"
+     },
+     {
+      "k": "hammer_3",
+      "v": "chess_item_3_10_e"
+     },
+     {
+      "k": "hammer_4",
+      "v": "chess_item_2_03_e"
+     },
+     {
+      "k": "damage_scale",
+      "v": 0.1
+     },
+     {
+      "k": "undeadable_duration",
+      "v": 8
+     },
+     {
+      "k": "attack_speed",
+      "v": 30
+     },
+     {
+      "k": "prob",
+      "v": 0.1
+     },
+     {
+      "k": "disarmed_duration",
+      "v": 2
+     },
+     {
+      "k": "big_hammer",
+      "v": "none"
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "attack_speed",
+      "v": 35
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_6_06_e_a",
+  "charId": "trap_1102_acarm102",
+  "effectId": "eff_acarm102",
+  "giveBondId": null,
+  "purchasePrice": 4,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "char_dynamic_ability_new",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act2autochess_equip_acarm102_ability"
+     },
+     {
+      "k": "atk_scale",
+      "v": 0.3
+     },
+     {
+      "k": "interval",
+      "v": 1
+     },
+     {
+      "k": "atk_scale_ex",
+      "v": 1
+     },
+     {
+      "k": "equip_chess_id",
+      "v": "chess_item_5_02_e"
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "magic_resistance",
+      "v": 30
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_6_07_e_a",
+  "charId": "trap_1103_acarm103",
+  "effectId": "eff_acarm103",
+  "giveBondId": null,
+  "purchasePrice": 4,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm103_global_buff"
+     },
+     {
+      "k": "equip_chess_id",
+      "v": "chess_item_2_04_e"
+     },
+     {
+      "k": "sp",
+      "v": 30
+     },
+     {
+      "k": "addition_sp",
+      "v": 3
+     },
+     {
+      "k": "init_sp",
+      "v": 30
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_2_05_e_a",
+  "charId": "trap_1113_acarm113",
+  "effectId": "eff_acarm113",
+  "giveBondId": null,
+  "purchasePrice": 3,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "gain_coin_when_round_start",
+    "bb": [
+     {
+      "k": "count",
+      "v": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_2_07_e_a",
+  "charId": "trap_1116_acarm116",
+  "effectId": "eff_acarm116",
+  "giveBondId": null,
+  "purchasePrice": 1,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "use_equip_gain_coin_when_next_round_start",
+    "bb": [
+     {
+      "k": "count",
+      "v": 2
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_2_06_e_a",
+  "charId": "trap_1114_acarm114",
+  "effectId": "eff_acarm114",
+  "giveBondId": null,
+  "purchasePrice": 2,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "use_equip_reward_char_chess_with_same_bond",
+    "bb": [
+     {
+      "k": "count",
+      "v": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_2_02_e_a",
+  "charId": "trap_1115_acarm115",
+  "effectId": "eff_acarm115",
+  "giveBondId": null,
+  "purchasePrice": 2,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "use_equip_reward_random_char_chess_in_shop",
+    "bb": [
+     {
+      "k": "count",
+      "v": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_6_01_e_a",
+  "charId": "trap_1117_acarm117",
+  "effectId": "eff_acarm117",
+  "giveBondId": null,
+  "purchasePrice": 3,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "atk",
+      "v": 0.4
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act2autochess_equip_acarm117_global_buff"
+     },
+     {
+      "k": "equip_chess_id",
+      "v": "chess_item_5_09_e"
+     },
+     {
+      "k": "atk_scale",
+      "v": 0.3
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_5_09_e_a",
+  "charId": "trap_1118_acarm118",
+  "effectId": "eff_acarm118",
+  "giveBondId": null,
+  "purchasePrice": 3,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "max_hp",
+      "v": 0.5
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act2autochess_equip_acarm118_global_buff"
+     },
+     {
+      "k": "hp_recovery_per_sec_by_max_hp_ratio",
+      "v": 0.08
+     },
+     {
+      "k": "equip_chess_id",
+      "v": "chess_item_6_01_e"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_4_07_e_a",
+  "charId": "trap_1119_acarm119",
+  "effectId": "eff_acarm119",
+  "giveBondId": "kazimierzShip",
+  "purchasePrice": 2,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act2autochess_equip_acarm120_global_buff"
+     },
+     {
+      "k": "damage_scale",
+      "v": 1.35
+     },
+     {
+      "k": "interval",
+      "v": 15
+     },
+     {
+      "k": "ex_interval",
+      "v": 0.5
+     },
+     {
+      "k": "damage_scale_minus",
+      "v": -0.04
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_6_10_e_a",
+  "charId": "trap_1120_acarm120",
+  "effectId": "eff_acarm120",
+  "giveBondId": null,
+  "purchasePrice": 4,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm056_global_buff"
+     },
+     {
+      "k": "respawn_time",
+      "v": -0.4
+     },
+     {
+      "k": "max_hp",
+      "v": 0
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act2autochess_equip_acarm119_global_buff"
+     },
+     {
+      "k": "duration",
+      "v": 20
+     },
+     {
+      "k": "equip_chess_id",
+      "v": "chess_item_4_07_e"
+     },
+     {
+      "k": "atk",
+      "v": 1
+     }
+    ]
+   },
+   {
+    "key": "char_dynamic_ability_new",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act2autochess_equip_acarm119_ability"
+     },
+     {
+      "k": "move_speed",
+      "v": 0.65
+     },
+     {
+      "k": "attack_speed",
+      "v": 0.65
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_3_01_e_a",
+  "charId": "trap_1121_acarm121",
+  "effectId": "eff_acarm121",
+  "giveBondId": "siracusaShip",
+  "purchasePrice": 2,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "attack_speed",
+      "v": 15
+     }
+    ]
+   },
+   {
+    "key": "char_dynamic_ability_new",
+    "bb": [
+     {
+      "k": "at_root",
+      "v": 1
+     },
+     {
+      "k": "key",
+      "v": "act2autochess_equip_acarm121_ability"
+     },
+     {
+      "k": "attack_speed",
+      "v": 10
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_6_11_e_a",
+  "charId": "trap_1122_acarm122",
+  "effectId": "eff_acarm122",
+  "giveBondId": null,
+  "purchasePrice": 4,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm050_global_buff"
+     },
+     {
+      "k": "sp_recovery_per_sec",
+      "v": 0.2
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act2autochess_equip_acarm122_global_buff"
+     },
+     {
+      "k": "equip_chess_id",
+      "v": "chess_item_3_01_e"
+     },
+     {
+      "k": "atk_per_sec",
+      "v": 0.02
+     },
+     {
+      "k": "max_atk",
+      "v": 1
+     },
+     {
+      "k": "atk_scale",
+      "v": 8
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_3_12_e_a",
+  "charId": "trap_1123_acarm123",
+  "effectId": "eff_acarm123",
+  "giveBondId": null,
+  "purchasePrice": 3,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "equip_destory_gain_random_coin",
+    "bb": [
+     {
+      "k": "min",
+      "v": 1
+     },
+     {
+      "k": "max",
+      "v": 6
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_1_04_e_a",
+  "charId": "trap_1124_acarm124",
+  "effectId": "eff_acarm124",
+  "giveBondId": null,
+  "purchasePrice": 1,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "use_equip_reward_char_chess_bond_layer",
+    "bb": [
+     {
+      "k": "layer",
+      "v": 3
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_1_05_e_a",
+  "charId": "trap_1125_acarm125",
+  "effectId": "eff_acarm125",
+  "giveBondId": null,
+  "purchasePrice": 1,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "atk",
+      "v": 0.4
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "periodic_damage"
+     },
+     {
+      "k": "damage",
+      "v": 60
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_6_01_m",
+  "charId": "trap_1108_acdisney",
+  "effectId": "eff_acdisney",
+  "giveBondId": null,
+  "purchasePrice": 2,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "trap_create_self_choice",
+    "bb": [
+     {
+      "k": "choice_event",
+      "v": "hunter_band_1"
+     }
+    ]
+   },
+   {
+    "key": "trap_disney_special",
+    "bb": [
+     {
+      "k": "count",
+      "v": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_6_02_m",
+  "charId": "trap_1110_accopy",
+  "effectId": "eff_accopy",
+  "giveBondId": null,
+  "purchasePrice": 2,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "trap_copy_front_char",
+    "bb": []
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_6_03_m",
+  "charId": "trap_1111_acchal",
+  "effectId": "eff_acchal",
+  "giveBondId": null,
+  "purchasePrice": 2,
+  "isGolden": false,
+  "effects": [
+   {
+    "key": "trap_create_self_choice",
+    "bb": [
+     {
+      "k": "choice_event",
+      "v": "hunter_band_1"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_3_04_e_b",
+  "charId": "trap_1040_acarm040",
+  "effectId": "eff_acgarm040",
+  "giveBondId": "yanShip",
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1vautochess_equip_acarm024_global_buff"
+     },
+     {
+      "k": "prob",
+      "v": 1
+     },
+     {
+      "k": "atk",
+      "v": 0.08
+     },
+     {
+      "k": "atk_buff_cnt",
+      "v": 10
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_1_01_e_b",
+  "charId": "trap_1041_acarm041",
+  "effectId": "eff_acgarm041",
+  "giveBondId": "victoriaShip",
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "atk",
+      "v": 0.25
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_4_09_e_b",
+  "charId": "trap_1042_acarm042",
+  "effectId": "eff_acgarm042",
+  "giveBondId": "victoriaShip",
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "atk",
+      "v": 0.5
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm042_global_buff"
+     },
+     {
+      "k": "damage_scale",
+      "v": 0.1
+     },
+     {
+      "k": "big_hammer",
+      "v": "chess_item_6_05_e"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_3_09_e_b",
+  "charId": "trap_1043_acarm043",
+  "effectId": "eff_acgarm043",
+  "giveBondId": "victoriaShip",
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "atk",
+      "v": 0.45
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm043_global_buff"
+     },
+     {
+      "k": "undeadable_duration",
+      "v": 8
+     },
+     {
+      "k": "big_hammer",
+      "v": "chess_item_6_05_e"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_3_10_e_b",
+  "charId": "trap_1044_acarm044",
+  "effectId": "eff_acgarm044",
+  "giveBondId": "victoriaShip",
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "atk",
+      "v": 0.45
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm044_global_buff"
+     },
+     {
+      "k": "attack_speed",
+      "v": 30
+     },
+     {
+      "k": "big_hammer",
+      "v": "chess_item_6_05_e"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_2_03_e_b",
+  "charId": "trap_1045_acarm045",
+  "effectId": "eff_acgarm045",
+  "giveBondId": "victoriaShip",
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "atk",
+      "v": 0.35
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm045_global_buff"
+     },
+     {
+      "k": "prob",
+      "v": 0.1
+     },
+     {
+      "k": "disarmed_duration",
+      "v": 2
+     },
+     {
+      "k": "big_hammer",
+      "v": "chess_item_6_05_e"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_3_07_e_b",
+  "charId": "trap_1046_acarm046",
+  "effectId": "eff_acgarm046",
+  "giveBondId": "egirShip",
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "atk",
+      "v": 0.6
+     },
+     {
+      "k": "attack_speed",
+      "v": -10
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_1_02_e_b",
+  "charId": "trap_1047_acarm047",
+  "effectId": "eff_acgarm047",
+  "giveBondId": "steadShip",
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "def",
+      "v": 0.35
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_3_08_e_b",
+  "charId": "trap_1048_acarm048",
+  "effectId": "eff_acgarm048",
+  "giveBondId": "arcaneShip",
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "magic_resistance",
+      "v": 30
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "silence_attachment"
+     },
+     {
+      "k": "silence",
+      "v": 5
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_3_06_e_b",
+  "charId": "trap_1049_acarm049",
+  "effectId": "eff_acgarm049",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm049_global_buff"
+     },
+     {
+      "k": "init_max_hp",
+      "v": 0.45
+     },
+     {
+      "k": "ex_max_hp",
+      "v": 0.25
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_2_04_e_b",
+  "charId": "trap_1050_acarm050",
+  "effectId": "eff_acgarm050",
+  "giveBondId": "sargonShip",
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm050_global_buff"
+     },
+     {
+      "k": "sp_recovery_per_sec",
+      "v": 0.25
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_3_05_e_b",
+  "charId": "trap_1051_acarm051",
+  "effectId": "eff_acgarm051",
+  "giveBondId": "swiftShip",
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm051_global_buff"
+     },
+     {
+      "k": "sp_each_person",
+      "v": 6
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_4_03_e_b",
+  "charId": "trap_1052_acarm052",
+  "effectId": "eff_acgarm052",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1vautochess_equip_acarm037_global_buff"
+     },
+     {
+      "k": "attack_speed",
+      "v": 2
+     },
+     {
+      "k": "max_buff_cnt",
+      "v": 60
+     },
+     {
+      "k": "atk",
+      "v": 0
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_3_03_e_b",
+  "charId": "trap_1053_acarm053",
+  "effectId": "eff_acgarm053",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "magic_penetrate_global_buff"
+     },
+     {
+      "k": "magic_resist_penetrate",
+      "v": 0.45
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_4_02_e_b",
+  "charId": "trap_1054_acarm054",
+  "effectId": "eff_acgarm054",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm054_global_buff"
+     },
+     {
+      "k": "taunt_level",
+      "v": 1
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "max_hp",
+      "v": 0.6
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_4_04_e_b",
+  "charId": "trap_1055_acarm055",
+  "effectId": "eff_acgarm055",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act2autochess_equip_acarm055_global_buff"
+     },
+     {
+      "k": "duration",
+      "v": 25
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_2_01_e_b",
+  "charId": "trap_1056_acarm056",
+  "effectId": "eff_acgarm056",
+  "giveBondId": "indomShip",
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm056_global_buff"
+     },
+     {
+      "k": "respawn_time",
+      "v": -0.5
+     },
+     {
+      "k": "max_hp",
+      "v": -0.3
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_4_08_e_b",
+  "charId": "trap_1057_acarm057",
+  "effectId": "eff_acgarm057",
+  "giveBondId": "lateranoShip",
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm057_global_buff"
+     },
+     {
+      "k": "prob",
+      "v": 0.6
+     },
+     {
+      "k": "ammo_percent",
+      "v": 0.6
+     },
+     {
+      "k": "max_trigger_cnt",
+      "v": 3
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_5_01_e_b",
+  "charId": "trap_1058_acarm058",
+  "effectId": "eff_acgarm058",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm058_global_buff"
+     },
+     {
+      "k": "prob",
+      "v": 0.05
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_4_10_e_b",
+  "charId": "trap_1059_acarm059",
+  "effectId": "eff_acgarm059",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm059_global_buff"
+     },
+     {
+      "k": "hp_ratio",
+      "v": 0.4
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_4_05_e_b",
+  "charId": "trap_1060_acarm060",
+  "effectId": "eff_acgarm060",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm060_global_buff"
+     },
+     {
+      "k": "damage_scale",
+      "v": 0.3
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_4_11_e_b",
+  "charId": "trap_1061_acarm061",
+  "effectId": "eff_acgarm061",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm061_global_buff"
+     },
+     {
+      "k": "prob",
+      "v": 0.15
+     },
+     {
+      "k": "max_stack_cnt",
+      "v": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_5_02_e_b",
+  "charId": "trap_1062_acarm062",
+  "effectId": "eff_acgarm062",
+  "giveBondId": "kjeragShip",
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1vautochess_equip_acarm003_global_buff"
+     },
+     {
+      "k": "prob",
+      "v": 0.2
+     },
+     {
+      "k": "cold",
+      "v": 1.5
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_3_02_e_b",
+  "charId": "trap_1063_acarm063",
+  "effectId": "eff_acgarm063",
+  "giveBondId": "preciShip",
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm063_global_buff"
+     },
+     {
+      "k": "radius",
+      "v": 3
+     },
+     {
+      "k": "damage_scale",
+      "v": 1.5
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_3_11_e_b",
+  "charId": "trap_1064_acarm064",
+  "effectId": "eff_acgarm064",
+  "giveBondId": "raidShip",
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm064_global_buff"
+     },
+     {
+      "k": "stun",
+      "v": 2
+     },
+     {
+      "k": "duration",
+      "v": 15
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_4_06_e_b",
+  "charId": "trap_1065_acarm065",
+  "effectId": "eff_acgarm065",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1vautochess_equip_acarm025_global_buff"
+     },
+     {
+      "k": "hp_ratio",
+      "v": 0.04
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_1_03_e_b",
+  "charId": "trap_1066_acarm066",
+  "effectId": "eff_acgarm066",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "equip_destory_gain_random_coin",
+    "bb": [
+     {
+      "k": "min",
+      "v": 2
+     },
+     {
+      "k": "max",
+      "v": 2
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_5_03_e_b",
+  "charId": "trap_1067_acarm067",
+  "effectId": "eff_acgarm067",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm067_global_buff"
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "atk",
+      "v": 0.5
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_4_12_e_b",
+  "charId": "trap_1068_acarm068",
+  "effectId": "eff_acgarm068",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm068_global_buff"
+     },
+     {
+      "k": "max_respawn_cnt",
+      "v": 2
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_5_05_e_b",
+  "charId": "trap_1069_acarm069",
+  "effectId": "eff_acgarm069",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "use_equip_reward_char_chess",
+    "bb": []
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_6_08_e_b",
+  "charId": "trap_1070_acarm070",
+  "effectId": "eff_acgarm070",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "equip_destory_deployment_cnt_change",
+    "bb": [
+     {
+      "k": "count",
+      "v": 9
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_5_06_e_b",
+  "charId": "trap_1071_acarm071",
+  "effectId": "eff_acgarm071",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "use_equip_upgrade_char",
+    "bb": []
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_5_08_e_b",
+  "charId": "trap_1072_acarm072",
+  "effectId": "eff_acgarm072",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "char_chess_transformation_equip",
+    "bb": []
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_6_09_e_b",
+  "charId": "trap_1073_acarm073",
+  "effectId": "eff_acgarm073",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": []
+ },
+ {
+  "chessId": "chess_item_5_07_e_b",
+  "charId": "trap_1074_acarm074",
+  "effectId": "eff_acgarm074",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "sell_char_count_gain_equip_owner_bond",
+    "bb": [
+     {
+      "k": "count",
+      "v": 7
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_4_01_e_b",
+  "charId": "trap_1075_acarm075",
+  "effectId": "eff_acgarm075",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "use_equip_reward_special_goods_char_chess",
+    "bb": [
+     {
+      "k": "refresh_cnt",
+      "v": 3
+     },
+     {
+      "k": "choice_cnt",
+      "v": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_5_04_e_b",
+  "charId": "trap_1109_acarm109",
+  "effectId": "eff_acgarm109",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "use_equip_recruit_new_char_and_give_char_to_player_most_bond",
+    "bb": [
+     {
+      "k": "refresh_cnt",
+      "v": 2
+     },
+     {
+      "k": "choice_cnt",
+      "v": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_6_02_e_b",
+  "charId": "trap_1076_acarm076",
+  "effectId": "eff_acgarm076",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm076_global_buff"
+     },
+     {
+      "k": "equip_chess_id",
+      "v": "chess_item_4_08_e"
+     },
+     {
+      "k": "prob",
+      "v": 0.35
+     },
+     {
+      "k": "atk_scale_1",
+      "v": 1.5
+     },
+     {
+      "k": "atk_scale_2",
+      "v": 3
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "atk",
+      "v": 0.6
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_6_03_e_b",
+  "charId": "trap_1077_acarm077",
+  "effectId": "eff_acgarm077",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm077_global_buff"
+     },
+     {
+      "k": "equip_chess_id",
+      "v": "chess_item_3_04_e"
+     },
+     {
+      "k": "attack_speed",
+      "v": 25
+     },
+     {
+      "k": "max_cnt",
+      "v": 3
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "max_hp",
+      "v": 0.7
+     }
+    ]
+   },
+   {
+    "key": "equip_with_another_gain_coin_when_gain_char",
+    "bb": [
+     {
+      "k": "other_equip",
+      "v": "chess_item_3_04_e_a,chess_item_3_04_e_b"
+     },
+     {
+      "k": "count",
+      "v": 2
+     },
+     {
+      "k": "max",
+      "v": 3
+     },
+     {
+      "k": "bond",
+      "v": "yanShip"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_6_04_e_b",
+  "charId": "trap_1078_acarm078",
+  "effectId": "eff_acgarm078",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act2autochess_equip_acarm078_global_buff"
+     },
+     {
+      "k": "equip_chess_id",
+      "v": "chess_item_3_07_e"
+     },
+     {
+      "k": "lock_duration",
+      "v": 0.5
+     },
+     {
+      "k": "atk_scale",
+      "v": 0.5
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "halfidle_block_fixed_damage"
+     },
+     {
+      "k": "value",
+      "v": 300
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_6_05_e_b",
+  "charId": "trap_1079_acarm079",
+  "effectId": "eff_acgarm079",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm079_global_buff"
+     },
+     {
+      "k": "hammer_1",
+      "v": "chess_item_4_09_e"
+     },
+     {
+      "k": "hammer_2",
+      "v": "chess_item_3_09_e"
+     },
+     {
+      "k": "hammer_3",
+      "v": "chess_item_3_10_e"
+     },
+     {
+      "k": "hammer_4",
+      "v": "chess_item_2_03_e"
+     },
+     {
+      "k": "damage_scale",
+      "v": 0.1
+     },
+     {
+      "k": "undeadable_duration",
+      "v": 8
+     },
+     {
+      "k": "attack_speed",
+      "v": 30
+     },
+     {
+      "k": "prob",
+      "v": 0.1
+     },
+     {
+      "k": "disarmed_duration",
+      "v": 2
+     },
+     {
+      "k": "big_hammer",
+      "v": "none"
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "attack_speed",
+      "v": 55
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_6_06_e_b",
+  "charId": "trap_1102_acarm102",
+  "effectId": "eff_acgarm102",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "char_dynamic_ability_new",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act2autochess_equip_acarm102_ability"
+     },
+     {
+      "k": "atk_scale",
+      "v": 0.3
+     },
+     {
+      "k": "interval",
+      "v": 1
+     },
+     {
+      "k": "atk_scale_ex",
+      "v": 1
+     },
+     {
+      "k": "equip_chess_id",
+      "v": "chess_item_5_02_e"
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "magic_resistance",
+      "v": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_6_07_e_b",
+  "charId": "trap_1103_acarm103",
+  "effectId": "eff_acgarm103",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm103_global_buff"
+     },
+     {
+      "k": "equip_chess_id",
+      "v": "chess_item_2_04_e"
+     },
+     {
+      "k": "sp",
+      "v": 30
+     },
+     {
+      "k": "addition_sp",
+      "v": 3
+     },
+     {
+      "k": "init_sp",
+      "v": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_2_05_e_b",
+  "charId": "trap_1113_acarm113",
+  "effectId": "eff_acgarm113",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "gain_coin_when_round_start",
+    "bb": [
+     {
+      "k": "count",
+      "v": 2
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_2_07_e_b",
+  "charId": "trap_1116_acarm116",
+  "effectId": "eff_acgarm116",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "use_equip_gain_coin_when_next_round_start",
+    "bb": [
+     {
+      "k": "count",
+      "v": 4
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_2_06_e_b",
+  "charId": "trap_1114_acarm114",
+  "effectId": "eff_acgarm114",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "use_equip_reward_char_chess_with_same_bond",
+    "bb": [
+     {
+      "k": "count",
+      "v": 2
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_2_02_e_b",
+  "charId": "trap_1115_acarm115",
+  "effectId": "eff_acgarm115",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "use_equip_reward_random_char_chess_in_shop",
+    "bb": [
+     {
+      "k": "count",
+      "v": 2
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_6_01_e_b",
+  "charId": "trap_1117_acarm117",
+  "effectId": "eff_acgarm117",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "atk",
+      "v": 0.6
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act2autochess_equip_acarm117_global_buff"
+     },
+     {
+      "k": "equip_chess_id",
+      "v": "chess_item_5_09_e"
+     },
+     {
+      "k": "atk_scale",
+      "v": 0.3
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_5_09_e_b",
+  "charId": "trap_1118_acarm118",
+  "effectId": "eff_acgarm118",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "max_hp",
+      "v": 0.75
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act2autochess_equip_acarm118_global_buff"
+     },
+     {
+      "k": "hp_recovery_per_sec_by_max_hp_ratio",
+      "v": 0.08
+     },
+     {
+      "k": "equip_chess_id",
+      "v": "chess_item_6_01_e"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_4_07_e_b",
+  "charId": "trap_1119_acarm119",
+  "effectId": "eff_acgarm119",
+  "giveBondId": "kazimierzShip",
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act2autochess_equip_acarm120_global_buff"
+     },
+     {
+      "k": "damage_scale",
+      "v": 1.6
+     },
+     {
+      "k": "interval",
+      "v": 15
+     },
+     {
+      "k": "ex_interval",
+      "v": 0.5
+     },
+     {
+      "k": "damage_scale_minus",
+      "v": -0.07
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_6_10_e_b",
+  "charId": "trap_1120_acarm120",
+  "effectId": "eff_acgarm120",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm056_global_buff"
+     },
+     {
+      "k": "respawn_time",
+      "v": -0.6
+     },
+     {
+      "k": "max_hp",
+      "v": 0
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act2autochess_equip_acarm119_global_buff"
+     },
+     {
+      "k": "duration",
+      "v": 20
+     },
+     {
+      "k": "equip_chess_id",
+      "v": "chess_item_4_07_e"
+     },
+     {
+      "k": "atk",
+      "v": 1
+     }
+    ]
+   },
+   {
+    "key": "char_dynamic_ability_new",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act2autochess_equip_acarm119_ability"
+     },
+     {
+      "k": "move_speed",
+      "v": 0.65
+     },
+     {
+      "k": "attack_speed",
+      "v": 0.65
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_3_01_e_b",
+  "charId": "trap_1121_acarm121",
+  "effectId": "eff_acgarm121",
+  "giveBondId": "siracusaShip",
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "attack_speed",
+      "v": 25
+     }
+    ]
+   },
+   {
+    "key": "char_dynamic_ability_new",
+    "bb": [
+     {
+      "k": "at_root",
+      "v": 1
+     },
+     {
+      "k": "key",
+      "v": "act2autochess_equip_acarm121_ability"
+     },
+     {
+      "k": "attack_speed",
+      "v": 15
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_6_11_e_b",
+  "charId": "trap_1122_acarm122",
+  "effectId": "eff_acgarm122",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act1autochess_equip_acarm050_global_buff"
+     },
+     {
+      "k": "sp_recovery_per_sec",
+      "v": 0.35
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "act2autochess_equip_acarm122_global_buff"
+     },
+     {
+      "k": "equip_chess_id",
+      "v": "chess_item_3_01_e"
+     },
+     {
+      "k": "atk_per_sec",
+      "v": 0.02
+     },
+     {
+      "k": "max_atk",
+      "v": 1
+     },
+     {
+      "k": "atk_scale",
+      "v": 8
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_3_12_e_b",
+  "charId": "trap_1123_acarm123",
+  "effectId": "eff_acgarm123",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "equip_destory_gain_random_coin",
+    "bb": [
+     {
+      "k": "min",
+      "v": 2
+     },
+     {
+      "k": "max",
+      "v": 12
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_1_04_e_b",
+  "charId": "trap_1124_acarm124",
+  "effectId": "eff_acgarm124",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "use_equip_reward_char_chess_bond_layer",
+    "bb": [
+     {
+      "k": "layer",
+      "v": 6
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "chessId": "chess_item_1_05_e_b",
+  "charId": "trap_1125_acarm125",
+  "effectId": "eff_acgarm125",
+  "giveBondId": null,
+  "purchasePrice": 5,
+  "isGolden": true,
+  "effects": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "attr_common_global_buff"
+     },
+     {
+      "k": "atk",
+      "v": 0.6
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "bb": [
+     {
+      "k": "key",
+      "v": "periodic_damage"
+     },
+     {
+      "k": "damage",
+      "v": 60
+     }
+    ]
+   }
+  ]
+ }
+]

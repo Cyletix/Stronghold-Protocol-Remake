@@ -1,0 +1,32 @@
+{
+  "date": "2026-09-14",
+  "release": {
+    "version": "room-game-20260914.16",
+    "previousFingerprint": "d1480e625b962d1a",
+    "fingerprint": "b9dec792b22c7f46"
+  },
+  "webChecks": 127,
+  "parentRelatedTests": 206,
+  "candidateTests": 9,
+  "checklist": {
+    "ids": 6328,
+    "accepted": 501,
+    "originalIdsPreserved": 6324,
+    "originalAcceptedPreserved": 497,
+    "revalidated": 487,
+    "added": [
+      "op/char_172_svrash/skill/skchr_svrash_3/final-defense",
+      "enemy/enemy_9017_achunt/passive/marked-death-cleanup",
+      "batch/B07/equip/eff_acarm040/skill-stacks",
+      "batch/B07/equip/eff_acgarm040/skill-stacks"
+    ]
+  },
+  "limitations": [
+    "protected Heal ability bridge",
+    "three achunt children TARGET context",
+    "multiple equipment instances and same-cast instant priority",
+    "training missing source ID/NPC caller/four-player choice",
+    "full original timing and remote four-player long-session/restart"
+  ],
+  "next": "skcom_born_up AppearSkill OnBorn/OnLocate/DoCast; existing native index, no full re-extraction"
+}

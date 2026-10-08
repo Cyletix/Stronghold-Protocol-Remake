@@ -1,0 +1,2527 @@
+{
+  "schemaVersion": 1,
+  "rule": "complete-owner-to-blockees-graphs-v1",
+  "members": {
+    "skchr_acfend_3": {
+      "prefabId": "skchr_acfend_3",
+      "charIds": [
+        "char_610_acfend"
+      ],
+      "blackboardKeys": [
+        "atk_scale",
+        "block_cnt",
+        "def"
+      ],
+      "levelCount": 10,
+      "activation": "cast",
+      "capability": "blockee-effects",
+      "modeIndex": null,
+      "modeBuffIndex": null,
+      "lifetime": {
+        "kind": "timed",
+        "duration": {
+          "key": "duration"
+        }
+      },
+      "action": "inherit",
+      "plan": null,
+      "selector": null,
+      "disarmed": false,
+      "channeling": null,
+      "source": {
+        "graphSha256": "af33ec4e522d3c0fdfc84723393fc9e919524589b6bf25e90b151e6cddb311d7",
+        "modeGraphSha256": null,
+        "prefabId": "skchr_acfend_3",
+        "sourceLevelsSha256": "68156d5a49ed8d2caff6f851af262fc1c5920e25da6f9e20885def213a718ac3",
+        "skillGraphPointer": "work/client-logic/program-compilation.json#/rejections/skchr_acfend_3/components",
+        "sourceVersion": "JP 36.7.22 (local XAPK label; bundle hashes authoritative)",
+        "blockee": {
+          "ownerBuffSha256": "7c3a12542eb9ea4653819945ed74e27c969326c062c594d1b67d97b08f596a4e",
+          "childBuffSha256": "ee1e35cf34b9501f4df1d15ec8ed192f19e4ef1df054e26cb77e80dfff531b41",
+          "templateKeys": [
+            "acfend_s_3",
+            "acfend_s_3[damage]"
+          ],
+          "effectKey": "acfend_skill_03_hit"
+        },
+        "evidenceLevels": {
+          "serializedFields": "Verified",
+          "blockeeRelationAndChecker": "Inferred from fields plus CN description",
+          "periodicFirstFrame": "Simulation",
+          "nativeCheckerThreshold": "not recovered",
+          "enemyDefensiveSp": "not implemented"
+        },
+        "model_boundaries": [
+          "Verified source fields and complete cached companion graphs; CN levels applied to JP 36.7.22 graphs are a cross-snapshot inference.",
+          "Current simulation cast-start activation, skill-duration expiry, base targeting/travel and interruption model are retained; native frame phase and projectile animation are not claimed.",
+          "Zero-event, zero-delay three-part channeling supplies semantic begin/active/end lifecycle; source animation names are retained but native artwork/frame timing is not reproduced.",
+          "Unchanged general abilities remain the existing base consumer; newly added mode general abilities, unknown fields, unsupported attack Buffs and unconsumed parameters reject the whole candidate.",
+          "Animation names, visual-only emitter lists and disabled selector flag operands are retained as source metadata; their presentation is not a second combat action.",
+          "Mode restoration follows the existing base consumer. Source mode selectors and block-count caps are bound independently of historical per-skill completion flags.",
+          "Static repeat counts use the existing shared-schema 1 + additionalTimes model. Explicit CN attack@times descriptions establish a total-count parameter; protected native repeated-shot getters and inter-shot timing remain unverified.",
+          "Finite on-hit slow/stun preserve source Buff keys and attack blackboard bindings. The shared max-expiry refresh rule is a simulation boundary; protected native DEFAULT refresh and melee Buff/body phase remain unverified.",
+          "Complete chain-lightning subtrees use one primary projectile. CN source descriptions support a total target budget including the first target; per-hop timing and nearest-target ties remain simulation conventions. Trait/module values are frozen from the live attack profile at skill start.",
+          "Cached source components and recursive Buff actions are checked in full; JP graph/CN level binding remains cross-snapshot inference.",
+          "Owner-to-blockees membership uses the existing simulation blockerId relation. Maintained status belongs to its source and ends on unblock, source detach or death.",
+          "BlockedToggleChecker blockMinCnt=0/blockMaxCnt=0/useBlockAsMin=0 is admitted only as this exact field tuple. Mapping it to all current blockees is inferred jointly from the source graph and CN skill description; the native threshold/getter implementation was not recovered or re-extracted in this batch.",
+          "Periodic waitFirst=false emits once at activation and then on the source interval. Exact native event-frame phase is not claimed.",
+          "Periodic damage reads live owner ATK and uses ordinary damage, damage statistics and kill consumers. It is a Buff action, not a basic attack or attack-recovery SP event.",
+          "AdvancedApplyDamage ignoreForSp=false is preserved. The current enemy damage path has no general defensive-SP consumer, so enemy defensive-SP recovery is not claimed. Large-step catch-up uses the current frame membership and live attributes rather than rewinding historical snapshots.",
+          "The current shared hit model handles sleep, untargetability, damage modifiers and resurrection; native protected cancellation/event ordering remains a simulation boundary."
+        ]
+      }
+    },
+    "skchr_zumama_2": {
+      "prefabId": "skchr_zumama_2",
+      "charIds": [
+        "char_416_zumama"
+      ],
+      "blackboardKeys": [
+        "atk",
+        "base_attack_time"
+      ],
+      "levelCount": 10,
+      "activation": "cast",
+      "capability": "blockee-effects",
+      "modeIndex": 1,
+      "modeBuffIndex": 0,
+      "lifetime": {
+        "kind": "timed",
+        "duration": {
+          "key": "duration"
+        }
+      },
+      "action": "attack",
+      "plan": {
+        "kind": "single",
+        "damageType": "phys",
+        "hits": 1,
+        "targets": {
+          "constant": 1
+        },
+        "scale": {
+          "constant": 1.0
+        },
+        "rangedScale": 1
+      },
+      "selector": {
+        "groundOnly": true,
+        "blockedFirst": true,
+        "blockCountLimit": true,
+        "priorityTag": null,
+        "order": "hatred-descending"
+      },
+      "disarmed": false,
+      "channeling": null,
+      "source": {
+        "graphSha256": "b282abb687a6b000dca277e3d5c67b645319b62fc3382199385b923cd8ae7aa4",
+        "modeGraphSha256": "7016c1b637ea6dbec173b7ed0e0bd1be9f68f87a299a10c79448ba834ccf59ae",
+        "prefabId": "skchr_zumama_2",
+        "sourceLevelsSha256": "823b6a79a0e9280210240b23c87bd0d7f4b8b92f5d4c04d742b5c92411491b73",
+        "skillGraphPointer": "work/client-logic/program-compilation.json#/rejections/skchr_zumama_2/components",
+        "sourceVersion": "JP 36.7.22 (local XAPK label; bundle hashes authoritative)",
+        "blockee": {
+          "generalGraphSha256": "530e049a67f8f2d5adfc57d2a2e142a1b312a4a035c1b8c8c8dc7caaf8ca3083",
+          "checker": {
+            "m_Enabled": 1,
+            "_blockMinCnt": 0,
+            "_blockMaxCnt": 0,
+            "_useBlockAsMin": 0,
+            "_buffsToBlockee": [
+              {
+                "attributes": {
+                  "abnormalFlags": [
+                    0
+                  ],
+                  "abnormalImmunes": [],
+                  "abnormalAntis": [],
+                  "abnormalCombos": [],
+                  "abnormalComboImmunes": [],
+                  "attributeModifiers": []
+                },
+                "buffKey": "stun",
+                "loadFromDB": 0,
+                "isDurableBuff": 0,
+                "isDamageMissable": 0,
+                "isSilenceable": 0,
+                "isStunnable": 0,
+                "isFreezable": 0,
+                "isLevitatable": 0,
+                "statusResistable": 2,
+                "templateKey": "empty",
+                "disableOverride": 0,
+                "overrideKey": "",
+                "overrideType": 0,
+                "maxStackCnt": 1,
+                "refreshRemainingTimeWhenStackMax": 0,
+                "clearAllStackCntWhenTimeUp": 0,
+                "maxValidStackCnt": -1,
+                "independentCharacterSource": 0,
+                "overrideEffectKey": "zumama_skill_02_buff_02",
+                "overrideOnEventPriority": 0,
+                "onEventPriority": 0,
+                "audioSignal": "",
+                "lifeTimeType": 2,
+                "takeSnapshotWhenExtend": 0,
+                "durationKey": "stun",
+                "lifeTime": 0.0,
+                "triggerLifeType": 0,
+                "triggerCnt": 0,
+                "triggerInterval": -1.0,
+                "waitFirstTriggerInterval": 1,
+                "firstTriggerInterval": -1.0,
+                "priority": -1,
+                "priorityBBKeys": [],
+                "stripBlackboardParamsWithBuffKey": 0,
+                "blackboard": [],
+                "enableInitDirectionFromSource": 0
+              }
+            ]
+          },
+          "statusBuffSha256": "59e47e769fca8dd97cc00a9def19077a43a51ebd56ccc07147efce28d566894f"
+        },
+        "evidenceLevels": {
+          "serializedFields": "Verified",
+          "blockeeRelationAndChecker": "Inferred from fields plus CN description",
+          "periodicFirstFrame": "Simulation",
+          "nativeCheckerThreshold": "not recovered",
+          "enemyDefensiveSp": "not implemented"
+        },
+        "model_boundaries": [
+          "Verified source fields and complete cached companion graphs; CN levels applied to JP 36.7.22 graphs are a cross-snapshot inference.",
+          "Current simulation cast-start activation, skill-duration expiry, base targeting/travel and interruption model are retained; native frame phase and projectile animation are not claimed.",
+          "Zero-event, zero-delay three-part channeling supplies semantic begin/active/end lifecycle; source animation names are retained but native artwork/frame timing is not reproduced.",
+          "Unchanged general abilities remain the existing base consumer; newly added mode general abilities, unknown fields, unsupported attack Buffs and unconsumed parameters reject the whole candidate.",
+          "Animation names, visual-only emitter lists and disabled selector flag operands are retained as source metadata; their presentation is not a second combat action.",
+          "Mode restoration follows the existing base consumer. Source mode selectors and block-count caps are bound independently of historical per-skill completion flags.",
+          "Static repeat counts use the existing shared-schema 1 + additionalTimes model. Explicit CN attack@times descriptions establish a total-count parameter; protected native repeated-shot getters and inter-shot timing remain unverified.",
+          "Finite on-hit slow/stun preserve source Buff keys and attack blackboard bindings. The shared max-expiry refresh rule is a simulation boundary; protected native DEFAULT refresh and melee Buff/body phase remain unverified.",
+          "Complete chain-lightning subtrees use one primary projectile. CN source descriptions support a total target budget including the first target; per-hop timing and nearest-target ties remain simulation conventions. Trait/module values are frozen from the live attack profile at skill start.",
+          "Cached source components and recursive Buff actions are checked in full; JP graph/CN level binding remains cross-snapshot inference.",
+          "Owner-to-blockees membership uses the existing simulation blockerId relation. Maintained status belongs to its source and ends on unblock, source detach or death.",
+          "BlockedToggleChecker blockMinCnt=0/blockMaxCnt=0/useBlockAsMin=0 is admitted only as this exact field tuple. Mapping it to all current blockees is inferred jointly from the source graph and CN skill description; the native threshold/getter implementation was not recovered or re-extracted in this batch.",
+          "Periodic waitFirst=false emits once at activation and then on the source interval. Exact native event-frame phase is not claimed.",
+          "Periodic damage reads live owner ATK and uses ordinary damage, damage statistics and kill consumers. It is a Buff action, not a basic attack or attack-recovery SP event.",
+          "AdvancedApplyDamage ignoreForSp=false is preserved. The current enemy damage path has no general defensive-SP consumer, so enemy defensive-SP recovery is not claimed. Large-step catch-up uses the current frame membership and live attributes rather than rewinding historical snapshots.",
+          "The current shared hit model handles sleep, untargetability, damage modifiers and resurrection; native protected cancellation/event ordering remains a simulation boundary."
+        ],
+        "bundle": "assets/AB/Android/charpack/char_416_zumama.ab",
+        "bundleSha256": "ffd8d0bb7d187702e15839ebef5c02d5822ef48bd5d3b05cbc64d134c63f455c",
+        "characterPathId": "3388762314351863763",
+        "modePathId": "-1673531229740898349",
+        "attackNode": "-8914943513267574829",
+        "selectorNode": "7856761528077281235"
+      }
+    }
+  },
+  "programs": {
+    "skchr_acfend_3": {
+      "controller": {
+        "kind": "cast_skill_active_buffs",
+        "activation": "cast",
+        "duration_policy": "max_buff_duration",
+        "allow_no_target": true,
+        "sp_recovery_while_active": false,
+        "pre_delay": 0,
+        "interrupt_on_detach": true,
+        "wait_for_casting": false,
+        "wait_for_attack_event": true
+      },
+      "buffs": [
+        {
+          "id": "acfend_s_3",
+          "scope": "self",
+          "lifetime": {
+            "kind": "timed",
+            "duration": {
+              "key": "duration"
+            }
+          },
+          "stacking": {
+            "max_stacks": 1
+          },
+          "modifiers": [
+            {
+              "attribute": "block_cnt",
+              "formula": "addition",
+              "value": {
+                "key": "block_cnt"
+              }
+            },
+            {
+              "attribute": "def",
+              "formula": "multiplier",
+              "value": {
+                "key": "def"
+              }
+            }
+          ]
+        }
+      ],
+      "blockees": [
+        {
+          "kind": "periodic-blockee-damage",
+          "buffKey": "acfend_s_3[damage]",
+          "interval": {
+            "constant": 1.0
+          },
+          "waitFirst": false,
+          "damageType": "arts",
+          "scale": {
+            "key": "atk_scale"
+          },
+          "sourceDamage": {
+            "_sourceType": "SOURCE",
+            "_targetType": "TARGET",
+            "_damageType": "MAGICAL",
+            "_atkScaleVar": "atk_scale",
+            "_defaultAtkScale": 1.0,
+            "_applyWay": "NONE",
+            "_baseOnHostAtk": false,
+            "_emitSourceOnCalculateDamage": false,
+            "_attackType": "NORMAL",
+            "_forceUseProjectileCachedAtk": false,
+            "_ignoreForSp": false,
+            "_ignoreMissFlag": "NONE",
+            "_ignoreCancelReasonMask": "NONE",
+            "_modifierKey": "",
+            "_assignRealDamageToBB": false,
+            "_assignFinalDamageToBB": false,
+            "_skipModifierEvent": false,
+            "_noSource": false,
+            "_onlyUseSourceOnCalculateDamage": false,
+            "_getCachedAtkFromBlackboard": false,
+            "_cachedAtkKey": "atk",
+            "_setSharedFlag": false,
+            "_sharedFlagIndex": "IS_CONTINUOUS",
+            "$type": "Torappu.Battle.Action.Nodes+AdvancedApplyDamage"
+          },
+          "source": {
+            "ownerBuffSha256": "7c3a12542eb9ea4653819945ed74e27c969326c062c594d1b67d97b08f596a4e",
+            "childBuffSha256": "ee1e35cf34b9501f4df1d15ec8ed192f19e4ef1df054e26cb77e80dfff531b41",
+            "templateKeys": [
+              "acfend_s_3",
+              "acfend_s_3[damage]"
+            ],
+            "effectKey": "acfend_skill_03_hit"
+          }
+        }
+      ],
+      "source": {
+        "graphSha256": "af33ec4e522d3c0fdfc84723393fc9e919524589b6bf25e90b151e6cddb311d7",
+        "modeGraphSha256": null,
+        "prefabId": "skchr_acfend_3",
+        "sourceLevelsSha256": "68156d5a49ed8d2caff6f851af262fc1c5920e25da6f9e20885def213a718ac3",
+        "skillGraphPointer": "work/client-logic/program-compilation.json#/rejections/skchr_acfend_3/components",
+        "sourceVersion": "JP 36.7.22 (local XAPK label; bundle hashes authoritative)",
+        "blockee": {
+          "ownerBuffSha256": "7c3a12542eb9ea4653819945ed74e27c969326c062c594d1b67d97b08f596a4e",
+          "childBuffSha256": "ee1e35cf34b9501f4df1d15ec8ed192f19e4ef1df054e26cb77e80dfff531b41",
+          "templateKeys": [
+            "acfend_s_3",
+            "acfend_s_3[damage]"
+          ],
+          "effectKey": "acfend_skill_03_hit"
+        },
+        "evidenceLevels": {
+          "serializedFields": "Verified",
+          "blockeeRelationAndChecker": "Inferred from fields plus CN description",
+          "periodicFirstFrame": "Simulation",
+          "nativeCheckerThreshold": "not recovered",
+          "enemyDefensiveSp": "not implemented"
+        },
+        "model_boundaries": [
+          "Verified source fields and complete cached companion graphs; CN levels applied to JP 36.7.22 graphs are a cross-snapshot inference.",
+          "Current simulation cast-start activation, skill-duration expiry, base targeting/travel and interruption model are retained; native frame phase and projectile animation are not claimed.",
+          "Zero-event, zero-delay three-part channeling supplies semantic begin/active/end lifecycle; source animation names are retained but native artwork/frame timing is not reproduced.",
+          "Unchanged general abilities remain the existing base consumer; newly added mode general abilities, unknown fields, unsupported attack Buffs and unconsumed parameters reject the whole candidate.",
+          "Animation names, visual-only emitter lists and disabled selector flag operands are retained as source metadata; their presentation is not a second combat action.",
+          "Mode restoration follows the existing base consumer. Source mode selectors and block-count caps are bound independently of historical per-skill completion flags.",
+          "Static repeat counts use the existing shared-schema 1 + additionalTimes model. Explicit CN attack@times descriptions establish a total-count parameter; protected native repeated-shot getters and inter-shot timing remain unverified.",
+          "Finite on-hit slow/stun preserve source Buff keys and attack blackboard bindings. The shared max-expiry refresh rule is a simulation boundary; protected native DEFAULT refresh and melee Buff/body phase remain unverified.",
+          "Complete chain-lightning subtrees use one primary projectile. CN source descriptions support a total target budget including the first target; per-hop timing and nearest-target ties remain simulation conventions. Trait/module values are frozen from the live attack profile at skill start.",
+          "Cached source components and recursive Buff actions are checked in full; JP graph/CN level binding remains cross-snapshot inference.",
+          "Owner-to-blockees membership uses the existing simulation blockerId relation. Maintained status belongs to its source and ends on unblock, source detach or death.",
+          "BlockedToggleChecker blockMinCnt=0/blockMaxCnt=0/useBlockAsMin=0 is admitted only as this exact field tuple. Mapping it to all current blockees is inferred jointly from the source graph and CN skill description; the native threshold/getter implementation was not recovered or re-extracted in this batch.",
+          "Periodic waitFirst=false emits once at activation and then on the source interval. Exact native event-frame phase is not claimed.",
+          "Periodic damage reads live owner ATK and uses ordinary damage, damage statistics and kill consumers. It is a Buff action, not a basic attack or attack-recovery SP event.",
+          "AdvancedApplyDamage ignoreForSp=false is preserved. The current enemy damage path has no general defensive-SP consumer, so enemy defensive-SP recovery is not claimed. Large-step catch-up uses the current frame membership and live attributes rather than rewinding historical snapshots.",
+          "The current shared hit model handles sleep, untargetability, damage modifiers and resurrection; native protected cancellation/event ordering remains a simulation boundary."
+        ]
+      }
+    },
+    "skchr_zumama_2": {
+      "controller": {
+        "kind": "cast_skill_active_buffs",
+        "activation": "cast",
+        "duration_policy": "max_buff_duration",
+        "allow_no_target": true,
+        "sp_recovery_while_active": false,
+        "pre_delay": 0,
+        "interrupt_on_detach": false,
+        "wait_for_casting": false,
+        "wait_for_attack_event": false
+      },
+      "buffs": [
+        {
+          "id": "zumama_s_2",
+          "scope": "self",
+          "lifetime": {
+            "kind": "timed",
+            "duration": {
+              "key": "duration"
+            }
+          },
+          "stacking": {
+            "max_stacks": 1
+          },
+          "modifiers": [
+            {
+              "attribute": "atk",
+              "formula": "multiplier",
+              "value": {
+                "key": "atk"
+              }
+            },
+            {
+              "attribute": "base_attack_time",
+              "formula": "addition",
+              "value": {
+                "key": "base_attack_time"
+              }
+            }
+          ]
+        }
+      ],
+      "blockees": [
+        {
+          "kind": "maintained-blockee-status",
+          "buffKey": "stun",
+          "status": "stun",
+          "membership": "owner-blockees",
+          "removeOnLeave": true,
+          "removeOnDetach": true,
+          "sourceScoped": true,
+          "source": {
+            "generalGraphSha256": "530e049a67f8f2d5adfc57d2a2e142a1b312a4a035c1b8c8c8dc7caaf8ca3083",
+            "checker": {
+              "m_Enabled": 1,
+              "_blockMinCnt": 0,
+              "_blockMaxCnt": 0,
+              "_useBlockAsMin": 0,
+              "_buffsToBlockee": [
+                {
+                  "attributes": {
+                    "abnormalFlags": [
+                      0
+                    ],
+                    "abnormalImmunes": [],
+                    "abnormalAntis": [],
+                    "abnormalCombos": [],
+                    "abnormalComboImmunes": [],
+                    "attributeModifiers": []
+                  },
+                  "buffKey": "stun",
+                  "loadFromDB": 0,
+                  "isDurableBuff": 0,
+                  "isDamageMissable": 0,
+                  "isSilenceable": 0,
+                  "isStunnable": 0,
+                  "isFreezable": 0,
+                  "isLevitatable": 0,
+                  "statusResistable": 2,
+                  "templateKey": "empty",
+                  "disableOverride": 0,
+                  "overrideKey": "",
+                  "overrideType": 0,
+                  "maxStackCnt": 1,
+                  "refreshRemainingTimeWhenStackMax": 0,
+                  "clearAllStackCntWhenTimeUp": 0,
+                  "maxValidStackCnt": -1,
+                  "independentCharacterSource": 0,
+                  "overrideEffectKey": "zumama_skill_02_buff_02",
+                  "overrideOnEventPriority": 0,
+                  "onEventPriority": 0,
+                  "audioSignal": "",
+                  "lifeTimeType": 2,
+                  "takeSnapshotWhenExtend": 0,
+                  "durationKey": "stun",
+                  "lifeTime": 0.0,
+                  "triggerLifeType": 0,
+                  "triggerCnt": 0,
+                  "triggerInterval": -1.0,
+                  "waitFirstTriggerInterval": 1,
+                  "firstTriggerInterval": -1.0,
+                  "priority": -1,
+                  "priorityBBKeys": [],
+                  "stripBlackboardParamsWithBuffKey": 0,
+                  "blackboard": [],
+                  "enableInitDirectionFromSource": 0
+                }
+              ]
+            },
+            "statusBuffSha256": "59e47e769fca8dd97cc00a9def19077a43a51ebd56ccc07147efce28d566894f"
+          }
+        }
+      ],
+      "source": {
+        "graphSha256": "b282abb687a6b000dca277e3d5c67b645319b62fc3382199385b923cd8ae7aa4",
+        "modeGraphSha256": "7016c1b637ea6dbec173b7ed0e0bd1be9f68f87a299a10c79448ba834ccf59ae",
+        "prefabId": "skchr_zumama_2",
+        "sourceLevelsSha256": "823b6a79a0e9280210240b23c87bd0d7f4b8b92f5d4c04d742b5c92411491b73",
+        "skillGraphPointer": "work/client-logic/program-compilation.json#/rejections/skchr_zumama_2/components",
+        "sourceVersion": "JP 36.7.22 (local XAPK label; bundle hashes authoritative)",
+        "blockee": {
+          "generalGraphSha256": "530e049a67f8f2d5adfc57d2a2e142a1b312a4a035c1b8c8c8dc7caaf8ca3083",
+          "checker": {
+            "m_Enabled": 1,
+            "_blockMinCnt": 0,
+            "_blockMaxCnt": 0,
+            "_useBlockAsMin": 0,
+            "_buffsToBlockee": [
+              {
+                "attributes": {
+                  "abnormalFlags": [
+                    0
+                  ],
+                  "abnormalImmunes": [],
+                  "abnormalAntis": [],
+                  "abnormalCombos": [],
+                  "abnormalComboImmunes": [],
+                  "attributeModifiers": []
+                },
+                "buffKey": "stun",
+                "loadFromDB": 0,
+                "isDurableBuff": 0,
+                "isDamageMissable": 0,
+                "isSilenceable": 0,
+                "isStunnable": 0,
+                "isFreezable": 0,
+                "isLevitatable": 0,
+                "statusResistable": 2,
+                "templateKey": "empty",
+                "disableOverride": 0,
+                "overrideKey": "",
+                "overrideType": 0,
+                "maxStackCnt": 1,
+                "refreshRemainingTimeWhenStackMax": 0,
+                "clearAllStackCntWhenTimeUp": 0,
+                "maxValidStackCnt": -1,
+                "independentCharacterSource": 0,
+                "overrideEffectKey": "zumama_skill_02_buff_02",
+                "overrideOnEventPriority": 0,
+                "onEventPriority": 0,
+                "audioSignal": "",
+                "lifeTimeType": 2,
+                "takeSnapshotWhenExtend": 0,
+                "durationKey": "stun",
+                "lifeTime": 0.0,
+                "triggerLifeType": 0,
+                "triggerCnt": 0,
+                "triggerInterval": -1.0,
+                "waitFirstTriggerInterval": 1,
+                "firstTriggerInterval": -1.0,
+                "priority": -1,
+                "priorityBBKeys": [],
+                "stripBlackboardParamsWithBuffKey": 0,
+                "blackboard": [],
+                "enableInitDirectionFromSource": 0
+              }
+            ]
+          },
+          "statusBuffSha256": "59e47e769fca8dd97cc00a9def19077a43a51ebd56ccc07147efce28d566894f"
+        },
+        "evidenceLevels": {
+          "serializedFields": "Verified",
+          "blockeeRelationAndChecker": "Inferred from fields plus CN description",
+          "periodicFirstFrame": "Simulation",
+          "nativeCheckerThreshold": "not recovered",
+          "enemyDefensiveSp": "not implemented"
+        },
+        "model_boundaries": [
+          "Verified source fields and complete cached companion graphs; CN levels applied to JP 36.7.22 graphs are a cross-snapshot inference.",
+          "Current simulation cast-start activation, skill-duration expiry, base targeting/travel and interruption model are retained; native frame phase and projectile animation are not claimed.",
+          "Zero-event, zero-delay three-part channeling supplies semantic begin/active/end lifecycle; source animation names are retained but native artwork/frame timing is not reproduced.",
+          "Unchanged general abilities remain the existing base consumer; newly added mode general abilities, unknown fields, unsupported attack Buffs and unconsumed parameters reject the whole candidate.",
+          "Animation names, visual-only emitter lists and disabled selector flag operands are retained as source metadata; their presentation is not a second combat action.",
+          "Mode restoration follows the existing base consumer. Source mode selectors and block-count caps are bound independently of historical per-skill completion flags.",
+          "Static repeat counts use the existing shared-schema 1 + additionalTimes model. Explicit CN attack@times descriptions establish a total-count parameter; protected native repeated-shot getters and inter-shot timing remain unverified.",
+          "Finite on-hit slow/stun preserve source Buff keys and attack blackboard bindings. The shared max-expiry refresh rule is a simulation boundary; protected native DEFAULT refresh and melee Buff/body phase remain unverified.",
+          "Complete chain-lightning subtrees use one primary projectile. CN source descriptions support a total target budget including the first target; per-hop timing and nearest-target ties remain simulation conventions. Trait/module values are frozen from the live attack profile at skill start.",
+          "Cached source components and recursive Buff actions are checked in full; JP graph/CN level binding remains cross-snapshot inference.",
+          "Owner-to-blockees membership uses the existing simulation blockerId relation. Maintained status belongs to its source and ends on unblock, source detach or death.",
+          "BlockedToggleChecker blockMinCnt=0/blockMaxCnt=0/useBlockAsMin=0 is admitted only as this exact field tuple. Mapping it to all current blockees is inferred jointly from the source graph and CN skill description; the native threshold/getter implementation was not recovered or re-extracted in this batch.",
+          "Periodic waitFirst=false emits once at activation and then on the source interval. Exact native event-frame phase is not claimed.",
+          "Periodic damage reads live owner ATK and uses ordinary damage, damage statistics and kill consumers. It is a Buff action, not a basic attack or attack-recovery SP event.",
+          "AdvancedApplyDamage ignoreForSp=false is preserved. The current enemy damage path has no general defensive-SP consumer, so enemy defensive-SP recovery is not claimed. Large-step catch-up uses the current frame membership and live attributes rather than rewinding historical snapshots.",
+          "The current shared hit model handles sleep, untargetability, damage modifiers and resurrection; native protected cancellation/event ordering remains a simulation boundary."
+        ],
+        "bundle": "assets/AB/Android/charpack/char_416_zumama.ab",
+        "bundleSha256": "ffd8d0bb7d187702e15839ebef5c02d5822ef48bd5d3b05cbc64d134c63f455c",
+        "characterPathId": "3388762314351863763",
+        "modePathId": "-1673531229740898349",
+        "attackNode": "-8914943513267574829",
+        "selectorNode": "7856761528077281235"
+      }
+    }
+  },
+  "completeGraphs": {
+    "skchr_acfend_3": {
+      "components": [
+        {
+          "node_id": "-5219089859421876896",
+          "type": "Torappu.Battle.CastSkill",
+          "script": {
+            "status": "resolved",
+            "type": "Torappu.Battle.CastSkill",
+            "assembly": "Assembly-CSharp.dll",
+            "script_cab": "CAB-658d74aab777086fc32b93f385be999a",
+            "script_path_id": "6851783972288338031",
+            "script_bundle_sha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+          },
+          "fields": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "-4451749912439960224"
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "6851783972288338031"
+            },
+            "m_Name": "",
+            "_maxTriggerTime": -1,
+            "_allowSpRecoveryWhenAffecting": 0,
+            "_limitGlobalTriggerTime": 0,
+            "_hidden": 0,
+            "_showSpBarEvenHidden": 0,
+            "_showSpAsBulletMode": 0,
+            "_showSpRatioAsProgress": 0,
+            "_playCharWordVoice": 1,
+            "_playCharWordWithPassiveType": 0,
+            "_canCastWithNoSp": 0,
+            "_canSilenced": 0,
+            "_canUseInAbnormalState": 0,
+            "_defaultModeIndex": -1,
+            "_attackBlackboardModeIndex": -1,
+            "_extraAttackBlackboardModeIndices": [],
+            "_rangeIdModeIndex": -1,
+            "_extraRangeIdModeIndices": [],
+            "_rangeIdUsageType": 7,
+            "_writeDurationToAttackBlackboard": 0,
+            "_attachSignalIds": 0,
+            "_extraAbilities": [],
+            "_useEscapeTime": 0,
+            "_earlySkillFinishAtAttackFinished": 0,
+            "_showProgressToNext": 0,
+            "_hideSkillStackCount": 0,
+            "_hideHudSkillStackCount": 0,
+            "_playSkillBeginAnim": 0,
+            "_beginAnim": "",
+            "_beginAnimDown": "",
+            "_beginEffect": [],
+            "_useFaceVector": 0,
+            "_beginAnimValidator": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "_availableValidator": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "_trigger": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "_switchToState": 0,
+            "_uninterruptibleOnAbilityPredelay": 0,
+            "_canSwitchDuringBorn": 1,
+            "_canCastDuringBorn": 1,
+            "_checkHasTargetBeforeDoCast": 0,
+            "_useTriggerInManualMode": 0,
+            "_allowNoTarget": 1,
+            "_shouldCastLikeAttack": 0,
+            "_isRemoteControlled": 0,
+            "_hideRangeToShow": 0,
+            "_forceUseBaseShowRange": 0,
+            "_rangeToShow": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "_recoverSpIfNoTarget": 0,
+            "_resetAbilityCooldownWhenCastEnd": 0,
+            "_onlyAvailableWhenTokenValid": 0,
+            "_hasUniStackColor": 0
+          }
+        },
+        {
+          "node_id": "-5278621303739921056",
+          "type": "Torappu.Battle.Abilities.ActiveBuffAbility",
+          "script": {
+            "status": "resolved",
+            "type": "Torappu.Battle.Abilities.ActiveBuffAbility",
+            "assembly": "Assembly-CSharp.dll",
+            "script_cab": "CAB-658d74aab777086fc32b93f385be999a",
+            "script_path_id": "-4234909118878081699",
+            "script_bundle_sha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+          },
+          "fields": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "-4451749912439960224"
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "-4234909118878081699"
+            },
+            "m_Name": "",
+            "_selector": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "_metadata": {
+              "namedAsAlias": "",
+              "blackboardPrefix": ""
+            },
+            "_interruptAbilityOnDetach": 1,
+            "_attachPassiveBuffsOnDummy": 1,
+            "_ignoreIfOwnerDead": 0,
+            "_forceAsDmgOrHealAbility": 0,
+            "_waitForAttackEvent": 1,
+            "_interuptIfTargetDead": 0,
+            "_resetCdStrategy": 1,
+            "_buffs": [
+              {
+                "attributes": {
+                  "abnormalFlags": [],
+                  "abnormalImmunes": [],
+                  "abnormalAntis": [],
+                  "abnormalCombos": [],
+                  "abnormalComboImmunes": [],
+                  "attributeModifiers": [
+                    {
+                      "attributeType": 5,
+                      "formulaItem": 0,
+                      "value": 0.0,
+                      "loadFromBlackboard": 1,
+                      "fetchBaseValueFromSourceEntity": 0
+                    },
+                    {
+                      "attributeType": 2,
+                      "formulaItem": 1,
+                      "value": 0.0,
+                      "loadFromBlackboard": 1,
+                      "fetchBaseValueFromSourceEntity": 0
+                    }
+                  ]
+                },
+                "buffKey": "acfend_s_3",
+                "loadFromDB": 0,
+                "isDurableBuff": 0,
+                "isDamageMissable": 0,
+                "isSilenceable": 0,
+                "isStunnable": 0,
+                "isFreezable": 0,
+                "isLevitatable": 0,
+                "statusResistable": 2,
+                "templateKey": "acfend_s_3",
+                "disableOverride": 0,
+                "overrideKey": "",
+                "overrideType": 0,
+                "maxStackCnt": 1,
+                "refreshRemainingTimeWhenStackMax": 0,
+                "clearAllStackCntWhenTimeUp": 0,
+                "maxValidStackCnt": -1,
+                "independentCharacterSource": 0,
+                "overrideEffectKey": "acfend_skill_03_buff",
+                "overrideOnEventPriority": 0,
+                "onEventPriority": 0,
+                "audioSignal": "",
+                "lifeTimeType": 1,
+                "takeSnapshotWhenExtend": 0,
+                "durationKey": "duration",
+                "lifeTime": 0.0,
+                "triggerLifeType": 2,
+                "triggerCnt": 0,
+                "triggerInterval": -1.0,
+                "waitFirstTriggerInterval": 0,
+                "firstTriggerInterval": -1.0,
+                "priority": -1,
+                "priorityBBKeys": [],
+                "stripBlackboardParamsWithBuffKey": 0,
+                "blackboard": [
+                  {
+                    "key": "interval",
+                    "value": 1.0,
+                    "valueStr": ""
+                  }
+                ],
+                "enableInitDirectionFromSource": 0
+              }
+            ],
+            "_waitForCasting": 0,
+            "_updateLifetimeWhenSpellStart": 0,
+            "_preDelay": 0.0,
+            "_escapeTime": 0.0,
+            "_checkBuffEarlyFinish": 0,
+            "_passiveBuffs": [],
+            "_ignoreInfiniteBuffCooldown": 0,
+            "_enableUpdateCooldown": 0
+          }
+        }
+      ],
+      "levels": [
+        {
+          "name": "应力倒置",
+          "rangeId": null,
+          "description": "技能持续时间内防御力<@ba.vup>+{def:0%}</>，阻挡数<@ba.vup>+1</>，每秒对自身阻挡的敌人造成相当于攻击力<@ba.vup>{atk_scale:0%}</>的法术伤害",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "levelUpCost": null,
+            "maxChargeTime": 1,
+            "spCost": 76,
+            "initSp": 15,
+            "increment": 1.0
+          },
+          "prefabId": "skchr_acfend_3",
+          "duration": 30.0,
+          "blackboard": [
+            {
+              "key": "atk_scale",
+              "value": 0.25,
+              "valueStr": null
+            },
+            {
+              "key": "def",
+              "value": 0.3,
+              "valueStr": null
+            },
+            {
+              "key": "block_cnt",
+              "value": 1.0,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "应力倒置",
+          "rangeId": null,
+          "description": "技能持续时间内防御力<@ba.vup>+{def:0%}</>，阻挡数<@ba.vup>+1</>，每秒对自身阻挡的敌人造成相当于攻击力<@ba.vup>{atk_scale:0%}</>的法术伤害",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "levelUpCost": null,
+            "maxChargeTime": 1,
+            "spCost": 74,
+            "initSp": 15,
+            "increment": 1.0
+          },
+          "prefabId": "skchr_acfend_3",
+          "duration": 30.0,
+          "blackboard": [
+            {
+              "key": "atk_scale",
+              "value": 0.3,
+              "valueStr": null
+            },
+            {
+              "key": "def",
+              "value": 0.35,
+              "valueStr": null
+            },
+            {
+              "key": "block_cnt",
+              "value": 1.0,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "应力倒置",
+          "rangeId": null,
+          "description": "技能持续时间内防御力<@ba.vup>+{def:0%}</>，阻挡数<@ba.vup>+1</>，每秒对自身阻挡的敌人造成相当于攻击力<@ba.vup>{atk_scale:0%}</>的法术伤害",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "levelUpCost": null,
+            "maxChargeTime": 1,
+            "spCost": 72,
+            "initSp": 15,
+            "increment": 1.0
+          },
+          "prefabId": "skchr_acfend_3",
+          "duration": 30.0,
+          "blackboard": [
+            {
+              "key": "atk_scale",
+              "value": 0.35,
+              "valueStr": null
+            },
+            {
+              "key": "def",
+              "value": 0.4,
+              "valueStr": null
+            },
+            {
+              "key": "block_cnt",
+              "value": 1.0,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "应力倒置",
+          "rangeId": null,
+          "description": "技能持续时间内防御力<@ba.vup>+{def:0%}</>，阻挡数<@ba.vup>+1</>，每秒对自身阻挡的敌人造成相当于攻击力<@ba.vup>{atk_scale:0%}</>的法术伤害",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "levelUpCost": null,
+            "maxChargeTime": 1,
+            "spCost": 70,
+            "initSp": 20,
+            "increment": 1.0
+          },
+          "prefabId": "skchr_acfend_3",
+          "duration": 30.0,
+          "blackboard": [
+            {
+              "key": "atk_scale",
+              "value": 0.4,
+              "valueStr": null
+            },
+            {
+              "key": "def",
+              "value": 0.5,
+              "valueStr": null
+            },
+            {
+              "key": "block_cnt",
+              "value": 1.0,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "应力倒置",
+          "rangeId": null,
+          "description": "技能持续时间内防御力<@ba.vup>+{def:0%}</>，阻挡数<@ba.vup>+1</>，每秒对自身阻挡的敌人造成相当于攻击力<@ba.vup>{atk_scale:0%}</>的法术伤害",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "levelUpCost": null,
+            "maxChargeTime": 1,
+            "spCost": 68,
+            "initSp": 20,
+            "increment": 1.0
+          },
+          "prefabId": "skchr_acfend_3",
+          "duration": 30.0,
+          "blackboard": [
+            {
+              "key": "atk_scale",
+              "value": 0.45,
+              "valueStr": null
+            },
+            {
+              "key": "def",
+              "value": 0.55,
+              "valueStr": null
+            },
+            {
+              "key": "block_cnt",
+              "value": 1.0,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "应力倒置",
+          "rangeId": null,
+          "description": "技能持续时间内防御力<@ba.vup>+{def:0%}</>，阻挡数<@ba.vup>+1</>，每秒对自身阻挡的敌人造成相当于攻击力<@ba.vup>{atk_scale:0%}</>的法术伤害",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "levelUpCost": null,
+            "maxChargeTime": 1,
+            "spCost": 66,
+            "initSp": 20,
+            "increment": 1.0
+          },
+          "prefabId": "skchr_acfend_3",
+          "duration": 30.0,
+          "blackboard": [
+            {
+              "key": "atk_scale",
+              "value": 0.5,
+              "valueStr": null
+            },
+            {
+              "key": "def",
+              "value": 0.6,
+              "valueStr": null
+            },
+            {
+              "key": "block_cnt",
+              "value": 1.0,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "应力倒置",
+          "rangeId": null,
+          "description": "技能持续时间内防御力<@ba.vup>+{def:0%}</>，阻挡数<@ba.vup>+1</>，每秒对自身阻挡的敌人造成相当于攻击力<@ba.vup>{atk_scale:0%}</>的法术伤害",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "levelUpCost": null,
+            "maxChargeTime": 1,
+            "spCost": 64,
+            "initSp": 25,
+            "increment": 1.0
+          },
+          "prefabId": "skchr_acfend_3",
+          "duration": 30.0,
+          "blackboard": [
+            {
+              "key": "atk_scale",
+              "value": 0.55,
+              "valueStr": null
+            },
+            {
+              "key": "def",
+              "value": 0.7,
+              "valueStr": null
+            },
+            {
+              "key": "block_cnt",
+              "value": 1.0,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "应力倒置",
+          "rangeId": null,
+          "description": "技能持续时间内防御力<@ba.vup>+{def:0%}</>，阻挡数<@ba.vup>+1</>，每秒对自身阻挡的敌人造成相当于攻击力<@ba.vup>{atk_scale:0%}</>的法术伤害",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "levelUpCost": null,
+            "maxChargeTime": 1,
+            "spCost": 61,
+            "initSp": 25,
+            "increment": 1.0
+          },
+          "prefabId": "skchr_acfend_3",
+          "duration": 30.0,
+          "blackboard": [
+            {
+              "key": "atk_scale",
+              "value": 0.6,
+              "valueStr": null
+            },
+            {
+              "key": "def",
+              "value": 0.8,
+              "valueStr": null
+            },
+            {
+              "key": "block_cnt",
+              "value": 1.0,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "应力倒置",
+          "rangeId": null,
+          "description": "技能持续时间内防御力<@ba.vup>+{def:0%}</>，阻挡数<@ba.vup>+1</>，每秒对自身阻挡的敌人造成相当于攻击力<@ba.vup>{atk_scale:0%}</>的法术伤害",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "levelUpCost": null,
+            "maxChargeTime": 1,
+            "spCost": 58,
+            "initSp": 25,
+            "increment": 1.0
+          },
+          "prefabId": "skchr_acfend_3",
+          "duration": 30.0,
+          "blackboard": [
+            {
+              "key": "atk_scale",
+              "value": 0.65,
+              "valueStr": null
+            },
+            {
+              "key": "def",
+              "value": 0.9,
+              "valueStr": null
+            },
+            {
+              "key": "block_cnt",
+              "value": 1.0,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "应力倒置",
+          "rangeId": null,
+          "description": "技能持续时间内防御力<@ba.vup>+{def:0%}</>，阻挡数<@ba.vup>+1</>，每秒对自身阻挡的敌人造成相当于攻击力<@ba.vup>{atk_scale:0%}</>的法术伤害",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "levelUpCost": null,
+            "maxChargeTime": 1,
+            "spCost": 55,
+            "initSp": 30,
+            "increment": 1.0
+          },
+          "prefabId": "skchr_acfend_3",
+          "duration": 30.0,
+          "blackboard": [
+            {
+              "key": "atk_scale",
+              "value": 0.7,
+              "valueStr": null
+            },
+            {
+              "key": "def",
+              "value": 1.0,
+              "valueStr": null
+            },
+            {
+              "key": "block_cnt",
+              "value": 1.0,
+              "valueStr": null
+            }
+          ]
+        }
+      ],
+      "templates": {
+        "acfend_s_3": {
+          "templateKey": "acfend_s_3",
+          "effectKey": "",
+          "onEventPriority": 0,
+          "eventToActions": {
+            "_items": [
+              {
+                "key": 2,
+                "value": {
+                  "SerializedState": "[{\"_buff\":{\"attributes\":{\"abnormalFlags\":[],\"abnormalImmunes\":[],\"abnormalAntis\":[],\"abnormalCombos\":[],\"abnormalComboImmunes\":[],\"attributeModifiers\":[]},\"buffKey\":\"acfend_s_3[damage]\",\"loadFromDB\":false,\"isDurableBuff\":false,\"isDamageMissable\":false,\"isSilenceable\":false,\"isStunnable\":false,\"isFreezable\":false,\"isLevitatable\":false,\"statusResistable\":\"AUTOMATIC\",\"templateKey\":\"acfend_s_3[damage]\",\"disableOverride\":false,\"overrideKey\":null,\"overrideType\":\"DEFAULT\",\"maxStackCnt\":1,\"refreshRemainingTimeWhenStackMax\":false,\"clearAllStackCntWhenTimeUp\":false,\"maxValidStackCnt\":-1,\"independentCharacterSource\":false,\"overrideEffectKey\":null,\"overrideOnEventPriority\":false,\"onEventPriority\":\"DEFAULT\",\"audioSignal\":null,\"lifeTimeType\":\"IMMEDIATELY\",\"takeSnapshotWhenExtend\":false,\"durationKey\":null,\"lifeTime\":0.0,\"triggerLifeType\":\"IMMEDIATELY\",\"triggerCnt\":0,\"triggerInterval\":-1.0,\"waitFirstTriggerInterval\":true,\"firstTriggerInterval\":-1.0,\"priority\":-1,\"priorityBBKeys\":[],\"stripBlackboardParamsWithBuffKey\":false,\"blackboard\":[],\"enableInitDirectionFromSource\":false},\"_buffOwner\":\"BUFF_OWNER\",\"_isDerivedBuff\":false,\"_finishDerivedBuffIfParentFinish\":false,\"$type\":\"Torappu.Battle.Action.Nodes+CreateBuffToBlockee\"}]",
+                  "SerializedObjectReferences": [],
+                  "decodedActions": [
+                    {
+                      "_buff": {
+                        "attributes": {
+                          "abnormalFlags": [],
+                          "abnormalImmunes": [],
+                          "abnormalAntis": [],
+                          "abnormalCombos": [],
+                          "abnormalComboImmunes": [],
+                          "attributeModifiers": []
+                        },
+                        "buffKey": "acfend_s_3[damage]",
+                        "loadFromDB": false,
+                        "isDurableBuff": false,
+                        "isDamageMissable": false,
+                        "isSilenceable": false,
+                        "isStunnable": false,
+                        "isFreezable": false,
+                        "isLevitatable": false,
+                        "statusResistable": "AUTOMATIC",
+                        "templateKey": "acfend_s_3[damage]",
+                        "disableOverride": false,
+                        "overrideKey": null,
+                        "overrideType": "DEFAULT",
+                        "maxStackCnt": 1,
+                        "refreshRemainingTimeWhenStackMax": false,
+                        "clearAllStackCntWhenTimeUp": false,
+                        "maxValidStackCnt": -1,
+                        "independentCharacterSource": false,
+                        "overrideEffectKey": null,
+                        "overrideOnEventPriority": false,
+                        "onEventPriority": "DEFAULT",
+                        "audioSignal": null,
+                        "lifeTimeType": "IMMEDIATELY",
+                        "takeSnapshotWhenExtend": false,
+                        "durationKey": null,
+                        "lifeTime": 0.0,
+                        "triggerLifeType": "IMMEDIATELY",
+                        "triggerCnt": 0,
+                        "triggerInterval": -1.0,
+                        "waitFirstTriggerInterval": true,
+                        "firstTriggerInterval": -1.0,
+                        "priority": -1,
+                        "priorityBBKeys": [],
+                        "stripBlackboardParamsWithBuffKey": false,
+                        "blackboard": [],
+                        "enableInitDirectionFromSource": false
+                      },
+                      "_buffOwner": "BUFF_OWNER",
+                      "_isDerivedBuff": false,
+                      "_finishDerivedBuffIfParentFinish": false,
+                      "$type": "Torappu.Battle.Action.Nodes+CreateBuffToBlockee"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "acfend_s_3[damage]": {
+          "templateKey": "acfend_s_3[damage]",
+          "effectKey": "",
+          "onEventPriority": 0,
+          "eventToActions": {
+            "_items": [
+              {
+                "key": 0,
+                "value": {
+                  "SerializedState": "[{\"_sourceType\":\"SOURCE\",\"_targetType\":\"TARGET\",\"_damageType\":\"MAGICAL\",\"_atkScaleVar\":\"atk_scale\",\"_defaultAtkScale\":1.0,\"_applyWay\":\"NONE\",\"_baseOnHostAtk\":false,\"_emitSourceOnCalculateDamage\":false,\"_attackType\":\"NORMAL\",\"_forceUseProjectileCachedAtk\":false,\"_ignoreForSp\":false,\"_ignoreMissFlag\":\"NONE\",\"_ignoreCancelReasonMask\":\"NONE\",\"_modifierKey\":\"\",\"_assignRealDamageToBB\":false,\"_assignFinalDamageToBB\":false,\"_skipModifierEvent\":false,\"_noSource\":false,\"_onlyUseSourceOnCalculateDamage\":false,\"_getCachedAtkFromBlackboard\":false,\"_cachedAtkKey\":\"atk\",\"_setSharedFlag\":false,\"_sharedFlagIndex\":\"IS_CONTINUOUS\",\"$type\":\"Torappu.Battle.Action.Nodes+AdvancedApplyDamage\"},{\"_targetType\":\"BUFF_OWNER\",\"_sourceType\":\"BUFF_SOURCE\",\"_effectKey\":\"acfend_skill_03_hit\",\"_useSourceFaceVactor\":false,\"_useSourceToTargetDirection\":false,\"_useConstDirection\":false,\"_constDirection\":\"UP\",\"_createEffectHoldBySource\":false,\"_useAttackPlaybackSpeed\":false,\"_manualSetPlaybackSpeed\":false,\"_blackboardKey\":\"\",\"_playbackSpeed\":1.0,\"$type\":\"Torappu.Battle.Action.Nodes+CreateEffect\"}]",
+                  "SerializedObjectReferences": [],
+                  "decodedActions": [
+                    {
+                      "_sourceType": "SOURCE",
+                      "_targetType": "TARGET",
+                      "_damageType": "MAGICAL",
+                      "_atkScaleVar": "atk_scale",
+                      "_defaultAtkScale": 1.0,
+                      "_applyWay": "NONE",
+                      "_baseOnHostAtk": false,
+                      "_emitSourceOnCalculateDamage": false,
+                      "_attackType": "NORMAL",
+                      "_forceUseProjectileCachedAtk": false,
+                      "_ignoreForSp": false,
+                      "_ignoreMissFlag": "NONE",
+                      "_ignoreCancelReasonMask": "NONE",
+                      "_modifierKey": "",
+                      "_assignRealDamageToBB": false,
+                      "_assignFinalDamageToBB": false,
+                      "_skipModifierEvent": false,
+                      "_noSource": false,
+                      "_onlyUseSourceOnCalculateDamage": false,
+                      "_getCachedAtkFromBlackboard": false,
+                      "_cachedAtkKey": "atk",
+                      "_setSharedFlag": false,
+                      "_sharedFlagIndex": "IS_CONTINUOUS",
+                      "$type": "Torappu.Battle.Action.Nodes+AdvancedApplyDamage"
+                    },
+                    {
+                      "_targetType": "BUFF_OWNER",
+                      "_sourceType": "BUFF_SOURCE",
+                      "_effectKey": "acfend_skill_03_hit",
+                      "_useSourceFaceVactor": false,
+                      "_useSourceToTargetDirection": false,
+                      "_useConstDirection": false,
+                      "_constDirection": "UP",
+                      "_createEffectHoldBySource": false,
+                      "_useAttackPlaybackSpeed": false,
+                      "_manualSetPlaybackSpeed": false,
+                      "_blackboardKey": "",
+                      "_playbackSpeed": 1.0,
+                      "$type": "Torappu.Battle.Action.Nodes+CreateEffect"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "skchr_zumama_2": {
+      "components": [
+        {
+          "node_id": "-5918535811225216868",
+          "type": "Torappu.Battle.Abilities.ActiveBuffAbility",
+          "script": {
+            "status": "resolved",
+            "type": "Torappu.Battle.Abilities.ActiveBuffAbility",
+            "assembly": "Assembly-CSharp.dll",
+            "script_cab": "CAB-658d74aab777086fc32b93f385be999a",
+            "script_path_id": "-4234909118878081699",
+            "script_bundle_sha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+          },
+          "fields": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "-8434835681299523428"
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "-4234909118878081699"
+            },
+            "m_Name": "",
+            "_selector": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "_metadata": {
+              "namedAsAlias": "",
+              "blackboardPrefix": ""
+            },
+            "_interruptAbilityOnDetach": 0,
+            "_attachPassiveBuffsOnDummy": 1,
+            "_ignoreIfOwnerDead": 0,
+            "_forceAsDmgOrHealAbility": 0,
+            "_waitForAttackEvent": 0,
+            "_interuptIfTargetDead": 0,
+            "_resetCdStrategy": 1,
+            "_buffs": [
+              {
+                "attributes": {
+                  "abnormalFlags": [],
+                  "abnormalImmunes": [],
+                  "abnormalAntis": [],
+                  "abnormalCombos": [],
+                  "abnormalComboImmunes": [],
+                  "attributeModifiers": [
+                    {
+                      "attributeType": 1,
+                      "formulaItem": 1,
+                      "value": 0.0,
+                      "loadFromBlackboard": 1,
+                      "fetchBaseValueFromSourceEntity": 0
+                    },
+                    {
+                      "attributeType": 8,
+                      "formulaItem": 0,
+                      "value": 0.0,
+                      "loadFromBlackboard": 1,
+                      "fetchBaseValueFromSourceEntity": 0
+                    }
+                  ]
+                },
+                "buffKey": "zumama_s_2",
+                "loadFromDB": 0,
+                "isDurableBuff": 0,
+                "isDamageMissable": 0,
+                "isSilenceable": 0,
+                "isStunnable": 0,
+                "isFreezable": 0,
+                "isLevitatable": 0,
+                "statusResistable": 2,
+                "templateKey": "switch_mode",
+                "disableOverride": 0,
+                "overrideKey": "",
+                "overrideType": 0,
+                "maxStackCnt": 1,
+                "refreshRemainingTimeWhenStackMax": 0,
+                "clearAllStackCntWhenTimeUp": 0,
+                "maxValidStackCnt": -1,
+                "independentCharacterSource": 0,
+                "overrideEffectKey": "zumama_skill_02_buff",
+                "overrideOnEventPriority": 0,
+                "onEventPriority": 0,
+                "audioSignal": "",
+                "lifeTimeType": 1,
+                "takeSnapshotWhenExtend": 0,
+                "durationKey": "",
+                "lifeTime": 0.0,
+                "triggerLifeType": 0,
+                "triggerCnt": 0,
+                "triggerInterval": -1.0,
+                "waitFirstTriggerInterval": 1,
+                "firstTriggerInterval": -1.0,
+                "priority": -1,
+                "priorityBBKeys": [],
+                "stripBlackboardParamsWithBuffKey": 0,
+                "blackboard": [
+                  {
+                    "key": "mode",
+                    "value": 1.0,
+                    "valueStr": ""
+                  }
+                ],
+                "enableInitDirectionFromSource": 0
+              }
+            ],
+            "_waitForCasting": 0,
+            "_updateLifetimeWhenSpellStart": 0,
+            "_preDelay": 0.0,
+            "_escapeTime": 0.0,
+            "_checkBuffEarlyFinish": 0,
+            "_passiveBuffs": [],
+            "_ignoreInfiniteBuffCooldown": 0,
+            "_enableUpdateCooldown": 0
+          }
+        },
+        {
+          "node_id": "2603633498826414236",
+          "type": "Torappu.Battle.CastSkill",
+          "script": {
+            "status": "resolved",
+            "type": "Torappu.Battle.CastSkill",
+            "assembly": "Assembly-CSharp.dll",
+            "script_cab": "CAB-658d74aab777086fc32b93f385be999a",
+            "script_path_id": "6851783972288338031",
+            "script_bundle_sha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+          },
+          "fields": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "-8434835681299523428"
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "6851783972288338031"
+            },
+            "m_Name": "",
+            "_maxTriggerTime": -1,
+            "_allowSpRecoveryWhenAffecting": 0,
+            "_limitGlobalTriggerTime": 0,
+            "_hidden": 0,
+            "_showSpBarEvenHidden": 0,
+            "_showSpAsBulletMode": 0,
+            "_showSpRatioAsProgress": 0,
+            "_playCharWordVoice": 1,
+            "_playCharWordWithPassiveType": 0,
+            "_canCastWithNoSp": 0,
+            "_canSilenced": 0,
+            "_canUseInAbnormalState": 0,
+            "_defaultModeIndex": -1,
+            "_attackBlackboardModeIndex": -1,
+            "_extraAttackBlackboardModeIndices": [],
+            "_rangeIdModeIndex": -1,
+            "_extraRangeIdModeIndices": [],
+            "_rangeIdUsageType": 7,
+            "_writeDurationToAttackBlackboard": 0,
+            "_attachSignalIds": 0,
+            "_extraAbilities": [],
+            "_useEscapeTime": 0,
+            "_earlySkillFinishAtAttackFinished": 0,
+            "_showProgressToNext": 0,
+            "_hideSkillStackCount": 0,
+            "_hideHudSkillStackCount": 0,
+            "_playSkillBeginAnim": 0,
+            "_beginAnim": "",
+            "_beginAnimDown": "",
+            "_beginEffect": [],
+            "_useFaceVector": 0,
+            "_beginAnimValidator": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "_availableValidator": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "_trigger": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "_switchToState": 1,
+            "_uninterruptibleOnAbilityPredelay": 0,
+            "_canSwitchDuringBorn": 1,
+            "_canCastDuringBorn": 1,
+            "_checkHasTargetBeforeDoCast": 0,
+            "_useTriggerInManualMode": 0,
+            "_allowNoTarget": 1,
+            "_shouldCastLikeAttack": 0,
+            "_isRemoteControlled": 0,
+            "_hideRangeToShow": 0,
+            "_forceUseBaseShowRange": 0,
+            "_rangeToShow": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "_recoverSpIfNoTarget": 0,
+            "_resetAbilityCooldownWhenCastEnd": 0,
+            "_onlyAvailableWhenTokenValid": 0,
+            "_hasUniStackColor": 0
+          }
+        }
+      ],
+      "levels": [
+        {
+          "name": "震慑劈砍",
+          "rangeId": null,
+          "description": "攻击间隔<@ba.vdown>略微增大</>，攻击力<@ba.vup>+{atk:0%}</>，技能期间持续使阻挡的敌人全部<$ba.stun>晕眩</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "levelUpCost": null,
+            "maxChargeTime": 1,
+            "spCost": 38,
+            "initSp": 10,
+            "increment": 1.0
+          },
+          "prefabId": "skchr_zumama_2",
+          "duration": 15.0,
+          "blackboard": [
+            {
+              "key": "atk",
+              "value": 0.7,
+              "valueStr": null
+            },
+            {
+              "key": "base_attack_time",
+              "value": 0.4,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "震慑劈砍",
+          "rangeId": null,
+          "description": "攻击间隔<@ba.vdown>略微增大</>，攻击力<@ba.vup>+{atk:0%}</>，技能期间持续使阻挡的敌人全部<$ba.stun>晕眩</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "levelUpCost": null,
+            "maxChargeTime": 1,
+            "spCost": 37,
+            "initSp": 10,
+            "increment": 1.0
+          },
+          "prefabId": "skchr_zumama_2",
+          "duration": 15.0,
+          "blackboard": [
+            {
+              "key": "atk",
+              "value": 0.8,
+              "valueStr": null
+            },
+            {
+              "key": "base_attack_time",
+              "value": 0.4,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "震慑劈砍",
+          "rangeId": null,
+          "description": "攻击间隔<@ba.vdown>略微增大</>，攻击力<@ba.vup>+{atk:0%}</>，技能期间持续使阻挡的敌人全部<$ba.stun>晕眩</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "levelUpCost": null,
+            "maxChargeTime": 1,
+            "spCost": 36,
+            "initSp": 10,
+            "increment": 1.0
+          },
+          "prefabId": "skchr_zumama_2",
+          "duration": 15.0,
+          "blackboard": [
+            {
+              "key": "atk",
+              "value": 0.9,
+              "valueStr": null
+            },
+            {
+              "key": "base_attack_time",
+              "value": 0.4,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "震慑劈砍",
+          "rangeId": null,
+          "description": "攻击间隔<@ba.vdown>略微增大</>，攻击力<@ba.vup>+{atk:0%}</>，技能期间持续使阻挡的敌人全部<$ba.stun>晕眩</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "levelUpCost": null,
+            "maxChargeTime": 1,
+            "spCost": 35,
+            "initSp": 11,
+            "increment": 1.0
+          },
+          "prefabId": "skchr_zumama_2",
+          "duration": 16.0,
+          "blackboard": [
+            {
+              "key": "atk",
+              "value": 1.0,
+              "valueStr": null
+            },
+            {
+              "key": "base_attack_time",
+              "value": 0.4,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "震慑劈砍",
+          "rangeId": null,
+          "description": "攻击间隔<@ba.vdown>略微增大</>，攻击力<@ba.vup>+{atk:0%}</>，技能期间持续使阻挡的敌人全部<$ba.stun>晕眩</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "levelUpCost": null,
+            "maxChargeTime": 1,
+            "spCost": 34,
+            "initSp": 11,
+            "increment": 1.0
+          },
+          "prefabId": "skchr_zumama_2",
+          "duration": 16.0,
+          "blackboard": [
+            {
+              "key": "atk",
+              "value": 1.1,
+              "valueStr": null
+            },
+            {
+              "key": "base_attack_time",
+              "value": 0.4,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "震慑劈砍",
+          "rangeId": null,
+          "description": "攻击间隔<@ba.vdown>略微增大</>，攻击力<@ba.vup>+{atk:0%}</>，技能期间持续使阻挡的敌人全部<$ba.stun>晕眩</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "levelUpCost": null,
+            "maxChargeTime": 1,
+            "spCost": 33,
+            "initSp": 11,
+            "increment": 1.0
+          },
+          "prefabId": "skchr_zumama_2",
+          "duration": 16.0,
+          "blackboard": [
+            {
+              "key": "atk",
+              "value": 1.2,
+              "valueStr": null
+            },
+            {
+              "key": "base_attack_time",
+              "value": 0.4,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "震慑劈砍",
+          "rangeId": null,
+          "description": "攻击间隔<@ba.vdown>略微增大</>，攻击力<@ba.vup>+{atk:0%}</>，技能期间持续使阻挡的敌人全部<$ba.stun>晕眩</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "levelUpCost": null,
+            "maxChargeTime": 1,
+            "spCost": 32,
+            "initSp": 12,
+            "increment": 1.0
+          },
+          "prefabId": "skchr_zumama_2",
+          "duration": 17.0,
+          "blackboard": [
+            {
+              "key": "atk",
+              "value": 1.3,
+              "valueStr": null
+            },
+            {
+              "key": "base_attack_time",
+              "value": 0.4,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "震慑劈砍",
+          "rangeId": null,
+          "description": "攻击间隔<@ba.vdown>略微增大</>，攻击力<@ba.vup>+{atk:0%}</>，技能期间持续使阻挡的敌人全部<$ba.stun>晕眩</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "levelUpCost": null,
+            "maxChargeTime": 1,
+            "spCost": 31,
+            "initSp": 13,
+            "increment": 1.0
+          },
+          "prefabId": "skchr_zumama_2",
+          "duration": 17.0,
+          "blackboard": [
+            {
+              "key": "atk",
+              "value": 1.45,
+              "valueStr": null
+            },
+            {
+              "key": "base_attack_time",
+              "value": 0.4,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "震慑劈砍",
+          "rangeId": null,
+          "description": "攻击间隔<@ba.vdown>略微增大</>，攻击力<@ba.vup>+{atk:0%}</>，技能期间持续使阻挡的敌人全部<$ba.stun>晕眩</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "levelUpCost": null,
+            "maxChargeTime": 1,
+            "spCost": 30,
+            "initSp": 14,
+            "increment": 1.0
+          },
+          "prefabId": "skchr_zumama_2",
+          "duration": 17.0,
+          "blackboard": [
+            {
+              "key": "atk",
+              "value": 1.6,
+              "valueStr": null
+            },
+            {
+              "key": "base_attack_time",
+              "value": 0.4,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "震慑劈砍",
+          "rangeId": null,
+          "description": "攻击间隔<@ba.vdown>略微增大</>，攻击力<@ba.vup>+{atk:0%}</>，技能期间持续使阻挡的敌人全部<$ba.stun>晕眩</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "spData": {
+            "spType": "INCREASE_WITH_TIME",
+            "levelUpCost": null,
+            "maxChargeTime": 1,
+            "spCost": 28,
+            "initSp": 15,
+            "increment": 1.0
+          },
+          "prefabId": "skchr_zumama_2",
+          "duration": 18.0,
+          "blackboard": [
+            {
+              "key": "atk",
+              "value": 1.8,
+              "valueStr": null
+            },
+            {
+              "key": "base_attack_time",
+              "value": 0.4,
+              "valueStr": null
+            }
+          ]
+        }
+      ],
+      "baseMode": {
+        "index": 0,
+        "pathId": "4930396449717250003",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-6583928822466713645"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "5390319429299248724"
+          },
+          "m_Name": "",
+          "_bodyTransform": {
+            "m_FileID": 0,
+            "m_PathID": "7717599992402307027"
+          },
+          "_animatorHooker": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_overrideStartEffect": "",
+          "_overrideDeadEffect": "",
+          "_combat": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_attack": {
+            "m_FileID": 0,
+            "m_PathID": "5212552279504218067"
+          },
+          "_attackTrigger": {
+            "m_FileID": 0,
+            "m_PathID": "658227308114241491"
+          },
+          "_hideUIAttackRange": 0,
+          "_updateAttackRangeExtendByAttributeDirty": 0,
+          "_rangeToShow": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_extraRangesToShow": [],
+          "_generalAbilities": [],
+          "_addIndexToSignalId": 0,
+          "_includeIndexZero": 0,
+          "_alwaysHideHp": {
+            "isDefined": 0,
+            "value": 0
+          },
+          "_alwaysHideSp": {
+            "isDefined": 0,
+            "value": 0
+          }
+        },
+        "roles": {
+          "_attack": [
+            {
+              "node_id": "5212552279504218067",
+              "type": "Torappu.Battle.Abilities.MeleeAttack",
+              "fields": {
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "4339530635874887635"
+                },
+                "m_Enabled": 1,
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "4381884627089348317"
+                },
+                "m_Name": "",
+                "_selector": {
+                  "m_FileID": 0,
+                  "m_PathID": "0"
+                },
+                "_metadata": {
+                  "namedAsAlias": "",
+                  "blackboardPrefix": ""
+                },
+                "_interruptAbilityOnDetach": 0,
+                "_attachPassiveBuffsOnDummy": 1,
+                "_ignoreIfOwnerDead": 0,
+                "_forceAsDmgOrHealAbility": 0,
+                "_waitForAttackEvent": 1,
+                "_interuptIfTargetDead": 0,
+                "_resetCdStrategy": 1,
+                "_selectTargetSource": 2,
+                "_selectTargetTiming": 0,
+                "_timeMode": 0,
+                "_alwaysIncludeTarget": 1,
+                "_allowNoTarget": 0,
+                "_animKey": "Attack",
+                "_endAnimKey": "",
+                "_downAnimKey": "",
+                "_downEndAnimKey": "",
+                "_upAnimKey": "",
+                "_upEndAnimKey": "",
+                "_cooldown": 0.0,
+                "_cooldownKey": "duration",
+                "_preDelay": 0.0,
+                "_escapeTime": 0.0,
+                "_faceToTarget": 1,
+                "_faceToDefault": 0,
+                "_faceToFront": 0,
+                "_faceToFirstCastTarget": 0,
+                "_forceFaceToDirection": 0,
+                "_activeBuffs": [],
+                "_maxAnimScale": -1.0,
+                "_onlyPlayEndAnimWhenIsLastAbility": 0,
+                "_ignorePalsyInterrupt": 0,
+                "_atkScale": 1.0,
+                "_atkScaleKey": "atk_scale",
+                "_attackType": 1,
+                "_elementDamageType": 0,
+                "_epDamageRatio": 0.0,
+                "_useDynamicAttackType": 0,
+                "_deliveryParaWhenReplaceActionNode": 0,
+                "_damageType": 1,
+                "_extraDamageType": 0,
+                "_alwaysPutIncludeTargetFirst": 0
+              }
+            },
+            {
+              "node_id": "1397622484868753363",
+              "type": "Torappu.Battle.Abilities.UberEffectEmitter",
+              "fields": {
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "4339530635874887635"
+                },
+                "m_Enabled": 1,
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-550693537895634864"
+                },
+                "m_Name": "",
+                "_hitEffects": [
+                  {
+                    "_directionType": 0,
+                    "_effects": [
+                      "zumama_attack_01_hit",
+                      "",
+                      "",
+                      ""
+                    ],
+                    "_oneshot": 1,
+                    "_endEvent": 3,
+                    "_onlyOnce": 0,
+                    "_useFourDirectionalFace": 0,
+                    "_useOwnerToTargetDirection": 0,
+                    "_playIfNotInputTarget": 0,
+                    "_playOnlyIfInputTarget": 0
+                  }
+                ],
+                "_castEffects": [
+                  {
+                    "_directionType": 0,
+                    "_effects": [
+                      "zumama_attack_01_start",
+                      "",
+                      "",
+                      ""
+                    ],
+                    "_oneshot": 1,
+                    "_startEvent": 2,
+                    "_endEvent": 3,
+                    "_onlyOnce": 0,
+                    "_useFourDirectionalFace": 0,
+                    "_delayIfFirstAttack": 0.0,
+                    "_hookEffectAfterFirstAttack": ""
+                  }
+                ],
+                "_attachEffects": [],
+                "_inputTargetEffects": [],
+                "_castTargetEffects": [],
+                "_convertCastEndToAttachFinish": 0,
+                "_recalculatePlaybackSpeed": 0,
+                "_preDelayFactor": 0.0
+              }
+            }
+          ],
+          "_combat": [],
+          "_attackTrigger": [
+            {
+              "node_id": "658227308114241491",
+              "type": "Torappu.Battle.SelectorTrigger",
+              "fields": {
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "5170570702875813843"
+                },
+                "m_Enabled": 1,
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "8607874384982393801"
+                },
+                "m_Name": "",
+                "_keepTarget": 0,
+                "_minTargetNum": 1,
+                "_overrideSearchTargetTick": -1
+              }
+            },
+            {
+              "node_id": "-2333757782107789357",
+              "type": "Torappu.Battle.AutoLoadBoxRange",
+              "fields": {
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "5170570702875813843"
+                },
+                "m_Enabled": 1,
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-2891200616113119906"
+                },
+                "m_Name": "",
+                "_extendable": 0
+              }
+            },
+            {
+              "node_id": "-455272572857194541",
+              "type": "Torappu.Battle.BlockedOrAdvancedSelector",
+              "fields": {
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "5170570702875813843"
+                },
+                "m_Enabled": 1,
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "840206743537877183"
+                },
+                "m_Name": "",
+                "_targetSide": 2,
+                "_targetMotion": 1,
+                "_targetCategory": 1,
+                "_postFilter": 4,
+                "_ignoreTargetFree": 0,
+                "_onlyIgnoreSomeOfTargetFreeCase": 0,
+                "_abnormalFlag": 29,
+                "_abnormalCombo": 2,
+                "_ignoreAllyTargetFree": 0,
+                "_ignoreHealFree": 0,
+                "_forceIgnoreCamouflage": 0,
+                "_needProfessionMask": 0,
+                "_professionMask": 0,
+                "_limitTargetNum": 1,
+                "_maxTargetKey": "max_target",
+                "_maxNum": 1,
+                "_excludeOwner": 0,
+                "_sortByTauntAtLast": 0,
+                "_ignoreHitRange": 0,
+                "_checkUnitType": 0,
+                "_unitTypeMask": 0,
+                "_abilityInputTargetAsSortSource": 0,
+                "_limitedMaxTargetNumToBlockedCnt": 0,
+                "_allowZeroBlockCntLimit": 0
+              }
+            }
+          ]
+        },
+        "companions": [
+          {
+            "node_id": "-6324904603317016621",
+            "type": "Torappu.Battle.SimpleUnitAnimatorHooker",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-6583928822466713645"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-2632969505105631840"
+              },
+              "m_Name": "",
+              "_excludeAnimKeys": [],
+              "_replaceAnimPairs": [
+                {
+                  "fromAnimKey": "Idle",
+                  "toAnimKey": "Skill_2_Idle"
+                }
+              ],
+              "_disableSwitchSettings": []
+            }
+          }
+        ],
+        "actorSelectors": {},
+        "animatorHook": null
+      },
+      "selectedMode": {
+        "index": 1,
+        "pathId": "-1673531229740898349",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "8559748732158896083"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "5390319429299248724"
+          },
+          "m_Name": "",
+          "_bodyTransform": {
+            "m_FileID": 0,
+            "m_PathID": "-7327638661141010477"
+          },
+          "_animatorHooker": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_overrideStartEffect": "",
+          "_overrideDeadEffect": "",
+          "_combat": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_attack": {
+            "m_FileID": 0,
+            "m_PathID": "-8914943513267574829"
+          },
+          "_attackTrigger": {
+            "m_FileID": 0,
+            "m_PathID": "1605625788806096851"
+          },
+          "_hideUIAttackRange": 0,
+          "_updateAttackRangeExtendByAttributeDirty": 0,
+          "_rangeToShow": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_extraRangesToShow": [],
+          "_generalAbilities": [
+            {
+              "m_FileID": 0,
+              "m_PathID": "2617155918906812371"
+            }
+          ],
+          "_addIndexToSignalId": 1,
+          "_includeIndexZero": 0,
+          "_alwaysHideHp": {
+            "isDefined": 0,
+            "value": 0
+          },
+          "_alwaysHideSp": {
+            "isDefined": 0,
+            "value": 0
+          }
+        },
+        "roles": {
+          "_attack": [
+            {
+              "node_id": "-8914943513267574829",
+              "type": "Torappu.Battle.Abilities.MeleeAttack",
+              "fields": {
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-3960247811259734061"
+                },
+                "m_Enabled": 1,
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "4381884627089348317"
+                },
+                "m_Name": "",
+                "_selector": {
+                  "m_FileID": 0,
+                  "m_PathID": "7856761528077281235"
+                },
+                "_metadata": {
+                  "namedAsAlias": "",
+                  "blackboardPrefix": ""
+                },
+                "_interruptAbilityOnDetach": 0,
+                "_attachPassiveBuffsOnDummy": 1,
+                "_ignoreIfOwnerDead": 0,
+                "_forceAsDmgOrHealAbility": 0,
+                "_waitForAttackEvent": 1,
+                "_interuptIfTargetDead": 0,
+                "_resetCdStrategy": 1,
+                "_selectTargetSource": 1,
+                "_selectTargetTiming": 0,
+                "_timeMode": 0,
+                "_alwaysIncludeTarget": 1,
+                "_allowNoTarget": 0,
+                "_animKey": "Skill",
+                "_endAnimKey": "",
+                "_downAnimKey": "",
+                "_downEndAnimKey": "",
+                "_upAnimKey": "",
+                "_upEndAnimKey": "",
+                "_cooldown": 0.0,
+                "_cooldownKey": "duration",
+                "_preDelay": 0.0,
+                "_escapeTime": 0.0,
+                "_faceToTarget": 1,
+                "_faceToDefault": 0,
+                "_faceToFront": 0,
+                "_faceToFirstCastTarget": 0,
+                "_forceFaceToDirection": 0,
+                "_activeBuffs": [],
+                "_maxAnimScale": -1.0,
+                "_onlyPlayEndAnimWhenIsLastAbility": 0,
+                "_ignorePalsyInterrupt": 0,
+                "_atkScale": 1.0,
+                "_atkScaleKey": "atk_scale",
+                "_attackType": 1,
+                "_elementDamageType": 0,
+                "_epDamageRatio": 0.0,
+                "_useDynamicAttackType": 0,
+                "_deliveryParaWhenReplaceActionNode": 0,
+                "_damageType": 1,
+                "_extraDamageType": 0,
+                "_alwaysPutIncludeTargetFirst": 0
+              }
+            },
+            {
+              "node_id": "7156636843851147219",
+              "type": "Torappu.Battle.Abilities.UberEffectEmitter",
+              "fields": {
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-3960247811259734061"
+                },
+                "m_Enabled": 1,
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-550693537895634864"
+                },
+                "m_Name": "",
+                "_hitEffects": [
+                  {
+                    "_directionType": 0,
+                    "_effects": [
+                      "zumama_skill_02_hit",
+                      "",
+                      "",
+                      ""
+                    ],
+                    "_oneshot": 1,
+                    "_endEvent": 3,
+                    "_onlyOnce": 0,
+                    "_useFourDirectionalFace": 0,
+                    "_useOwnerToTargetDirection": 0,
+                    "_playIfNotInputTarget": 0,
+                    "_playOnlyIfInputTarget": 0
+                  }
+                ],
+                "_castEffects": [
+                  {
+                    "_directionType": 0,
+                    "_effects": [
+                      "zumama_skill_02_start",
+                      "",
+                      "",
+                      ""
+                    ],
+                    "_oneshot": 1,
+                    "_startEvent": 2,
+                    "_endEvent": 3,
+                    "_onlyOnce": 0,
+                    "_useFourDirectionalFace": 0,
+                    "_delayIfFirstAttack": 0.0,
+                    "_hookEffectAfterFirstAttack": ""
+                  },
+                  {
+                    "_directionType": 0,
+                    "_effects": [
+                      "zumama_skill_02_start_02",
+                      "",
+                      "",
+                      ""
+                    ],
+                    "_oneshot": 1,
+                    "_startEvent": 2,
+                    "_endEvent": 3,
+                    "_onlyOnce": 0,
+                    "_useFourDirectionalFace": 0,
+                    "_delayIfFirstAttack": 0.0,
+                    "_hookEffectAfterFirstAttack": ""
+                  }
+                ],
+                "_attachEffects": [],
+                "_inputTargetEffects": [],
+                "_castTargetEffects": [],
+                "_convertCastEndToAttachFinish": 0,
+                "_recalculatePlaybackSpeed": 0,
+                "_preDelayFactor": 0.0
+              }
+            }
+          ],
+          "_combat": [],
+          "_attackTrigger": [
+            {
+              "node_id": "1605625788806096851",
+              "type": "Torappu.Battle.SelectorTrigger",
+              "fields": {
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "3933375547759093715"
+                },
+                "m_Enabled": 1,
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "8607874384982393801"
+                },
+                "m_Name": "",
+                "_keepTarget": 0,
+                "_minTargetNum": 1,
+                "_overrideSearchTargetTick": -1
+              }
+            },
+            {
+              "node_id": "-4593327196287375405",
+              "type": "Torappu.Battle.AutoLoadBoxRange",
+              "fields": {
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "3933375547759093715"
+                },
+                "m_Enabled": 1,
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-2891200616113119906"
+                },
+                "m_Name": "",
+                "_extendable": 0
+              }
+            },
+            {
+              "node_id": "7856761528077281235",
+              "type": "Torappu.Battle.BlockedOrAdvancedSelector",
+              "fields": {
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "3933375547759093715"
+                },
+                "m_Enabled": 1,
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "840206743537877183"
+                },
+                "m_Name": "",
+                "_targetSide": 2,
+                "_targetMotion": 1,
+                "_targetCategory": 1,
+                "_postFilter": 4,
+                "_ignoreTargetFree": 0,
+                "_onlyIgnoreSomeOfTargetFreeCase": 0,
+                "_abnormalFlag": 29,
+                "_abnormalCombo": 2,
+                "_ignoreAllyTargetFree": 0,
+                "_ignoreHealFree": 0,
+                "_forceIgnoreCamouflage": 0,
+                "_needProfessionMask": 0,
+                "_professionMask": 0,
+                "_limitTargetNum": 1,
+                "_maxTargetKey": "max_target",
+                "_maxNum": 1,
+                "_excludeOwner": 0,
+                "_sortByTauntAtLast": 0,
+                "_ignoreHitRange": 0,
+                "_checkUnitType": 0,
+                "_unitTypeMask": 0,
+                "_abilityInputTargetAsSortSource": 0,
+                "_limitedMaxTargetNumToBlockedCnt": 1,
+                "_allowZeroBlockCntLimit": 0
+              }
+            }
+          ]
+        },
+        "companions": [],
+        "actorSelectors": {
+          "7856761528077281235": [
+            {
+              "node_id": "1605625788806096851",
+              "type": "Torappu.Battle.SelectorTrigger",
+              "fields": {
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "3933375547759093715"
+                },
+                "m_Enabled": 1,
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "8607874384982393801"
+                },
+                "m_Name": "",
+                "_keepTarget": 0,
+                "_minTargetNum": 1,
+                "_overrideSearchTargetTick": -1
+              }
+            },
+            {
+              "node_id": "-4593327196287375405",
+              "type": "Torappu.Battle.AutoLoadBoxRange",
+              "fields": {
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "3933375547759093715"
+                },
+                "m_Enabled": 1,
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-2891200616113119906"
+                },
+                "m_Name": "",
+                "_extendable": 0
+              }
+            },
+            {
+              "node_id": "7856761528077281235",
+              "type": "Torappu.Battle.BlockedOrAdvancedSelector",
+              "fields": {
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "3933375547759093715"
+                },
+                "m_Enabled": 1,
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "840206743537877183"
+                },
+                "m_Name": "",
+                "_targetSide": 2,
+                "_targetMotion": 1,
+                "_targetCategory": 1,
+                "_postFilter": 4,
+                "_ignoreTargetFree": 0,
+                "_onlyIgnoreSomeOfTargetFreeCase": 0,
+                "_abnormalFlag": 29,
+                "_abnormalCombo": 2,
+                "_ignoreAllyTargetFree": 0,
+                "_ignoreHealFree": 0,
+                "_forceIgnoreCamouflage": 0,
+                "_needProfessionMask": 0,
+                "_professionMask": 0,
+                "_limitTargetNum": 1,
+                "_maxTargetKey": "max_target",
+                "_maxNum": 1,
+                "_excludeOwner": 0,
+                "_sortByTauntAtLast": 0,
+                "_ignoreHitRange": 0,
+                "_checkUnitType": 0,
+                "_unitTypeMask": 0,
+                "_abilityInputTargetAsSortSource": 0,
+                "_limitedMaxTargetNumToBlockedCnt": 1,
+                "_allowZeroBlockCntLimit": 0
+              }
+            }
+          ]
+        },
+        "animatorHook": null
+      },
+      "generalComponents": [
+        {
+          "node_id": "-611547032800630829",
+          "type": "Torappu.Battle.Abilities.BlockedToggleChecker",
+          "fields": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "-5244552987508250669"
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "-4412927117579039591"
+            },
+            "m_Name": "",
+            "_blockMinCnt": 0,
+            "_blockMaxCnt": 0,
+            "_useBlockAsMin": 0,
+            "_buffsToBlockee": [
+              {
+                "attributes": {
+                  "abnormalFlags": [
+                    0
+                  ],
+                  "abnormalImmunes": [],
+                  "abnormalAntis": [],
+                  "abnormalCombos": [],
+                  "abnormalComboImmunes": [],
+                  "attributeModifiers": []
+                },
+                "buffKey": "stun",
+                "loadFromDB": 0,
+                "isDurableBuff": 0,
+                "isDamageMissable": 0,
+                "isSilenceable": 0,
+                "isStunnable": 0,
+                "isFreezable": 0,
+                "isLevitatable": 0,
+                "statusResistable": 2,
+                "templateKey": "empty",
+                "disableOverride": 0,
+                "overrideKey": "",
+                "overrideType": 0,
+                "maxStackCnt": 1,
+                "refreshRemainingTimeWhenStackMax": 0,
+                "clearAllStackCntWhenTimeUp": 0,
+                "maxValidStackCnt": -1,
+                "independentCharacterSource": 0,
+                "overrideEffectKey": "zumama_skill_02_buff_02",
+                "overrideOnEventPriority": 0,
+                "onEventPriority": 0,
+                "audioSignal": "",
+                "lifeTimeType": 2,
+                "takeSnapshotWhenExtend": 0,
+                "durationKey": "stun",
+                "lifeTime": 0.0,
+                "triggerLifeType": 0,
+                "triggerCnt": 0,
+                "triggerInterval": -1.0,
+                "waitFirstTriggerInterval": 1,
+                "firstTriggerInterval": -1.0,
+                "priority": -1,
+                "priorityBBKeys": [],
+                "stripBlackboardParamsWithBuffKey": 0,
+                "blackboard": [],
+                "enableInitDirectionFromSource": 0
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "2617155918906812371",
+          "type": "Torappu.Battle.Abilities.ToggleablePassiveBuffAbility",
+          "fields": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "-5244552987508250669"
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "5578302910068743633"
+            },
+            "m_Name": "",
+            "_selector": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "_metadata": {
+              "namedAsAlias": "",
+              "blackboardPrefix": ""
+            },
+            "_interruptAbilityOnDetach": 0,
+            "_attachPassiveBuffsOnDummy": 1,
+            "_ignoreIfOwnerDead": 0,
+            "_forceAsDmgOrHealAbility": 0,
+            "_buffs": [],
+            "_checker": {
+              "m_FileID": 0,
+              "m_PathID": "-611547032800630829"
+            },
+            "_unmanagedBuffsWhenToggleOn": [],
+            "_setToggleFalseOnDetached": 0,
+            "_isInverseToggle": 0
+          }
+        }
+      ]
+    }
+  },
+  "inputs": {
+    "work/operator-mode-next-group.json": "99eaae7a2ff1219affa7dab614b84959f80b908deb190ac49de1ecbf5f86adb2",
+    "work/client-logic/program-compilation.json": "972bc0d63070e03acf8733c82e8480a29a92952c01bce07ff1f8240eb169c0b3",
+    "work/client-logic/buff-templates.json": "f8cc1f74e426d0111803d68154335a748bfee377a2d826d84135f60a41280d24",
+    "data/ArknightsGameData/zh_CN/gamedata/excel/skill_table.json": "9eaaecacd024b8e2177ddb44e0c306bed609b53ef79d2e6446dda9dae49d6435",
+    "tools/skill_mode_blockees.py": "4d73df55496e07c0a2541477e7c6a9dac5f5ace77fc8fa56c3a36624e28577e1"
+  },
+  "clientLogicDatabaseSha256": "36d499444dd469cdf5b188e9e2a245a523f3472c470aa94818644aebf5618095",
+  "validation": {
+    "python": "tools/test_skill_mode_blockees.py",
+    "pythonTests": 8,
+    "runtime": "tools/_skill_mode_blockees_smoke.js",
+    "receipt": ".runtime/skill-mode-blockees-receipts.json",
+    "sourceLevels": 20,
+    "actualSeasonVariants": 2,
+    "hostRestores": 4
+  },
+  "boundary": "Serialized fields Verified. Current blockee/checker mapping Inferred from exact source tuple and CN description; native checker thresholds and first trigger frame not recovered. Enemy defensive-SP consumer absent. Historical-frame catch-up uses current membership/attributes. No manual checklist completion is generated here."
+}

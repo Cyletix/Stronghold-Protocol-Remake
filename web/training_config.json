@@ -1,0 +1,976 @@
+{
+ "schemaVersion": 1,
+ "source": {
+  "version": "JP 36.7.22",
+  "container": "work/main.obb",
+  "bundle": "assets/AB/Android/anon/a959234ee87bb46f582390ce3d081183.bin",
+  "bundleSha256": "b81e8875c76bf094a2edbf2d420dfcacadefca00f4ca9697648ef8258c1fe70b",
+  "assetBundleName": "gamedata/battle/battle_misc_table.ab",
+  "textAsset": "battle_misc_table",
+  "pathId": "2437431838466217812",
+  "payloadSha256": "4d05e59f25fefb187f9292ab4554128a8301a02d0e42990eb985c3fff8d1ac98",
+  "decodedSha256": "0251d2495954e0829b59988a5351b7064e3de96ea2c9e8182898d18ae9cc934b",
+  "objectPath": "miscConfig.AUTOCHESS"
+ },
+ "bindingSource": {
+  "version": "local CN gamedata",
+  "path": "data/ArknightsGameData/zh_CN/gamedata/excel/activity_table.json",
+  "sha256": "27d95d26e42dc9cd133ed568181ea389b056a4faaaee1a9952dde57fdf149e1f"
+ },
+ "boundary": "Only act1 mode_training_1 initial player HP, round funding and shop levels 1-4 are consumed from this object. JP source IDs bind to CN act1 IDs explicitly; this is not proof of cross-version parity. NPC and special-prepare objects remain source data; fourth-round enemy HP already comes from its separate level source, not a second override from bossBattleData. Formal server weights and the original RNG stream are not supplied by this object.",
+ "seasons": {
+  "act1autochess": {
+   "modeId": "mode_training_1",
+   "initialHp": 45,
+   "trainingRoundInfos": {
+    "1": {
+     "coin": 3,
+     "isBoss": false,
+     "spPrepareStateData": null,
+     "bossRoundInfo": null,
+     "bossBattleData": null,
+     "npcPlayerData": {
+      "2": {
+       "index": 2,
+       "hp": 20,
+       "gameFinish": false,
+       "shopLv": 1,
+       "shopCoin": 0,
+       "maxDeploymentCnt": 8,
+       "gameState": 0,
+       "connectStateType": 1,
+       "playerBattleData": {
+        "charChesses": [
+         {
+          "instId": 1,
+          "equipSlots": [],
+          "chessId": "chess_char_1_01_a"
+         }
+        ],
+        "equipChesses": [],
+        "magicChesses": [],
+        "chessPositionInfos": [
+         {
+          "instId": 1,
+          "position": 131076,
+          "chessType": "CHAR",
+          "direction": 0
+         }
+        ],
+        "playerBondStatus": [
+         {
+          "bondId": "lateranoShip",
+          "stackCnt": 0,
+          "charCnt": 1,
+          "isActive": false
+         }
+        ]
+       },
+       "effectEnemies": [],
+       "roundAnalytics": {
+        "chessGained": {},
+        "coinCost": 0
+       }
+      },
+      "3": {
+       "index": 3,
+       "hp": 20,
+       "gameFinish": false,
+       "shopLv": 1,
+       "shopCoin": 0,
+       "maxDeploymentCnt": 8,
+       "gameState": 0,
+       "connectStateType": 1,
+       "playerBattleData": {
+        "charChesses": [
+         {
+          "instId": 1001,
+          "equipSlots": [],
+          "chessId": "chess_char_1_09_a"
+         }
+        ],
+        "equipChesses": [],
+        "magicChesses": [],
+        "chessPositionInfos": [
+         {
+          "instId": 1001,
+          "position": 196612,
+          "chessType": "CHAR",
+          "direction": 1
+         }
+        ],
+        "playerBondStatus": [
+         {
+          "bondId": "preciShip",
+          "stackCnt": 0,
+          "charCnt": 1,
+          "isActive": false
+         }
+        ]
+       },
+       "effectEnemies": [],
+       "roundAnalytics": {
+        "chessGained": {},
+        "coinCost": 0
+       }
+      },
+      "4": {
+       "index": 4,
+       "hp": 20,
+       "gameFinish": false,
+       "shopLv": 1,
+       "shopCoin": 0,
+       "maxDeploymentCnt": 8,
+       "gameState": 0,
+       "connectStateType": 1,
+       "playerBattleData": {
+        "charChesses": [
+         {
+          "instId": 1,
+          "equipSlots": [
+           102
+          ],
+          "chessId": "chess_char_1_03_a"
+         }
+        ],
+        "equipChesses": [],
+        "magicChesses": [],
+        "chessPositionInfos": [
+         {
+          "instId": 1,
+          "position": 327684,
+          "chessType": "CHAR",
+          "direction": 1
+         }
+        ],
+        "playerBondStatus": [
+         {
+          "bondId": "yanShip",
+          "stackCnt": 0,
+          "charCnt": 1,
+          "isActive": false
+         }
+        ]
+       },
+       "effectEnemies": [],
+       "roundAnalytics": {
+        "chessGained": {},
+        "coinCost": 0
+       }
+      }
+     }
+    },
+    "2": {
+     "coin": 8,
+     "isBoss": false,
+     "spPrepareStateData": null,
+     "bossRoundInfo": null,
+     "bossBattleData": null,
+     "npcPlayerData": {
+      "2": {
+       "index": 2,
+       "hp": 20,
+       "gameFinish": false,
+       "shopLv": 1,
+       "shopCoin": 0,
+       "maxDeploymentCnt": 8,
+       "gameState": 0,
+       "connectStateType": 1,
+       "playerBattleData": {
+        "charChesses": [
+         {
+          "instId": 1,
+          "equipSlots": [],
+          "chessId": "chess_char_1_01_a"
+         }
+        ],
+        "equipChesses": [],
+        "magicChesses": [],
+        "chessPositionInfos": [
+         {
+          "instId": 1,
+          "position": 131076,
+          "chessType": "CHAR",
+          "direction": 1
+         }
+        ],
+        "playerBondStatus": [
+         {
+          "bondId": "lateranoShip",
+          "stackCnt": 0,
+          "charCnt": 1,
+          "isActive": false
+         }
+        ]
+       },
+       "effectEnemies": [],
+       "roundAnalytics": {
+        "chessGained": {},
+        "coinCost": 0
+       }
+      },
+      "3": {
+       "index": 3,
+       "hp": 20,
+       "gameFinish": false,
+       "shopLv": 1,
+       "shopCoin": 0,
+       "maxDeploymentCnt": 8,
+       "gameState": 0,
+       "connectStateType": 1,
+       "playerBattleData": {
+        "charChesses": [
+         {
+          "instId": 1001,
+          "equipSlots": [],
+          "chessId": "chess_char_2_01_a"
+         },
+         {
+          "instId": 1002,
+          "equipSlots": [],
+          "chessId": "chess_char_1_09_a"
+         },
+         {
+          "instId": 1003,
+          "equipSlots": [],
+          "chessId": "chess_char_2_01_a"
+         }
+        ],
+        "equipChesses": [],
+        "magicChesses": [],
+        "chessPositionInfos": [
+         {
+          "instId": 1003,
+          "position": 262148,
+          "chessType": "CHAR",
+          "direction": 1
+         },
+         {
+          "instId": 1001,
+          "position": 196612,
+          "chessType": "CHAR",
+          "direction": 1
+         },
+         {
+          "instId": 1002,
+          "position": 131076,
+          "chessType": "CHAR",
+          "direction": 1
+         }
+        ],
+        "playerBondStatus": [
+         {
+          "bondId": "preciShip",
+          "stackCnt": 3,
+          "charCnt": 2,
+          "isActive": true
+         }
+        ]
+       },
+       "effectEnemies": [],
+       "roundAnalytics": {
+        "chessGained": {},
+        "coinCost": 0
+       }
+      },
+      "4": {
+       "index": 4,
+       "hp": 20,
+       "gameFinish": false,
+       "shopLv": 1,
+       "shopCoin": 0,
+       "maxDeploymentCnt": 8,
+       "gameState": 0,
+       "connectStateType": 1,
+       "playerBattleData": {
+        "charChesses": [
+         {
+          "instId": 1,
+          "equipSlots": [
+           102
+          ],
+          "chessId": "chess_char_1_03_a"
+         }
+        ],
+        "equipChesses": [],
+        "magicChesses": [],
+        "chessPositionInfos": [
+         {
+          "instId": 1,
+          "position": 131076,
+          "chessType": "CHAR",
+          "direction": 1
+         }
+        ],
+        "playerBondStatus": [
+         {
+          "bondId": "yanShip",
+          "stackCnt": 0,
+          "charCnt": 1,
+          "isActive": false
+         }
+        ]
+       },
+       "effectEnemies": [],
+       "roundAnalytics": {
+        "chessGained": {},
+        "coinCost": 0
+       }
+      }
+     }
+    },
+    "3": {
+     "coin": 6,
+     "isBoss": false,
+     "spPrepareStateData": {
+      "data": {
+       "choiceId": "equip_free_1_tr",
+       "options": [
+        {
+         "id": "chess_item_3_06_e_a",
+         "slotId": 0,
+         "price": 0
+        },
+        {
+         "id": "chess_item_2_02_e_a",
+         "slotId": 1,
+         "price": 0
+        },
+        {
+         "id": "chess_item_1_01_e_a",
+         "slotId": 2,
+         "price": 0
+        },
+        {
+         "id": "chess_item_3_11_e_a",
+         "slotId": 3,
+         "price": 0
+        },
+        {
+         "id": "chess_item_3_11_e_a",
+         "slotId": 4,
+         "price": 0
+        },
+        {
+         "id": "chess_item_1_01_e_a",
+         "slotId": 5,
+         "price": 0
+        }
+       ],
+       "playerQueue": [
+        {
+         "uidIndex": 1,
+         "choice": -1
+        },
+        {
+         "uidIndex": 2,
+         "choice": 0
+        },
+        {
+         "uidIndex": 3,
+         "choice": 2
+        },
+        {
+         "uidIndex": 4,
+         "choice": 5
+        }
+       ],
+       "stateEndTime": 0,
+       "currQueueIndex": 0
+      }
+     },
+     "bossRoundInfo": null,
+     "bossBattleData": null,
+     "npcPlayerData": {
+      "2": {
+       "index": 2,
+       "hp": 20,
+       "gameFinish": false,
+       "shopLv": 1,
+       "shopCoin": 0,
+       "maxDeploymentCnt": 8,
+       "gameState": 0,
+       "connectStateType": 1,
+       "playerBattleData": {
+        "charChesses": [
+         {
+          "instId": 1,
+          "equipSlots": [],
+          "chessId": "chess_char_1_01_a"
+         },
+         {
+          "instId": 2,
+          "equipSlots": [],
+          "chessId": "chess_char_2_01_a"
+         }
+        ],
+        "equipChesses": [],
+        "magicChesses": [],
+        "chessPositionInfos": [
+         {
+          "instId": 1,
+          "position": 131076,
+          "chessType": "CHAR",
+          "direction": 1
+         },
+         {
+          "instId": 2,
+          "position": 196612,
+          "chessType": "CHAR",
+          "direction": 1
+         }
+        ],
+        "playerBondStatus": [
+         {
+          "bondId": "lateranoShip",
+          "stackCnt": 0,
+          "charCnt": 2,
+          "isActive": false
+         }
+        ]
+       },
+       "effectEnemies": [],
+       "roundAnalytics": {
+        "chessGained": {},
+        "coinCost": 0
+       }
+      },
+      "3": {
+       "index": 3,
+       "hp": 20,
+       "gameFinish": false,
+       "shopLv": 1,
+       "shopCoin": 0,
+       "maxDeploymentCnt": 8,
+       "gameState": 0,
+       "connectStateType": 1,
+       "playerBattleData": {
+        "charChesses": [
+         {
+          "instId": 1001,
+          "equipSlots": [],
+          "chessId": "chess_char_2_01_a"
+         },
+         {
+          "instId": 1002,
+          "equipSlots": [],
+          "chessId": "chess_char_1_09_a"
+         },
+         {
+          "instId": 1003,
+          "equipSlots": [],
+          "chessId": "chess_char_1_09_a"
+         }
+        ],
+        "equipChesses": [],
+        "magicChesses": [],
+        "chessPositionInfos": [
+         {
+          "instId": 1003,
+          "position": 262148,
+          "chessType": "CHAR",
+          "direction": 1
+         },
+         {
+          "instId": 1001,
+          "position": 196612,
+          "chessType": "CHAR",
+          "direction": 1
+         },
+         {
+          "instId": 1002,
+          "position": 131076,
+          "chessType": "CHAR",
+          "direction": 1
+         }
+        ],
+        "playerBondStatus": [
+         {
+          "bondId": "preciShip",
+          "stackCnt": 3,
+          "charCnt": 2,
+          "isActive": true
+         }
+        ]
+       },
+       "effectEnemies": [],
+       "roundAnalytics": {
+        "chessGained": {},
+        "coinCost": 0
+       }
+      },
+      "4": {
+       "index": 4,
+       "hp": 20,
+       "gameFinish": false,
+       "shopLv": 1,
+       "shopCoin": 0,
+       "maxDeploymentCnt": 8,
+       "gameState": 0,
+       "connectStateType": 1,
+       "playerBattleData": {
+        "charChesses": [
+         {
+          "instId": 1,
+          "equipSlots": [],
+          "chessId": "chess_char_1_03_b"
+         },
+         {
+          "instId": 2,
+          "equipSlots": [],
+          "chessId": "chess_char_1_03_a"
+         }
+        ],
+        "equipChesses": [],
+        "magicChesses": [],
+        "chessPositionInfos": [
+         {
+          "instId": 1,
+          "position": 131076,
+          "chessType": "CHAR",
+          "direction": 1
+         },
+         {
+          "instId": 2,
+          "position": 196612,
+          "chessType": "CHAR",
+          "direction": 1
+         }
+        ],
+        "playerBondStatus": [
+         {
+          "bondId": "yanShip",
+          "stackCnt": 6,
+          "charCnt": 1,
+          "isActive": false
+         }
+        ]
+       },
+       "effectEnemies": [],
+       "roundAnalytics": {
+        "chessGained": {},
+        "coinCost": 0
+       }
+      }
+     }
+    },
+    "4": {
+     "coin": 7,
+     "isBoss": true,
+     "spPrepareStateData": null,
+     "bossRoundInfo": {
+      "inBossRound": false,
+      "isHiddenBoss": false,
+      "bossId": null,
+      "hiddenBossId": null,
+      "playerTotalHp": 0,
+      "groupInfos": {
+       "BOSS_PLAYER_GROUP_1": [
+        1,
+        2
+       ],
+       "BOSS_PLAYER_GROUP_2": [
+        3,
+        4
+       ]
+      }
+     },
+     "bossBattleData": {
+      "playerGroup": 1,
+      "bossHp": 30000,
+      "enemyCount": 0,
+      "enemyInfos": []
+     },
+     "npcPlayerData": {
+      "2": {
+       "index": 2,
+       "hp": 20,
+       "gameFinish": false,
+       "shopLv": 1,
+       "shopCoin": 0,
+       "maxDeploymentCnt": 8,
+       "gameState": 0,
+       "connectStateType": 1,
+       "playerBattleData": {
+        "charChesses": [
+         {
+          "instId": 1,
+          "equipSlots": [],
+          "chessId": "chess_char_5_01_a"
+         },
+         {
+          "instId": 2,
+          "equipSlots": [],
+          "chessId": "chess_char_1_01_b"
+         },
+         {
+          "instId": 3,
+          "equipSlots": [],
+          "chessId": "chess_char_4_01_a"
+         }
+        ],
+        "equipChesses": [],
+        "magicChesses": [],
+        "chessPositionInfos": [
+         {
+          "instId": 3,
+          "position": 655368,
+          "chessType": "CHAR",
+          "direction": 1
+         },
+         {
+          "instId": 1,
+          "position": 720904,
+          "chessType": "CHAR",
+          "direction": 1
+         },
+         {
+          "instId": 2,
+          "position": 786440,
+          "chessType": "CHAR",
+          "direction": 1
+         }
+        ],
+        "playerBondStatus": [
+         {
+          "bondId": "lateranoShip",
+          "stackCnt": 15,
+          "charCnt": 3,
+          "isActive": true
+         }
+        ]
+       },
+       "effectEnemies": [],
+       "roundAnalytics": {
+        "chessGained": {},
+        "coinCost": 0
+       }
+      },
+      "3": {
+       "index": 3,
+       "hp": 20,
+       "gameFinish": false,
+       "shopLv": 1,
+       "shopCoin": 0,
+       "maxDeploymentCnt": 8,
+       "gameState": 0,
+       "connectStateType": 1,
+       "playerBattleData": {
+        "charChesses": [
+         {
+          "instId": 1001,
+          "equipSlots": [],
+          "chessId": "chess_char_2_01_b"
+         },
+         {
+          "instId": 1002,
+          "equipSlots": [],
+          "chessId": "chess_char_1_09_b"
+         },
+         {
+          "instId": 1003,
+          "equipSlots": [],
+          "chessId": "chess_char_4_06_a"
+         }
+        ],
+        "equipChesses": [],
+        "magicChesses": [],
+        "chessPositionInfos": [
+         {
+          "instId": 1003,
+          "position": 262148,
+          "chessType": "CHAR",
+          "direction": 1
+         },
+         {
+          "instId": 1001,
+          "position": 720904,
+          "chessType": "CHAR",
+          "direction": 1
+         },
+         {
+          "instId": 1002,
+          "position": 131076,
+          "chessType": "CHAR",
+          "direction": 1
+         }
+        ],
+        "playerBondStatus": [
+         {
+          "bondId": "preciShip",
+          "stackCnt": 15,
+          "charCnt": 3,
+          "isActive": true
+         }
+        ]
+       },
+       "effectEnemies": [],
+       "roundAnalytics": {
+        "chessGained": {},
+        "coinCost": 0
+       }
+      },
+      "4": {
+       "index": 4,
+       "hp": 20,
+       "gameFinish": false,
+       "shopLv": 1,
+       "shopCoin": 0,
+       "maxDeploymentCnt": 8,
+       "gameState": 0,
+       "connectStateType": 1,
+       "playerBattleData": {
+        "charChesses": [
+         {
+          "instId": 1,
+          "equipSlots": [],
+          "chessId": "chess_char_1_03_b"
+         },
+         {
+          "instId": 2,
+          "equipSlots": [],
+          "chessId": "chess_char_1_03_b"
+         },
+         {
+          "instId": 3,
+          "equipSlots": [],
+          "chessId": "chess_char_1_03_b"
+         }
+        ],
+        "equipChesses": [],
+        "magicChesses": [],
+        "chessPositionInfos": [
+         {
+          "instId": 1,
+          "position": 131076,
+          "chessType": "CHAR",
+          "direction": 1
+         },
+         {
+          "instId": 2,
+          "position": 720904,
+          "chessType": "CHAR",
+          "direction": 1
+         },
+         {
+          "instId": 3,
+          "position": 262148,
+          "chessType": "CHAR",
+          "direction": 1
+         }
+        ],
+        "playerBondStatus": [
+         {
+          "bondId": "yanShip",
+          "stackCnt": 21,
+          "charCnt": 1,
+          "isActive": false
+         }
+        ]
+       },
+       "effectEnemies": [],
+       "roundAnalytics": {
+        "chessGained": {},
+        "coinCost": 0
+       }
+      }
+     }
+    }
+   },
+   "trainingShopInfos": {
+    "1": [
+     {
+      "chessId": "chess_char_1_12_a",
+      "count": 12
+     }
+    ],
+    "2": [
+     {
+      "chessId": "chess_char_2_09_a",
+      "count": 10
+     }
+    ],
+    "3": [
+     {
+      "chessId": "chess_char_1_01_a",
+      "count": 10
+     },
+     {
+      "chessId": "chess_char_1_12_a",
+      "count": 10
+     },
+     {
+      "chessId": "chess_char_2_01_a",
+      "count": 10
+     },
+     {
+      "chessId": "chess_char_2_06_a",
+      "count": 10
+     },
+     {
+      "chessId": "chess_char_2_07_a",
+      "count": 10
+     },
+     {
+      "chessId": "chess_char_2_15_a",
+      "count": 10
+     },
+     {
+      "chessId": "chess_char_3_05_a",
+      "count": 10
+     },
+     {
+      "chessId": "chess_char_3_06_a",
+      "count": 10
+     },
+     {
+      "chessId": "chess_char_3_10_a",
+      "count": 10
+     },
+     {
+      "chessId": "chess_char_3_11_a",
+      "count": 10
+     }
+    ],
+    "4": [
+     {
+      "chessId": "chess_char_1_01_a",
+      "count": 10
+     },
+     {
+      "chessId": "chess_char_1_12_a",
+      "count": 10
+     },
+     {
+      "chessId": "chess_char_2_01_a",
+      "count": 10
+     },
+     {
+      "chessId": "chess_char_2_06_a",
+      "count": 10
+     },
+     {
+      "chessId": "chess_char_2_07_a",
+      "count": 10
+     },
+     {
+      "chessId": "chess_char_2_15_a",
+      "count": 10
+     },
+     {
+      "chessId": "chess_char_3_05_a",
+      "count": 10
+     },
+     {
+      "chessId": "chess_char_3_06_a",
+      "count": 10
+     },
+     {
+      "chessId": "chess_char_3_10_a",
+      "count": 10
+     },
+     {
+      "chessId": "chess_char_3_11_a",
+      "count": 10
+     },
+     {
+      "chessId": "chess_char_4_01_a",
+      "count": 10
+     },
+     {
+      "chessId": "chess_char_4_02_a",
+      "count": 10
+     },
+     {
+      "chessId": "chess_char_4_07_a",
+      "count": 10
+     },
+     {
+      "chessId": "chess_char_4_09_a",
+      "count": 10
+     }
+    ]
+   },
+   "operatorBindings": {
+    "chess_char_1_12_a": {
+     "charId": "char_215_mantic",
+     "isGolden": false
+    },
+    "chess_char_2_09_a": {
+     "charId": "char_337_utage",
+     "isGolden": false
+    },
+    "chess_char_1_01_a": {
+     "charId": "char_498_inside",
+     "isGolden": false
+    },
+    "chess_char_2_01_a": {
+     "charId": "char_279_excu",
+     "isGolden": false
+    },
+    "chess_char_2_06_a": {
+     "charId": "char_4139_papyrs",
+     "isGolden": false
+    },
+    "chess_char_2_07_a": {
+     "charId": "char_4137_udflow",
+     "isGolden": false
+    },
+    "chess_char_2_15_a": {
+     "charId": "char_271_spikes",
+     "isGolden": false
+    },
+    "chess_char_3_05_a": {
+     "charId": "char_263_skadi",
+     "isGolden": false
+    },
+    "chess_char_3_06_a": {
+     "charId": "char_4148_philae",
+     "isGolden": false
+    },
+    "chess_char_3_10_a": {
+     "charId": "char_218_cuttle",
+     "isGolden": false
+    },
+    "chess_char_3_11_a": {
+     "charId": "char_4211_snhunt",
+     "isGolden": false
+    },
+    "chess_char_4_01_a": {
+     "charId": "char_4194_rmixer",
+     "isGolden": false
+    },
+    "chess_char_4_02_a": {
+     "charId": "char_300_phenxi",
+     "isGolden": false
+    },
+    "chess_char_4_07_a": {
+     "charId": "char_222_bpipe",
+     "isGolden": false
+    },
+    "chess_char_4_09_a": {
+     "charId": "char_437_mizuki",
+     "isGolden": false
+    }
+   },
+   "trainingNPCInfos": [
+    {
+     "uidIndex": 2,
+     "playerLevel": 120
+    },
+    {
+     "uidIndex": 3,
+     "playerLevel": 120
+    },
+    {
+     "uidIndex": 4,
+     "playerLevel": 120
+    }
+   ],
+   "helpBattleNpcPlayers": [
+    2,
+    3
+   ]
+  }
+ }
+}

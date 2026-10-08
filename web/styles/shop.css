@@ -1,0 +1,151 @@
+/* ===== 底部商店抽屉：居中吸附（非通栏），1+6+1 紧凑结构 ===== */
+/* 商店：右下角右对齐整屏；收起时高度塌缩成一条细横条，只露资金 + 紧凑展开手柄 */
+#shopdrawer{position:absolute;right:0;left:auto;bottom:0;transform:none;z-index:15;display:flex;align-items:stretch;gap:10px;padding:10px 16px;background:rgba(10,12,18,0.86);border:1px solid rgba(255,255,255,0.08);border-bottom:none;border-radius:12px 12px 0 0;box-shadow:0 -8px 28px rgba(0,0,0,0.6);width:fit-content;max-width:calc(100vw - 24px);backdrop-filter:blur(12px);transition:height .3s ease;height:var(--shop-h);}
+/* 收起：只隐藏左侧升本单元与中央卡槽；右侧资金卡永远保留，位置与内部布局不变 */
+#shopdrawer.collapsed{height:var(--shop-h);background:transparent;border:none;box-shadow:none;padding:10px 16px;}
+#shopdrawer.collapsed #shop,
+#shopdrawer.collapsed #shop-left{display:none;}
+#shop, #shop-left{transition:opacity .28s ease, transform .28s ease;}
+/* 左侧调度中心（升本单元）：青绿科技感双层发光边框，与常规角色卡视觉区分 */
+#shop-left{flex:none;width:120px;display:flex;flex-direction:column;gap:0;padding:0;justify-content:center;cursor:pointer;border-radius:8px;transition:filter .12s;}
+#shop-level{flex:1;align-self:stretch;display:flex;flex-direction:column;gap:6px;justify-content:center;align-items:center;background:rgba(18,26,32,0.72);border:1px solid rgba(32,210,170,0.75);box-shadow:0 0 0 1px rgba(32,210,170,0.28),0 0 14px rgba(32,210,170,0.30),inset 0 0 16px rgba(32,210,170,0.08);border-radius:8px;padding:10px 6px;text-align:center;}
+#shop-left.confirm #shop-level{border-color:#ffd54f;box-shadow:0 0 0 1px rgba(255,213,79,0.45),0 0 16px rgba(255,213,79,0.55);}
+#shop-level .lv-cost-hex{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:4px;height:22px;padding:0 16px;font-size:13px;font-weight:bold;color:#ffd54f;line-height:1;}
+#shop-level .lv-cost-hex::before{content:"";position:absolute;inset:0;background:#ffd54f;clip-path:polygon(14% 0,86% 0,100% 50%,86% 100%,14% 100%,0 50%);}
+#shop-level .lv-cost-hex::after{content:"";position:absolute;inset:1.5px;background:#141a1e;clip-path:polygon(14% 0,86% 0,100% 50%,86% 100%,14% 100%,0 50%);}
+#shop-level .lv-cost-hex span{position:relative;z-index:1;}
+#shop-level .lv-title{font-size:11px;color:#8fe8cf;font-weight:bold;letter-spacing:1px;text-align:center;}
+#shop-level .lv-num{font-size:36px;font-weight:900;color:#20D2AA;line-height:1;text-align:center;text-shadow:0 0 10px rgba(32,210,170,0.55);}
+#shop-level .lv-foot{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:2px;}
+#shop-level .lv-foot .lv-key{display:inline-flex;align-items:center;justify-content:center;min-width:15px;height:15px;padding:0 3px;font-size:10px;line-height:1;color:#fff;background:rgba(15,20,24,0.85);border:1px solid rgba(255,255,255,0.5);border-radius:2px;}
+#shop-level .lv-foot .lv-act{font-size:12px;font-weight:bold;color:#ffd54f;}
+/* 中央卡槽区：固定最多 6 槽；商品不足时右对齐（左侧空槽占位不渲染卡片） */
+#shop{display:flex;flex:0 1 auto;justify-content:flex-start;gap:8px;align-items:stretch;min-width:0;overflow-x:auto;}
+/* 右侧操作栏：资金（中上）+ 收起（底端）垂直排列；作为上方冻结/刷新按钮的定位基准 */
+#shop-right{position:relative;flex:none;width:132px;display:flex;flex-direction:column;padding:12px 8px;background:rgba(16,18,26,0.62);border:1px solid #3a3f52;border-radius:10px;}
+#shop-money{flex:none;margin-top:4px;font-size:13px;color:#e8e8f0;text-align:center;line-height:1.4;display:flex;flex-direction:column;align-items:center;gap:4px;}
+#shop-money .n{font-size:10px;color:#9aa0b0;}
+/* 资金六边形徽章（flat-top 横长：先金币图标，后数字，金边黑底），水平居中 */
+#shop-money .money-hex{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:7px;height:36px;padding:0 26px;}
+#shop-money .money-hex::before{content:"";position:absolute;inset:0;background:#ffd54f;clip-path:polygon(14% 0,86% 0,100% 50%,86% 100%,14% 100%,0 50%);}
+#shop-money .money-hex::after{content:"";position:absolute;inset:1.5px;background:#0d0f16;clip-path:polygon(14% 0,86% 0,100% 50%,86% 100%,14% 100%,0 50%);}
+#shop-money .money-hex .coin{position:relative;z-index:1;width:14px;height:14px;background:linear-gradient(135deg,#ffe082,#ffb300);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);}
+#shop-money .money-hex b{position:relative;z-index:1;font-size:21px;}
+/* 收起/展开：底端，[A] 快捷键 + 文字，margin-top:auto 强制沉底 */
+.drawer-foot{margin-top:auto;display:flex;align-items:center;justify-content:center;gap:6px;padding-top:6px;border-top:1px dashed #2a2f3d;color:#8fb7ff;font-size:12px;cursor:pointer;}
+/* 冻结/刷新：挂载在右侧操作栏上方（bottom 向上外挂，右对齐）；快捷键独立挂载 */
+.sr-fabs{position:absolute;right:0;bottom:calc(100% + 8px);display:flex;flex-direction:row;gap:12px;align-items:flex-start;z-index:10;}
+.sr-fabs.hidden{display:none !important;}
+.fab-cell{display:flex;flex-direction:column;align-items:center;gap:4px;}
+.fab-cell .fab{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:8px;width:140px;height:60px;border-radius:3px;padding:10px 14px;font-size:22px;font-weight:750;cursor:pointer;white-space:nowrap;line-height:1.2;transition:filter .12s,box-shadow .12s;}
+.fab-cell .fab:hover{filter:brightness(1.08);}
+.fab-cell .fab.freeze{background:rgba(104,182,224,0.92);color:#042838;border:1px solid #7cc6ec;}
+.fab-cell .fab.freeze.on{background:#68B6E0;box-shadow:0 0 12px rgba(104,182,224,0.7);}
+.fab-cell .fab.refresh{background:rgba(215,164,29,0.94);color:#3a2a05;border:1px solid #ffd76a;}
+.fab-cell .fab .fab-ico{font-size:24px;}
+.fab-cell .fab .fab-cost{position:absolute;top:-10px;right:-5px;width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-size:14px;line-height:1;color:#3a2a05;background:#ffd76a;border:1px solid rgba(255,255,255,0.6);border-radius:50%;box-shadow:0 1px 3px rgba(0,0,0,0.5);}
+.fab-cell .fab .fab-cost.free{width:auto;min-width:44px;height:24px;padding:0 5px;border-radius:0;font-size:12px;font-weight:800;letter-spacing:.5px;}
+.fab-cell .fab-key{display:inline-flex;align-items:center;justify-content:center;min-width:20px;height:20px;padding:0 4px;font-size:12px;line-height:1;color:#fff;background:rgba(15,20,24,0.9);border:1px solid rgba(255,255,255,0.45);border-radius:2px;}
+/* 左右半区切换：中部靠下、商店正上方，中间显示所在半区，左右箭头切半区 */
+#half-nav{position:absolute;left:50%;transform:translateX(-50%);bottom:calc(var(--shop-h) + 8px);z-index:13;display:flex;align-items:center;gap:8px;background:rgba(16,18,26,0.88);border:1px solid #3a3f52;border-radius:999px;padding:5px 12px;box-shadow:0 4px 14px rgba(0,0,0,0.5);pointer-events:auto;}
+#half-nav button{background:none;border:none;color:#8fb7ff;font-size:16px;cursor:pointer;padding:2px 8px;line-height:1;pointer-events:auto;}
+#half-nav button:hover{color:#fff;}
+#half-nav #half-label{font-size:12px;color:#e8e8f0;min-width:46px;text-align:center;cursor:pointer;padding:4px 10px;background:rgba(24,30,44,0.92);border:1px solid #3a3f52;border-radius:6px;line-height:1.2;}
+/* 商店固定 6 卡槽：商品不足时左侧补「空槽」占位（暗灰虚线底框，吸收剩余空间使真实卡靠右） */
+.shop-card.empty{border-style:dashed;border-color:#3a3f52;background:rgba(24,28,38,0.7);cursor:default;justify-content:center;align-items:center;color:#5a6274;font-size:12px;letter-spacing:1px;flex:1 1 auto;min-width:40px;}
+.shop-card.empty:hover{border-color:#3a3f52;transform:none;}
+/* 商店卡牌（固定槽宽）：立绘/费用/阶级/名称 + 职业标签；给 img 固定高度避免 flex 塌缩导致无立绘 */
+.shop-card{flex:0 0 150px;width:150px;min-width:0;max-width:none;position:relative;background:#1c202b;border:2px solid #555;border-radius:8px;cursor:pointer;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;user-select:none;transition:border-color .12s,transform .12s;}
+.shop-card:hover{border-color:#ffd54f;transform:translateY(-3px);}
+.shop-card.equip-card{border-color:#8d6e63;box-shadow:inset 0 0 18px var(--tier-glow,rgba(141,110,99,.3));}
+/* 商店卡立绘：contain 完整显示，底部与下方职业文字上边缘对齐（不再 cover+top 裁掉下半身，也不被文字覆盖） */
+.shop-card img{width:100%;height:118px;flex:none;object-fit:contain;object-position:center center;background:#1c202b;display:block;}
+.shop-card img[src*="char_199_yak"]{object-position:center 15%;}
+.shop-card .cs{position:absolute;top:5px;left:6px;color:#ffd54f;font-size:15px;font-weight:bold;text-shadow:0 1px 2px #000,0 0 5px #000;z-index:2;background:rgba(0,0,0,0.35);border-radius:4px;padding:0 5px;}
+.shop-card .tier2{position:absolute;top:5px;right:6px;color:#ffd54f;font-size:12px;font-weight:bold;text-shadow:0 1px 2px #000;z-index:2;background:rgba(0,0,0,0.35);border-radius:4px;padding:0 5px;}
+/* 名字/职业改为图片下方普通流式布局：头像底部与职业文字上边缘对齐 */
+.shop-card .nm{position:relative;width:100%;flex:none;background:rgba(0,0,0,0.78);color:#fff;font-size:12px;padding:3px 5px;text-align:center;line-height:1.2;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.shop-card .rt{position:relative;width:100%;flex:none;color:#8fb7ff;font-size:10px;text-align:center;line-height:1.1;background:rgba(0,0,0,0.5);padding:1px 2px;}
+/* 盟约显示在干员名字上方（I-20260902-027） */
+.shop-card .bond-above{width:100%;flex:none;color:#ffd54f;font-size:11px;text-align:center;line-height:1.1;background:rgba(0,0,0,0.5);padding:1px 2px;}
+/* ==== 干员卡牌重构（卫戍协议主题：1~4 阶青绿 #1AA883 / 5~6 阶金色 #E5A93C） ==== */
+.shop-card.op-card{background:#141721;border:1.5px solid var(--theme,#1AA883);border-radius:8px;overflow:visible;height:100%;min-height:170px;}
+.shop-card.op-card.hi{border:1.5px solid #E5A93C;box-shadow:inset 0 0 0 1px rgba(229,169,60,0.55),inset 0 0 14px rgba(229,169,60,0.22);}
+.shop-card.op-card:hover{border-color:var(--theme,#1AA883);}
+/* 头像右对齐，左下留给盟约文字；保持完整头像比例，不拉伸或裁掉脸部。 */
+.shop-card .op-art{position:absolute;left:auto;right:0;top:15%;width:78%;height:calc(85% - 38px);transform:none;object-fit:contain;object-position:right top;background:transparent;display:block;border-radius:8px;}
+/* 立绘底部渐变遮罩：胸部下方自然下沉到暗色/青色遮罩之后，衬托底部名称栏 */
+.shop-card .op-grad{position:absolute;left:0;right:0;bottom:0;height:46%;background:linear-gradient(180deg,rgba(18,22,28,0) 0%,rgba(18,22,28,0.5) 55%,rgba(16,22,26,0.85) 100%);z-index:1;pointer-events:none;border-radius:0 0 8px 8px;}
+/* 底层羁绊暗纹水印：立绘上层半透明暗色图腾，增强战术层次 */
+.shop-card .op-watermark{position:absolute;left:50%;top:32%;transform:translate(-50%,-50%);font-size:70px;line-height:1;color:rgba(255,255,255,0.07);pointer-events:none;z-index:1;user-select:none;text-shadow:0 0 10px rgba(0,0,0,0.4);}
+/* 费用徽章：flat-top 横长六边形，横边贴顶部，黑底金黄描边，居中 */
+.shop-card .cost-hex{position:absolute;top:4px;left:50%;transform:translateX(-50%);z-index:3;width:46px;height:24px;display:flex;align-items:center;justify-content:center;}
+.shop-card .cost-hex span{position:relative;z-index:2;font-size:13px;font-weight:bold;color:#ffd54f;text-shadow:0 1px 2px #000;}
+.shop-card .cost-hex::before{content:"";position:absolute;inset:0;background:#ffd54f;clip-path:polygon(12% 0,88% 0,100% 50%,88% 100%,12% 100%,0 50%);}
+.shop-card .cost-hex::after{content:"";position:absolute;inset:1.5px;background:#0d0f16;clip-path:polygon(12% 0,88% 0,100% 50%,88% 100%,12% 100%,0 50%);}
+/* 阶级角标：左上圆角矩形线框，仅罗马数字，颜色跟随主题色 */
+.shop-card .tier-badge{position:absolute;top:5px;left:6px;z-index:3;font-size:11px;font-weight:bold;color:var(--theme,#1AA883);border:1px solid var(--theme,#1AA883);border-radius:4px;padding:0 5px;background:rgba(0,0,0,0.5);line-height:1.3;}
+/* 阵营 + 契约文字（名称栏上方靠左，1~2 行半透明白字） */
+.shop-card .op-meta{position:absolute;left:0;right:0;bottom:24px;z-index:2;display:flex;flex-direction:column;align-items:flex-start;gap:1px;padding:0 6px;pointer-events:none;}
+.shop-card .op-faction,.shop-card .op-contract{font-size:10px;color:rgba(255,255,255,0.85);text-shadow:0 1px 2px #000;line-height:1.3;white-space:nowrap;overflow:hidden;max-width:100%;text-overflow:ellipsis;}
+.shop-card .op-faction i,.shop-card .op-contract i{font-style:normal;color:var(--theme,#1AA883);margin-right:3px;}
+/* 底部通栏名称栏：细线职业图标 + 干员全称（1~4 阶青绿底，5~6 阶金底，禁用纯黑块） */
+.shop-card .op-namebar{position:absolute;left:0;right:0;bottom:0;z-index:2;display:flex;align-items:center;gap:5px;padding:3px 6px;background:rgba(26,168,131,0.35);border-top:1px solid rgba(26,168,131,0.6);border-radius:0 0 8px 8px;}
+.shop-card.op-card.hi .op-namebar{background:rgba(229,169,60,0.28);border-top:1px solid rgba(229,169,60,0.6);}
+.shop-card .op-namebar .op-prof{position:static;inset:auto;flex:0 0 18px;width:18px;height:18px;object-fit:contain;background:transparent;}
+.shop-card.op-card.hi .op-namebar .op-prof{filter:brightness(1.15);}
+.shop-card .op-namebar .op-name{flex:1;min-width:0;font-size:12px;color:#eafff6;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:600;text-shadow:0 1px 2px #000;}
+.shop-card.op-card.hi .op-namebar .op-name{color:#fff3d6;}
+/* 冻结卡：去饱和 + 提亮成冰霜白（不色相旋转，避免黑底被转到淡红）；蓝白覆盖层见 .freeze-mark */
+.shop-card.frozen{filter:grayscale(0.6) brightness(1.18) contrast(1.02);}
+/* 商店预览选中卡：高亮覆盖层 + 确认购买按钮（再次点卡片或点按钮购买） */
+.shop-card.shop-prev{border-color:#ffd54f;box-shadow:0 0 0 2px rgba(255,213,79,0.6),0 0 18px rgba(255,213,79,0.4);}
+.shop-card.shop-prev .shop-preview-mask{position:absolute;inset:0;z-index:4;display:flex;align-items:center;justify-content:center;background:rgba(255,213,79,0.10);pointer-events:none;}
+.shop-card .buy-confirm{pointer-events:auto;background:#e53935;color:#fff;border:none;border-radius:6px;padding:6px 9px;font-size:12px;cursor:pointer;font-weight:bold;box-shadow:0 2px 8px rgba(0,0,0,0.55);white-space:nowrap;line-height:1.2;}
+/* 冰晶冻结覆盖层：蓝白霜雾 + 雪花，柔和不刺眼 */
+.shop-card .freeze-mark{position:absolute;inset:0;z-index:3;pointer-events:none;background:linear-gradient(180deg,rgba(174,230,255,0) 30%,rgba(174,230,255,0.10) 55%,rgba(200,235,255,0.30) 78%,rgba(230,248,255,0.38) 100%);box-shadow:inset 0 -16px 26px rgba(160,225,255,0.28);}
+.shop-card .freeze-mark .frost-ico{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);font-size:16px;color:rgba(235,248,255,0.65);text-shadow:0 0 8px rgba(160,225,255,0.6);}
+/* 装备卡：每件装备使用独立矢量剪影，背景和边框由稀有度色驱动 */
+.shop-card .eq-art{position:relative;width:100%;height:118px;flex:none;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 42%,var(--tier-glow,#596273) 0%,rgba(28,32,43,.9) 58%,#151821 100%);user-select:none;overflow:hidden;}
+.shop-card .eq-art::before{content:"";position:absolute;inset:9px;border:1px solid var(--tier-color,#8d6e63);clip-path:polygon(50% 0,100% 24%,100% 76%,50% 100%,0 76%,0 24%);opacity:.65;}
+.shop-card .eq-art svg{position:relative;width:78px;height:78px;overflow:visible;filter:drop-shadow(0 5px 8px rgba(0,0,0,.7));}
+.shop-card .eq-art .eq-icon{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;z-index:1;}
+.shop-card .eq-name{position:relative;width:100%;flex:none;color:#ffd54f;font-size:12px;text-align:center;background:rgba(0,0,0,0.5);padding:2px;}
+
+#setup{position:fixed;inset:0;background:rgba(8,10,16,0.94);display:none;align-items:center;justify-content:center;z-index:10;}
+#setup .box{width:640px;max-width:92vw;max-height:90vh;overflow-y:auto;background:#14161e;border:1px solid #2a2f3d;border-radius:10px;padding:22px;}
+#setup h2{margin:0 0 4px;color:#ffd54f;}
+#setup .sub{color:#8fb7ff;font-size:13px;margin:0 0 16px;}
+#setup h3{color:#8fb7ff;font-size:14px;margin:16px 0 8px;}
+.tag{display:inline-block;background:#2a3040;color:#e8e8f0;border-radius:4px;padding:3px 9px;margin:3px;font-size:13px;}
+.band{background:#1c202b;color:#fff;border:2px solid #555;border-radius:6px;padding:8px 12px;margin:4px;font-size:14px;cursor:pointer;text-align:left;vertical-align:top;width:230px;}
+.band:hover{border-color:#ffd54f;}
+.band-eff{font-size:11px;color:#9aa0b0;font-weight:normal;margin-top:5px;white-space:normal;line-height:1.45;}
+#menu{position:fixed;inset:0;background:rgba(8,10,16,0.96);display:none;align-items:center;justify-content:center;z-index:15;}
+#menu .box{width:560px;max-width:92vw;background:#14161e;border:1px solid #2a2f3d;border-radius:12px;padding:26px;}
+#menu h2{margin:0 0 4px;color:#ffd54f;}
+#menu .sub{color:#8fb7ff;font-size:13px;margin:0 0 18px;}
+.menu-btns{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px;}
+.menu-btns .act{flex:1;min-width:120px;padding:14px 10px;font-size:15px;}
+#menu-info{color:#9aa0b0;font-size:13px;line-height:1.7;}
+.roster-row{display:flex;gap:8px;padding:6px 0;min-height:158px;}
+.op-card{flex:none;width:162px;height:222px;border-radius:8px;border:1px solid #444;position:relative;overflow:hidden;cursor:pointer;background:#1c202b;}
+.op-card:hover{border-color:#ffd54f;}
+.op-card > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.op-card .info{position:absolute;left:0;right:0;bottom:0;background:rgba(0,0,0,0.72);color:#fff;font-size:13px;padding:4px 6px;text-align:center;line-height:1.4;}
+#roster-detail{position:fixed;inset:0;background:rgba(8,10,16,0.96);display:none;align-items:center;justify-content:center;z-index:21;}
+#roster-detail .box{width:700px;max-width:94vw;max-height:92vh;overflow-y:auto;background:#14161e;border:1px solid #2a2f3d;border-radius:10px;padding:20px;}
+.detail-head{display:flex;gap:16px;align-items:flex-start;}
+.detail-head .big{width:220px;height:220px;flex:none;border-radius:10px;object-fit:cover;background:#222;}
+.detail-row{display:flex;align-items:center;gap:8px;margin:6px 0;}
+.detail-row .lab{width:70px;color:#8fb7ff;font-size:13px;flex:none;}
+.detail-row input[type=range]{flex:1;}
+#shop-left[aria-disabled="true"],#shop-fabs button:disabled{opacity:.5;cursor:default;}
+/* BGM 开关：次要按钮，置于顶部栏右侧（不遮挡棋盘）；静音时整钮变灰、文字不变 */
+#bgm-btn{background:#252a36;color:#b7bcc8;width:32px;height:32px;padding:0;font-size:15px;border:none;border-radius:6px;cursor:pointer;opacity:.9;transition:opacity .15s,background .15s,color .15s,filter .15s;align-self:center;display:flex;align-items:center;justify-content:center;}
+#bgm-btn.muted{background:#14171e;color:#4a5160;opacity:.5;filter:grayscale(1);}
+/* 中央大字横幅（回合结束/回合开始）：浮于棋盘上方，约 3s 淡出 */
+#center-banner{position:fixed;left:0;right:0;top:42%;transform:translateY(-50%);z-index:30;pointer-events:none;text-align:center;opacity:0;transition:opacity .35s ease;}
+#center-banner.show{opacity:1;}
+#center-banner .cb-title{font-size:56px;font-weight:900;color:#ffd54f;text-shadow:0 3px 16px rgba(0,0,0,0.85),0 0 40px rgba(255,213,79,0.35);letter-spacing:6px;line-height:1.1;}
+#center-banner .cb-sub{font-size:26px;font-weight:700;color:#fff;margin-top:10px;text-shadow:0 2px 10px rgba(0,0,0,0.8);letter-spacing:3px;}

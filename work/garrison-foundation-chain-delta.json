@@ -1,0 +1,53 @@
+{
+  "rule": "garrison-foundations-chain-batch-v1",
+  "before": {
+    "pendingEnemies": 438,
+    "pendingEncounterEnemies": 38,
+    "projectileSpeeds": 532,
+    "encounterProjectileSpeeds": 80
+  },
+  "after": {
+    "pendingEnemies": 435,
+    "pendingEncounterEnemies": 36,
+    "projectileSpeeds": 535,
+    "encounterProjectileSpeeds": 82,
+    "chainProjectileProfiles": 3,
+    "encounterChainProjectileProfiles": 2
+  },
+  "acceptedEnemyIDs": [
+    "enemy_1225_dkmage",
+    "enemy_1225_dkmage_2",
+    "enemy_15016_dqdkma"
+  ],
+  "remainingChainCandidates": {
+    "enemy_2050_smsha": [
+      "chain-hit-buffs-and-skill-overrides-not-supported"
+    ],
+    "enemy_2051_smsha2": [
+      "chain-hit-buffs-and-skill-overrides-not-supported"
+    ]
+  },
+  "nextFoundation": "skill-trigger-dispatch",
+  "nextSharedContract": "work/garrison-skill-dispatch-priority.json#nextSharedContract",
+  "evidenceLevel": "Inferred",
+  "sourceAndRuntimeHashes": {
+    "tools/enemy_chain_projectiles.py": "ba2a06ce22f647ad444005892c09176fa1f389fa79921cf89160e7cfd0f1540b",
+    "tools/build_external_combat_data.py": "6001dd86d1a815ebbe96fc37646e56028eb1891070c8a85abc065f22923f3cb5",
+    "web/external_combat_data.js": "50dd3b63e815976e544d24dbf7758d5b18071a87c31b090b44abaaaca50a4ab8",
+    "web/src/simulation/external-combat.js": "c1fd4efef2ae5ff858346876c7d4347c30de3be822a79e6495f514876136a899",
+    "web/engine.js": "b09477f81893bf3735e215dae39e167da9aeb8f00f7d3fca0737b98a2fcdffe8",
+    "work/enemy-chain-projectile-candidates.json": "f082f1d72bbecd2c72a6a04b86d1355d00aeb8393e77f58c7c0066b7dff7f05c"
+  },
+  "validation": {
+    "compilerTests": 4,
+    "priorityTests": 3,
+    "queueTests": 3,
+    "modeOverlayTests": 5,
+    "chainRuntimeBoundaryTests": 2,
+    "browserAndVmChainSmoke": "passed",
+    "hpModeRegression": "passed",
+    "externalModeAndChannelRegression": "passed",
+    "dpsRecalculated": false
+  },
+  "boundary": "Only the complete supported basic attack is bound; no claim that all skills, death talents or native lifecycle semantics are complete."
+}

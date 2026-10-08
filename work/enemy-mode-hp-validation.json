@@ -1,0 +1,44 @@
+{
+  "date": "2026-09-14",
+  "scope": "root HP threshold and complete multi-Buff attribute/damage chain",
+  "runtimeSmokesPassed": [
+    "_enemy_hp_mode_smoke.js",
+    "_external_combat_smoke.js",
+    "_enemy_mode_providers_smoke.js"
+  ],
+  "pureTestGroups": {
+    "hpProvider": 4,
+    "passiveEffects": 3,
+    "blockedProviderRefactor": 2,
+    "multiFamilyQueueAndRendering": 5
+  },
+  "review": {
+    "fixed": "Invalid inherited effect values now refuse the entire HP provider before coverage/export; valid local values take precedence.",
+    "outstandingFindings": []
+  },
+  "docs": {
+    "passed": true,
+    "documents": 77,
+    "localLinks": 2292
+  },
+  "gameVersion": "room-game-20260914.27",
+  "sourceHashes": {
+    "tools/enemy_mode_hp_provider.py": "a662a67a5b1629b7619229af589ac32ff32fea81714bb0fe0bebdbbee29654fa",
+    "tools/enemy_mode_passive_effects.py": "881676dd3ce9ecc0bca5f143e1fecf871b583079ec6be38f5a5ff42ce08604e0",
+    "tools/enemy_mode_blackboards.py": "db1264a637ce52a48fad2a7e03fe28365ddf8950d208858d7fcb0c6b25776d89",
+    "tools/enemy_mode_blocked_provider.py": "f9d4b129062ed674f268634039591391c91dce8e1362cb3bb630e98b89542cde",
+    "tools/build_external_combat_data.py": "61b7469aa117f63b703a237c860cc5b0da3fa3fc73ce8a17036a201420deec6b",
+    "web/src/simulation/external-combat.js": "205f44ed87de97cdc8c7cbd278d438867de60ffc79f9bd8786e3b9aa62fcbd00",
+    "web/engine.js": "48c22ea9668c877b9ca926dda122c2f8509d1880276e8f406c07e8de8e78c2c8",
+    "web/external_combat_data.js": "02e9c81a124c5ccdde4f9c66a2c1b582b182167aab12a35c7fe6bb08a2b267ff"
+  },
+  "cache": {
+    "planCacheHit": true,
+    "bindingCacheHit": true,
+    "sourceAnalysisSkipped": true,
+    "templateQueriesSkipped": true,
+    "dpsCalculationSkipped": true
+  },
+  "blackboardCacheHit": true,
+  "boundary": "Implementation verification, not full native equivalence. Namespace, FP epsilon, managed lifecycle and output damage pipeline retain stated inferences."
+}

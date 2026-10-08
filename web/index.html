@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="launcher-key" content="__LAUNCHER_KEY__">
+<meta name="launcher-window" content="__LAUNCHER_WINDOW__">
+<script src="launcher-window.js?v=20260911"></script>
+<script src="room-presence.js?v=20261003.1"></script>
+<title>明日方舟 · 作战终端</title>
+<link rel="stylesheet" href="styles/base.css">
+<link rel="stylesheet" href="styles/diy-selection.css?v=20260913-diy">
+<link rel="stylesheet" href="styles/topbar.css?v=20260911-debug-fx">
+<link rel="stylesheet" href="styles/bonds.css?v=20260911-interaction-polish">
+<link rel="stylesheet" href="styles/hand.css">
+<link rel="stylesheet" href="styles/detail.css?v=20260913-tactical-specials">
+<link rel="stylesheet" href="styles/shop.css?v=20260912-roster-fit">
+<link rel="stylesheet" href="styles/modal.css?v=20260912-merge-confirm">
+<link rel="stylesheet" href="styles/strategy.css?v=20260911-room-entry">
+<link rel="stylesheet" href="styles/responsive.css?v=20260912-roster-fit">
+<link rel="stylesheet" href="styles/settlement.css?v=20260911-bond-settlement">
+<link rel="stylesheet" href="styles/room-game.css">
+<link rel="stylesheet" href="styles/home-session.css?v=20260912-playability">
+<link rel="stylesheet" href="styles/phase-notice.css?v=20260911">
+<link rel="stylesheet" href="styles/protocol-theme.css?v=20260912-audio-home">
+<link rel="stylesheet" href="styles/audio.css?v=20260912">
+<link rel="stylesheet" href="styles/roster.css?v=20260912-roster-scope">
+</head>
+<body class="mode-menu">
+<aside id="room-game-panel" hidden aria-label="同盟四席"><div id="room-game-players" aria-label="首次点击队友头像确认观战，再次点击进入；观看中的头像可返回自己"></div></aside>
+<p id="room-game-status" class="room-sr-only" role="status"></p><ul id="room-game-events" hidden aria-label="同盟动态" aria-live="polite"></ul>
+<div id="room-game-connection" class="room-connection waiting" hidden role="status" aria-live="polite"><b id="room-game-connection-title"></b><span id="room-game-connection-detail"></span></div>
+<section id="room-entry-status" hidden><h1 id="room-entry-title">正在读取本局信息</h1><p id="room-entry-message" role="status"></p><div><a id="room-entry-lobby" href="room-lab.html">返回大厅</a><a id="room-entry-home" hidden href="room-lab.html">返回联机首页</a></div></section>
+<div id="tb-left"><button class="tb-exit" id="menu-btn" onclick="confirmExit()" style="display:none" title="退出战斗"><img src="ui/icon_exit.png" alt="退出"></button><span id="ping">0ms</span><button id="route-view-btn" class="tb-basic" onclick="toggleRouteView()" title="切换当前敌潮的地面路线、飞行路线或隐藏路线">路线：地面</button><button id="debug-toggle" class="tb-basic" onclick="toggleGameDebug()" aria-pressed="false" aria-controls="debug-panel" title="调试模式">调试</button></div>
+<aside id="debug-panel" hidden aria-label="调试模式">
+  <header><b>调试模式 · 单人本机</b></header>
+  <div class="debug-actions"><button id="debug-roster" onclick="openDebugRoster()">添加干员</button><button id="debug-gold" onclick="debugAddGold()">金币 +1</button><button id="debug-skip" onclick="debugSkipRound()">跳过当前关</button></div>
+  <p>添加干员在准备阶段操作；可选禁用干员，加入后解除该干员本局禁用。跳关沿用当前难度的关卡顺序。</p>
+  <p id="debug-status" role="status" aria-live="polite"></p>
+</aside>
+<div id="tb-util"><button id="bgm-btn" class="audio-toggle" onclick="openAudioSettings()" title="声音设置" aria-label="声音设置"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z"/><path d="M16 8q5 4 0 8M19 5q8 7 0 14"/></svg></button><button id="save-run-btn" class="tb-basic" onclick="saveRestRun()" title="保存当前休整进度，下次从主菜单继续">保存</button><button id="shot-btn" class="tb-basic" onclick="manualSnapshot()" title="手动截图当前整个界面（含棋盘与全部 HUD/商店/菜单），保存到 assets/picture/randomsnapshot（最多保留 3 张）">📷 截图</button></div>
+<div id="topbar">
+  <div id="hud-cluster">
+    <div class="intel-btn" id="intel-btn" onclick="toggleIntel()" title="查看开局策略 / 领袖 / 敌方情报">◈<div id="intel-panel"><button class="intel-close" onclick="closeIntel()">✕</button><div id="intel-body"></div></div></div>
+    <div id="hud"></div>
+    <span id="source-note" style="font-size:11px;color:#e1b46b;pointer-events:auto"></span>
+    <button class="intel-btn" id="preview-btn" onclick="togglePreview()" title="查看怪物预览">🔍</button>
+  </div>
+  <div id="boss-health" style="display:none"></div>
+  <div id="flash"></div>
+  <div id="result"></div>
+  <div id="tb-right">
+    <div class="timer-section">
+      <div class="timer-display">
+        <div id="countdown-big"></div>
+        <div class="sub-label">COUNTDOWN</div>
+      </div>
+      <div class="led-meter" id="round-progress">
+        <span class="led-segment"></span><span class="led-segment"></span><span class="led-segment"></span><span class="led-segment"></span><span class="led-segment"></span><span class="led-segment"></span><span class="led-segment"></span><span class="led-segment"></span><span class="led-segment"></span><span class="led-segment"></span><span class="led-segment"></span><span class="led-segment"></span>
+      </div>
+    </div>
+    <button class="ready-btn" id="start-btn" onclick="startBattleRound()"><span class="check-icon">✓</span><span class="btn-text">准备就绪</span></button>
+    <button class="act" id="next-btn" onclick="nextRound()" style="display:none">下一回合</button>
+    <button class="act tb-basic" id="roster-btn-top" onclick="openRoster()">干员库</button>
+    <div class="shortcut-badge">C</div>
+  </div>
+  <div id="bondbar"><div id="bonds"><div id="bonds-track"></div></div></div>
+  <div id="bond-detail"></div>
+</div>
+
+<div id="menu">
+  <div class="home-art" aria-hidden="true"><img id="home-art" src="portraits/char_102_texas.png" alt=""><span>RHODES ISLAND<br>OPERATOR / STANDBY</span></div>
+  <div class="box home-shell">
+    <header class="home-heading"><div><span class="protocol-eyebrow">RHODES ISLAND</span><h2>罗德岛 · 作战终端</h2></div><span class="home-terminal">TACTICAL TERMINAL</span></header>
+    <section class="home-identity" aria-label="博士名片"><p class="protocol-eyebrow">DOCTOR / PROFILE</p><div class="menu-name"><label for="player-name">博士</label><input id="player-name" maxlength="20" placeholder="输入昵称" oninput="setPlayerName(this.value)"><button id="home-profile" class="mini" hidden title="修改名片"><img id="home-portrait" alt="展示干员">名片</button></div><p id="home-profile-status" role="status"></p></section>
+    <div class="menu-btns" aria-label="作战终端入口">
+      <button class="act home-terminal-card" disabled aria-label="作战终端（暂未开放）"><span class="protocol-eyebrow">TERMINAL / OPERATIONS</span><strong>终端</strong><small>作战</small><span class="home-glyph" aria-hidden="true">◈</span></button>
+      <button class="act home-covenant" onclick="enterMode()" aria-label="卫戍协议"><span class="protocol-eyebrow">AUTO CHESS</span><strong>卫戍协议</strong><small>单人 / 多人同盟 <span aria-hidden="true">↗</span></small></button>
+      <button class="act home-tile" onclick="showMenu();showFormation()" aria-label="编队"><strong>编队</strong><small>整备作战阵容</small><span class="home-glyph" aria-hidden="true">▦</span></button>
+      <button class="act home-tile" onclick="showMenu();openRoster()" aria-label="干员"><strong>干员</strong><small>资料 / 养成 / 技能</small><span class="home-glyph" aria-hidden="true">♟</span></button>
+      <button class="act home-tile" onclick="showGameSettings()" aria-label="设置"><strong>设置</strong><small>音乐 / 音量</small><span class="home-glyph" aria-hidden="true">⚙</span></button>
+      <button class="act home-resume" onclick="showMenu();loadRestRun()" title="恢复上次手动保存的商店与冻结状态">继续休整存档</button>
+      <button id="home-continue" class="act" hidden>继续当前房间</button>
+    </div>
+    <div id="covenant-entry" hidden><button class="protocol-back" onclick="showMenu()" aria-label="返回主页">◀</button><h3>卫戍协议</h3><p>先选择单人或多人，在房间确认本局设置后选择策略。</p><button class="act" onclick="startCovenantEntry('solo')">单人开始</button><button class="act" onclick="startCovenantEntry('team')">多人同盟</button><p id="covenant-entry-status" role="status"></p></div>
+    <div id="game-settings" hidden><button class="mini" onclick="showMenu()">返回</button><h3>声音设置</h3><button class="audio-toggle audio-settings-entry" onclick="openAudioSettings()" aria-label="调整声音"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z"/><path d="M16 8q5 4 0 8M19 5q8 7 0 14"/></svg><span>音乐与音效</span></button><p>音乐和音效可分别调节；开关与音量自动保存在本机。</p></div>
+    <footer class="home-footer"><div id="menu-info" class="tip"></div><div id="save-status" class="tip" role="status"></div></footer>
+  </div>
+</div>
+
+<dialog id="audio-settings" aria-labelledby="audio-settings-title"><header><h2 id="audio-settings-title">声音设置</h2><button type="button" onclick="closeAudioSettings()" aria-label="关闭声音设置">×</button></header><label><span>背景音乐</span><button id="audio-bgm-toggle" onclick="toggleBgm()"></button></label><label class="audio-slider"><input id="settings-bgm-volume" aria-label="音乐音量" type="range" min="0" max="1" step="0.05" oninput="setGameBgmVolume(this.value)"><output id="audio-bgm-value"></output></label><label><span>战斗音效</span><button id="audio-sfx-toggle" onclick="toggleGameSfx()"></button></label><label class="audio-slider"><input id="settings-sfx-volume" aria-label="音效音量" type="range" min="0" max="1" step="0.05" oninput="setGameSfxVolume(this.value)"><output id="audio-sfx-value"></output></label><p>设置自动保存在本机</p></dialog>
+<div id="decision-modal"></div>
+<div id="settlement" role="dialog" aria-modal="true" aria-label="模拟结算" style="display:none"></div>
+<div id="exit-confirm"><div class="box"><div class="ec-title">退出战斗</div><div class="ec-sub">确定要退出当前战局吗？进度将不会保存。</div><div class="ec-btns"><button class="act ec-ok" onclick="confirmBackToMenu()">确认退出</button><button class="act" style="background:#2a3040" onclick="cancelExit()">取消</button></div></div></div>
+<div id="setup">
+  <!-- 步骤 1/2：确认本局信息 -->
+  <div id="setup-info" class="setup-step" style="display:flex">
+    <div class="setup-head"><button class="setup-back" onclick="backToMenu()" title="返回上一步">◀</button><span class="brand">卫戍协议</span><span class="stepno"><b>1/2</b> 本局情报</span><button class="setup-bgm audio-toggle" onclick="openAudioSettings()" title="声音设置" aria-label="声音设置"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z"/><path d="M16 8q5 4 0 8M19 5q8 7 0 14"/></svg></button></div>
+    <div id="room-info-status" class="room-setup-status" hidden><p id="room-info-status-message" role="status"></p><div id="room-info-players"></div></div>
+    <div class="blk">
+      <div class="blk-title">本局遭遇敌方</div>
+      <div class="boss-row">
+        <img id="boss-img" class="boss-img" src="" alt="">
+        <div class="boss-text">
+          <div id="boss-name" class="boss-name">—</div>
+          <div id="boss-desc" class="boss-desc">—</div>
+          <div id="enemy-types" class="enemy-tags"></div>
+        </div>
+      </div>
+    </div>
+    <div class="blk">
+      <div class="blk-title">核心盟约 <span class="warn" id="bond-meta-note"></span></div>
+      <div id="bond-meta" class="bond-meta"></div>
+    </div>
+    <div class="blk">
+      <div class="blk-title">本局禁用干员 <span class="warn" id="banned-ops-note"></span></div>
+      <div id="banned-ops" class="banned-ops"></div>
+    </div>
+    <div class="blk">
+      <div id="roster-list" class="roster-list"></div>
+    </div>
+    <div class="foot">
+      <div class="ready-count"><span id="ready-count-num">下一步选择策略</span></div>
+      <button class="setup-ready" id="setup-ready-btn" onclick="infoReady()">下一步：选择策略</button>
+    </div>
+  </div>
+
+  <!-- 步骤 2/2：选择策略 -->
+  <div id="setup-pick" class="setup-step" style="display:none">
+    <div class="setup-head"><button class="setup-back" onclick="backToSetupInfo()" title="返回本局情报">◀</button><span class="brand">卫戍协议</span><span class="stepno" id="setup-pick-heading"><b>2/2</b> 选择策略</span><button class="setup-bgm audio-toggle" onclick="openAudioSettings()" title="声音设置" aria-label="声音设置"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z"/><path d="M16 8q5 4 0 8M19 5q8 7 0 14"/></svg></button></div>
+    <div id="room-strategy-status" class="room-setup-status" hidden><p id="room-strategy-status-message" role="status"></p></div>
+    <div class="pick-body">
+      <div class="pick-left" id="pick-left"><div id="pick-players"></div></div>
+      <div class="pick-mid" id="pick-mid"><div id="band-matrix" class="band-matrix"></div></div>
+      <div class="pick-card" id="pick-card"><div class="pc-in" id="pick-card-body"></div></div>
+    </div>
+  </div>
+</div>
+
+<dialog id="home-profile-dialog" aria-labelledby="home-profile-title"><header><h2 id="home-profile-title">选择名片干员</h2><button id="home-profile-close" type="button">关闭</button></header><input id="home-portrait-search" type="search" placeholder="搜索干员代号" aria-label="搜索名片干员"><div id="home-portrait-grid"></div><footer><button id="home-portrait-prev" type="button">上一页</button><span id="home-portrait-page"></span><button id="home-portrait-next" type="button">下一页</button></footer><p id="home-portrait-status" role="status"></p></dialog>
+<div id="roster-modal">
+  <div class="box">
+    <header class="roster-header">
+      <h2>干员 <small id="roster-count"></small></h2>
+      <span class="sub">按阶数排列 · 点击调整练度与技能</span>
+      <select id="roster-scope" aria-label="干员范围" onchange="filterRoster()"><option value="all">全部资料</option><option value="mode">卫戍名册</option></select>
+      <input id="roster-debug-search" type="search" placeholder="搜索干员" aria-label="搜索干员" oninput="filterRoster()">
+      <button class="act" onclick="closeRoster()">关闭</button>
+    </header>
+    <div class="roster-toolbar">
+      <div class="roster-presets" aria-label="全员练度预设">
+      <button class="mini" onclick="applyPreset(3)">全部满配</button>
+      <button class="mini" onclick="applyPreset(4)">精二1级·专精3</button>
+      <button class="mini" onclick="applyPreset(0)">精一满级·技能7</button>
+      <button class="mini" onclick="applyPreset(1)">精一1级·技能7</button>
+      <button class="mini" onclick="applyPreset(2)">全员1级·技能4</button>
+      </div>
+      <div id="roster-debug-tools" hidden><span id="roster-debug-status" role="status" aria-live="polite">点击卡片下方加入候选区</span></div>
+    </div>
+    <div class="roster-scroll">
+      <div id="roster-groups"></div>
+    </div>
+  </div>
+</div>
+
+<div id="roster-detail">
+  <div class="box">
+    <div class="detail-head">
+      <img class="big" id="detail-img" src="">
+      <div style="flex:1;min-width:0">
+        <div id="detail-basic"></div>
+        <div id="detail-fields"></div><div id="detail-skills"></div>
+        <div style="margin-top:12px"><button class="act" style="background:#2a3040" onclick="closeDetail()">返回</button></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="main" style="display:none">
+  <!-- Layer 0：全屏游戏视口（棋盘铺满） -->
+  <div id="viewport"><canvas id="cv"></canvas></div>
+  <!-- Layer 1：侵入式 HUD 悬浮层（pointer-events:none，组件各自 auto） -->
+  <div id="hudlayer">
+    <div id="opinfo"></div>
+    <div id="placement"><span id="placement-num">0</span> 剩余可放置角色</div>
+    <div id="bench"><div id="handbar"></div></div>
+    <div id="side"><div id="selected" class="selected-panel"></div></div>
+    <div id="shopdrawer">
+      <div id="deployment-cost" style="display:none"></div>
+      <div id="shop-left" onclick="GameActions.upgradeShop()" title="点击调度中心升阶（消耗资金）"><div id="shop-level"></div></div>
+      <div id="shop"></div>
+      <div id="shop-right" onclick="GameActions.toggleDrawer()" title="点击收起 / 展开商店">
+        <div class="sr-fabs" id="shop-fabs">
+          <div class="fab-cell"><button class="fab freeze" id="freeze-btn" onclick="event.stopPropagation();GameActions.toggleFreeze()"><span class="fab-ico">❄</span><span id="freeze-label">冻结</span></button><div class="fab-key">S</div></div>
+          <div class="fab-cell"><button class="fab refresh" id="refresh-btn" onclick="event.stopPropagation();GameActions.refreshShop()"><span class="fab-ico">↻</span><span>刷新</span><span class="fab-cost">①</span></button><div class="fab-key">D</div></div>
+        </div>
+        <div id="shop-money"></div>
+        <div class="drawer-foot">
+          <div class="fab-key">A</div><span id="collapse-label">收起</span>
+        </div>
+      </div>
+    </div>
+    <div id="half-nav"><button onclick="stepView(-1)" title="左移（左半区 → 总览 → 右半区）">◀</button><span id="half-label" title="当前区域" style="cursor:default">左半</span><button onclick="stepView(1)" title="右移（左半区 → 总览 → 右半区）">▶</button></div>
+  </div>
+</div>
+
+<!-- 干员详情 / 商店预览抽屉：独立于 #main 之外，z-index 高于全局顶栏，避免顶栏穿透重叠 -->
+<div id="hand-detail"></div>
+<div id="shop-preview"></div>
+
+<div id="center-banner" role="status" aria-live="polite"><span id="cb-mark" aria-hidden="true">◈</span><div class="cb-copy"><div class="cb-title" id="cb-title"></div><div class="cb-sub" id="cb-sub"></div></div></div>
+<div id="fail-flash"></div>
+
+<script src="ui_atlas.js"></script>
+<script src="src/domain/game-state.js?v=20260905-state-boundary"></script>
+<script src="src/rules/session-commands.js?v=20260905-command-split"></script>
+<script src="src/render/render-policy.js?v=20260913-surface"></script>
+<script src="src/render/enemy-preview.js?v=20260912"></script>
+<script src="src/render/battle-presentation.js?v=20261003.1"></script>
+<script src="src/simulation/wave-scheduler.js?v=20260912-playability"></script>
+<script src="src/simulation/enemy-replacement.js?v=20260914.13"></script>
+<script src="src/simulation/source-map.js?v=20260908-terrain-devices"></script>
+<script src="src/simulation/simulation-clock.js?v=20260908"></script>
+<script src="src/simulation/boss-mechanics.js"></script>
+<script src="src/rules/hidden-boss.js"></script>
+<script src="basic_attacks.js?v=20260914.13"></script>
+<script src="elemental_data.js?v=20260914.13"></script>
+<script src="src/simulation/elemental.js?v=20260914.13"></script>
+<script src="enemy_cold_data.js?v=20260912"></script>
+<script src="src/simulation/enemy-cold.js?v=20261003.1"></script>
+<script src="enemy_death_spawn_data.js?v=20260914.15"></script>
+<script src="src/simulation/enemy-death-spawn.js?v=20260914.13"></script>
+<script src="enemy_passive_data.js?v=20260914.17"></script>
+<script src="src/simulation/enemy-passives.js?v=20260914.17"></script>
+<script src="equip-protection-data.js?v=20260914.15"></script>
+<script src="src/simulation/equip-protection.js?v=20261003.1"></script>
+<script src="equip-skill-stacks-data.js?v=20260914.17"></script>
+<script src="src/simulation/equip-skill-stacks.js?v=20260914.17"></script>
+<script src="operator_skill_levels.js?v=20260914.2"></script>
+<script src="src/rules/skill-levels.js?v=20260914.2"></script>
+<script src="common_skill_data.js?v=20260914"></script>
+<script src="src/simulation/common-skills.js?v=20260914"></script>
+<script src="src/simulation/medic-skills.js?v=20261003.1"></script>
+<script src="src/simulation/medic-drone.js?v=20260914.13"></script>
+<script src="src/simulation/attributes.js?v=20261003.1"></script>
+<script src="src/simulation/hunter.js?v=20261003.1"></script>
+<script src="src/simulation/mystic.js?v=20261003.1"></script>
+<script src="src/simulation/dollkeeper.js?v=20261003.1"></script>
+<script src="src/simulation/tactician.js?v=20260914.13"></script>
+<script src="src/simulation/tactical-specials.js?v=20260914.13"></script>
+<script src="src/simulation/blacknight.js?v=20260913-hypnos"></script>
+<script src="src/simulation/flow-shape.js?v=20260913-tactical-specials"></script>
+<script src="src/simulation/elemental-operators.js?v=20260914.17"></script>
+<script src="client_stat_buff_data.js?v=20260914.17"></script>
+<script src="src/simulation/client-stat-buffs.js?v=20260914.15"></script>
+<script src="client_program_data.js?v=20261003.1"></script>
+<script src="skill_mode_data.js?v=20261003.1"></script>
+<script src="src/simulation/skill-auras.js?v=20261003.1"></script>
+<script src="src/simulation/skill-self-buffs.js?v=20261003.1"></script>
+<script src="src/simulation/skill-end-effects.js?v=20261003.1"></script>
+<script src="src/simulation/skill-blockees.js?v=20261003.1"></script>
+<script src="src/simulation/client-programs.js?v=20261003.1"></script>
+<script src="src/simulation/ability-flow.js?v=20261003.1"></script>
+<script src="src/simulation/skill-toggle.js?v=20261003.1"></script>
+<script src="src/simulation/skill-modes.js?v=20261003.1"></script>
+<script src="next_attack_skill_data.js?v=20261003.1"></script>
+<script src="src/simulation/operator-combat.js?v=20261003.1"></script>
+<script src="direct_skill_data.js?v=20261003.1"></script>
+<script src="src/simulation/direct-skill-actions.js?v=20261003.1"></script>
+<script src="src/rules/run-setup.js?v=20260914.13"></script>
+<script src="src/rules/diy-roster.js?v=20260913-diy"></script>
+<script src="src/ui/diy-selection.js?v=20260913-diy"></script>
+<script src="solo-session.js"></script>
+<script src="external_combat_data.js?v=20261003.1"></script>
+<script src="src/simulation/external-combat.js?v=20260915.7"></script>
+<script src="src/simulation/enemy-pre-attack.js?v=20260915.1"></script>
+<script src="src/simulation/enemy-hover.js?v=20261003.1"></script>
+<script src="src/simulation/enemy-skill-lifecycle.js?v=20260915.3"></script>
+<script src="src/simulation/enemy-skills.js?v=20261003.1"></script>
+<script src="src/simulation/enemy-selective-attacks.js?v=20261003.1"></script>
+<script src="src/simulation/enemy-attached-projectiles.js?v=20261003.1"></script>
+<script src="src/simulation/enemy-auras.js?v=20261003.1"></script>
+<script src="src/simulation/enemy-periodic.js?v=20260915.3"></script>
+<script src="engine.js?v=20261003.1"></script>
+<script src="mode.js?v=20261003.1"></script>
+<script src="src/ui/phase-notice.js?v=20260911"></script>
+<script src="room-game.js?v=20261003.1"></script>
+<script src="home-session.js?v=20260912-unified-room"></script>
+<script src="src/ui/shortcuts.js?v=20260912"></script>
+<script src="vendor/html2canvas.min.js"></script>
+<audio id="bgm" src="bgm.mp3" loop muted preload="none"></audio>
+</body>
+</html>

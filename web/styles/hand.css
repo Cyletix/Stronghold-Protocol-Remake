@@ -1,0 +1,31 @@
+/* ===== DOM 手牌仅供普通模式；卫戍协议候选实体绘制在地图 tile_achand ===== */
+#bench{position:absolute;left:50%;transform:translateX(-50%);bottom:calc(var(--shop-h) + 10px);z-index:14;display:flex;pointer-events:auto;}
+#handbar{display:flex;flex-direction:row;gap:8px;align-items:stretch;max-width:calc(100vw - 40px);overflow-x:auto;padding:4px 2px;}
+#bench .handcell{width:62px;height:84px;flex:none;}
+#bench .tip{white-space:normal;line-height:1.4;max-width:200px;}
+/* 手牌格：与战场格子同高(--tile)，可部署的“一格”；上半身像 + 职业 / 费用 / 阶 / 名 */
+.handcell{position:relative;width:var(--tile);height:var(--tile);flex:none;border:2px solid rgba(255,215,79,0.4);border-radius:8px;cursor:pointer;background:rgba(20,22,30,0.7);pointer-events:auto;transition:transform .12s,border-color .12s,box-shadow .12s,background .12s;user-select:none;overflow:hidden;}
+.handcell:hover{border-color:#ffd54f;background:rgba(40,44,56,0.7);}
+.handcell.sel{border-color:#ffd54f;box-shadow:0 0 0 2px rgba(255,213,79,0.5),0 6px 14px rgba(0,0,0,0.6);background:rgba(52,56,68,0.7);}
+.handcell img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;background:#222;}
+.handcell .fade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,12,18,0) 45%,rgba(10,12,18,0.82) 100%);}
+/* 左上职业图标（官方 OBB 高清 PNG） */
+.handcell .prof-badge{position:absolute;top:3px;left:3px;z-index:3;width:22px;height:22px;object-fit:contain;filter:drop-shadow(0 1px 2px rgba(0,0,0,0.8));}
+/* 右上部署费用 */
+.handcell .cost{position:absolute;top:3px;right:4px;z-index:3;font-size:13px;font-weight:bold;color:#ffd54f;text-shadow:0 1px 2px #000,0 0 6px #000;}
+/* 左侧阶级标记（I/II/III，竖排） */
+.handcell .tier-badge{position:absolute;bottom:18px;right:4px;z-index:3;background:rgba(255,213,79,0.92);color:#0d0f16;font-size:9px;font-weight:bold;padding:1px 4px;border-radius:4px;box-shadow:0 1px 3px rgba(0,0,0,0.6);}
+/* 底部信息：名称 */
+.handcell .nm{position:absolute;left:0;right:0;bottom:0;z-index:3;background:rgba(0,0,0,0.8);color:#fff;font-size:10px;text-align:center;padding:1px 3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 2px #000;}
+.handcell .tier-note{position:absolute;left:0;right:0;bottom:18px;z-index:3;color:#ffd54f;font-size:10px;text-align:center;text-shadow:0 1px 2px #000;display:none;}
+#hand-detail, #shop-preview{position:absolute;left:0;top:0;bottom:0;width:25vw;z-index:50;display:none;overflow:hidden;-webkit-mask-image:none;mask-image:none;}
+#hand-detail{pointer-events:auto;}
+#shop-preview{pointer-events:none;}
+/* 立绘：大幅角色立绘作为整个上半屏背景层，被 HUD 覆盖；只允许立绘自身纵向渐隐，不得把整条渐隐到 0 */
+/* 底层视觉层：人物 + 背景 + 辅助暗化，整体统一横向渐隐（右边淡出） */
+#hand-detail .bgfx, #shop-preview .bgfx{position:absolute;inset:0;z-index:0;pointer-events:none;-webkit-mask-image:linear-gradient(90deg,#000 0%,#000 72%,rgba(0,0,0,0.72) 84%,rgba(0,0,0,0.30) 93%,rgba(0,0,0,0.00) 100%);mask-image:linear-gradient(90deg,#000 0%,#000 72%,rgba(0,0,0,0.72) 84%,rgba(0,0,0,0.30) 93%,rgba(0,0,0,0.00) 100%);}
+#hand-detail .art, #shop-preview .art{position:absolute;inset:0;width:100%;background-color:#25232e;background-size:cover;background-position:60% 8%;filter:brightness(0.72) saturate(0.92);-webkit-mask-image:none;mask-image:none;}
+/* 遮罩：仅左侧文字区加一点背景对比度，不做全面板垂直暗化 */
+#hand-detail .fade, #shop-preview .fade{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,rgba(8,10,16,0.48) 0%,rgba(8,10,16,0.22) 30%,rgba(8,10,16,0.08) 52%,rgba(8,10,16,0.00) 68%);}
+/* 内容：HUD 覆盖层（透明叠立绘） */
+#hand-detail .txt, #shop-preview .txt{position:absolute;inset:0;z-index:10;color:#fff;display:flex;flex-direction:column;overflow:hidden;}

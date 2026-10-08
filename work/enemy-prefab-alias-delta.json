@@ -1,0 +1,74 @@
+{
+  "before": {
+    "wantedEnemies": 2130,
+    "profiles": 1375,
+    "timings": 1234,
+    "animationMappedTimings": 96,
+    "projectileSpeeds": 530,
+    "rootSelectedProfiles": 1190,
+    "encounterProfiles": 252,
+    "encounterTimings": 240,
+    "encounterAnimationMappedTimings": 22,
+    "encounterProjectileSpeeds": 78,
+    "nonAttackingEnemies": 342,
+    "encounterNonAttackingEnemies": 45,
+    "pendingEnemies": 616,
+    "pendingEncounterEnemies": 50
+  },
+  "after": {
+    "wantedEnemies": 2130,
+    "profiles": 1382,
+    "timings": 1241,
+    "animationMappedTimings": 99,
+    "projectileSpeeds": 532,
+    "rootSelectedProfiles": 1193,
+    "encounterProfiles": 256,
+    "encounterTimings": 244,
+    "encounterAnimationMappedTimings": 22,
+    "encounterProjectileSpeeds": 80,
+    "nonAttackingEnemies": 342,
+    "encounterNonAttackingEnemies": 45,
+    "pendingEnemies": 609,
+    "pendingEncounterEnemies": 46,
+    "aliasPrefabs": 12,
+    "aliasAnimations": 96
+  },
+  "addedProfiles": [
+    "enemy_2002_bearmi_2",
+    "enemy_2034_sythef_2",
+    "enemy_8016_misery_1",
+    "enemy_8016_misery_2",
+    "enemy_8016_misery_3",
+    "enemy_9013_acstmk_2",
+    "enemy_9017_achunt_2"
+  ],
+  "changedProfiles": [],
+  "removedProfiles": [],
+  "addedTimings": [
+    "enemy_2002_bearmi_2",
+    "enemy_2034_sythef_2",
+    "enemy_8016_misery_1",
+    "enemy_8016_misery_2",
+    "enemy_8016_misery_3",
+    "enemy_9013_acstmk_2",
+    "enemy_9017_achunt_2"
+  ],
+  "addedProjectileSpeeds": [
+    "enemy_9013_acstmk_2",
+    "enemy_9017_achunt_2"
+  ],
+  "prefabAliases": {
+    "enemy_1177_dufrbl_2": "enemy_1177_dufrbl",
+    "enemy_1294_duchns_2": "enemy_1294_duchns",
+    "enemy_2002_bearmi_2": "enemy_2002_bearmi",
+    "enemy_2034_sythef_2": "enemy_2034_sythef",
+    "enemy_8007_eltrsm_2": "enemy_8007_eltrsm_3",
+    "enemy_8010_mcnist_2": "enemy_8010_mcnist_3",
+    "enemy_8011_mcndog_2": "enemy_8011_mcndog_3",
+    "enemy_8016_misery_1": "enemy_8016_misery",
+    "enemy_8016_misery_2": "enemy_8016_misery",
+    "enemy_8016_misery_3": "enemy_8016_misery",
+    "enemy_9013_acstmk_2": "enemy_9013_acstmk",
+    "enemy_9017_achunt_2": "enemy_9017_achunt"
+  }
+}

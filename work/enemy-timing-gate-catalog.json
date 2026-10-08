@@ -1,0 +1,2311 @@
+{
+  "schemaVersion": 1,
+  "ruleVersion": "native-enemy-event-gate-v1",
+  "source": {
+    "classificationSha256": "15782de635c7943ab38645fb75f47f7e8f698b326beb1a37bc4b75e27f170bfe",
+    "assetSourceHashes": {
+      "work\\external-ready-data-20260914\\Tim23333-Arknights_timer\\snapshot\\Ark_emulator\\ark_emulator\\data_enemy_prefab_catalog_current.json": "ebe89ba77e15541b52bf117820ecf65838c840fee6e65d397ebc46c601c17ef8",
+      "work\\external-ready-data-20260914\\Tim23333-Arknights_timer\\snapshot\\Ark_emulator\\ark_emulator\\data_enemy_spine_events.json": "22ee68e69ee716bdea3d99e3311a72763c1097ca7854767579f005a7d30d1a81",
+      "work\\external-ready-data-20260914\\Tim23333-Arknights_timer\\snapshot\\Ark_emulator\\ark_emulator\\data_projectile_speeds.json": "b739fdabae9ec304972d3ade626ea24efaa45a834882e6b33216cb86a9bc473f",
+      "web\\battle_data.json": "7270b410e4526079a986c291a152f30bf3048fce0c56528d070ddb50fa34088b",
+      "web\\enemy_encounters.json": "05c765ce4566ecef2dd592ab5b009984e3b223d998631014c9853ef61fb5a119"
+    },
+    "native": {
+      "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+      "values": [
+        {
+          "fieldIndex": 85449,
+          "type": "Torappu.Battle.Abilities.AbstractAnimatedAbility+TimeMode",
+          "name": "FROM_ATTACK_SPEED",
+          "encoded": "0x0",
+          "value": 0
+        },
+        {
+          "fieldIndex": 85450,
+          "type": "Torappu.Battle.Abilities.AbstractAnimatedAbility+TimeMode",
+          "name": "FROM_ANIMATION",
+          "encoded": "0x2",
+          "value": 1
+        },
+        {
+          "fieldIndex": 85451,
+          "type": "Torappu.Battle.Abilities.AbstractAnimatedAbility+TimeMode",
+          "name": "SPECIFIED",
+          "encoded": "0x4",
+          "value": 2
+        },
+        {
+          "fieldIndex": 85452,
+          "type": "Torappu.Battle.Abilities.AbstractAnimatedAbility+TimeMode",
+          "name": "LOAD_FROM_BLACKBOARD",
+          "encoded": "0x6",
+          "value": 3
+        },
+        {
+          "fieldIndex": 60685,
+          "type": "Torappu.Battle.Entity+Event",
+          "name": "ON_ATTACK_EVENT",
+          "encoded": "0x26",
+          "value": 19
+        }
+      ],
+      "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af"
+    },
+    "methods": {
+      "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+      "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+      "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+      "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+      "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+      "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+      "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+      "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+      "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+      "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+    }
+  },
+  "scope": "Frozen original timeline-gating cohort; classification/meaning only, not runtime completion",
+  "counts": {
+    "enemyCount": 37,
+    "encounterEnemyCount": 2,
+    "rawGateHistogram": {
+      "(0, 0.0, 0)": 2,
+      "(0, 0.3, 0)": 2,
+      "(0, 0.667, 0)": 3,
+      "(0, 1.134, 1)": 12,
+      "(0, 0.0, 1)": 4,
+      "(2, 0.1, 0)": 2,
+      "(2, 0.0, 0)": 2,
+      "(1, 0.0, 1)": 11,
+      "(3, 0.0, 1)": 2,
+      "(0, 0.6, 0)": 2,
+      "(0, 0.167, 0)": 1
+    },
+    "candidateTimingEnemies": 8,
+    "candidateTimingEncounterEnemies": 2
+  },
+  "candidateEnemyIds": [
+    "enemy_1059_buster",
+    "enemy_1059_buster_2",
+    "enemy_1096_ccwitch",
+    "enemy_1096_ccwitch_2",
+    "enemy_1153_dsexcu",
+    "enemy_1153_dsexcu_2",
+    "enemy_1501_demonk",
+    "enemy_6020_orang"
+  ],
+  "enemies": {
+    "enemy_10091_hlsttu": {
+      "enemyId": "enemy_10091_hlsttu",
+      "name": "圣徒像",
+      "inEncounterPool": false,
+      "candidateTimingOnly": false,
+      "actions": [
+        {
+          "pathID": -8485765873194715713,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 0,
+            "_preDelay": 0.0,
+            "_timeMode": 0,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 2,
+            "_projectileKey": "projectile_enemy_hlsttu",
+            "_waitForProjectileInvalid": 0,
+            "_projectileDestination": 0,
+            "_extraProjectileKeys": [],
+            "_fireAttackFinishWhenProjectileInvalid": 0,
+            "_waitForAnimEndWhenProjectileInvalid": 0,
+            "_minPostDelayWhenProjectileInvalid": 0.0
+          },
+          "animationTiming": null,
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 0,
+              "_preDelay": 0.0,
+              "_waitForAttackEvent": 0
+            },
+            "timeMode": "FROM_ATTACK_SPEED",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "configured-delay-branch-not-compiled"
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_10091_hlsttu_2": {
+      "enemyId": "enemy_10091_hlsttu_2",
+      "name": "圣徒祈祷像",
+      "inEncounterPool": false,
+      "candidateTimingOnly": false,
+      "actions": [
+        {
+          "pathID": 2598127422953359581,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 0,
+            "_preDelay": 0.0,
+            "_timeMode": 0,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 2,
+            "_projectileKey": "projectile_enemy_hlsttu",
+            "_waitForProjectileInvalid": 0,
+            "_projectileDestination": 0,
+            "_extraProjectileKeys": [],
+            "_fireAttackFinishWhenProjectileInvalid": 0,
+            "_waitForAnimEndWhenProjectileInvalid": 0,
+            "_minPostDelayWhenProjectileInvalid": 0.0
+          },
+          "animationTiming": {
+            "animation": "Attack",
+            "duration": 0.0,
+            "hit": 0.0
+          },
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 0,
+              "_preDelay": 0.0,
+              "_waitForAttackEvent": 0
+            },
+            "timeMode": "FROM_ATTACK_SPEED",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "configured-delay-branch-not-compiled"
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_10110_mjcsdw": {
+      "enemyId": "enemy_10110_mjcsdw",
+      "name": "“破茧之梦”",
+      "inEncounterPool": false,
+      "candidateTimingOnly": false,
+      "actions": [
+        {
+          "pathID": 718856487897904600,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 0,
+            "_preDelay": 0.3,
+            "_timeMode": 0,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 2,
+            "_projectileKey": "projectile_enemy_mjcsdw",
+            "_waitForProjectileInvalid": 0,
+            "_projectileDestination": 0,
+            "_additionalProjectile": "",
+            "_extraProjectileKeys": [],
+            "_additionalProjectiles": [],
+            "_useMultiAdditionalProjectiles": 0,
+            "_fireAttackFinishWhenProjectileInvalid": 0,
+            "_waitForAnimEndWhenProjectileInvalid": 0,
+            "_minPostDelayWhenProjectileInvalid": 0.0
+          },
+          "animationTiming": null,
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 0,
+              "_preDelay": 0.3,
+              "_waitForAttackEvent": 0
+            },
+            "timeMode": "FROM_ATTACK_SPEED",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "configured-delay-branch-not-compiled"
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_10110_mjcsdw_2": {
+      "enemyId": "enemy_10110_mjcsdw_2",
+      "name": "“羽化之梦”",
+      "inEncounterPool": false,
+      "candidateTimingOnly": false,
+      "actions": [
+        {
+          "pathID": -9018002117588926963,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 0,
+            "_preDelay": 0.3,
+            "_timeMode": 0,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 2,
+            "_projectileKey": "projectile_enemy_mjcsdw",
+            "_waitForProjectileInvalid": 0,
+            "_projectileDestination": 0,
+            "_additionalProjectile": "",
+            "_extraProjectileKeys": [],
+            "_additionalProjectiles": [],
+            "_useMultiAdditionalProjectiles": 0,
+            "_fireAttackFinishWhenProjectileInvalid": 0,
+            "_waitForAnimEndWhenProjectileInvalid": 0,
+            "_minPostDelayWhenProjectileInvalid": 0.0
+          },
+          "animationTiming": null,
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 0,
+              "_preDelay": 0.3,
+              "_waitForAttackEvent": 0
+            },
+            "timeMode": "FROM_ATTACK_SPEED",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "configured-delay-branch-not-compiled"
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_1018_aoemag": {
+      "enemyId": "enemy_1018_aoemag",
+      "name": "高阶术师",
+      "inEncounterPool": false,
+      "candidateTimingOnly": false,
+      "actions": [
+        {
+          "pathID": -7583288838761118546,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 0,
+            "_preDelay": 0.667,
+            "_timeMode": 0,
+            "_atkScale": 1.0,
+            "_attackType": 0,
+            "_damageType": 2
+          },
+          "animationTiming": {
+            "animation": "Attack",
+            "duration": 1.5,
+            "hit": 0.8
+          },
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 0,
+              "_preDelay": 0.667,
+              "_waitForAttackEvent": 0
+            },
+            "timeMode": "FROM_ATTACK_SPEED",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "configured-delay-branch-not-compiled"
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_1018_aoemag_2": {
+      "enemyId": "enemy_1018_aoemag_2",
+      "name": "高阶术师组长",
+      "inEncounterPool": false,
+      "candidateTimingOnly": false,
+      "actions": [
+        {
+          "pathID": -6523634258678067677,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 0,
+            "_preDelay": 0.667,
+            "_timeMode": 0,
+            "_atkScale": 1.0,
+            "_attackType": 0,
+            "_damageType": 2
+          },
+          "animationTiming": {
+            "animation": "Attack",
+            "duration": 1.5,
+            "hit": 0.8
+          },
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 0,
+              "_preDelay": 0.667,
+              "_waitForAttackEvent": 0
+            },
+            "timeMode": "FROM_ATTACK_SPEED",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "configured-delay-branch-not-compiled"
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_1036_amraoe": {
+      "enemyId": "enemy_1036_amraoe",
+      "name": "护盾高阶术师",
+      "inEncounterPool": false,
+      "candidateTimingOnly": false,
+      "actions": [
+        {
+          "pathID": -4847747687633527599,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 0,
+            "_preDelay": 0.667,
+            "_timeMode": 0,
+            "_atkScale": 1.0,
+            "_attackType": 0,
+            "_damageType": 2
+          },
+          "animationTiming": {
+            "animation": "Attack",
+            "duration": 1.5,
+            "hit": 0.8
+          },
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 0,
+              "_preDelay": 0.667,
+              "_waitForAttackEvent": 0
+            },
+            "timeMode": "FROM_ATTACK_SPEED",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "configured-delay-branch-not-compiled"
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_1059_buster": {
+      "enemyId": "enemy_1059_buster",
+      "name": "狂徒",
+      "inEncounterPool": false,
+      "candidateTimingOnly": true,
+      "actions": [
+        {
+          "pathID": -4811696631067741576,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 1,
+            "_preDelay": 1.134,
+            "_timeMode": 0,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 1
+          },
+          "animationTiming": {
+            "animation": "Attack",
+            "duration": 2.7,
+            "hit": 1.4333333
+          },
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": true,
+            "raw": {
+              "_timeMode": 0,
+              "_preDelay": 1.134,
+              "_waitForAttackEvent": 1
+            },
+            "timeMode": "FROM_ATTACK_SPEED",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "timing": {
+              "animation": "Attack",
+              "duration": 2.7,
+              "hit": 1.4333333
+            },
+            "contract": {
+              "gate": "ON_ATTACK_EVENT",
+              "eventId": 19,
+              "cycle": "FROM_ATTACK_SPEED",
+              "timeBasis": "existing-normalized-animation-profile",
+              "ignoredConfiguredPreDelay": 1.134,
+              "reason": "Native event branch waits for the event directly; configured delay is neither added nor a minimum hit time",
+              "scope": "Target alive and cast uninterrupted; one known in-duration event. Missing-event timeout, custom overrides, multiple hits and other time modes remain unresolved."
+            }
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_1059_buster_2": {
+      "enemyId": "enemy_1059_buster_2",
+      "name": "末路狂徒",
+      "inEncounterPool": false,
+      "candidateTimingOnly": true,
+      "actions": [
+        {
+          "pathID": 4048469271038799392,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 1,
+            "_preDelay": 1.134,
+            "_timeMode": 0,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 1
+          },
+          "animationTiming": {
+            "animation": "Attack",
+            "duration": 2.7,
+            "hit": 1.4333333
+          },
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": true,
+            "raw": {
+              "_timeMode": 0,
+              "_preDelay": 1.134,
+              "_waitForAttackEvent": 1
+            },
+            "timeMode": "FROM_ATTACK_SPEED",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "timing": {
+              "animation": "Attack",
+              "duration": 2.7,
+              "hit": 1.4333333
+            },
+            "contract": {
+              "gate": "ON_ATTACK_EVENT",
+              "eventId": 19,
+              "cycle": "FROM_ATTACK_SPEED",
+              "timeBasis": "existing-normalized-animation-profile",
+              "ignoredConfiguredPreDelay": 1.134,
+              "reason": "Native event branch waits for the event directly; configured delay is neither added nor a minimum hit time",
+              "scope": "Target alive and cast uninterrupted; one known in-duration event. Missing-event timeout, custom overrides, multiple hits and other time modes remain unresolved."
+            }
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_1096_ccwitch": {
+      "enemyId": "enemy_1096_ccwitch",
+      "name": "提亚卡乌巫术师",
+      "inEncounterPool": false,
+      "candidateTimingOnly": true,
+      "actions": [
+        {
+          "pathID": 7817494166092463691,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack_02",
+            "_waitForAttackEvent": 1,
+            "_preDelay": 0.0,
+            "_timeMode": 0,
+            "_atkScale": 0.0,
+            "_attackType": 1,
+            "_damageType": 1
+          },
+          "animationTiming": {
+            "animation": "Attack_02",
+            "duration": 3.0666666,
+            "hit": 1.6333333
+          },
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": true,
+            "raw": {
+              "_timeMode": 0,
+              "_preDelay": 0.0,
+              "_waitForAttackEvent": 1
+            },
+            "timeMode": "FROM_ATTACK_SPEED",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "timing": {
+              "animation": "Attack_02",
+              "duration": 3.0666666,
+              "hit": 1.6333333
+            },
+            "contract": {
+              "gate": "ON_ATTACK_EVENT",
+              "eventId": 19,
+              "cycle": "FROM_ATTACK_SPEED",
+              "timeBasis": "existing-normalized-animation-profile",
+              "ignoredConfiguredPreDelay": 0.0,
+              "reason": "Native event branch waits for the event directly; configured delay is neither added nor a minimum hit time",
+              "scope": "Target alive and cast uninterrupted; one known in-duration event. Missing-event timeout, custom overrides, multiple hits and other time modes remain unresolved."
+            }
+          }
+        },
+        {
+          "pathID": 8651580953977568843,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack_01",
+            "_waitForAttackEvent": 1,
+            "_preDelay": 1.134,
+            "_timeMode": 0,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 2
+          },
+          "animationTiming": {
+            "animation": "Attack_01",
+            "duration": 3.0666666,
+            "hit": 1.6333333
+          },
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": true,
+            "raw": {
+              "_timeMode": 0,
+              "_preDelay": 1.134,
+              "_waitForAttackEvent": 1
+            },
+            "timeMode": "FROM_ATTACK_SPEED",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "timing": {
+              "animation": "Attack_01",
+              "duration": 3.0666666,
+              "hit": 1.6333333
+            },
+            "contract": {
+              "gate": "ON_ATTACK_EVENT",
+              "eventId": 19,
+              "cycle": "FROM_ATTACK_SPEED",
+              "timeBasis": "existing-normalized-animation-profile",
+              "ignoredConfiguredPreDelay": 1.134,
+              "reason": "Native event branch waits for the event directly; configured delay is neither added nor a minimum hit time",
+              "scope": "Target alive and cast uninterrupted; one known in-duration event. Missing-event timeout, custom overrides, multiple hits and other time modes remain unresolved."
+            }
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_1096_ccwitch_2": {
+      "enemyId": "enemy_1096_ccwitch_2",
+      "name": "提亚卡乌大巫",
+      "inEncounterPool": false,
+      "candidateTimingOnly": true,
+      "actions": [
+        {
+          "pathID": 690091617894359367,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack_02",
+            "_waitForAttackEvent": 1,
+            "_preDelay": 0.0,
+            "_timeMode": 0,
+            "_atkScale": 0.0,
+            "_attackType": 1,
+            "_damageType": 1
+          },
+          "animationTiming": {
+            "animation": "Attack_02",
+            "duration": 3.0666666,
+            "hit": 1.6333333
+          },
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": true,
+            "raw": {
+              "_timeMode": 0,
+              "_preDelay": 0.0,
+              "_waitForAttackEvent": 1
+            },
+            "timeMode": "FROM_ATTACK_SPEED",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "timing": {
+              "animation": "Attack_02",
+              "duration": 3.0666666,
+              "hit": 1.6333333
+            },
+            "contract": {
+              "gate": "ON_ATTACK_EVENT",
+              "eventId": 19,
+              "cycle": "FROM_ATTACK_SPEED",
+              "timeBasis": "existing-normalized-animation-profile",
+              "ignoredConfiguredPreDelay": 0.0,
+              "reason": "Native event branch waits for the event directly; configured delay is neither added nor a minimum hit time",
+              "scope": "Target alive and cast uninterrupted; one known in-duration event. Missing-event timeout, custom overrides, multiple hits and other time modes remain unresolved."
+            }
+          }
+        },
+        {
+          "pathID": 5828569657724920135,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack_01",
+            "_waitForAttackEvent": 1,
+            "_preDelay": 1.134,
+            "_timeMode": 0,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 2
+          },
+          "animationTiming": {
+            "animation": "Attack_01",
+            "duration": 3.0666666,
+            "hit": 1.6333333
+          },
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": true,
+            "raw": {
+              "_timeMode": 0,
+              "_preDelay": 1.134,
+              "_waitForAttackEvent": 1
+            },
+            "timeMode": "FROM_ATTACK_SPEED",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "timing": {
+              "animation": "Attack_01",
+              "duration": 3.0666666,
+              "hit": 1.6333333
+            },
+            "contract": {
+              "gate": "ON_ATTACK_EVENT",
+              "eventId": 19,
+              "cycle": "FROM_ATTACK_SPEED",
+              "timeBasis": "existing-normalized-animation-profile",
+              "ignoredConfiguredPreDelay": 1.134,
+              "reason": "Native event branch waits for the event directly; configured delay is neither added nor a minimum hit time",
+              "scope": "Target alive and cast uninterrupted; one known in-duration event. Missing-event timeout, custom overrides, multiple hits and other time modes remain unresolved."
+            }
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_1097_cclmbjk": {
+      "enemyId": "enemy_1097_cclmbjk",
+      "name": "提亚卡乌破坏者",
+      "inEncounterPool": false,
+      "candidateTimingOnly": false,
+      "actions": [
+        {
+          "pathID": 8616666876885110585,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 1,
+            "_preDelay": 1.134,
+            "_timeMode": 0,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 1
+          },
+          "animationTiming": null,
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 0,
+              "_preDelay": 1.134,
+              "_waitForAttackEvent": 1
+            },
+            "timeMode": "FROM_ATTACK_SPEED",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "missing-unambiguous-animation-timing"
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_1097_cclmbjk_2": {
+      "enemyId": "enemy_1097_cclmbjk_2",
+      "name": "提亚卡乌破坏王",
+      "inEncounterPool": false,
+      "candidateTimingOnly": false,
+      "actions": [
+        {
+          "pathID": -927382937125194703,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 1,
+            "_preDelay": 1.134,
+            "_timeMode": 0,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 1
+          },
+          "animationTiming": null,
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 0,
+              "_preDelay": 1.134,
+              "_waitForAttackEvent": 1
+            },
+            "timeMode": "FROM_ATTACK_SPEED",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "missing-unambiguous-animation-timing"
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_1153_dsexcu": {
+      "enemyId": "enemy_1153_dsexcu",
+      "name": "始海穿刺者",
+      "inEncounterPool": true,
+      "candidateTimingOnly": true,
+      "actions": [
+        {
+          "pathID": 1459157794424061935,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 1,
+            "_preDelay": 1.134,
+            "_timeMode": 0,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 1
+          },
+          "animationTiming": {
+            "animation": "Attack",
+            "duration": 1.3333334,
+            "hit": 0.6
+          },
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": true,
+            "raw": {
+              "_timeMode": 0,
+              "_preDelay": 1.134,
+              "_waitForAttackEvent": 1
+            },
+            "timeMode": "FROM_ATTACK_SPEED",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "timing": {
+              "animation": "Attack",
+              "duration": 1.3333334,
+              "hit": 0.6
+            },
+            "contract": {
+              "gate": "ON_ATTACK_EVENT",
+              "eventId": 19,
+              "cycle": "FROM_ATTACK_SPEED",
+              "timeBasis": "existing-normalized-animation-profile",
+              "ignoredConfiguredPreDelay": 1.134,
+              "reason": "Native event branch waits for the event directly; configured delay is neither added nor a minimum hit time",
+              "scope": "Target alive and cast uninterrupted; one known in-duration event. Missing-event timeout, custom overrides, multiple hits and other time modes remain unresolved."
+            }
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_1153_dsexcu_2": {
+      "enemyId": "enemy_1153_dsexcu_2",
+      "name": "富营养的穿刺者",
+      "inEncounterPool": false,
+      "candidateTimingOnly": true,
+      "actions": [
+        {
+          "pathID": 4235924491691705914,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 1,
+            "_preDelay": 1.134,
+            "_timeMode": 0,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 1
+          },
+          "animationTiming": {
+            "animation": "Attack",
+            "duration": 1.3333334,
+            "hit": 0.6
+          },
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": true,
+            "raw": {
+              "_timeMode": 0,
+              "_preDelay": 1.134,
+              "_waitForAttackEvent": 1
+            },
+            "timeMode": "FROM_ATTACK_SPEED",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "timing": {
+              "animation": "Attack",
+              "duration": 1.3333334,
+              "hit": 0.6
+            },
+            "contract": {
+              "gate": "ON_ATTACK_EVENT",
+              "eventId": 19,
+              "cycle": "FROM_ATTACK_SPEED",
+              "timeBasis": "existing-normalized-animation-profile",
+              "ignoredConfiguredPreDelay": 1.134,
+              "reason": "Native event branch waits for the event directly; configured delay is neither added nor a minimum hit time",
+              "scope": "Target alive and cast uninterrupted; one known in-duration event. Missing-event timeout, custom overrides, multiple hits and other time modes remain unresolved."
+            }
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_1177_dufrbl": {
+      "enemyId": "enemy_1177_dufrbl",
+      "name": "净浊之焰",
+      "inEncounterPool": false,
+      "candidateTimingOnly": false,
+      "actions": [
+        {
+          "pathID": -57937065320892769,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "",
+            "_waitForAttackEvent": 0,
+            "_preDelay": 0.1,
+            "_timeMode": 2,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 2
+          },
+          "animationTiming": null,
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 2,
+              "_preDelay": 0.1,
+              "_waitForAttackEvent": 0
+            },
+            "timeMode": "SPECIFIED",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "separate-cycle-contract-required-for-time-mode"
+          }
+        },
+        {
+          "pathID": -8416424926033332577,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "",
+            "_waitForAttackEvent": 0,
+            "_preDelay": 0.0,
+            "_timeMode": 2,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 2
+          },
+          "animationTiming": null,
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 2,
+              "_preDelay": 0.0,
+              "_waitForAttackEvent": 0
+            },
+            "timeMode": "SPECIFIED",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "separate-cycle-contract-required-for-time-mode"
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_1177_dufrbl_2": {
+      "enemyId": "enemy_1177_dufrbl_2",
+      "name": "净浊之焰",
+      "inEncounterPool": false,
+      "candidateTimingOnly": false,
+      "actions": [
+        {
+          "pathID": -57937065320892769,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "",
+            "_waitForAttackEvent": 0,
+            "_preDelay": 0.1,
+            "_timeMode": 2,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 2
+          },
+          "animationTiming": null,
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 2,
+              "_preDelay": 0.1,
+              "_waitForAttackEvent": 0
+            },
+            "timeMode": "SPECIFIED",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "separate-cycle-contract-required-for-time-mode"
+          }
+        },
+        {
+          "pathID": -8416424926033332577,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "",
+            "_waitForAttackEvent": 0,
+            "_preDelay": 0.0,
+            "_timeMode": 2,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 2
+          },
+          "animationTiming": null,
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 2,
+              "_preDelay": 0.0,
+              "_waitForAttackEvent": 0
+            },
+            "timeMode": "SPECIFIED",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "separate-cycle-contract-required-for-time-mode"
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_1348_rllamb": {
+      "enemyId": "enemy_1348_rllamb",
+      "name": "城市“风行者”",
+      "inEncounterPool": false,
+      "candidateTimingOnly": false,
+      "actions": [
+        {
+          "pathID": -3952565950832213323,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 1,
+            "_preDelay": 0.0,
+            "_timeMode": 1,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 2
+          },
+          "animationTiming": {
+            "animation": "Attack",
+            "duration": 1.3333,
+            "hit": 0.6667
+          },
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 1,
+              "_preDelay": 0.0,
+              "_waitForAttackEvent": 1
+            },
+            "timeMode": "FROM_ANIMATION",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "separate-cycle-contract-required-for-time-mode"
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_1348_rllamb_2": {
+      "enemyId": "enemy_1348_rllamb_2",
+      "name": "城市“龙卷风行者”",
+      "inEncounterPool": false,
+      "candidateTimingOnly": false,
+      "actions": [
+        {
+          "pathID": 6106938468974407123,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 1,
+            "_preDelay": 0.0,
+            "_timeMode": 1,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 2
+          },
+          "animationTiming": {
+            "animation": "Attack",
+            "duration": 1.3333,
+            "hit": 0.6667
+          },
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 1,
+              "_preDelay": 0.0,
+              "_waitForAttackEvent": 1
+            },
+            "timeMode": "FROM_ANIMATION",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "separate-cycle-contract-required-for-time-mode"
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_1385_winbom": {
+      "enemyId": "enemy_1385_winbom",
+      "name": "“喷射罐”",
+      "inEncounterPool": false,
+      "candidateTimingOnly": false,
+      "actions": [
+        {
+          "pathID": 3756531754867035318,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "",
+            "_waitForAttackEvent": 1,
+            "_preDelay": 0.0,
+            "_timeMode": 3,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 2
+          },
+          "animationTiming": null,
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 3,
+              "_preDelay": 0.0,
+              "_waitForAttackEvent": 1
+            },
+            "timeMode": "LOAD_FROM_BLACKBOARD",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "separate-cycle-contract-required-for-time-mode"
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_1385_winbom_2": {
+      "enemyId": "enemy_1385_winbom_2",
+      "name": "“喷爆罐”",
+      "inEncounterPool": false,
+      "candidateTimingOnly": false,
+      "actions": [
+        {
+          "pathID": -8227543742256601094,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "",
+            "_waitForAttackEvent": 1,
+            "_preDelay": 0.0,
+            "_timeMode": 3,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 2
+          },
+          "animationTiming": null,
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 3,
+              "_preDelay": 0.0,
+              "_waitForAttackEvent": 1
+            },
+            "timeMode": "LOAD_FROM_BLACKBOARD",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "separate-cycle-contract-required-for-time-mode"
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_1501_demonk": {
+      "enemyId": "enemy_1501_demonk",
+      "name": "萨卡兹百夫长",
+      "inEncounterPool": true,
+      "candidateTimingOnly": true,
+      "actions": [
+        {
+          "pathID": -3713984388123432798,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 1,
+            "_preDelay": 1.134,
+            "_timeMode": 0,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 2
+          },
+          "animationTiming": {
+            "animation": "Attack",
+            "duration": 3.5,
+            "hit": 1.1333
+          },
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": true,
+            "raw": {
+              "_timeMode": 0,
+              "_preDelay": 1.134,
+              "_waitForAttackEvent": 1
+            },
+            "timeMode": "FROM_ATTACK_SPEED",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "timing": {
+              "animation": "Attack",
+              "duration": 3.5,
+              "hit": 1.1333
+            },
+            "contract": {
+              "gate": "ON_ATTACK_EVENT",
+              "eventId": 19,
+              "cycle": "FROM_ATTACK_SPEED",
+              "timeBasis": "existing-normalized-animation-profile",
+              "ignoredConfiguredPreDelay": 1.134,
+              "reason": "Native event branch waits for the event directly; configured delay is neither added nor a minimum hit time",
+              "scope": "Target alive and cast uninterrupted; one known in-duration event. Missing-event timeout, custom overrides, multiple hits and other time modes remain unresolved."
+            }
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_15028_dqmtrb": {
+      "enemyId": "enemy_15028_dqmtrb",
+      "name": "机鳄战甲",
+      "inEncounterPool": false,
+      "candidateTimingOnly": false,
+      "actions": [
+        {
+          "pathID": -4696018034335281406,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 1,
+            "_preDelay": 1.134,
+            "_timeMode": 0,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 1
+          },
+          "animationTiming": null,
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 0,
+              "_preDelay": 1.134,
+              "_waitForAttackEvent": 1
+            },
+            "timeMode": "FROM_ATTACK_SPEED",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "missing-unambiguous-animation-timing"
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_15030_dqsgpr": {
+      "enemyId": "enemy_15030_dqsgpr",
+      "name": "标枪恐鱼",
+      "inEncounterPool": false,
+      "candidateTimingOnly": false,
+      "actions": [
+        {
+          "pathID": -7585134912797562421,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 1,
+            "_preDelay": 1.134,
+            "_timeMode": 0,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 1
+          },
+          "animationTiming": null,
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 0,
+              "_preDelay": 1.134,
+              "_waitForAttackEvent": 1
+            },
+            "timeMode": "FROM_ATTACK_SPEED",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "missing-unambiguous-animation-timing"
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_15068_dqsui": {
+      "enemyId": "enemy_15068_dqsui",
+      "name": "岁相",
+      "inEncounterPool": false,
+      "candidateTimingOnly": false,
+      "actions": [
+        {
+          "pathID": 2978101010605790585,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 1,
+            "_preDelay": 0.0,
+            "_timeMode": 1,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 1,
+            "_projectileKey": "projectile_enemy_sfsui",
+            "_waitForProjectileInvalid": 0,
+            "_projectileDestination": 0,
+            "_extraProjectileKeys": [],
+            "_fireAttackFinishWhenProjectileInvalid": 0,
+            "_waitForAnimEndWhenProjectileInvalid": 0,
+            "_minPostDelayWhenProjectileInvalid": 0.0
+          },
+          "animationTiming": null,
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 1,
+              "_preDelay": 0.0,
+              "_waitForAttackEvent": 1
+            },
+            "timeMode": "FROM_ANIMATION",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "separate-cycle-contract-required-for-time-mode"
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_4022_mushtm": {
+      "enemyId": "enemy_4022_mushtm",
+      "name": "战术队击球手",
+      "inEncounterPool": false,
+      "candidateTimingOnly": false,
+      "actions": [
+        {
+          "pathID": 6484029561650134370,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 1,
+            "_preDelay": 0.0,
+            "_timeMode": 1,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 1
+          },
+          "animationTiming": {
+            "animation": "Attack",
+            "duration": 1.0,
+            "hit": 0.4
+          },
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 1,
+              "_preDelay": 0.0,
+              "_waitForAttackEvent": 1
+            },
+            "timeMode": "FROM_ANIMATION",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "separate-cycle-contract-required-for-time-mode"
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_4022_mushtm_2": {
+      "enemyId": "enemy_4022_mushtm_2",
+      "name": "战术队精英击球手",
+      "inEncounterPool": false,
+      "candidateTimingOnly": false,
+      "actions": [
+        {
+          "pathID": 902078567878883635,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 1,
+            "_preDelay": 0.0,
+            "_timeMode": 1,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 1
+          },
+          "animationTiming": {
+            "animation": "Attack",
+            "duration": 1.0,
+            "hit": 0.4
+          },
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 1,
+              "_preDelay": 0.0,
+              "_waitForAttackEvent": 1
+            },
+            "timeMode": "FROM_ANIMATION",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "separate-cycle-contract-required-for-time-mode"
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_4050_mubbar": {
+      "enemyId": "enemy_4050_mubbar",
+      "name": "深水大力士",
+      "inEncounterPool": false,
+      "candidateTimingOnly": false,
+      "actions": [
+        {
+          "pathID": -5370237984945062788,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 1,
+            "_preDelay": 0.0,
+            "_timeMode": 0,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 1
+          },
+          "animationTiming": null,
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 0,
+              "_preDelay": 0.0,
+              "_waitForAttackEvent": 1
+            },
+            "timeMode": "FROM_ATTACK_SPEED",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "missing-unambiguous-animation-timing"
+          }
+        },
+        {
+          "pathID": -3558758442319332228,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 0,
+            "_preDelay": 0.6,
+            "_timeMode": 0,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 1,
+            "_projectileKey": "projectile_enemy_mubbar",
+            "_waitForProjectileInvalid": 0,
+            "_projectileDestination": 0,
+            "_extraProjectileKeys": [],
+            "_fireAttackFinishWhenProjectileInvalid": 0,
+            "_waitForAnimEndWhenProjectileInvalid": 0,
+            "_minPostDelayWhenProjectileInvalid": 0.0
+          },
+          "animationTiming": null,
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 0,
+              "_preDelay": 0.6,
+              "_waitForAttackEvent": 0
+            },
+            "timeMode": "FROM_ATTACK_SPEED",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "configured-delay-branch-not-compiled"
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_4050_mubbar_2": {
+      "enemyId": "enemy_4050_mubbar_2",
+      "name": "“举重王”深水大力士",
+      "inEncounterPool": false,
+      "candidateTimingOnly": false,
+      "actions": [
+        {
+          "pathID": 2849893603300570716,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 1,
+            "_preDelay": 0.0,
+            "_timeMode": 0,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 1
+          },
+          "animationTiming": null,
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 0,
+              "_preDelay": 0.0,
+              "_waitForAttackEvent": 1
+            },
+            "timeMode": "FROM_ATTACK_SPEED",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "missing-unambiguous-animation-timing"
+          }
+        },
+        {
+          "pathID": 1489123022583723612,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 0,
+            "_preDelay": 0.6,
+            "_timeMode": 0,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 1,
+            "_projectileKey": "projectile_enemy_mubbar",
+            "_waitForProjectileInvalid": 0,
+            "_projectileDestination": 0,
+            "_extraProjectileKeys": [],
+            "_fireAttackFinishWhenProjectileInvalid": 0,
+            "_waitForAnimEndWhenProjectileInvalid": 0,
+            "_minPostDelayWhenProjectileInvalid": 0.0
+          },
+          "animationTiming": null,
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 0,
+              "_preDelay": 0.6,
+              "_waitForAttackEvent": 0
+            },
+            "timeMode": "FROM_ATTACK_SPEED",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "configured-delay-branch-not-compiled"
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_4054_musupm": {
+      "enemyId": "enemy_4054_musupm",
+      "name": "魔球帮击球手",
+      "inEncounterPool": false,
+      "candidateTimingOnly": false,
+      "actions": [
+        {
+          "pathID": 7659386822038357899,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 1,
+            "_preDelay": 0.0,
+            "_timeMode": 1,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 1
+          },
+          "animationTiming": {
+            "animation": "Attack",
+            "duration": 1.0,
+            "hit": 0.4
+          },
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 1,
+              "_preDelay": 0.0,
+              "_waitForAttackEvent": 1
+            },
+            "timeMode": "FROM_ANIMATION",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "separate-cycle-contract-required-for-time-mode"
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_4054_musupm_2": {
+      "enemyId": "enemy_4054_musupm_2",
+      "name": "魔球帮诡秘击球手",
+      "inEncounterPool": false,
+      "candidateTimingOnly": false,
+      "actions": [
+        {
+          "pathID": 7181049047764171662,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 1,
+            "_preDelay": 0.0,
+            "_timeMode": 1,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 1
+          },
+          "animationTiming": {
+            "animation": "Attack",
+            "duration": 1.0,
+            "hit": 0.4
+          },
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 1,
+              "_preDelay": 0.0,
+              "_waitForAttackEvent": 1
+            },
+            "timeMode": "FROM_ANIMATION",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "separate-cycle-contract-required-for-time-mode"
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_4057_mugoam": {
+      "enemyId": "enemy_4057_mugoam",
+      "name": "门神会击球手",
+      "inEncounterPool": false,
+      "candidateTimingOnly": false,
+      "actions": [
+        {
+          "pathID": -7220766893477829143,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 1,
+            "_preDelay": 0.0,
+            "_timeMode": 1,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 1
+          },
+          "animationTiming": {
+            "animation": "Attack",
+            "duration": 1.0,
+            "hit": 0.4
+          },
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 1,
+              "_preDelay": 0.0,
+              "_waitForAttackEvent": 1
+            },
+            "timeMode": "FROM_ANIMATION",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "separate-cycle-contract-required-for-time-mode"
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_4057_mugoam_2": {
+      "enemyId": "enemy_4057_mugoam_2",
+      "name": "门神会忠诚击球手",
+      "inEncounterPool": false,
+      "candidateTimingOnly": false,
+      "actions": [
+        {
+          "pathID": -4827517702106749626,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 1,
+            "_preDelay": 0.0,
+            "_timeMode": 1,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 1
+          },
+          "animationTiming": {
+            "animation": "Attack",
+            "duration": 1.0,
+            "hit": 0.4
+          },
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 1,
+              "_preDelay": 0.0,
+              "_waitForAttackEvent": 1
+            },
+            "timeMode": "FROM_ANIMATION",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "separate-cycle-contract-required-for-time-mode"
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_4060_mulinm": {
+      "enemyId": "enemy_4060_mulinm",
+      "name": "直球队击球手",
+      "inEncounterPool": false,
+      "candidateTimingOnly": false,
+      "actions": [
+        {
+          "pathID": -5559586608014091653,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 1,
+            "_preDelay": 0.0,
+            "_timeMode": 1,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 1
+          },
+          "animationTiming": {
+            "animation": "Attack",
+            "duration": 1.0,
+            "hit": 0.4
+          },
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 1,
+              "_preDelay": 0.0,
+              "_waitForAttackEvent": 1
+            },
+            "timeMode": "FROM_ANIMATION",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "separate-cycle-contract-required-for-time-mode"
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_4060_mulinm_2": {
+      "enemyId": "enemy_4060_mulinm_2",
+      "name": "直球队坚定击球手",
+      "inEncounterPool": false,
+      "candidateTimingOnly": false,
+      "actions": [
+        {
+          "pathID": -678563146895033413,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 1,
+            "_preDelay": 0.0,
+            "_timeMode": 1,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 1
+          },
+          "animationTiming": {
+            "animation": "Attack",
+            "duration": 1.0,
+            "hit": 0.4
+          },
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 1,
+              "_preDelay": 0.0,
+              "_waitForAttackEvent": 1
+            },
+            "timeMode": "FROM_ANIMATION",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "separate-cycle-contract-required-for-time-mode"
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_5001_lazdfd": {
+      "enemyId": "enemy_5001_lazdfd",
+      "name": "无人机",
+      "inEncounterPool": false,
+      "candidateTimingOnly": false,
+      "actions": [
+        {
+          "pathID": -4863024739285890584,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 0,
+            "_preDelay": 0.167,
+            "_timeMode": 0,
+            "_atkScale": 1.0,
+            "_attackType": 0,
+            "_damageType": 1,
+            "_projectileKey": "projectile_enemy_lazdfd",
+            "_waitForProjectileInvalid": 0,
+            "_projectileDestination": 0,
+            "_extraProjectileKeys": [],
+            "_fireAttackFinishWhenProjectileInvalid": 0,
+            "_waitForAnimEndWhenProjectileInvalid": 0,
+            "_minPostDelayWhenProjectileInvalid": 0.0
+          },
+          "animationTiming": null,
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": false,
+            "raw": {
+              "_timeMode": 0,
+              "_preDelay": 0.167,
+              "_waitForAttackEvent": 0
+            },
+            "timeMode": "FROM_ATTACK_SPEED",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "reason": "configured-delay-branch-not-compiled"
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    },
+    "enemy_6020_orang": {
+      "enemyId": "enemy_6020_orang",
+      "name": "“烈酒金刚”",
+      "inEncounterPool": false,
+      "candidateTimingOnly": true,
+      "actions": [
+        {
+          "pathID": 1433659223774571085,
+          "isResolvedRoot": true,
+          "fields": {
+            "_animKey": "Attack",
+            "_waitForAttackEvent": 1,
+            "_preDelay": 1.134,
+            "_timeMode": 0,
+            "_atkScale": 1.0,
+            "_attackType": 1,
+            "_damageType": 1
+          },
+          "animationTiming": {
+            "animation": "Attack",
+            "duration": 1.4667,
+            "hit": 0.9
+          },
+          "result": {
+            "ruleVersion": "native-enemy-event-gate-v1",
+            "accepted": true,
+            "raw": {
+              "_timeMode": 0,
+              "_preDelay": 1.134,
+              "_waitForAttackEvent": 1
+            },
+            "timeMode": "FROM_ATTACK_SPEED",
+            "evidence": {
+              "client": "JP 36.7.22 local IL2CPP snapshot; CN field application is an explicit shared-schema inference",
+              "binarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+              "metadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+              "sourceMetadataSha256": "c3c1a306ef5945be72a68f8c0974ca13429116039c848032e6c373ecd6316ca8",
+              "enum": "AbstractAnimatedAbility.TimeMode fields 85449..85452, signed compressed defaults 0/1/2/3",
+              "event": "Entity.Event.ON_ATTACK_EVENT field 60685 = 19",
+              "preDelayBranch": "AbstractAnimatedAbility.UpdatePlaybackSpeed 0x2522570..0x25225d8: wait=true skips configured _preDelay",
+              "waitBranch": "EasyToStartAbility.OnWaitForPreDelay.MoveNext 0x2524578..0x25245ac: directly WaitForNextEvent(19,cachedDuration)",
+              "waitCompletion": "EasyToStartAbility.WaitForNextEvent.MoveNext 0x252435c..0x2524448; _OnReceiveEvent 0x2523fe0 sets received flag",
+              "artifactDirectory": "work/client-logic/native-enemy-timing-gates"
+            },
+            "timing": {
+              "animation": "Attack",
+              "duration": 1.4667,
+              "hit": 0.9
+            },
+            "contract": {
+              "gate": "ON_ATTACK_EVENT",
+              "eventId": 19,
+              "cycle": "FROM_ATTACK_SPEED",
+              "timeBasis": "existing-normalized-animation-profile",
+              "ignoredConfiguredPreDelay": 1.134,
+              "reason": "Native event branch waits for the event directly; configured delay is neither added nor a minimum hit time",
+              "scope": "Target alive and cast uninterrupted; one known in-duration event. Missing-event timeout, custom overrides, multiple hits and other time modes remain unresolved."
+            }
+          }
+        }
+      ],
+      "remainingBoundary": "Only timing gate resolved; root/mode/projectile selection and runtime integration are separate."
+    }
+  }
+}

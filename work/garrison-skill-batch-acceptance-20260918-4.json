@@ -1,0 +1,39 @@
+{
+  "batch": "room-game-20260918.4",
+  "newLimitedTasks": [
+    "op/char_126_shotst/skill/skchr_shotst_1/source-next-attack-body",
+    "op/char_133_mm/skill/skchr_mm_1/source-next-attack-body",
+    "op/char_294_ayer/skill/skchr_ayer_1/source-next-attack-body",
+    "op/char_103_angel/skill/skchr_angel_2/source-mode-body",
+    "op/char_222_bpipe/skill/skchr_bpipe_3/source-mode-body",
+    "op/char_263_skadi/skill/skchr_skadi_3/source-mode-body",
+    "op/char_279_excu/skill/skchr_excu_2/source-mode-body",
+    "op/char_291_aglina/skill/skchr_aglina_1/source-mode-body",
+    "op/char_332_archet/skill/skchr_archet_3/source-mode-body",
+    "op/char_358_lisa/skill/skchr_lisa_2/source-mode-body",
+    "op/char_202_demkni/skill/skchr_demkni_2/source-direct-body",
+    "op/char_230_savage/skill/skchr_savage_2/source-direct-body",
+    "op/char_4026_vulpis/skill/skchr_vulpis_2/source-direct-body",
+    "op/char_440_pinecn/skill/skchr_pinecn_1/source-direct-body",
+    "op/char_608_acpion/skill/skchr_acpion_1/source-direct-body"
+  ],
+  "retainedHistoricalTask": "op/char_133_mm/skill/skchr_mm_1",
+  "checked": 538,
+  "stats": {
+    "fixedAssociations": 363,
+    "expandedAssociations": 423,
+    "fixedExplicitBefore": 131,
+    "fixedNewExplicit": 8,
+    "fixedExplicitAfter": 139,
+    "fixedPendingAfter": 224,
+    "expandedExplicitBefore": 163,
+    "expandedNewExplicit": 9,
+    "expandedExplicitAfter": 172,
+    "expandedPendingAfter": 251
+  },
+  "notes": {
+    "next-attack": "2026-09-18；下一击通用模板迁移/接入。120源等级、28个实际赛季普通/精锐组合、24次主机恢复通过；本成员为新增3项之一。共享命中Buff精确key、来源与生命周期通过 `_source_hit_buffs_smoke.js`；梅/流星S1另经 `_marksman_skills_smoke.js --source-hit-buffs` 20级、2次主机恢复。原生远程先附Buff合同仅适用已核Projectile.ActionController；DEFAULT覆盖分派、Melee精确时序与完整天赋模组仍未核。不勾整技能。",
+    "skill-modes": "2026-09-18；多Buff/连击/范围模式批次7项，共70源等级、24个实际赛季普通/精锐组合、3类主机恢复通过；见 `_skill_mode_expansion_smoke.js`、`_skill_mode_expansion_seasons_smoke.js`。公共范围扩展另核四朝向、独立到期、基础范围重绑和死亡清理。段数的描述交叉推断及原生帧距边界保留，不勾整技能。",
+    "direct-actions": "2026-09-18；直接施放完整源图批次5项，共50源等级、12个实际赛季普通/精锐组合、10次主机重放通过；见 `_direct_skill_actions_smoke.js` 与 `work/direct-skill-batch-verification.json`。独立技能动作不触发普攻技力，条件分支按精确Buff key；伤害/治疗/穿防/回费按成员图执行。Melee命中Buff先后、DEFAULT重入及精确动画锁仍是边界，不勾整技能。"
+  }
+}

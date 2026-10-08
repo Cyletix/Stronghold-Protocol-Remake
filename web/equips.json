@@ -1,0 +1,3943 @@
+[
+ {
+  "id": "eff_acarm040",
+  "name": "炎国短刀",
+  "desc": "每开启一次技能，获得<@ba.vup>5%</>的攻击力加成（最多叠加10次）",
+  "tier": "normal",
+  "kind": "reactive",
+  "key": "act1vautochess_equip_acarm024_global_buff",
+  "raw": {
+   "prob": 1,
+   "atk_buff_cnt": 10
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "COUNTING",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1vautochess_equip_acarm024_global_buff"
+     },
+     {
+      "key": "prob",
+      "value": 1
+     },
+     {
+      "key": "atk",
+      "value": 0.05
+     },
+     {
+      "key": "atk_buff_cnt",
+      "value": 10
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm041",
+  "name": "维式重锤",
+  "desc": "攻击力<@ba.vup>+15%</>",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "attr_common_global_buff",
+  "mods": {
+   "atk": 1.15
+  },
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "atk",
+      "value": 0.15
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm042",
+  "name": "灼燃维式重锤",
+  "desc": "攻击力<@ba.vup>+30%</>；造成法术伤害附带相当于<@ba.vup>10%</>伤害的<$ba.dt.burning2>灼燃损伤</>",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "attr_common_global_buff",
+  "mods": {
+   "atk": 1.3
+  },
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "atk",
+      "value": 0.3
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm042_global_buff"
+     },
+     {
+      "key": "damage_scale",
+      "value": 0.1
+     },
+     {
+      "key": "big_hammer",
+      "value": "chess_item_6_05_e"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm043",
+  "name": "坚固维式重锤",
+  "desc": "攻击力<@ba.vup>+25%</>；首次受到致命伤害时生命值不低于<@ba.vup>1</>，持续8秒",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "attr_common_global_buff",
+  "mods": {
+   "atk": 1.25
+  },
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "atk",
+      "value": 0.25
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm043_global_buff"
+     },
+     {
+      "key": "undeadable_duration",
+      "value": 8
+     },
+     {
+      "key": "big_hammer",
+      "value": "chess_item_6_05_e"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm044",
+  "name": "加速维式重锤",
+  "desc": "攻击力<@ba.vup>+25%</>；攻击速度<@ba.vup>+30</>",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "attr_common_global_buff",
+  "mods": {
+   "atk": 1.25
+  },
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "atk",
+      "value": 0.25
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm044_global_buff"
+     },
+     {
+      "key": "attack_speed",
+      "value": 30
+     },
+     {
+      "key": "big_hammer",
+      "value": "chess_item_6_05_e"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm045",
+  "name": "战栗维式重锤",
+  "desc": "攻击力<@ba.vup>+20%</>；若携带者是地面干员则攻击时有10%概率使目标<$ba.tremble>战栗</>2秒",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "attr_common_global_buff",
+  "mods": {
+   "atk": 1.2
+  },
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "atk",
+      "value": 0.2
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm045_global_buff"
+     },
+     {
+      "key": "prob",
+      "value": 0.1
+     },
+     {
+      "key": "disarmed_duration",
+      "value": 2
+     },
+     {
+      "key": "big_hammer",
+      "value": "chess_item_6_05_e"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm046",
+  "name": "阿戈尔重刃",
+  "desc": "攻击力<@ba.vup>+40%</>，攻击速度<@ba.vdown>-10</>",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "attr_common_global_buff",
+  "mods": {
+   "atk": 1.4,
+   "aspd": -10
+  },
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "atk",
+      "value": 0.4
+     },
+     {
+      "key": "attack_speed",
+      "value": -10
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm047",
+  "name": "坚守盾牌",
+  "desc": "防御力<@ba.vup>+20%</>",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "attr_common_global_buff",
+  "mods": {
+   "def": 1.2
+  },
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "def",
+      "value": 0.2
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm048",
+  "name": "奥术法阵",
+  "desc": "法术抗性<@ba.vup>+20</>，攻击使目标失去特殊能力<@ba.vup>5</>秒",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "attr_common_global_buff",
+  "raw": {
+   "magic_resistance": 20
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "magic_resistance",
+      "value": 20
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "silence_attachment"
+     },
+     {
+      "key": "silence",
+      "value": 5
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm049",
+  "name": "歌利亚头盔",
+  "desc": "生命值<@ba.vup>+25%</>；部署时若身前一格没有其他干员，生命值额外<@ba.vup>+15%</>",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm049_global_buff",
+  "mods": {
+   "hp": 1.4375
+  },
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm049_global_buff"
+     },
+     {
+      "key": "init_max_hp",
+      "value": 0.25
+     },
+     {
+      "key": "ex_max_hp",
+      "value": 0.15
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm050",
+  "name": "萨尔贡浓茶",
+  "desc": "技力自然回复速度<@ba.vup>+0.15</>/秒",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm050_global_buff",
+  "raw": {
+   "sp_recovery_per_sec": 0.15
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm050_global_buff"
+     },
+     {
+      "key": "sp_recovery_per_sec",
+      "value": 0.15
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm051",
+  "name": "迅捷作战粮",
+  "desc": "部署时，获得<@ba.vup>3</>点技力；每有一个同盟约的其他干员，额外获得<@ba.vup>3</>点技力",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm051_global_buff",
+  "raw": {
+   "sp_each_person": 3
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm051_global_buff"
+     },
+     {
+      "key": "sp_each_person",
+      "value": 3
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm052",
+  "name": "有限加速器",
+  "desc": "每次攻击或治疗后，本场战斗中攻击速度<@ba.vup>+1</>，最高60层",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "act1vautochess_equip_acarm037_global_buff",
+  "mods": {
+   "aspd": 1,
+   "atk": 1
+  },
+  "raw": {
+   "max_buff_cnt": 60
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "COUNTING",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1vautochess_equip_acarm037_global_buff"
+     },
+     {
+      "key": "attack_speed",
+      "value": 1
+     },
+     {
+      "key": "max_buff_cnt",
+      "value": 60
+     },
+     {
+      "key": "atk",
+      "value": 0
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm053",
+  "name": "激光发射器",
+  "desc": "攻击无视目标<@ba.vup>25%</>法术抗性",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "magic_penetrate_global_buff",
+  "raw": {
+   "magic_resist_penetrate": 0.25
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "magic_penetrate_global_buff"
+     },
+     {
+      "key": "magic_resist_penetrate",
+      "value": 0.25
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm054",
+  "name": "蜂鸣器",
+  "desc": "更容易受到攻击，生命值<@ba.vup>+40%</>",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm054_global_buff",
+  "raw": {
+   "taunt_level": 1
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm054_global_buff"
+     },
+     {
+      "key": "taunt_level",
+      "value": 1
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "max_hp",
+      "value": 0.4
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm055",
+  "name": "伪装服",
+  "desc": "首次受到伤害后获得<$ba.invisible>隐匿</>，持续15秒",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "act2autochess_equip_acarm055_global_buff",
+  "raw": {
+   "duration": 15
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act2autochess_equip_acarm055_global_buff"
+     },
+     {
+      "key": "duration",
+      "value": 15
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm056",
+  "name": "不屈弹射器",
+  "desc": "再部署时间<@ba.vup>-30%</>，生命值<@ba.vdown>-30%</>",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm056_global_buff",
+  "mods": {
+   "hp": 0.7
+  },
+  "raw": {
+   "respawn_time": -0.3
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm056_global_buff"
+     },
+     {
+      "key": "respawn_time",
+      "value": -0.3
+     },
+     {
+      "key": "max_hp",
+      "value": -0.3
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm057",
+  "name": "拉特兰桥夹",
+  "desc": "子弹类技能剩余一发子弹时有50%概率恢复40%的子弹（每次部署最多触发3次）",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm057_global_buff",
+  "raw": {
+   "prob": 0.5,
+   "ammo_percent": 0.4,
+   "max_trigger_cnt": 3
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm057_global_buff"
+     },
+     {
+      "key": "prob",
+      "value": 0.5
+     },
+     {
+      "key": "ammo_percent",
+      "value": 0.4
+     },
+     {
+      "key": "max_trigger_cnt",
+      "value": 3
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm058",
+  "name": "催泪瓦斯",
+  "desc": "攻击时有3%概率使目标获得一层<$ba.palsy>麻痹</>",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm058_global_buff",
+  "raw": {
+   "prob": 0.03
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm058_global_buff"
+     },
+     {
+      "key": "prob",
+      "value": 0.03
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm059",
+  "name": "浓缩嗅盐",
+  "desc": "生命值大于70%时，免疫<$ba.stun>晕眩</>、<$ba.frozen>冻结</>等特殊状态",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm059_global_buff",
+  "raw": {
+   "hp_ratio": 0.7
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm059_global_buff"
+     },
+     {
+      "key": "hp_ratio",
+      "value": 0.7
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm060",
+  "name": "防暴盾",
+  "desc": "阻挡敌人时，受到来自非自身阻挡单位的伤害降低<@ba.vup>40%</>",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm060_global_buff",
+  "raw": {
+   "damage_scale": 0.6
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm060_global_buff"
+     },
+     {
+      "key": "damage_scale",
+      "value": 0.6
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm061",
+  "name": "护盾无人机",
+  "desc": "治疗时有10%概率使目标获得1层<$ba.shield>护盾</>（最多1层）",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm061_global_buff",
+  "raw": {
+   "prob": 0.1,
+   "max_stack_cnt": 1
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm061_global_buff"
+     },
+     {
+      "key": "prob",
+      "value": 0.1
+     },
+     {
+      "key": "max_stack_cnt",
+      "value": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm062",
+  "name": "谢拉格不融冰",
+  "desc": "攻击时有12%概率对目标施加1.5秒的<$ba.cold>寒冷</>",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "act1vautochess_equip_acarm003_global_buff",
+  "raw": {
+   "prob": 0.12,
+   "cold": 1.5
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1vautochess_equip_acarm003_global_buff"
+     },
+     {
+      "key": "prob",
+      "value": 0.12
+     },
+     {
+      "key": "cold",
+      "value": 1.5
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm063",
+  "name": "精准狙击镜",
+  "desc": "攻击距离自身3格及以上的目标时，伤害提高<@ba.vup>30%</>",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm063_global_buff",
+  "raw": {
+   "radius": 3,
+   "damage_scale": 1.3
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm063_global_buff"
+     },
+     {
+      "key": "radius",
+      "value": 3
+     },
+     {
+      "key": "damage_scale",
+      "value": 1.3
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm064",
+  "name": "突袭手雷",
+  "desc": "每次部署后的10秒内，攻击时使目标<$ba.stun>晕眩</>2秒",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm064_global_buff",
+  "raw": {
+   "stun": 2,
+   "duration": 10
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm064_global_buff"
+     },
+     {
+      "key": "stun",
+      "value": 2
+     },
+     {
+      "key": "duration",
+      "value": 10
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm065",
+  "name": "休眠子裔",
+  "desc": "每攻击1个目标，回复自身<@ba.vup>2%</>最大生命值",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "act1vautochess_equip_acarm025_global_buff",
+  "raw": {
+   "hp_ratio": 0.02
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1vautochess_equip_acarm025_global_buff"
+     },
+     {
+      "key": "hp_ratio",
+      "value": 0.02
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm066",
+  "name": "盟约之币",
+  "desc": "装备时销毁，并获得<@ba.vup>1</>资金",
+  "tier": "normal",
+  "kind": "use",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "equip_destory_gain_random_coin",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "min",
+      "value": 1
+     },
+     {
+      "key": "max",
+      "value": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm067",
+  "name": "双模机械臂",
+  "desc": "攻击力<@ba.vup>+30%</>，自身造成物理和法术伤害时，伤害类型转化为<$ba.weaknessatk>弱点伤害</>",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm067_global_buff",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm067_global_buff"
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "atk",
+      "value": 0.3
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm068",
+  "name": "M3茧甲",
+  "desc": "战斗阶段被击倒时立刻复活（一场战斗仅<@ba.vup>1</>次）",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm068_global_buff",
+  "raw": {
+   "max_respawn_cnt": 1
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm068_global_buff"
+     },
+     {
+      "key": "max_respawn_cnt",
+      "value": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm069",
+  "name": "拟态物质",
+  "desc": "装备时销毁，若已拥有至少2名该初始干员，则再获得1名该初始干员；否则随机获得1名同盟约初始干员",
+  "tier": "normal",
+  "kind": "use",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "use_equip_reward_char_chess",
+    "countType": "NONE",
+    "blackboard": []
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm070",
+  "name": "人事部文档",
+  "desc": "装备时销毁，最大可部署人数变为9",
+  "tier": "normal",
+  "kind": "use",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "equip_destory_deployment_cnt_change",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 9
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm071",
+  "name": "博士投影",
+  "desc": "任意干员可装备，下个回合开始时销毁，并使该干员晋升为精锐干员",
+  "tier": "normal",
+  "kind": "use",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "equip_round_start_upgrade_char",
+    "countType": "NONE",
+    "blackboard": []
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm072",
+  "name": "突变细胞",
+  "desc": "战斗结束后，装备者替换为高一阶的随机干员",
+  "tier": "normal",
+  "kind": "use",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "char_chess_transformation_equip",
+    "countType": "NONE",
+    "blackboard": []
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm073",
+  "name": "变形同构体",
+  "desc": "携带者获得额外盟约（由另一件携带装备而定）\\n<@ba.acrem>具体对应关系可在模拟中查看本装备天赋栏</>",
+  "tier": "normal",
+  "kind": "none",
+  "raw": {},
+  "mechanics": []
+ },
+ {
+  "id": "eff_acarm074",
+  "name": "商业包装方案",
+  "desc": "每出售8名干员，额外获得一个与此装备携带者的同盟约初始干员（不高于当前调度中心等级）",
+  "tier": "normal",
+  "kind": "use",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "sell_char_count_gain_equip_owner_bond",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 8
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm075",
+  "name": "寻呼模块",
+  "desc": "装备时销毁，立即特殊刷新一次调度中心，出现三名与该干员有相同盟约的干员，免费获取其中一名！（不高于当前调度中心等级）",
+  "tier": "normal",
+  "kind": "use",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "use_equip_reward_special_goods_char_chess",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "refresh_cnt",
+      "value": 3
+     },
+     {
+      "key": "choice_cnt",
+      "value": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm076",
+  "name": "铳骑之威",
+  "desc": "攻击力<@ba.vup>+40%</>；若携带者为【拉特兰】盟约干员，该干员每次攻击时，有35%概率额外对攻击范围内一名敌人发射子弹造成<@ba.vup>150%</>攻击力的物理伤害\\n<@ba.acrem>若该【拉特兰】盟约干员同时装备“拉特兰桥夹”，子弹伤害改为<@ba.vup>300%</>攻击力</>",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm076_global_buff",
+  "raw": {
+   "prob": 0.35,
+   "atk_scale_1": 1.5,
+   "atk_scale_2": 3
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm076_global_buff"
+     },
+     {
+      "key": "equip_chess_id",
+      "value": "chess_item_4_08_e"
+     },
+     {
+      "key": "prob",
+      "value": 0.35
+     },
+     {
+      "key": "atk_scale_1",
+      "value": 1.5
+     },
+     {
+      "key": "atk_scale_2",
+      "value": 3
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "atk",
+      "value": 0.4
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm077",
+  "name": "天师古鼎",
+  "desc": "生命值<@ba.vup>+45%</>；若携带者为【炎】盟约干员，本回合每获得过1名干员战斗开始后攻击速度<@ba.vup>+25</>（最多3层）\\n<@ba.acrem>若该【炎】盟约干员同时装备“炎国短刀”，每次获得干员时获得<@ba.vup>2</>资金（每回合最多3次）</>",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm077_global_buff",
+  "mods": {
+   "aspd": 25
+  },
+  "raw": {
+   "max_cnt": 3
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm077_global_buff"
+     },
+     {
+      "key": "equip_chess_id",
+      "value": "chess_item_3_04_e"
+     },
+     {
+      "key": "attack_speed",
+      "value": 25
+     },
+     {
+      "key": "max_cnt",
+      "value": 3
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "max_hp",
+      "value": 0.45
+     }
+    ]
+   },
+   {
+    "key": "equip_with_another_gain_coin_when_gain_char",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "other_equip",
+      "value": "chess_item_3_04_e_a,chess_item_3_04_e_b"
+     },
+     {
+      "key": "count",
+      "value": 2
+     },
+     {
+      "key": "max",
+      "value": 3
+     },
+     {
+      "key": "bond",
+      "value": "yanShip"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm078",
+  "name": "海沟实验体",
+  "desc": "获得<@ba.vup>180</>点<$ba.dmgresistance>伤害减免</>；若携带者为【阿戈尔】盟约干员，自身受到伤害时对伤害来源造成自身攻击力<@ba.vup>50%</>的法术伤害（每0.5秒最多触发一次）\\n<@ba.acrem>若该【阿戈尔】盟约干员同时装备“阿戈尔重刃”，则自身受到伤害时额外造成一次<@ba.vup>50%</>攻击力的法术伤害（每0.5秒最多触发一次）</>",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "act2autochess_equip_acarm078_global_buff",
+  "raw": {
+   "lock_duration": 0.5,
+   "atk_scale": 0.5
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act2autochess_equip_acarm078_global_buff"
+     },
+     {
+      "key": "equip_chess_id",
+      "value": "chess_item_3_07_e"
+     },
+     {
+      "key": "lock_duration",
+      "value": 0.5
+     },
+     {
+      "key": "atk_scale",
+      "value": 0.5
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "halfidle_block_fixed_damage"
+     },
+     {
+      "key": "value",
+      "value": 180
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm079",
+  "name": "蒸汽之心",
+  "desc": "攻击速度<@ba.vup>+35</>；若携带者为【维多利亚】盟约干员，该干员获得当前场上所有维式重锤特殊效果\\n<@ba.acrem>若该【维多利亚】盟约干员同时装备“维式重锤”系列装备，该“维式重锤”装备特殊效果获得强化（效果变为2倍）</>",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm079_global_buff",
+  "mods": {
+   "aspd": 30
+  },
+  "raw": {
+   "damage_scale": 0.1,
+   "undeadable_duration": 8,
+   "prob": 0.1,
+   "disarmed_duration": 2
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm079_global_buff"
+     },
+     {
+      "key": "hammer_1",
+      "value": "chess_item_4_09_e"
+     },
+     {
+      "key": "hammer_2",
+      "value": "chess_item_3_09_e"
+     },
+     {
+      "key": "hammer_3",
+      "value": "chess_item_3_10_e"
+     },
+     {
+      "key": "hammer_4",
+      "value": "chess_item_2_03_e"
+     },
+     {
+      "key": "damage_scale",
+      "value": 0.1
+     },
+     {
+      "key": "undeadable_duration",
+      "value": 8
+     },
+     {
+      "key": "attack_speed",
+      "value": 30
+     },
+     {
+      "key": "prob",
+      "value": 0.1
+     },
+     {
+      "key": "disarmed_duration",
+      "value": 2
+     },
+     {
+      "key": "big_hammer",
+      "value": "none"
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "attack_speed",
+      "value": 35
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm102",
+  "name": "耶拉冈德之泪",
+  "desc": "法术抗性<@ba.vup>+30</>；若携带者为【谢拉格】盟约干员，该干员攻击范围内被<$ba.cold>寒冷</>或<$ba.frozen>冻结</>的敌人每秒受到一次自身攻击力<@ba.vup>30%</>的法术伤害\\n<@ba.acrem>若该【谢拉格】盟约干员同时装备“谢拉格不融冰”，则使自身攻击范围内<$ba.cold>寒冷</>或<$ba.frozen>冻结</>的敌人每秒受到的法术伤害提升至<@ba.vup>100%</>攻击力</>",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "attr_common_global_buff",
+  "raw": {
+   "magic_resistance": 30
+  },
+  "mechanics": [
+   {
+    "key": "char_dynamic_ability_new",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act2autochess_equip_acarm102_ability"
+     },
+     {
+      "key": "atk_scale",
+      "value": 0.3
+     },
+     {
+      "key": "interval",
+      "value": 1
+     },
+     {
+      "key": "atk_scale_ex",
+      "value": 1
+     },
+     {
+      "key": "equip_chess_id",
+      "value": "chess_item_5_02_e"
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "magic_resistance",
+      "value": 30
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm103",
+  "name": "黄沙罗盘",
+  "desc": "初始技力<@ba.vup>+30</>；若携带者为【萨尔贡】盟约干员，该干员首次技能结束时立刻回复<@ba.vup>30</>点技力\\n<@ba.acrem>若该【萨尔贡】盟约干员同时装备“萨尔贡浓茶”，每次开启技能时为全部【萨尔贡】干员回复<@ba.vup>3</>点技力</>",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm103_global_buff",
+  "raw": {
+   "sp": 30,
+   "addition_sp": 3,
+   "init_sp": 30
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm103_global_buff"
+     },
+     {
+      "key": "equip_chess_id",
+      "value": "chess_item_2_04_e"
+     },
+     {
+      "key": "sp",
+      "value": 30
+     },
+     {
+      "key": "addition_sp",
+      "value": 3
+     },
+     {
+      "key": "init_sp",
+      "value": 30
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm109",
+  "name": "信标",
+  "desc": "装备时，目标干员和本装备销毁并进行一次特殊刷新，出现两名与携带者同等阶的干员，免费获取其中一名\\n<@ba.rem>若在同盟模拟中且存在其他队友，下个休整期向相应盟约人数最多的队友发送1个原干员</>\\n<@ba.acrem>相应盟约人数相同则随机发送</>\\n<@ba.acrem>无法装备给自编干员</>",
+  "tier": "normal",
+  "kind": "use",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "use_equip_recruit_new_char_and_give_char_to_player_most_bond",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "refresh_cnt",
+      "value": 2
+     },
+     {
+      "key": "choice_cnt",
+      "value": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm113",
+  "name": "精打细算玩偶",
+  "desc": "装备时销毁，之后每回合开始时额外获得<@ba.vup>1</>资金",
+  "tier": "normal",
+  "kind": "misc",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "gain_coin_when_round_start",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm114",
+  "name": "简易通讯机",
+  "desc": "装备时销毁，随机获得<@ba.vup>1</>名与该干员有相同盟约的干员",
+  "tier": "normal",
+  "kind": "use",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "use_equip_reward_char_chess_with_same_bond",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm115",
+  "name": "紧急调度券",
+  "desc": "装备时销毁，随机获取当前调度中心内的<@ba.vup>1</>名干员 （调度中心中对应干员消失）",
+  "tier": "normal",
+  "kind": "use",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "use_equip_reward_random_char_chess_in_shop",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm116",
+  "name": "见钱眼开玩偶",
+  "desc": "装备时销毁，下回合额外获得<@ba.vup>2</>资金",
+  "tier": "normal",
+  "kind": "use",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "use_equip_gain_coin_when_next_round_start",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 2
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm117",
+  "name": "天马之枪",
+  "desc": "攻击力<@ba.vup>+40%</>，若与“天马之盔”一起装备，造成伤害时额外造成<@ba.vup>30%</>的真实伤害",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "attr_common_global_buff",
+  "mods": {
+   "atk": 1.4
+  },
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "atk",
+      "value": 0.4
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act2autochess_equip_acarm117_global_buff"
+     },
+     {
+      "key": "equip_chess_id",
+      "value": "chess_item_5_09_e"
+     },
+     {
+      "key": "atk_scale",
+      "value": 0.3
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm118",
+  "name": "天马之盔",
+  "desc": "生命值<@ba.vup>+50%</>，若与“天马之枪”一起装备，每秒回复<@ba.vup>8%</>最大生命值。",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "attr_common_global_buff",
+  "mods": {
+   "hp": 1.5
+  },
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "max_hp",
+      "value": 0.5
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act2autochess_equip_acarm118_global_buff"
+     },
+     {
+      "key": "hp_recovery_per_sec_by_max_hp_ratio",
+      "value": 0.08
+     },
+     {
+      "key": "equip_chess_id",
+      "value": "chess_item_6_01_e"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm119",
+  "name": "卡西米尔竞技旗",
+  "desc": "部署后<@ba.vup>15</>秒内造成的伤害提升至<@ba.vup>135%</>，随后逐渐衰减",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "act2autochess_equip_acarm120_global_buff",
+  "raw": {
+   "damage_scale": 1.35,
+   "interval": 15,
+   "ex_interval": 0.5,
+   "damage_scale_minus": -0.04
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act2autochess_equip_acarm120_global_buff"
+     },
+     {
+      "key": "damage_scale",
+      "value": 1.35
+     },
+     {
+      "key": "interval",
+      "value": 15
+     },
+     {
+      "key": "ex_interval",
+      "value": 0.5
+     },
+     {
+      "key": "damage_scale_minus",
+      "value": -0.04
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm120",
+  "name": "骑士戒律",
+  "desc": "再部署时间<@ba.vup>-40%</>；若携带者为【卡西米尔】盟约干员，开启技能后20s内，使攻击范围内敌人攻击速度<@ba.vup>-35%</>，移动速度<@ba.vup>-35%</>\\n<@ba.acrem>若该【卡西米尔】盟约干员同时装备“卡西米尔竞技旗”，该卡西米尔干员技能持续期间，攻击力<@ba.vup>+100%</>，且受到致命伤害时不撤退，技能结束后退场</>",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm056_global_buff",
+  "mods": {
+   "hp": 1
+  },
+  "raw": {
+   "respawn_time": -0.4
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm056_global_buff"
+     },
+     {
+      "key": "respawn_time",
+      "value": -0.4
+     },
+     {
+      "key": "max_hp",
+      "value": 0
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act2autochess_equip_acarm119_global_buff"
+     },
+     {
+      "key": "duration",
+      "value": 20
+     },
+     {
+      "key": "equip_chess_id",
+      "value": "chess_item_4_07_e"
+     },
+     {
+      "key": "atk",
+      "value": 1
+     }
+    ]
+   },
+   {
+    "key": "char_dynamic_ability_new",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act2autochess_equip_acarm119_ability"
+     },
+     {
+      "key": "move_speed",
+      "value": 0.65
+     },
+     {
+      "key": "attack_speed",
+      "value": 0.65
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm121",
+  "name": "叙拉古正装",
+  "desc": "攻击速度<@ba.vup>+15</>，携带者部署方向左右两侧的我方干员攻击速度<@ba.vup>+10</>",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "attr_common_global_buff",
+  "mods": {
+   "aspd": 15
+  },
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "attack_speed",
+      "value": 15
+     }
+    ]
+   },
+   {
+    "key": "char_dynamic_ability_new",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "at_root",
+      "value": 1
+     },
+     {
+      "key": "key",
+      "value": "act2autochess_equip_acarm121_ability"
+     },
+     {
+      "key": "attack_speed",
+      "value": 10
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm122",
+  "name": "家族徽章",
+  "desc": "技力自然回复速度<@ba.vup>+0.2</>/秒；若携带者为【叙拉古】盟约干员，该干员处于隐匿状态时，攻击力逐渐提升至<@ba.vup>200%</>，持续至隐匿结束后首次造成伤害或干员离场\\n<@ba.acrem>若该【叙拉古】盟约干员同时装备“叙拉古正装”，该叙拉古干员失去隐匿后首次造成伤害时额外造成<@ba.vup>800%</>攻击力的真实伤害</>",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm050_global_buff",
+  "raw": {
+   "sp_recovery_per_sec": 0.2
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm050_global_buff"
+     },
+     {
+      "key": "sp_recovery_per_sec",
+      "value": 0.2
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act2autochess_equip_acarm122_global_buff"
+     },
+     {
+      "key": "equip_chess_id",
+      "value": "chess_item_3_01_e"
+     },
+     {
+      "key": "atk_per_sec",
+      "value": 0.02
+     },
+     {
+      "key": "max_atk",
+      "value": 1
+     },
+     {
+      "key": "atk_scale",
+      "value": 8
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm123",
+  "name": "骑士储蓄罐",
+  "desc": "装备时销毁，并随机获得<@ba.vup>1~6</>资金",
+  "tier": "normal",
+  "kind": "use",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "equip_destory_gain_random_coin",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "min",
+      "value": 1
+     },
+     {
+      "key": "max",
+      "value": 6
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm124",
+  "name": "随身身份牌",
+  "desc": "装备时销毁，并使携带者所属盟约层数<@ba.vup>+3</>（无需激活盟约）",
+  "tier": "normal",
+  "kind": "use",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "use_equip_reward_char_chess_bond_layer",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "layer",
+      "value": 3
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm125",
+  "name": "源石溶剂",
+  "desc": "携带者每秒流失<@ba.vdown>60</>点生命值，攻击力<@ba.vup>+40%</>",
+  "tier": "normal",
+  "kind": "stat",
+  "key": "attr_common_global_buff",
+  "mods": {
+   "atk": 1.4
+  },
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "atk",
+      "value": 0.4
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "periodic_damage"
+     },
+     {
+      "key": "damage",
+      "value": 60
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acchal",
+  "name": "教鞭",
+  "desc": "拖拽至场上使用后，选择一项悬赏任务进行挑战",
+  "tier": "other",
+  "kind": "misc",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "trap_create_self_choice",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "choice_event",
+      "value": "hunter_band_1"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_accopy",
+  "name": "画卷",
+  "desc": "拖拽至场上使用后，获得范围内的干员（包括精锐状态和装备！）",
+  "tier": "other",
+  "kind": "misc",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "trap_copy_front_char",
+    "countType": "NONE",
+    "blackboard": []
+   }
+  ]
+ },
+ {
+  "id": "eff_acdisney",
+  "name": "“神秘顾客”",
+  "desc": "拖拽至场上使用后，选择一项特殊悬赏任务进行挑战；主动销毁时获得1份资金，并将“神秘顾客”传递给下一名玩家",
+  "tier": "other",
+  "kind": "misc",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "trap_create_self_choice",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "choice_event",
+      "value": "hunter_band_1"
+     }
+    ]
+   },
+   {
+    "key": "trap_disney_special",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm040",
+  "name": "炎国短刀",
+  "desc": "每开启一次技能，获得<@ba.vup>8%</>的攻击力加成（最多叠加10次）",
+  "tier": "golden",
+  "kind": "reactive",
+  "key": "act1vautochess_equip_acarm024_global_buff",
+  "raw": {
+   "prob": 1,
+   "atk_buff_cnt": 10
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "COUNTING",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1vautochess_equip_acarm024_global_buff"
+     },
+     {
+      "key": "prob",
+      "value": 1
+     },
+     {
+      "key": "atk",
+      "value": 0.08
+     },
+     {
+      "key": "atk_buff_cnt",
+      "value": 10
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm041",
+  "name": "维式重锤",
+  "desc": "攻击力<@ba.vup>+25%</>",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "attr_common_global_buff",
+  "mods": {
+   "atk": 1.25
+  },
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "atk",
+      "value": 0.25
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm042",
+  "name": "灼燃维式重锤",
+  "desc": "攻击力<@ba.vup>+50%</>；造成法术伤害附带相当于<@ba.vup>10%</>伤害的<$ba.dt.burning2>灼燃损伤</>",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "attr_common_global_buff",
+  "mods": {
+   "atk": 1.5
+  },
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "atk",
+      "value": 0.5
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm042_global_buff"
+     },
+     {
+      "key": "damage_scale",
+      "value": 0.1
+     },
+     {
+      "key": "big_hammer",
+      "value": "chess_item_6_05_e"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm043",
+  "name": "坚固维式重锤",
+  "desc": "攻击力<@ba.vup>+45%</>；首次受到致命伤害时生命值不低于<@ba.vup>1</>，持续8秒",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "attr_common_global_buff",
+  "mods": {
+   "atk": 1.45
+  },
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "atk",
+      "value": 0.45
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm043_global_buff"
+     },
+     {
+      "key": "undeadable_duration",
+      "value": 8
+     },
+     {
+      "key": "big_hammer",
+      "value": "chess_item_6_05_e"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm044",
+  "name": "加速维式重锤",
+  "desc": "攻击力<@ba.vup>+45%</>；攻击速度<@ba.vup>+30</>",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "attr_common_global_buff",
+  "mods": {
+   "atk": 1.45
+  },
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "atk",
+      "value": 0.45
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm044_global_buff"
+     },
+     {
+      "key": "attack_speed",
+      "value": 30
+     },
+     {
+      "key": "big_hammer",
+      "value": "chess_item_6_05_e"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm045",
+  "name": "战栗维式重锤",
+  "desc": "攻击力<@ba.vup>+35%</>；若携带者是地面干员则攻击时有10%概率使目标<$ba.tremble>战栗</>2秒",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "attr_common_global_buff",
+  "mods": {
+   "atk": 1.35
+  },
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "atk",
+      "value": 0.35
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm045_global_buff"
+     },
+     {
+      "key": "prob",
+      "value": 0.1
+     },
+     {
+      "key": "disarmed_duration",
+      "value": 2
+     },
+     {
+      "key": "big_hammer",
+      "value": "chess_item_6_05_e"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm046",
+  "name": "阿戈尔重刃",
+  "desc": "攻击力<@ba.vup>+60%</>，攻击速度<@ba.vdown>-10</>",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "attr_common_global_buff",
+  "mods": {
+   "atk": 1.6,
+   "aspd": -10
+  },
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "atk",
+      "value": 0.6
+     },
+     {
+      "key": "attack_speed",
+      "value": -10
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm047",
+  "name": "坚守盾牌",
+  "desc": "防御力<@ba.vup>+35%</>",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "attr_common_global_buff",
+  "mods": {
+   "def": 1.35
+  },
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "def",
+      "value": 0.35
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm048",
+  "name": "奥术法阵",
+  "desc": "法术抗性<@ba.vup>+30</>，攻击使目标失去特殊能力<@ba.vup>5</>秒",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "attr_common_global_buff",
+  "raw": {
+   "magic_resistance": 30
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "magic_resistance",
+      "value": 30
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "silence_attachment"
+     },
+     {
+      "key": "silence",
+      "value": 5
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm049",
+  "name": "歌利亚头盔",
+  "desc": "生命值<@ba.vup>+45%</>；部署时若身前一格没有其他干员，生命值额外<@ba.vup>+25%</>",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm049_global_buff",
+  "mods": {
+   "hp": 1.8125
+  },
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm049_global_buff"
+     },
+     {
+      "key": "init_max_hp",
+      "value": 0.45
+     },
+     {
+      "key": "ex_max_hp",
+      "value": 0.25
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm050",
+  "name": "萨尔贡浓茶",
+  "desc": "技力自然回复速度<@ba.vup>+0.25</>/秒",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm050_global_buff",
+  "raw": {
+   "sp_recovery_per_sec": 0.25
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm050_global_buff"
+     },
+     {
+      "key": "sp_recovery_per_sec",
+      "value": 0.25
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm051",
+  "name": "迅捷作战粮",
+  "desc": "部署时，获得<@ba.vup>6</>点技力；每有一个同盟约的其他干员，额外获得<@ba.vup>6</>点技力",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm051_global_buff",
+  "raw": {
+   "sp_each_person": 6
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm051_global_buff"
+     },
+     {
+      "key": "sp_each_person",
+      "value": 6
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm052",
+  "name": "有限加速器",
+  "desc": "每次攻击或治疗后，本场战斗中攻击速度<@ba.vup>+2</>，最高60层",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "act1vautochess_equip_acarm037_global_buff",
+  "mods": {
+   "aspd": 2,
+   "atk": 1
+  },
+  "raw": {
+   "max_buff_cnt": 60
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "COUNTING",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1vautochess_equip_acarm037_global_buff"
+     },
+     {
+      "key": "attack_speed",
+      "value": 2
+     },
+     {
+      "key": "max_buff_cnt",
+      "value": 60
+     },
+     {
+      "key": "atk",
+      "value": 0
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm053",
+  "name": "激光发射器",
+  "desc": "攻击无视目标<@ba.vup>45%</>法术抗性",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "magic_penetrate_global_buff",
+  "raw": {
+   "magic_resist_penetrate": 0.45
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "magic_penetrate_global_buff"
+     },
+     {
+      "key": "magic_resist_penetrate",
+      "value": 0.45
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm054",
+  "name": "蜂鸣器",
+  "desc": "更容易受到攻击，生命值<@ba.vup>+60%</>",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm054_global_buff",
+  "raw": {
+   "taunt_level": 1
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm054_global_buff"
+     },
+     {
+      "key": "taunt_level",
+      "value": 1
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "max_hp",
+      "value": 0.6
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm055",
+  "name": "伪装服",
+  "desc": "首次受到伤害后获得<$ba.invisible>隐匿</>，持续25秒",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "act2autochess_equip_acarm055_global_buff",
+  "raw": {
+   "duration": 25
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act2autochess_equip_acarm055_global_buff"
+     },
+     {
+      "key": "duration",
+      "value": 25
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm056",
+  "name": "不屈弹射器",
+  "desc": "再部署时间<@ba.vup>-50%</>，生命值<@ba.vdown>-30%</>",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm056_global_buff",
+  "mods": {
+   "hp": 0.7
+  },
+  "raw": {
+   "respawn_time": -0.5
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm056_global_buff"
+     },
+     {
+      "key": "respawn_time",
+      "value": -0.5
+     },
+     {
+      "key": "max_hp",
+      "value": -0.3
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm057",
+  "name": "拉特兰桥夹",
+  "desc": "子弹类技能剩余一发子弹时有60%概率恢复60%的子弹（每次部署最多触发3次）",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm057_global_buff",
+  "raw": {
+   "prob": 0.6,
+   "ammo_percent": 0.6,
+   "max_trigger_cnt": 3
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm057_global_buff"
+     },
+     {
+      "key": "prob",
+      "value": 0.6
+     },
+     {
+      "key": "ammo_percent",
+      "value": 0.6
+     },
+     {
+      "key": "max_trigger_cnt",
+      "value": 3
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm058",
+  "name": "催泪瓦斯",
+  "desc": "攻击时有5%概率使目标获得一层<$ba.palsy>麻痹</>",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm058_global_buff",
+  "raw": {
+   "prob": 0.05
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm058_global_buff"
+     },
+     {
+      "key": "prob",
+      "value": 0.05
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm059",
+  "name": "浓缩嗅盐",
+  "desc": "生命值大于40%时，免疫<$ba.stun>晕眩</>、<$ba.frozen>冻结</>等特殊状态",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm059_global_buff",
+  "raw": {
+   "hp_ratio": 0.4
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm059_global_buff"
+     },
+     {
+      "key": "hp_ratio",
+      "value": 0.4
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm060",
+  "name": "防暴盾",
+  "desc": "阻挡敌人时，受到来自非自身阻挡单位的伤害降低<@ba.vup>70%</>",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm060_global_buff",
+  "raw": {
+   "damage_scale": 0.3
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm060_global_buff"
+     },
+     {
+      "key": "damage_scale",
+      "value": 0.3
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm061",
+  "name": "护盾无人机",
+  "desc": "治疗时有15%概率使目标获得1层<$ba.shield>护盾</>（最多1层）",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm061_global_buff",
+  "raw": {
+   "prob": 0.15,
+   "max_stack_cnt": 1
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm061_global_buff"
+     },
+     {
+      "key": "prob",
+      "value": 0.15
+     },
+     {
+      "key": "max_stack_cnt",
+      "value": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm062",
+  "name": "谢拉格不融冰",
+  "desc": "攻击时有20%概率对目标施加1.5秒的<$ba.cold>寒冷</>",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "act1vautochess_equip_acarm003_global_buff",
+  "raw": {
+   "prob": 0.2,
+   "cold": 1.5
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1vautochess_equip_acarm003_global_buff"
+     },
+     {
+      "key": "prob",
+      "value": 0.2
+     },
+     {
+      "key": "cold",
+      "value": 1.5
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm063",
+  "name": "精准狙击镜",
+  "desc": "攻击距离自身3格及以上的目标时，伤害提高<@ba.vup>50%</>",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm063_global_buff",
+  "raw": {
+   "radius": 3,
+   "damage_scale": 1.5
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm063_global_buff"
+     },
+     {
+      "key": "radius",
+      "value": 3
+     },
+     {
+      "key": "damage_scale",
+      "value": 1.5
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm064",
+  "name": "突袭手雷",
+  "desc": "每次部署后的15秒内，攻击时使目标<$ba.stun>晕眩</>2秒",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm064_global_buff",
+  "raw": {
+   "stun": 2,
+   "duration": 15
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm064_global_buff"
+     },
+     {
+      "key": "stun",
+      "value": 2
+     },
+     {
+      "key": "duration",
+      "value": 15
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm065",
+  "name": "休眠子裔",
+  "desc": "每攻击1个目标，回复自身<@ba.vup>4%</>最大生命值",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "act1vautochess_equip_acarm025_global_buff",
+  "raw": {
+   "hp_ratio": 0.04
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1vautochess_equip_acarm025_global_buff"
+     },
+     {
+      "key": "hp_ratio",
+      "value": 0.04
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm066",
+  "name": "盟约之币",
+  "desc": "装备时销毁，并获得<@ba.vup>2</>资金",
+  "tier": "golden",
+  "kind": "use",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "equip_destory_gain_random_coin",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "min",
+      "value": 2
+     },
+     {
+      "key": "max",
+      "value": 2
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm067",
+  "name": "双模机械臂",
+  "desc": "攻击力<@ba.vup>+50%</>，自身造成物理和法术伤害时，伤害类型转化为<$ba.weaknessatk>弱点伤害</>",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm067_global_buff",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm067_global_buff"
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "atk",
+      "value": 0.5
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm068",
+  "name": "M3茧甲",
+  "desc": "战斗阶段被击倒时立刻复活（一场战斗仅<@ba.vup>2</>次）",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm068_global_buff",
+  "raw": {
+   "max_respawn_cnt": 2
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm068_global_buff"
+     },
+     {
+      "key": "max_respawn_cnt",
+      "value": 2
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm069",
+  "name": "拟态物质",
+  "desc": "装备时销毁，若已拥有至少2名该初始干员，则再获得1名该初始干员；否则随机获得1名同盟约初始干员",
+  "tier": "golden",
+  "kind": "use",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "use_equip_reward_char_chess",
+    "countType": "NONE",
+    "blackboard": []
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm070",
+  "name": "人事部文档",
+  "desc": "装备时销毁，最大可部署人数变为9",
+  "tier": "golden",
+  "kind": "use",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "equip_destory_deployment_cnt_change",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 9
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm071",
+  "name": "博士投影",
+  "desc": "任意干员可装备，立即使该干员晋升为精锐干员",
+  "tier": "golden",
+  "kind": "use",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "use_equip_upgrade_char",
+    "countType": "NONE",
+    "blackboard": []
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm072",
+  "name": "突变细胞",
+  "desc": "战斗结束后，装备者替换为高一阶的随机干员",
+  "tier": "golden",
+  "kind": "use",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "char_chess_transformation_equip",
+    "countType": "NONE",
+    "blackboard": []
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm073",
+  "name": "变形同构体",
+  "desc": "携带者获得额外盟约（由另一件携带装备而定）\\n<@ba.acrem>具体对应关系可在模拟中查看本装备天赋栏</>",
+  "tier": "golden",
+  "kind": "none",
+  "raw": {},
+  "mechanics": []
+ },
+ {
+  "id": "eff_acgarm074",
+  "name": "商业包装方案",
+  "desc": "每出售7名干员，额外获得一个与此装备携带者的同盟约初始干员（不高于当前调度中心等级）",
+  "tier": "golden",
+  "kind": "use",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "sell_char_count_gain_equip_owner_bond",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 7
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm075",
+  "name": "寻呼模块",
+  "desc": "装备时销毁，立即特殊刷新一次调度中心，出现三名与该干员有相同盟约的干员，免费获取其中一名！（不高于当前调度中心等级）",
+  "tier": "golden",
+  "kind": "use",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "use_equip_reward_special_goods_char_chess",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "refresh_cnt",
+      "value": 3
+     },
+     {
+      "key": "choice_cnt",
+      "value": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm076",
+  "name": "铳骑之威",
+  "desc": "攻击力<@ba.vup>+60%</>；若携带者为【拉特兰】盟约干员，该干员每次攻击时，有35%概率额外对攻击范围内一名敌人发射子弹造成<@ba.vup>150%</>攻击力的物理伤害\\n<@ba.acrem>若该【拉特兰】盟约干员同时装备“拉特兰桥夹”，子弹伤害改为<@ba.vup>300%</>攻击力</>",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm076_global_buff",
+  "raw": {
+   "prob": 0.35,
+   "atk_scale_1": 1.5,
+   "atk_scale_2": 3
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm076_global_buff"
+     },
+     {
+      "key": "equip_chess_id",
+      "value": "chess_item_4_08_e"
+     },
+     {
+      "key": "prob",
+      "value": 0.35
+     },
+     {
+      "key": "atk_scale_1",
+      "value": 1.5
+     },
+     {
+      "key": "atk_scale_2",
+      "value": 3
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "atk",
+      "value": 0.6
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm077",
+  "name": "天师古鼎",
+  "desc": "生命值<@ba.vup>+70%</>；若携带者为【炎】盟约干员，本回合每获得过1名干员战斗开始后攻击速度<@ba.vup>+25</>（最多3层）\\n<@ba.acrem>若该【炎】盟约干员同时装备“炎国短刀”，每次获得干员时获得<@ba.vup>2</>资金（每回合最多3次）</>",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm077_global_buff",
+  "mods": {
+   "aspd": 25
+  },
+  "raw": {
+   "max_cnt": 3
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm077_global_buff"
+     },
+     {
+      "key": "equip_chess_id",
+      "value": "chess_item_3_04_e"
+     },
+     {
+      "key": "attack_speed",
+      "value": 25
+     },
+     {
+      "key": "max_cnt",
+      "value": 3
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "max_hp",
+      "value": 0.7
+     }
+    ]
+   },
+   {
+    "key": "equip_with_another_gain_coin_when_gain_char",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "other_equip",
+      "value": "chess_item_3_04_e_a,chess_item_3_04_e_b"
+     },
+     {
+      "key": "count",
+      "value": 2
+     },
+     {
+      "key": "max",
+      "value": 3
+     },
+     {
+      "key": "bond",
+      "value": "yanShip"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm078",
+  "name": "海沟实验体",
+  "desc": "获得<@ba.vup>300</>点<$ba.dmgresistance>伤害减免</>；若携带者为【阿戈尔】盟约干员，自身受到伤害时对伤害来源造成自身攻击力<@ba.vup>50%</>的法术伤害（每0.5秒最多触发一次）\\n<@ba.acrem>若该【阿戈尔】盟约干员同时装备“阿戈尔重刃”，则自身受到伤害时额外造成一次<@ba.vup>50%</>的攻击力的法术伤害（每0.5秒最多触发一次）</>",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "act2autochess_equip_acarm078_global_buff",
+  "raw": {
+   "lock_duration": 0.5,
+   "atk_scale": 0.5
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act2autochess_equip_acarm078_global_buff"
+     },
+     {
+      "key": "equip_chess_id",
+      "value": "chess_item_3_07_e"
+     },
+     {
+      "key": "lock_duration",
+      "value": 0.5
+     },
+     {
+      "key": "atk_scale",
+      "value": 0.5
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "halfidle_block_fixed_damage"
+     },
+     {
+      "key": "value",
+      "value": 300
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm079",
+  "name": "蒸汽之心",
+  "desc": "攻击速度<@ba.vup>+55</>；若携带者为【维多利亚】盟约干员，该干员获得当前场上所有维式重锤特殊效果\\n<@ba.acrem>若该【维多利亚】盟约干员同时装备“维式重锤”系列装备，该“维式重锤”装备特殊效果获得强化（效果变为2倍）</>",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm079_global_buff",
+  "mods": {
+   "aspd": 30
+  },
+  "raw": {
+   "damage_scale": 0.1,
+   "undeadable_duration": 8,
+   "prob": 0.1,
+   "disarmed_duration": 2
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm079_global_buff"
+     },
+     {
+      "key": "hammer_1",
+      "value": "chess_item_4_09_e"
+     },
+     {
+      "key": "hammer_2",
+      "value": "chess_item_3_09_e"
+     },
+     {
+      "key": "hammer_3",
+      "value": "chess_item_3_10_e"
+     },
+     {
+      "key": "hammer_4",
+      "value": "chess_item_2_03_e"
+     },
+     {
+      "key": "damage_scale",
+      "value": 0.1
+     },
+     {
+      "key": "undeadable_duration",
+      "value": 8
+     },
+     {
+      "key": "attack_speed",
+      "value": 30
+     },
+     {
+      "key": "prob",
+      "value": 0.1
+     },
+     {
+      "key": "disarmed_duration",
+      "value": 2
+     },
+     {
+      "key": "big_hammer",
+      "value": "none"
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "attack_speed",
+      "value": 55
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm102",
+  "name": "耶拉冈德之泪",
+  "desc": "法术抗性<@ba.vup>+50</>；若携带者为【谢拉格】盟约干员，该干员攻击范围内被<$ba.cold>寒冷</>或<$ba.frozen>冻结</>的敌人每秒受到一次自身攻击力<@ba.vup>30%</>的法术伤害\\n<@ba.acrem>若该【谢拉格】盟约干员同时装备“谢拉格不融冰”，则使自身攻击范围内<$ba.cold>寒冷</>或<$ba.frozen>冻结</>的敌人每秒受到的法术伤害提升至<@ba.vup>100%</>攻击力</>",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "attr_common_global_buff",
+  "raw": {
+   "magic_resistance": 50
+  },
+  "mechanics": [
+   {
+    "key": "char_dynamic_ability_new",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act2autochess_equip_acarm102_ability"
+     },
+     {
+      "key": "atk_scale",
+      "value": 0.3
+     },
+     {
+      "key": "interval",
+      "value": 1
+     },
+     {
+      "key": "atk_scale_ex",
+      "value": 1
+     },
+     {
+      "key": "equip_chess_id",
+      "value": "chess_item_5_02_e"
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "magic_resistance",
+      "value": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm103",
+  "name": "黄沙罗盘",
+  "desc": "初始技力<@ba.vup>+50</>；若携带者为【萨尔贡】盟约干员，该干员首次技能结束时立刻回复<@ba.vup>30</>点技力\\n<@ba.acrem>若该【萨尔贡】盟约干员同时装备“萨尔贡浓茶”，每次开启技能时为全部【萨尔贡】干员回复<@ba.vup>3</>点技力</>",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm103_global_buff",
+  "raw": {
+   "sp": 30,
+   "addition_sp": 3,
+   "init_sp": 50
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm103_global_buff"
+     },
+     {
+      "key": "equip_chess_id",
+      "value": "chess_item_2_04_e"
+     },
+     {
+      "key": "sp",
+      "value": 30
+     },
+     {
+      "key": "addition_sp",
+      "value": 3
+     },
+     {
+      "key": "init_sp",
+      "value": 50
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm109",
+  "name": "信标",
+  "desc": "装备时，目标干员和本装备销毁并进行一次特殊刷新，出现两名与携带者同等阶的干员，免费获取其中一名\\n<@ba.rem>若在同盟模拟中且存在其他队友，下个休整期向相应盟约人数最多的队友发送1个原干员</>\\n<@ba.acrem>相应盟约人数相同则随机发送</>\\n<@ba.acrem>无法装备给自编干员</>",
+  "tier": "golden",
+  "kind": "use",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "use_equip_recruit_new_char_and_give_char_to_player_most_bond",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "refresh_cnt",
+      "value": 2
+     },
+     {
+      "key": "choice_cnt",
+      "value": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm113",
+  "name": "精打细算玩偶",
+  "desc": "装备时销毁，之后每回合开始时额外获得<@ba.vup>2</>资金",
+  "tier": "golden",
+  "kind": "misc",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "gain_coin_when_round_start",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 2
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm114",
+  "name": "简易通讯机",
+  "desc": "装备时销毁，随机获得<@ba.vup>2</>名与该干员有相同盟约的干员",
+  "tier": "golden",
+  "kind": "use",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "use_equip_reward_char_chess_with_same_bond",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 2
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm115",
+  "name": "紧急调度券",
+  "desc": "装备时销毁，随机获取当前调度中心内的<@ba.vup>2</>名干员 （调度中心中对应干员消失）",
+  "tier": "golden",
+  "kind": "use",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "use_equip_reward_random_char_chess_in_shop",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 2
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm116",
+  "name": "见钱眼开玩偶",
+  "desc": "装备时销毁，下回合额外获得<@ba.vup>4</>资金",
+  "tier": "golden",
+  "kind": "use",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "use_equip_gain_coin_when_next_round_start",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 4
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm117",
+  "name": "天马之枪",
+  "desc": "攻击力<@ba.vup>+60%</>，若与“天马之盔”一起装备，造成伤害时额外造成<@ba.vup>30%</>的真实伤害",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "attr_common_global_buff",
+  "mods": {
+   "atk": 1.6
+  },
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "atk",
+      "value": 0.6
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act2autochess_equip_acarm117_global_buff"
+     },
+     {
+      "key": "equip_chess_id",
+      "value": "chess_item_5_09_e"
+     },
+     {
+      "key": "atk_scale",
+      "value": 0.3
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm118",
+  "name": "天马之盔",
+  "desc": "生命值<@ba.vup>+75%</>，若与“天马之枪”一起装备，每秒回复<@ba.vup>8%</>最大生命值。",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "attr_common_global_buff",
+  "mods": {
+   "hp": 1.75
+  },
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "max_hp",
+      "value": 0.75
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act2autochess_equip_acarm118_global_buff"
+     },
+     {
+      "key": "hp_recovery_per_sec_by_max_hp_ratio",
+      "value": 0.08
+     },
+     {
+      "key": "equip_chess_id",
+      "value": "chess_item_6_01_e"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm119",
+  "name": "卡西米尔竞技旗",
+  "desc": "部署后<@ba.vup>15</>秒内造成的伤害提升至<@ba.vup>160%</>，随后逐渐衰减",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "act2autochess_equip_acarm120_global_buff",
+  "raw": {
+   "damage_scale": 1.6,
+   "interval": 15,
+   "ex_interval": 0.5,
+   "damage_scale_minus": -0.07
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act2autochess_equip_acarm120_global_buff"
+     },
+     {
+      "key": "damage_scale",
+      "value": 1.6
+     },
+     {
+      "key": "interval",
+      "value": 15
+     },
+     {
+      "key": "ex_interval",
+      "value": 0.5
+     },
+     {
+      "key": "damage_scale_minus",
+      "value": -0.07
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm120",
+  "name": "骑士戒律",
+  "desc": "再部署时间<@ba.vup>-60%</>；若携带者为【卡西米尔】盟约干员，开启技能后20s内，使攻击范围内敌人攻击速度<@ba.vup>-35%</>，移动速度<@ba.vup>-35%</>\\n<@ba.acrem>若该【卡西米尔】盟约干员同时装备“卡西米尔竞技旗”，该卡西米尔干员技能持续期间，攻击力<@ba.vup>+100%</>，且受到致命伤害时不撤退，技能结束后退场</>",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm056_global_buff",
+  "mods": {
+   "hp": 1
+  },
+  "raw": {
+   "respawn_time": -0.6
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm056_global_buff"
+     },
+     {
+      "key": "respawn_time",
+      "value": -0.6
+     },
+     {
+      "key": "max_hp",
+      "value": 0
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act2autochess_equip_acarm119_global_buff"
+     },
+     {
+      "key": "duration",
+      "value": 20
+     },
+     {
+      "key": "equip_chess_id",
+      "value": "chess_item_4_07_e"
+     },
+     {
+      "key": "atk",
+      "value": 1
+     }
+    ]
+   },
+   {
+    "key": "char_dynamic_ability_new",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act2autochess_equip_acarm119_ability"
+     },
+     {
+      "key": "move_speed",
+      "value": 0.65
+     },
+     {
+      "key": "attack_speed",
+      "value": 0.65
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm121",
+  "name": "叙拉古正装",
+  "desc": "攻击速度<@ba.vup>+25</>，携带者部署方向左右两侧的我方干员攻击速度<@ba.vup>+15</>",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "attr_common_global_buff",
+  "mods": {
+   "aspd": 25
+  },
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "attack_speed",
+      "value": 25
+     }
+    ]
+   },
+   {
+    "key": "char_dynamic_ability_new",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "at_root",
+      "value": 1
+     },
+     {
+      "key": "key",
+      "value": "act2autochess_equip_acarm121_ability"
+     },
+     {
+      "key": "attack_speed",
+      "value": 15
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm122",
+  "name": "家族徽章",
+  "desc": "技力自然回复速度<@ba.vup>+0.35</>/秒；若携带者为【叙拉古】盟约干员，该干员处于隐匿状态时，攻击力逐渐提升至<@ba.vup>200%</>，持续至隐匿结束后首次造成伤害或干员离场\\n<@ba.acrem>若该【叙拉古】盟约干员同时装备“叙拉古正装”，该叙拉古干员失去隐匿后首次造成伤害时额外造成<@ba.vup>800%</>攻击力的真实伤害</>",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "act1autochess_equip_acarm050_global_buff",
+  "raw": {
+   "sp_recovery_per_sec": 0.35
+  },
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act1autochess_equip_acarm050_global_buff"
+     },
+     {
+      "key": "sp_recovery_per_sec",
+      "value": 0.35
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "act2autochess_equip_acarm122_global_buff"
+     },
+     {
+      "key": "equip_chess_id",
+      "value": "chess_item_3_01_e"
+     },
+     {
+      "key": "atk_per_sec",
+      "value": 0.02
+     },
+     {
+      "key": "max_atk",
+      "value": 1
+     },
+     {
+      "key": "atk_scale",
+      "value": 8
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm123",
+  "name": "骑士储蓄罐",
+  "desc": "装备时销毁，并随机获得<@ba.vup>2~12</>资金",
+  "tier": "golden",
+  "kind": "use",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "equip_destory_gain_random_coin",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "min",
+      "value": 2
+     },
+     {
+      "key": "max",
+      "value": 12
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm124",
+  "name": "随身身份牌",
+  "desc": "装备时销毁，并使携带者所属盟约层数<@ba.vup>+6</>（无需激活盟约）",
+  "tier": "golden",
+  "kind": "use",
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "use_equip_reward_char_chess_bond_layer",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "layer",
+      "value": 6
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm125",
+  "name": "源石溶剂",
+  "desc": "携带者每秒流失<@ba.vdown>60</>点生命值，攻击力<@ba.vup>+60%</>",
+  "tier": "golden",
+  "kind": "stat",
+  "key": "attr_common_global_buff",
+  "mods": {
+   "atk": 1.6
+  },
+  "raw": {},
+  "mechanics": [
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "attr_common_global_buff"
+     },
+     {
+      "key": "atk",
+      "value": 0.6
+     }
+    ]
+   },
+   {
+    "key": "env_gbuff_new_with_verify",
+    "countType": "NONE",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": "periodic_damage"
+     },
+     {
+      "key": "damage",
+      "value": 60
+     }
+    ]
+   }
+  ]
+ }
+]

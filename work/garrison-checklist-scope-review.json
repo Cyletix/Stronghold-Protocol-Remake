@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "selectedTasks": 30,
+  "members": 15,
+  "checkedHistoricalTasksPreserved": 509,
+  "unrelatedTasksPreserved": 6321,
+  "providerMigrationsVerified": 6,
+  "unknownHistoricalTaskPreserved": true,
+  "unrelatedOperatorMetadataPreserved": true,
+  "counts": {
+    "fixedAssociations": 363,
+    "expandedAssociations": 423,
+    "fixedExplicitBefore": 125,
+    "fixedNewExplicit": 6,
+    "fixedExplicitAfter": 131,
+    "fixedPendingAfter": 232,
+    "expandedExplicitBefore": 154,
+    "expandedNewExplicit": 9,
+    "expandedExplicitAfter": 163,
+    "expandedPendingAfter": 260
+  }
+}

@@ -1,0 +1,1687 @@
+{
+ "traps": {
+  "chess_item_3_04_e_a": {
+   "chessId": "chess_item_3_04_e_a",
+   "charId": "trap_1040_acarm040",
+   "name": "炎国短刀",
+   "purchasePrice": 2,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_3_04_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm040"
+  },
+  "chess_item_1_01_e_a": {
+   "chessId": "chess_item_1_01_e_a",
+   "charId": "trap_1041_acarm041",
+   "name": "维式重锤",
+   "purchasePrice": 1,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_1_01_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm041"
+  },
+  "chess_item_4_09_e_a": {
+   "chessId": "chess_item_4_09_e_a",
+   "charId": "trap_1042_acarm042",
+   "name": "灼燃维式重锤",
+   "purchasePrice": 2,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_4_09_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm042"
+  },
+  "chess_item_3_09_e_a": {
+   "chessId": "chess_item_3_09_e_a",
+   "charId": "trap_1043_acarm043",
+   "name": "坚固维式重锤",
+   "purchasePrice": 2,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_3_09_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm043"
+  },
+  "chess_item_3_10_e_a": {
+   "chessId": "chess_item_3_10_e_a",
+   "charId": "trap_1044_acarm044",
+   "name": "加速维式重锤",
+   "purchasePrice": 2,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_3_10_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm044"
+  },
+  "chess_item_2_03_e_a": {
+   "chessId": "chess_item_2_03_e_a",
+   "charId": "trap_1045_acarm045",
+   "name": "战栗维式重锤",
+   "purchasePrice": 2,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_2_03_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm045"
+  },
+  "chess_item_3_07_e_a": {
+   "chessId": "chess_item_3_07_e_a",
+   "charId": "trap_1046_acarm046",
+   "name": "阿戈尔重刃",
+   "purchasePrice": 2,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_3_07_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm046"
+  },
+  "chess_item_1_02_e_a": {
+   "chessId": "chess_item_1_02_e_a",
+   "charId": "trap_1047_acarm047",
+   "name": "坚守盾牌",
+   "purchasePrice": 1,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_1_02_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm047"
+  },
+  "chess_item_3_08_e_a": {
+   "chessId": "chess_item_3_08_e_a",
+   "charId": "trap_1048_acarm048",
+   "name": "奥术法阵",
+   "purchasePrice": 1,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_3_08_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm048"
+  },
+  "chess_item_3_06_e_a": {
+   "chessId": "chess_item_3_06_e_a",
+   "charId": "trap_1049_acarm049",
+   "name": "歌利亚头盔",
+   "purchasePrice": 2,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_3_06_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm049"
+  },
+  "chess_item_2_04_e_a": {
+   "chessId": "chess_item_2_04_e_a",
+   "charId": "trap_1050_acarm050",
+   "name": "萨尔贡浓茶",
+   "purchasePrice": 2,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_2_04_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm050"
+  },
+  "chess_item_3_05_e_a": {
+   "chessId": "chess_item_3_05_e_a",
+   "charId": "trap_1051_acarm051",
+   "name": "迅捷作战粮",
+   "purchasePrice": 2,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_3_05_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm051"
+  },
+  "chess_item_4_03_e_a": {
+   "chessId": "chess_item_4_03_e_a",
+   "charId": "trap_1052_acarm052",
+   "name": "有限加速器",
+   "purchasePrice": 2,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_4_03_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm052"
+  },
+  "chess_item_3_03_e_a": {
+   "chessId": "chess_item_3_03_e_a",
+   "charId": "trap_1053_acarm053",
+   "name": "激光发射器",
+   "purchasePrice": 2,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_3_03_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm053"
+  },
+  "chess_item_4_02_e_a": {
+   "chessId": "chess_item_4_02_e_a",
+   "charId": "trap_1054_acarm054",
+   "name": "蜂鸣器",
+   "purchasePrice": 1,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_4_02_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm054"
+  },
+  "chess_item_4_04_e_a": {
+   "chessId": "chess_item_4_04_e_a",
+   "charId": "trap_1055_acarm055",
+   "name": "伪装服",
+   "purchasePrice": 1,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_4_04_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm055"
+  },
+  "chess_item_2_01_e_a": {
+   "chessId": "chess_item_2_01_e_a",
+   "charId": "trap_1056_acarm056",
+   "name": "不屈弹射器",
+   "purchasePrice": 1,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_2_01_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm056"
+  },
+  "chess_item_4_08_e_a": {
+   "chessId": "chess_item_4_08_e_a",
+   "charId": "trap_1057_acarm057",
+   "name": "拉特兰桥夹",
+   "purchasePrice": 1,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_4_08_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm057"
+  },
+  "chess_item_5_01_e_a": {
+   "chessId": "chess_item_5_01_e_a",
+   "charId": "trap_1058_acarm058",
+   "name": "催泪瓦斯",
+   "purchasePrice": 2,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_5_01_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm058"
+  },
+  "chess_item_4_10_e_a": {
+   "chessId": "chess_item_4_10_e_a",
+   "charId": "trap_1059_acarm059",
+   "name": "浓缩嗅盐",
+   "purchasePrice": 2,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_4_10_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm059"
+  },
+  "chess_item_4_05_e_a": {
+   "chessId": "chess_item_4_05_e_a",
+   "charId": "trap_1060_acarm060",
+   "name": "防暴盾",
+   "purchasePrice": 2,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_4_05_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm060"
+  },
+  "chess_item_4_11_e_a": {
+   "chessId": "chess_item_4_11_e_a",
+   "charId": "trap_1061_acarm061",
+   "name": "护盾无人机",
+   "purchasePrice": 2,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_4_11_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm061"
+  },
+  "chess_item_5_02_e_a": {
+   "chessId": "chess_item_5_02_e_a",
+   "charId": "trap_1062_acarm062",
+   "name": "谢拉格不融冰",
+   "purchasePrice": 2,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_5_02_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm062"
+  },
+  "chess_item_3_02_e_a": {
+   "chessId": "chess_item_3_02_e_a",
+   "charId": "trap_1063_acarm063",
+   "name": "精准狙击镜",
+   "purchasePrice": 2,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_3_02_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm063"
+  },
+  "chess_item_3_11_e_a": {
+   "chessId": "chess_item_3_11_e_a",
+   "charId": "trap_1064_acarm064",
+   "name": "突袭手雷",
+   "purchasePrice": 1,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_3_11_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm064"
+  },
+  "chess_item_4_06_e_a": {
+   "chessId": "chess_item_4_06_e_a",
+   "charId": "trap_1065_acarm065",
+   "name": "休眠子裔",
+   "purchasePrice": 2,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_4_06_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm065"
+  },
+  "chess_item_1_03_e_a": {
+   "chessId": "chess_item_1_03_e_a",
+   "charId": "trap_1066_acarm066",
+   "name": "盟约之币",
+   "purchasePrice": 1,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_1_03_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm066"
+  },
+  "chess_item_5_03_e_a": {
+   "chessId": "chess_item_5_03_e_a",
+   "charId": "trap_1067_acarm067",
+   "name": "双模机械臂",
+   "purchasePrice": 3,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_5_03_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm067"
+  },
+  "chess_item_4_12_e_a": {
+   "chessId": "chess_item_4_12_e_a",
+   "charId": "trap_1068_acarm068",
+   "name": "M3茧甲",
+   "purchasePrice": 3,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_4_12_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm068"
+  },
+  "chess_item_5_05_e_a": {
+   "chessId": "chess_item_5_05_e_a",
+   "charId": "trap_1069_acarm069",
+   "name": "拟态物质",
+   "purchasePrice": 4,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_5_05_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm069"
+  },
+  "chess_item_6_08_e_a": {
+   "chessId": "chess_item_6_08_e_a",
+   "charId": "trap_1070_acarm070",
+   "name": "人事部文档",
+   "purchasePrice": 4,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_6_08_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm070"
+  },
+  "chess_item_5_06_e_a": {
+   "chessId": "chess_item_5_06_e_a",
+   "charId": "trap_1071_acarm071",
+   "name": "博士投影",
+   "purchasePrice": 5,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_5_06_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm071"
+  },
+  "chess_item_5_08_e_a": {
+   "chessId": "chess_item_5_08_e_a",
+   "charId": "trap_1072_acarm072",
+   "name": "突变细胞",
+   "purchasePrice": 2,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_5_08_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm072"
+  },
+  "chess_item_6_09_e_a": {
+   "chessId": "chess_item_6_09_e_a",
+   "charId": "trap_1073_acarm073",
+   "name": "变形同构体",
+   "purchasePrice": 3,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_6_09_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm073"
+  },
+  "chess_item_5_07_e_a": {
+   "chessId": "chess_item_5_07_e_a",
+   "charId": "trap_1074_acarm074",
+   "name": "商业包装方案",
+   "purchasePrice": 3,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_5_07_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm074"
+  },
+  "chess_item_4_01_e_a": {
+   "chessId": "chess_item_4_01_e_a",
+   "charId": "trap_1075_acarm075",
+   "name": "寻呼模块",
+   "purchasePrice": 4,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_4_01_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm075"
+  },
+  "chess_item_5_04_e_a": {
+   "chessId": "chess_item_5_04_e_a",
+   "charId": "trap_1109_acarm109",
+   "name": "信标",
+   "purchasePrice": 3,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_5_04_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm109"
+  },
+  "chess_item_6_02_e_a": {
+   "chessId": "chess_item_6_02_e_a",
+   "charId": "trap_1076_acarm076",
+   "name": "铳骑之威",
+   "purchasePrice": 4,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_6_02_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm076"
+  },
+  "chess_item_6_03_e_a": {
+   "chessId": "chess_item_6_03_e_a",
+   "charId": "trap_1077_acarm077",
+   "name": "天师古鼎",
+   "purchasePrice": 4,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_6_03_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm077"
+  },
+  "chess_item_6_04_e_a": {
+   "chessId": "chess_item_6_04_e_a",
+   "charId": "trap_1078_acarm078",
+   "name": "海沟实验体",
+   "purchasePrice": 4,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_6_04_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm078"
+  },
+  "chess_item_6_05_e_a": {
+   "chessId": "chess_item_6_05_e_a",
+   "charId": "trap_1079_acarm079",
+   "name": "蒸汽之心",
+   "purchasePrice": 4,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_6_05_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm079"
+  },
+  "chess_item_6_06_e_a": {
+   "chessId": "chess_item_6_06_e_a",
+   "charId": "trap_1102_acarm102",
+   "name": "耶拉冈德之泪",
+   "purchasePrice": 4,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_6_06_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm102"
+  },
+  "chess_item_6_07_e_a": {
+   "chessId": "chess_item_6_07_e_a",
+   "charId": "trap_1103_acarm103",
+   "name": "黄沙罗盘",
+   "purchasePrice": 4,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_6_07_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm103"
+  },
+  "chess_item_2_05_e_a": {
+   "chessId": "chess_item_2_05_e_a",
+   "charId": "trap_1113_acarm113",
+   "name": "精打细算玩偶",
+   "purchasePrice": 3,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_2_05_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm113"
+  },
+  "chess_item_2_07_e_a": {
+   "chessId": "chess_item_2_07_e_a",
+   "charId": "trap_1116_acarm116",
+   "name": "见钱眼开玩偶",
+   "purchasePrice": 1,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_2_07_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm116"
+  },
+  "chess_item_2_06_e_a": {
+   "chessId": "chess_item_2_06_e_a",
+   "charId": "trap_1114_acarm114",
+   "name": "简易通讯机",
+   "purchasePrice": 2,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_2_06_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm114"
+  },
+  "chess_item_2_02_e_a": {
+   "chessId": "chess_item_2_02_e_a",
+   "charId": "trap_1115_acarm115",
+   "name": "紧急调度券",
+   "purchasePrice": 2,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_2_02_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm115"
+  },
+  "chess_item_6_01_e_a": {
+   "chessId": "chess_item_6_01_e_a",
+   "charId": "trap_1117_acarm117",
+   "name": "天马之枪",
+   "purchasePrice": 3,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_6_01_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm117"
+  },
+  "chess_item_5_09_e_a": {
+   "chessId": "chess_item_5_09_e_a",
+   "charId": "trap_1118_acarm118",
+   "name": "天马之盔",
+   "purchasePrice": 3,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_5_09_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm118"
+  },
+  "chess_item_4_07_e_a": {
+   "chessId": "chess_item_4_07_e_a",
+   "charId": "trap_1119_acarm119",
+   "name": "卡西米尔竞技旗",
+   "purchasePrice": 2,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_4_07_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm119"
+  },
+  "chess_item_6_10_e_a": {
+   "chessId": "chess_item_6_10_e_a",
+   "charId": "trap_1120_acarm120",
+   "name": "骑士戒律",
+   "purchasePrice": 4,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_6_10_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm120"
+  },
+  "chess_item_3_01_e_a": {
+   "chessId": "chess_item_3_01_e_a",
+   "charId": "trap_1121_acarm121",
+   "name": "叙拉古正装",
+   "purchasePrice": 2,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_3_01_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm121"
+  },
+  "chess_item_6_11_e_a": {
+   "chessId": "chess_item_6_11_e_a",
+   "charId": "trap_1122_acarm122",
+   "name": "家族徽章",
+   "purchasePrice": 4,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_6_11_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm122"
+  },
+  "chess_item_3_12_e_a": {
+   "chessId": "chess_item_3_12_e_a",
+   "charId": "trap_1123_acarm123",
+   "name": "骑士储蓄罐",
+   "purchasePrice": 3,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_3_12_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm123"
+  },
+  "chess_item_1_04_e_a": {
+   "chessId": "chess_item_1_04_e_a",
+   "charId": "trap_1124_acarm124",
+   "name": "随身身份牌",
+   "purchasePrice": 1,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_1_04_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm124"
+  },
+  "chess_item_1_05_e_a": {
+   "chessId": "chess_item_1_05_e_a",
+   "charId": "trap_1125_acarm125",
+   "name": "源石溶剂",
+   "purchasePrice": 1,
+   "isGolden": false,
+   "upgradeChessId": "chess_item_1_05_e_b",
+   "trapDuration": -1,
+   "effectId": "eff_acarm125"
+  },
+  "chess_item_6_01_m": {
+   "chessId": "chess_item_6_01_m",
+   "charId": "trap_1108_acdisney",
+   "name": "“神秘顾客”",
+   "purchasePrice": 2,
+   "isGolden": false,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acdisney"
+  },
+  "chess_item_6_02_m": {
+   "chessId": "chess_item_6_02_m",
+   "charId": "trap_1110_accopy",
+   "name": "画卷",
+   "purchasePrice": 2,
+   "isGolden": false,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_accopy"
+  },
+  "chess_item_6_03_m": {
+   "chessId": "chess_item_6_03_m",
+   "charId": "trap_1111_acchal",
+   "name": "教鞭",
+   "purchasePrice": 2,
+   "isGolden": false,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acchal"
+  },
+  "chess_item_3_04_e_b": {
+   "chessId": "chess_item_3_04_e_b",
+   "charId": "trap_1040_acarm040",
+   "name": "炎国短刀",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm040"
+  },
+  "chess_item_1_01_e_b": {
+   "chessId": "chess_item_1_01_e_b",
+   "charId": "trap_1041_acarm041",
+   "name": "维式重锤",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm041"
+  },
+  "chess_item_4_09_e_b": {
+   "chessId": "chess_item_4_09_e_b",
+   "charId": "trap_1042_acarm042",
+   "name": "灼燃维式重锤",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm042"
+  },
+  "chess_item_3_09_e_b": {
+   "chessId": "chess_item_3_09_e_b",
+   "charId": "trap_1043_acarm043",
+   "name": "坚固维式重锤",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm043"
+  },
+  "chess_item_3_10_e_b": {
+   "chessId": "chess_item_3_10_e_b",
+   "charId": "trap_1044_acarm044",
+   "name": "加速维式重锤",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm044"
+  },
+  "chess_item_2_03_e_b": {
+   "chessId": "chess_item_2_03_e_b",
+   "charId": "trap_1045_acarm045",
+   "name": "战栗维式重锤",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm045"
+  },
+  "chess_item_3_07_e_b": {
+   "chessId": "chess_item_3_07_e_b",
+   "charId": "trap_1046_acarm046",
+   "name": "阿戈尔重刃",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm046"
+  },
+  "chess_item_1_02_e_b": {
+   "chessId": "chess_item_1_02_e_b",
+   "charId": "trap_1047_acarm047",
+   "name": "坚守盾牌",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm047"
+  },
+  "chess_item_3_08_e_b": {
+   "chessId": "chess_item_3_08_e_b",
+   "charId": "trap_1048_acarm048",
+   "name": "奥术法阵",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm048"
+  },
+  "chess_item_3_06_e_b": {
+   "chessId": "chess_item_3_06_e_b",
+   "charId": "trap_1049_acarm049",
+   "name": "歌利亚头盔",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm049"
+  },
+  "chess_item_2_04_e_b": {
+   "chessId": "chess_item_2_04_e_b",
+   "charId": "trap_1050_acarm050",
+   "name": "萨尔贡浓茶",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm050"
+  },
+  "chess_item_3_05_e_b": {
+   "chessId": "chess_item_3_05_e_b",
+   "charId": "trap_1051_acarm051",
+   "name": "迅捷作战粮",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm051"
+  },
+  "chess_item_4_03_e_b": {
+   "chessId": "chess_item_4_03_e_b",
+   "charId": "trap_1052_acarm052",
+   "name": "有限加速器",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm052"
+  },
+  "chess_item_3_03_e_b": {
+   "chessId": "chess_item_3_03_e_b",
+   "charId": "trap_1053_acarm053",
+   "name": "激光发射器",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm053"
+  },
+  "chess_item_4_02_e_b": {
+   "chessId": "chess_item_4_02_e_b",
+   "charId": "trap_1054_acarm054",
+   "name": "蜂鸣器",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm054"
+  },
+  "chess_item_4_04_e_b": {
+   "chessId": "chess_item_4_04_e_b",
+   "charId": "trap_1055_acarm055",
+   "name": "伪装服",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm055"
+  },
+  "chess_item_2_01_e_b": {
+   "chessId": "chess_item_2_01_e_b",
+   "charId": "trap_1056_acarm056",
+   "name": "不屈弹射器",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm056"
+  },
+  "chess_item_4_08_e_b": {
+   "chessId": "chess_item_4_08_e_b",
+   "charId": "trap_1057_acarm057",
+   "name": "拉特兰桥夹",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm057"
+  },
+  "chess_item_5_01_e_b": {
+   "chessId": "chess_item_5_01_e_b",
+   "charId": "trap_1058_acarm058",
+   "name": "催泪瓦斯",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm058"
+  },
+  "chess_item_4_10_e_b": {
+   "chessId": "chess_item_4_10_e_b",
+   "charId": "trap_1059_acarm059",
+   "name": "浓缩嗅盐",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm059"
+  },
+  "chess_item_4_05_e_b": {
+   "chessId": "chess_item_4_05_e_b",
+   "charId": "trap_1060_acarm060",
+   "name": "防暴盾",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm060"
+  },
+  "chess_item_4_11_e_b": {
+   "chessId": "chess_item_4_11_e_b",
+   "charId": "trap_1061_acarm061",
+   "name": "护盾无人机",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm061"
+  },
+  "chess_item_5_02_e_b": {
+   "chessId": "chess_item_5_02_e_b",
+   "charId": "trap_1062_acarm062",
+   "name": "谢拉格不融冰",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm062"
+  },
+  "chess_item_3_02_e_b": {
+   "chessId": "chess_item_3_02_e_b",
+   "charId": "trap_1063_acarm063",
+   "name": "精准狙击镜",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm063"
+  },
+  "chess_item_3_11_e_b": {
+   "chessId": "chess_item_3_11_e_b",
+   "charId": "trap_1064_acarm064",
+   "name": "突袭手雷",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm064"
+  },
+  "chess_item_4_06_e_b": {
+   "chessId": "chess_item_4_06_e_b",
+   "charId": "trap_1065_acarm065",
+   "name": "休眠子裔",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm065"
+  },
+  "chess_item_1_03_e_b": {
+   "chessId": "chess_item_1_03_e_b",
+   "charId": "trap_1066_acarm066",
+   "name": "盟约之币",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm066"
+  },
+  "chess_item_5_03_e_b": {
+   "chessId": "chess_item_5_03_e_b",
+   "charId": "trap_1067_acarm067",
+   "name": "双模机械臂",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm067"
+  },
+  "chess_item_4_12_e_b": {
+   "chessId": "chess_item_4_12_e_b",
+   "charId": "trap_1068_acarm068",
+   "name": "M3茧甲",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm068"
+  },
+  "chess_item_5_05_e_b": {
+   "chessId": "chess_item_5_05_e_b",
+   "charId": "trap_1069_acarm069",
+   "name": "拟态物质",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm069"
+  },
+  "chess_item_6_08_e_b": {
+   "chessId": "chess_item_6_08_e_b",
+   "charId": "trap_1070_acarm070",
+   "name": "人事部文档",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm070"
+  },
+  "chess_item_5_06_e_b": {
+   "chessId": "chess_item_5_06_e_b",
+   "charId": "trap_1071_acarm071",
+   "name": "博士投影",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm071"
+  },
+  "chess_item_5_08_e_b": {
+   "chessId": "chess_item_5_08_e_b",
+   "charId": "trap_1072_acarm072",
+   "name": "突变细胞",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm072"
+  },
+  "chess_item_6_09_e_b": {
+   "chessId": "chess_item_6_09_e_b",
+   "charId": "trap_1073_acarm073",
+   "name": "变形同构体",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm073"
+  },
+  "chess_item_5_07_e_b": {
+   "chessId": "chess_item_5_07_e_b",
+   "charId": "trap_1074_acarm074",
+   "name": "商业包装方案",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm074"
+  },
+  "chess_item_4_01_e_b": {
+   "chessId": "chess_item_4_01_e_b",
+   "charId": "trap_1075_acarm075",
+   "name": "寻呼模块",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm075"
+  },
+  "chess_item_5_04_e_b": {
+   "chessId": "chess_item_5_04_e_b",
+   "charId": "trap_1109_acarm109",
+   "name": "信标",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm109"
+  },
+  "chess_item_6_02_e_b": {
+   "chessId": "chess_item_6_02_e_b",
+   "charId": "trap_1076_acarm076",
+   "name": "铳骑之威",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm076"
+  },
+  "chess_item_6_03_e_b": {
+   "chessId": "chess_item_6_03_e_b",
+   "charId": "trap_1077_acarm077",
+   "name": "天师古鼎",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm077"
+  },
+  "chess_item_6_04_e_b": {
+   "chessId": "chess_item_6_04_e_b",
+   "charId": "trap_1078_acarm078",
+   "name": "海沟实验体",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm078"
+  },
+  "chess_item_6_05_e_b": {
+   "chessId": "chess_item_6_05_e_b",
+   "charId": "trap_1079_acarm079",
+   "name": "蒸汽之心",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm079"
+  },
+  "chess_item_6_06_e_b": {
+   "chessId": "chess_item_6_06_e_b",
+   "charId": "trap_1102_acarm102",
+   "name": "耶拉冈德之泪",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm102"
+  },
+  "chess_item_6_07_e_b": {
+   "chessId": "chess_item_6_07_e_b",
+   "charId": "trap_1103_acarm103",
+   "name": "黄沙罗盘",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm103"
+  },
+  "chess_item_2_05_e_b": {
+   "chessId": "chess_item_2_05_e_b",
+   "charId": "trap_1113_acarm113",
+   "name": "精打细算玩偶",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm113"
+  },
+  "chess_item_2_07_e_b": {
+   "chessId": "chess_item_2_07_e_b",
+   "charId": "trap_1116_acarm116",
+   "name": "见钱眼开玩偶",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm116"
+  },
+  "chess_item_2_06_e_b": {
+   "chessId": "chess_item_2_06_e_b",
+   "charId": "trap_1114_acarm114",
+   "name": "简易通讯机",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm114"
+  },
+  "chess_item_2_02_e_b": {
+   "chessId": "chess_item_2_02_e_b",
+   "charId": "trap_1115_acarm115",
+   "name": "紧急调度券",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm115"
+  },
+  "chess_item_6_01_e_b": {
+   "chessId": "chess_item_6_01_e_b",
+   "charId": "trap_1117_acarm117",
+   "name": "天马之枪",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm117"
+  },
+  "chess_item_5_09_e_b": {
+   "chessId": "chess_item_5_09_e_b",
+   "charId": "trap_1118_acarm118",
+   "name": "天马之盔",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm118"
+  },
+  "chess_item_4_07_e_b": {
+   "chessId": "chess_item_4_07_e_b",
+   "charId": "trap_1119_acarm119",
+   "name": "卡西米尔竞技旗",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm119"
+  },
+  "chess_item_6_10_e_b": {
+   "chessId": "chess_item_6_10_e_b",
+   "charId": "trap_1120_acarm120",
+   "name": "骑士戒律",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm120"
+  },
+  "chess_item_3_01_e_b": {
+   "chessId": "chess_item_3_01_e_b",
+   "charId": "trap_1121_acarm121",
+   "name": "叙拉古正装",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm121"
+  },
+  "chess_item_6_11_e_b": {
+   "chessId": "chess_item_6_11_e_b",
+   "charId": "trap_1122_acarm122",
+   "name": "家族徽章",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm122"
+  },
+  "chess_item_3_12_e_b": {
+   "chessId": "chess_item_3_12_e_b",
+   "charId": "trap_1123_acarm123",
+   "name": "骑士储蓄罐",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm123"
+  },
+  "chess_item_1_04_e_b": {
+   "chessId": "chess_item_1_04_e_b",
+   "charId": "trap_1124_acarm124",
+   "name": "随身身份牌",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm124"
+  },
+  "chess_item_1_05_e_b": {
+   "chessId": "chess_item_1_05_e_b",
+   "charId": "trap_1125_acarm125",
+   "name": "源石溶剂",
+   "purchasePrice": 5,
+   "isGolden": true,
+   "upgradeChessId": null,
+   "trapDuration": 0,
+   "effectId": "eff_acgarm125"
+  }
+ },
+ "shop": {
+  "chess_item_1_01_e_a": {
+   "itemId": "chess_item_1_01_e_a",
+   "goldenItemId": "chess_item_1_01_e_b",
+   "itemLevel": 1,
+   "itemType": "EQUIP",
+   "trapId": "trap_1041_acarm041",
+   "shopLevelSortId": 1,
+   "hideInShop": false
+  },
+  "chess_item_1_02_e_a": {
+   "itemId": "chess_item_1_02_e_a",
+   "goldenItemId": "chess_item_1_02_e_b",
+   "itemLevel": 1,
+   "itemType": "EQUIP",
+   "trapId": "trap_1047_acarm047",
+   "shopLevelSortId": 2,
+   "hideInShop": false
+  },
+  "chess_item_1_03_e_a": {
+   "itemId": "chess_item_1_03_e_a",
+   "goldenItemId": "chess_item_1_03_e_b",
+   "itemLevel": 1,
+   "itemType": "EQUIP",
+   "trapId": "trap_1066_acarm066",
+   "shopLevelSortId": 3,
+   "hideInShop": false
+  },
+  "chess_item_1_04_e_a": {
+   "itemId": "chess_item_1_04_e_a",
+   "goldenItemId": "chess_item_1_04_e_b",
+   "itemLevel": 1,
+   "itemType": "EQUIP",
+   "trapId": "trap_1124_acarm124",
+   "shopLevelSortId": 4,
+   "hideInShop": false
+  },
+  "chess_item_1_05_e_a": {
+   "itemId": "chess_item_1_05_e_a",
+   "goldenItemId": "chess_item_1_05_e_b",
+   "itemLevel": 1,
+   "itemType": "EQUIP",
+   "trapId": "trap_1125_acarm125",
+   "shopLevelSortId": 5,
+   "hideInShop": false
+  },
+  "chess_item_2_01_e_a": {
+   "itemId": "chess_item_2_01_e_a",
+   "goldenItemId": "chess_item_2_01_e_b",
+   "itemLevel": 2,
+   "itemType": "EQUIP",
+   "trapId": "trap_1056_acarm056",
+   "shopLevelSortId": 1,
+   "hideInShop": false
+  },
+  "chess_item_2_02_e_a": {
+   "itemId": "chess_item_2_02_e_a",
+   "goldenItemId": "chess_item_2_02_e_b",
+   "itemLevel": 2,
+   "itemType": "EQUIP",
+   "trapId": "trap_1115_acarm115",
+   "shopLevelSortId": 2,
+   "hideInShop": false
+  },
+  "chess_item_2_03_e_a": {
+   "itemId": "chess_item_2_03_e_a",
+   "goldenItemId": "chess_item_2_03_e_b",
+   "itemLevel": 2,
+   "itemType": "EQUIP",
+   "trapId": "trap_1045_acarm045",
+   "shopLevelSortId": 3,
+   "hideInShop": false
+  },
+  "chess_item_2_04_e_a": {
+   "itemId": "chess_item_2_04_e_a",
+   "goldenItemId": "chess_item_2_04_e_b",
+   "itemLevel": 2,
+   "itemType": "EQUIP",
+   "trapId": "trap_1050_acarm050",
+   "shopLevelSortId": 4,
+   "hideInShop": false
+  },
+  "chess_item_2_05_e_a": {
+   "itemId": "chess_item_2_05_e_a",
+   "goldenItemId": "chess_item_2_05_e_b",
+   "itemLevel": 2,
+   "itemType": "EQUIP",
+   "trapId": "trap_1113_acarm113",
+   "shopLevelSortId": 5,
+   "hideInShop": false
+  },
+  "chess_item_2_06_e_a": {
+   "itemId": "chess_item_2_06_e_a",
+   "goldenItemId": "chess_item_2_06_e_b",
+   "itemLevel": 2,
+   "itemType": "EQUIP",
+   "trapId": "trap_1114_acarm114",
+   "shopLevelSortId": 6,
+   "hideInShop": false
+  },
+  "chess_item_2_07_e_a": {
+   "itemId": "chess_item_2_07_e_a",
+   "goldenItemId": "chess_item_2_07_e_b",
+   "itemLevel": 2,
+   "itemType": "EQUIP",
+   "trapId": "trap_1116_acarm116",
+   "shopLevelSortId": 7,
+   "hideInShop": false
+  },
+  "chess_item_3_01_e_a": {
+   "itemId": "chess_item_3_01_e_a",
+   "goldenItemId": "chess_item_3_01_e_b",
+   "itemLevel": 3,
+   "itemType": "EQUIP",
+   "trapId": "trap_1121_acarm121",
+   "shopLevelSortId": 1,
+   "hideInShop": false
+  },
+  "chess_item_3_02_e_a": {
+   "itemId": "chess_item_3_02_e_a",
+   "goldenItemId": "chess_item_3_02_e_b",
+   "itemLevel": 3,
+   "itemType": "EQUIP",
+   "trapId": "trap_1063_acarm063",
+   "shopLevelSortId": 2,
+   "hideInShop": false
+  },
+  "chess_item_3_03_e_a": {
+   "itemId": "chess_item_3_03_e_a",
+   "goldenItemId": "chess_item_3_03_e_b",
+   "itemLevel": 3,
+   "itemType": "EQUIP",
+   "trapId": "trap_1053_acarm053",
+   "shopLevelSortId": 3,
+   "hideInShop": false
+  },
+  "chess_item_3_04_e_a": {
+   "itemId": "chess_item_3_04_e_a",
+   "goldenItemId": "chess_item_3_04_e_b",
+   "itemLevel": 3,
+   "itemType": "EQUIP",
+   "trapId": "trap_1040_acarm040",
+   "shopLevelSortId": 4,
+   "hideInShop": false
+  },
+  "chess_item_3_05_e_a": {
+   "itemId": "chess_item_3_05_e_a",
+   "goldenItemId": "chess_item_3_05_e_b",
+   "itemLevel": 3,
+   "itemType": "EQUIP",
+   "trapId": "trap_1051_acarm051",
+   "shopLevelSortId": 5,
+   "hideInShop": false
+  },
+  "chess_item_3_06_e_a": {
+   "itemId": "chess_item_3_06_e_a",
+   "goldenItemId": "chess_item_3_06_e_b",
+   "itemLevel": 3,
+   "itemType": "EQUIP",
+   "trapId": "trap_1049_acarm049",
+   "shopLevelSortId": 6,
+   "hideInShop": false
+  },
+  "chess_item_3_07_e_a": {
+   "itemId": "chess_item_3_07_e_a",
+   "goldenItemId": "chess_item_3_07_e_b",
+   "itemLevel": 3,
+   "itemType": "EQUIP",
+   "trapId": "trap_1046_acarm046",
+   "shopLevelSortId": 7,
+   "hideInShop": false
+  },
+  "chess_item_3_08_e_a": {
+   "itemId": "chess_item_3_08_e_a",
+   "goldenItemId": "chess_item_3_08_e_b",
+   "itemLevel": 3,
+   "itemType": "EQUIP",
+   "trapId": "trap_1048_acarm048",
+   "shopLevelSortId": 8,
+   "hideInShop": false
+  },
+  "chess_item_3_09_e_a": {
+   "itemId": "chess_item_3_09_e_a",
+   "goldenItemId": "chess_item_3_09_e_b",
+   "itemLevel": 3,
+   "itemType": "EQUIP",
+   "trapId": "trap_1043_acarm043",
+   "shopLevelSortId": 9,
+   "hideInShop": false
+  },
+  "chess_item_3_10_e_a": {
+   "itemId": "chess_item_3_10_e_a",
+   "goldenItemId": "chess_item_3_10_e_b",
+   "itemLevel": 3,
+   "itemType": "EQUIP",
+   "trapId": "trap_1044_acarm044",
+   "shopLevelSortId": 10,
+   "hideInShop": false
+  },
+  "chess_item_3_11_e_a": {
+   "itemId": "chess_item_3_11_e_a",
+   "goldenItemId": "chess_item_3_11_e_b",
+   "itemLevel": 3,
+   "itemType": "EQUIP",
+   "trapId": "trap_1064_acarm064",
+   "shopLevelSortId": 11,
+   "hideInShop": false
+  },
+  "chess_item_3_12_e_a": {
+   "itemId": "chess_item_3_12_e_a",
+   "goldenItemId": "chess_item_3_12_e_b",
+   "itemLevel": 3,
+   "itemType": "EQUIP",
+   "trapId": "trap_1123_acarm123",
+   "shopLevelSortId": 12,
+   "hideInShop": false
+  },
+  "chess_item_4_01_e_a": {
+   "itemId": "chess_item_4_01_e_a",
+   "goldenItemId": "chess_item_4_01_e_b",
+   "itemLevel": 4,
+   "itemType": "EQUIP",
+   "trapId": "trap_1075_acarm075",
+   "shopLevelSortId": 1,
+   "hideInShop": false
+  },
+  "chess_item_4_02_e_a": {
+   "itemId": "chess_item_4_02_e_a",
+   "goldenItemId": "chess_item_4_02_e_b",
+   "itemLevel": 4,
+   "itemType": "EQUIP",
+   "trapId": "trap_1054_acarm054",
+   "shopLevelSortId": 2,
+   "hideInShop": false
+  },
+  "chess_item_4_03_e_a": {
+   "itemId": "chess_item_4_03_e_a",
+   "goldenItemId": "chess_item_4_03_e_b",
+   "itemLevel": 4,
+   "itemType": "EQUIP",
+   "trapId": "trap_1052_acarm052",
+   "shopLevelSortId": 3,
+   "hideInShop": false
+  },
+  "chess_item_4_04_e_a": {
+   "itemId": "chess_item_4_04_e_a",
+   "goldenItemId": "chess_item_4_04_e_b",
+   "itemLevel": 4,
+   "itemType": "EQUIP",
+   "trapId": "trap_1055_acarm055",
+   "shopLevelSortId": 4,
+   "hideInShop": false
+  },
+  "chess_item_4_05_e_a": {
+   "itemId": "chess_item_4_05_e_a",
+   "goldenItemId": "chess_item_4_05_e_b",
+   "itemLevel": 4,
+   "itemType": "EQUIP",
+   "trapId": "trap_1060_acarm060",
+   "shopLevelSortId": 5,
+   "hideInShop": false
+  },
+  "chess_item_4_06_e_a": {
+   "itemId": "chess_item_4_06_e_a",
+   "goldenItemId": "chess_item_4_06_e_b",
+   "itemLevel": 4,
+   "itemType": "EQUIP",
+   "trapId": "trap_1065_acarm065",
+   "shopLevelSortId": 6,
+   "hideInShop": false
+  },
+  "chess_item_4_07_e_a": {
+   "itemId": "chess_item_4_07_e_a",
+   "goldenItemId": "chess_item_4_07_e_b",
+   "itemLevel": 4,
+   "itemType": "EQUIP",
+   "trapId": "trap_1119_acarm119",
+   "shopLevelSortId": 7,
+   "hideInShop": false
+  },
+  "chess_item_4_08_e_a": {
+   "itemId": "chess_item_4_08_e_a",
+   "goldenItemId": "chess_item_4_08_e_b",
+   "itemLevel": 4,
+   "itemType": "EQUIP",
+   "trapId": "trap_1057_acarm057",
+   "shopLevelSortId": 8,
+   "hideInShop": false
+  },
+  "chess_item_4_09_e_a": {
+   "itemId": "chess_item_4_09_e_a",
+   "goldenItemId": "chess_item_4_09_e_b",
+   "itemLevel": 4,
+   "itemType": "EQUIP",
+   "trapId": "trap_1042_acarm042",
+   "shopLevelSortId": 9,
+   "hideInShop": false
+  },
+  "chess_item_4_10_e_a": {
+   "itemId": "chess_item_4_10_e_a",
+   "goldenItemId": "chess_item_4_10_e_b",
+   "itemLevel": 4,
+   "itemType": "EQUIP",
+   "trapId": "trap_1059_acarm059",
+   "shopLevelSortId": 10,
+   "hideInShop": false
+  },
+  "chess_item_4_11_e_a": {
+   "itemId": "chess_item_4_11_e_a",
+   "goldenItemId": "chess_item_4_11_e_b",
+   "itemLevel": 4,
+   "itemType": "EQUIP",
+   "trapId": "trap_1061_acarm061",
+   "shopLevelSortId": 11,
+   "hideInShop": false
+  },
+  "chess_item_4_12_e_a": {
+   "itemId": "chess_item_4_12_e_a",
+   "goldenItemId": "chess_item_4_12_e_b",
+   "itemLevel": 4,
+   "itemType": "EQUIP",
+   "trapId": "trap_1068_acarm068",
+   "shopLevelSortId": 12,
+   "hideInShop": false
+  },
+  "chess_item_5_01_e_a": {
+   "itemId": "chess_item_5_01_e_a",
+   "goldenItemId": "chess_item_5_01_e_b",
+   "itemLevel": 5,
+   "itemType": "EQUIP",
+   "trapId": "trap_1058_acarm058",
+   "shopLevelSortId": 1,
+   "hideInShop": false
+  },
+  "chess_item_5_02_e_a": {
+   "itemId": "chess_item_5_02_e_a",
+   "goldenItemId": "chess_item_5_02_e_b",
+   "itemLevel": 5,
+   "itemType": "EQUIP",
+   "trapId": "trap_1062_acarm062",
+   "shopLevelSortId": 2,
+   "hideInShop": false
+  },
+  "chess_item_5_03_e_a": {
+   "itemId": "chess_item_5_03_e_a",
+   "goldenItemId": "chess_item_5_03_e_b",
+   "itemLevel": 5,
+   "itemType": "EQUIP",
+   "trapId": "trap_1067_acarm067",
+   "shopLevelSortId": 3,
+   "hideInShop": false
+  },
+  "chess_item_5_04_e_a": {
+   "itemId": "chess_item_5_04_e_a",
+   "goldenItemId": "chess_item_5_04_e_b",
+   "itemLevel": 5,
+   "itemType": "EQUIP",
+   "trapId": "trap_1109_acarm109",
+   "shopLevelSortId": 4,
+   "hideInShop": false
+  },
+  "chess_item_5_05_e_a": {
+   "itemId": "chess_item_5_05_e_a",
+   "goldenItemId": "chess_item_5_05_e_b",
+   "itemLevel": 5,
+   "itemType": "EQUIP",
+   "trapId": "trap_1069_acarm069",
+   "shopLevelSortId": 5,
+   "hideInShop": false
+  },
+  "chess_item_5_06_e_a": {
+   "itemId": "chess_item_5_06_e_a",
+   "goldenItemId": "chess_item_5_06_e_b",
+   "itemLevel": 5,
+   "itemType": "EQUIP",
+   "trapId": "trap_1071_acarm071",
+   "shopLevelSortId": 6,
+   "hideInShop": false
+  },
+  "chess_item_5_07_e_a": {
+   "itemId": "chess_item_5_07_e_a",
+   "goldenItemId": "chess_item_5_07_e_b",
+   "itemLevel": 5,
+   "itemType": "EQUIP",
+   "trapId": "trap_1074_acarm074",
+   "shopLevelSortId": 7,
+   "hideInShop": false
+  },
+  "chess_item_5_08_e_a": {
+   "itemId": "chess_item_5_08_e_a",
+   "goldenItemId": "chess_item_5_08_e_b",
+   "itemLevel": 5,
+   "itemType": "EQUIP",
+   "trapId": "trap_1072_acarm072",
+   "shopLevelSortId": 8,
+   "hideInShop": false
+  },
+  "chess_item_5_09_e_a": {
+   "itemId": "chess_item_5_09_e_a",
+   "goldenItemId": "chess_item_5_09_e_b",
+   "itemLevel": 5,
+   "itemType": "EQUIP",
+   "trapId": "trap_1118_acarm118",
+   "shopLevelSortId": 9,
+   "hideInShop": false
+  },
+  "chess_item_6_01_e_a": {
+   "itemId": "chess_item_6_01_e_a",
+   "goldenItemId": "chess_item_6_01_e_b",
+   "itemLevel": 6,
+   "itemType": "EQUIP",
+   "trapId": "trap_1117_acarm117",
+   "shopLevelSortId": 1,
+   "hideInShop": false
+  },
+  "chess_item_6_01_m": {
+   "itemId": "chess_item_6_01_m",
+   "goldenItemId": null,
+   "itemLevel": 6,
+   "itemType": "MAGIC",
+   "trapId": "trap_1108_acdisney",
+   "shopLevelSortId": 1,
+   "hideInShop": true
+  },
+  "chess_item_6_02_e_a": {
+   "itemId": "chess_item_6_02_e_a",
+   "goldenItemId": "chess_item_6_02_e_b",
+   "itemLevel": 6,
+   "itemType": "EQUIP",
+   "trapId": "trap_1076_acarm076",
+   "shopLevelSortId": 2,
+   "hideInShop": false
+  },
+  "chess_item_6_02_m": {
+   "itemId": "chess_item_6_02_m",
+   "goldenItemId": null,
+   "itemLevel": 6,
+   "itemType": "MAGIC",
+   "trapId": "trap_1110_accopy",
+   "shopLevelSortId": 2,
+   "hideInShop": true
+  },
+  "chess_item_6_03_e_a": {
+   "itemId": "chess_item_6_03_e_a",
+   "goldenItemId": "chess_item_6_03_e_b",
+   "itemLevel": 6,
+   "itemType": "EQUIP",
+   "trapId": "trap_1077_acarm077",
+   "shopLevelSortId": 3,
+   "hideInShop": false
+  },
+  "chess_item_6_03_m": {
+   "itemId": "chess_item_6_03_m",
+   "goldenItemId": null,
+   "itemLevel": 6,
+   "itemType": "MAGIC",
+   "trapId": "trap_1111_acchal",
+   "shopLevelSortId": 3,
+   "hideInShop": true
+  },
+  "chess_item_6_04_e_a": {
+   "itemId": "chess_item_6_04_e_a",
+   "goldenItemId": "chess_item_6_04_e_b",
+   "itemLevel": 6,
+   "itemType": "EQUIP",
+   "trapId": "trap_1078_acarm078",
+   "shopLevelSortId": 4,
+   "hideInShop": false
+  },
+  "chess_item_6_05_e_a": {
+   "itemId": "chess_item_6_05_e_a",
+   "goldenItemId": "chess_item_6_05_e_b",
+   "itemLevel": 6,
+   "itemType": "EQUIP",
+   "trapId": "trap_1079_acarm079",
+   "shopLevelSortId": 5,
+   "hideInShop": false
+  },
+  "chess_item_6_06_e_a": {
+   "itemId": "chess_item_6_06_e_a",
+   "goldenItemId": "chess_item_6_06_e_b",
+   "itemLevel": 6,
+   "itemType": "EQUIP",
+   "trapId": "trap_1102_acarm102",
+   "shopLevelSortId": 6,
+   "hideInShop": false
+  },
+  "chess_item_6_07_e_a": {
+   "itemId": "chess_item_6_07_e_a",
+   "goldenItemId": "chess_item_6_07_e_b",
+   "itemLevel": 6,
+   "itemType": "EQUIP",
+   "trapId": "trap_1103_acarm103",
+   "shopLevelSortId": 7,
+   "hideInShop": false
+  },
+  "chess_item_6_08_e_a": {
+   "itemId": "chess_item_6_08_e_a",
+   "goldenItemId": "chess_item_6_08_e_b",
+   "itemLevel": 6,
+   "itemType": "EQUIP",
+   "trapId": "trap_1070_acarm070",
+   "shopLevelSortId": 8,
+   "hideInShop": false
+  },
+  "chess_item_6_09_e_a": {
+   "itemId": "chess_item_6_09_e_a",
+   "goldenItemId": "chess_item_6_09_e_b",
+   "itemLevel": 6,
+   "itemType": "EQUIP",
+   "trapId": "trap_1073_acarm073",
+   "shopLevelSortId": 9,
+   "hideInShop": false
+  },
+  "chess_item_6_10_e_a": {
+   "itemId": "chess_item_6_10_e_a",
+   "goldenItemId": "chess_item_6_10_e_b",
+   "itemLevel": 6,
+   "itemType": "EQUIP",
+   "trapId": "trap_1120_acarm120",
+   "shopLevelSortId": 10,
+   "hideInShop": false
+  },
+  "chess_item_6_11_e_a": {
+   "itemId": "chess_item_6_11_e_a",
+   "goldenItemId": "chess_item_6_11_e_b",
+   "itemLevel": 6,
+   "itemType": "EQUIP",
+   "trapId": "trap_1122_acarm122",
+   "shopLevelSortId": 11,
+   "hideInShop": false
+  }
+ }
+}

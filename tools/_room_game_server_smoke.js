@@ -1,0 +1,76 @@
+'use strict';
+const assert=require('node:assert/strict');
+const {createRoomServer,PROTOCOL_VERSION,CLIENT_VERSION,GAME_VERSION}=require('./room_server');
+const sources=require('../web/source_battles.json');
+let clock=1000;const server=createRoomServer({now:()=>clock,maxGamePlayers:4});
+async function main(){
+ await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));const base='http://127.0.0.1:'+server.address().port;
+ const infoResponse=await fetch(base+'/api/game-info'),info=await infoResponse.json();assert.equal(infoResponse.status,200,JSON.stringify(info));assert.equal(info.gameVersion,GAME_VERSION);assert.match(info.catalog,/^[a-f0-9]{16}$/);
+ async function post(url,fields,status=200){const r=await fetch(base+url,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({protocolVersion:PROTOCOL_VERSION,clientVersion:CLIENT_VERSION,gameVersion:GAME_VERSION,runId:1,catalog:info.catalog,...fields})});const value=await r.json();assert.equal(r.status,status,JSON.stringify(value));return value;}
+ const created=await post('/api/rooms',{name:'主玩家'},201),sessions=[created.session],code=created.session.roomCode;
+ for(let i=1;i<4;i++)sessions.push((await post('/api/rooms/'+code+'/join',{name:'玩家'+i},201)).session);
+ const route=(s,op)=>'/api/rooms/'+s.roomCode+'/'+op;
+ const config={seasonId:'act1autochess',modeId:'mode_multi_normal',mapKey:sources.seasons.act1autochess.modes.mode_multi_normal.stageChoices[0].levelKey,bandId:'band_amiya'};
+ const enter=s=>post(route(s,'game-enter'),{...s,config:{...config,skillChoices:{char_103_angel:s===sessions[0]?0:1},diySelections:{[s===sessions[0]?'chess_char_5_diy1_a':'chess_char_6_diy2_a']:{charId:'char_4228_closur',skillIndex:s===sessions[0]?0:2}}}});const sync=s=>post(route(s,'game-sync'),s);
+ const early=await post(route(sessions[0],'game-enter'),{...sessions[0],config},409);assert.equal(early.error,'LOBBY_NOT_STARTED');
+ await post(route(sessions[0],'command'),{...sessions[0],sequence:1,command:{type:'room/set-config',config:{seasonId:config.seasonId,modeId:config.modeId,mapKey:config.mapKey}}});
+ for(const s of sessions)await post(route(s,'command'),{...s,sequence:s===sessions[0]?2:1,command:{type:'room/set-ready',ready:true}});
+ await post(route(sessions[0],'command'),{...sessions[0],sequence:3,command:{type:'room/start'}});
+ await post(route(sessions[0],'game-enter'),{...sessions[0],config,catalog:'wrong'},409);
+ await post(route(sessions[0],'game-enter'),{...sessions[0],config,gameVersion:'old'},409);
+ await post(route(sessions[0],'game-enter'),{...sessions[0],config:{...config,modeId:'mode_single_normal'}},409);
+ await post(route(sessions[0],'game-enter'),{...sessions[0],config:{...config,skillChoices:{char_103_angel:9}}},400);
+ const states=[];for(const s of sessions)states.push(await enter(s));
+ assert.equal(states[0].player.state.session.skillChoices.char_103_angel,0);assert.equal(states[1].player.state.session.skillChoices.char_103_angel,1,'skills are private per-seat configuration');
+ assert.equal(states[0].player.state.session.diySelections.chess_char_5_diy1_a.charId,'char_4228_closur');assert.equal(states[1].player.state.session.diySelections.chess_char_6_diy2_a.skillIndex,2,'private selections survive real HTTP entry');
+ const seq=[0,0,0,0];
+ async function cmd(i,command,status=200,extra={}){const r=await post(route(sessions[i],'game-command'),{...sessions[i],sequence:seq[i]+1,expectedRevision:states[i].player.revision,command,...extra},status);if(status===200){seq[i]=r.ack;states[i]=r;}return r;}
+ assert.equal(states[0].player.state.session.money,4,'uses actual mode opening economy');assert.equal(states[0].player.state.context.curMatch,'team');
+ assert.ok(states[3].game.players.every(p=>p.entered));
+ const duplicateEntry=await enter(sessions[0]);assert.equal(duplicateEntry.applied,false);assert.equal(duplicateEntry.player.revision,1);
+ await post(route(sessions[0],'game-enter'),{...sessions[0],config:{...config,bandId:'band_dusk'}},409);
+ const initialOther=(await sync(sessions[1])).player.state;
+ const offer=states[0].player.state.session.shop.findIndex(x=>x?.type==='op'&&x.cost<=4),price=states[0].player.state.session.shop[offer].cost;
+ const bought=await cmd(0,{type:'game/buy',index:offer});assert.equal(bought.player.state.session.money,4-price);assert.equal(bought.player.state.session.ops.length,1);
+ const repeat=await post(route(sessions[0],'game-command'),{...sessions[0],sequence:1,expectedRevision:1,command:{type:'game/buy',index:offer}});
+ assert.equal(repeat.applied,false);assert.equal(repeat.player.revision,bought.player.revision);assert.deepEqual(repeat.player.state,bought.player.state,'lost response retry must not buy again');
+ await cmd(0,{type:'game/refresh'},409,{expectedRevision:1});
+ assert.deepEqual((await sync(sessions[1])).player.state,initialOther,'one player cannot spend another player balance or advance their RNG');
+  await cmd(0,{type:'game/buy',index:0,money:999},400);
+ await cmd(0,{type:'game/start-battle'},400);await cmd(0,{type:'session/patch',money:999},400);
+ await cmd(1,{type:'game/deploy',unitId:bought.player.state.session.ops[0].id,row:6,col:2,dir:'right'},400);
+ const unit=bought.player.state.session.ops[0],map=sources.levels[config.mapKey].level;
+ const zoneRows=map.grid.map((row,r)=>row.some(x=>x==='tile_start')?r:null).filter(x=>x!=null);
+ let cell;
+ for(const r of zoneRows)for(let col=0;col<Math.floor(map.cols/2);col++)if(!cell&&['MELEE','ALL','RANGED'].includes(map.buildable[r][col])&&(map.buildable[r][col]!=='RANGED'||unit.entry.position==='RANGED'))cell={row:r,col};
+ assert.ok(cell,'source map contains a valid first-round deployment cell');
+ await cmd(0,{type:'game/deploy',unitId:unit.id,...cell,dir:'right'});
+ assert.equal(states[0].player.state.session.ops[0].row,cell.row);
+ const beforeInvalid=states[0].player.state;await cmd(0,{type:'game/move',unitId:unit.id,row:-1,col:cell.col,dir:'right'},400);assert.deepEqual((await sync(sessions[0])).player.state,beforeInvalid);
+ await cmd(0,{type:'game/move',unitId:unit.id,row:13,col:cell.col,dir:'right'},400);
+ await cmd(0,{type:'game/move',unitId:unit.id,row:cell.row,col:11,dir:'right'},400);
+ await cmd(0,{type:'game/rotate',unitId:unit.id,dir:'left'});assert.equal(states[0].player.state.session.ops[0].dir,'left');
+ await cmd(0,{type:'game/ready',ready:true});await cmd(0,{type:'game/refresh'},409);
+ // Leave the fourth player unready here; automatic launch is covered by the
+ // battle-server test while these assertions exercise preparation recovery.
+ for(let i=1;i<3;i++)await cmd(i,{type:'game/ready',ready:true});assert.equal((await sync(sessions[0])).game.allReady,false);
+ const saved=(await sync(sessions[0])).player.state;clock+=11000;for(let i=1;i<4;i++)await sync(sessions[i]);clock+=1500;
+ assert.equal((await sync(sessions[1])).game.allReady,false);const restored=await sync(sessions[0]);states[0]=restored;
+ assert.equal(restored.ack,seq[0]);for(const key of ['shop','ops','equipInv','money','round'])assert.deepEqual(restored.player.state.session[key],saved.session[key],'disconnect preserves '+key);assert.deepEqual(restored.player.state.rng,saved.rng);assert.equal(restored.game.players.find(x=>x.playerId===sessions[0].playerId).ready,false);
+ const nextSequence=seq[0]+1,concurrent={...sessions[0],sequence:nextSequence,expectedRevision:states[0].player.revision,command:{type:'game/freeze'}};
+ const races=await Promise.all([post(route(sessions[0],'game-command'),concurrent),post(route(sessions[0],'game-command'),concurrent)]);
+ assert.equal(races.filter(r=>r.applied).length,1,'concurrent retries serialize and apply once');assert.equal(races[0].player.revision,races[1].player.revision);assert.deepEqual(races[0].player.state,races[1].player.state);
+ states[0]=races[0];seq[0]=nextSequence;
+ await cmd(0,{type:'game/recall',unitId:unit.id});await cmd(0,{type:'game/sell',unitId:unit.id});assert.equal(states[0].player.state.session.ops.length,0);
+ const strangers=(await post('/api/rooms',{name:'容量验证'},201)).session;
+ const strangerPeer=(await post(route(strangers,'join'),{name:'容量队友'},201)).session;
+ await post(route(strangers,'command'),{...strangers,sequence:1,command:{type:'room/set-config',config:{seasonId:config.seasonId,modeId:config.modeId,mapKey:config.mapKey}}});
+ for(const s of [strangers,strangerPeer])await post(route(s,'command'),{...s,sequence:s===strangers?2:1,command:{type:'room/set-ready',ready:true}});
+ await post(route(strangers,'command'),{...strangers,sequence:3,command:{type:'room/start'}});
+ await post(route(strangers,'game-enter'),{...strangers,config},503);
+ await post(route(sessions[3],'leave'),sessions[3]);const newRun=await enter(strangers);assert.equal(newRun.player.state.session.money,4,'leaving releases runtime capacity');
+ await post(route(sessions[0],'game-sync'),{...sessions[0],token:sessions[1].token},401);
+ for(const s of [...sessions.slice(0,3),strangers,strangerPeer])await post(route(s,'leave'),s);
+ console.log('ROOM GAME SERVER OK real four-player preparation, catalog/version/auth, separate money/RNG, buy/deploy/rotate/sell, duplicate/stale commands, ready lock, reconnect and bounded runtime capacity');
+}
+main().catch(e=>{console.error(e);process.exitCode=1;}).finally(async()=>{server.closeAllConnections();await new Promise(resolve=>server.close(resolve));});

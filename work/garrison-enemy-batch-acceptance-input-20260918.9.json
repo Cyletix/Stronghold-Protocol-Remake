@@ -1,0 +1,10 @@
+{
+  "batch": "room-game-20260918.9",
+  "scope": "enemy-selectable-attacks",
+  "before": "work/garrison-checked-after-skills-20260918.9.json",
+  "output": "work/garrison-enemy-batch-acceptance-20260918-9.json",
+  "validations": ["tools/test_enemy_selectable_attacks.py", "tools/_enemy_selective_attacks_contract_smoke.js", "tools/_enemy_selective_attacks_smoke.js", "work/enemy-selectable-attack-contract.json"],
+  "tasks": {
+    "enemy/enemy_9021_acduml_2/basic/source-selectable-attack-body": "2026-09-18 .9 普通动作限定主体：9编译边界、6运行合同组及实际源入口自然CD三发、全局负半径/被阻挡通道、法术圆形受击、冻结伤害包、来源死亡/失效/超时、池清理和2次真实主机恢复通过。只认_2闭合图，基型额外第三启用动作拒绝；同阵营trace独立去重。mode 1只用显式fixture验证入口，余音自然变形/受击反击未接；选支顺序/原生帧/已发弹体清理是明确模型，不勾整敌阶段链。"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "protocol": "room-game-20260914.25",
+  "counts": {
+    "wantedEnemies": 2130,
+    "profiles": 1555,
+    "timings": 1448,
+    "animationMappedTimings": 110,
+    "projectileSpeeds": 532,
+    "channelProfiles": 41,
+    "encounterChannelProfiles": 8,
+    "rootSelectedProfiles": 1338,
+    "encounterProfiles": 271,
+    "encounterTimings": 257,
+    "encounterAnimationMappedTimings": 22,
+    "encounterProjectileSpeeds": 80,
+    "nonAttackingEnemies": 342,
+    "encounterNonAttackingEnemies": 45,
+    "pendingEnemies": 438,
+    "pendingEncounterEnemies": 38,
+    "aliasPrefabs": 12,
+    "aliasAnimations": 157,
+    "eventGateTimings": 12,
+    "encounterEventGateTimings": 2,
+    "hitSequenceProfiles": 9,
+    "encounterHitSequenceProfiles": 3,
+    "multiHitProfiles": 5,
+    "modeProfileEnemies": 143,
+    "modeProfiles": 251,
+    "encounterModeProfileEnemies": 18,
+    "initialModeProfiles": 91,
+    "encounterInitialModeProfiles": 12
+  },
+  "checks": [
+    {
+      "command": "python -m unittest discover -s tools -p test_enemy_mode_profiles.py",
+      "result": "6 passed, including stale script mapping rejection"
+    },
+    {
+      "command": "python -m unittest discover -s tools -p test_enemy_mode_inventory.py",
+      "result": "3 passed",
+      "runner": "remaining_template_extension"
+    },
+    {
+      "command": "node tools/_external_combat_smoke.js",
+      "result": "passed; source initial mode, real damage/delivery, both blocking-change directions retain locked cast, cancellation, emitted packets and authoritative restore"
+    },
+    {
+      "command": "node tools/_boss_runtime_integration_smoke.js",
+      "result": "passed after setupEnemy mode hook"
+    },
+    {
+      "command": "node tools/check_docs.js",
+      "result": "77 documents, 2274 links passed"
+    },
+    {
+      "command": "compare work/enemy-mode-profiles-before.js with web/external_combat_data.js",
+      "result": "42 added profiles; no changes to existing timing/projectile/channels or attackCapabilities"
+    }
+  ],
+  "executionBoundary": "Independent mode/channel profiles execute for the selected mode. Initial zero is bound only with complete JP talent/skill coverage and negative defaults in both snapshots; the CN ownership overlay is an explicit cross-snapshot inference. Phase transitions, mode attributes/ranges and general abilities remain separate; existing gaps stay open.",
+  "dpsRefresh": {
+    "compile_skipped": true,
+    "calculation_skipped": true
+  },
+  "reviewFixes": [
+    "Locked casts retain their channel when blocker relationships change",
+    "Frozen mode source hashes include current prefab and MonoScript mapping, plus resolved prefab alias identity"
+  ]
+}

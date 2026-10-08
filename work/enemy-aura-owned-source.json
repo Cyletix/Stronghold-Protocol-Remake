@@ -1,0 +1,5258 @@
+{
+  "enemy_1234_dsubrl": {
+    "bundle": "assets/AB/Android/battle/enm_pfb_10.ab",
+    "bundleSha256": "e9879f8cc41570e618cfc0317b26a9c5681500e5a0b93c6ebf6d2a8f3cf600dc",
+    "rootId": "5219694014830296628",
+    "failures": [
+      {
+        "pathID": "3276856000872791604",
+        "reason": "incomplete-gameobject-components",
+        "omittedComponents": [
+          {
+            "status": "resolved",
+            "unityType": "SpriteRenderer",
+            "rule": "unique-exact-bundle-path-and-path-id",
+            "bundle": "assets/AB/Android/battle/enm_pfb_10.ab",
+            "pathID": "629729099072290356"
+          }
+        ],
+        "allMissingAreNonMonoBehaviour": true
+      },
+      {
+        "pathID": "4515978867895975476",
+        "reason": "incomplete-gameobject-components",
+        "omittedComponents": [
+          {
+            "status": "resolved",
+            "unityType": "MeshFilter",
+            "rule": "unique-exact-bundle-path-and-path-id",
+            "bundle": "assets/AB/Android/battle/enm_pfb_10.ab",
+            "pathID": "-5740402393587565004"
+          },
+          {
+            "status": "resolved",
+            "unityType": "MeshRenderer",
+            "rule": "unique-exact-bundle-path-and-path-id",
+            "bundle": "assets/AB/Android/battle/enm_pfb_10.ab",
+            "pathID": "4715587638296395316"
+          }
+        ],
+        "allMissingAreNonMonoBehaviour": true
+      }
+    ],
+    "nodes": {
+      "5219694014830296628": {
+        "pathId": "5219694014830296628",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-3644325771996742092"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "3795921041249680948"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-9069150216538538444"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-2831441160133460428"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-5482827634166841804"
+              }
+            }
+          ],
+          "m_Layer": 9,
+          "m_Name": "enemy_1234_dsubrl",
+          "m_Tag": 5,
+          "m_IsActive": true
+        }
+      },
+      "-2831441160133460428": {
+        "pathId": "-2831441160133460428",
+        "unityType": "Rigidbody2D",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "5219694014830296628"
+          },
+          "m_BodyType": 0,
+          "m_Simulated": true,
+          "m_UseFullKinematicContacts": false,
+          "m_UseAutoMass": false,
+          "m_Mass": 1.0,
+          "m_LinearDrag": 0.0,
+          "m_AngularDrag": 0.05000000074505806,
+          "m_GravityScale": 0.0,
+          "m_Material": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "m_Interpolate": 0,
+          "m_SleepingMode": 0,
+          "m_CollisionDetection": 1,
+          "m_Constraints": 4
+        }
+      },
+      "-3644325771996742092": {
+        "pathId": "-3644325771996742092",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "5219694014830296628"
+          },
+          "m_LocalRotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 5.1529998779296875,
+            "y": 6.448999881744385,
+            "z": 0.2626953125
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [
+            {
+              "m_FileID": 0,
+              "m_PathID": "9032718745867664948"
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": "-6899468439286432204"
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": "6643476355607576116"
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": "-57450458471973324"
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": "-2186910836460011980"
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": "3000183688945352244"
+            }
+          ],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          }
+        }
+      },
+      "-5482827634166841804": {
+        "pathId": "-5482827634166841804",
+        "unityType": "CircleCollider2D",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "5219694014830296628"
+          },
+          "m_Enabled": 1,
+          "m_Density": 1.0,
+          "m_Material": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "m_IsTrigger": true,
+          "m_UsedByEffector": false,
+          "m_UsedByComposite": false,
+          "m_Offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "m_Radius": 0.10000000149011612
+        }
+      },
+      "-9069150216538538444": {
+        "pathId": "-9069150216538538444",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "5219694014830296628"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "-7073810281583634641"
+          },
+          "m_Name": "",
+          "_steeringFactor": 8.0,
+          "_maxSteeringForce": 10.0,
+          "_halfBodyWidth": 0.20000000298023224
+        },
+        "fieldShape": "10df3c445080a8ca",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Torappu.Battle.MoveController",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "-7073810281583634641",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "3795921041249680948": {
+        "pathId": "3795921041249680948",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "5219694014830296628"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "-6629209555389654693"
+          },
+          "m_Name": "",
+          "_animator": {
+            "m_FileID": 0,
+            "m_PathID": "-4295544964373529036"
+          },
+          "_modes": [
+            {
+              "m_FileID": 0,
+              "m_PathID": "8695028521889250868"
+            }
+          ],
+          "_commonAbilities": [],
+          "_uiMountPoint": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_effectTransform": {
+            "m_FileID": 0,
+            "m_PathID": "-2186910836460011980"
+          },
+          "_shadow": {
+            "m_FileID": 0,
+            "m_PathID": "-7662998642612289996"
+          },
+          "_defaultBodyColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "_hideShadowOnRecycle": 0,
+          "_overrideGraphicBound": -1.0,
+          "_hudPluginReplacePairs": [],
+          "_showDebugName": 0,
+          "_sideTypeIndex": 1,
+          "_locateRange": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_disableRenderLocateRange": 0,
+          "_isFixedRotation": 0,
+          "_bodyDirectionPolicy": 0,
+          "_scaleMoveBySpeed": 0,
+          "_scaleMoveAnimationRange": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "_showSpAsBulletMode": 0,
+          "_hideBulletSpModes": [],
+          "_alwaysShowHp": 0,
+          "_alwaysHideHp": 0,
+          "_keepMoveAnimScale": 0,
+          "_useSpecificDeadAnim": 0,
+          "_useSpecificReachExitAnim": 0,
+          "_disableBornTweenColor": 0,
+          "_height": 0.0,
+          "_useSpineLikeHeightUpdate": 0,
+          "_spineLikeHeightUpdateRatio": 0.25,
+          "_delayToBorn": 0.0,
+          "_onlyDelayToBornOnTileStart": 0,
+          "_startEffect": "",
+          "_deadEffect": "",
+          "_blockVolume": 1,
+          "_specialBlockCondition": {
+            "_type": 0,
+            "_buffKeyPairs": [],
+            "_filterTags": []
+          },
+          "_dontSetEnemyFaceByCursorWhenBorn": 0,
+          "_idleWhenBorn": 0,
+          "_canNotExit": 0,
+          "_hideShadowOnReset": 0,
+          "_allowFalldownWhenReborn": 0,
+          "_alwaysCheckCurrentPoint": 0
+        },
+        "fieldShape": "98f090c8826a51a2",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Torappu.Battle.Enemy",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "-6629209555389654693",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "-2186910836460011980": {
+        "pathId": "-2186910836460011980",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-6590560086677635532"
+          },
+          "m_LocalRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "-3644325771996742092"
+          }
+        }
+      },
+      "-57450458471973324": {
+        "pathId": "-57450458471973324",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-4735434718724997580"
+          },
+          "m_LocalRotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [
+            {
+              "m_FileID": 0,
+              "m_PathID": "-5918643503883665868"
+            }
+          ],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "-3644325771996742092"
+          }
+        }
+      },
+      "-6899468439286432204": {
+        "pathId": "-6899468439286432204",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "4762906484812037684"
+          },
+          "m_LocalRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [
+            {
+              "m_FileID": 0,
+              "m_PathID": "-521696058550763980"
+            }
+          ],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "-3644325771996742092"
+          }
+        }
+      },
+      "3000183688945352244": {
+        "pathId": "3000183688945352244",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "5830770527495667252"
+          },
+          "m_LocalRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "-3644325771996742092"
+          }
+        }
+      },
+      "6643476355607576116": {
+        "pathId": "6643476355607576116",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-6481124737264304588"
+          },
+          "m_LocalRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [
+            {
+              "m_FileID": 0,
+              "m_PathID": "-7148536262126780876"
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": "-8881711063573643724"
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": "6897051113979133492"
+            }
+          ],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "-3644325771996742092"
+          }
+        }
+      },
+      "9032718745867664948": {
+        "pathId": "9032718745867664948",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "3003174679854267956"
+          },
+          "m_LocalRotation": {
+            "x": -0.25881901383399963,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 0.9659258723258972
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": -0.20000000298023224,
+            "z": -0.05999999865889549
+          },
+          "m_LocalScale": {
+            "x": 0.27000001072883606,
+            "y": 0.27000001072883606,
+            "z": 0.27000001072883606
+          },
+          "m_Children": [
+            {
+              "m_FileID": 0,
+              "m_PathID": "3488853097969172020"
+            }
+          ],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "-3644325771996742092"
+          }
+        }
+      },
+      "-4735434718724997580": {
+        "pathId": "-4735434718724997580",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-57450458471973324"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-7662998642612289996"
+              }
+            }
+          ],
+          "m_Layer": 10,
+          "m_Name": "Shadow",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "-6481124737264304588": {
+        "pathId": "-6481124737264304588",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "6643476355607576116"
+              }
+            }
+          ],
+          "m_Layer": 9,
+          "m_Name": "Talents",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "-6590560086677635532": {
+        "pathId": "-6590560086677635532",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-2186910836460011980"
+              }
+            }
+          ],
+          "m_Layer": 9,
+          "m_Name": "Effects",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "3003174679854267956": {
+        "pathId": "3003174679854267956",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "9032718745867664948"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-4295544964373529036"
+              }
+            }
+          ],
+          "m_Layer": 9,
+          "m_Name": "Graphic",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "4762906484812037684": {
+        "pathId": "4762906484812037684",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-6899468439286432204"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "8695028521889250868"
+              }
+            }
+          ],
+          "m_Layer": 9,
+          "m_Name": "Default",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "5830770527495667252": {
+        "pathId": "5830770527495667252",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "3000183688945352244"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "2206611149884505652"
+              }
+            }
+          ],
+          "m_Layer": 19,
+          "m_Name": "ColliderHolder",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "2206611149884505652": {
+        "pathId": "2206611149884505652",
+        "unityType": "CapsuleCollider2D",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "5830770527495667252"
+          },
+          "m_Enabled": 1,
+          "m_Density": 1.0,
+          "m_Material": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "m_IsTrigger": false,
+          "m_UsedByEffector": false,
+          "m_UsedByComposite": false,
+          "m_Offset": {
+            "x": 0.0,
+            "y": -0.10000002384185791
+          },
+          "m_Size": {
+            "x": 0.20000000298023224,
+            "y": 0.40000003576278687
+          },
+          "m_Direction": 0
+        }
+      },
+      "8695028521889250868": {
+        "pathId": "8695028521889250868",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "4762906484812037684"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "5390319429299248724"
+          },
+          "m_Name": "",
+          "_bodyTransform": {
+            "m_FileID": 0,
+            "m_PathID": "-521696058550763980"
+          },
+          "_animatorHooker": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_overrideStartEffect": "",
+          "_overrideDeadEffect": "",
+          "_combat": {
+            "m_FileID": 0,
+            "m_PathID": "5239735367575879220"
+          },
+          "_attack": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_attackTrigger": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_hideUIAttackRange": 0,
+          "_updateAttackRangeExtendByAttributeDirty": 0,
+          "_rangeToShow": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_extraRangesToShow": [],
+          "_generalAbilities": [],
+          "_addIndexToSignalId": 0,
+          "_includeIndexZero": 0,
+          "_alwaysHideHp": {
+            "isDefined": 0,
+            "value": 0
+          },
+          "_alwaysHideSp": {
+            "isDefined": 0,
+            "value": 0
+          }
+        },
+        "fieldShape": "ff161ffc678b2dc4",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Torappu.Battle.UnitMode",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "5390319429299248724",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "-7662998642612289996": {
+        "pathId": "-7662998642612289996",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-4735434718724997580"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "-2368896203154538901"
+          },
+          "m_Name": "",
+          "_autoAttachToGround": 0,
+          "_attachOffset": 0.10000000149011612,
+          "_simplyUseTileHeight": 0,
+          "_enableAdvanced": 0,
+          "_alwaysUseSpineOffset": 0,
+          "_sprite": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_graphic": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_faceSwitcher": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_boneToFollow": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_specialInit": 0,
+          "_simpleFollow": 0,
+          "_easeType": 1
+        },
+        "fieldShape": "319509af5d90d43a",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Torappu.Battle.ShadowController",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "-2368896203154538901",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "-4295544964373529036": {
+        "pathId": "-4295544964373529036",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "3003174679854267956"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "6360585277869116281"
+          },
+          "m_Name": "",
+          "_animations": [
+            {
+              "animKey": "Move",
+              "animName": "Move",
+              "loop": 1,
+              "speed": 1.0,
+              "ignoreMissing": 0
+            },
+            {
+              "animKey": "Idle",
+              "animName": "Idle",
+              "loop": 1,
+              "speed": 1.0,
+              "ignoreMissing": 0
+            },
+            {
+              "animKey": "Attack",
+              "animName": "Attack",
+              "loop": 0,
+              "speed": 1.0,
+              "ignoreMissing": 0
+            },
+            {
+              "animKey": "Die",
+              "animName": "Die",
+              "loop": 0,
+              "speed": 1.0,
+              "ignoreMissing": 0
+            },
+            {
+              "animKey": "Default",
+              "animName": "Default",
+              "loop": 0,
+              "speed": 1.0,
+              "ignoreMissing": 0
+            }
+          ],
+          "_spineSkins": [],
+          "_mixSettings": [],
+          "_spineScale": 1.0,
+          "_enableShowDamageFlash": 1,
+          "_cacheBoundsCenter": 1,
+          "_resetSkinToInitial": 0,
+          "_skeleton": {
+            "m_FileID": 0,
+            "m_PathID": "4692305822595628596"
+          },
+          "_faceSwitcher": {
+            "m_FileID": 0,
+            "m_PathID": "-2588065212674654668"
+          },
+          "_muzzleTransform": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_hitTransform": {
+            "m_FileID": 0,
+            "m_PathID": "-8726839030496149964"
+          },
+          "_headTransform": {
+            "m_FileID": 0,
+            "m_PathID": "-2723370474267722188"
+          },
+          "_specialPoint0": {
+            "m_FileID": 0,
+            "m_PathID": "8678193446305021492"
+          },
+          "_specialPoint1": {
+            "m_FileID": 0,
+            "m_PathID": "1015681957414911540"
+          },
+          "_specialPoint2": {
+            "m_FileID": 0,
+            "m_PathID": "-8545229033964945868"
+          },
+          "_specialPoint3": {
+            "m_FileID": 0,
+            "m_PathID": "-4834911713198522828"
+          },
+          "_specialPoint4": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_specialPoint5": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_specialPoint6": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_specialPoint7": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_specialPoint8": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_specialPoint9": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_specialPoint10": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_specialPoint11": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_specialPoint12": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_specialPoint13": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_specialPoint14": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_specialPoint15": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          }
+        },
+        "fieldShape": "a5d692c4841eba02",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Torappu.Battle.SingleSpineAnimator",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "6360585277869116281",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "-521696058550763980": {
+        "pathId": "-521696058550763980",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-8766104650485973452"
+          },
+          "m_LocalRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [
+            {
+              "m_FileID": 0,
+              "m_PathID": "-8439112178218549708"
+            }
+          ],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "-6899468439286432204"
+          }
+        }
+      },
+      "-5918643503883665868": {
+        "pathId": "-5918643503883665868",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "3276856000872791604"
+          },
+          "m_LocalRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": -0.0,
+            "y": -0.17000000178813934,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 0.11999999731779099,
+            "y": 0.11999999731779099,
+            "z": 0.0
+          },
+          "m_Children": [],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "-57450458471973324"
+          }
+        }
+      },
+      "-7148536262126780876": {
+        "pathId": "-7148536262126780876",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-1403376160119964108"
+          },
+          "m_LocalRotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": 3.102349310779573e-08,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "6643476355607576116"
+          }
+        }
+      },
+      "-8881711063573643724": {
+        "pathId": "-8881711063573643724",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-8516769957777490380"
+          },
+          "m_LocalRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "6643476355607576116"
+          }
+        }
+      },
+      "3488853097969172020": {
+        "pathId": "3488853097969172020",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-7569806926384644556"
+          },
+          "m_LocalRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [
+            {
+              "m_FileID": 0,
+              "m_PathID": "-3130018126984036812"
+            }
+          ],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "9032718745867664948"
+          }
+        }
+      },
+      "6897051113979133492": {
+        "pathId": "6897051113979133492",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-7518497378498691532"
+          },
+          "m_LocalRotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "6643476355607576116"
+          }
+        }
+      },
+      "-1403376160119964108": {
+        "pathId": "-1403376160119964108",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-7148536262126780876"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "8363264732922330676"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "1465980630809984564"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-8093492247389258188"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "3109678080708263476"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "5949952616679947828"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-3223698891216175564"
+              }
+            }
+          ],
+          "m_Layer": 12,
+          "m_Name": "AOE",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "-7518497378498691532": {
+        "pathId": "-7518497378498691532",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "6897051113979133492"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "602774932023557684"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-7785632903357448652"
+              }
+            }
+          ],
+          "m_Layer": 9,
+          "m_Name": "EpDamage",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "-7569806926384644556": {
+        "pathId": "-7569806926384644556",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "3488853097969172020"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-2588065212674654668"
+              }
+            }
+          ],
+          "m_Layer": 9,
+          "m_Name": "FaceSwitcher",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "-8516769957777490380": {
+        "pathId": "-8516769957777490380",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-8881711063573643724"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-3697016919908401612"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "5864774345195732532"
+              }
+            }
+          ],
+          "m_Layer": 9,
+          "m_Name": "Buff",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "-8766104650485973452": {
+        "pathId": "-8766104650485973452",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-521696058550763980"
+              }
+            }
+          ],
+          "m_Layer": 9,
+          "m_Name": "Body",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "3276856000872791604": {
+        "pathId": "3276856000872791604",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-5918643503883665868"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "629729099072290356"
+              }
+            }
+          ],
+          "m_Layer": 10,
+          "m_Name": "Sprite",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "-3223698891216175564": {
+        "pathId": "-3223698891216175564",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-1403376160119964108"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "-1398656344548769790"
+          },
+          "m_Name": "",
+          "_overwriteTalentKey": "",
+          "_overwriteParentRangeId": 0,
+          "_checkValidBySkillIndex": [],
+          "_attachInDummy": 0,
+          "_defaultModeIndex": -1,
+          "_attackBlackboardModeIndex": -1,
+          "_extraAttackBlackboardModeIndices": [],
+          "_overrideDefaultRangeId": 0,
+          "_applyTalentScale": 0,
+          "_influenceSkillBlackboard": 0,
+          "_applyTalentRange": 0,
+          "_applyBlackboardBySkill": 0,
+          "_applyStrBlackboardBySkill": 0,
+          "_writeRangeIdToProjectileBlackboard": 0,
+          "_affectWhenNotRootTalent": 0,
+          "_scaleCertainKeyFlag": 0,
+          "_scaleCertainKeyList": [],
+          "_scaleCertainMode": 0,
+          "_scaleModeIndices": []
+        },
+        "fieldShape": "fa20db67cceebf74",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Torappu.Battle.AppearSyncedTalent",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "-1398656344548769790",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "-8093492247389258188": {
+        "pathId": "-8093492247389258188",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-1403376160119964108"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "-3637692038217913187"
+          },
+          "m_Name": "",
+          "_targetOptions": {
+            "targetSide": 2,
+            "targetMotion": 3,
+            "targetCategory": 1,
+            "enableAdvancedOptions": 1,
+            "ignoreTargetFree": 0,
+            "ignoreAllyTargetFree": 0,
+            "ignoreHealFree": 0,
+            "ignoreTargetSide": 0,
+            "excludeSomeAbnormalFlags": 0,
+            "excludeAbnormalFlag": 0,
+            "purposeMask": 0,
+            "professionMask": 0,
+            "checkUnitType": 0,
+            "unitTypeMask": 0,
+            "onlyIgnoreSomeOfTargetFreeCase": 0,
+            "abnormalFlag": 0,
+            "abnormalCombo": 0
+          }
+        },
+        "fieldShape": "ece24ae053a65035",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Torappu.Battle.TargetValidator",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "-3637692038217913187",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "1465980630809984564": {
+        "pathId": "1465980630809984564",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-1403376160119964108"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "9073738633337710967"
+          },
+          "m_Name": "",
+          "_selector": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_metadata": {
+            "namedAsAlias": "",
+            "blackboardPrefix": ""
+          },
+          "_interruptAbilityOnDetach": 0,
+          "_attachPassiveBuffsOnDummy": 1,
+          "_ignoreIfOwnerDead": 0,
+          "_forceAsDmgOrHealAbility": 0,
+          "_buffs": [
+            {
+              "attributes": {
+                "abnormalFlags": [],
+                "abnormalImmunes": [],
+                "abnormalAntis": [],
+                "abnormalCombos": [],
+                "abnormalComboImmunes": [],
+                "attributeModifiers": []
+              },
+              "buffKey": "dsubrl_aoe[aura]",
+              "loadFromDB": 0,
+              "isDurableBuff": 0,
+              "isDamageMissable": 0,
+              "isSilenceable": 0,
+              "isStunnable": 0,
+              "isFreezable": 0,
+              "isLevitatable": 0,
+              "statusResistable": 2,
+              "templateKey": "enemy_dsubrl_aoe[aura]",
+              "disableOverride": 1,
+              "overrideKey": "",
+              "overrideType": 0,
+              "maxStackCnt": 1,
+              "refreshRemainingTimeWhenStackMax": 0,
+              "clearAllStackCntWhenTimeUp": 0,
+              "maxValidStackCnt": -1,
+              "independentCharacterSource": 0,
+              "overrideEffectKey": "",
+              "overrideOnEventPriority": 0,
+              "onEventPriority": 0,
+              "audioSignal": "enemy_dsubrl_aoe[hit]",
+              "lifeTimeType": 2,
+              "takeSnapshotWhenExtend": 0,
+              "durationKey": "",
+              "lifeTime": 0.0,
+              "triggerLifeType": 2,
+              "triggerCnt": 0,
+              "triggerInterval": 1.0,
+              "waitFirstTriggerInterval": 1,
+              "firstTriggerInterval": -1.0,
+              "priority": -1,
+              "priorityBBKeys": [],
+              "stripBlackboardParamsWithBuffKey": 0,
+              "blackboard": [],
+              "enableInitDirectionFromSource": 0
+            }
+          ],
+          "_passiveBuffs": [],
+          "_selfOption": 0,
+          "_removeBuffWhenTargetLeave": 1,
+          "_removeBuffWhenAbilityDetached": 1,
+          "_onlyAddBuffOnceForEachTarget": 0,
+          "_effects": [
+            "enemy_dsubrl_buff_01_01",
+            "enemy_dsubrl_buff_01_02",
+            "enemy_dsubrl_buff_01_03",
+            "enemy_dsubrl_buff_01_04"
+          ],
+          "_targetValidator": {
+            "m_FileID": 0,
+            "m_PathID": "-8093492247389258188"
+          },
+          "_ignoreOwnerFakeDeath": 0
+        },
+        "fieldShape": "2041eb526398fe7c",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Torappu.Battle.Abilities.AuraAbility",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "9073738633337710967",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "3109678080708263476": {
+        "pathId": "3109678080708263476",
+        "unityType": "CircleCollider2D",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-1403376160119964108"
+          },
+          "m_Enabled": 1,
+          "m_Density": 1.0,
+          "m_Material": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "m_IsTrigger": true,
+          "m_UsedByEffector": false,
+          "m_UsedByComposite": false,
+          "m_Offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "m_Radius": 0.5
+        }
+      },
+      "5949952616679947828": {
+        "pathId": "5949952616679947828",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-1403376160119964108"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "6185056810787956083"
+          },
+          "m_Name": "",
+          "_extendable": 0,
+          "_scaleble": 0
+        },
+        "fieldShape": "a9c754f78ce08c58",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Torappu.Battle.CircleRange",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "6185056810787956083",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "8363264732922330676": {
+        "pathId": "8363264732922330676",
+        "unityType": "Rigidbody2D",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-1403376160119964108"
+          },
+          "m_BodyType": 1,
+          "m_Simulated": true,
+          "m_UseFullKinematicContacts": false,
+          "m_UseAutoMass": false,
+          "m_Mass": 1.0,
+          "m_LinearDrag": 0.0,
+          "m_AngularDrag": 0.05000000074505806,
+          "m_GravityScale": 1.0,
+          "m_Material": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "m_Interpolate": 0,
+          "m_SleepingMode": 1,
+          "m_CollisionDetection": 0,
+          "m_Constraints": 0
+        }
+      },
+      "-7785632903357448652": {
+        "pathId": "-7785632903357448652",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-7518497378498691532"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "3800760148018415462"
+          },
+          "m_Name": "",
+          "_selector": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_metadata": {
+            "namedAsAlias": "",
+            "blackboardPrefix": ""
+          },
+          "_interruptAbilityOnDetach": 0,
+          "_attachPassiveBuffsOnDummy": 1,
+          "_ignoreIfOwnerDead": 0,
+          "_forceAsDmgOrHealAbility": 0,
+          "_buffs": [
+            {
+              "attributes": {
+                "abnormalFlags": [],
+                "abnormalImmunes": [],
+                "abnormalAntis": [],
+                "abnormalCombos": [],
+                "abnormalComboImmunes": [],
+                "attributeModifiers": []
+              },
+              "buffKey": "dsubrl_ep_damage",
+              "loadFromDB": 0,
+              "isDurableBuff": 0,
+              "isDamageMissable": 0,
+              "isSilenceable": 0,
+              "isStunnable": 0,
+              "isFreezable": 0,
+              "isLevitatable": 0,
+              "statusResistable": 2,
+              "templateKey": "trap_creep_ep_damage",
+              "disableOverride": 0,
+              "overrideKey": "",
+              "overrideType": 0,
+              "maxStackCnt": 1,
+              "refreshRemainingTimeWhenStackMax": 0,
+              "clearAllStackCntWhenTimeUp": 0,
+              "maxValidStackCnt": -1,
+              "independentCharacterSource": 0,
+              "overrideEffectKey": "",
+              "overrideOnEventPriority": 0,
+              "onEventPriority": 0,
+              "audioSignal": "",
+              "lifeTimeType": 2,
+              "takeSnapshotWhenExtend": 0,
+              "durationKey": "",
+              "lifeTime": 0.0,
+              "triggerLifeType": 0,
+              "triggerCnt": 0,
+              "triggerInterval": -1.0,
+              "waitFirstTriggerInterval": 1,
+              "firstTriggerInterval": -1.0,
+              "priority": -1,
+              "priorityBBKeys": [],
+              "stripBlackboardParamsWithBuffKey": 0,
+              "blackboard": [],
+              "enableInitDirectionFromSource": 0
+            }
+          ]
+        },
+        "fieldShape": "133f8bdab7f82039",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Torappu.Battle.Abilities.PassiveBuffAbility",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "3800760148018415462",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "602774932023557684": {
+        "pathId": "602774932023557684",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-7518497378498691532"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "-2726233351382997147"
+          },
+          "m_Name": "",
+          "_overwriteTalentKey": "",
+          "_overwriteParentRangeId": 0,
+          "_checkValidBySkillIndex": [],
+          "_attachInDummy": 0,
+          "_defaultModeIndex": -1,
+          "_attackBlackboardModeIndex": -1,
+          "_extraAttackBlackboardModeIndices": [],
+          "_overrideDefaultRangeId": 0,
+          "_applyTalentScale": 0,
+          "_influenceSkillBlackboard": 0,
+          "_applyTalentRange": 0,
+          "_applyBlackboardBySkill": 0,
+          "_applyStrBlackboardBySkill": 0,
+          "_writeRangeIdToProjectileBlackboard": 0,
+          "_affectWhenNotRootTalent": 0,
+          "_scaleCertainKeyFlag": 0,
+          "_scaleCertainKeyList": [],
+          "_scaleCertainMode": 0,
+          "_scaleModeIndices": []
+        },
+        "fieldShape": "fa20db67cceebf74",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Torappu.Battle.Talent",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "-2726233351382997147",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "-3697016919908401612": {
+        "pathId": "-3697016919908401612",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-8516769957777490380"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "3800760148018415462"
+          },
+          "m_Name": "",
+          "_selector": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_metadata": {
+            "namedAsAlias": "",
+            "blackboardPrefix": ""
+          },
+          "_interruptAbilityOnDetach": 0,
+          "_attachPassiveBuffsOnDummy": 1,
+          "_ignoreIfOwnerDead": 0,
+          "_forceAsDmgOrHealAbility": 0,
+          "_buffs": [
+            {
+              "attributes": {
+                "abnormalFlags": [],
+                "abnormalImmunes": [],
+                "abnormalAntis": [],
+                "abnormalCombos": [],
+                "abnormalComboImmunes": [],
+                "attributeModifiers": [
+                  {
+                    "attributeType": 26,
+                    "formulaItem": 0,
+                    "value": 0.0,
+                    "loadFromBlackboard": 1,
+                    "fetchBaseValueFromSourceEntity": 0
+                  }
+                ]
+              },
+              "buffKey": "dsubrl_buff",
+              "loadFromDB": 0,
+              "isDurableBuff": 0,
+              "isDamageMissable": 0,
+              "isSilenceable": 0,
+              "isStunnable": 0,
+              "isFreezable": 0,
+              "isLevitatable": 0,
+              "statusResistable": 2,
+              "templateKey": "empty",
+              "disableOverride": 0,
+              "overrideKey": "sluggish",
+              "overrideType": 0,
+              "maxStackCnt": 1,
+              "refreshRemainingTimeWhenStackMax": 0,
+              "clearAllStackCntWhenTimeUp": 0,
+              "maxValidStackCnt": -1,
+              "independentCharacterSource": 0,
+              "overrideEffectKey": "enemy_dsubrl_buff",
+              "overrideOnEventPriority": 0,
+              "onEventPriority": 0,
+              "audioSignal": "",
+              "lifeTimeType": 2,
+              "takeSnapshotWhenExtend": 0,
+              "durationKey": "",
+              "lifeTime": 0.0,
+              "triggerLifeType": 0,
+              "triggerCnt": 0,
+              "triggerInterval": -1.0,
+              "waitFirstTriggerInterval": 1,
+              "firstTriggerInterval": -1.0,
+              "priority": 1,
+              "priorityBBKeys": [],
+              "stripBlackboardParamsWithBuffKey": 0,
+              "blackboard": [],
+              "enableInitDirectionFromSource": 0
+            }
+          ]
+        },
+        "fieldShape": "133f8bdab7f82039",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Torappu.Battle.Abilities.PassiveBuffAbility",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "3800760148018415462",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "5864774345195732532": {
+        "pathId": "5864774345195732532",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-8516769957777490380"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "-2726233351382997147"
+          },
+          "m_Name": "",
+          "_overwriteTalentKey": "",
+          "_overwriteParentRangeId": 0,
+          "_checkValidBySkillIndex": [],
+          "_attachInDummy": 0,
+          "_defaultModeIndex": -1,
+          "_attackBlackboardModeIndex": -1,
+          "_extraAttackBlackboardModeIndices": [],
+          "_overrideDefaultRangeId": 0,
+          "_applyTalentScale": 0,
+          "_influenceSkillBlackboard": 0,
+          "_applyTalentRange": 0,
+          "_applyBlackboardBySkill": 0,
+          "_applyStrBlackboardBySkill": 0,
+          "_writeRangeIdToProjectileBlackboard": 0,
+          "_affectWhenNotRootTalent": 0,
+          "_scaleCertainKeyFlag": 0,
+          "_scaleCertainKeyList": [],
+          "_scaleCertainMode": 0,
+          "_scaleModeIndices": []
+        },
+        "fieldShape": "fa20db67cceebf74",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Torappu.Battle.Talent",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "-2726233351382997147",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "-2588065212674654668": {
+        "pathId": "-2588065212674654668",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-7569806926384644556"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "-8154061065964361586"
+          },
+          "m_Name": "",
+          "_switchTime": 0.10000000149011612,
+          "_defaultLOrR": 3
+        },
+        "fieldShape": "5e217e63306929fb",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Torappu.Battle.FaceSwitcher",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "-8154061065964361586",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "-3130018126984036812": {
+        "pathId": "-3130018126984036812",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "4515978867895975476"
+          },
+          "m_LocalRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [
+            {
+              "m_FileID": 0,
+              "m_PathID": "-8726839030496149964"
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": "-2723370474267722188"
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": "8678193446305021492"
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": "1015681957414911540"
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": "-8545229033964945868"
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": "-4834911713198522828"
+            }
+          ],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "3488853097969172020"
+          }
+        }
+      },
+      "-8439112178218549708": {
+        "pathId": "-8439112178218549708",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-1271962958728380876"
+          },
+          "m_LocalRotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "-521696058550763980"
+          }
+        }
+      },
+      "-1271962958728380876": {
+        "pathId": "-1271962958728380876",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-8439112178218549708"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "5239735367575879220"
+              }
+            }
+          ],
+          "m_Layer": 12,
+          "m_Name": "Combat",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "4515978867895975476": {
+        "pathId": "4515978867895975476",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-3130018126984036812"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-5740402393587565004"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "4715587638296395316"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "4692305822595628596"
+              }
+            }
+          ],
+          "m_Layer": 0,
+          "m_Name": "Spine",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "4692305822595628596": {
+        "pathId": "4692305822595628596",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "4515978867895975476"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "175525945580115722"
+          },
+          "m_Name": "",
+          "skeletonDataAsset": {
+            "m_FileID": 3,
+            "m_PathID": "2201814091657089066"
+          },
+          "initialSkinName": "default",
+          "initialFlipX": 0,
+          "initialFlipY": 0,
+          "updateWhenInvisible": 3,
+          "separatorSlotNames": [],
+          "zSpacing": 0.0,
+          "useClipping": 1,
+          "immutableTriangles": 0,
+          "pmaVertexColors": 1,
+          "clearStateOnDisable": 0,
+          "tintBlack": 0,
+          "singleSubmesh": 0,
+          "fixDrawOrder": 0,
+          "addNormals": 0,
+          "calculateTangents": 0,
+          "maskInteraction": 0,
+          "maskMaterials": {
+            "materialsMaskDisabled": [],
+            "materialsInsideMask": [],
+            "materialsOutsideMask": []
+          },
+          "disableRenderingOnOverride": 1,
+          "_animationName": "Default",
+          "loop": 0,
+          "timeScale": 1.0
+        },
+        "fieldShape": "c1319894b81977c4",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Spine.Unity.SkeletonAnimation",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "175525945580115722",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "5239735367575879220": {
+        "pathId": "5239735367575879220",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-1271962958728380876"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "8145049199648393782"
+          },
+          "m_Name": "",
+          "_selector": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_metadata": {
+            "namedAsAlias": "",
+            "blackboardPrefix": ""
+          },
+          "_interruptAbilityOnDetach": 0,
+          "_attachPassiveBuffsOnDummy": 1,
+          "_ignoreIfOwnerDead": 0,
+          "_forceAsDmgOrHealAbility": 0,
+          "_waitForAttackEvent": 1,
+          "_interuptIfTargetDead": 0,
+          "_resetCdStrategy": 1,
+          "_selectTargetSource": 1,
+          "_selectTargetTiming": 0,
+          "_timeMode": 0,
+          "_alwaysIncludeTarget": 1,
+          "_allowNoTarget": 0,
+          "_animKey": "",
+          "_endAnimKey": "",
+          "_downAnimKey": "",
+          "_downEndAnimKey": "",
+          "_upAnimKey": "",
+          "_upEndAnimKey": "",
+          "_cooldown": 0.0,
+          "_cooldownKey": "duration",
+          "_preDelay": 0.0,
+          "_escapeTime": 0.0,
+          "_faceToTarget": 1,
+          "_faceToDefault": 0,
+          "_faceToFront": 0,
+          "_faceToFirstCastTarget": 0,
+          "_forceFaceToDirection": 0,
+          "_activeBuffs": [],
+          "_maxAnimScale": -1.0,
+          "_onlyPlayEndAnimWhenIsLastAbility": 0,
+          "_ignorePalsyInterrupt": 0
+        },
+        "fieldShape": "6b8249983f4a6d3d",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Torappu.Battle.Abilities.EmptyAnimatedAbility",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "8145049199648393782",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "-2723370474267722188": {
+        "pathId": "-2723370474267722188",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-6694190130632049100"
+          },
+          "m_LocalRotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 4.099999904632568,
+            "z": -0.6000000238418579
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "-3130018126984036812"
+          }
+        }
+      },
+      "-4834911713198522828": {
+        "pathId": "-4834911713198522828",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "8074914956799262260"
+          },
+          "m_LocalRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -0.7279523015022278,
+            "w": 0.6856277585029602
+          },
+          "m_LocalPosition": {
+            "x": -1.625305414199829,
+            "y": 1.8135714530944824,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "-3130018126984036812"
+          }
+        }
+      },
+      "-8545229033964945868": {
+        "pathId": "-8545229033964945868",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "4271873002308320820"
+          },
+          "m_LocalRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -0.7279523015022278,
+            "w": 0.6856277585029602
+          },
+          "m_LocalPosition": {
+            "x": -0.06129162386059761,
+            "y": 1.369842767715454,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "-3130018126984036812"
+          }
+        }
+      },
+      "-8726839030496149964": {
+        "pathId": "-8726839030496149964",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "7779616824565906996"
+          },
+          "m_LocalRotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 1.600000023841858,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "-3130018126984036812"
+          }
+        }
+      },
+      "1015681957414911540": {
+        "pathId": "1015681957414911540",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "6249853490616483380"
+          },
+          "m_LocalRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -0.7279523015022278,
+            "w": 0.6856277585029602
+          },
+          "m_LocalPosition": {
+            "x": 1.598302960395813,
+            "y": 1.6035290956497192,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "-3130018126984036812"
+          }
+        }
+      },
+      "8678193446305021492": {
+        "pathId": "8678193446305021492",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "3582051874990800436"
+          },
+          "m_LocalRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -0.7279523015022278,
+            "w": 0.6856277585029602
+          },
+          "m_LocalPosition": {
+            "x": -0.07251963019371033,
+            "y": 1.500749111175537,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "-3130018126984036812"
+          }
+        }
+      },
+      "-6694190130632049100": {
+        "pathId": "-6694190130632049100",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-2723370474267722188"
+              }
+            }
+          ],
+          "m_Layer": 9,
+          "m_Name": "HeadPoint",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "3582051874990800436": {
+        "pathId": "3582051874990800436",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "8678193446305021492"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-7296998136374739404"
+              }
+            }
+          ],
+          "m_Layer": 0,
+          "m_Name": "SpecialPoint_0",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "4271873002308320820": {
+        "pathId": "4271873002308320820",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-8545229033964945868"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-5708173957533843916"
+              }
+            }
+          ],
+          "m_Layer": 0,
+          "m_Name": "SpecialPoint_2",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "6249853490616483380": {
+        "pathId": "6249853490616483380",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "1015681957414911540"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-7682124712736899532"
+              }
+            }
+          ],
+          "m_Layer": 0,
+          "m_Name": "SpecialPoint_1",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "7779616824565906996": {
+        "pathId": "7779616824565906996",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-8726839030496149964"
+              }
+            }
+          ],
+          "m_Layer": 9,
+          "m_Name": "HitPoint",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "8074914956799262260": {
+        "pathId": "8074914956799262260",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-4834911713198522828"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-4791313117694837196"
+              }
+            }
+          ],
+          "m_Layer": 0,
+          "m_Name": "SpecialPoint_3",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "-7682124712736899532": {
+        "pathId": "-7682124712736899532",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "6249853490616483380"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "8665825331570267470"
+          },
+          "m_Name": "",
+          "skeletonRenderer": {
+            "m_FileID": 0,
+            "m_PathID": "4692305822595628596"
+          },
+          "boneName": "C_Ball_8",
+          "followXYPosition": 1,
+          "followZPosition": 1,
+          "followBoneRotation": 1,
+          "followSkeletonFlip": 1,
+          "followLocalScale": 0,
+          "useAppliedLocalScale": 0,
+          "maintainedAxisOrientation": 1,
+          "initializeOnAwake": 1
+        },
+        "fieldShape": "2b7d1b249de5028e",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Spine.Unity.BoneFollower",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "8665825331570267470",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "-7296998136374739404": {
+        "pathId": "-7296998136374739404",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "3582051874990800436"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "8665825331570267470"
+          },
+          "m_Name": "",
+          "skeletonRenderer": {
+            "m_FileID": 0,
+            "m_PathID": "4692305822595628596"
+          },
+          "boneName": "C_Ball_1",
+          "followXYPosition": 1,
+          "followZPosition": 1,
+          "followBoneRotation": 1,
+          "followSkeletonFlip": 1,
+          "followLocalScale": 0,
+          "useAppliedLocalScale": 0,
+          "maintainedAxisOrientation": 1,
+          "initializeOnAwake": 1
+        },
+        "fieldShape": "2b7d1b249de5028e",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Spine.Unity.BoneFollower",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "8665825331570267470",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "-5708173957533843916": {
+        "pathId": "-5708173957533843916",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "4271873002308320820"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "8665825331570267470"
+          },
+          "m_Name": "",
+          "skeletonRenderer": {
+            "m_FileID": 0,
+            "m_PathID": "4692305822595628596"
+          },
+          "boneName": "C_Ball_9",
+          "followXYPosition": 1,
+          "followZPosition": 1,
+          "followBoneRotation": 1,
+          "followSkeletonFlip": 1,
+          "followLocalScale": 0,
+          "useAppliedLocalScale": 0,
+          "maintainedAxisOrientation": 1,
+          "initializeOnAwake": 1
+        },
+        "fieldShape": "2b7d1b249de5028e",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Spine.Unity.BoneFollower",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "8665825331570267470",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "-4791313117694837196": {
+        "pathId": "-4791313117694837196",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "8074914956799262260"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "8665825331570267470"
+          },
+          "m_Name": "",
+          "skeletonRenderer": {
+            "m_FileID": 0,
+            "m_PathID": "4692305822595628596"
+          },
+          "boneName": "C_Ball_10",
+          "followXYPosition": 1,
+          "followZPosition": 1,
+          "followBoneRotation": 1,
+          "followSkeletonFlip": 1,
+          "followLocalScale": 0,
+          "useAppliedLocalScale": 0,
+          "maintainedAxisOrientation": 1,
+          "initializeOnAwake": 1
+        },
+        "fieldShape": "2b7d1b249de5028e",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Spine.Unity.BoneFollower",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "8665825331570267470",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      }
+    }
+  },
+  "enemy_1234_dsubrl_2": {
+    "bundle": "assets/AB/Android/battle/enm_pfb_10.ab",
+    "bundleSha256": "e9879f8cc41570e618cfc0317b26a9c5681500e5a0b93c6ebf6d2a8f3cf600dc",
+    "rootId": "1450311179888977059",
+    "failures": [
+      {
+        "pathID": "1963299775845000355",
+        "reason": "incomplete-gameobject-components",
+        "omittedComponents": [
+          {
+            "status": "resolved",
+            "unityType": "SpriteRenderer",
+            "rule": "unique-exact-bundle-path-and-path-id",
+            "bundle": "assets/AB/Android/battle/enm_pfb_10.ab",
+            "pathID": "-1274770064782105437"
+          }
+        ],
+        "allMissingAreNonMonoBehaviour": true
+      },
+      {
+        "pathID": "-5620634683415389",
+        "reason": "incomplete-gameobject-components",
+        "omittedComponents": [
+          {
+            "status": "resolved",
+            "unityType": "MeshFilter",
+            "rule": "unique-exact-bundle-path-and-path-id",
+            "bundle": "assets/AB/Android/battle/enm_pfb_10.ab",
+            "pathID": "-3281679001968352093"
+          },
+          {
+            "status": "resolved",
+            "unityType": "MeshRenderer",
+            "rule": "unique-exact-bundle-path-and-path-id",
+            "bundle": "assets/AB/Android/battle/enm_pfb_10.ab",
+            "pathID": "-473666169238625117"
+          }
+        ],
+        "allMissingAreNonMonoBehaviour": true
+      }
+    ],
+    "nodes": {
+      "1450311179888977059": {
+        "pathId": "1450311179888977059",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "2997712160150742179"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-3464584881987361629"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-1629574844179716957"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "3123472507523196067"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "1471527563932230819"
+              }
+            }
+          ],
+          "m_Layer": 9,
+          "m_Name": "enemy_1234_dsubrl_2",
+          "m_Tag": 5,
+          "m_IsActive": true
+        }
+      },
+      "-1629574844179716957": {
+        "pathId": "-1629574844179716957",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "1450311179888977059"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "-7073810281583634641"
+          },
+          "m_Name": "",
+          "_steeringFactor": 8.0,
+          "_maxSteeringForce": 10.0,
+          "_halfBodyWidth": 0.20000000298023224
+        },
+        "fieldShape": "10df3c445080a8ca",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Torappu.Battle.MoveController",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "-7073810281583634641",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "-3464584881987361629": {
+        "pathId": "-3464584881987361629",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "1450311179888977059"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "-6629209555389654693"
+          },
+          "m_Name": "",
+          "_animator": {
+            "m_FileID": 0,
+            "m_PathID": "8533011092476814499"
+          },
+          "_modes": [
+            {
+              "m_FileID": 0,
+              "m_PathID": "-2095933444294941533"
+            }
+          ],
+          "_commonAbilities": [],
+          "_uiMountPoint": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_effectTransform": {
+            "m_FileID": 0,
+            "m_PathID": "6908337877737432227"
+          },
+          "_shadow": {
+            "m_FileID": 0,
+            "m_PathID": "-219697071800621917"
+          },
+          "_defaultBodyColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "_hideShadowOnRecycle": 0,
+          "_overrideGraphicBound": -1.0,
+          "_hudPluginReplacePairs": [],
+          "_showDebugName": 0,
+          "_sideTypeIndex": 1,
+          "_locateRange": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_disableRenderLocateRange": 0,
+          "_isFixedRotation": 0,
+          "_bodyDirectionPolicy": 0,
+          "_scaleMoveBySpeed": 0,
+          "_scaleMoveAnimationRange": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "_showSpAsBulletMode": 0,
+          "_hideBulletSpModes": [],
+          "_alwaysShowHp": 0,
+          "_alwaysHideHp": 0,
+          "_keepMoveAnimScale": 0,
+          "_useSpecificDeadAnim": 0,
+          "_useSpecificReachExitAnim": 0,
+          "_disableBornTweenColor": 0,
+          "_height": 0.0,
+          "_useSpineLikeHeightUpdate": 0,
+          "_spineLikeHeightUpdateRatio": 0.25,
+          "_delayToBorn": 0.0,
+          "_onlyDelayToBornOnTileStart": 0,
+          "_startEffect": "",
+          "_deadEffect": "",
+          "_blockVolume": 1,
+          "_specialBlockCondition": {
+            "_type": 0,
+            "_buffKeyPairs": [],
+            "_filterTags": []
+          },
+          "_dontSetEnemyFaceByCursorWhenBorn": 0,
+          "_idleWhenBorn": 0,
+          "_canNotExit": 0,
+          "_hideShadowOnReset": 0,
+          "_allowFalldownWhenReborn": 0,
+          "_alwaysCheckCurrentPoint": 0
+        },
+        "fieldShape": "98f090c8826a51a2",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Torappu.Battle.Enemy",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "-6629209555389654693",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "1471527563932230819": {
+        "pathId": "1471527563932230819",
+        "unityType": "CircleCollider2D",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "1450311179888977059"
+          },
+          "m_Enabled": 1,
+          "m_Density": 1.0,
+          "m_Material": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "m_IsTrigger": true,
+          "m_UsedByEffector": false,
+          "m_UsedByComposite": false,
+          "m_Offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "m_Radius": 0.10000000149011612
+        }
+      },
+      "2997712160150742179": {
+        "pathId": "2997712160150742179",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "1450311179888977059"
+          },
+          "m_LocalRotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 5.1529998779296875,
+            "y": 6.448999881744385,
+            "z": 0.2626953125
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [
+            {
+              "m_FileID": 0,
+              "m_PathID": "-6937978407164025693"
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": "8690190378514212003"
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": "4678739633114211491"
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": "-6568870299104615261"
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": "6908337877737432227"
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": "3938128104601445539"
+            }
+          ],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          }
+        }
+      },
+      "3123472507523196067": {
+        "pathId": "3123472507523196067",
+        "unityType": "Rigidbody2D",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "1450311179888977059"
+          },
+          "m_BodyType": 0,
+          "m_Simulated": true,
+          "m_UseFullKinematicContacts": false,
+          "m_UseAutoMass": false,
+          "m_Mass": 1.0,
+          "m_LinearDrag": 0.0,
+          "m_AngularDrag": 0.05000000074505806,
+          "m_GravityScale": 0.0,
+          "m_Material": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "m_Interpolate": 0,
+          "m_SleepingMode": 0,
+          "m_CollisionDetection": 1,
+          "m_Constraints": 4
+        }
+      },
+      "-6568870299104615261": {
+        "pathId": "-6568870299104615261",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-7896359587581631325"
+          },
+          "m_LocalRotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [
+            {
+              "m_FileID": 0,
+              "m_PathID": "9214799672711603363"
+            }
+          ],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "2997712160150742179"
+          }
+        }
+      },
+      "-6937978407164025693": {
+        "pathId": "-6937978407164025693",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "6409863324766332067"
+          },
+          "m_LocalRotation": {
+            "x": -0.25881901383399963,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 0.9659258723258972
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": -0.20000000298023224,
+            "z": -0.05999999865889549
+          },
+          "m_LocalScale": {
+            "x": 0.27000001072883606,
+            "y": 0.27000001072883606,
+            "z": 0.27000001072883606
+          },
+          "m_Children": [
+            {
+              "m_FileID": 0,
+              "m_PathID": "-852131590960159581"
+            }
+          ],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "2997712160150742179"
+          }
+        }
+      },
+      "3938128104601445539": {
+        "pathId": "3938128104601445539",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-344664616990710621"
+          },
+          "m_LocalRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "2997712160150742179"
+          }
+        }
+      },
+      "4678739633114211491": {
+        "pathId": "4678739633114211491",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-4404877493683460957"
+          },
+          "m_LocalRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [
+            {
+              "m_FileID": 0,
+              "m_PathID": "9175692360912495779"
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": "-7701936680972295005"
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": "6109273167190647971"
+            }
+          ],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "2997712160150742179"
+          }
+        }
+      },
+      "6908337877737432227": {
+        "pathId": "6908337877737432227",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "8954915758158865571"
+          },
+          "m_LocalRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "2997712160150742179"
+          }
+        }
+      },
+      "8690190378514212003": {
+        "pathId": "8690190378514212003",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "3683119293917586595"
+          },
+          "m_LocalRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [
+            {
+              "m_FileID": 0,
+              "m_PathID": "6476730867535209635"
+            }
+          ],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "2997712160150742179"
+          }
+        }
+      },
+      "-344664616990710621": {
+        "pathId": "-344664616990710621",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "3938128104601445539"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-8884719261241023325"
+              }
+            }
+          ],
+          "m_Layer": 19,
+          "m_Name": "ColliderHolder",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "-4404877493683460957": {
+        "pathId": "-4404877493683460957",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "4678739633114211491"
+              }
+            }
+          ],
+          "m_Layer": 9,
+          "m_Name": "Talents",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "-7896359587581631325": {
+        "pathId": "-7896359587581631325",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-6568870299104615261"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-219697071800621917"
+              }
+            }
+          ],
+          "m_Layer": 10,
+          "m_Name": "Shadow",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "3683119293917586595": {
+        "pathId": "3683119293917586595",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "8690190378514212003"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-2095933444294941533"
+              }
+            }
+          ],
+          "m_Layer": 9,
+          "m_Name": "Default",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "6409863324766332067": {
+        "pathId": "6409863324766332067",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-6937978407164025693"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "8533011092476814499"
+              }
+            }
+          ],
+          "m_Layer": 9,
+          "m_Name": "Graphic",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "8954915758158865571": {
+        "pathId": "8954915758158865571",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "6908337877737432227"
+              }
+            }
+          ],
+          "m_Layer": 9,
+          "m_Name": "Effects",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "-219697071800621917": {
+        "pathId": "-219697071800621917",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-7896359587581631325"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "-2368896203154538901"
+          },
+          "m_Name": "",
+          "_autoAttachToGround": 0,
+          "_attachOffset": 0.10000000149011612,
+          "_simplyUseTileHeight": 0,
+          "_enableAdvanced": 0,
+          "_alwaysUseSpineOffset": 0,
+          "_sprite": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_graphic": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_faceSwitcher": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_boneToFollow": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_specialInit": 0,
+          "_simpleFollow": 0,
+          "_easeType": 1
+        },
+        "fieldShape": "319509af5d90d43a",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Torappu.Battle.ShadowController",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "-2368896203154538901",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "-8884719261241023325": {
+        "pathId": "-8884719261241023325",
+        "unityType": "CapsuleCollider2D",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-344664616990710621"
+          },
+          "m_Enabled": 1,
+          "m_Density": 1.0,
+          "m_Material": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "m_IsTrigger": false,
+          "m_UsedByEffector": false,
+          "m_UsedByComposite": false,
+          "m_Offset": {
+            "x": 0.0,
+            "y": -0.10000002384185791
+          },
+          "m_Size": {
+            "x": 0.20000000298023224,
+            "y": 0.40000003576278687
+          },
+          "m_Direction": 0
+        }
+      },
+      "8533011092476814499": {
+        "pathId": "8533011092476814499",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "6409863324766332067"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "6360585277869116281"
+          },
+          "m_Name": "",
+          "_animations": [
+            {
+              "animKey": "Move",
+              "animName": "Move",
+              "loop": 1,
+              "speed": 1.0,
+              "ignoreMissing": 0
+            },
+            {
+              "animKey": "Idle",
+              "animName": "Idle",
+              "loop": 1,
+              "speed": 1.0,
+              "ignoreMissing": 0
+            },
+            {
+              "animKey": "Attack",
+              "animName": "Attack",
+              "loop": 0,
+              "speed": 1.0,
+              "ignoreMissing": 0
+            },
+            {
+              "animKey": "Die",
+              "animName": "Die",
+              "loop": 0,
+              "speed": 1.0,
+              "ignoreMissing": 0
+            },
+            {
+              "animKey": "Default",
+              "animName": "Default",
+              "loop": 0,
+              "speed": 1.0,
+              "ignoreMissing": 0
+            }
+          ],
+          "_spineSkins": [],
+          "_mixSettings": [],
+          "_spineScale": 1.0,
+          "_enableShowDamageFlash": 1,
+          "_cacheBoundsCenter": 1,
+          "_resetSkinToInitial": 0,
+          "_skeleton": {
+            "m_FileID": 0,
+            "m_PathID": "580328916424484003"
+          },
+          "_faceSwitcher": {
+            "m_FileID": 0,
+            "m_PathID": "2977110001384121507"
+          },
+          "_muzzleTransform": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_hitTransform": {
+            "m_FileID": 0,
+            "m_PathID": "-4100541426394176349"
+          },
+          "_headTransform": {
+            "m_FileID": 0,
+            "m_PathID": "5808644604267291811"
+          },
+          "_specialPoint0": {
+            "m_FileID": 0,
+            "m_PathID": "8128144017968293027"
+          },
+          "_specialPoint1": {
+            "m_FileID": 0,
+            "m_PathID": "2891782886595257507"
+          },
+          "_specialPoint2": {
+            "m_FileID": 0,
+            "m_PathID": "8186017318586836131"
+          },
+          "_specialPoint3": {
+            "m_FileID": 0,
+            "m_PathID": "-3136167005921057629"
+          },
+          "_specialPoint4": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_specialPoint5": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_specialPoint6": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_specialPoint7": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_specialPoint8": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_specialPoint9": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_specialPoint10": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_specialPoint11": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_specialPoint12": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_specialPoint13": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_specialPoint14": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_specialPoint15": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          }
+        },
+        "fieldShape": "a5d692c4841eba02",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Torappu.Battle.SingleSpineAnimator",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "6360585277869116281",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "-2095933444294941533": {
+        "pathId": "-2095933444294941533",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "3683119293917586595"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "5390319429299248724"
+          },
+          "m_Name": "",
+          "_bodyTransform": {
+            "m_FileID": 0,
+            "m_PathID": "6476730867535209635"
+          },
+          "_animatorHooker": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_overrideStartEffect": "",
+          "_overrideDeadEffect": "",
+          "_combat": {
+            "m_FileID": 0,
+            "m_PathID": "-7560027626225376093"
+          },
+          "_attack": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_attackTrigger": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_hideUIAttackRange": 0,
+          "_updateAttackRangeExtendByAttributeDirty": 0,
+          "_rangeToShow": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_extraRangesToShow": [],
+          "_generalAbilities": [],
+          "_addIndexToSignalId": 0,
+          "_includeIndexZero": 0,
+          "_alwaysHideHp": {
+            "isDefined": 0,
+            "value": 0
+          },
+          "_alwaysHideSp": {
+            "isDefined": 0,
+            "value": 0
+          }
+        },
+        "fieldShape": "ff161ffc678b2dc4",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Torappu.Battle.UnitMode",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "5390319429299248724",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "-7701936680972295005": {
+        "pathId": "-7701936680972295005",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "2320233765430191267"
+          },
+          "m_LocalRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "4678739633114211491"
+          }
+        }
+      },
+      "-852131590960159581": {
+        "pathId": "-852131590960159581",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-872714451689839453"
+          },
+          "m_LocalRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [
+            {
+              "m_FileID": 0,
+              "m_PathID": "-624704640666606429"
+            }
+          ],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "-6937978407164025693"
+          }
+        }
+      },
+      "6109273167190647971": {
+        "pathId": "6109273167190647971",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "2548551003099980963"
+          },
+          "m_LocalRotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "4678739633114211491"
+          }
+        }
+      },
+      "6476730867535209635": {
+        "pathId": "6476730867535209635",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "8325522872308819107"
+          },
+          "m_LocalRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [
+            {
+              "m_FileID": 0,
+              "m_PathID": "-4158582299584535389"
+            }
+          ],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "8690190378514212003"
+          }
+        }
+      },
+      "9175692360912495779": {
+        "pathId": "9175692360912495779",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "7519398609422935203"
+          },
+          "m_LocalRotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": 3.102349310779573e-08,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "4678739633114211491"
+          }
+        }
+      },
+      "9214799672711603363": {
+        "pathId": "9214799672711603363",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "1963299775845000355"
+          },
+          "m_LocalRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": -0.0,
+            "y": -0.17000000178813934,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 0.11999999731779099,
+            "y": 0.11999999731779099,
+            "z": 0.0
+          },
+          "m_Children": [],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "-6568870299104615261"
+          }
+        }
+      },
+      "-872714451689839453": {
+        "pathId": "-872714451689839453",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-852131590960159581"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "2977110001384121507"
+              }
+            }
+          ],
+          "m_Layer": 9,
+          "m_Name": "FaceSwitcher",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "1963299775845000355": {
+        "pathId": "1963299775845000355",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "9214799672711603363"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-1274770064782105437"
+              }
+            }
+          ],
+          "m_Layer": 10,
+          "m_Name": "Sprite",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "2320233765430191267": {
+        "pathId": "2320233765430191267",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-7701936680972295005"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-6038954979665091421"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-1107411382048955229"
+              }
+            }
+          ],
+          "m_Layer": 9,
+          "m_Name": "Buff",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "2548551003099980963": {
+        "pathId": "2548551003099980963",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "6109273167190647971"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-5132600932330019677"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "3668126531597132963"
+              }
+            }
+          ],
+          "m_Layer": 9,
+          "m_Name": "EpDamage",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "7519398609422935203": {
+        "pathId": "7519398609422935203",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "9175692360912495779"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-252101460108483421"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "8310179812074153123"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "7148359679958148259"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-2883614608238091101"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "2054298738832925859"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "5895777237462115491"
+              }
+            }
+          ],
+          "m_Layer": 12,
+          "m_Name": "AOE",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "8325522872308819107": {
+        "pathId": "8325522872308819107",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "6476730867535209635"
+              }
+            }
+          ],
+          "m_Layer": 9,
+          "m_Name": "Body",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "-5132600932330019677": {
+        "pathId": "-5132600932330019677",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "2548551003099980963"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "-2726233351382997147"
+          },
+          "m_Name": "",
+          "_overwriteTalentKey": "",
+          "_overwriteParentRangeId": 0,
+          "_checkValidBySkillIndex": [],
+          "_attachInDummy": 0,
+          "_defaultModeIndex": -1,
+          "_attackBlackboardModeIndex": -1,
+          "_extraAttackBlackboardModeIndices": [],
+          "_overrideDefaultRangeId": 0,
+          "_applyTalentScale": 0,
+          "_influenceSkillBlackboard": 0,
+          "_applyTalentRange": 0,
+          "_applyBlackboardBySkill": 0,
+          "_applyStrBlackboardBySkill": 0,
+          "_writeRangeIdToProjectileBlackboard": 0,
+          "_affectWhenNotRootTalent": 0,
+          "_scaleCertainKeyFlag": 0,
+          "_scaleCertainKeyList": [],
+          "_scaleCertainMode": 0,
+          "_scaleModeIndices": []
+        },
+        "fieldShape": "fa20db67cceebf74",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Torappu.Battle.Talent",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "-2726233351382997147",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "3668126531597132963": {
+        "pathId": "3668126531597132963",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "2548551003099980963"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "3800760148018415462"
+          },
+          "m_Name": "",
+          "_selector": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_metadata": {
+            "namedAsAlias": "",
+            "blackboardPrefix": ""
+          },
+          "_interruptAbilityOnDetach": 0,
+          "_attachPassiveBuffsOnDummy": 1,
+          "_ignoreIfOwnerDead": 0,
+          "_forceAsDmgOrHealAbility": 0,
+          "_buffs": [
+            {
+              "attributes": {
+                "abnormalFlags": [],
+                "abnormalImmunes": [],
+                "abnormalAntis": [],
+                "abnormalCombos": [],
+                "abnormalComboImmunes": [],
+                "attributeModifiers": []
+              },
+              "buffKey": "dsubrl_ep_damage",
+              "loadFromDB": 0,
+              "isDurableBuff": 0,
+              "isDamageMissable": 0,
+              "isSilenceable": 0,
+              "isStunnable": 0,
+              "isFreezable": 0,
+              "isLevitatable": 0,
+              "statusResistable": 2,
+              "templateKey": "trap_creep_ep_damage",
+              "disableOverride": 0,
+              "overrideKey": "",
+              "overrideType": 0,
+              "maxStackCnt": 1,
+              "refreshRemainingTimeWhenStackMax": 0,
+              "clearAllStackCntWhenTimeUp": 0,
+              "maxValidStackCnt": -1,
+              "independentCharacterSource": 0,
+              "overrideEffectKey": "",
+              "overrideOnEventPriority": 0,
+              "onEventPriority": 0,
+              "audioSignal": "",
+              "lifeTimeType": 2,
+              "takeSnapshotWhenExtend": 0,
+              "durationKey": "",
+              "lifeTime": 0.0,
+              "triggerLifeType": 0,
+              "triggerCnt": 0,
+              "triggerInterval": -1.0,
+              "waitFirstTriggerInterval": 1,
+              "firstTriggerInterval": -1.0,
+              "priority": -1,
+              "priorityBBKeys": [],
+              "stripBlackboardParamsWithBuffKey": 0,
+              "blackboard": [],
+              "enableInitDirectionFromSource": 0
+            }
+          ]
+        },
+        "fieldShape": "133f8bdab7f82039",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Torappu.Battle.Abilities.PassiveBuffAbility",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "3800760148018415462",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "-1107411382048955229": {
+        "pathId": "-1107411382048955229",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "2320233765430191267"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "-2726233351382997147"
+          },
+          "m_Name": "",
+          "_overwriteTalentKey": "",
+          "_overwriteParentRangeId": 0,
+          "_checkValidBySkillIndex": [],
+          "_attachInDummy": 0,
+          "_defaultModeIndex": -1,
+          "_attackBlackboardModeIndex": -1,
+          "_extraAttackBlackboardModeIndices": [],
+          "_overrideDefaultRangeId": 0,
+          "_applyTalentScale": 0,
+          "_influenceSkillBlackboard": 0,
+          "_applyTalentRange": 0,
+          "_applyBlackboardBySkill": 0,
+          "_applyStrBlackboardBySkill": 0,
+          "_writeRangeIdToProjectileBlackboard": 0,
+          "_affectWhenNotRootTalent": 0,
+          "_scaleCertainKeyFlag": 0,
+          "_scaleCertainKeyList": [],
+          "_scaleCertainMode": 0,
+          "_scaleModeIndices": []
+        },
+        "fieldShape": "fa20db67cceebf74",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Torappu.Battle.Talent",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "-2726233351382997147",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "-6038954979665091421": {
+        "pathId": "-6038954979665091421",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "2320233765430191267"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "3800760148018415462"
+          },
+          "m_Name": "",
+          "_selector": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_metadata": {
+            "namedAsAlias": "",
+            "blackboardPrefix": ""
+          },
+          "_interruptAbilityOnDetach": 0,
+          "_attachPassiveBuffsOnDummy": 1,
+          "_ignoreIfOwnerDead": 0,
+          "_forceAsDmgOrHealAbility": 0,
+          "_buffs": [
+            {
+              "attributes": {
+                "abnormalFlags": [],
+                "abnormalImmunes": [],
+                "abnormalAntis": [],
+                "abnormalCombos": [],
+                "abnormalComboImmunes": [],
+                "attributeModifiers": [
+                  {
+                    "attributeType": 26,
+                    "formulaItem": 0,
+                    "value": 0.0,
+                    "loadFromBlackboard": 1,
+                    "fetchBaseValueFromSourceEntity": 0
+                  }
+                ]
+              },
+              "buffKey": "dsubrl_buff",
+              "loadFromDB": 0,
+              "isDurableBuff": 0,
+              "isDamageMissable": 0,
+              "isSilenceable": 0,
+              "isStunnable": 0,
+              "isFreezable": 0,
+              "isLevitatable": 0,
+              "statusResistable": 2,
+              "templateKey": "empty",
+              "disableOverride": 0,
+              "overrideKey": "sluggish",
+              "overrideType": 0,
+              "maxStackCnt": 1,
+              "refreshRemainingTimeWhenStackMax": 0,
+              "clearAllStackCntWhenTimeUp": 0,
+              "maxValidStackCnt": -1,
+              "independentCharacterSource": 0,
+              "overrideEffectKey": "enemy_dsubrl_buff",
+              "overrideOnEventPriority": 0,
+              "onEventPriority": 0,
+              "audioSignal": "",
+              "lifeTimeType": 2,
+              "takeSnapshotWhenExtend": 0,
+              "durationKey": "",
+              "lifeTime": 0.0,
+              "triggerLifeType": 0,
+              "triggerCnt": 0,
+              "triggerInterval": -1.0,
+              "waitFirstTriggerInterval": 1,
+              "firstTriggerInterval": -1.0,
+              "priority": 1,
+              "priorityBBKeys": [],
+              "stripBlackboardParamsWithBuffKey": 0,
+              "blackboard": [],
+              "enableInitDirectionFromSource": 0
+            }
+          ]
+        },
+        "fieldShape": "133f8bdab7f82039",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Torappu.Battle.Abilities.PassiveBuffAbility",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "3800760148018415462",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "-252101460108483421": {
+        "pathId": "-252101460108483421",
+        "unityType": "Rigidbody2D",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "7519398609422935203"
+          },
+          "m_BodyType": 1,
+          "m_Simulated": true,
+          "m_UseFullKinematicContacts": false,
+          "m_UseAutoMass": false,
+          "m_Mass": 1.0,
+          "m_LinearDrag": 0.0,
+          "m_AngularDrag": 0.05000000074505806,
+          "m_GravityScale": 1.0,
+          "m_Material": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "m_Interpolate": 0,
+          "m_SleepingMode": 1,
+          "m_CollisionDetection": 0,
+          "m_Constraints": 0
+        }
+      },
+      "-2883614608238091101": {
+        "pathId": "-2883614608238091101",
+        "unityType": "CircleCollider2D",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "7519398609422935203"
+          },
+          "m_Enabled": 1,
+          "m_Density": 1.0,
+          "m_Material": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "m_IsTrigger": true,
+          "m_UsedByEffector": false,
+          "m_UsedByComposite": false,
+          "m_Offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "m_Radius": 0.5
+        }
+      },
+      "2054298738832925859": {
+        "pathId": "2054298738832925859",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "7519398609422935203"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "6185056810787956083"
+          },
+          "m_Name": "",
+          "_extendable": 0,
+          "_scaleble": 0
+        },
+        "fieldShape": "a9c754f78ce08c58",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Torappu.Battle.CircleRange",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "6185056810787956083",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "5895777237462115491": {
+        "pathId": "5895777237462115491",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "7519398609422935203"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "-1398656344548769790"
+          },
+          "m_Name": "",
+          "_overwriteTalentKey": "",
+          "_overwriteParentRangeId": 0,
+          "_checkValidBySkillIndex": [],
+          "_attachInDummy": 0,
+          "_defaultModeIndex": -1,
+          "_attackBlackboardModeIndex": -1,
+          "_extraAttackBlackboardModeIndices": [],
+          "_overrideDefaultRangeId": 0,
+          "_applyTalentScale": 0,
+          "_influenceSkillBlackboard": 0,
+          "_applyTalentRange": 0,
+          "_applyBlackboardBySkill": 0,
+          "_applyStrBlackboardBySkill": 0,
+          "_writeRangeIdToProjectileBlackboard": 0,
+          "_affectWhenNotRootTalent": 0,
+          "_scaleCertainKeyFlag": 0,
+          "_scaleCertainKeyList": [],
+          "_scaleCertainMode": 0,
+          "_scaleModeIndices": []
+        },
+        "fieldShape": "fa20db67cceebf74",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Torappu.Battle.AppearSyncedTalent",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "-1398656344548769790",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "7148359679958148259": {
+        "pathId": "7148359679958148259",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "7519398609422935203"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "-3637692038217913187"
+          },
+          "m_Name": "",
+          "_targetOptions": {
+            "targetSide": 2,
+            "targetMotion": 3,
+            "targetCategory": 1,
+            "enableAdvancedOptions": 1,
+            "ignoreTargetFree": 0,
+            "ignoreAllyTargetFree": 0,
+            "ignoreHealFree": 0,
+            "ignoreTargetSide": 0,
+            "excludeSomeAbnormalFlags": 0,
+            "excludeAbnormalFlag": 0,
+            "purposeMask": 0,
+            "professionMask": 0,
+            "checkUnitType": 0,
+            "unitTypeMask": 0,
+            "onlyIgnoreSomeOfTargetFreeCase": 0,
+            "abnormalFlag": 0,
+            "abnormalCombo": 0
+          }
+        },
+        "fieldShape": "ece24ae053a65035",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Torappu.Battle.TargetValidator",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "-3637692038217913187",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "8310179812074153123": {
+        "pathId": "8310179812074153123",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "7519398609422935203"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "9073738633337710967"
+          },
+          "m_Name": "",
+          "_selector": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_metadata": {
+            "namedAsAlias": "",
+            "blackboardPrefix": ""
+          },
+          "_interruptAbilityOnDetach": 0,
+          "_attachPassiveBuffsOnDummy": 1,
+          "_ignoreIfOwnerDead": 0,
+          "_forceAsDmgOrHealAbility": 0,
+          "_buffs": [
+            {
+              "attributes": {
+                "abnormalFlags": [],
+                "abnormalImmunes": [],
+                "abnormalAntis": [],
+                "abnormalCombos": [],
+                "abnormalComboImmunes": [],
+                "attributeModifiers": []
+              },
+              "buffKey": "dsubrl_aoe[aura]",
+              "loadFromDB": 0,
+              "isDurableBuff": 0,
+              "isDamageMissable": 0,
+              "isSilenceable": 0,
+              "isStunnable": 0,
+              "isFreezable": 0,
+              "isLevitatable": 0,
+              "statusResistable": 2,
+              "templateKey": "enemy_dsubrl_aoe[aura]",
+              "disableOverride": 1,
+              "overrideKey": "",
+              "overrideType": 0,
+              "maxStackCnt": 1,
+              "refreshRemainingTimeWhenStackMax": 0,
+              "clearAllStackCntWhenTimeUp": 0,
+              "maxValidStackCnt": -1,
+              "independentCharacterSource": 0,
+              "overrideEffectKey": "",
+              "overrideOnEventPriority": 0,
+              "onEventPriority": 0,
+              "audioSignal": "enemy_dsubrl_aoe[hit]",
+              "lifeTimeType": 2,
+              "takeSnapshotWhenExtend": 0,
+              "durationKey": "",
+              "lifeTime": 0.0,
+              "triggerLifeType": 2,
+              "triggerCnt": 0,
+              "triggerInterval": 1.0,
+              "waitFirstTriggerInterval": 1,
+              "firstTriggerInterval": -1.0,
+              "priority": -1,
+              "priorityBBKeys": [],
+              "stripBlackboardParamsWithBuffKey": 0,
+              "blackboard": [],
+              "enableInitDirectionFromSource": 0
+            }
+          ],
+          "_passiveBuffs": [],
+          "_selfOption": 0,
+          "_removeBuffWhenTargetLeave": 1,
+          "_removeBuffWhenAbilityDetached": 1,
+          "_onlyAddBuffOnceForEachTarget": 0,
+          "_effects": [
+            "enemy_dsubrl_buff_01_01",
+            "enemy_dsubrl_buff_01_02",
+            "enemy_dsubrl_buff_01_03",
+            "enemy_dsubrl_buff_01_04"
+          ],
+          "_targetValidator": {
+            "m_FileID": 0,
+            "m_PathID": "7148359679958148259"
+          },
+          "_ignoreOwnerFakeDeath": 0
+        },
+        "fieldShape": "2041eb526398fe7c",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Torappu.Battle.Abilities.AuraAbility",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "9073738633337710967",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "2977110001384121507": {
+        "pathId": "2977110001384121507",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-872714451689839453"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "-8154061065964361586"
+          },
+          "m_Name": "",
+          "_switchTime": 0.10000000149011612,
+          "_defaultLOrR": 3
+        },
+        "fieldShape": "5e217e63306929fb",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Torappu.Battle.FaceSwitcher",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "-8154061065964361586",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "-4158582299584535389": {
+        "pathId": "-4158582299584535389",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "3146248017074939043"
+          },
+          "m_LocalRotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "6476730867535209635"
+          }
+        }
+      },
+      "-624704640666606429": {
+        "pathId": "-624704640666606429",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-5620634683415389"
+          },
+          "m_LocalRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [
+            {
+              "m_FileID": 0,
+              "m_PathID": "-4100541426394176349"
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": "5808644604267291811"
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": "8128144017968293027"
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": "2891782886595257507"
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": "8186017318586836131"
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": "-3136167005921057629"
+            }
+          ],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "-852131590960159581"
+          }
+        }
+      },
+      "-5620634683415389": {
+        "pathId": "-5620634683415389",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-624704640666606429"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-3281679001968352093"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-473666169238625117"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "580328916424484003"
+              }
+            }
+          ],
+          "m_Layer": 0,
+          "m_Name": "Spine",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "3146248017074939043": {
+        "pathId": "3146248017074939043",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-4158582299584535389"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-7560027626225376093"
+              }
+            }
+          ],
+          "m_Layer": 12,
+          "m_Name": "Combat",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "-7560027626225376093": {
+        "pathId": "-7560027626225376093",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "3146248017074939043"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "8145049199648393782"
+          },
+          "m_Name": "",
+          "_selector": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_metadata": {
+            "namedAsAlias": "",
+            "blackboardPrefix": ""
+          },
+          "_interruptAbilityOnDetach": 0,
+          "_attachPassiveBuffsOnDummy": 1,
+          "_ignoreIfOwnerDead": 0,
+          "_forceAsDmgOrHealAbility": 0,
+          "_waitForAttackEvent": 1,
+          "_interuptIfTargetDead": 0,
+          "_resetCdStrategy": 1,
+          "_selectTargetSource": 1,
+          "_selectTargetTiming": 0,
+          "_timeMode": 0,
+          "_alwaysIncludeTarget": 1,
+          "_allowNoTarget": 0,
+          "_animKey": "",
+          "_endAnimKey": "",
+          "_downAnimKey": "",
+          "_downEndAnimKey": "",
+          "_upAnimKey": "",
+          "_upEndAnimKey": "",
+          "_cooldown": 0.0,
+          "_cooldownKey": "duration",
+          "_preDelay": 0.0,
+          "_escapeTime": 0.0,
+          "_faceToTarget": 1,
+          "_faceToDefault": 0,
+          "_faceToFront": 0,
+          "_faceToFirstCastTarget": 0,
+          "_forceFaceToDirection": 0,
+          "_activeBuffs": [],
+          "_maxAnimScale": -1.0,
+          "_onlyPlayEndAnimWhenIsLastAbility": 0,
+          "_ignorePalsyInterrupt": 0
+        },
+        "fieldShape": "6b8249983f4a6d3d",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Torappu.Battle.Abilities.EmptyAnimatedAbility",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "8145049199648393782",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "580328916424484003": {
+        "pathId": "580328916424484003",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-5620634683415389"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "175525945580115722"
+          },
+          "m_Name": "",
+          "skeletonDataAsset": {
+            "m_FileID": 3,
+            "m_PathID": "1863424607621004026"
+          },
+          "initialSkinName": "default",
+          "initialFlipX": 0,
+          "initialFlipY": 0,
+          "updateWhenInvisible": 3,
+          "separatorSlotNames": [],
+          "zSpacing": 0.0,
+          "useClipping": 1,
+          "immutableTriangles": 0,
+          "pmaVertexColors": 1,
+          "clearStateOnDisable": 0,
+          "tintBlack": 0,
+          "singleSubmesh": 0,
+          "fixDrawOrder": 0,
+          "addNormals": 0,
+          "calculateTangents": 0,
+          "maskInteraction": 0,
+          "maskMaterials": {
+            "materialsMaskDisabled": [],
+            "materialsInsideMask": [],
+            "materialsOutsideMask": []
+          },
+          "disableRenderingOnOverride": 1,
+          "_animationName": "Default",
+          "loop": 0,
+          "timeScale": 1.0
+        },
+        "fieldShape": "c1319894b81977c4",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Spine.Unity.SkeletonAnimation",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "175525945580115722",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "-3136167005921057629": {
+        "pathId": "-3136167005921057629",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-2296891149470571357"
+          },
+          "m_LocalRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -0.7279523015022278,
+            "w": 0.6856277585029602
+          },
+          "m_LocalPosition": {
+            "x": -1.625305414199829,
+            "y": 1.8135714530944824,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "-624704640666606429"
+          }
+        }
+      },
+      "-4100541426394176349": {
+        "pathId": "-4100541426394176349",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "4064999124026549411"
+          },
+          "m_LocalRotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 1.600000023841858,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "-624704640666606429"
+          }
+        }
+      },
+      "2891782886595257507": {
+        "pathId": "2891782886595257507",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-8977170160868236125"
+          },
+          "m_LocalRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -0.7279523015022278,
+            "w": 0.6856277585029602
+          },
+          "m_LocalPosition": {
+            "x": 1.598302960395813,
+            "y": 1.6035290956497192,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "-624704640666606429"
+          }
+        }
+      },
+      "5808644604267291811": {
+        "pathId": "5808644604267291811",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "4388197885071746211"
+          },
+          "m_LocalRotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 4.099999904632568,
+            "z": -0.6000000238418579
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "-624704640666606429"
+          }
+        }
+      },
+      "8128144017968293027": {
+        "pathId": "8128144017968293027",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "5828692281175008419"
+          },
+          "m_LocalRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -0.7279523015022278,
+            "w": 0.6856277585029602
+          },
+          "m_LocalPosition": {
+            "x": -0.07251963019371033,
+            "y": 1.500749111175537,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "-624704640666606429"
+          }
+        }
+      },
+      "8186017318586836131": {
+        "pathId": "8186017318586836131",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "7387750535697556643"
+          },
+          "m_LocalRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -0.7279523015022278,
+            "w": 0.6856277585029602
+          },
+          "m_LocalPosition": {
+            "x": -0.06129162386059761,
+            "y": 1.369842767715454,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "-624704640666606429"
+          }
+        }
+      },
+      "-2296891149470571357": {
+        "pathId": "-2296891149470571357",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-3136167005921057629"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "2222253001960154275"
+              }
+            }
+          ],
+          "m_Layer": 0,
+          "m_Name": "SpecialPoint_3",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "-8977170160868236125": {
+        "pathId": "-8977170160868236125",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "2891782886595257507"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "6877286232329577635"
+              }
+            }
+          ],
+          "m_Layer": 0,
+          "m_Name": "SpecialPoint_1",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "4064999124026549411": {
+        "pathId": "4064999124026549411",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-4100541426394176349"
+              }
+            }
+          ],
+          "m_Layer": 9,
+          "m_Name": "HitPoint",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "4388197885071746211": {
+        "pathId": "4388197885071746211",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "5808644604267291811"
+              }
+            }
+          ],
+          "m_Layer": 9,
+          "m_Name": "HeadPoint",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "5828692281175008419": {
+        "pathId": "5828692281175008419",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "8128144017968293027"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "751322352688653475"
+              }
+            }
+          ],
+          "m_Layer": 0,
+          "m_Name": "SpecialPoint_0",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "7387750535697556643": {
+        "pathId": "7387750535697556643",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "8186017318586836131"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "8827779736674067619"
+              }
+            }
+          ],
+          "m_Layer": 0,
+          "m_Name": "SpecialPoint_2",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "8827779736674067619": {
+        "pathId": "8827779736674067619",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "7387750535697556643"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "8665825331570267470"
+          },
+          "m_Name": "",
+          "skeletonRenderer": {
+            "m_FileID": 0,
+            "m_PathID": "580328916424484003"
+          },
+          "boneName": "C_Ball_9",
+          "followXYPosition": 1,
+          "followZPosition": 1,
+          "followBoneRotation": 1,
+          "followSkeletonFlip": 1,
+          "followLocalScale": 0,
+          "useAppliedLocalScale": 0,
+          "maintainedAxisOrientation": 1,
+          "initializeOnAwake": 1
+        },
+        "fieldShape": "2b7d1b249de5028e",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Spine.Unity.BoneFollower",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "8665825331570267470",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "751322352688653475": {
+        "pathId": "751322352688653475",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "5828692281175008419"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "8665825331570267470"
+          },
+          "m_Name": "",
+          "skeletonRenderer": {
+            "m_FileID": 0,
+            "m_PathID": "580328916424484003"
+          },
+          "boneName": "C_Ball_1",
+          "followXYPosition": 1,
+          "followZPosition": 1,
+          "followBoneRotation": 1,
+          "followSkeletonFlip": 1,
+          "followLocalScale": 0,
+          "useAppliedLocalScale": 0,
+          "maintainedAxisOrientation": 1,
+          "initializeOnAwake": 1
+        },
+        "fieldShape": "2b7d1b249de5028e",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Spine.Unity.BoneFollower",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "8665825331570267470",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "6877286232329577635": {
+        "pathId": "6877286232329577635",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-8977170160868236125"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "8665825331570267470"
+          },
+          "m_Name": "",
+          "skeletonRenderer": {
+            "m_FileID": 0,
+            "m_PathID": "580328916424484003"
+          },
+          "boneName": "C_Ball_8",
+          "followXYPosition": 1,
+          "followZPosition": 1,
+          "followBoneRotation": 1,
+          "followSkeletonFlip": 1,
+          "followLocalScale": 0,
+          "useAppliedLocalScale": 0,
+          "maintainedAxisOrientation": 1,
+          "initializeOnAwake": 1
+        },
+        "fieldShape": "2b7d1b249de5028e",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Spine.Unity.BoneFollower",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "8665825331570267470",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      },
+      "2222253001960154275": {
+        "pathId": "2222253001960154275",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-2296891149470571357"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "8665825331570267470"
+          },
+          "m_Name": "",
+          "skeletonRenderer": {
+            "m_FileID": 0,
+            "m_PathID": "580328916424484003"
+          },
+          "boneName": "C_Ball_10",
+          "followXYPosition": 1,
+          "followZPosition": 1,
+          "followBoneRotation": 1,
+          "followSkeletonFlip": 1,
+          "followLocalScale": 0,
+          "useAppliedLocalScale": 0,
+          "maintainedAxisOrientation": 1,
+          "initializeOnAwake": 1
+        },
+        "fieldShape": "2b7d1b249de5028e",
+        "resolvedScript": {
+          "status": "resolved",
+          "type": "Spine.Unity.BoneFollower",
+          "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+          "scriptPathID": "8665825331570267470",
+          "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+          "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+        }
+      }
+    }
+  }
+}

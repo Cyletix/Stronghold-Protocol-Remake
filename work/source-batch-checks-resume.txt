@@ -1,0 +1,49 @@
+PASS operator library
+PASS DIY roster source
+PASS operator mechanics audit
+PASS strategy item rewards
+PASS mode build
+PASS operator garrisons
+PASS basic attacks
+PASS common skill level data
+PASS client stat graph source
+PASS hunter magazines and Snow Hunter
+PASS dollkeeper forms and source skills
+PASS manual tactical deployment and copy
+PASS tactical exclusive mechanisms
+PASS playability repairs
+PASS enemy cold source
+PASS preview, training and audio
+PASS keyboard shortcuts
+PASS render policy
+PASS frozen shop refill
+PASS boss mechanics profiles
+PASS boss_runtime_integration
+PASS boss_art
+PASS hidden_boss_rules
+PASS settlement
+PASS boss_source
+PASS video_flow
+PASS deployment_cost
+PASS shop_source
+PASS room_game_runtime
+PASS room_game_client
+PASS room_battle_session
+PASS room_launcher
+PASS battle data
+PASS enemy death spawn source
+PASS enemy prop hit counts
+PASS enemy permanent block-free
+PASS shop item eligibility
+PASS training source economy
+PASS enemy plan source phases
+PASS setup/routes
+PASS training
+PASS mode_rounds
+PASS source_wave
+PASS source_consumers
+PASS shop_economy
+PASS simulation_clock
+PASS bond_shop_regression
+PASS audio_preference
+GAME CHECK OK 47 checks (38.0s)

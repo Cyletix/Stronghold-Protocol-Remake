@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="launcher-key" content="__LAUNCHER_KEY__"><meta name="launcher-window" content="__LAUNCHER_WINDOW__">
+<script src="launcher-window.js?v=20260911"></script>
+<title>卫戍协议 · 同盟大厅</title><link rel="stylesheet" href="styles/room-lobby.css?v=20260912-unified"><link rel="stylesheet" href="styles/protocol-theme.css?v=20260912"><link rel="stylesheet" href="styles/room-layout.css?v=20260913-compact"><link rel="stylesheet" href="styles/diy-selection.css?v=20260913-diy"></head>
+<body class="protocol-screen room-screen">
+<header class="lobby-header"><a id="launcher-back" href="index.html#menu" class="back" aria-label="返回游戏主页">❮</a><h1 id="lobby-title">卫戍协议</h1><div class="connection"><span class="signal">▥</span><span id="latency">正在准备…</span></div></header>
+<main>
+<section id="entry" class="entry-panel">
+<div class="entry-intro"><span class="eyebrow">卫戍协议</span><h2>组建你的同盟</h2><p>邀请好友，集结四席。<br>成员就绪后，由房主统一启动协议。</p><div class="entry-emblem" aria-hidden="true">⌘</div></div>
+<div class="entry-form"><label for="name">你的昵称</label><input id="name" maxlength="20" autocomplete="nickname" placeholder="输入昵称">
+<label for="portrait">展示干员</label><input id="portrait-search" type="search" placeholder="搜索干员名称" aria-label="搜索展示干员"><select id="portrait"><option value="char_102_texas">德克萨斯</option></select><p class="muted">所有已收录立绘均可选择，仅用于同盟名片。</p>
+<label for="room-code">同盟密钥 <span class="optional">加入好友时填写</span></label><input id="room-code" maxlength="6" autocomplete="off" autocapitalize="characters" placeholder="六位房间码">
+<div class="controls"><button id="create">创建同盟</button><button id="join" class="secondary">加入同盟</button></div></div>
+</section>
+<section id="room" hidden aria-label="协议房间">
+<div class="room-toolbar"><div><span id="room-stage">同盟集结</span><strong id="room-count">0 / 4</strong></div><div class="invite-bar"><span id="invite-label">同盟密钥</span><strong id="code" class="code"></strong><button id="invite-copy" class="secondary">复制邀请</button></div></div>
+<div id="players" class="players" aria-label="四个玩家席位"></div>
+<section id="room-settings" class="room-settings" aria-labelledby="settings-title">
+<div class="settings-heading"><h2 id="settings-title">本局配置</h2><p id="settings-note">由房主选择，所有成员共用本局配置。</p></div>
+<div class="configuration-row"><div id="local-mode-controls" class="play-mode-tabs" hidden aria-label="游玩方式"><button id="solo-choice" class="secondary" aria-pressed="true">单人模式</button><button id="team-choice" class="secondary" aria-pressed="false">多人模式</button></div>
+<div class="settings-fields"><div><label for="room-season">赛季</label><select id="room-season" disabled aria-label="房间赛季"></select></div><div><label for="room-difficulty">难度</label><select id="room-difficulty" disabled aria-label="房间难度"></select></div><div><label for="room-map">地图</label><select id="room-map" disabled aria-label="房间地图"></select></div></div>
+</div>
+<div id="room-diy-summary" class="diy-summary"></div>
+<p id="settings-summary" class="muted" role="status"></p>
+</section>
+<div class="lobby-footer"><div><p id="readiness" aria-live="polite"></p><p id="lobby-limit" class="muted"></p><a id="edit-profile" hidden>修改昵称 / 头像</a></div><div class="controls"><button id="cancel-start" class="quiet" hidden>取消启动，返回大厅</button><button id="leave" class="quiet">退出同盟</button><button id="ready" class="secondary" disabled>准备就绪</button><button id="enter-game" disabled>协议启动</button><button id="connect-create" hidden>创建同盟 →</button><button id="connect-return" hidden>返回当前同盟</button><button id="connect-stop" class="quiet" hidden>取消连接</button></div></div>
+<div id="connect-join-row" class="join-inline" hidden><label for="connect-code">加入朋友</label><input id="connect-code" maxlength="100" placeholder="粘贴朋友的分享码" autocomplete="off"><button id="connect-join" class="secondary">加入同盟 →</button></div>
+<p id="connect-status" role="status" aria-live="polite" hidden></p>
+<details id="invite-details" class="invite-details"><summary>邀请 / 连接状态</summary><label id="share-label" for="share">朋友打开这个地址加入</label><input id="share" readonly><p id="share-help" class="muted">同网朋友需打开房主局域网地址。</p><button id="reconnect" class="secondary">重新连接</button></details>
+</section>
+<p id="status" role="status" aria-live="polite"></p>
+<p id="scope-note" class="scope-note">点击左侧队友头像，按头像提示再次点击进入观战；点正在观看的头像返回自己。</p><details id="room-help" class="help"><summary>如何邀请朋友</summary>
+<p>完整解压后双击 <strong>开始游戏.cmd</strong>，从游戏主页进入卫戍协议，直接在四席房间选择单人或多人、赛季、难度和地图。多人使用同一个通用包，创建同盟或输入朋友的分享码加入。</p>
+<p>点击“复制分享码”发给朋友，朋友粘贴后会自动连接并进入同一大厅，不需要另外填写IP或房间码。分享码仅在房主保持程序运行时有效。</p>
+<p>房主在房间内选择赛季、难度和地图，默认盟约Ⅱ、绝境模拟、Ⅱ·第1关。修改后所有成员重新准备；启动后先看开局情报1/2，再进入选择策略2/2。只有一名玩家时也能开始，按单人规则作战。</p>
+<p>普通回合各自作战，Boss回合两两共享战场；点击队友头像并按头像提示再次点击进入观战，点观看中的头像返回自己。刷新页面可恢复当前席位。关闭全部游戏页面15秒后自动退出；房主彻底退出会结束对局。图片与页面从各自本机读取。</p>
+<p>若你使用的是手工局域网服务，仍可通过房主提供的邀请网址加入。</p></details></main><script src="src/rules/diy-roster.js?v=20260913-diy"></script><script src="src/ui/diy-selection.js?v=20260913-diy"></script><script src="solo-session.js"></script><script src="room-lab.js?v=20260912-unified"></script></body></html>

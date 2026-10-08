@@ -1,0 +1,1806 @@
+{
+  "engine": "akdata-community",
+  "revision": "266d341ca05cbcb64f05b19e38db28ba0bfec1ca",
+  "results": [
+    {
+      "char_id": "char_4026_vulpis",
+      "skill_id": "skchr_vulpis_2",
+      "status": "calculated",
+      "family": "compiled-template",
+      "output": {
+        "normal": {
+          "atk": 186.6,
+          "dps": 8.746875000000001,
+          "hps": 0,
+          "ehps": 0,
+          "dur": {
+            "attackCount": 19,
+            "attackSpeed": 100,
+            "times": 1,
+            "hitCount": 19,
+            "duration": 20,
+            "stunDuration": 0,
+            "prepDuration": 0,
+            "dpsDuration": -1,
+            "tags": [
+              "time"
+            ],
+            "startSp": 0,
+            "spType": 1,
+            "attackBegin": 12,
+            "resetAttack": 6,
+            "critCount": 0,
+            "critHitCount": 0
+          },
+          "damageType": 0,
+          "hitDamage": 9.33,
+          "critDamage": 9.33,
+          "extraDamage": 0,
+          "extraHeal": 0,
+          "totalDamage": 177.27,
+          "totalHeal": 0,
+          "totalEpDamage": 0,
+          "totalEpHeal": 0,
+          "maxTarget": 1,
+          "damagePool": [
+            177.27,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "extraDamagePool": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "attackTime": 1.0666666666666667,
+          "frame": 32,
+          "attackCount": 19,
+          "spType": 1
+        },
+        "skill": {
+          "atk": 559.8,
+          "dps": 367.36875,
+          "hps": 0,
+          "ehps": 0,
+          "dur": {
+            "attackCount": 1,
+            "attackSpeed": 100,
+            "times": 1,
+            "hitCount": 1,
+            "duration": 1.0666666666666667,
+            "stunDuration": 0,
+            "prepDuration": 0,
+            "dpsDuration": -1,
+            "tags": [
+              "time",
+              "instant"
+            ],
+            "startSp": 0,
+            "spType": 1,
+            "attackBegin": 12,
+            "resetAttack": 6,
+            "remain": 12,
+            "critCount": 0,
+            "critHitCount": 0
+          },
+          "damageType": 1,
+          "hitDamage": 391.85999999999996,
+          "critDamage": 391.85999999999996,
+          "extraDamage": 0,
+          "extraHeal": 0,
+          "totalDamage": 391.85999999999996,
+          "totalHeal": 0,
+          "totalEpDamage": 0,
+          "totalEpHeal": 0,
+          "maxTarget": 1,
+          "damagePool": [
+            0,
+            391.85999999999996,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "extraDamagePool": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "attackTime": 1.0666666666666667,
+          "frame": 32,
+          "attackCount": 1,
+          "spType": 1
+        },
+        "skillName": "坠刃拷问",
+        "killTime": 0,
+        "globalDps": 27,
+        "globalHps": 0,
+        "globalEhps": 0,
+        "log": "说明：计算结果可能存在因为逻辑错误或者数据不全导致的计算错误，作者会及时修正。\n　　　计算结果仅供参考，请仔细核对以下的计算过程：\n| 角色 | 等级 | 技能 | 模组 |\n| :--: | :--: | :--: | :--: |\n| **忍冬**<br>_char\\_4026\\_vulpis_ | 潜能 1<br>精英 2, 等级 90 | **坠刃拷问**<br>等级 10 | **undefined**<br>等级 1 |\n\n----\n【基础属性】\n----\n\n----\n【技能】\n----------\n**【Buff计算】**\n [天赋] 追凶:  atk\\_scale: 0.30x\n [技能] 坠刃拷问:  maxTarget: 6\n [技能] 坠刃拷问:  atk\\_scale: 3.00x\n**【暴击Buff计算】**\n [天赋] 追凶:  atk\\_scale: 0.30x\n [技能] 坠刃拷问:  maxTarget: 6\n [技能] 坠刃拷问:  atk\\_scale: 3.00x\n\n**【循环计算】**\n技能启动需要SP: 0.0\n[注记] 暂无抬手数据，以12帧计算\n技能前摇: 0.400s, 12 帧\n瞬发\n持续: 1.067 s\n攻击次数: 1 (1 连击 x 1)\n**【边缘情况估算(试验功能，结果仅供参考)】**\n技能持续时间: 32 帧, 攻速 100%, 抬手 12 帧(受攻速影响), 攻击间隔 32 帧\n技能结束时，前一次攻击经过: **20 帧**\n技能结束时，下一次攻击判定还需: **12 帧**\n** 技能结束时，可能正在抬手 **\n\n**【最终面板】**\n攻击力 / 倍率:  559.80 = (622.0 + 0.0) * 0.90\n攻击间隔: 1.050 s\n攻速: 100 %\n最终攻击间隔: 31.50 帧, 1.050 s\n**帧对齐攻击间隔: 32 帧, 1.067 s**\n\n**【伤害计算】**\n伤害类型: 法术\n伤害 391.86 * 命中 1.0 = 391.9 直接伤害\n总伤害: 391.86\nDPS: 367.4, HPS: 0.0\n----\n----\n【普攻】\n----------\n**【Buff计算】**\n [天赋] 追凶:  atk\\_scale: 0.30x\n**【暴击Buff计算】**\n [天赋] 追凶:  atk\\_scale: 0.30x\n\n**【循环计算】**\n[重置普攻] 截断最后一个攻击间隔\n普攻前摇: 0.400s, 12 帧\n持续: 20.000 s\n攻击次数: 19 (1 连击 x 19)\n\n**【最终面板】**\n攻击力 / 倍率:  186.60 = (622.0 + 0.0) * 0.30\n攻击间隔: 1.050 s\n攻速: 100 %\n最终攻击间隔: 31.50 帧, 1.050 s\n**帧对齐攻击间隔: 32 帧, 1.067 s**\n\n**【伤害计算】**\n伤害类型: 物理\n[抛光]\n伤害 9.33 * 命中 19.0 = 177.3 直接伤害\n[抛光]\n总伤害: 177.27\n以 20.267s (19 个攻击间隔) 计算普攻dps\nDPS: 8.7, HPS: 0.0\n----\n",
+        "note": "暂无抬手数据，以12帧计算\n"
+      },
+      "assumptions": {
+        "cond": true,
+        "crit": true,
+        "token": false,
+        "equip": true,
+        "buff": true
+      },
+      "equipment": "",
+      "template": {
+        "version": "community-template-operators-v1",
+        "families": [
+          "deployment-cost-projection",
+          "fixed-target-projection",
+          "charge-capacity"
+        ],
+        "consumed": [
+          "max_target",
+          "atk_scale"
+        ],
+        "projected": [
+          {
+            "key": "cost",
+            "reason": "部署费用充足，费用收支不改变持续攻击或技能周期"
+          },
+          {
+            "key": "sluggish",
+            "reason": "固定目标模型没有移动、敌方攻击或阻挡容量瓶颈"
+          },
+          {
+            "key": "stun",
+            "reason": "目标晕眩不改变固定目标命中"
+          },
+          {
+            "key": "ct",
+            "reason": "技力满立即使用，容量不改变稳定循环；不计囤积后的首轮爆发"
+          }
+        ],
+        "assumptions": [
+          "现成社区属性/天赋模型；技能自动循环，目标持续存活且始终可命中",
+          "此投影模板当前限定一个持续可命中目标；不估算位移、范围覆盖和控制收益"
+        ],
+        "fingerprint": "9237c9ecca46a14c4e25b72d2108cc9b6fa1dfe2b1d07fff50504557d79eaa73"
+      },
+      "healing_semantics": "net-recovery-including-self-loss",
+      "sample_name": "忍冬",
+      "sample_slot": "char_4026_vulpis:2"
+    },
+    {
+      "char_id": "char_4031_liesel",
+      "skill_id": "skchr_liesel_2",
+      "status": "calculated",
+      "family": "compiled-template",
+      "output": {
+        "normal": {
+          "atk": 875,
+          "dps": 253.44827586206898,
+          "hps": 0,
+          "ehps": 0,
+          "dur": {
+            "attackCount": 4,
+            "attackSpeed": 100,
+            "times": 1,
+            "hitCount": 4,
+            "duration": 12,
+            "stunDuration": 0,
+            "prepDuration": 0,
+            "dpsDuration": -1,
+            "tags": [
+              "time"
+            ],
+            "startSp": 0,
+            "spType": 1,
+            "attackBegin": 12,
+            "resetAttack": 3,
+            "critCount": 0,
+            "critHitCount": 0
+          },
+          "damageType": 1,
+          "hitDamage": 735,
+          "critDamage": 735,
+          "extraDamage": 0,
+          "extraHeal": 0,
+          "totalDamage": 2940,
+          "totalHeal": 0,
+          "totalEpDamage": 0,
+          "totalEpHeal": 0,
+          "maxTarget": 1,
+          "damagePool": [
+            0,
+            2940,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "extraDamagePool": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "attackTime": 2.9,
+          "frame": 87,
+          "attackCount": 4,
+          "spType": 1
+        },
+        "skill": {
+          "atk": 1575,
+          "dps": 988.448275862069,
+          "hps": 0,
+          "ehps": 0,
+          "dur": {
+            "attackCount": 1,
+            "attackSpeed": 100,
+            "times": 1,
+            "hitCount": 1,
+            "duration": 2.9,
+            "stunDuration": 0,
+            "prepDuration": 0,
+            "dpsDuration": -1,
+            "tags": [
+              "time",
+              "instant"
+            ],
+            "startSp": 12,
+            "spType": 1,
+            "attackBegin": 12,
+            "resetAttack": 3,
+            "remain": 12,
+            "critCount": 0,
+            "critHitCount": 0
+          },
+          "damageType": 1,
+          "hitDamage": 1323,
+          "critDamage": 1323,
+          "extraDamage": 1543.5,
+          "extraHeal": 0,
+          "totalDamage": 2866.5,
+          "totalHeal": 0,
+          "totalEpDamage": 0,
+          "totalEpHeal": 0,
+          "maxTarget": 1,
+          "damagePool": [
+            0,
+            1323,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "extraDamagePool": [
+            0,
+            1543.5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "attackTime": 2.9,
+          "frame": 87,
+          "attackCount": 1,
+          "spType": 1
+        },
+        "skillName": "直到终曲",
+        "killTime": 0,
+        "globalDps": 390,
+        "globalHps": 0,
+        "globalEhps": 0,
+        "log": "说明：计算结果可能存在因为逻辑错误或者数据不全导致的计算错误，作者会及时修正。\n　　　计算结果仅供参考，请仔细核对以下的计算过程：\n| 角色 | 等级 | 技能 | 模组 |\n| :--: | :--: | :--: | :--: |\n| **复奏**<br>_char\\_4031\\_liesel_ | 潜能 1<br>精英 2, 等级 80 | **直到终曲**<br>等级 10 | **undefined**<br>等级 1 |\n\n----\n【基础属性】\n----\n\n----\n【技能】\n----------\n**【Buff计算】**\n [天赋] 执棒素养:  damage\\_scale: 1.20x\n [技能] 直到终曲:  atk\\_scale: 1.80x\n [技能] 直到终曲:  maxTarget: 3\n**【暴击Buff计算】**\n [天赋] 执棒素养:  damage\\_scale: 1.20x\n [技能] 直到终曲:  atk\\_scale: 1.80x\n [技能] 直到终曲:  maxTarget: 3\n\n**【循环计算】**\n技能启动需要SP: 12.0\n[重置普攻] 截断最后一个攻击间隔\n[注记] 暂无抬手数据，以12帧计算\n技能前摇: 0.400s, 12 帧\n瞬发\n持续: 2.900 s\n攻击次数: 1 (1 连击 x 1)\n**【边缘情况估算(试验功能，结果仅供参考)】**\n技能持续时间: 87 帧, 攻速 100%, 抬手 12 帧(受攻速影响), 攻击间隔 87 帧\n技能结束时，前一次攻击经过: **75 帧**\n技能结束时，下一次攻击判定还需: **12 帧**\n** 技能结束时，可能正在抬手 **\n\n**【最终面板】**\n攻击力 / 倍率:  1575.00 = (875.0 + 0.0) * 1.80\n攻击间隔: 2.900 s\n攻速: 100 %\n最终攻击间隔: 87.00 帧, 2.900 s\n**帧对齐攻击间隔: 87 帧, 2.900 s**\n\n**【伤害计算】**\n伤害类型: 法术\n攻击增伤: 1.20x\n伤害 1323.00 * 命中 1.0 = 1323.0 直接伤害\n攻击增伤: 1.20x\n总伤害: 1323.00\nDPS: 456.2, HPS: 0.0\n----\n[公共模板] 每秒DoT: 306.25攻击基数 × 6秒 × 1目标，抗性后 1543.5\n----\n【普攻】\n----------\n**【Buff计算】**\n [天赋] 执棒素养:  damage\\_scale: 1.20x\n**【暴击Buff计算】**\n [天赋] 执棒素养:  damage\\_scale: 1.20x\n\n**【循环计算】**\n[重置普攻] 截断最后一个攻击间隔\n普攻前摇: 0.400s, 12 帧\n持续: 12.000 s\n攻击次数: 4 (1 连击 x 4)\n\n**【最终面板】**\n攻击力 / 倍率:  875.00 = (875.0 + 0.0) * 1.00\n攻击间隔: 2.900 s\n攻速: 100 %\n最终攻击间隔: 87.00 帧, 2.900 s\n**帧对齐攻击间隔: 87 帧, 2.900 s**\n\n**【伤害计算】**\n伤害类型: 法术\n攻击增伤: 1.20x\n伤害 735.00 * 命中 4.0 = 2940.0 直接伤害\n攻击增伤: 1.20x\n总伤害: 2940.00\n以 11.600s (4 个攻击间隔) 计算普攻dps\nDPS: 253.4, HPS: 0.0\n----\n",
+        "note": "暂无抬手数据，以12帧计算\n"
+      },
+      "assumptions": {
+        "cond": true,
+        "crit": true,
+        "token": false,
+        "equip": true,
+        "buff": true
+      },
+      "equipment": "",
+      "template": {
+        "version": "community-template-operators-v1",
+        "families": [
+          "target-count",
+          "instant-plus-dot"
+        ],
+        "consumed": [
+          "atk_scale",
+          "max_target_cnt",
+          "liesel_s_2[dot].atk_scale",
+          "liesel_s_2[dot].duration"
+        ],
+        "projected": [],
+        "assumptions": [
+          "现成社区属性/天赋模型；技能自动循环，目标持续存活且始终可命中",
+          "单次施加的持续伤害完整生效；循环间隔不短于持续时间，不叠加重复DoT"
+        ],
+        "fingerprint": "d457b966de5bbe856fe2940dbd1cb5e0a6dfd89daa6fd2918efc71614959f5c1"
+      },
+      "healing_semantics": "net-recovery-including-self-loss",
+      "sample_name": "复奏",
+      "sample_slot": "char_4031_liesel:2"
+    },
+    {
+      "char_id": "char_4116_blkkgt",
+      "skill_id": "skchr_blkkgt_1",
+      "status": "calculated",
+      "family": "compiled-template",
+      "output": {
+        "normal": {
+          "atk": 1096,
+          "dps": 612.3076923076924,
+          "hps": 0,
+          "ehps": 0,
+          "dur": {
+            "attackCount": 3,
+            "attackSpeed": 100,
+            "times": 1,
+            "hitCount": 2.7,
+            "duration": 2.6000000000000005,
+            "stunDuration": 0,
+            "prepDuration": 0,
+            "dpsDuration": -1,
+            "tags": [
+              "attack"
+            ],
+            "startSp": 0,
+            "spType": 2,
+            "attackBegin": 12,
+            "resetAttack": 6,
+            "critCount": 0.30000000000000004,
+            "critHitCount": 0.30000000000000004
+          },
+          "damageType": 0,
+          "hitDamage": 796,
+          "critDamage": 796,
+          "extraDamage": 0,
+          "extraHeal": 0,
+          "totalDamage": 2388.0000000000005,
+          "totalHeal": 0,
+          "totalEpDamage": 0,
+          "totalEpHeal": 0,
+          "maxTarget": 1,
+          "damagePool": [
+            2388.0000000000005,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "extraDamagePool": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "attackTime": 1.3,
+          "frame": 39,
+          "attackCount": 3,
+          "spType": 2
+        },
+        "skill": {
+          "atk": 2411.2000000000003,
+          "dps": 3248.0000000000005,
+          "hps": 0,
+          "ehps": 0,
+          "dur": {
+            "attackCount": 1,
+            "attackSpeed": 100,
+            "times": 2,
+            "hitCount": 1.8,
+            "duration": 1.3,
+            "stunDuration": 0,
+            "prepDuration": 0,
+            "dpsDuration": -1,
+            "tags": [
+              "attack",
+              "instant"
+            ],
+            "startSp": 3,
+            "spType": 2,
+            "attackBegin": 12,
+            "resetAttack": 6,
+            "remain": 12,
+            "critCount": 0.1,
+            "critHitCount": 0.2
+          },
+          "damageType": 0,
+          "hitDamage": 2111.2000000000003,
+          "critDamage": 2111.2000000000003,
+          "extraDamage": 0,
+          "extraHeal": 0,
+          "totalDamage": 4222.400000000001,
+          "totalHeal": 0,
+          "totalEpDamage": 0,
+          "totalEpHeal": 0,
+          "maxTarget": 1,
+          "damagePool": [
+            4222.400000000001,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "extraDamagePool": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "attackTime": 1.3,
+          "frame": 39,
+          "attackCount": 1,
+          "spType": 2
+        },
+        "skillName": "纯粹的武力",
+        "killTime": 0,
+        "globalDps": 1695,
+        "globalHps": 0,
+        "globalEhps": 0,
+        "log": "说明：计算结果可能存在因为逻辑错误或者数据不全导致的计算错误，作者会及时修正。\n　　　计算结果仅供参考，请仔细核对以下的计算过程：\n| 角色 | 等级 | 技能 | 模组 |\n| :--: | :--: | :--: | :--: |\n| **锏**<br>_char\\_4116\\_blkkgt_ | 潜能 1<br>精英 2, 等级 90 | **纯粹的武力**<br>等级 10 | **undefined**<br>等级 1 |\n\n----\n【基础属性】\n----\n\n----\n【技能】\n----------\n**【Buff计算】**\n [天赋] “天生的武者”:  概率(原始): 10%\n [天赋] “天生的武者”:  atk\\_scale: 1.60x\n [技能] 纯粹的武力:  maxTarget: 6\n [技能] 纯粹的武力:  atk\\_scale: 2.20x\n [技能] 纯粹的武力:  攻击次数: 2\n[连击] 锏 - 攻击 2 次\n**【暴击Buff计算】**\n [天赋] “天生的武者”:  概率(原始): 10%\n [天赋] “天生的武者”:  atk\\_scale: 1.60x\n [技能] 纯粹的武力:  maxTarget: 6\n [技能] 纯粹的武力:  atk\\_scale: 2.20x\n [技能] 纯粹的武力:  攻击次数: 2\n\n**【循环计算】**\n技能启动需要SP: 3.0\n[注记] 暂无抬手数据，以12帧计算\n技能前摇: 0.400s, 12 帧\n瞬发\n持续: 1.300 s\n攻击次数: 2 (2 连击 x 1)\n**【边缘情况估算(试验功能，结果仅供参考)】**\n技能持续时间: 39 帧, 攻速 100%, 抬手 12 帧(受攻速影响), 攻击间隔 39 帧\n技能结束时，前一次攻击经过: **27 帧**\n技能结束时，下一次攻击判定还需: **12 帧**\n** 技能结束时，可能正在抬手 **\n\n**【最终面板】**\n攻击力 / 倍率:  2411.20 = (685.0 + 0.0) * 3.52\n攻击间隔: 1.300 s\n攻速: 100 %\n最终攻击间隔: 39.00 帧, 1.300 s\n**帧对齐攻击间隔: 39 帧, 1.300 s**\n\n**【伤害计算】**\n伤害类型: 物理\n伤害 2111.20 * 命中 1.8 = 3800.2 直接伤害\n暴击伤害: 2111.20, 命中 0.2\n总伤害: 4222.40\nDPS: 3248.0, HPS: 0.0\n----\n----\n【普攻】\n----------\n**【Buff计算】**\n [天赋] “天生的武者”:  概率(原始): 10%\n [天赋] “天生的武者”:  atk\\_scale: 1.60x\n**【暴击Buff计算】**\n [天赋] “天生的武者”:  概率(原始): 10%\n [天赋] “天生的武者”:  atk\\_scale: 1.60x\n\n**【循环计算】**\n[重置普攻] 截断最后一个攻击间隔\n普攻前摇: 0.400s, 12 帧\n攻击回复\n不计最后一次普攻时间(需要前摇数据)\n持续: 2.600 s\n攻击次数: 3 (1 连击 x 3)\n\n**【最终面板】**\n攻击力 / 倍率:  1096.00 = (685.0 + 0.0) * 1.60\n攻击间隔: 1.300 s\n攻速: 100 %\n最终攻击间隔: 39.00 帧, 1.300 s\n**帧对齐攻击间隔: 39 帧, 1.300 s**\n\n**【伤害计算】**\n伤害类型: 物理\n伤害 796.00 * 命中 2.7 = 2149.2 直接伤害\n暴击伤害: 796.00, 命中 0.30000000000000004\n总伤害: 2388.00\n以 3.900s (3 个攻击间隔) 计算普攻dps\nDPS: 612.3, HPS: 0.0\n----\n",
+        "note": "暂无抬手数据，以12帧计算\n"
+      },
+      "assumptions": {
+        "cond": true,
+        "crit": true,
+        "token": false,
+        "equip": true,
+        "buff": true
+      },
+      "equipment": "",
+      "template": {
+        "version": "community-template-operators-v1",
+        "families": [
+          "attack-parameter-alias",
+          "fixed-multihit"
+        ],
+        "consumed": [
+          "max_target",
+          "atk_scale_s1"
+        ],
+        "projected": [],
+        "assumptions": [
+          "现成社区属性/天赋模型；技能自动循环，目标持续存活且始终可命中"
+        ],
+        "fingerprint": "be42fddf257e2482a1b2d5a72d5c9851696047b0449b22a32d4f5b1d462e0e8b"
+      },
+      "healing_semantics": "net-recovery-including-self-loss",
+      "sample_name": "锏",
+      "sample_slot": "char_4116_blkkgt:1"
+    },
+    {
+      "char_id": "char_237_gravel",
+      "skill_id": "skchr_gravel_1",
+      "status": "calculated",
+      "family": "compiled-template",
+      "output": {
+        "normal": {
+          "atk": 452,
+          "dps": 162.85714285714286,
+          "hps": 0,
+          "ehps": 0,
+          "dur": {
+            "attackCount": 13,
+            "attackSpeed": 100,
+            "times": 1,
+            "hitCount": 13,
+            "duration": 12.133333333333333,
+            "stunDuration": 0,
+            "prepDuration": 0,
+            "dpsDuration": -1,
+            "tags": [
+              "special",
+              "auto"
+            ],
+            "startSp": 0,
+            "spType": 8,
+            "attackBegin": 12,
+            "critCount": 0,
+            "critHitCount": 0
+          },
+          "damageType": 0,
+          "hitDamage": 152,
+          "critDamage": 152,
+          "extraDamage": 0,
+          "extraHeal": 0,
+          "totalDamage": 1976,
+          "totalHeal": 0,
+          "totalEpDamage": 0,
+          "totalEpHeal": 0,
+          "maxTarget": 1,
+          "damagePool": [
+            1976,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "extraDamagePool": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "attackTime": 0.9333333333333333,
+          "frame": 28,
+          "attackCount": 13,
+          "spType": 8
+        },
+        "skill": {
+          "atk": 452,
+          "dps": 162.85714285714286,
+          "hps": 0,
+          "ehps": 0,
+          "dur": {
+            "attackCount": 13,
+            "attackSpeed": 100,
+            "times": 1,
+            "hitCount": 13,
+            "duration": 12.133333333333333,
+            "stunDuration": 0,
+            "prepDuration": 0,
+            "dpsDuration": -1,
+            "tags": [
+              "special",
+              "auto"
+            ],
+            "startSp": 0,
+            "spType": 8,
+            "attackBegin": 12,
+            "critCount": 0,
+            "critHitCount": 0
+          },
+          "damageType": 0,
+          "hitDamage": 152,
+          "critDamage": 152,
+          "extraDamage": 0,
+          "extraHeal": 0,
+          "totalDamage": 1976,
+          "totalHeal": 0,
+          "totalEpDamage": 0,
+          "totalEpHeal": 0,
+          "maxTarget": 1,
+          "damagePool": [
+            1976,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "extraDamagePool": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "attackTime": 0.9333333333333333,
+          "frame": 28,
+          "attackCount": 13,
+          "spType": 8
+        },
+        "skillName": "影袭",
+        "killTime": 0,
+        "globalDps": 163,
+        "globalHps": 0,
+        "globalEhps": 0,
+        "log": "说明：计算结果可能存在因为逻辑错误或者数据不全导致的计算错误，作者会及时修正。\n　　　计算结果仅供参考，请仔细核对以下的计算过程：\n| 角色 | 等级 | 技能 | 模组 |\n| :--: | :--: | :--: | :--: |\n| **砾**<br>_char\\_237\\_gravel_ | 潜能 1<br>精英 2, 等级 70 | **影袭**<br>等级 10 | **undefined**<br>等级 1 |\n\n----\n【基础属性】\n----\n\n----\n【技能】\n----------\n**【Buff计算】**\n [天赋] 小个子支援:  def: +6.0% (+20.1)\n [技能] 影袭:  def: +400.0% (+1340.0)\n**【暴击Buff计算】**\n [天赋] 小个子支援:  def: +6.0% (+20.1)\n [技能] 影袭:  def: +400.0% (+1340.0)\n\n**【循环计算】**\n技能启动需要SP: 0.0\n落地点火\n持续: 12.133 s\n攻击次数: 13 (1 连击 x 13)\n\n**【最终面板】**\n攻击力 / 倍率:  452.00 = (452.0 + 0.0) * 1.00\n攻击间隔: 0.930 s\n攻速: 100 %\n最终攻击间隔: 27.90 帧, 0.930 s\n**帧对齐攻击间隔: 28 帧, 0.933 s**\n\n**【伤害计算】**\n伤害类型: 物理\n伤害 152.00 * 命中 13.0 = 1976.0 直接伤害\n总伤害: 1976.00\nDPS: 162.9, HPS: 0.0\n----\n----\n【普攻】\n----------\n**【Buff计算】**\n [天赋] 小个子支援:  def: +6.0% (+20.1)\n**【暴击Buff计算】**\n [天赋] 小个子支援:  def: +6.0% (+20.1)\n\n**【循环计算】**\n[特殊] 落地点火 - 取普攻时间=技能持续时间\n[注记] 取普攻时间=技能持续时间\n持续: 12.133 s\n攻击次数: 13 (1 连击 x 13)\n\n**【最终面板】**\n攻击力 / 倍率:  452.00 = (452.0 + 0.0) * 1.00\n攻击间隔: 0.930 s\n攻速: 100 %\n最终攻击间隔: 27.90 帧, 0.930 s\n**帧对齐攻击间隔: 28 帧, 0.933 s**\n\n**【伤害计算】**\n伤害类型: 物理\n伤害 152.00 * 命中 13.0 = 1976.0 直接伤害\n总伤害: 1976.00\nDPS: 162.9, HPS: 0.0\n----\n",
+        "note": ""
+      },
+      "assumptions": {
+        "cond": true,
+        "crit": true,
+        "token": false,
+        "equip": true,
+        "buff": true
+      },
+      "equipment": "",
+      "template": {
+        "version": "community-template-operators-v1",
+        "families": [
+          "deployment-duration"
+        ],
+        "consumed": [
+          "def",
+          "duration"
+        ],
+        "projected": [],
+        "assumptions": [
+          "现成社区属性/天赋模型；技能自动循环，目标持续存活且始终可命中"
+        ],
+        "fingerprint": "254f9cf9370916efd63d45a33684320f7ec0da6be349cf2f8a08eb4d137503aa"
+      },
+      "healing_semantics": "net-recovery-including-self-loss",
+      "sample_name": "砾",
+      "sample_slot": "char_237_gravel:1"
+    },
+    {
+      "char_id": "char_4130_luton",
+      "skill_id": "skchr_luton_2",
+      "status": "calculated",
+      "family": "compiled-template",
+      "output": {
+        "normal": {
+          "atk": 790,
+          "dps": 306.25,
+          "hps": 394.99999999999994,
+          "ehps": 0,
+          "dur": {
+            "attackCount": 22,
+            "attackSpeed": 100,
+            "times": 1,
+            "hitCount": 22,
+            "duration": 35.2,
+            "stunDuration": 0,
+            "prepDuration": 0,
+            "dpsDuration": -1,
+            "tags": [
+              "time"
+            ],
+            "startSp": 0,
+            "spType": 1,
+            "attackBegin": 12,
+            "critCount": 0,
+            "critHitCount": 0
+          },
+          "damageType": 0,
+          "hitDamage": 490,
+          "critDamage": 490,
+          "extraDamage": 0,
+          "extraHeal": 13904,
+          "totalDamage": 10780,
+          "totalHeal": 13904,
+          "totalEpDamage": 0,
+          "totalEpHeal": 0,
+          "maxTarget": 1,
+          "damagePool": [
+            10780,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "extraDamagePool": [
+            0,
+            0,
+            13904,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "attackTime": 1.6,
+          "frame": 48,
+          "attackCount": 22,
+          "spType": 1
+        },
+        "skill": {
+          "atk": 790,
+          "dps": 276.5,
+          "hps": 316,
+          "ehps": 0,
+          "dur": {
+            "attackCount": 15,
+            "attackSpeed": 100,
+            "times": 1,
+            "hitCount": 15,
+            "duration": 30,
+            "stunDuration": 0,
+            "prepDuration": 0,
+            "dpsDuration": -1,
+            "tags": [
+              "time"
+            ],
+            "startSp": 15,
+            "spType": 1,
+            "attackBegin": 12,
+            "critCount": 0,
+            "critHitCount": 0
+          },
+          "damageType": 1,
+          "hitDamage": 553,
+          "critDamage": 553,
+          "extraDamage": 0,
+          "extraHeal": 9480,
+          "totalDamage": 8295,
+          "totalHeal": 9480,
+          "totalEpDamage": 0,
+          "totalEpHeal": 0,
+          "maxTarget": 1,
+          "damagePool": [
+            0,
+            8295,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "extraDamagePool": [
+            0,
+            0,
+            9480,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "attackTime": 2,
+          "frame": 60,
+          "attackCount": 15,
+          "spType": 1
+        },
+        "skillName": "强磁防卫",
+        "killTime": 0,
+        "globalDps": 293,
+        "globalHps": 359,
+        "globalEhps": 0,
+        "log": "说明：计算结果可能存在因为逻辑错误或者数据不全导致的计算错误，作者会及时修正。\n　　　计算结果仅供参考，请仔细核对以下的计算过程：\n| 角色 | 等级 | 技能 | 模组 |\n| :--: | :--: | :--: | :--: |\n| **露托**<br>_char\\_4130\\_luton_ | 潜能 1<br>精英 2, 等级 70 | **强磁防卫**<br>等级 10 | **undefined**<br>等级 1 |\n\n----\n【基础属性】\n----\n\n----\n【技能】\n----------\n**【Buff计算】**\n [技能] 强磁防卫:  def: +130.0% (+708.5)\n**【暴击Buff计算】**\n [技能] 强磁防卫:  def: +130.0% (+708.5)\n[注记] 每 2 秒造成一次伤害/治疗\n\n**【循环计算】**\n技能启动需要SP: 15.0\n持续: 30.000 s\n攻击次数: 15 (1 连击 x 15)\n\n**【最终面板】**\n攻击力 / 倍率:  790.00 = (790.0 + 0.0) * 1.00\n攻击间隔: 2.000 s\n攻速: 100 %\n最终攻击间隔: 60.00 帧, 2.000 s\n**帧对齐攻击间隔: 60 帧, 2.000 s**\n\n**【伤害计算】**\n伤害类型: 法术\n伤害 553.00 * 命中 15.0 = 8295.0 直接伤害\n[特殊] 死里求生: 额外治疗 9480.00\n总伤害: 8295.00\n总治疗: 9480.00\nDPS: 276.5, HPS: 316.0\n----\n----\n【普攻】\n----------\n**【Buff计算】**\n**【暴击Buff计算】**\n\n**【循环计算】**\n持续: 35.200 s\n攻击次数: 22 (1 连击 x 22)\n\n**【最终面板】**\n攻击力 / 倍率:  790.00 = (790.0 + 0.0) * 1.00\n攻击间隔: 1.600 s\n攻速: 100 %\n最终攻击间隔: 48.00 帧, 1.600 s\n**帧对齐攻击间隔: 48 帧, 1.600 s**\n\n**【伤害计算】**\n伤害类型: 物理\n伤害 490.00 * 命中 22.0 = 10780.0 直接伤害\n[特殊] 死里求生: 额外治疗 13904.00\n总伤害: 10780.00\n总治疗: 13904.00\nDPS: 306.3, HPS: 395.0\n----\n",
+        "note": "每 2 秒造成一次伤害/治疗\n"
+      },
+      "assumptions": {
+        "cond": true,
+        "crit": true,
+        "token": false,
+        "equip": true,
+        "buff": true
+      },
+      "equipment": "",
+      "template": {
+        "version": "community-template-operators-v1",
+        "families": [
+          "fixed-target-projection",
+          "fixed-frequency-replacement"
+        ],
+        "consumed": [
+          "def",
+          "interval",
+          "magic_atk_scale",
+          "mode"
+        ],
+        "projected": [
+          {
+            "key": "p_force",
+            "reason": "固定目标模型没有移动、敌方攻击或阻挡容量瓶颈"
+          }
+        ],
+        "assumptions": [
+          "现成社区属性/天赋模型；技能自动循环，目标持续存活且始终可命中",
+          "技能以配置的固定间隔替换普攻，不受攻击速度加成",
+          "此投影模板当前限定一个持续可命中目标；不估算位移、范围覆盖和控制收益"
+        ],
+        "fingerprint": "e04dd5ffcb2e173a7a9b70d002120ba01e51633c2f530e0c39823e0bf1849431"
+      },
+      "healing_semantics": "net-recovery-including-self-loss",
+      "sample_name": "露托",
+      "sample_slot": "char_4130_luton:2"
+    },
+    {
+      "char_id": "char_4106_bryota",
+      "skill_id": "skchr_bryota_2",
+      "status": "calculated",
+      "family": "compiled-template",
+      "output": {
+        "normal": {
+          "atk": 822,
+          "dps": 441.2712975098296,
+          "hps": 0,
+          "ehps": 0,
+          "dur": {
+            "attackCount": 43,
+            "attackSpeed": 100,
+            "times": 1,
+            "hitCount": 43,
+            "duration": 45.86666666666667,
+            "stunDuration": 5,
+            "prepDuration": 0,
+            "dpsDuration": -1,
+            "tags": [
+              "time"
+            ],
+            "startSp": 0,
+            "spType": 1,
+            "attackBegin": 12,
+            "critCount": 0,
+            "critHitCount": 0
+          },
+          "damageType": 0,
+          "hitDamage": 522,
+          "critDamage": 522,
+          "extraDamage": 0,
+          "extraHeal": 0,
+          "totalDamage": 22446,
+          "totalHeal": 0,
+          "totalEpDamage": 0,
+          "totalEpHeal": 0,
+          "maxTarget": 1,
+          "damagePool": [
+            22446,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "extraDamagePool": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "attackTime": 1.0666666666666667,
+          "frame": 32,
+          "attackCount": 43,
+          "spType": 1
+        },
+        "skill": {
+          "atk": 1479.6,
+          "dps": 1105.8749999999998,
+          "hps": 0,
+          "ehps": 0,
+          "dur": {
+            "attackCount": 29,
+            "attackSpeed": 100,
+            "times": 1,
+            "hitCount": 29,
+            "duration": 30.933333333333334,
+            "stunDuration": 0,
+            "prepDuration": 0,
+            "dpsDuration": -1,
+            "tags": [
+              "time"
+            ],
+            "startSp": 15,
+            "spType": 1,
+            "attackBegin": 12,
+            "critCount": 0,
+            "critHitCount": 0
+          },
+          "damageType": 0,
+          "hitDamage": 1179.6,
+          "critDamage": 1179.6,
+          "extraDamage": 0,
+          "extraHeal": 0,
+          "totalDamage": 34208.399999999994,
+          "totalHeal": 0,
+          "totalEpDamage": 0,
+          "totalEpHeal": 0,
+          "maxTarget": 1,
+          "damagePool": [
+            34208.399999999994,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "extraDamagePool": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "attackTime": 1.0666666666666667,
+          "frame": 32,
+          "attackCount": 29,
+          "spType": 1
+        },
+        "skillName": "土石的恒心",
+        "killTime": 0,
+        "globalDps": 693,
+        "globalHps": 0,
+        "globalEhps": 0,
+        "log": "说明：计算结果可能存在因为逻辑错误或者数据不全导致的计算错误，作者会及时修正。\n　　　计算结果仅供参考，请仔细核对以下的计算过程：\n| 角色 | 等级 | 技能 | 模组 |\n| :--: | :--: | :--: | :--: |\n| **苍苔**<br>_char\\_4106\\_bryota_ | 潜能 1<br>精英 2, 等级 80 | **土石的恒心**<br>等级 10 | **undefined**<br>等级 1 |\n\n----\n【基础属性】\n----\n\n----\n【技能】\n----------\n**【Buff计算】**\n [天赋] 量时度力:  def: +12.0% (+54.7)\n [天赋] 特性:  atk\\_scale: 1.20x\n [技能] 土石的恒心:  atk: +80.0% (+548.0)\n [技能] 土石的恒心:  def: +80.0% (+364.8)\n**【暴击Buff计算】**\n [天赋] 量时度力:  def: +12.0% (+54.7)\n [天赋] 特性:  atk\\_scale: 1.20x\n [技能] 土石的恒心:  atk: +80.0% (+548.0)\n [技能] 土石的恒心:  def: +80.0% (+364.8)\n\n**【循环计算】**\n技能启动需要SP: 15.0\n持续: 30.933 s\n攻击次数: 29 (1 连击 x 29)\n\n**【最终面板】**\n攻击力 / 倍率:  1479.60 = (685.0 + 548.0) * 1.20\n攻击间隔: 1.050 s\n攻速: 100 %\n最终攻击间隔: 31.50 帧, 1.050 s\n**帧对齐攻击间隔: 32 帧, 1.067 s**\n\n**【伤害计算】**\n伤害类型: 物理\n伤害 1179.60 * 命中 29.0 = 34208.4 直接伤害\n总伤害: 34208.40\nDPS: 1105.9, HPS: 0.0\n----\n----\n【普攻】\n----------\n**【Buff计算】**\n [天赋] 量时度力:  def: +12.0% (+54.7)\n [天赋] 特性:  atk\\_scale: 1.20x\n**【暴击Buff计算】**\n [天赋] 量时度力:  def: +12.0% (+54.7)\n [天赋] 特性:  atk\\_scale: 1.20x\n\n**【循环计算】**\n持续: 45.867 s\n攻击次数: 43 (1 连击 x 43)\n[公共模板] 技能后自身晕眩 5s，期间正常恢复技力且不能攻击\n\n**【最终面板】**\n攻击力 / 倍率:  822.00 = (685.0 + 0.0) * 1.20\n攻击间隔: 1.050 s\n攻速: 100 %\n最终攻击间隔: 31.50 帧, 1.050 s\n**帧对齐攻击间隔: 32 帧, 1.067 s**\n\n**【伤害计算】**\n伤害类型: 物理\n伤害 522.00 * 命中 43.0 = 22446.0 直接伤害\n总伤害: 22446.00\n以 50.9s 计算DPS/HPS\nDPS: 441.3, HPS: 0.0\n----\n",
+        "note": ""
+      },
+      "assumptions": {
+        "cond": true,
+        "crit": true,
+        "token": false,
+        "equip": true,
+        "buff": true,
+        "noblock": true
+      },
+      "equipment": "",
+      "template": {
+        "version": "community-template-operators-v1",
+        "families": [
+          "post-skill-stun"
+        ],
+        "consumed": [
+          "atk",
+          "def",
+          "stun"
+        ],
+        "projected": [],
+        "assumptions": [
+          "现成社区属性/天赋模型；技能自动循环，目标持续存活且始终可命中",
+          "技能后自晕期间正常恢复技力，不能攻击"
+        ],
+        "fingerprint": "0b2455b967f0203865f855ab883d6e5b6a8ce0a3c023906715931f491ce89ef7"
+      },
+      "healing_semantics": "net-recovery-including-self-loss",
+      "sample_name": "苍苔",
+      "sample_slot": "char_4106_bryota:2"
+    },
+    {
+      "char_id": "char_131_flameb",
+      "skill_id": "skchr_flameb_1",
+      "status": "calculated",
+      "family": "compiled-template",
+      "output": {
+        "normal": {
+          "atk": 963,
+          "dps": 442,
+          "hps": 0,
+          "ehps": 0,
+          "dur": {
+            "attackCount": 3,
+            "attackSpeed": 100,
+            "times": 1,
+            "hitCount": 3,
+            "duration": 4.5,
+            "stunDuration": 0,
+            "prepDuration": 0,
+            "dpsDuration": -1,
+            "tags": [
+              "attack"
+            ],
+            "startSp": 0,
+            "spType": 2,
+            "attackBegin": 12,
+            "critCount": 0,
+            "critHitCount": 0
+          },
+          "damageType": 0,
+          "hitDamage": 663,
+          "critDamage": 663,
+          "extraDamage": 0,
+          "extraHeal": 0,
+          "totalDamage": 1989,
+          "totalHeal": 0,
+          "totalEpDamage": 0,
+          "totalEpHeal": 0,
+          "maxTarget": 1,
+          "damagePool": [
+            1989,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "extraDamagePool": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "attackTime": 1.5,
+          "frame": 45,
+          "attackCount": 3,
+          "spType": 2
+        },
+        "skill": {
+          "atk": 2118.6000000000004,
+          "dps": 1212.4000000000003,
+          "hps": 293.70666666666665,
+          "ehps": 0,
+          "dur": {
+            "attackCount": 1,
+            "attackSpeed": 100,
+            "times": 1,
+            "hitCount": 1,
+            "duration": 1.5,
+            "stunDuration": 0,
+            "prepDuration": 0,
+            "dpsDuration": -1,
+            "tags": [
+              "attack",
+              "instant"
+            ],
+            "startSp": 3,
+            "spType": 2,
+            "attackBegin": 12,
+            "critCount": 0,
+            "critHitCount": 0
+          },
+          "damageType": 0,
+          "hitDamage": 1818.6000000000004,
+          "critDamage": 1818.6000000000004,
+          "extraDamage": 0,
+          "extraHeal": 440.56,
+          "totalDamage": 1818.6000000000004,
+          "totalHeal": 440.56,
+          "totalEpDamage": 0,
+          "totalEpHeal": 0,
+          "maxTarget": 1,
+          "damagePool": [
+            1818.6000000000004,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "extraDamagePool": [
+            0,
+            0,
+            440.56,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "attackTime": 1.5,
+          "frame": 45,
+          "attackCount": 1,
+          "spType": 2
+        },
+        "skillName": "歃血",
+        "killTime": 0,
+        "globalDps": 635,
+        "globalHps": 73,
+        "globalEhps": 0,
+        "log": "说明：计算结果可能存在因为逻辑错误或者数据不全导致的计算错误，作者会及时修正。\n　　　计算结果仅供参考，请仔细核对以下的计算过程：\n| 角色 | 等级 | 技能 | 模组 |\n| :--: | :--: | :--: | :--: |\n| **炎客**<br>_char\\_131\\_flameb_ | 潜能 1<br>精英 2, 等级 80 | **歃血**<br>等级 10 | **undefined**<br>等级 1 |\n\n----\n【基础属性】\n----\n\n----\n【技能】\n----------\n**【Buff计算】**\n [天赋] [满层数] 血戮:  max\\_hp: +1200\n [技能] 歃血:  atk\\_scale: 2.20x\n**【暴击Buff计算】**\n [天赋] [满层数] 血戮:  max\\_hp: +1200\n [技能] 歃血:  atk\\_scale: 2.20x\n\n**【循环计算】**\n技能启动需要SP: 3.0\n瞬发\n持续: 1.500 s\n攻击次数: 1 (1 连击 x 1)\n\n**【最终面板】**\n攻击力 / 倍率:  2118.60 = (963.0 + 0.0) * 2.20\n攻击间隔: 1.500 s\n攻速: 100 %\n最终攻击间隔: 45.00 帧, 1.500 s\n**帧对齐攻击间隔: 45 帧, 1.500 s**\n\n**【伤害计算】**\n伤害类型: 物理\n伤害 1818.60 * 命中 1.0 = 1818.6 直接伤害\n总伤害: 1818.60\nDPS: 1212.4, HPS: 0.0\n----\n[公共模板] 攻击自疗: 5507最大生命 × 0.08 × 1 次 = 440.56\n----\n【普攻】\n----------\n**【Buff计算】**\n [天赋] [满层数] 血戮:  max\\_hp: +1200\n**【暴击Buff计算】**\n [天赋] [满层数] 血戮:  max\\_hp: +1200\n\n**【循环计算】**\n攻击回复\n持续: 4.500 s\n攻击次数: 3 (1 连击 x 3)\n\n**【最终面板】**\n攻击力 / 倍率:  963.00 = (963.0 + 0.0) * 1.00\n攻击间隔: 1.500 s\n攻速: 100 %\n最终攻击间隔: 45.00 帧, 1.500 s\n**帧对齐攻击间隔: 45 帧, 1.500 s**\n\n**【伤害计算】**\n伤害类型: 物理\n伤害 663.00 * 命中 3.0 = 1989.0 直接伤害\n总伤害: 1989.00\nDPS: 442.0, HPS: 0.0\n----\n",
+        "note": ""
+      },
+      "assumptions": {
+        "cond": true,
+        "crit": true,
+        "token": false,
+        "equip": true,
+        "buff": true,
+        "stack": true,
+        "short_mode": false
+      },
+      "equipment": "",
+      "template": {
+        "version": "community-template-operators-v1",
+        "families": [
+          "on-hit-self-recovery"
+        ],
+        "consumed": [
+          "atk_scale",
+          "hp_ratio"
+        ],
+        "projected": [],
+        "assumptions": [
+          "现成社区属性/天赋模型；技能自动循环，目标持续存活且始终可命中",
+          "自疗按自身最大生命比例；持续缺血，不按敌方目标生命计算"
+        ],
+        "fingerprint": "cd79f4a97dbd9d220883fb9aeae59a6023f34c67af9f8857117f86e4c59a7c88"
+      },
+      "healing_semantics": "net-recovery-including-self-loss",
+      "sample_name": "炎客",
+      "sample_slot": "char_131_flameb:1"
+    },
+    {
+      "char_id": "char_4126_fuze",
+      "skill_id": "skchr_fuze_1",
+      "status": "calculated",
+      "family": "compiled-template",
+      "output": {
+        "normal": {
+          "atk": 835,
+          "dps": 445.8333333333333,
+          "hps": 0,
+          "ehps": 0,
+          "dur": {
+            "attackCount": 38,
+            "attackSpeed": 100,
+            "times": 1,
+            "hitCount": 28,
+            "duration": 45.6,
+            "stunDuration": 0,
+            "prepDuration": 0,
+            "dpsDuration": -1,
+            "tags": [
+              "time"
+            ],
+            "startSp": 0,
+            "spType": 1,
+            "attackBegin": 12,
+            "critCount": 10,
+            "critHitCount": 10
+          },
+          "damageType": 0,
+          "hitDamage": 535,
+          "critDamage": 535,
+          "extraDamage": 0,
+          "extraHeal": 0,
+          "totalDamage": 20330,
+          "totalHeal": 0,
+          "totalEpDamage": 0,
+          "totalEpHeal": 0,
+          "maxTarget": 1,
+          "damagePool": [
+            20330,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "extraDamagePool": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "attackTime": 1.2,
+          "frame": 36,
+          "attackCount": 38,
+          "spType": 1
+        },
+        "skill": {
+          "atk": 1085.5,
+          "dps": 1240.2631578947369,
+          "hps": 0,
+          "ehps": 0,
+          "dur": {
+            "attackCount": 100,
+            "attackSpeed": 190,
+            "times": 1,
+            "hitCount": 73,
+            "duration": 63.33333333333333,
+            "stunDuration": 0,
+            "prepDuration": 0,
+            "dpsDuration": -1,
+            "tags": [
+              "time"
+            ],
+            "startSp": 20,
+            "spType": 1,
+            "attackBegin": 12,
+            "critCount": 27,
+            "critHitCount": 27
+          },
+          "damageType": 0,
+          "hitDamage": 785.5,
+          "critDamage": 785.5,
+          "extraDamage": 0,
+          "extraHeal": 0,
+          "totalDamage": 78550,
+          "totalHeal": 0,
+          "totalEpDamage": 0,
+          "totalEpHeal": 0,
+          "maxTarget": 1,
+          "damagePool": [
+            78550,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "extraDamagePool": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "attackTime": 0.6333333333333333,
+          "frame": 19,
+          "attackCount": 100,
+          "spType": 1
+        },
+        "skillName": "火力侦察",
+        "killTime": 0,
+        "globalDps": 908,
+        "globalHps": 0,
+        "globalEhps": 0,
+        "log": "说明：计算结果可能存在因为逻辑错误或者数据不全导致的计算错误，作者会及时修正。\n　　　计算结果仅供参考，请仔细核对以下的计算过程：\n| 角色 | 等级 | 技能 | 模组 |\n| :--: | :--: | :--: | :--: |\n| **导火索**<br>_char\\_4126\\_fuze_ | 潜能 1<br>精英 2, 等级 80 | **火力侦察**<br>等级 10 | **undefined**<br>等级 1 |\n\n----\n【基础属性】\n----\n\n----\n【技能】\n----------\n**【Buff计算】**\n [天赋] 防弹护盾:  概率(原始): 27%\n [技能] 火力侦察:  atk: +30.0% (+250.5)\n [技能] 火力侦察:  attack\\_speed: +90\n**【暴击Buff计算】**\n [天赋] 防弹护盾:  概率(原始): 27%\n [技能] 火力侦察:  atk: +30.0% (+250.5)\n [技能] 火力侦察:  attack\\_speed: +90\n\n**【循环计算】**\n技能启动需要SP: 20.0\n弹药类技能: 火力侦察: 攻击 100 次\n持续: 63.333 s\n攻击次数: 100 (1 连击 x 100)\n\n**【最终面板】**\n攻击力 / 倍率:  1085.50 = (835.0 + 250.5) * 1.00\n攻击间隔: 1.200 s\n攻速: 190 %\n最终攻击间隔: 18.95 帧, 0.632 s\n**帧对齐攻击间隔: 19 帧, 0.633 s**\n\n**【伤害计算】**\n伤害类型: 物理\n伤害 785.50 * 命中 73.0 = 57341.5 直接伤害\n暴击伤害: 785.50, 命中 27\n总伤害: 78550.00\nDPS: 1240.3, HPS: 0.0\n----\n----\n【普攻】\n----------\n**【Buff计算】**\n [天赋] 防弹护盾:  概率(原始): 27%\n**【暴击Buff计算】**\n [天赋] 防弹护盾:  概率(原始): 27%\n\n**【循环计算】**\n持续: 45.600 s\n攻击次数: 38 (1 连击 x 38)\n\n**【最终面板】**\n攻击力 / 倍率:  835.00 = (835.0 + 0.0) * 1.00\n攻击间隔: 1.200 s\n攻速: 100 %\n最终攻击间隔: 36.00 帧, 1.200 s\n**帧对齐攻击间隔: 36 帧, 1.200 s**\n\n**【伤害计算】**\n伤害类型: 物理\n伤害 535.00 * 命中 28.0 = 14980.0 直接伤害\n暴击伤害: 535.00, 命中 10\n总伤害: 20330.00\nDPS: 445.8, HPS: 0.0\n----\n",
+        "note": ""
+      },
+      "assumptions": {
+        "cond": true,
+        "crit": true,
+        "token": false,
+        "equip": true,
+        "buff": true
+      },
+      "equipment": "",
+      "template": {
+        "version": "community-template-operators-v1",
+        "families": [
+          "fixed-target-projection",
+          "ammunition-cycle"
+        ],
+        "consumed": [
+          "atk",
+          "attack_speed",
+          "attack@trigger_time"
+        ],
+        "projected": [
+          {
+            "key": "ability_range_forward_extend",
+            "reason": "目标始终处于有效攻击/溅射范围；不计算寻路、投射物飞行时间"
+          }
+        ],
+        "assumptions": [
+          "现成社区属性/天赋模型；技能自动循环，目标持续存活且始终可命中",
+          "此投影模板当前限定一个持续可命中目标；不估算位移、范围覆盖和控制收益"
+        ],
+        "fingerprint": "bf8f263dc0f8b94af67b7d579407631fd9b7fe3f17e61fbc53b661fdcc55b07a"
+      },
+      "healing_semantics": "net-recovery-including-self-loss",
+      "sample_name": "导火索",
+      "sample_slot": "char_4126_fuze:1"
+    },
+    {
+      "char_id": "char_333_sidero",
+      "skill_id": "skchr_sidero_2",
+      "status": "calculated",
+      "family": "compiled-template",
+      "output": {
+        "normal": {
+          "atk": 620,
+          "dps": 394.5454545454545,
+          "hps": 0,
+          "ehps": 0,
+          "dur": {
+            "attackCount": 28,
+            "attackSpeed": 115,
+            "times": 1,
+            "hitCount": 28,
+            "duration": 30.800000000000004,
+            "stunDuration": 0,
+            "prepDuration": 0,
+            "dpsDuration": -1,
+            "tags": [
+              "time"
+            ],
+            "startSp": 0,
+            "spType": 1,
+            "attackBegin": 12,
+            "critCount": 0,
+            "critHitCount": 0
+          },
+          "damageType": 1,
+          "hitDamage": 434,
+          "critDamage": 434,
+          "extraDamage": 0,
+          "extraHeal": 0,
+          "totalDamage": 12152,
+          "totalHeal": 0,
+          "totalEpDamage": 0,
+          "totalEpHeal": 0,
+          "maxTarget": 1,
+          "damagePool": [
+            0,
+            12152,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "extraDamagePool": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "attackTime": 1.1,
+          "frame": 33,
+          "attackCount": 28,
+          "spType": 1
+        },
+        "skill": {
+          "atk": 1302,
+          "dps": 828.5454545454545,
+          "hps": 267.6,
+          "ehps": 0,
+          "dur": {
+            "attackCount": 28,
+            "attackSpeed": 115,
+            "times": 1,
+            "hitCount": 28,
+            "duration": 30.800000000000004,
+            "stunDuration": 0,
+            "prepDuration": 0,
+            "dpsDuration": -1,
+            "tags": [
+              "time"
+            ],
+            "startSp": 20,
+            "spType": 1,
+            "attackBegin": 12,
+            "critCount": 0,
+            "critHitCount": 0
+          },
+          "damageType": 1,
+          "hitDamage": 911.4,
+          "critDamage": 911.4,
+          "extraDamage": 0,
+          "extraHeal": 8242.080000000002,
+          "totalDamage": 25519.2,
+          "totalHeal": 8242.080000000002,
+          "totalEpDamage": 0,
+          "totalEpHeal": 0,
+          "maxTarget": 1,
+          "damagePool": [
+            0,
+            25519.2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "extraDamagePool": [
+            0,
+            0,
+            8242.080000000002,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "attackTime": 1.1,
+          "frame": 33,
+          "attackCount": 28,
+          "spType": 1
+        },
+        "skillName": "破浪回神",
+        "killTime": 0,
+        "globalDps": 612,
+        "globalHps": 134,
+        "globalEhps": 0,
+        "log": "说明：计算结果可能存在因为逻辑错误或者数据不全导致的计算错误，作者会及时修正。\n　　　计算结果仅供参考，请仔细核对以下的计算过程：\n| 角色 | 等级 | 技能 | 模组 |\n| :--: | :--: | :--: | :--: |\n| **铸铁**<br>_char\\_333\\_sidero_ | 潜能 1<br>精英 2, 等级 80 | **破浪回神**<br>等级 10 | **undefined**<br>等级 1 |\n\n----\n【基础属性】\n----\n\n----\n【技能】\n----------\n**【Buff计算】**\n [天赋] [触发] 佣兵之韧:  attack\\_speed: +15\n [技能] 破浪回神:  atk: +110.0% (+682.0)\n**【暴击Buff计算】**\n [天赋] [触发] 佣兵之韧:  attack\\_speed: +15\n [技能] 破浪回神:  atk: +110.0% (+682.0)\n\n**【循环计算】**\n技能启动需要SP: 20.0\n持续: 30.800 s\n攻击次数: 28 (1 连击 x 28)\n\n**【最终面板】**\n攻击力 / 倍率:  1302.00 = (620.0 + 682.0) * 1.00\n攻击间隔: 1.250 s\n攻速: 115 %\n最终攻击间隔: 32.61 帧, 1.087 s\n**帧对齐攻击间隔: 33 帧, 1.100 s**\n\n**【伤害计算】**\n伤害类型: 法术\n伤害 911.40 * 命中 28.0 = 25519.2 直接伤害\n[特殊] 破浪回神: 额外治疗 8242.08\n总伤害: 25519.20\n总治疗: 8242.08\nDPS: 828.5, HPS: 267.6\n----\n----\n【普攻】\n----------\n**【Buff计算】**\n [天赋] [触发] 佣兵之韧:  attack\\_speed: +15\n**【暴击Buff计算】**\n [天赋] [触发] 佣兵之韧:  attack\\_speed: +15\n\n**【循环计算】**\n持续: 30.800 s\n攻击次数: 28 (1 连击 x 28)\n\n**【最终面板】**\n攻击力 / 倍率:  620.00 = (620.0 + 0.0) * 1.00\n攻击间隔: 1.250 s\n攻速: 115 %\n最终攻击间隔: 32.61 帧, 1.087 s\n**帧对齐攻击间隔: 33 帧, 1.100 s**\n\n**【伤害计算】**\n伤害类型: 法术\n伤害 434.00 * 命中 28.0 = 12152.0 直接伤害\n总伤害: 12152.00\nDPS: 394.5, HPS: 0.0\n----\n",
+        "note": ""
+      },
+      "assumptions": {
+        "cond": true,
+        "crit": true,
+        "token": false,
+        "equip": true,
+        "buff": true
+      },
+      "equipment": "",
+      "template": {
+        "version": "community-template-operators-v1",
+        "families": [
+          "continuous-self-recovery"
+        ],
+        "consumed": [
+          "atk",
+          "hp_recovery_per_sec_by_max_hp_ratio"
+        ],
+        "projected": [],
+        "assumptions": [
+          "现成社区属性/天赋模型；技能自动循环，目标持续存活且始终可命中"
+        ],
+        "fingerprint": "85b2c9e5b0f84d720400abecb0d596d859cdb94d18eadf610d7c84340042a381"
+      },
+      "healing_semantics": "net-recovery-including-self-loss",
+      "sample_name": "铸铁",
+      "sample_slot": "char_333_sidero:2"
+    },
+    {
+      "char_id": "char_4139_papyrs",
+      "skill_id": "skchr_papyrs_2",
+      "status": "calculated",
+      "family": "compiled-template",
+      "output": {
+        "normal": {
+          "atk": 500,
+          "dps": 0,
+          "hps": 174.41860465116278,
+          "ehps": 0,
+          "dur": {
+            "attackCount": 11,
+            "attackSpeed": 100,
+            "times": 1,
+            "hitCount": 11,
+            "duration": 30,
+            "stunDuration": 0,
+            "prepDuration": 0,
+            "dpsDuration": -1,
+            "tags": [
+              "time"
+            ],
+            "startSp": 0,
+            "spType": 1,
+            "attackBegin": 12,
+            "resetAttack": -1.1,
+            "critCount": 0,
+            "critHitCount": 0
+          },
+          "damageType": 2,
+          "hitDamage": 500,
+          "critDamage": 500,
+          "extraDamage": 0,
+          "extraHeal": 0,
+          "totalDamage": 0,
+          "totalHeal": 5500,
+          "totalEpDamage": 0,
+          "totalEpHeal": 0,
+          "maxTarget": 1,
+          "damagePool": [
+            0,
+            0,
+            5500,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "extraDamagePool": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "attackTime": 2.8666666666666667,
+          "frame": 86,
+          "attackCount": 11,
+          "spType": 1
+        },
+        "skill": {
+          "atk": 750,
+          "dps": 0,
+          "hps": 450,
+          "ehps": 0,
+          "dur": {
+            "attackCount": 9,
+            "attackSpeed": 100,
+            "times": 1,
+            "hitCount": 9,
+            "duration": 15,
+            "stunDuration": 0,
+            "prepDuration": 0,
+            "dpsDuration": -1,
+            "tags": [
+              "time"
+            ],
+            "startSp": 15,
+            "spType": 1,
+            "attackBegin": 12,
+            "resetAttack": -1.1,
+            "remain": 39,
+            "critCount": 0,
+            "critHitCount": 0
+          },
+          "damageType": 2,
+          "hitDamage": 750,
+          "critDamage": 750,
+          "extraDamage": 0,
+          "extraHeal": 0,
+          "totalDamage": 0,
+          "totalHeal": 6750,
+          "totalEpDamage": 0,
+          "totalEpHeal": 0,
+          "maxTarget": 1,
+          "damagePool": [
+            0,
+            0,
+            6750,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "extraDamagePool": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "attackTime": 1.7666666666666666,
+          "frame": 53,
+          "attackCount": 9,
+          "spType": 1
+        },
+        "skillName": "临考发挥",
+        "killTime": 0,
+        "globalDps": 0,
+        "globalHps": 272,
+        "globalEhps": 0,
+        "log": "说明：计算结果可能存在因为逻辑错误或者数据不全导致的计算错误，作者会及时修正。\n　　　计算结果仅供参考，请仔细核对以下的计算过程：\n| 角色 | 等级 | 技能 | 模组 |\n| :--: | :--: | :--: | :--: |\n| **莎草**<br>_char\\_4139\\_papyrs_ | 潜能 1<br>精英 2, 等级 80 | **临考发挥**<br>等级 10 | **undefined**<br>等级 1 |\n\n----\n【基础属性】\n----\n\n----\n【技能】\n----------\n**【Buff计算】**\n [技能] 临考发挥:  base\\_attack\\_time: -1.100s\n [技能] 临考发挥:  atk: +50.0% (+250.0)\n**【暴击Buff计算】**\n [技能] 临考发挥:  base\\_attack\\_time: -1.100s\n [技能] 临考发挥:  atk: +50.0% (+250.0)\n[特殊] 链式攻击: 原本伤害倍率: 1.00\n[特殊] 链式攻击: 连锁倍率: 1.00, 平均伤害倍率 1.00x\n\n**【循环计算】**\n技能启动需要SP: 15.0\n[重置普攻] 截断最后一个攻击间隔\n[注记] 暂无抬手数据，以12帧计算\n技能前摇: 0.400s, 12 帧\n持续: 15.000 s\n攻击次数: 9 (1 连击 x 9)\n**【边缘情况估算(试验功能，结果仅供参考)】**\n技能持续时间: 450 帧, 攻速 100%, 抬手 12 帧(受攻速影响), 攻击间隔 53 帧\n技能结束时，前一次攻击经过: **14 帧**\n技能结束时，下一次攻击判定还需: **39 帧**\n\n**【最终面板】**\n攻击力 / 倍率:  750.00 = (500.0 + 250.0) * 1.00\n攻击间隔: 1.750 s\n攻速: 100 %\n最终攻击间隔: 52.50 帧, 1.750 s\n**帧对齐攻击间隔: 53 帧, 1.767 s**\n\n**【伤害计算】**\n伤害类型: 治疗\n治疗 750.00 * 命中 9.0 = 6750.0 直接治疗\n总伤害: 0.00\n总治疗: 6750.00\nDPS: 0.0, HPS: 450.0\n----\n----\n【普攻】\n----------\n**【Buff计算】**\n**【暴击Buff计算】**\n[特殊] 链式攻击: 原本伤害倍率: 1.00\n[特殊] 链式攻击: 连锁倍率: 1.00, 平均伤害倍率 1.00x\n\n**【循环计算】**\n[重置普攻] 截断最后一个攻击间隔\n普攻前摇: 0.400s, 12 帧\n持续: 30.000 s\n攻击次数: 11 (1 连击 x 11)\n\n**【最终面板】**\n攻击力 / 倍率:  500.00 = (500.0 + 0.0) * 1.00\n攻击间隔: 2.850 s\n攻速: 100 %\n最终攻击间隔: 85.50 帧, 2.850 s\n**帧对齐攻击间隔: 86 帧, 2.867 s**\n\n**【伤害计算】**\n伤害类型: 治疗\n治疗 500.00 * 命中 11.0 = 5500.0 直接治疗\n总伤害: 0.00\n总治疗: 5500.00\n以 31.533s (11 个攻击间隔) 计算普攻dps\nDPS: 0.0, HPS: 174.4\n----\n",
+        "note": "暂无抬手数据，以12帧计算\n"
+      },
+      "assumptions": {
+        "cond": true,
+        "crit": true,
+        "token": false,
+        "equip": true,
+        "buff": true
+      },
+      "equipment": "",
+      "template": {
+        "version": "community-template-operators-v1",
+        "families": [
+          "chain-capacity"
+        ],
+        "consumed": [
+          "base_attack_time",
+          "atk"
+        ],
+        "projected": [
+          {
+            "key": "attack@chain.extra_value",
+            "reason": "当前仅一个治疗目标，增加链条容量不增加目标数"
+          }
+        ],
+        "assumptions": [
+          "现成社区属性/天赋模型；技能自动循环，目标持续存活且始终可命中"
+        ],
+        "fingerprint": "790ee3ed1dad9703b720be4ff94e1475189f4308dc2fea661f230ba87585d478"
+      },
+      "healing_semantics": "net-recovery-including-self-loss",
+      "sample_name": "莎草",
+      "sample_slot": "char_4139_papyrs:2"
+    },
+    {
+      "char_id": "char_611_acnipe",
+      "skill_id": "skchr_acnipe_1",
+      "status": "calculated",
+      "family": "compiled-template",
+      "output": {
+        "normal": {
+          "atk": 1080,
+          "dps": 780,
+          "hps": 0,
+          "ehps": 0,
+          "dur": {
+            "attackCount": 25,
+            "attackSpeed": 100,
+            "times": 1,
+            "hitCount": 19,
+            "duration": 25,
+            "stunDuration": 0,
+            "prepDuration": 0,
+            "dpsDuration": -1,
+            "tags": [
+              "time"
+            ],
+            "startSp": 0,
+            "spType": 1,
+            "attackBegin": 12,
+            "critCount": 6,
+            "critHitCount": 6
+          },
+          "damageType": 0,
+          "hitDamage": 780,
+          "critDamage": 780,
+          "extraDamage": 0,
+          "extraHeal": 0,
+          "totalDamage": 19500,
+          "totalHeal": 0,
+          "totalEpDamage": 0,
+          "totalEpHeal": 0,
+          "maxTarget": 1,
+          "damagePool": [
+            19500,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "extraDamagePool": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "attackTime": 1,
+          "frame": 30,
+          "attackCount": 25,
+          "spType": 1
+        },
+        "skill": {
+          "atk": 1296,
+          "dps": 1934.1176470588236,
+          "hps": 0,
+          "ehps": 0,
+          "dur": {
+            "attackCount": 36,
+            "attackSpeed": 180,
+            "times": 1,
+            "hitCount": 27,
+            "duration": 20.4,
+            "stunDuration": 0,
+            "prepDuration": 0,
+            "dpsDuration": -1,
+            "tags": [
+              "time"
+            ],
+            "startSp": 20,
+            "spType": 1,
+            "attackBegin": 12,
+            "critCount": 9,
+            "critHitCount": 9
+          },
+          "damageType": 0,
+          "hitDamage": 1096,
+          "critDamage": 1096,
+          "extraDamage": 0,
+          "extraHeal": 0,
+          "totalDamage": 39456,
+          "totalHeal": 0,
+          "totalEpDamage": 0,
+          "totalEpHeal": 0,
+          "maxTarget": 1,
+          "damagePool": [
+            39456,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "extraDamagePool": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "attackTime": 0.5666666666666667,
+          "frame": 17,
+          "attackCount": 36,
+          "spType": 1
+        },
+        "skillName": "破空",
+        "killTime": 0,
+        "globalDps": 1299,
+        "globalHps": 0,
+        "globalEhps": 0,
+        "log": "说明：计算结果可能存在因为逻辑错误或者数据不全导致的计算错误，作者会及时修正。\n　　　计算结果仅供参考，请仔细核对以下的计算过程：\n| 角色 | 等级 | 技能 | 模组 |\n| :--: | :--: | :--: | :--: |\n| **Stormeye**<br>_char\\_611\\_acnipe_ | 潜能 1<br>精英 2, 等级 90 | **破空**<br>等级 10 | **undefined**<br>等级 1 |\n\n----\n【基础属性】\n----\n\n----\n【技能】\n----------\n**【Buff计算】**\n [天赋] 风坠:  atk\\_scale: 1.80x\n [天赋] 风坠:  概率(原始): 25%\n [天赋] 风雨欲来:  sp: +0.20/s\n [技能] 破空:  atk: +20.0% (+120.0)\n [技能] 破空:  attack\\_speed: +80\n [技能] 破空:  无视护甲（最终加算）: -100\n**【暴击Buff计算】**\n [天赋] 风坠:  atk\\_scale: 1.80x\n [天赋] 风坠:  概率(原始): 25%\n [天赋] 风雨欲来:  sp: +0.20/s\n [技能] 破空:  atk: +20.0% (+120.0)\n [技能] 破空:  attack\\_speed: +80\n [技能] 破空:  无视护甲（最终加算）: -100\n\n**【循环计算】**\n技能启动需要SP: 20.0\n持续: 20.400 s\n攻击次数: 36 (1 连击 x 36)\n\n**【最终面板】**\n攻击力 / 倍率:  1296.00 = (600.0 + 120.0) * 1.80\n攻击间隔: 1.000 s\n攻速: 180 %\n最终攻击间隔: 16.67 帧, 0.556 s\n**帧对齐攻击间隔: 17 帧, 0.567 s**\n敌人防御: 200.0 (-100.0)\n\n**【伤害计算】**\n伤害类型: 物理\n伤害 1096.00 * 命中 27.0 = 29592.0 直接伤害\n[暴击]敌人防御: 200.0 (-100.0)\n暴击伤害: 1096.00, 命中 9\n总伤害: 39456.00\nDPS: 1934.1, HPS: 0.0\n----\n----\n【普攻】\n----------\n**【Buff计算】**\n [天赋] 风坠:  atk\\_scale: 1.80x\n [天赋] 风坠:  概率(原始): 25%\n [天赋] 风雨欲来:  sp: +0.20/s\n**【暴击Buff计算】**\n [天赋] 风坠:  atk\\_scale: 1.80x\n [天赋] 风坠:  概率(原始): 25%\n [天赋] 风雨欲来:  sp: +0.20/s\n\n**【循环计算】**\n持续: 25.000 s\n攻击次数: 25 (1 连击 x 25)\n\n**【最终面板】**\n攻击力 / 倍率:  1080.00 = (600.0 + 0.0) * 1.80\n攻击间隔: 1.000 s\n攻速: 100 %\n最终攻击间隔: 30.00 帧, 1.000 s\n**帧对齐攻击间隔: 30 帧, 1.000 s**\n\n**【伤害计算】**\n伤害类型: 物理\n伤害 780.00 * 命中 19.0 = 14820.0 直接伤害\n暴击伤害: 780.00, 命中 6\n总伤害: 19500.00\nDPS: 780.0, HPS: 0.0\n----\n",
+        "note": ""
+      },
+      "assumptions": {
+        "cond": true,
+        "crit": true,
+        "token": false,
+        "equip": true,
+        "buff": true
+      },
+      "equipment": "",
+      "template": {
+        "version": "community-template-operators-v1",
+        "families": [
+          "defense-penetration"
+        ],
+        "consumed": [
+          "atk",
+          "attack_speed",
+          "def_penetrate_fixed"
+        ],
+        "projected": [],
+        "assumptions": [
+          "现成社区属性/天赋模型；技能自动循环，目标持续存活且始终可命中"
+        ],
+        "fingerprint": "67c43bc8d9c148043d4a328db8fb6829f05cee235224bce365be6b32aa0121e5"
+      },
+      "healing_semantics": "net-recovery-including-self-loss",
+      "sample_name": "Stormeye",
+      "sample_slot": "char_611_acnipe:1"
+    }
+  ]
+}

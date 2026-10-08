@@ -1,0 +1,76 @@
+/* Shared presentation only. Entry stages, map projection and hit areas stay
+   owned by their existing screens. References: assets/picture/MuMu*.png. */
+:root{--protocol-bg:#0b1011;--protocol-panel:#111a1bcc;--protocol-line:#45635d;--protocol-mint:#23ddb0;--protocol-paper:#ebefeb;--protocol-muted:#9cafaa;--protocol-amber:#eb9d38;--mint:var(--protocol-mint);--muted:var(--protocol-muted);--line:var(--protocol-line)}
+.protocol-screen{color:var(--protocol-paper);background:repeating-linear-gradient(90deg,#ffffff03 0 1px,transparent 1px 4px),url('../ui/protocol-grid.svg') center/cover fixed,var(--protocol-bg);font-family:'Bahnschrift','Segoe UI','Microsoft YaHei',sans-serif}
+.protocol-screen button,.protocol-screen input,.protocol-screen select,.protocol-screen dialog{border-radius:0}
+.protocol-screen button:not(.quiet):not(.secondary):not(.back-link):not(.portrait-preview):not(.portrait-option):not(.invite-seat):not(.kick){background:var(--protocol-mint);color:#071d18;border-color:#7bffe02b}
+.protocol-screen button.secondary{color:var(--protocol-paper);background:#263633;border-color:#547068}
+.protocol-screen button.quiet{color:#b7c9c4;border-color:#49615a}
+.protocol-screen input,.protocol-screen select{color:var(--protocol-paper);background:#0b1413;border-color:#48625b}
+.protocol-screen .identity,.protocol-screen .mode-card,.protocol-screen .active-panel,.protocol-screen .room-settings,.protocol-screen dialog{background:var(--protocol-panel);border-color:var(--protocol-line)}
+.protocol-screen header,.protocol-screen .lobby-header{background:#081010a6;border-bottom:1px solid #46655d}
+.protocol-screen .brand,.protocol-screen .eyebrow,.protocol-screen .number,.protocol-eyebrow{color:var(--protocol-mint);font:10px/1.6 'Consolas',monospace;letter-spacing:2px}
+.protocol-screen .intro{border-left:4px solid var(--protocol-mint);padding:5px 0 5px 18px;margin:25px 0}
+.protocol-screen .intro h1{font-size:clamp(30px,3vw,42px);font-weight:800;letter-spacing:3px}
+.protocol-screen .mode-card{border-top:5px solid var(--protocol-mint);background:linear-gradient(135deg,#1a3530bd,#101817eb);position:relative;overflow:hidden}
+.protocol-screen .mode-card::after{content:'';position:absolute;right:22px;top:18px;width:24px;height:24px;background:linear-gradient(#58817533,#58817533) center/1px 100% no-repeat,linear-gradient(#58817533,#58817533) center/100% 1px no-repeat;pointer-events:none}
+.protocol-screen .mode-card h2{font-size:30px;letter-spacing:2px}.protocol-screen .mode-card>button{border-right:5px solid #e0fff54d}
+.protocol-screen .mode-card p,.protocol-screen .intro p,.protocol-screen .profile-caption,.protocol-screen #status{color:var(--protocol-muted)}
+.protocol-screen .player{border-top-color:var(--protocol-mint);box-shadow:0 6px 18px #0006;background:#162522}.protocol-screen .player.empty{border-top-color:#4b625a}
+.protocol-screen .player-state{background:linear-gradient(transparent,#06110fed 82%)}.protocol-screen .ready .player-state{background:linear-gradient(transparent,#0cb68ce8 88%)}
+.protocol-screen .lobby-footer{border-top:1px solid #405d54;padding-top:18px}.protocol-screen #enter-game{border-right:5px solid #b8ffe780}
+.protocol-screen .room-settings{border-left:4px solid var(--protocol-mint)}
+.protocol-screen .connection,.protocol-screen .terminal-state{color:#aac7ba}
+/* Original single home, now a full terminal with an operator and five entries. */
+#menu{isolation:isolate;background:repeating-linear-gradient(90deg,#ffffff03 0 1px,transparent 1px 4px),url('../ui/protocol-grid.svg') center/cover,#0b1112;overflow-y:auto;overflow-x:hidden;align-items:stretch!important}
+#menu .home-shell{position:relative;z-index:1;display:grid;grid-template-columns:minmax(280px,1fr) minmax(420px,1.05fr);grid-template-rows:auto 1fr auto;gap:22px 6vw;align-items:center;width:min(1440px,100%);max-width:none;min-height:100dvh;margin:0 auto;padding:24px 4vw 20px;background:transparent;border:0;border-radius:0}
+.home-heading{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid #47675f;padding:0 0 16px}
+#menu h2{font-size:20px;letter-spacing:3px;color:var(--protocol-paper);margin:3px 0 0}.home-terminal{font:10px 'Consolas',monospace;color:#92b2a7;letter-spacing:3px}
+.home-art{position:absolute;inset:80px 43% 0 0;overflow:hidden;pointer-events:none;z-index:0}.home-art img{width:100%;height:100%;object-fit:contain;object-position:center bottom;transform:scale(1);transform-origin:50% 100%;mask-image:linear-gradient(to right,#000 78%,transparent),linear-gradient(#000 65%,transparent 98%);mask-composite:intersect;filter:drop-shadow(10px 0 25px #1d8c6333)}.home-art>span{position:absolute;top:30px;left:7vw;color:#548276;font:9px/1.7 monospace;letter-spacing:2px}
+.home-identity{grid-column:1;grid-row:2;align-self:end;margin-bottom:32px;padding:18px 20px 12px;min-width:0;background:linear-gradient(110deg,#07120ff2,#102620aa);border-left:4px solid var(--protocol-mint);box-shadow:0 5px 20px #0004}
+#menu .menu-name{margin:8px 0 0;gap:10px;flex-wrap:wrap}#menu .menu-name label{color:#b8cfc5}#menu .menu-name input{min-width:120px;background:#0d1918a6;border:0;border-bottom:1px solid #5c8e7c;border-radius:0;padding:7px 4px;color:#fff;font-size:22px;max-width:100%}
+#menu #home-profile{border:1px solid #5a897b;border-radius:0;background:#19342c;color:#d7eee5;padding:5px 9px;font-size:12px}#menu #home-portrait{width:22px;height:26px}.home-identity .protocol-eyebrow{margin:0}
+#menu .menu-btns{grid-column:2;grid-row:2;display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:8px 0;align-content:center;min-width:0}
+#menu .menu-btns .act{position:relative;display:flex;flex-direction:column;align-items:flex-start;text-align:left;justify-content:center;min-width:0;width:100%;padding:18px 22px;min-height:112px;border:1px solid #48665c;border-radius:0;backdrop-filter:none;background:#1c2928e8;color:var(--protocol-paper);box-shadow:0 4px 18px #0004;overflow:hidden;transition:border-color .15s,background .15s}
+#menu .menu-btns .act:hover{border-color:var(--protocol-mint);background:#29423beb}#menu .menu-btns .act:focus-visible{outline:2px solid #effaf4;outline-offset:3px}
+#menu .menu-btns .act strong{font-size:25px;font-weight:800;letter-spacing:2px;line-height:1.4;z-index:1}#menu .menu-btns .act small{font-size:11px;color:#a4bab1;margin-top:4px;z-index:1}
+#menu .menu-btns .home-covenant{grid-column:1/-1;min-height:177px;border-top:5px solid var(--protocol-mint);background:linear-gradient(115deg,#17674dd9,#17352feb);padding:21px 24px}
+#menu .home-covenant strong{font-size:clamp(34px,3.2vw,48px)!important;letter-spacing:4px!important}#menu .home-covenant small{display:flex;justify-content:space-between;width:100%;color:#c0e6d5!important;font-size:12px!important}#menu .home-covenant small span{font-size:24px;line-height:16px}#menu .home-covenant .protocol-eyebrow{color:#6effcf}
+.home-glyph{position:absolute;right:12px;top:50%;transform:translateY(-50%);font-size:68px;color:#88a79a24;pointer-events:none}
+#menu .menu-btns .home-resume,#menu .menu-btns #home-continue{min-height:34px;padding:8px 12px;font-size:12px;font-weight:400;background:#081512b3;box-shadow:none;color:#afd4c3}
+.home-footer{grid-column:1/-1;grid-row:3;border-top:1px solid #314c42;padding-top:12px;min-width:0}#menu-info{font-size:11px;color:#8da79c;line-height:1.7}#menu-info b{color:#b6d1c4}.home-footer .tip:empty{display:none}
+#menu #game-settings,#menu #covenant-entry{grid-column:2;grid-row:2;align-self:center;border:1px solid #4a7865;border-top:4px solid var(--protocol-mint);border-radius:0;padding:28px;margin:0;background:#10201feb;font-size:14px;color:#d0e8de}
+#menu #game-settings .act,#menu #covenant-entry .act{border-radius:0;border-color:#629c86;background:#204137;padding:12px 18px}#menu #game-settings h3,#menu #covenant-entry h3{font-size:24px;letter-spacing:2px}
+#menu .home-shell:has(#game-settings:not([hidden])) .menu-btns,#menu .home-shell:has(#covenant-entry:not([hidden])) .menu-btns{display:none}
+/* Setup and in-game chrome use the same material, without moving controls. */
+#setup{background:repeating-linear-gradient(90deg,#ffffff02 0 1px,transparent 1px 4px),url('../ui/protocol-grid.svg') center/cover,#0b1011}
+#setup .setup-head{background:#0a1111ed;border-bottom-color:#49685d}#setup .setup-head .brand{color:var(--protocol-mint)}#setup .setup-back,#setup .setup-bgm{border-radius:0;border:1px solid #56766b;background:#12211e}
+#setup-info .blk{border-radius:0;border-color:#3b544a;background:#0c1415de}#setup-info .blk-title{color:#afd4c3}.setup-foot .act{border-radius:0}
+body.mode-battle .tb-basic,body.mode-battle button.act,#intel-panel,#preview-panel,#detail{border-radius:0}
+body.mode-battle #hud{padding:8px 16px;background:#091210cc;border-top:1px solid #567c68;border-bottom:1px solid #567c68;box-shadow:inset 0 0 0 3px #c8ffdd08;color:#e0ece5}
+body.mode-battle #hud b{color:#7ff1c1}body.mode-battle .tb-basic{background:#14241fe6;border:1px solid #4c6c5b;color:#d4eade}
+body.mode-battle .tb-exit{background:#491917bb;border:1px solid #913d32;padding:4px}body.mode-battle .ready-btn{background:var(--protocol-mint);box-shadow:0 0 8px #20cf9238;border-radius:0}
+#intel-panel,#preview-panel{background:#0a1612f5;border:1px solid #557d69;box-shadow:0 8px 30px #000a}
+#center-banner{background-image:repeating-linear-gradient(90deg,#ffffff04 0 1px,transparent 1px 4px),url('../ui/protocol-grid.svg'),linear-gradient(105deg,#10221ef5,#0a1010f5);background-size:auto,cover,auto;border-radius:0}
+#decision-modal .dec-opt,#exit-confirm .box{border-radius:0;border-color:#536d5f;background:#101b18}#decision-modal .dec-head{color:#66efbd}
+@media(max-width:900px){#menu .home-shell{grid-template-columns:minmax(210px,.8fr) minmax(340px,1fr);gap:16px 24px;padding:18px 24px}.home-art{right:42%}#menu .menu-btns .act{padding:16px;min-height:97px}#menu .menu-btns .home-covenant{min-height:145px}.home-identity{padding:14px;margin-bottom:20px}.home-terminal{display:none}body.mode-battle #hud{padding:5px 8px}}
+@media(max-width:700px){#menu .home-shell{display:flex;flex-direction:column;align-items:stretch;gap:18px;padding:18px 20px;min-height:100dvh}#menu .home-heading{padding-bottom:12px}#menu h2{font-size:17px}.home-art{position:fixed;top:90px;right:0;bottom:20%;opacity:.4}.home-art img{transform:scale(1.1)}.home-art>span{display:none}.home-identity{margin:0;padding:10px 14px;order:0}.home-heading{order:-1}#menu .menu-btns{gap:10px;margin:0}#menu .menu-btns .act{min-height:92px;padding:16px}#menu .menu-btns .act strong{font-size:22px}#menu .menu-btns .home-covenant{min-height:142px}#menu .home-covenant strong{font-size:34px!important}.home-footer{margin-top:auto}#menu #game-settings,#menu #covenant-entry{padding:20px}#menu .home-shell:has(#game-settings:not([hidden])) .menu-btns,#menu .home-shell:has(#covenant-entry:not([hidden])) .menu-btns{display:none}body.mode-battle #hud{padding:3px 6px}.protocol-screen .intro{margin:18px 0}.protocol-screen .intro h1{font-size:30px}}
+@media(max-height:570px) and (min-width:701px){#menu .home-shell{padding-top:12px;padding-bottom:12px;gap:12px 28px}#menu .home-heading{padding-bottom:8px}#menu .menu-btns{gap:8px;margin:0}#menu .menu-btns .act{min-height:70px;padding:10px 16px}#menu .menu-btns .home-covenant{min-height:112px}#menu .menu-btns .act strong{font-size:22px}#menu .home-covenant strong{font-size:32px!important}.home-identity{margin-bottom:10px}.home-footer{padding-top:8px}}
+@media(prefers-reduced-motion:reduce){#menu .menu-btns .act{transition:none}}
+
+body.mode-battle #shopdrawer,body.mode-battle #shop-left,body.mode-battle #shop-level,body.mode-battle #shop-right{border-radius:0}body.mode-battle #shopdrawer:not(.collapsed){background:#0b1414ed;border-top-color:#3a5e4f}body.mode-battle #shop-right{background:#0e1b17df;border-color:#42594e}body.mode-battle #shop-level{background:#10291dd6}
+@media(max-width:700px){#menu .menu-btns .home-resume,#menu .menu-btns #home-continue{min-height:36px;padding:9px 12px}}
+
+body.mode-battle .shop-card,body.mode-battle .shop-card.op-card,body.mode-battle .shop-card .op-art,body.mode-battle .shop-card .op-grad,body.mode-battle .shop-card .op-namebar{border-radius:0}
+
+/* Reference home: large terminal, smaller protocol card on its right. */
+#menu .menu-btns{grid-template-columns:minmax(0,1.45fr) minmax(0,1fr)}
+#menu .menu-btns .home-terminal-card,#menu .menu-btns .home-covenant{grid-column:auto;min-height:160px;padding:20px 18px}
+#menu .menu-btns .home-terminal-card{background:#d8e3df;color:#172722;border-color:#edf7f2;cursor:default;opacity:1}
+#menu .menu-btns .home-terminal-card .protocol-eyebrow,#menu .menu-btns .home-terminal-card small{color:#466056}
+#menu .menu-btns .home-terminal-card strong{font-size:44px;letter-spacing:8px}
+#menu .menu-btns .home-terminal-card .home-glyph{color:#3a5b4933;right:-7px;font-size:124px}
+#menu .home-covenant strong{font-size:clamp(23px,2.2vw,31px)!important;letter-spacing:1px!important;white-space:nowrap}
+#menu .home-covenant small{font-size:11px!important;gap:8px;flex-wrap:wrap}
+@media(max-width:900px){#menu .menu-btns .home-terminal-card,#menu .menu-btns .home-covenant{min-height:140px;padding:14px}}
+@media(max-height:570px) and (min-width:701px){#menu .menu-btns .home-terminal-card,#menu .menu-btns .home-covenant{min-height:112px;padding:12px}#menu .menu-btns .home-terminal-card strong{font-size:32px}}

@@ -1,0 +1,64 @@
+.ab 总数: 2617
+  进度 200/2617  对象累计 5081
+  进度 400/2617  对象累计 14549
+  进度 600/2617  对象累计 22498
+  进度 800/2617  对象累计 229027
+  进度 1000/2617  对象累计 426550
+  进度 1200/2617  对象累计 634421
+  进度 1400/2617  对象累计 843902
+  进度 1600/2617  对象累计 859694
+  进度 1800/2617  对象累计 879204
+  进度 2000/2617  对象累计 1324751
+  进度 2200/2617  对象累计 1335189
+  进度 2400/2617  对象累计 1368384
+  进度 2600/2617  对象累计 1523790
+
+完成，写 D:\OneDrive\Project\ArknightsResearch\卫戍协议复刻\work\inventory.json，共 2617 个 bundle，1527506 个对象，0 个错误
+
+对象类型分布:
+  GameObject: 378530
+  Transform: 332235
+  MonoBehaviour: 203630
+  ParticleSystemRenderer: 147397
+  ParticleSystem: 147397
+  RectTransform: 46295
+  MeshFilter: 43722
+  MeshRenderer: 43289
+  Texture2D: 34136
+  Material: 33752
+  CanvasRenderer: 33188
+  Sprite: 20774
+  Mesh: 11423
+  Animator: 6899
+  CircleCollider2D: 5571
+  TrailRenderer: 5466
+  AnimationClip: 5180
+  TextAsset: 4086
+  Rigidbody2D: 3968
+  SpriteRenderer: 3966
+  AnimatorController: 3944
+  CanvasGroup: 2902
+  AssetBundle: 2617
+  CapsuleCollider2D: 1734
+  MeshCollider: 1233
+  Animation: 1162
+  AudioClip: 618
+  SkinnedMeshRenderer: 562
+  LineRenderer: 398
+  Shader: 369
+  Canvas: 223
+  BoxCollider2D: 189
+  Cubemap: 172
+  Avatar: 144
+  LightProbes: 104
+  PreloadData: 104
+  BoxCollider: 35
+  Camera: 33
+  ShaderVariantCollection: 26
+  SphereCollider: 13
+  FlareLayer: 8
+  Font: 7
+  PlayableDirector: 2
+  PhysicsMaterial2D: 1
+  Light: 1
+  RenderTexture: 1

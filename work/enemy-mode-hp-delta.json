@@ -1,0 +1,24 @@
+{
+  "rule": "enemy-root-hp-mode-provider-v2",
+  "before": {
+    "autoModeProviders": 2,
+    "hpProviders": 0
+  },
+  "after": {
+    "autoModeProviders": 3,
+    "hpProviders": 1
+  },
+  "acceptedEnemyIDs": [
+    "enemy_2020_cswrtr"
+  ],
+  "wholeEnemyPhaseCompletion": false,
+  "reusableEffects": [
+    "HP scoped threshold",
+    "ordered managed Buff group",
+    "ATK/DEF/RES percentage additions",
+    "output damage multiplier"
+  ],
+  "nextSharedCapability": "mode-provider-lifecycle",
+  "report": "work/external-combat-import-report.json",
+  "validation": "work/enemy-mode-hp-validation.json"
+}

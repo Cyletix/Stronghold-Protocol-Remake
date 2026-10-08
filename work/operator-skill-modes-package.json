@@ -1,0 +1,148 @@
+{
+  "createdAt": "2026-09-17T17:58:09.353677+09:00",
+  "gameVersion": "room-game-20260917.1",
+  "packageDirectory": "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\dist\\Arknights-Game-Universal-Windows-x64-20260917-175428-d72fc5",
+  "zipPath": "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\dist\\Arknights-Game-Universal-Windows-x64-20260917-175428-d72fc5.zip",
+  "zipBytes": 339246638,
+  "zipSha256": "2ac386b5359528a0eba178b77a4e95465a444d8699fddda90eee4e35ca151b75",
+  "sha256SidecarMatches": true,
+  "metadata": {
+    "createdAt": "2026-09-17T17:55:21.0148989+09:00",
+    "platform": "Windows",
+    "architecture": "x64",
+    "bundledNode": true,
+    "bundledEasyTier": true,
+    "role": "universal",
+    "entry": "开始游戏.cmd",
+    "scope": "universal room runtime and full game assets"
+  },
+  "zipEntryCount": 5347,
+  "webFileCount": 5320,
+  "completeWebFileListMatches": true,
+  "requiredScriptOrderMatches": true,
+  "criticalFileChecks": [
+    {
+      "path": "web/skill_mode_data.js",
+      "sha256": "fa92c2063bae68b4689321688ba069654d7fe48eeb6faf718ecf10c08ecf5eed",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/src/simulation/skill-modes.js",
+      "sha256": "55c079f0138d4f6261c2ceb449b19aaab5eb5b01c39237d642fe23212f062b45",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/src/simulation/operator-combat.js",
+      "sha256": "a75b900e9540dbe0c133de4574eff65b8f2926c5132cc4ac931b088560b2b915",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/engine.js",
+      "sha256": "9d92e0aaa1a4c547f11fd3c6954f8d69c7e74f41846e93e0cd7c91019629825a",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/mode.js",
+      "sha256": "f3fd550b12cdaaa80bd3a1f13837674115b0e9cc7254749186ebfe67e5201074",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/index.html",
+      "sha256": "f5b778f0a4b0af4b3322ed6fffd3f180e04a1502efdf80edb39a387d3ab507a8",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/room-game.js",
+      "sha256": "167892869fe8c9d33f2eef1071832b52e6deae6c614b436ecc1cdabf1846d5c5",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/room-presence.js",
+      "sha256": "1801e5ccac46d7a1c1e34bf686525b44270f55d37cd0feedf50b2423f4c9aa61",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/source_battles.json",
+      "sha256": "f81f8de9ab14d0a1ac4b068d502ef72e2045877c2274115501fe106d3c9e7270",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/enemy_encounters.json",
+      "sha256": "6d31cb6ca23923e357d833dcf3c93da3d6d2012ccd4d389c268801afc63cf96e",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/src/simulation/enemy-replacement.js",
+      "sha256": "4a031b51a0461c8de601e387fc6e956e516c86e384a6ecfa781cec34712468b3",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "tools/room_server.js",
+      "sha256": "5070399df90675097cfe741a311d6ce8288a5b10d2dd2c36825f2e1e53c5fad7",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "tools/lib/room-game-runtime.js",
+      "sha256": "69229084854c8b817828a44f60b4157c49ab031321c407673755ca39b04ad8b7",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": ".runtime/node-win-x64/node.exe",
+      "sha256": "0d0f5e39f9f3d9587bc19f73eab3c2c9c4903fd02d6dbf9c853dd81b3d95fad4",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": ".runtime/node-win-x64/LICENSE",
+      "sha256": "8cc9bb466b19fc7e7cc99d03e9df1132021fda8b01eea2624c58bb372dbef576",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": ".runtime/easytier-v2.6.4-x64/easytier-core.exe",
+      "sha256": "da7eb2d24b5416f3d3407636949e964a0750e3f9dc53a828cb6799a57ead445d",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": ".runtime/easytier-v2.6.4-x64/easytier-cli.exe",
+      "sha256": "d8783e851e944b44a9b71b39fd02f227ec0a2a82b3165c55ead5dd32dcde53a1",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": ".runtime/easytier-v2.6.4-x64/Packet.dll",
+      "sha256": "c7c03a87eac7243ccbe331554624b18803010b740e311fc8cfddb573096eacac",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": ".runtime/easytier-v2.6.4-x64/wintun.dll",
+      "sha256": "e5da8447dc2c320edc0fc52fa01885c103de8c118481f683643cacc3220dafce",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": ".runtime/easytier-v2.6.4-x64/WinDivert64.sys",
+      "sha256": "8da085332782708d8767bcace5327a6ec7283c17cfb85e40b03cd2323a90ddc2",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": ".runtime/easytier-v2.6.4-x64/verified-files.json",
+      "sha256": "7065f8e76b23be35f35cb38dca49c36f4db4eab8b2e5f4673a585887772d96e3",
+      "sourcePackageZipMatch": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "complete Universal package",
+      "command": "powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File tools/package-room.ps1",
+      "exitCode": 0
+    },
+    {
+      "name": "bundled runtime and actual HTTP",
+      "command": "node tools/_room_package_smoke.js dist/Arknights-Game-Universal-Windows-x64-20260917-175428-d72fc5",
+      "exitCode": 0,
+      "result": "ROOM PACKAGE OK bundled Node x64, no system Node, unrelated CWD, actual lobby and game runtime"
+    },
+    {
+      "name": "ZIP key files, source/package SHA256, version and runtime contents",
+      "exitCode": 0
+    }
+  ],
+  "previousPackagesPreserved": true
+}

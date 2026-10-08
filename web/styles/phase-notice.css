@@ -1,0 +1,15 @@
+/* Entry-card treatment follows the reference video's 03:16 and 04:40 cuts.
+   Motion duration and vector marks are local presentation choices. */
+#center-banner{--phase-color:#35e3ad;position:fixed;inset:auto;left:50%;top:44%;width:410px;max-width:calc(100vw - 36px);min-height:110px;transform:translate(-50%,-50%);display:flex;align-items:center;gap:22px;padding:22px 28px;z-index:40;pointer-events:none;text-align:left;background:linear-gradient(105deg,#10221ef5,#0a1010f0);border:1px solid var(--phase-color);box-shadow:0 6px 32px #0009,inset 0 0 0 5px #ffffff08;color:var(--phase-color);opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s;overflow:hidden}
+#center-banner[data-phase="battle"],#center-banner[data-phase="joint"]{--phase-color:#efb33e;background:linear-gradient(105deg,#2b2419f5,#17130ef0)}
+#center-banner[data-phase="boss"]{--phase-color:#f06c5e;background:linear-gradient(105deg,#301815f5,#160d0df0)}
+#center-banner.show{opacity:1;visibility:visible;animation:phase-card-in .4s cubic-bezier(.2,.8,.2,1) both}
+#center-banner::after{content:"»";position:absolute;right:10px;top:50%;color:var(--phase-color);font-size:80px;line-height:1;transform:translateY(-54%);opacity:.13}
+#cb-mark{font-size:48px;font-weight:800;line-height:1;min-width:48px;text-align:center;color:var(--phase-color);border-right:1px solid #ffffff25;padding-right:20px}
+#center-banner .cb-copy{min-width:0;position:relative}
+#center-banner .cb-title{font-size:28px;font-weight:800;line-height:1.2;letter-spacing:2px;color:var(--phase-color);text-shadow:none}
+#center-banner .cb-sub{font-size:13px;line-height:1.65;letter-spacing:1px;margin-top:8px;color:#d4dfd9;text-shadow:none;overflow-wrap:anywhere}
+body:not(.mode-battle) #center-banner{display:none}
+@keyframes phase-card-in{from{opacity:0;transform:translate(-42%,-50%);clip-path:inset(0 0 0 100%)}to{opacity:1;transform:translate(-50%,-50%);clip-path:inset(0 0 0 0)}}
+@media(max-width:600px),(max-height:540px){#center-banner{width:320px;min-height:90px;gap:14px;padding:17px 20px}#center-banner .cb-title{font-size:23px}#cb-mark{font-size:36px;padding-right:14px}}
+@media(prefers-reduced-motion:reduce){#center-banner.show{animation:none}#center-banner{transition:none}}

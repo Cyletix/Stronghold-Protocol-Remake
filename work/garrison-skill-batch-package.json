@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-03T02:44:27.163884+09:00",
+  "gameVersion": "room-game-20261003.1",
+  "catalog": "83762a7bd51b5f6b",
+  "sourceManifest": "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\work\\garrison-skill-batch-package-source-20261003.1.json",
+  "sourceFrozenAt": "2026-10-03T02:38:19.531090+09:00",
+  "packageDirectory": "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\dist\\Arknights-Game-Universal-Windows-x64-20261003-023856-94614e",
+  "fullPackage": {
+    "path": "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\dist\\Arknights-Game-Universal-Windows-x64-20261003-023856-94614e.zip",
+    "bytes": 343481992,
+    "sha256": "81305a62845637f321574561eaf009d7b0b393685cf290673d3425cc3015c192",
+    "sidecarMatches": true,
+    "zipEntries": 5359
+  },
+  "metadata": {
+    "createdAt": "2026-10-03T02:41:05.5402680+09:00",
+    "platform": "Windows",
+    "architecture": "x64",
+    "bundledNode": true,
+    "bundledEasyTier": true,
+    "role": "universal",
+    "entry": "开始游戏.cmd",
+    "scope": "universal room runtime and full game assets"
+  },
+  "criticalFileChecks": [
+    {
+      "path": "web/engine.js",
+      "sha256": "971fecc6e4d8678604e346f4f4f6ba5ecbf9e0a9354b3b97012085d30662bf3b",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/src/simulation/operator-combat.js",
+      "sha256": "0cebc1665c92b13b7f77f5001d19740af8cf7c92cbe54b576cc606a6ce8942c8",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/src/simulation/client-programs.js",
+      "sha256": "ea2c1816831053d362d06b078904e48f66d61d6c8e996aa48e0604eb91846b03",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/src/simulation/skill-modes.js",
+      "sha256": "40e4a0a5c3cbd85e31232f00338af87066cbe0fe767dc6a6372fec606ac1822a",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/src/simulation/common-skills.js",
+      "sha256": "2cece4a5f8cb1bfac0e98bb95af57a06cedc35cb2acd89d27c29553320525c12",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/src/simulation/direct-skill-actions.js",
+      "sha256": "91b5788f09c87559c721666f136b892d000accadd3342fde981fe7a84fa4a6d2",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/client_program_data.js",
+      "sha256": "43d168f81e2e2672782633831fc96bca4942e1ccce12d96cb6922012dd9597b7",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/next_attack_skill_data.js",
+      "sha256": "47a5b64af5695d45ef792f949d2eaedb434d98a1025c8807538fb3ec299a4013",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/skill_mode_data.js",
+      "sha256": "2f4082b5f4c231796ed562f9daf748e0efea41e8ceabe78f5aaccc87916f5ad7",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/direct_skill_data.js",
+      "sha256": "825636377dd0708ddaab34cb363738333cabf416f29f647edf6599d2411a7c31",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "tools/room_server.js",
+      "sha256": "79910b28662368dee18a6d06d6861978e6e1e34c552925b684002f96e677b43a",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/room-game.js",
+      "sha256": "68084a60acc36b50e95a03298566efc1b8a7b14faf532ce5f65937928bbad39c",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/room-presence.js",
+      "sha256": "95ac41f2c19ec61acd51810d4839e9edb861d1f3d1b80f986e1318bb108b7ebb",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/mode.js",
+      "sha256": "38119ce9ba0e0bbccd019a091efa3d901c3b6d567935f7862ea9a0b4c18dc384",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/mode/save.js",
+      "sha256": "ec41b6b94b728b3fb1634686694da0eec3a8d0290d4172a81e474a2c47837797",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/mode/rules.js",
+      "sha256": "ea6bc23a9ed2d27437f5377670f8a7558546daa45d884d4d58de95f27876661d",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/mode/debug.js",
+      "sha256": "2e5471b07ae7df9c46479dc9a780b42642d5d49afdfa9049c20d235ab8f22f48",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/index.html",
+      "sha256": "cc327abf53e802e76a04e239b2b41e79028190b45255731cfc49b331446938d3",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "tools/lib/listen-port.js",
+      "sha256": "caeb7f93cc720cd4f5d5455d0d88a3b8081bb49abb4939c50a0b4f191eb32d18",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "tools/lib/room-game-runtime.js",
+      "sha256": "69229084854c8b817828a44f60b4157c49ab031321c407673755ca39b04ad8b7",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "tools/room-launcher.js",
+      "sha256": "519baf60f31b56061a8e1782340f64555b051a4a51c676de17385430d0dc59fd",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "tools/room-online.js",
+      "sha256": "e92d33a9988e928f1970c0011fbb1a45eec81c2053721b194ac579371d58f4e3",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "tools/start-room.js",
+      "sha256": "931d05690da3c10690a0225e7f728d2ea7bff849b98b7cdbe5d559d8a719697b",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": ".runtime/node-win-x64/node.exe",
+      "sha256": "0d0f5e39f9f3d9587bc19f73eab3c2c9c4903fd02d6dbf9c853dd81b3d95fad4",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": ".runtime/node-win-x64/LICENSE",
+      "sha256": "8cc9bb466b19fc7e7cc99d03e9df1132021fda8b01eea2624c58bb372dbef576",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": ".runtime/easytier-v2.6.4-x64/easytier-core.exe",
+      "sha256": "da7eb2d24b5416f3d3407636949e964a0750e3f9dc53a828cb6799a57ead445d",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": ".runtime/easytier-v2.6.4-x64/easytier-cli.exe",
+      "sha256": "d8783e851e944b44a9b71b39fd02f227ec0a2a82b3165c55ead5dd32dcde53a1",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": ".runtime/easytier-v2.6.4-x64/Packet.dll",
+      "sha256": "c7c03a87eac7243ccbe331554624b18803010b740e311fc8cfddb573096eacac",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": ".runtime/easytier-v2.6.4-x64/wintun.dll",
+      "sha256": "e5da8447dc2c320edc0fc52fa01885c103de8c118481f683643cacc3220dafce",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": ".runtime/easytier-v2.6.4-x64/WinDivert64.sys",
+      "sha256": "8da085332782708d8767bcace5327a6ec7283c17cfb85e40b03cd2323a90ddc2",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": ".runtime/easytier-v2.6.4-x64/verified-files.json",
+      "sha256": "7065f8e76b23be35f35cb38dca49c36f4db4eab8b2e5f4673a585887772d96e3",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/src/simulation/medic-skills.js",
+      "sha256": "cb0506766a346b92f1f44450cd8a0376143defb39122671c2718bcbe42f87678",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/src/simulation/skill-auras.js",
+      "sha256": "67366ec7faad53a54fb8afed0ceba3106bb3cee89f8d12e6f5cbd1f31451d27e",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/src/simulation/attributes.js",
+      "sha256": "43c12d79f7aef6fdd203c300afd27425e869d0199d03de669e366180afbb7b53",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/src/simulation/hunter.js",
+      "sha256": "285e8dec719da61da1269d037b4dc78c0947c128af899bce009edf314e7f26bb",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/src/simulation/enemy-cold.js",
+      "sha256": "0dcdb3e9c75e81db5d86cd95547ea5d1ebb78a20926a9ff08c5ab89305b1486c",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/src/simulation/enemy-skills.js",
+      "sha256": "852fa06abf70a1136c347a9a2111523ec04238704171a0fffa8138b87a908072",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/src/simulation/mystic.js",
+      "sha256": "f33891626d1d11b9126ada2e6db4a4b67c57f4b8162755116acc64d70c1805dc",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/src/simulation/skill-blockees.js",
+      "sha256": "8c46263c982145e862e22861280f8e87d66889a7864b0abba60228fc0e40b414",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/src/simulation/enemy-selective-attacks.js",
+      "sha256": "2feb368e9c0cc456329e0459178582572b3117194db0ddaf6e352460e5230b09",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/external_combat_data.js",
+      "sha256": "d11b307db0c6c51cca81f9bca18d183e8f5185b9e79f8b1a8bf3561eb7eb222e",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/src/simulation/enemy-hover.js",
+      "sha256": "36629bb34630894fdab2c654b511e449e24e639d6a2c0e4ab0397307b69c327c",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/src/simulation/skill-self-buffs.js",
+      "sha256": "454785e666ad099b8ca4026106909164b0ba3aca8cc864c9abb76da7fd01711e",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/src/simulation/skill-end-effects.js",
+      "sha256": "94a121ddaa18fc398effb3585e9efe7a3d6b4c06c9cb094aa739a2ddf81bcb62",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/src/simulation/enemy-auras.js",
+      "sha256": "febdd25f5f379df37b0306a15c43ba1b9efbccd4a26386c203aba708c4f54fd8",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/src/simulation/dollkeeper.js",
+      "sha256": "4de3b4372a38bd2e2c891f62cb3e0db5e8e3a52c62ab092438616545f21bca20",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/src/simulation/equip-protection.js",
+      "sha256": "9edc6b89e7572b944dc429823341c079f36e272d0708c70d5b7546a860772be3",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/src/simulation/enemy-attached-projectiles.js",
+      "sha256": "a6744530e75635a3a8d633024be2b28d23016925e9177337c9ba085a1570ac32",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/src/render/battle-presentation.js",
+      "sha256": "ad1feea92865245a13d223863b6431953e36a88dbe577f25e511cb2b389e9d30",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/src/simulation/ability-flow.js",
+      "sha256": "7bc70e788c3ae9ec9bbeb86ade530b422c3424ceca045854ee42d84fe8041c40",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/src/simulation/skill-toggle.js",
+      "sha256": "9759592e43abbd94fcc285f27fce43042f8849aecdc48ec54df3cfa6ee15cd74",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/src/simulation/elemental.js",
+      "sha256": "9f92d59ae989fcfa5a088efb3d8dae043951d3dcd6ee3c1256197d0617765409",
+      "sourcePackageZipMatch": true
+    }
+  ],
+  "acceptance": {
+    "command": [
+      "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\dist\\Arknights-Game-Universal-Windows-x64-20261003-023856-94614e\\.runtime\\node-win-x64\\node.exe",
+      "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\tools\\_room_package_smoke.js",
+      "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\dist\\Arknights-Game-Universal-Windows-x64-20261003-023856-94614e"
+    ],
+    "passed": true,
+    "logPath": "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\work\\garrison-skill-batch-package-smoke-20261003.1.log",
+    "log": "ROOM PACKAGE OK bundled Node x64, no system Node, unrelated CWD, actual lobby and game runtime\nROOM PACKAGE ID {\"gameVersion\":\"room-game-20261003.1\",\"catalog\":\"83762a7bd51b5f6b\"}\nROOM DEFAULT PACKAGE LAUNCHER OK preferred 8100 -> 8100, no system Node, unrelated CWD, actual homepage, authenticated status and solo page\n"
+  },
+  "scope": "Full Universal ZIP, frozen source/directory/ZIP critical hashes and actual default portable launcher. Previous packages retained."
+}

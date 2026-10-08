@@ -1,0 +1,36 @@
+PASS strategy item rewards
+PASS detail catalogs
+PASS mode build
+PASS garrison source
+PASS operator garrisons
+PASS basic attack profiles
+PASS basic attacks
+PASS common deployment-cost skills
+PASS common skill level data
+PASS common skill account-level expansion
+PASS client stat graph source
+PASS client stat graph execution
+PASS final defense consumers
+PASS hunter magazines and Snow Hunter
+PASS mystic storage and Indigo
+PASS dollkeeper forms and source skills
+PASS tactical reinforcements and flowing shapes
+PASS manual tactical deployment and copy
+PASS Blacknight and source sleep rules
+PASS tactical exclusive mechanisms
+PASS common buff families and attribute layers
+PASS playability repairs
+PASS debug and enemy effects
+PASS enemy cold source
+PASS enemy cold mechanics
+PASS preview, training and audio
+PASS local solo
+PASS keyboard shortcuts
+PASS HUD feedback
+PASS render policy
+PASS render surfaces and recovery
+PASS frozen shop refill
+PASS terrain placement
+PASS boss mechanics profiles
+PASS boss_mechanics
+GAME CHECK OK 35 checks (32.5s)

@@ -1,0 +1,213 @@
+{
+  "date": "2026-09-13",
+  "records": [
+    {
+      "original": "docs/agent-instruction-audit.md",
+      "archive": "docs/archive/20260913-cleanup/agent-instruction-audit.md",
+      "current": "docs/archive/20260913-cleanup/agent-instruction-audit.md",
+      "originalSha256": "58a4239499f5d7748a3935ef612943376dd9504570eb0639807f3005214cac55",
+      "archiveSha256": "12fd6e33869bd62bd3dd281383a276376288e41c1430292126500fbc698fb50f"
+    },
+    {
+      "original": "docs/video-review-20260910.md",
+      "archive": "docs/archive/20260913-cleanup/video-review-20260910.md",
+      "current": "docs/archive/20260913-cleanup/video-review-20260910.md",
+      "originalSha256": "def2b2609326a7c58f2c25a5d1e6f4fc7794726434a981554ae02fc095589032",
+      "archiveSha256": "9f6141b2e0ee09a82aec3f2da9665b68bbbdc8b6e698bd57060d398353b25ccc"
+    },
+    {
+      "original": "docs/development-setup.md",
+      "archive": "docs/archive/20260913-cleanup/retired/docs/development-setup.md",
+      "current": "docs/development/README.md",
+      "originalSha256": "40fbd321849ad1cf098e7dda627da2d001880b7f9ae614cde3840ad7abc0312f",
+      "archiveSha256": "40fbd321849ad1cf098e7dda627da2d001880b7f9ae614cde3840ad7abc0312f"
+    },
+    {
+      "original": "docs/repository-layout.md",
+      "archive": "docs/archive/20260913-cleanup/retired/docs/repository-layout.md",
+      "current": "docs/development/README.md",
+      "originalSha256": "d1ba7cfb7c41c568aca3045a3e8823d1c5c2df342b8c9e1a34efd9cc423ab916",
+      "archiveSha256": "d1ba7cfb7c41c568aca3045a3e8823d1c5c2df342b8c9e1a34efd9cc423ab916"
+    },
+    {
+      "original": "docs/research-workflow.md",
+      "archive": "docs/archive/20260913-cleanup/retired/docs/research-workflow.md",
+      "current": "docs/research/README.md",
+      "originalSha256": "56f72a3a41cc14d790bc9fbc81d1d4068525ea2a4ba3c886850cc45e8abfe18e",
+      "archiveSha256": "56f72a3a41cc14d790bc9fbc81d1d4068525ea2a4ba3c886850cc45e8abfe18e"
+    },
+    {
+      "original": "TASKPLAN.md",
+      "archive": "docs/archive/20260913-cleanup/retired/TASKPLAN.md",
+      "current": "docs/plan.md",
+      "originalSha256": "99324756ec99fed429b18c4af90e823ee8168820beaf7d1b068a8f72ea4386d7",
+      "archiveSha256": "99324756ec99fed429b18c4af90e823ee8168820beaf7d1b068a8f72ea4386d7"
+    },
+    {
+      "original": "docs/HANDOFF.md",
+      "archive": "docs/archive/20260913-cleanup/retired/docs/HANDOFF.md",
+      "current": "docs/README.md",
+      "originalSha256": "fa044cb760b0af5741a5e074e95fd994699020398c562eb696676a5f44c1e668",
+      "archiveSha256": "fa044cb760b0af5741a5e074e95fd994699020398c562eb696676a5f44c1e668"
+    },
+    {
+      "original": "docs/roadmap.md",
+      "archive": "docs/archive/20260913-cleanup/retired/docs/roadmap.md",
+      "current": "docs/plan.md",
+      "originalSha256": "5d37b0f429a841948127fa7e6543fad0071c206c27cb006d7e46d84716840149",
+      "archiveSha256": "5d37b0f429a841948127fa7e6543fad0071c206c27cb006d7e46d84716840149"
+    },
+    {
+      "original": "docs/asset-map.md",
+      "archive": "docs/archive/20260913-cleanup/retired/docs/asset-map.md",
+      "current": "docs/research/data-inventory.md",
+      "originalSha256": "267961bebcf356ac91796da0f10024e3899bd5a3beb2b92a2a0465e9540eafe9",
+      "archiveSha256": "267961bebcf356ac91796da0f10024e3899bd5a3beb2b92a2a0465e9540eafe9"
+    },
+    {
+      "original": "docs/asset-pipeline.md",
+      "archive": "docs/archive/20260913-cleanup/retired/docs/asset-pipeline.md",
+      "current": "docs/development/toolchain.md",
+      "originalSha256": "dbb775aa1475c418c161933406bd7725012c16123f4af69b8e0f50fe8b30c170",
+      "archiveSha256": "dbb775aa1475c418c161933406bd7725012c16123f4af69b8e0f50fe8b30c170"
+    },
+    {
+      "original": "docs/data-progress.md",
+      "archive": "docs/archive/20260913-cleanup/retired/docs/data-progress.md",
+      "current": "docs/research/data-inventory.md",
+      "originalSha256": "6b97f30a27279895fed84779d4bde3313db5704dea8f23ae7a3495da46a492d6",
+      "archiveSha256": "6b97f30a27279895fed84779d4bde3313db5704dea8f23ae7a3495da46a492d6"
+    },
+    {
+      "original": "docs/mode-architecture.md",
+      "archive": "docs/archive/20260913-cleanup/retired/docs/mode-architecture.md",
+      "current": "docs/spec/architecture.md",
+      "originalSha256": "b9a89c31db021f6ea170154b2c5ad8275b0c32cf1ef816129bf4bea660e8e17e",
+      "archiveSha256": "b9a89c31db021f6ea170154b2c5ad8275b0c32cf1ef816129bf4bea660e8e17e"
+    },
+    {
+      "original": "docs/op-data-audit.md",
+      "archive": "docs/archive/20260913-cleanup/retired/docs/op-data-audit.md",
+      "current": "docs/checklists/README.md",
+      "originalSha256": "2366249d3c54a349fa2c30ad660a2efd6e748051f245a3b0569390da1174c436",
+      "archiveSha256": "2366249d3c54a349fa2c30ad660a2efd6e748051f245a3b0569390da1174c436"
+    },
+    {
+      "original": "Start-Room.cmd",
+      "archive": "docs/archive/20260913-cleanup/retired/Start-Room.cmd.txt",
+      "current": "开始游戏.cmd",
+      "originalSha256": "9d6d632e67679f1eed5a7500e811cf0ce58a0c9e434f7563ad16f589b043b4d5",
+      "archiveSha256": "9d6d632e67679f1eed5a7500e811cf0ce58a0c9e434f7563ad16f589b043b4d5"
+    },
+    {
+      "original": "Start-Online.cmd",
+      "archive": "docs/archive/20260913-cleanup/retired/Start-Online.cmd.txt",
+      "current": "开始游戏.cmd",
+      "originalSha256": "dcff6778bebacaeb84f82ecbb1be4e59b5175550d5dc9f556196b2b1d1b42e96",
+      "archiveSha256": "dcff6778bebacaeb84f82ecbb1be4e59b5175550d5dc9f556196b2b1d1b42e96"
+    },
+    {
+      "original": "run.bat",
+      "archive": "docs/archive/20260913-cleanup/retired/run.bat.txt",
+      "current": "docs/development/README.md",
+      "originalSha256": "55a15fd1ed1d1ce5bcd4296d963678ebb8c2140d917d5e62e86fc0146223f9bc",
+      "archiveSha256": "55a15fd1ed1d1ce5bcd4296d963678ebb8c2140d917d5e62e86fc0146223f9bc"
+    },
+    {
+      "original": "AGENTS.md",
+      "archive": "docs/archive/20260913-cleanup/before/AGENTS.md",
+      "originalSha256": "5c8184c74ecb2879209399e060c12fe71fc6178bfe5ee81210e513321de3a11d",
+      "archiveSha256": "5c8184c74ecb2879209399e060c12fe71fc6178bfe5ee81210e513321de3a11d"
+    },
+    {
+      "original": "README.md",
+      "archive": "docs/archive/20260913-cleanup/before/README.md",
+      "originalSha256": "384eaa90e785dc7670f18ef1383aea0f8d85cca4bd0c1b75f8de5249160c3b18",
+      "archiveSha256": "384eaa90e785dc7670f18ef1383aea0f8d85cca4bd0c1b75f8de5249160c3b18"
+    },
+    {
+      "original": ".clinerules/engineering-reasoning.md",
+      "archive": "docs/archive/20260913-cleanup/before/.clinerules/engineering-reasoning.md",
+      "originalSha256": "5d1572985b181d2af7e7506622943c54151cc9083f27c1982242167c3d0e0c58",
+      "archiveSha256": "5d1572985b181d2af7e7506622943c54151cc9083f27c1982242167c3d0e0c58"
+    },
+    {
+      "original": "docs/README.md",
+      "archive": "docs/archive/20260913-cleanup/before/docs/README.md",
+      "originalSha256": "193fa0e9d34674face9a7d37fb79d5bb5725f78e8cc2e6409901c23e0f4e3726",
+      "archiveSha256": "193fa0e9d34674face9a7d37fb79d5bb5725f78e8cc2e6409901c23e0f4e3726"
+    },
+    {
+      "original": "docs/toolchain.md",
+      "archive": "docs/archive/20260913-cleanup/before/docs/toolchain.md",
+      "originalSha256": "80e6aabca092bd32f2af2d6fc44f6e5416631c24be187e7f82905136da9f7ce4",
+      "archiveSha256": "80e6aabca092bd32f2af2d6fc44f6e5416631c24be187e7f82905136da9f7ce4"
+    },
+    {
+      "original": "assets/task/README.md",
+      "archive": "docs/archive/20260913-cleanup/before/assets/task/README.md",
+      "originalSha256": "53a133cb18daf4e8a5acb6fe196b278011a18c2d7e5068d0340c4657c747ea11",
+      "archiveSha256": "53a133cb18daf4e8a5acb6fe196b278011a18c2d7e5068d0340c4657c747ea11"
+    },
+    {
+      "original": ".agents/skills/automaintain/RUNBOOK.md",
+      "archive": "docs/archive/20260913-cleanup/before/skills/automaintain/RUNBOOK.md",
+      "originalSha256": "eddfe34895f2e4f0412499888518b263ff55a931a64d7af63d0db8ab1ce079d2",
+      "archiveSha256": "eddfe34895f2e4f0412499888518b263ff55a931a64d7af63d0db8ab1ce079d2"
+    },
+    {
+      "original": ".agents/skills/automaintain/SKILL.md",
+      "archive": "docs/archive/20260913-cleanup/before/skills/automaintain/SKILL.md",
+      "originalSha256": "7072546955d6c20b1fcbb62605e99c20cd3634617394515b8e1f535157e314a4",
+      "archiveSha256": "7072546955d6c20b1fcbb62605e99c20cd3634617394515b8e1f535157e314a4"
+    },
+    {
+      "original": ".agents/skills/change-impact/SKILL.md",
+      "archive": "docs/archive/20260913-cleanup/before/skills/change-impact/SKILL.md",
+      "originalSha256": "292770dc126306ec786bc54550e4b8ad07cdf021495665501b829c7d4c86cd59",
+      "archiveSha256": "292770dc126306ec786bc54550e4b8ad07cdf021495665501b829c7d4c86cd59"
+    },
+    {
+      "original": ".agents/skills/diagnose/SKILL.md",
+      "archive": "docs/archive/20260913-cleanup/before/skills/diagnose/SKILL.md",
+      "originalSha256": "99ea40e4041def8d697faea07b9c44456c4d57c7c5491b3220b60b60eff16e2c",
+      "archiveSha256": "99ea40e4041def8d697faea07b9c44456c4d57c7c5491b3220b60b60eff16e2c"
+    },
+    {
+      "original": ".agents/skills/experience/SKILL.md",
+      "archive": "docs/archive/20260913-cleanup/before/skills/experience/SKILL.md",
+      "originalSha256": "ae0878b50ede8063655f26883def164a6c2387dc2becc5e400115419c040d007",
+      "archiveSha256": "ae0878b50ede8063655f26883def164a6c2387dc2becc5e400115419c040d007"
+    },
+    {
+      "original": ".agents/skills/meta-craft/SKILL.md",
+      "archive": "docs/archive/20260913-cleanup/before/skills/meta-craft/SKILL.md",
+      "originalSha256": "314c87a76c11b7b0e4ec3fc9db587ef5c9bc53757768be8a7abf809cfe19a05a",
+      "archiveSha256": "314c87a76c11b7b0e4ec3fc9db587ef5c9bc53757768be8a7abf809cfe19a05a"
+    },
+    {
+      "original": ".agents/skills/mode-spec-review/SKILL.md",
+      "archive": "docs/archive/20260913-cleanup/before/skills/mode-spec-review/SKILL.md",
+      "originalSha256": "a6eeec896083c5c0ee01b0a42fde80a56563767dcc27f074108d805cf3f3a8a4",
+      "archiveSha256": "a6eeec896083c5c0ee01b0a42fde80a56563767dcc27f074108d805cf3f3a8a4"
+    },
+    {
+      "original": ".agents/skills/research-evidence/SKILL.md",
+      "archive": "docs/archive/20260913-cleanup/before/skills/research-evidence/SKILL.md",
+      "originalSha256": "2d2080792e7c63a81f68dfe462e698aec41bfdf788904072ec4a1fcb67fbfad6",
+      "archiveSha256": "2d2080792e7c63a81f68dfe462e698aec41bfdf788904072ec4a1fcb67fbfad6"
+    },
+    {
+      "original": ".agents/skills/review/SKILL.md",
+      "archive": "docs/archive/20260913-cleanup/before/skills/review/SKILL.md",
+      "originalSha256": "e40d1bb254f7967cb604cb6ae9063d9a8a7f91e56c4a7e8f1c5836b48fcaafe0",
+      "archiveSha256": "e40d1bb254f7967cb604cb6ae9063d9a8a7f91e56c4a7e8f1c5836b48fcaafe0"
+    },
+    {
+      "original": ".agents/skills/spec-gaming/SKILL.md",
+      "archive": "docs/archive/20260913-cleanup/before/skills/spec-gaming/SKILL.md",
+      "originalSha256": "eeaf8b238214cf3c6138537787eca64e158667810007e9025b44f1f37c8028fa",
+      "archiveSha256": "eeaf8b238214cf3c6138537787eca64e158667810007e9025b44f1f37c8028fa"
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-09-18T14:37:58.302188+09:00",
+  "gameVersion": "room-game-20260918.3",
+  "catalog": "769587e423af9b2c",
+  "packageDirectory": "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\dist\\Arknights-Game-Universal-Windows-x64-20260918-143353-6e3ad3",
+  "fullPackage": {
+    "path": "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\dist\\Arknights-Game-Universal-Windows-x64-20260918-143353-6e3ad3.zip",
+    "bytes": 343339501,
+    "sha256": "a1c765334156a9b4c6db9248c1430819ac37b97db945b2beda3a0e3211015c47",
+    "sidecarMatches": true,
+    "zipEntries": 5348
+  },
+  "metadata": {
+    "createdAt": "2026-09-18T14:34:59.9839128+09:00",
+    "platform": "Windows",
+    "architecture": "x64",
+    "bundledNode": true,
+    "bundledEasyTier": true,
+    "role": "universal",
+    "entry": "开始游戏.cmd",
+    "scope": "universal room runtime and full game assets"
+  },
+  "runtimeVersions": {
+    "node": "v22.23.2",
+    "easyTier": "easytier-core 2.6.4-8428a89d"
+  },
+  "criticalFileChecks": [
+    {
+      "path": "web/engine.js",
+      "sha256": "fe676892e4eb439c172aa199e257f199fb7dd9c4d0f59012499433c321a6dc24",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/src/simulation/operator-combat.js",
+      "sha256": "fd631e7b298ecaa2681bea44fa6b9b9fbd67e9a1e9bdc11d6d3cc04b3e413ed3",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/src/simulation/client-programs.js",
+      "sha256": "d695bf517ed573a6406971a5c69782274f4be831f38217ce494f8344057a8670",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/src/simulation/skill-modes.js",
+      "sha256": "0202eda5f5fb61fe93fe4f89f878751f0e77b6cae2ac51c7a043ec067bce337a",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/client_program_data.js",
+      "sha256": "43d168f81e2e2672782633831fc96bca4942e1ccce12d96cb6922012dd9597b7",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/next_attack_skill_data.js",
+      "sha256": "0b8f512a95e24854619a95314b9a357aa0479b1856f72441a7df5a32897bdc77",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/skill_mode_data.js",
+      "sha256": "59312b8dce3a6ba3717b45c4fb8716a5af97d5461e465a0f7510a3d2fcc73053",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "tools/room_server.js",
+      "sha256": "7e2b8382084cd73c4f3c8e3bb9a27c553a9a6ed0c5eef375e81e00b6790edf3d",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/room-game.js",
+      "sha256": "997f7ed4dce5d93c8ee6972e1876158bd14836dab63dbe8b05d7d3081ac7fc80",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/room-presence.js",
+      "sha256": "d35fcd9f073df0916a46167eb1c0b8b8a5f0d0bf3b634cb392c64fe967f89f36",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/mode.js",
+      "sha256": "f6063cf9ff997b84006728b0329ef9f0325071bd38a1bb82f97867841cc49d6d",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/mode/save.js",
+      "sha256": "b33ed0baaaf3ef5bd7bb83d9ca27d8752fbe1a515ab0da0d3dec5e1b862e466a",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/mode/rules.js",
+      "sha256": "70ca2c63cdc7fa18d5ff149daaba8a0727d4f49a80865f614864f46a2f0e4bf8",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "web/index.html",
+      "sha256": "f5b778f0a4b0af4b3322ed6fffd3f180e04a1502efdf80edb39a387d3ab507a8",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "tools/lib/listen-port.js",
+      "sha256": "caeb7f93cc720cd4f5d5455d0d88a3b8081bb49abb4939c50a0b4f191eb32d18",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": "tools/lib/room-game-runtime.js",
+      "sha256": "69229084854c8b817828a44f60b4157c49ab031321c407673755ca39b04ad8b7",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": ".runtime/node-win-x64/node.exe",
+      "sha256": "0d0f5e39f9f3d9587bc19f73eab3c2c9c4903fd02d6dbf9c853dd81b3d95fad4",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": ".runtime/node-win-x64/LICENSE",
+      "sha256": "8cc9bb466b19fc7e7cc99d03e9df1132021fda8b01eea2624c58bb372dbef576",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": ".runtime/easytier-v2.6.4-x64/easytier-core.exe",
+      "sha256": "da7eb2d24b5416f3d3407636949e964a0750e3f9dc53a828cb6799a57ead445d",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": ".runtime/easytier-v2.6.4-x64/easytier-cli.exe",
+      "sha256": "d8783e851e944b44a9b71b39fd02f227ec0a2a82b3165c55ead5dd32dcde53a1",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": ".runtime/easytier-v2.6.4-x64/Packet.dll",
+      "sha256": "c7c03a87eac7243ccbe331554624b18803010b740e311fc8cfddb573096eacac",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": ".runtime/easytier-v2.6.4-x64/wintun.dll",
+      "sha256": "e5da8447dc2c320edc0fc52fa01885c103de8c118481f683643cacc3220dafce",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": ".runtime/easytier-v2.6.4-x64/WinDivert64.sys",
+      "sha256": "8da085332782708d8767bcace5327a6ec7283c17cfb85e40b03cd2323a90ddc2",
+      "sourcePackageZipMatch": true
+    },
+    {
+      "path": ".runtime/easytier-v2.6.4-x64/verified-files.json",
+      "sha256": "7065f8e76b23be35f35cb38dca49c36f4db4eab8b2e5f4673a585887772d96e3",
+      "sourcePackageZipMatch": true
+    }
+  ],
+  "acceptance": {
+    "command": "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\dist\\Arknights-Game-Universal-Windows-x64-20260918-143353-6e3ad3\\.runtime\\node-win-x64\\node.exe tools/_room_package_smoke.js D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\dist\\Arknights-Game-Universal-Windows-x64-20260918-143353-6e3ad3",
+    "passed": true,
+    "logPath": "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\work\\garrison-skill-batch-package-smoke.log",
+    "log": "ROOM PACKAGE OK bundled Node x64, no system Node, unrelated CWD, actual lobby and game runtime\nROOM PACKAGE ID {\"gameVersion\":\"room-game-20260918.3\",\"catalog\":\"769587e423af9b2c\"}\nROOM DEFAULT PACKAGE LAUNCHER OK preferred 8100 -> 12811, no system Node, unrelated CWD, actual homepage, authenticated status and solo page\n",
+    "checks": [
+      "no system Node in child PATH",
+      "unrelated CWD",
+      "actual LAN lobby and game-info",
+      "default Universal 8100 launcher with authenticated status and solo page",
+      "portable Node and EasyTier execute",
+      "source/directory/ZIP hashes match for critical runtime/data/version and bundled runtime files"
+    ]
+  },
+  "timing": {
+    "copySecondsApprox": 66.984,
+    "zipAndHashSecondsApprox": 106.383,
+    "totalPackagingSecondsApprox": 173.367,
+    "basis": "directory timestamp in package name, package-info createdAt and SHA sidecar last-write timestamp"
+  },
+  "scope": "Full Universal package only; previous packages retained; no publication or optional incremental comparison."
+}

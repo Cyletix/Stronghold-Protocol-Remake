@@ -1,0 +1,1253 @@
+{
+  "schemaVersion": 1,
+  "completed": true,
+  "steps": [
+    {
+      "name": "shared-database",
+      "command": [
+        "D:\\OneDrive\\Project\\ArknightsResearch\\.venv\\Scripts\\python.exe",
+        "tools/resources.py",
+        "import-community",
+        "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\work\\external-ready-data-20260914"
+      ],
+      "cwd": "D:\\OneDrive\\Project\\ArknightsResearch",
+      "returncode": 0,
+      "output": "{\n  \"source_id\": \"gamedata-cc5bf84b0e6d\",\n  \"linked_records\": {\n    \"operator\": 458,\n    \"buff_template\": 8292,\n    \"character_timing\": 446,\n    \"enemy\": 1681,\n    \"enemy_prefab\": 2062,\n    \"enemy_spine\": 1000,\n    \"enemy_timing\": 1000,\n    \"environment\": 1,\n    \"module\": 885,\n    \"projectile\": 2530,\n    \"skill\": 1001,\n    \"skill_buff_override\": 7,\n    \"summon\": 67\n  },\n  \"linked_game_ids\": {\n    \"buff_template\": 8292,\n    \"projectile\": 2530,\n    \"operator\": 458,\n    \"skill\": 924,\n    \"enemy\": 1681,\n    \"module\": 885,\n    \"summon\": 67,\n    \"enemy_spine\": 1000,\n    \"enemy_prefab\": 2062,\n    \"enemy_timing\": 1000,\n    \"character_timing\": 446,\n    \"environment\": 1,\n    \"skill_buff_override\": 7\n  },\n  \"issue_counts\": {\n    \"operator:no-current-match\": 2,\n    \"character_timing:no-current-match\": 3,\n    \"enemy:no-current-match\": 31,\n    \"enemy:ambiguous\": 92,\n    \"enemy_prefab:no-current-match\": 13,\n    \"enemy_spine:no-current-match\": 6,\n    \"enemy_timing:no-current-match\": 6,\n    \"skill:no-current-match\": 4,\n    \"summon:no-current-match\": 3,\n    \"summon:ambiguous\": 1\n  },\n  \"schema_version\": 1,\n  \"database\": \"D:\\\\OneDrive\\\\Project\\\\ArknightsResearch\\\\data\\\\community\\\\community.sqlite\",\n  \"boundary\": \"Community reference/configuration data; linked records do not imply executable battle support.\",\n  \"origins\": [\n    \"Yilegendoflink-garrison-protocol@96e5b3382d0a3b6180739ab1ac0da8bdbf956c02\",\n    \"Tim23333-Arknights_timer@d2f6d76a7172cedc7583fc0a4eb998699abf25f5\"\n  ],\n  \"imported_files\": [],\n  \"unchanged_files\": [\n    \"data/prts/snapshots/2026-09-12-prts/operators.json\",\n    \"data/prts/snapshots/2026-09-12-prts/enemies.json\",\n    \"data/prts/snapshots/2026-09-12-prts/summons.json\",\n    \"Ark_emulator/ark_emulator/data_buff_templates.json\",\n    \"Ark_emulator/ark_emulator/data_character_spine_events.json\",\n    \"Ark_emulator/ark_emulator/data_enemy_attack_timing.json\",\n    \"Ark_emulator/ark_emulator/data_enemy_prefab_catalog_current.json\",\n    \"Ark_emulator/ark_emulator/data_enemy_spine_events.json\",\n    \"Ark_emulator/ark_emulator/data_env_systems.json\",\n    \"Ark_emulator/ark_emulator/data_operator_skill_buffs.json\",\n    \"Ark_emulator/ark_emulator/data_projectile_speeds.json\"\n  ],\n  \"counts\": {\n    \"buff_template\": 8292,\n    \"character_timing\": 449,\n    \"enemy\": 1804,\n    \"enemy_prefab\": 2075,\n    \"enemy_spine\": 1006,\n    \"enemy_timing\": 1006,\n    \"environment\": 1,\n    \"module\": 885,\n    \"operator\": 460,\n    \"projectile\": 2530,\n    \"skill\": 1005,\n    \"skill_buff_override\": 7,\n    \"summon\": 71\n  },\n  \"node_types\": 1341\n}"
+    },
+    {
+      "name": "web-references",
+      "command": [
+        "D:\\OneDrive\\Project\\ArknightsResearch\\.venv\\Scripts\\python.exe",
+        "tools/build_community_references.py"
+      ],
+      "cwd": "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻",
+      "returncode": 0,
+      "output": "{\"catalogSkills\": 917, \"skillsWithNotes\": 550, \"modeEnemies\": 343, \"enemiesWithMechanics\": 264, \"bytes\": 453425}"
+    },
+    {
+      "name": "web-combat",
+      "command": [
+        "D:\\OneDrive\\Project\\ArknightsResearch\\.venv\\Scripts\\python.exe",
+        "tools/build_external_combat_data.py",
+        "--source",
+        "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\work\\external-ready-data-20260914\\Tim23333-Arknights_timer\\snapshot\\Ark_emulator\\ark_emulator"
+      ],
+      "cwd": "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻",
+      "returncode": 0,
+      "output": "{\"wantedEnemies\": 2130, \"profiles\": 883, \"timings\": 636, \"projectileSpeeds\": 429, \"encounterProfiles\": 144, \"encounterTimings\": 105, \"encounterProjectileSpeeds\": 65, \"browserBytes\": 85181, \"report\": \"work\\\\external-combat-import-report.json\"}"
+    },
+    {
+      "name": "dps-core",
+      "command": [
+        "D:\\OneDrive\\Project\\ArknightsResearch\\.venv\\Scripts\\python.exe",
+        "tools/community_dps.py",
+        "coverage",
+        "--output",
+        "D:\\OneDrive\\Project\\ArknightsResearch\\work\\community-dps-coverage.json"
+      ],
+      "cwd": "D:\\OneDrive\\Project\\ArknightsResearch",
+      "returncode": 0,
+      "output": "{\"output\": \"D:\\\\OneDrive\\\\Project\\\\ArknightsResearch\\\\work\\\\community-dps-coverage.json\", \"counts\": {\"calculated\": 660, \"no_reference\": 339, \"runtime_error\": 2}}"
+    },
+    {
+      "name": "web-bundle",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.EXE",
+        "tools/build_mode.js"
+      ],
+      "cwd": "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻",
+      "returncode": 0,
+      "output": "mode.js rebuilt from 13 files (295283 chars)"
+    }
+  ],
+  "sourceId": "gamedata-cc5bf84b0e6d",
+  "database": {
+    "counts": {
+      "buff_template": 8292,
+      "character_timing": 449,
+      "enemy": 1804,
+      "enemy_prefab": 2075,
+      "enemy_spine": 1006,
+      "enemy_timing": 1006,
+      "environment": 1,
+      "module": 885,
+      "operator": 460,
+      "projectile": 2530,
+      "skill": 1005,
+      "skill_buff_override": 7,
+      "summon": 71
+    },
+    "linkedGameIds": {
+      "buff_template": 8292,
+      "projectile": 2530,
+      "operator": 458,
+      "skill": 924,
+      "enemy": 1681,
+      "module": 885,
+      "summon": 67,
+      "enemy_spine": 1000,
+      "enemy_prefab": 2062,
+      "enemy_timing": 1000,
+      "character_timing": 446,
+      "environment": 1,
+      "skill_buff_override": 7
+    },
+    "gapCounts": {
+      "no-current-match": 68,
+      "ambiguous": 93
+    }
+  },
+  "webCombat": {
+    "counts": {
+      "wantedEnemies": 2130,
+      "profiles": 1557,
+      "timings": 1450,
+      "animationMappedTimings": 110,
+      "projectileSpeeds": 535,
+      "channelProfiles": 43,
+      "encounterChannelProfiles": 5,
+      "rootSelectedProfiles": 1340,
+      "encounterProfiles": 143,
+      "encounterTimings": 142,
+      "encounterAnimationMappedTimings": 15,
+      "encounterProjectileSpeeds": 38,
+      "nonAttackingEnemies": 342,
+      "encounterNonAttackingEnemies": 12,
+      "pendingEnemies": 433,
+      "pendingEncounterEnemies": 13,
+      "aliasPrefabs": 12,
+      "aliasAnimations": 157,
+      "eventGateTimings": 12,
+      "encounterEventGateTimings": 0,
+      "hitSequenceProfiles": 9,
+      "encounterHitSequenceProfiles": 0,
+      "multiHitProfiles": 5,
+      "modeProfileEnemies": 143,
+      "modeProfiles": 253,
+      "encounterModeProfileEnemies": 7,
+      "initialModeProfiles": 93,
+      "encounterInitialModeProfiles": 6,
+      "autoModeProviderEnemies": 3,
+      "autoModeProviders": 3,
+      "encounterAutoModeProviderEnemies": 0,
+      "chainProjectileProfiles": 3,
+      "encounterChainProjectileProfiles": 0,
+      "skillDispatchEnemies": 5,
+      "skillDispatchSkills": 7,
+      "encounterSkillDispatchEnemies": 1,
+      "encounterSkillDispatchSkills": 2,
+      "periodicAbilityEnemies": 2,
+      "periodicAbilityGroups": 2,
+      "encounterPeriodicAbilityEnemies": 0
+    },
+    "gapCounts": {
+      "no-unambiguous-basic-attack-prefab": 169,
+      "missing-multihit-or-mode-dependent-animation": 174,
+      "mode-dependent-basic-action-contract": 114,
+      "mode-dependent-projectile": 50,
+      "nonstandard-or-missing-projectile-speed": 36
+    }
+  },
+  "webReferences": {
+    "catalogSkills": 917,
+    "enemiesWithMechanics": 264,
+    "modeEnemies": 343,
+    "skillsWithNotes": 550
+  },
+  "dps": {
+    "counts": {
+      "calculated": 903,
+      "no_reference": 95,
+      "no_output": 1,
+      "unsupported": 2
+    },
+    "scope": "当前来源全部技能槽，最高可用养成、潜能1、满属性信赖、无模组、单目标0防抗；calculated是社区估算可运行，非逐帧还原",
+    "coverage": {
+      "event_simulation": 113,
+      "community_fills": 790,
+      "either": 903
+    },
+    "families": {
+      "upstream-specialized": 486,
+      "compiled-template": 94,
+      "generic-blackboard": 176,
+      "reference-formula-class": 147
+    },
+    "gapCounts": {
+      "核心无专门规则，公共模板尚有未闭合机制": 95,
+      "现成公式类在当前条件下没有伤害或治疗输出；不计入 DPS/HPS 覆盖": 1,
+      "现成公式接口尚未闭合：源治疗类没有输出统一循环 HPS；保留阶段结果而不猜测循环": 1,
+      "现成公式接口尚未闭合：cannot access local variable 'dps' where it is not associated with a value": 1
+    }
+  },
+  "webVersion": "room-game-20260914.18",
+  "templateAdvance": {
+    "receipt": "work\\community-template-advance.json",
+    "updatedAt": "2026-09-15T13:43:00.187377+00:00",
+    "remaining": 98,
+    "note": "Summary refreshed from saved calculation/import receipts; earlier steps remain historical."
+  },
+  "enemyModeTemplates": {
+    "planCounts": {
+      "enemies": 189,
+      "templates": 7,
+      "operators": 46,
+      "crossClassOperators": 23,
+      "subclasses": 37
+    },
+    "bindingsCounts": {
+      "requestedTemplates": 61,
+      "matchedTemplates": 61,
+      "missingTemplates": 0,
+      "usages": 217,
+      "affectedEnemies": 99,
+      "switchTemplates": 39,
+      "sourceParameterBindings": 152
+    },
+    "receipt": "work\\enemy-mode-template-advance.json",
+    "runtimeSupportAvailable": true,
+    "runtimeRule": "shared-enemy-mode-providers-v2",
+    "autoModeProviderEnemies": 3,
+    "autoModeProviders": 3,
+    "encounterAutoModeProviderEnemies": 0,
+    "providerFamilies": {
+      "blocked-toggle-mode": {
+        "label": "阻挡条件",
+        "providers": 2,
+        "enemyIDs": [
+          "enemy_4001_toxcar",
+          "enemy_4001_toxcar_2"
+        ],
+        "providerIDs": [
+          "enemy_4001_toxcar|CAB-cdd74f7570ad4d79415afaec31d045cf:2977638301619311933:17",
+          "enemy_4001_toxcar_2|CAB-cdd74f7570ad4d79415afaec31d045cf:3044625521396957935:17"
+        ],
+        "enemies": 2,
+        "encounterEnemies": 0
+      },
+      "hp-ratio-toggle-mode": {
+        "label": "HP比例条件",
+        "providers": 1,
+        "enemyIDs": [
+          "enemy_2020_cswrtr"
+        ],
+        "providerIDs": [
+          "enemy_2020_cswrtr|CAB-45917fb008d9d99f506436a9f5988d3d:-5214174650258908553:9"
+        ],
+        "enemies": 1,
+        "encounterEnemies": 0
+      }
+    },
+    "skillDispatch": {
+      "rule": "selector-triggered-sp-cost-ranged-skill-v1",
+      "sourceFingerprint": "46d8f2e49f0a107dfc096467b40c2ec9a6300cdb34211670aff6435d10646fe3",
+      "sourceReport": "work/external-combat-import-report.json#skillDispatch",
+      "candidateSkillIDs": [
+        "enemy_10044_wintun|CAB-9932efcd454c1307fe7ebddc8a79559b:-4456446739223598299:4",
+        "enemy_10098_crhro|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2405922354498616231:28",
+        "enemy_10099_crvln_2|CAB-eef20e46e9f0e9e38e18bc35388f76fa:-8590087389013148367:0",
+        "enemy_10099_crvln|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2388178449942571446:18",
+        "enemy_1040_bombd|CAB-c66709e8e44223eecca4bce9fbf48f83:8530485036149232392:19",
+        "enemy_1151_dslntc_2|CAB-b3d9fed720d2cf9530017b9093a8f1e4:8575288275760284399:31",
+        "enemy_1151_dslntc|CAB-b3d9fed720d2cf9530017b9093a8f1e4:4885493106612970065:28",
+        "enemy_1373_ltnhor_2|CAB-a3aa7376bf9856a44c7dbcc30a30afbc:1959813430026055221:22",
+        "enemy_1373_ltnhor_2|CAB-a3aa7376bf9856a44c7dbcc30a30afbc:8977067208793140789:39",
+        "enemy_1425_lrcmra_2|CAB-f35c307a9d02cd74f087114a32f11a9d:95367100273719513:17",
+        "enemy_1425_lrcmra|CAB-f35c307a9d02cd74f087114a32f11a9d:-6380628782783410879:3",
+        "enemy_1512_mcmstr|CAB-0df5f4c8c8dade07e2ee475a972da576:-6583151510869566880:10",
+        "enemy_1512_mcmstr|CAB-0df5f4c8c8dade07e2ee475a972da576:3561960064050666080:20",
+        "enemy_1516_jakill|CAB-0df5f4c8c8dade07e2ee475a972da576:-3090488545889101355:11",
+        "enemy_1516_jakill|CAB-0df5f4c8c8dade07e2ee475a972da576:9066948497976449493:46",
+        "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-4294630265555608891:18",
+        "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-5267374164800791867:13",
+        "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-8818478906179413307:0",
+        "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:1246068199843470021:35",
+        "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:130561785783622341:32",
+        "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:7680127453822098117:66",
+        "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:-2530988810614148662:21",
+        "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:8351245699733844426:60",
+        "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:8737699305577116106:63",
+        "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:881252940262207946:40",
+        "enemy_2004_balloon|CAB-45917fb008d9d99f506436a9f5988d3d:3219529385410557550:14",
+        "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:2910056970623200212:17"
+      ],
+      "selectedSkillIDs": [
+        "enemy_1151_dslntc_2|CAB-b3d9fed720d2cf9530017b9093a8f1e4:8575288275760284399:31",
+        "enemy_1151_dslntc|CAB-b3d9fed720d2cf9530017b9093a8f1e4:4885493106612970065:28",
+        "enemy_1373_ltnhor_2|CAB-a3aa7376bf9856a44c7dbcc30a30afbc:1959813430026055221:22",
+        "enemy_1373_ltnhor_2|CAB-a3aa7376bf9856a44c7dbcc30a30afbc:8977067208793140789:39",
+        "enemy_1516_jakill|CAB-0df5f4c8c8dade07e2ee475a972da576:-3090488545889101355:11",
+        "enemy_1516_jakill|CAB-0df5f4c8c8dade07e2ee475a972da576:9066948497976449493:46",
+        "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:8351245699733844426:60"
+      ],
+      "sourceCandidateSkillIDs": [
+        "enemy_10044_wintun|CAB-9932efcd454c1307fe7ebddc8a79559b:-4456446739223598299:4",
+        "enemy_10098_crhro|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2405922354498616231:28",
+        "enemy_10099_crvln_2|CAB-eef20e46e9f0e9e38e18bc35388f76fa:-8590087389013148367:0",
+        "enemy_10099_crvln|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2388178449942571446:18",
+        "enemy_1040_bombd|CAB-c66709e8e44223eecca4bce9fbf48f83:8530485036149232392:19",
+        "enemy_1151_dslntc_2|CAB-b3d9fed720d2cf9530017b9093a8f1e4:8575288275760284399:31",
+        "enemy_1151_dslntc|CAB-b3d9fed720d2cf9530017b9093a8f1e4:4885493106612970065:28",
+        "enemy_1373_ltnhor_2|CAB-a3aa7376bf9856a44c7dbcc30a30afbc:1959813430026055221:22",
+        "enemy_1373_ltnhor_2|CAB-a3aa7376bf9856a44c7dbcc30a30afbc:8977067208793140789:39",
+        "enemy_1425_lrcmra_2|CAB-f35c307a9d02cd74f087114a32f11a9d:95367100273719513:17",
+        "enemy_1425_lrcmra|CAB-f35c307a9d02cd74f087114a32f11a9d:-6380628782783410879:3",
+        "enemy_1512_mcmstr|CAB-0df5f4c8c8dade07e2ee475a972da576:-6583151510869566880:10",
+        "enemy_1512_mcmstr|CAB-0df5f4c8c8dade07e2ee475a972da576:3561960064050666080:20",
+        "enemy_1516_jakill|CAB-0df5f4c8c8dade07e2ee475a972da576:-3090488545889101355:11",
+        "enemy_1516_jakill|CAB-0df5f4c8c8dade07e2ee475a972da576:9066948497976449493:46",
+        "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-4294630265555608891:18",
+        "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-5267374164800791867:13",
+        "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-8818478906179413307:0",
+        "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:1246068199843470021:35",
+        "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:130561785783622341:32",
+        "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:7680127453822098117:66",
+        "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:-2530988810614148662:21",
+        "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:8351245699733844426:60",
+        "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:8737699305577116106:63",
+        "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:881252940262207946:40",
+        "enemy_2004_balloon|CAB-45917fb008d9d99f506436a9f5988d3d:3219529385410557550:14",
+        "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:2910056970623200212:17"
+      ],
+      "outOfScopeSkillIDs": [],
+      "alreadyBoundSkills": [
+        {
+          "enemyId": "enemy_1151_dslntc_2",
+          "skillId": "enemy_1151_dslntc_2|CAB-b3d9fed720d2cf9530017b9093a8f1e4:8575288275760284399:31",
+          "skillKey": "Awake",
+          "modeIndices": [
+            0
+          ],
+          "sourceRef": {
+            "cache": "work/enemy-mode-dispatch-catalog.json",
+            "enemyId": "enemy_1151_dslntc_2",
+            "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:8575288275760284399:31",
+            "fieldPath": "/_trigger"
+          },
+          "kind": "always-self-cast",
+          "initiallyMounted": true,
+          "automaticModeTransitionComplete": false,
+          "entryStatus": "initial-mode-bound"
+        },
+        {
+          "enemyId": "enemy_1151_dslntc",
+          "skillId": "enemy_1151_dslntc|CAB-b3d9fed720d2cf9530017b9093a8f1e4:4885493106612970065:28",
+          "skillKey": "Awake",
+          "modeIndices": [
+            0
+          ],
+          "sourceRef": {
+            "cache": "work/enemy-mode-dispatch-catalog.json",
+            "enemyId": "enemy_1151_dslntc",
+            "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:4885493106612970065:28",
+            "fieldPath": "/_trigger"
+          },
+          "kind": "always-self-cast",
+          "initiallyMounted": true,
+          "automaticModeTransitionComplete": false,
+          "entryStatus": "initial-mode-bound"
+        },
+        {
+          "enemyId": "enemy_1373_ltnhor_2",
+          "skillId": "enemy_1373_ltnhor_2|CAB-a3aa7376bf9856a44c7dbcc30a30afbc:1959813430026055221:22",
+          "skillKey": "attackTwoTarget_enthu",
+          "modeIndices": [
+            1
+          ],
+          "sourceRef": {
+            "cache": "work/enemy-mode-dispatch-catalog.json",
+            "enemyId": "enemy_1373_ltnhor_2",
+            "componentKey": "CAB-a3aa7376bf9856a44c7dbcc30a30afbc:1959813430026055221:22",
+            "fieldPath": "/_trigger"
+          },
+          "kind": "selector-sp-ranged",
+          "initiallyMounted": false,
+          "automaticModeTransitionComplete": false,
+          "entryStatus": "explicit-mode-only-entry-pending"
+        },
+        {
+          "enemyId": "enemy_1373_ltnhor_2",
+          "skillId": "enemy_1373_ltnhor_2|CAB-a3aa7376bf9856a44c7dbcc30a30afbc:8977067208793140789:39",
+          "skillKey": "attackTwoTarget",
+          "modeIndices": [
+            0
+          ],
+          "sourceRef": {
+            "cache": "work/enemy-mode-dispatch-catalog.json",
+            "enemyId": "enemy_1373_ltnhor_2",
+            "componentKey": "CAB-a3aa7376bf9856a44c7dbcc30a30afbc:8977067208793140789:39",
+            "fieldPath": "/_trigger"
+          },
+          "kind": "selector-sp-ranged",
+          "initiallyMounted": true,
+          "automaticModeTransitionComplete": false,
+          "entryStatus": "initial-mode-bound"
+        },
+        {
+          "enemyId": "enemy_1516_jakill",
+          "skillId": "enemy_1516_jakill|CAB-0df5f4c8c8dade07e2ee475a972da576:-3090488545889101355:11",
+          "skillKey": "ironsandstorm",
+          "modeIndices": [
+            0
+          ],
+          "sourceRef": {
+            "cache": "work/enemy-mode-dispatch-catalog.json",
+            "enemyId": "enemy_1516_jakill",
+            "componentKey": "CAB-0df5f4c8c8dade07e2ee475a972da576:-3090488545889101355:11",
+            "fieldPath": "/_trigger"
+          },
+          "kind": "selector-sp-tagged-ranged",
+          "initiallyMounted": true,
+          "automaticModeTransitionComplete": false,
+          "entryStatus": "initial-mode-bound"
+        },
+        {
+          "enemyId": "enemy_1516_jakill",
+          "skillId": "enemy_1516_jakill|CAB-0df5f4c8c8dade07e2ee475a972da576:9066948497976449493:46",
+          "skillKey": "armorpiercing",
+          "modeIndices": [
+            1
+          ],
+          "sourceRef": {
+            "cache": "work/enemy-mode-dispatch-catalog.json",
+            "enemyId": "enemy_1516_jakill",
+            "componentKey": "CAB-0df5f4c8c8dade07e2ee475a972da576:9066948497976449493:46",
+            "fieldPath": "/_trigger"
+          },
+          "kind": "selector-sp-multi-melee",
+          "initiallyMounted": false,
+          "automaticModeTransitionComplete": false,
+          "entryStatus": "explicit-mode-only-entry-pending"
+        },
+        {
+          "enemyId": "enemy_1525_blkswb",
+          "skillId": "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:8351245699733844426:60",
+          "skillKey": "CircleAttack",
+          "modeIndices": [
+            0
+          ],
+          "sourceRef": {
+            "cache": "work/enemy-mode-dispatch-catalog.json",
+            "enemyId": "enemy_1525_blkswb",
+            "componentKey": "CAB-0df5f4c8c8dade07e2ee475a972da576:8351245699733844426:60",
+            "fieldPath": "/_trigger"
+          },
+          "kind": "selector-cooldown-area-melee",
+          "initiallyMounted": true,
+          "automaticModeTransitionComplete": false,
+          "entryStatus": "initial-mode-bound"
+        }
+      ],
+      "boundEntryPendingSkillIDs": [
+        "enemy_1373_ltnhor_2|CAB-a3aa7376bf9856a44c7dbcc30a30afbc:1959813430026055221:22",
+        "enemy_1516_jakill|CAB-0df5f4c8c8dade07e2ee475a972da576:9066948497976449493:46"
+      ],
+      "selectedEnemyIDs": [
+        "enemy_1151_dslntc",
+        "enemy_1151_dslntc_2",
+        "enemy_1373_ltnhor_2",
+        "enemy_1516_jakill",
+        "enemy_1525_blkswb"
+      ],
+      "pendingSkillIDs": [
+        "enemy_10044_wintun|CAB-9932efcd454c1307fe7ebddc8a79559b:-4456446739223598299:4",
+        "enemy_10098_crhro|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2405922354498616231:28",
+        "enemy_10099_crvln_2|CAB-eef20e46e9f0e9e38e18bc35388f76fa:-8590087389013148367:0",
+        "enemy_10099_crvln|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2388178449942571446:18",
+        "enemy_1040_bombd|CAB-c66709e8e44223eecca4bce9fbf48f83:8530485036149232392:19",
+        "enemy_1425_lrcmra_2|CAB-f35c307a9d02cd74f087114a32f11a9d:95367100273719513:17",
+        "enemy_1425_lrcmra|CAB-f35c307a9d02cd74f087114a32f11a9d:-6380628782783410879:3",
+        "enemy_1512_mcmstr|CAB-0df5f4c8c8dade07e2ee475a972da576:-6583151510869566880:10",
+        "enemy_1512_mcmstr|CAB-0df5f4c8c8dade07e2ee475a972da576:3561960064050666080:20",
+        "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-4294630265555608891:18",
+        "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-5267374164800791867:13",
+        "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-8818478906179413307:0",
+        "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:1246068199843470021:35",
+        "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:130561785783622341:32",
+        "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:7680127453822098117:66",
+        "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:-2530988810614148662:21",
+        "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:8737699305577116106:63",
+        "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:881252940262207946:40",
+        "enemy_2004_balloon|CAB-45917fb008d9d99f506436a9f5988d3d:3219529385410557550:14",
+        "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:2910056970623200212:17"
+      ],
+      "pendingSkillIDsByEnemy": {
+        "enemy_10044_wintun": [
+          "enemy_10044_wintun|CAB-9932efcd454c1307fe7ebddc8a79559b:-4456446739223598299:4"
+        ],
+        "enemy_10098_crhro": [
+          "enemy_10098_crhro|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2405922354498616231:28"
+        ],
+        "enemy_10099_crvln_2": [
+          "enemy_10099_crvln_2|CAB-eef20e46e9f0e9e38e18bc35388f76fa:-8590087389013148367:0"
+        ],
+        "enemy_10099_crvln": [
+          "enemy_10099_crvln|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2388178449942571446:18"
+        ],
+        "enemy_1040_bombd": [
+          "enemy_1040_bombd|CAB-c66709e8e44223eecca4bce9fbf48f83:8530485036149232392:19"
+        ],
+        "enemy_1425_lrcmra_2": [
+          "enemy_1425_lrcmra_2|CAB-f35c307a9d02cd74f087114a32f11a9d:95367100273719513:17"
+        ],
+        "enemy_1425_lrcmra": [
+          "enemy_1425_lrcmra|CAB-f35c307a9d02cd74f087114a32f11a9d:-6380628782783410879:3"
+        ],
+        "enemy_1512_mcmstr": [
+          "enemy_1512_mcmstr|CAB-0df5f4c8c8dade07e2ee475a972da576:-6583151510869566880:10",
+          "enemy_1512_mcmstr|CAB-0df5f4c8c8dade07e2ee475a972da576:3561960064050666080:20"
+        ],
+        "enemy_1517_xi": [
+          "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-4294630265555608891:18",
+          "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-5267374164800791867:13",
+          "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-8818478906179413307:0",
+          "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:1246068199843470021:35",
+          "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:130561785783622341:32",
+          "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:7680127453822098117:66"
+        ],
+        "enemy_1525_blkswb": [
+          "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:-2530988810614148662:21",
+          "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:8737699305577116106:63",
+          "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:881252940262207946:40"
+        ],
+        "enemy_2004_balloon": [
+          "enemy_2004_balloon|CAB-45917fb008d9d99f506436a9f5988d3d:3219529385410557550:14"
+        ],
+        "enemy_2025_syufo": [
+          "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:2910056970623200212:17"
+        ]
+      },
+      "pendingEnemyIDs": [
+        "enemy_10044_wintun",
+        "enemy_10098_crhro",
+        "enemy_10099_crvln",
+        "enemy_10099_crvln_2",
+        "enemy_1040_bombd",
+        "enemy_1425_lrcmra",
+        "enemy_1425_lrcmra_2",
+        "enemy_1512_mcmstr",
+        "enemy_1517_xi",
+        "enemy_1525_blkswb",
+        "enemy_2004_balloon",
+        "enemy_2025_syufo"
+      ],
+      "deferredSkillIDs": [
+        "enemy_10098_crhro|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2405922354498616231:28",
+        "enemy_10099_crvln_2|CAB-eef20e46e9f0e9e38e18bc35388f76fa:-8590087389013148367:0",
+        "enemy_10099_crvln|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2388178449942571446:18",
+        "enemy_1425_lrcmra_2|CAB-f35c307a9d02cd74f087114a32f11a9d:95367100273719513:17",
+        "enemy_1425_lrcmra|CAB-f35c307a9d02cd74f087114a32f11a9d:-6380628782783410879:3",
+        "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:2910056970623200212:17"
+      ],
+      "deferredSkillIDsByEnemy": {
+        "enemy_10098_crhro": [
+          "enemy_10098_crhro|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2405922354498616231:28"
+        ],
+        "enemy_10099_crvln_2": [
+          "enemy_10099_crvln_2|CAB-eef20e46e9f0e9e38e18bc35388f76fa:-8590087389013148367:0"
+        ],
+        "enemy_10099_crvln": [
+          "enemy_10099_crvln|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2388178449942571446:18"
+        ],
+        "enemy_1425_lrcmra_2": [
+          "enemy_1425_lrcmra_2|CAB-f35c307a9d02cd74f087114a32f11a9d:95367100273719513:17"
+        ],
+        "enemy_1425_lrcmra": [
+          "enemy_1425_lrcmra|CAB-f35c307a9d02cd74f087114a32f11a9d:-6380628782783410879:3"
+        ],
+        "enemy_2025_syufo": [
+          "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:2910056970623200212:17"
+        ]
+      },
+      "deferredEnemyIDs": [
+        "enemy_10098_crhro",
+        "enemy_10099_crvln",
+        "enemy_10099_crvln_2",
+        "enemy_1425_lrcmra",
+        "enemy_1425_lrcmra_2",
+        "enemy_2025_syufo"
+      ],
+      "environmentDeferralsBySkillID": {
+        "enemy_10098_crhro|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2405922354498616231:28": {
+          "sourceContract": "work/enemy-explicit-read-contract.json",
+          "sourceFingerprint": "0a33a233c20ff80b402d5b0b28026451ec65cd9e10aa609b483afce9122ef65c",
+          "reason": "The complete known read callers require env_act43side[shooting]. The current garrison activity subtree, 44 source levels and generated environment/encounter files provide no occurrence of this marker. Keep pending but exclude from current garrison executable-priority work.",
+          "requiredMarkerKeys": [
+            "env_act43side[shooting]"
+          ],
+          "evidenceLevel": "Inferred-current-source-scope"
+        },
+        "enemy_10099_crvln_2|CAB-eef20e46e9f0e9e38e18bc35388f76fa:-8590087389013148367:0": {
+          "sourceContract": "work/enemy-explicit-read-contract.json",
+          "sourceFingerprint": "0a33a233c20ff80b402d5b0b28026451ec65cd9e10aa609b483afce9122ef65c",
+          "reason": "The complete known read callers require env_act43side[shooting]. The current garrison activity subtree, 44 source levels and generated environment/encounter files provide no occurrence of this marker. Keep pending but exclude from current garrison executable-priority work.",
+          "requiredMarkerKeys": [
+            "env_act43side[shooting]"
+          ],
+          "evidenceLevel": "Inferred-current-source-scope"
+        },
+        "enemy_10099_crvln|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2388178449942571446:18": {
+          "sourceContract": "work/enemy-explicit-read-contract.json",
+          "sourceFingerprint": "0a33a233c20ff80b402d5b0b28026451ec65cd9e10aa609b483afce9122ef65c",
+          "reason": "The complete known read callers require env_act43side[shooting]. The current garrison activity subtree, 44 source levels and generated environment/encounter files provide no occurrence of this marker. Keep pending but exclude from current garrison executable-priority work.",
+          "requiredMarkerKeys": [
+            "env_act43side[shooting]"
+          ],
+          "evidenceLevel": "Inferred-current-source-scope"
+        },
+        "enemy_1425_lrcmra_2|CAB-f35c307a9d02cd74f087114a32f11a9d:95367100273719513:17": {
+          "sourceContract": "work/enemy-explicit-chimera-contract.json",
+          "sourceFingerprint": "bcf34b851e0b08ab25c54836d6b9e11cda54d8dc601a7ac5ad87ad7c7a270b07",
+          "reason": "Current garrison activity subtree, 44 source levels, generated environment inputs and runtime contain none of the three prerequisite Buff keys; both enemies begin in mode 0, while the pool-local propagating Aura exists only in mode 1.",
+          "requiredMarkerKeys": [
+            "enemy_bigstorm[mark]",
+            "buff_originum[tile]",
+            "enemy_lrcmra[originum][mark]"
+          ],
+          "evidenceLevel": "Inferred-reachability-from-verified-source-and-runtime-search"
+        },
+        "enemy_1425_lrcmra|CAB-f35c307a9d02cd74f087114a32f11a9d:-6380628782783410879:3": {
+          "sourceContract": "work/enemy-explicit-chimera-contract.json",
+          "sourceFingerprint": "bcf34b851e0b08ab25c54836d6b9e11cda54d8dc601a7ac5ad87ad7c7a270b07",
+          "reason": "Current garrison activity subtree, 44 source levels, generated environment inputs and runtime contain none of the three prerequisite Buff keys; both enemies begin in mode 0, while the pool-local propagating Aura exists only in mode 1.",
+          "requiredMarkerKeys": [
+            "enemy_bigstorm[mark]",
+            "buff_originum[tile]",
+            "enemy_lrcmra[originum][mark]"
+          ],
+          "evidenceLevel": "Inferred-reachability-from-verified-source-and-runtime-search"
+        },
+        "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:2910056970623200212:17": {
+          "sourceContract": "work/enemy-hover-contract.json",
+          "sourceFingerprint": "5f35179fd2af0a1df78760b9779fbb1c1d7b085f8036a3bda967d5c4107673e4",
+          "reason": "source-skill-data-absent",
+          "requiredMarkerKeys": [
+            "匹配的 RecoverAnim 敌人或关卡 skills 配置"
+          ],
+          "evidenceLevel": "Verified-static-unmatched-skill-disabled",
+          "kind": "source-skill-inactive"
+        }
+      },
+      "executablePendingSkillIDs": [
+        "enemy_10044_wintun|CAB-9932efcd454c1307fe7ebddc8a79559b:-4456446739223598299:4",
+        "enemy_1040_bombd|CAB-c66709e8e44223eecca4bce9fbf48f83:8530485036149232392:19",
+        "enemy_1512_mcmstr|CAB-0df5f4c8c8dade07e2ee475a972da576:-6583151510869566880:10",
+        "enemy_1512_mcmstr|CAB-0df5f4c8c8dade07e2ee475a972da576:3561960064050666080:20",
+        "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-4294630265555608891:18",
+        "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-5267374164800791867:13",
+        "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-8818478906179413307:0",
+        "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:1246068199843470021:35",
+        "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:130561785783622341:32",
+        "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:7680127453822098117:66",
+        "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:-2530988810614148662:21",
+        "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:8737699305577116106:63",
+        "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:881252940262207946:40",
+        "enemy_2004_balloon|CAB-45917fb008d9d99f506436a9f5988d3d:3219529385410557550:14"
+      ],
+      "executablePendingSkillIDsByEnemy": {
+        "enemy_10044_wintun": [
+          "enemy_10044_wintun|CAB-9932efcd454c1307fe7ebddc8a79559b:-4456446739223598299:4"
+        ],
+        "enemy_1040_bombd": [
+          "enemy_1040_bombd|CAB-c66709e8e44223eecca4bce9fbf48f83:8530485036149232392:19"
+        ],
+        "enemy_1512_mcmstr": [
+          "enemy_1512_mcmstr|CAB-0df5f4c8c8dade07e2ee475a972da576:-6583151510869566880:10",
+          "enemy_1512_mcmstr|CAB-0df5f4c8c8dade07e2ee475a972da576:3561960064050666080:20"
+        ],
+        "enemy_1517_xi": [
+          "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-4294630265555608891:18",
+          "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-5267374164800791867:13",
+          "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-8818478906179413307:0",
+          "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:1246068199843470021:35",
+          "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:130561785783622341:32",
+          "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:7680127453822098117:66"
+        ],
+        "enemy_1525_blkswb": [
+          "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:-2530988810614148662:21",
+          "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:8737699305577116106:63",
+          "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:881252940262207946:40"
+        ],
+        "enemy_2004_balloon": [
+          "enemy_2004_balloon|CAB-45917fb008d9d99f506436a9f5988d3d:3219529385410557550:14"
+        ]
+      },
+      "executablePendingEnemyIDs": [
+        "enemy_10044_wintun",
+        "enemy_1040_bombd",
+        "enemy_1512_mcmstr",
+        "enemy_1517_xi",
+        "enemy_1525_blkswb",
+        "enemy_2004_balloon"
+      ],
+      "ignoredEnvironmentContracts": [],
+      "rejectionsBySkillID": {
+        "enemy_10044_wintun|CAB-9932efcd454c1307fe7ebddc8a79559b:-4456446739223598299:4": [
+          "unsupported-trigger:AlwaysTrigger"
+        ],
+        "enemy_10098_crhro|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2405922354498616231:28": [
+          "unsupported-trigger:NeverTrigger"
+        ],
+        "enemy_10099_crvln|CAB-eef20e46e9f0e9e38e18bc35388f76fa:2388178449942571446:18": [
+          "unsupported-trigger:NeverTrigger"
+        ],
+        "enemy_10099_crvln_2|CAB-eef20e46e9f0e9e38e18bc35388f76fa:-8590087389013148367:0": [
+          "unsupported-trigger:NeverTrigger"
+        ],
+        "enemy_1040_bombd|CAB-c66709e8e44223eecca4bce9fbf48f83:8530485036149232392:19": [
+          "unresolved-or-inactive-skill-owner"
+        ],
+        "enemy_1425_lrcmra|CAB-f35c307a9d02cd74f087114a32f11a9d:-6380628782783410879:3": [
+          "unsupported-trigger:NeverTrigger"
+        ],
+        "enemy_1425_lrcmra_2|CAB-f35c307a9d02cd74f087114a32f11a9d:95367100273719513:17": [
+          "unsupported-trigger:NeverTrigger"
+        ],
+        "enemy_1512_mcmstr|CAB-0df5f4c8c8dade07e2ee475a972da576:-6583151510869566880:10": [
+          "dedicated-boss-or-boss-lifecycle-not-supported"
+        ],
+        "enemy_1512_mcmstr|CAB-0df5f4c8c8dade07e2ee475a972da576:3561960064050666080:20": [
+          "dedicated-boss-or-boss-lifecycle-not-supported"
+        ],
+        "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-4294630265555608891:18": [
+          "dedicated-boss-or-boss-lifecycle-not-supported"
+        ],
+        "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-5267374164800791867:13": [
+          "dedicated-boss-or-boss-lifecycle-not-supported"
+        ],
+        "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-8818478906179413307:0": [
+          "dedicated-boss-or-boss-lifecycle-not-supported"
+        ],
+        "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:1246068199843470021:35": [
+          "dedicated-boss-or-boss-lifecycle-not-supported"
+        ],
+        "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:130561785783622341:32": [
+          "dedicated-boss-or-boss-lifecycle-not-supported"
+        ],
+        "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:7680127453822098117:66": [
+          "dedicated-boss-or-boss-lifecycle-not-supported"
+        ],
+        "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:-2530988810614148662:21": [
+          "dedicated-boss-or-boss-lifecycle-not-supported"
+        ],
+        "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:8737699305577116106:63": [
+          "dedicated-boss-or-boss-lifecycle-not-supported"
+        ],
+        "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:881252940262207946:40": [
+          "dedicated-boss-or-boss-lifecycle-not-supported"
+        ],
+        "enemy_2004_balloon|CAB-45917fb008d9d99f506436a9f5988d3d:3219529385410557550:14": [
+          "dedicated-boss-or-boss-lifecycle-not-supported"
+        ],
+        "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:2910056970623200212:17": [
+          "unsupported-trigger:AlwaysTrigger"
+        ]
+      },
+      "counts": {
+        "candidates": 27,
+        "selectedSkills": 7,
+        "boundEntryPendingSkills": 2,
+        "selectedEnemies": 5,
+        "pendingSkills": 20,
+        "pendingEnemies": 12,
+        "deferredSkills": 6,
+        "deferredEnemies": 6,
+        "executablePendingSkills": 14,
+        "executablePendingEnemies": 6,
+        "encounterSelectedEnemies": 1
+      },
+      "boundary": "Only compiled skill component IDs leave pending totals. Source-current environment-gated NeverTrigger IDs and unmatched source-disabled skills remain pending and are deferred until a real entry is present. Executable-pending means eligible for shared-contract work, not directly ready to bind. Mode activation, other skills, source operators and whole-enemy completion remain separate."
+    },
+    "periodicAbilities": {
+      "rule": "mode-periodic-buff-named-ability-complete-group-v1",
+      "sourceFingerprint": "c209f2d8b755aba00c4135c3ac93ef96c2c5644a26208690d268bbb995834f1e",
+      "sourceReport": "work/external-combat-import-report.json#periodicAbilities",
+      "sourceContract": "work\\enemy-periodic-ability-contract.json",
+      "alreadyBoundGroups": [
+        {
+          "groupId": "enemy_1151_dslntc_2|mode:1|periodic-ability-group",
+          "enemyId": "enemy_1151_dslntc_2",
+          "kind": "mode-periodic-ability-group",
+          "modeIndex": 1,
+          "capabilityIDs": [
+            "mode-attributes",
+            "self-damage-maxhp",
+            "direct-named-ability",
+            "normal-attack-element"
+          ],
+          "periodicIDs": [
+            "enemy_1151_dslntc_2|mode:1|periodic-ability-group|self-damage",
+            "enemy_1151_dslntc_2|mode:1|periodic-ability-group|named:ScreamAttack"
+          ],
+          "namedAbilityKeys": [
+            "ScreamAttack"
+          ],
+          "sourceContract": "work\\enemy-periodic-ability-contract.json",
+          "sourceRefs": [
+            {
+              "path": "work\\enemy-periodic-ability-contract.json",
+              "sourceFingerprint": "c209f2d8b755aba00c4135c3ac93ef96c2c5644a26208690d268bbb995834f1e"
+            },
+            {
+              "enemyId": "enemy_1151_dslntc_2",
+              "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:3035293307373585135:23"
+            },
+            {
+              "enemyId": "enemy_1151_dslntc_2",
+              "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:3927332288852230895:25"
+            },
+            {
+              "enemyId": "enemy_1151_dslntc_2",
+              "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:7060193823522521839:30"
+            },
+            {
+              "enemyId": "enemy_1151_dslntc_2",
+              "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:1799965490020975343:22"
+            },
+            {
+              "enemyId": "enemy_1151_dslntc_2",
+              "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:-4088745116187589905:16"
+            },
+            {
+              "enemyId": "enemy_1151_dslntc_2",
+              "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:-1125647228927769873:20"
+            }
+          ]
+        },
+        {
+          "groupId": "enemy_1151_dslntc|mode:1|periodic-ability-group",
+          "enemyId": "enemy_1151_dslntc",
+          "kind": "mode-periodic-ability-group",
+          "modeIndex": 1,
+          "capabilityIDs": [
+            "mode-attributes",
+            "self-damage-maxhp",
+            "direct-named-ability",
+            "normal-attack-element"
+          ],
+          "periodicIDs": [
+            "enemy_1151_dslntc|mode:1|periodic-ability-group|self-damage",
+            "enemy_1151_dslntc|mode:1|periodic-ability-group|named:ScreamAttack"
+          ],
+          "namedAbilityKeys": [
+            "ScreamAttack"
+          ],
+          "sourceContract": "work\\enemy-periodic-ability-contract.json",
+          "sourceRefs": [
+            {
+              "path": "work\\enemy-periodic-ability-contract.json",
+              "sourceFingerprint": "c209f2d8b755aba00c4135c3ac93ef96c2c5644a26208690d268bbb995834f1e"
+            },
+            {
+              "enemyId": "enemy_1151_dslntc",
+              "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:-4469237381623963055:4"
+            },
+            {
+              "enemyId": "enemy_1151_dslntc",
+              "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:8323790580533502545:31"
+            },
+            {
+              "enemyId": "enemy_1151_dslntc",
+              "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:-4274112221600210351:7"
+            },
+            {
+              "enemyId": "enemy_1151_dslntc",
+              "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:-8023706532322270639:0"
+            },
+            {
+              "enemyId": "enemy_1151_dslntc",
+              "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:7852368582320005713:30"
+            },
+            {
+              "enemyId": "enemy_1151_dslntc",
+              "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:-2585687572539825583:11"
+            }
+          ]
+        }
+      ],
+      "alreadyBoundGroupsByEnemy": {
+        "enemy_1151_dslntc": [
+          {
+            "groupId": "enemy_1151_dslntc|mode:1|periodic-ability-group",
+            "enemyId": "enemy_1151_dslntc",
+            "kind": "mode-periodic-ability-group",
+            "modeIndex": 1,
+            "capabilityIDs": [
+              "mode-attributes",
+              "self-damage-maxhp",
+              "direct-named-ability",
+              "normal-attack-element"
+            ],
+            "periodicIDs": [
+              "enemy_1151_dslntc|mode:1|periodic-ability-group|self-damage",
+              "enemy_1151_dslntc|mode:1|periodic-ability-group|named:ScreamAttack"
+            ],
+            "namedAbilityKeys": [
+              "ScreamAttack"
+            ],
+            "sourceContract": "work\\enemy-periodic-ability-contract.json",
+            "sourceRefs": [
+              {
+                "path": "work\\enemy-periodic-ability-contract.json",
+                "sourceFingerprint": "c209f2d8b755aba00c4135c3ac93ef96c2c5644a26208690d268bbb995834f1e"
+              },
+              {
+                "enemyId": "enemy_1151_dslntc",
+                "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:-4469237381623963055:4"
+              },
+              {
+                "enemyId": "enemy_1151_dslntc",
+                "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:8323790580533502545:31"
+              },
+              {
+                "enemyId": "enemy_1151_dslntc",
+                "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:-4274112221600210351:7"
+              },
+              {
+                "enemyId": "enemy_1151_dslntc",
+                "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:-8023706532322270639:0"
+              },
+              {
+                "enemyId": "enemy_1151_dslntc",
+                "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:7852368582320005713:30"
+              },
+              {
+                "enemyId": "enemy_1151_dslntc",
+                "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:-2585687572539825583:11"
+              }
+            ]
+          }
+        ],
+        "enemy_1151_dslntc_2": [
+          {
+            "groupId": "enemy_1151_dslntc_2|mode:1|periodic-ability-group",
+            "enemyId": "enemy_1151_dslntc_2",
+            "kind": "mode-periodic-ability-group",
+            "modeIndex": 1,
+            "capabilityIDs": [
+              "mode-attributes",
+              "self-damage-maxhp",
+              "direct-named-ability",
+              "normal-attack-element"
+            ],
+            "periodicIDs": [
+              "enemy_1151_dslntc_2|mode:1|periodic-ability-group|self-damage",
+              "enemy_1151_dslntc_2|mode:1|periodic-ability-group|named:ScreamAttack"
+            ],
+            "namedAbilityKeys": [
+              "ScreamAttack"
+            ],
+            "sourceContract": "work\\enemy-periodic-ability-contract.json",
+            "sourceRefs": [
+              {
+                "path": "work\\enemy-periodic-ability-contract.json",
+                "sourceFingerprint": "c209f2d8b755aba00c4135c3ac93ef96c2c5644a26208690d268bbb995834f1e"
+              },
+              {
+                "enemyId": "enemy_1151_dslntc_2",
+                "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:3035293307373585135:23"
+              },
+              {
+                "enemyId": "enemy_1151_dslntc_2",
+                "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:3927332288852230895:25"
+              },
+              {
+                "enemyId": "enemy_1151_dslntc_2",
+                "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:7060193823522521839:30"
+              },
+              {
+                "enemyId": "enemy_1151_dslntc_2",
+                "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:1799965490020975343:22"
+              },
+              {
+                "enemyId": "enemy_1151_dslntc_2",
+                "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:-4088745116187589905:16"
+              },
+              {
+                "enemyId": "enemy_1151_dslntc_2",
+                "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:-1125647228927769873:20"
+              }
+            ]
+          }
+        ]
+      },
+      "selectedGroupIDs": [
+        "enemy_1151_dslntc_2|mode:1|periodic-ability-group",
+        "enemy_1151_dslntc|mode:1|periodic-ability-group"
+      ],
+      "selectedEnemyIDs": [
+        "enemy_1151_dslntc",
+        "enemy_1151_dslntc_2"
+      ],
+      "capabilities": {
+        "mode-attributes": {
+          "label": "模式移动属性",
+          "groupIDs": [
+            "enemy_1151_dslntc_2|mode:1|periodic-ability-group",
+            "enemy_1151_dslntc|mode:1|periodic-ability-group"
+          ],
+          "enemyIDs": [
+            "enemy_1151_dslntc",
+            "enemy_1151_dslntc_2"
+          ],
+          "bindings": 2
+        },
+        "self-damage-maxhp": {
+          "label": "按最大生命值周期自损",
+          "groupIDs": [
+            "enemy_1151_dslntc_2|mode:1|periodic-ability-group",
+            "enemy_1151_dslntc|mode:1|periodic-ability-group"
+          ],
+          "enemyIDs": [
+            "enemy_1151_dslntc",
+            "enemy_1151_dslntc_2"
+          ],
+          "bindings": 2
+        },
+        "direct-named-ability": {
+          "label": "周期点名直接施放",
+          "groupIDs": [
+            "enemy_1151_dslntc_2|mode:1|periodic-ability-group",
+            "enemy_1151_dslntc|mode:1|periodic-ability-group"
+          ],
+          "enemyIDs": [
+            "enemy_1151_dslntc",
+            "enemy_1151_dslntc_2"
+          ],
+          "bindings": 2
+        },
+        "normal-attack-element": {
+          "label": "普通动作元素包",
+          "groupIDs": [
+            "enemy_1151_dslntc_2|mode:1|periodic-ability-group",
+            "enemy_1151_dslntc|mode:1|periodic-ability-group"
+          ],
+          "enemyIDs": [
+            "enemy_1151_dslntc",
+            "enemy_1151_dslntc_2"
+          ],
+          "bindings": 2
+        }
+      },
+      "rejectionsByEnemy": {},
+      "counts": {
+        "groups": 2,
+        "enemies": 2,
+        "encounterGroups": 0,
+        "encounterEnemies": 0,
+        "capabilityKinds": 4,
+        "capabilityBindings": 8
+      },
+      "boundary": "These are compiled complete periodic ability groups, not EnemySkill components. Reuse their stable group IDs without redispatching them; keep the 27-skill cohort, other source operators and whole-enemy gaps unchanged. Capability bindings overlap on the same enemies and are not additive enemy coverage."
+    },
+    "alreadyBoundPeriodicGroups": [
+      {
+        "groupId": "enemy_1151_dslntc_2|mode:1|periodic-ability-group",
+        "enemyId": "enemy_1151_dslntc_2",
+        "kind": "mode-periodic-ability-group",
+        "modeIndex": 1,
+        "capabilityIDs": [
+          "mode-attributes",
+          "self-damage-maxhp",
+          "direct-named-ability",
+          "normal-attack-element"
+        ],
+        "periodicIDs": [
+          "enemy_1151_dslntc_2|mode:1|periodic-ability-group|self-damage",
+          "enemy_1151_dslntc_2|mode:1|periodic-ability-group|named:ScreamAttack"
+        ],
+        "namedAbilityKeys": [
+          "ScreamAttack"
+        ],
+        "sourceContract": "work\\enemy-periodic-ability-contract.json",
+        "sourceRefs": [
+          {
+            "path": "work\\enemy-periodic-ability-contract.json",
+            "sourceFingerprint": "c209f2d8b755aba00c4135c3ac93ef96c2c5644a26208690d268bbb995834f1e"
+          },
+          {
+            "enemyId": "enemy_1151_dslntc_2",
+            "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:3035293307373585135:23"
+          },
+          {
+            "enemyId": "enemy_1151_dslntc_2",
+            "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:3927332288852230895:25"
+          },
+          {
+            "enemyId": "enemy_1151_dslntc_2",
+            "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:7060193823522521839:30"
+          },
+          {
+            "enemyId": "enemy_1151_dslntc_2",
+            "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:1799965490020975343:22"
+          },
+          {
+            "enemyId": "enemy_1151_dslntc_2",
+            "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:-4088745116187589905:16"
+          },
+          {
+            "enemyId": "enemy_1151_dslntc_2",
+            "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:-1125647228927769873:20"
+          }
+        ]
+      },
+      {
+        "groupId": "enemy_1151_dslntc|mode:1|periodic-ability-group",
+        "enemyId": "enemy_1151_dslntc",
+        "kind": "mode-periodic-ability-group",
+        "modeIndex": 1,
+        "capabilityIDs": [
+          "mode-attributes",
+          "self-damage-maxhp",
+          "direct-named-ability",
+          "normal-attack-element"
+        ],
+        "periodicIDs": [
+          "enemy_1151_dslntc|mode:1|periodic-ability-group|self-damage",
+          "enemy_1151_dslntc|mode:1|periodic-ability-group|named:ScreamAttack"
+        ],
+        "namedAbilityKeys": [
+          "ScreamAttack"
+        ],
+        "sourceContract": "work\\enemy-periodic-ability-contract.json",
+        "sourceRefs": [
+          {
+            "path": "work\\enemy-periodic-ability-contract.json",
+            "sourceFingerprint": "c209f2d8b755aba00c4135c3ac93ef96c2c5644a26208690d268bbb995834f1e"
+          },
+          {
+            "enemyId": "enemy_1151_dslntc",
+            "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:-4469237381623963055:4"
+          },
+          {
+            "enemyId": "enemy_1151_dslntc",
+            "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:8323790580533502545:31"
+          },
+          {
+            "enemyId": "enemy_1151_dslntc",
+            "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:-4274112221600210351:7"
+          },
+          {
+            "enemyId": "enemy_1151_dslntc",
+            "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:-8023706532322270639:0"
+          },
+          {
+            "enemyId": "enemy_1151_dslntc",
+            "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:7852368582320005713:30"
+          },
+          {
+            "enemyId": "enemy_1151_dslntc",
+            "componentKey": "CAB-b3d9fed720d2cf9530017b9093a8f1e4:-2585687572539825583:11"
+          }
+        ]
+      }
+    ],
+    "fullPhaseTransitionsCompleted": 0,
+    "nextSharedProvider": {
+      "family": "skill-trigger-dispatch",
+      "label": "技能触发与能力调度",
+      "priority": "garrison-foundation-first",
+      "scope": "garrison-shared-foundation-contract",
+      "existingContractScope": "Complete root passive Buff chains execute on blocked or HP condition edges. HP chains include all declared Buffs, attributes and output-damage listeners. Native predicates/parameters are known; namespace/target/attachment and FP tolerance use explicit inferences. Other mounted abilities, full enemy phases and original visual effects remain pending.",
+      "affectedEnemyIDs": [
+        "enemy_1040_bombd",
+        "enemy_1234_dsubrl",
+        "enemy_1234_dsubrl_2",
+        "enemy_1373_ltnhor_2",
+        "enemy_1425_lrcmra",
+        "enemy_1425_lrcmra_2",
+        "enemy_2025_syufo",
+        "enemy_9021_acduml"
+      ],
+      "affectedEncounterEnemyIDs": [
+        "enemy_1040_bombd",
+        "enemy_1234_dsubrl",
+        "enemy_1234_dsubrl_2",
+        "enemy_1373_ltnhor_2",
+        "enemy_1425_lrcmra",
+        "enemy_1425_lrcmra_2",
+        "enemy_2025_syufo",
+        "enemy_9021_acduml"
+      ],
+      "dependentEncounterCount": 8,
+      "directCandidateEncounterIDs": [],
+      "candidateIDs": [
+        "enemy_1040_bombd|CAB-c66709e8e44223eecca4bce9fbf48f83:8530485036149232392:19",
+        "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:8051568033542384596:26"
+      ],
+      "alreadyBoundSkills": [
+        {
+          "enemyId": "enemy_1373_ltnhor_2",
+          "skillId": "enemy_1373_ltnhor_2|CAB-a3aa7376bf9856a44c7dbcc30a30afbc:1959813430026055221:22",
+          "skillKey": "attackTwoTarget_enthu",
+          "modeIndices": [
+            1
+          ],
+          "sourceRef": {
+            "cache": "work/enemy-mode-dispatch-catalog.json",
+            "enemyId": "enemy_1373_ltnhor_2",
+            "componentKey": "CAB-a3aa7376bf9856a44c7dbcc30a30afbc:1959813430026055221:22",
+            "fieldPath": "/_trigger"
+          },
+          "kind": "selector-sp-ranged",
+          "initiallyMounted": false,
+          "automaticModeTransitionComplete": false,
+          "entryStatus": "explicit-mode-only-entry-pending"
+        },
+        {
+          "enemyId": "enemy_1373_ltnhor_2",
+          "skillId": "enemy_1373_ltnhor_2|CAB-a3aa7376bf9856a44c7dbcc30a30afbc:8977067208793140789:39",
+          "skillKey": "attackTwoTarget",
+          "modeIndices": [
+            0
+          ],
+          "sourceRef": {
+            "cache": "work/enemy-mode-dispatch-catalog.json",
+            "enemyId": "enemy_1373_ltnhor_2",
+            "componentKey": "CAB-a3aa7376bf9856a44c7dbcc30a30afbc:8977067208793140789:39",
+            "fieldPath": "/_trigger"
+          },
+          "kind": "selector-sp-ranged",
+          "initiallyMounted": true,
+          "automaticModeTransitionComplete": false,
+          "entryStatus": "initial-mode-bound"
+        }
+      ],
+      "boundEntryPendingSkillIDs": [
+        "enemy_1373_ltnhor_2|CAB-a3aa7376bf9856a44c7dbcc30a30afbc:1959813430026055221:22"
+      ],
+      "alreadyBoundPeriodicGroups": [],
+      "pendingSkillIDs": [
+        "enemy_1040_bombd|CAB-c66709e8e44223eecca4bce9fbf48f83:8530485036149232392:19"
+      ],
+      "allPendingSkillIDs": [
+        "enemy_1040_bombd|CAB-c66709e8e44223eecca4bce9fbf48f83:8530485036149232392:19",
+        "enemy_1425_lrcmra_2|CAB-f35c307a9d02cd74f087114a32f11a9d:95367100273719513:17",
+        "enemy_1425_lrcmra|CAB-f35c307a9d02cd74f087114a32f11a9d:-6380628782783410879:3",
+        "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:2910056970623200212:17"
+      ],
+      "deferredSkillIDs": [
+        "enemy_1425_lrcmra_2|CAB-f35c307a9d02cd74f087114a32f11a9d:95367100273719513:17",
+        "enemy_1425_lrcmra|CAB-f35c307a9d02cd74f087114a32f11a9d:-6380628782783410879:3",
+        "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:2910056970623200212:17"
+      ],
+      "executablePendingSkillIDs": [
+        "enemy_1040_bombd|CAB-c66709e8e44223eecca4bce9fbf48f83:8530485036149232392:19"
+      ],
+      "requiredOperators": [
+        "resolve-enemy-skill-trigger",
+        "trigger-enemy-skill",
+        "trigger-named-ability",
+        "ability-component-event-binding",
+        "action-sequence-control",
+        "conditional-action-tree"
+      ],
+      "dependsOn": [],
+      "sourcePriority": "work/garrison-foundation-priority.json",
+      "instruction": "按已定位的技能、触发器和能力入口补共用调度接口；先闭合可追溯的一类调用合同。 优先从池内受影响记录闭合最底层共享合同；技能只推进executablePendingSkillIDs，deferredSkillIDs保留未完成，等真实环境入口后重新开放。复用alreadyBoundPeriodicGroups的完整公共组，不把它们算成新增EnemySkill或整敌完成。非池候选保留为后续复用，已接稳定ID不得重复派工。",
+      "acceptance": "依赖影响人数不是本次可完成数量。按明确合同切片验证完整行为；不得把泛化调用定位当成一个已实现算子，不删除其他未完成能力。"
+    },
+    "runtimeStatusSource": "work/external-combat-import-report.json#modeProviders",
+    "runtimeStatusMeaning": "Saved provider selections describe currently available runtime support, not a code change in this refresh."
+  }
+}

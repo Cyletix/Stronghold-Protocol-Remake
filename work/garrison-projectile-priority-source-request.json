@@ -1,0 +1,979 @@
+{
+  "schemaVersion": 1,
+  "memberIDs": [
+    "enemy_10018_sgrobh",
+    "enemy_10018_sgrobh_2",
+    "enemy_10023_vtsnky",
+    "enemy_10023_vtsnky_2",
+    "enemy_10130_pycpok",
+    "enemy_10130_pycpok_2",
+    "enemy_10152_nstree",
+    "enemy_10152_nstree_2",
+    "enemy_10162_mnctpt",
+    "enemy_10162_mnctpt_2",
+    "enemy_10202_mubow",
+    "enemy_10202_mubow_2",
+    "enemy_10230_agkiro",
+    "enemy_10230_agkiro_2",
+    "enemy_1040_bombd",
+    "enemy_1040_bombd_2",
+    "enemy_1057_gansho",
+    "enemy_1057_gansho_2",
+    "enemy_1070_iced",
+    "enemy_1112_emppnt",
+    "enemy_1112_emppnt_2",
+    "enemy_1117_liiprr",
+    "enemy_1117_liiprr_2",
+    "enemy_1179_aruarw",
+    "enemy_1179_aruarw_2",
+    "enemy_1213_mtrsnp",
+    "enemy_1213_mtrsnp_2",
+    "enemy_1214_mtrmgc",
+    "enemy_1214_mtrmgc_2",
+    "enemy_1225_dkmage",
+    "enemy_1225_dkmage_2",
+    "enemy_1278_sgbow",
+    "enemy_1278_sgbow_2",
+    "enemy_1284_sgprst",
+    "enemy_1361_dthrow",
+    "enemy_1361_dthrow_2",
+    "enemy_1373_ltnhor",
+    "enemy_1373_ltnhor_2",
+    "enemy_1382_winbal",
+    "enemy_1382_winbal_2",
+    "enemy_1386_winmag",
+    "enemy_1386_winmag_2",
+    "enemy_1391_dhbow",
+    "enemy_1391_dhbow_2",
+    "enemy_1393_dhele",
+    "enemy_1393_dhele_2",
+    "enemy_1440_dselec",
+    "enemy_1440_dselec_2",
+    "enemy_15016_dqdkma",
+    "enemy_15068_dqsui",
+    "enemy_1517_xi",
+    "enemy_1526_sfsui",
+    "enemy_1530_white",
+    "enemy_1543_cstlrs",
+    "enemy_1546_cliff",
+    "enemy_1548_ltniak",
+    "enemy_1560_cnvlap",
+    "enemy_1563_fthlgj",
+    "enemy_1565_mpprme",
+    "enemy_1568_dirctr",
+    "enemy_1575_xdmon",
+    "enemy_2007_flwitch",
+    "enemy_2014_csicer",
+    "enemy_2018_csdoll",
+    "enemy_2020_cswrtr",
+    "enemy_2028_syevil",
+    "enemy_2037_sygirl",
+    "enemy_2042_syboss",
+    "enemy_2050_smsha",
+    "enemy_2051_smsha2",
+    "enemy_2091_skzgds",
+    "enemy_2092_skzamy",
+    "enemy_2118_dylbhm",
+    "enemy_4010_mubsbl",
+    "enemy_4010_mubsbl_2",
+    "enemy_5002_lazdfd_2",
+    "enemy_5004_bombfd",
+    "enemy_5005_yokafd",
+    "enemy_5011_mstrfd",
+    "enemy_5038_dqiprr_2",
+    "enemy_5054_dqxi",
+    "enemy_5078_izsvas",
+    "enemy_6023_crane",
+    "enemy_7029_pilot",
+    "enemy_7033_xbdrcar",
+    "enemy_7051_xbcas",
+    "enemy_7053_xbcasz",
+    "enemy_7060_xbcasy",
+    "enemy_9021_acduml",
+    "enemy_9021_acduml_2"
+  ],
+  "garrisonMemberIDs": [
+    "enemy_10018_sgrobh",
+    "enemy_10162_mnctpt",
+    "enemy_1040_bombd",
+    "enemy_1112_emppnt",
+    "enemy_1112_emppnt_2",
+    "enemy_1225_dkmage",
+    "enemy_1225_dkmage_2",
+    "enemy_1373_ltnhor_2",
+    "enemy_1517_xi",
+    "enemy_2050_smsha",
+    "enemy_9021_acduml",
+    "enemy_9021_acduml_2"
+  ],
+  "projectileKeys": [
+    "projectile_enemy_acduml",
+    "projectile_enemy_agkiro",
+    "projectile_enemy_aruarw_bright",
+    "projectile_enemy_aruarw_night",
+    "projectile_enemy_cliff",
+    "projectile_enemy_cliff_2",
+    "projectile_enemy_cnvlap",
+    "projectile_enemy_cnvlap_p2",
+    "projectile_enemy_crane",
+    "projectile_enemy_crane_s1",
+    "projectile_enemy_csdoll",
+    "projectile_enemy_csicer",
+    "projectile_enemy_csicer_2",
+    "projectile_enemy_cstlrs",
+    "projectile_enemy_cstlrs_2",
+    "projectile_enemy_cswrtr",
+    "projectile_enemy_dhbow_magic",
+    "projectile_enemy_dhbow_phy",
+    "projectile_enemy_dirctr",
+    "projectile_enemy_dirctr_p2",
+    "projectile_enemy_dirctr_s3",
+    "projectile_enemy_dkmage",
+    "projectile_enemy_dselec",
+    "projectile_enemy_dthrow",
+    "projectile_enemy_dylbhm_yang",
+    "projectile_enemy_dylbhm_yin",
+    "projectile_enemy_emppnt",
+    "projectile_enemy_flwitch",
+    "projectile_enemy_fthlgj",
+    "projectile_enemy_fthlgj_2",
+    "projectile_enemy_lazdfd_2",
+    "projectile_enemy_liiprr",
+    "projectile_enemy_liiprr_2",
+    "projectile_enemy_ltnhor",
+    "projectile_enemy_ltnhor_enthu",
+    "projectile_enemy_ltniak_1",
+    "projectile_enemy_ltniak_2",
+    "projectile_enemy_mnctpt",
+    "projectile_enemy_mnctpt_offset",
+    "projectile_enemy_mpprme",
+    "projectile_enemy_mtrmgc",
+    "projectile_enemy_mtrmgc_headshot",
+    "projectile_enemy_mtrsnp",
+    "projectile_enemy_mtrsnp_headshot",
+    "projectile_enemy_mubow",
+    "projectile_enemy_mubow_magic",
+    "projectile_enemy_mubsbl",
+    "projectile_enemy_mubsbl_2",
+    "projectile_enemy_nstree",
+    "projectile_enemy_pilot",
+    "projectile_enemy_pycpok",
+    "projectile_enemy_sfsui",
+    "projectile_enemy_sgbow",
+    "projectile_enemy_sgbow_vg",
+    "projectile_enemy_sgprst",
+    "projectile_enemy_sgprst_s",
+    "projectile_enemy_sgrobh_1",
+    "projectile_enemy_sgrobh_2",
+    "projectile_enemy_skzamy_1",
+    "projectile_enemy_skzamy_2",
+    "projectile_enemy_skzgds",
+    "projectile_enemy_smsha",
+    "projectile_enemy_syboss",
+    "projectile_enemy_syevil",
+    "projectile_enemy_sygirl",
+    "projectile_enemy_tidmag",
+    "projectile_enemy_vstnky_sowrd",
+    "projectile_enemy_vtsnky",
+    "projectile_enemy_vtsnky_wand",
+    "projectile_enemy_white_in_reborn",
+    "projectile_enemy_white_p1",
+    "projectile_enemy_white_p1_crazy",
+    "projectile_enemy_white_p1_stun",
+    "projectile_enemy_white_p2",
+    "projectile_enemy_white_p2_crazy",
+    "projectile_enemy_white_p2_stun",
+    "projectile_enemy_winbal_cold",
+    "projectile_enemy_winbal_melt",
+    "projectile_enemy_winmag_cold",
+    "projectile_enemy_winmag_melt",
+    "projectile_enemy_xbcas",
+    "projectile_enemy_xbcas_02",
+    "projectile_enemy_xbcas_03",
+    "projectile_enemy_xbcas_04",
+    "projectile_enemy_xdmon[m2]",
+    "projectile_enemy_xi",
+    "projectile_frstar2",
+    "projectile_gansho",
+    "projectile_svrash",
+    "projectile_xbdrcar"
+  ],
+  "assetMappings": {
+    "projectile_enemy_acduml": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_acduml.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "2848379474544646890"
+        }
+      }
+    ],
+    "projectile_enemy_aruarw_bright": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_aruarw_bright.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "2034480653779396014"
+        }
+      }
+    ],
+    "projectile_enemy_aruarw_night": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_aruarw_night.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-202153772246862151"
+        }
+      }
+    ],
+    "projectile_enemy_cliff": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_cliff.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-2758792058481911795"
+        }
+      }
+    ],
+    "projectile_enemy_cliff_2": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_cliff_2.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-5084214837205218267"
+        }
+      }
+    ],
+    "projectile_enemy_cnvlap": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_cnvlap.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "2615988539090215715"
+        }
+      }
+    ],
+    "projectile_enemy_cnvlap_p2": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_cnvlap_p2.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "2902080207425201507"
+        }
+      }
+    ],
+    "projectile_enemy_crane": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_crane.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-3028995495512375534"
+        }
+      }
+    ],
+    "projectile_enemy_crane_s1": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_crane_s1.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-3238242352030498721"
+        }
+      }
+    ],
+    "projectile_enemy_csdoll": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_csdoll.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-7417491186287734187"
+        }
+      }
+    ],
+    "projectile_enemy_csicer": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_csicer.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-6081259532242394148"
+        }
+      }
+    ],
+    "projectile_enemy_csicer_2": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_csicer_2.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "1547043725832365024"
+        }
+      }
+    ],
+    "projectile_enemy_cstlrs": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_cstlrs.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "4926560140549038570"
+        }
+      }
+    ],
+    "projectile_enemy_cstlrs_2": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_cstlrs_2.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-149961630631110584"
+        }
+      }
+    ],
+    "projectile_enemy_cswrtr": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_cswrtr.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "7424079340694904003"
+        }
+      }
+    ],
+    "projectile_enemy_dhbow_magic": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_dhbow_magic.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "4351260464432477482"
+        }
+      }
+    ],
+    "projectile_enemy_dhbow_phy": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_dhbow_phy.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "2492170915171272714"
+        }
+      }
+    ],
+    "projectile_enemy_dirctr": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_dirctr.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-1327076516906806618"
+        }
+      }
+    ],
+    "projectile_enemy_dirctr_p2": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_dirctr_p2.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "3485964630278567191"
+        }
+      }
+    ],
+    "projectile_enemy_dirctr_s3": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_dirctr_s3.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-828269228819738183"
+        }
+      }
+    ],
+    "projectile_enemy_dkmage": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_dkmage.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "4268166284446995206"
+        }
+      }
+    ],
+    "projectile_enemy_dselec": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_dselec.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-6362347266391519481"
+        }
+      }
+    ],
+    "projectile_enemy_dthrow": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_dthrow.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-742202360111200822"
+        }
+      }
+    ],
+    "projectile_enemy_dylbhm_yang": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_dylbhm_yang.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-6727277165607562209"
+        }
+      }
+    ],
+    "projectile_enemy_dylbhm_yin": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_dylbhm_yin.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-3103076516517335627"
+        }
+      }
+    ],
+    "projectile_enemy_emppnt": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_emppnt.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-619213101382661339"
+        }
+      }
+    ],
+    "projectile_enemy_flwitch": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_flwitch.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "5828569032679556860"
+        }
+      }
+    ],
+    "projectile_enemy_fthlgj": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_fthlgj.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-6381659819458716566"
+        }
+      }
+    ],
+    "projectile_enemy_fthlgj_2": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_fthlgj_2.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-7638943447964938274"
+        }
+      }
+    ],
+    "projectile_enemy_lazdfd_2": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_lazdfd_2.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-3471223911376644665"
+        }
+      }
+    ],
+    "projectile_enemy_liiprr": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_liiprr.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-1957600963343500017"
+        }
+      }
+    ],
+    "projectile_enemy_liiprr_2": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_liiprr_2.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "8681844540873217922"
+        }
+      }
+    ],
+    "projectile_enemy_ltnhor": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_ltnhor.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "1403860826557450927"
+        }
+      }
+    ],
+    "projectile_enemy_ltnhor_enthu": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_ltnhor_enthu.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "9122922158950462649"
+        }
+      }
+    ],
+    "projectile_enemy_ltniak_1": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_ltniak_1.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "1491493874910585232"
+        }
+      }
+    ],
+    "projectile_enemy_ltniak_2": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_ltniak_2.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-2412365378618647404"
+        }
+      }
+    ],
+    "projectile_enemy_mnctpt": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_mnctpt.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-2813369636208685636"
+        }
+      }
+    ],
+    "projectile_enemy_mnctpt_offset": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_mnctpt_offset.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-1475284159129381210"
+        }
+      }
+    ],
+    "projectile_enemy_mpprme": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_mpprme.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "7109245992019497469"
+        }
+      }
+    ],
+    "projectile_enemy_mtrmgc": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_mtrmgc.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "3373100294170055397"
+        }
+      }
+    ],
+    "projectile_enemy_mtrmgc_headshot": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_mtrmgc_headshot.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "4179254340097897681"
+        }
+      }
+    ],
+    "projectile_enemy_mtrsnp": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_mtrsnp.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-9171693236351711970"
+        }
+      }
+    ],
+    "projectile_enemy_mtrsnp_headshot": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_mtrsnp_headshot.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "8611116870176263542"
+        }
+      }
+    ],
+    "projectile_enemy_mubsbl": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_mubsbl.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-3480417835774953863"
+        }
+      }
+    ],
+    "projectile_enemy_mubsbl_2": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_mubsbl_2.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "8619916490194531493"
+        }
+      }
+    ],
+    "projectile_enemy_nstree": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_nstree.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "7778663270519392190"
+        }
+      }
+    ],
+    "projectile_enemy_pilot": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_pilot.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-1952130125406966465"
+        }
+      }
+    ],
+    "projectile_enemy_sfsui": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_sfsui.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "4052992004290341767"
+        }
+      }
+    ],
+    "projectile_enemy_sgbow": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_sgbow.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-1575154378394059747"
+        }
+      }
+    ],
+    "projectile_enemy_sgbow_vg": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_sgbow_vg.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "2829567310198612905"
+        }
+      }
+    ],
+    "projectile_enemy_sgprst": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_sgprst.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-6840771321571048569"
+        }
+      }
+    ],
+    "projectile_enemy_sgprst_s": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_sgprst_s.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "5456939824480498904"
+        }
+      }
+    ],
+    "projectile_enemy_sgrobh_1": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_sgrobh_1.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-8472718093378289025"
+        }
+      }
+    ],
+    "projectile_enemy_sgrobh_2": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_sgrobh_2.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "3689443401564028478"
+        }
+      }
+    ],
+    "projectile_enemy_skzamy_1": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_skzamy_1.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "4908190303860817530"
+        }
+      }
+    ],
+    "projectile_enemy_skzamy_2": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_skzamy_2.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "5794227106682810953"
+        }
+      }
+    ],
+    "projectile_enemy_skzgds": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_skzgds.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-5773233368980897921"
+        }
+      }
+    ],
+    "projectile_enemy_smsha": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_smsha.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-7986651430536378731"
+        }
+      }
+    ],
+    "projectile_enemy_syboss": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_syboss.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "3098734724393332387"
+        }
+      }
+    ],
+    "projectile_enemy_syevil": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_syevil.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "5085112456512936918"
+        }
+      }
+    ],
+    "projectile_enemy_sygirl": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_sygirl.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-6180884144408676382"
+        }
+      }
+    ],
+    "projectile_enemy_tidmag": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_tidmag.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "3325550312880723953"
+        }
+      }
+    ],
+    "projectile_enemy_vstnky_sowrd": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_vstnky_sowrd.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "2359191381210201158"
+        }
+      }
+    ],
+    "projectile_enemy_vtsnky": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_vtsnky.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-7763306341440950589"
+        }
+      }
+    ],
+    "projectile_enemy_vtsnky_wand": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_vtsnky_wand.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-5083150779472349461"
+        }
+      }
+    ],
+    "projectile_enemy_white_in_reborn": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_white_in_reborn.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "1806265884419247370"
+        }
+      }
+    ],
+    "projectile_enemy_white_p1": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_white_p1.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-2734175615667863583"
+        }
+      }
+    ],
+    "projectile_enemy_white_p1_crazy": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_white_p1_crazy.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "1407560570939850362"
+        }
+      }
+    ],
+    "projectile_enemy_white_p1_stun": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_white_p1_stun.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "6469684721378453365"
+        }
+      }
+    ],
+    "projectile_enemy_white_p2": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_white_p2.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "3966805761556409934"
+        }
+      }
+    ],
+    "projectile_enemy_white_p2_crazy": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_white_p2_crazy.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-268163370314709081"
+        }
+      }
+    ],
+    "projectile_enemy_white_p2_stun": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_white_p2_stun.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "5101012717765820570"
+        }
+      }
+    ],
+    "projectile_enemy_winbal_cold": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_winbal_cold.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-2808692138675688450"
+        }
+      }
+    ],
+    "projectile_enemy_winbal_melt": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_winbal_melt.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "910497298164764719"
+        }
+      }
+    ],
+    "projectile_enemy_winmag_cold": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_winmag_cold.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "2269829837232531918"
+        }
+      }
+    ],
+    "projectile_enemy_winmag_melt": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_winmag_melt.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "3135349376528906126"
+        }
+      }
+    ],
+    "projectile_enemy_xbcas": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_xbcas.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "1992080961037726112"
+        }
+      }
+    ],
+    "projectile_enemy_xbcas_02": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_xbcas_02.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-3269618782522715187"
+        }
+      }
+    ],
+    "projectile_enemy_xbcas_03": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_xbcas_03.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "7073514657142679841"
+        }
+      }
+    ],
+    "projectile_enemy_xbcas_04": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_xbcas_04.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-341314712729491456"
+        }
+      }
+    ],
+    "projectile_enemy_xdmon[m2]": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_xdmon[m2].prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "1131708159639716650"
+        }
+      }
+    ],
+    "projectile_enemy_xi": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_xi.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-8345490701136407500"
+        }
+      }
+    ],
+    "projectile_frstar2": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_frstar2.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "3304102330964669671"
+        }
+      }
+    ],
+    "projectile_gansho": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_gansho.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-6189729424415273613"
+        }
+      }
+    ],
+    "projectile_svrash": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_svrash.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "4503536802331640476"
+        }
+      }
+    ],
+    "projectile_xbdrcar": [
+      {
+        "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_xbdrcar.prefab",
+        "reference": {
+          "m_FileID": 0,
+          "m_PathID": "-8275717765092357997"
+        }
+      }
+    ]
+  },
+  "bundle": "assets/AB/Android/battle/prefabs/[uc]projectiles.ab",
+  "bundleSha256": "550ca691b8d9e96f29706c59beaaacf342c89cdace34b1bd28595b6e36c37234"
+}

@@ -1,0 +1,5309 @@
+{
+  "schemaVersion": 1,
+  "inputs": {
+    "work/external-ready-data-20260914/Tim23333-Arknights_timer/snapshot/Ark_emulator/ark_emulator/data_enemy_prefab_catalog_current.json": "ebe89ba77e15541b52bf117820ecf65838c840fee6e65d397ebc46c601c17ef8",
+    "work/enemy-selectable-attack-ownership.json": "40ba3d0dcf5022d6d09e57ddc1ba6475c91d242baa7e81c83d31115b25c0d275",
+    "work/enemy-mode-channels.json": "724ddcad312bdf6e20f31dd04851254a71fb0d6b20d79b135ab239c345709092",
+    "data/ArknightsGameData/zh_CN/gamedata/levels/enemydata/enemy_database.json": "d3f494055a1ec0d672b5a8c86b291be310a2f7a458c932fd6807c0f8b67fd7a9",
+    "work/garrison-projectile-priority-resource-cache.json": "824491523dda0d3406c00ce05f77cde408c0240554293ec79115bab37f85e739",
+    "work/enemy-ordinary-action-priority-20260918.json": "f1abd7ed7475ba31aa05199fa957b95157d1efee011c261e45bdd875cd7f8e14",
+    "work/enemy-selectable-attack-enums.json": "0b9b6bde556b8fba4142c4830d62ebec2270883a9fba15461982a44244812c62",
+    "work/client-logic/selector-post-filter-enum.json": "eef8cb1ffbb348a15cce1a530e1314dadcaa829f75810050f008b41f3f82106a",
+    "data/ArknightsGameData/zh_CN/gamedata/excel/enemy_handbook_table.json": "0ab2b97d6bc4da6825fed60af634bd72197d2aba56ac5848f944c4016ea8bf43"
+  },
+  "members": [
+    "enemy_9021_acduml",
+    "enemy_9021_acduml_2"
+  ],
+  "enemies": {
+    "enemy_9021_acduml": {
+      "enemyId": "enemy_9021_acduml",
+      "mode": {
+        "modeIndex": 0,
+        "modePathID": -3759591037542756121,
+        "channels": {
+          "combat": {
+            "reference": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "status": "absent"
+          },
+          "attack": {
+            "reference": {
+              "m_FileID": 0,
+              "m_PathID": 3892556375459533031
+            },
+            "cabin": "CAB-f48eb4b910cd4207d9bd81f9890ceed8",
+            "pathID": 3892556375459533031,
+            "fields": {
+              "_selector": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "_metadata": {
+                "namedAsAlias": "",
+                "blackboardPrefix": ""
+              },
+              "_interruptAbilityOnDetach": 1,
+              "_attachPassiveBuffsOnDummy": 1,
+              "_ignoreIfOwnerDead": 0,
+              "_forceAsDmgOrHealAbility": 0,
+              "_category": 4,
+              "_coolDownAbilityIndex": 0,
+              "_clearInternalCooldownWhenFinish": 1,
+              "_updateCooldownBySubAbilityCooldownDuringCasting": 0,
+              "_updateSubAbilitiesWhenExtendUpdated": 0,
+              "_abilityConfigs": [
+                {
+                  "_ability": {
+                    "m_FileID": 0,
+                    "m_PathID": -5801921243878158105
+                  },
+                  "_trigger": {
+                    "m_FileID": 0,
+                    "m_PathID": -4982309943762054937
+                  },
+                  "_alwaysUseTrigger": 0,
+                  "_useInputTarget": 0,
+                  "_checkInputTargetInTrigger": 0
+                },
+                {
+                  "_ability": {
+                    "m_FileID": 0,
+                    "m_PathID": 8060661167551779047
+                  },
+                  "_trigger": {
+                    "m_FileID": 0,
+                    "m_PathID": 5445455493389914343
+                  },
+                  "_alwaysUseTrigger": 0,
+                  "_useInputTarget": 0,
+                  "_checkInputTargetInTrigger": 0
+                }
+              ],
+              "_timeMode": 0,
+              "_updateCooldownAfterSubAbilitiesAttached": 0,
+              "_selectAbilitySequentially": 0,
+              "_useSubAbilityEscapeTime": 0,
+              "_escapeTimeAbilityIndex": 0,
+              "_firstAttackIfAbilityChanged": 0,
+              "_resetSubAbilities": 0,
+              "_resetSubAbilityCooldown": 1,
+              "_useCurAbCheckAtPreCastPhase": 0,
+              "_checkIAlwaysTriggerBySubAbility": 0,
+              "_finishByCbOnlyFromSubAbility": 0
+            },
+            "scriptPathID": 5752393290759919736,
+            "status": "non-damage-or-composite-root"
+          }
+        },
+        "animationAliases": []
+      },
+      "components": {
+        "-3946583061398384409": {
+          "scriptType": "Torappu.Battle.AlwaysTrigger",
+          "fields": {}
+        },
+        "3892556375459533031": {
+          "scriptType": "Torappu.Battle.Abilities.AbilitySelectableGroup",
+          "fields": {
+            "_selector": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "_metadata": {
+              "namedAsAlias": "",
+              "blackboardPrefix": ""
+            },
+            "_interruptAbilityOnDetach": 1,
+            "_attachPassiveBuffsOnDummy": 1,
+            "_ignoreIfOwnerDead": 0,
+            "_forceAsDmgOrHealAbility": 0,
+            "_category": 4,
+            "_coolDownAbilityIndex": 0,
+            "_clearInternalCooldownWhenFinish": 1,
+            "_updateCooldownBySubAbilityCooldownDuringCasting": 0,
+            "_updateSubAbilitiesWhenExtendUpdated": 0,
+            "_abilityConfigs": [
+              {
+                "_ability": {
+                  "m_FileID": 0,
+                  "m_PathID": -5801921243878158105
+                },
+                "_trigger": {
+                  "m_FileID": 0,
+                  "m_PathID": -4982309943762054937
+                },
+                "_alwaysUseTrigger": 0,
+                "_useInputTarget": 0,
+                "_checkInputTargetInTrigger": 0
+              },
+              {
+                "_ability": {
+                  "m_FileID": 0,
+                  "m_PathID": 8060661167551779047
+                },
+                "_trigger": {
+                  "m_FileID": 0,
+                  "m_PathID": 5445455493389914343
+                },
+                "_alwaysUseTrigger": 0,
+                "_useInputTarget": 0,
+                "_checkInputTargetInTrigger": 0
+              }
+            ],
+            "_timeMode": 0,
+            "_updateCooldownAfterSubAbilitiesAttached": 0,
+            "_selectAbilitySequentially": 0,
+            "_useSubAbilityEscapeTime": 0,
+            "_escapeTimeAbilityIndex": 0,
+            "_firstAttackIfAbilityChanged": 0,
+            "_resetSubAbilities": 0,
+            "_resetSubAbilityCooldown": 1,
+            "_useCurAbCheckAtPreCastPhase": 0,
+            "_checkIAlwaysTriggerBySubAbility": 0,
+            "_finishByCbOnlyFromSubAbility": 0
+          }
+        },
+        "-5801921243878158105": {
+          "scriptType": "Torappu.Battle.Abilities.MultiRangedAttack",
+          "fields": {
+            "_selector": {
+              "m_FileID": 0,
+              "m_PathID": -1582108295314763545
+            },
+            "_metadata": {
+              "namedAsAlias": "",
+              "blackboardPrefix": ""
+            },
+            "_interruptAbilityOnDetach": 1,
+            "_attachPassiveBuffsOnDummy": 1,
+            "_ignoreIfOwnerDead": 0,
+            "_forceAsDmgOrHealAbility": 0,
+            "_waitForAttackEvent": 1,
+            "_interuptIfTargetDead": 0,
+            "_resetCdStrategy": 1,
+            "_selectTargetSource": 1,
+            "_selectTargetTiming": 0,
+            "_timeMode": 0,
+            "_alwaysIncludeTarget": 1,
+            "_allowNoTarget": 0,
+            "_animKey": "Attack",
+            "_endAnimKey": "Idle",
+            "_downAnimKey": "",
+            "_downEndAnimKey": "",
+            "_upAnimKey": "",
+            "_upEndAnimKey": "",
+            "_cooldown": 0.0,
+            "_cooldownKey": "duration",
+            "_preDelay": 0.0,
+            "_escapeTime": 0.0,
+            "_faceToTarget": 1,
+            "_faceToDefault": 0,
+            "_faceToFront": 0,
+            "_faceToFirstCastTarget": 0,
+            "_checkFaceToFirstCastTargetDownAttack": 0,
+            "_forceFaceToDirection": 0,
+            "_activeBuffs": [],
+            "_maxAnimScale": 1.0,
+            "_onlyPlayEndAnimWhenIsLastAbility": 0,
+            "_ignorePalsyInterrupt": 0,
+            "_affectedBySlowDown": 1,
+            "_atkScale": 1.0,
+            "_atkScaleKey": "atk_scale",
+            "_attackType": 1,
+            "_elementDamageType": 0,
+            "_epDamageRatio": 0.0,
+            "_useDynamicAttackType": 0,
+            "_deliveryParaWhenReplaceActionNode": 0,
+            "_projectileKey": "projectile_enemy_acduml",
+            "_mountPointType": 2,
+            "_useMountGroup": 0,
+            "_mountGroup": {
+              "loopType": 0,
+              "mountPoints": []
+            },
+            "_damageType": 2,
+            "_waitForProjectileInvalid": 0,
+            "_notClearProjectileWhenCastEnd": 0,
+            "_fireAttackFinishWhenProjectileInvalid": 0,
+            "_minPostDelayWhenProjectileInvalid": 0.0,
+            "_waitForAnimEndWhenProjectileInvalid": 0,
+            "_projectileDestination": 0,
+            "_extraDamageType": 0,
+            "_emitToInputPosWhenTargetIsInvalid": 0,
+            "_emitToInputRootTileWhenTargetIsInvalid": 0,
+            "_useCachedAtkOnly": 0,
+            "_transferSource": 0,
+            "_extraProjectileKeys": [],
+            "_fireCreateProjectileEvent": 0,
+            "_additionalTimes": 2,
+            "_triggerDelta": 0.25,
+            "_waitAttackEventForAllAttacks": 0,
+            "_additionalProjectile": "projectile_enemy_acduml",
+            "_useMultiAdditionalProjectiles": 0,
+            "_additionalProjectiles": [],
+            "_enableMountPointGroup": 0,
+            "_mountPointGroup": [],
+            "_onlyFeedActionsToFirstOne": 0,
+            "_onlyTrigAudioSignalForFirstOne": 0,
+            "_limitToOneTargetAfterFirstRound": 0,
+            "_splitDamage": 0,
+            "_addSpellCntToSignalId": 0,
+            "_onlyFeedActiveBuffToLastOne": 0,
+            "_onlyFeedActiveBuffToFirstOne": 0,
+            "_refreshTimesOnCastStart": 0,
+            "_castToFirstRoundTargetLocationsAtProjectileBirth": 0,
+            "_hookTheLastProjectile": ""
+          }
+        },
+        "-7940311890062634777": {
+          "scriptType": "Torappu.Battle.Abilities.UberEffectEmitter",
+          "fields": {
+            "_hitEffects": [],
+            "_castEffects": [
+              {
+                "_directionType": 0,
+                "_effects": [
+                  "enemy_acduml_attack_start"
+                ],
+                "_oneshot": 1,
+                "_startEvent": 2,
+                "_endEvent": 3,
+                "_onlyOnce": 0,
+                "_useFourDirectionalFace": 0,
+                "_delayIfFirstAttack": 0.0,
+                "_hookEffectAfterFirstAttack": ""
+              }
+            ],
+            "_attachEffects": [],
+            "_inputTargetEffects": [],
+            "_castTargetEffects": [],
+            "_convertCastEndToAttachFinish": 0,
+            "_recalculatePlaybackSpeed": 0,
+            "_preDelayFactor": 0.0
+          }
+        },
+        "3805462630085660903": {
+          "scriptType": "Torappu.Battle.Abilities.MultiRangedAttack",
+          "fields": {
+            "_selector": {
+              "m_FileID": 0,
+              "m_PathID": 3598897560143892711
+            },
+            "_metadata": {
+              "namedAsAlias": "",
+              "blackboardPrefix": ""
+            },
+            "_interruptAbilityOnDetach": 1,
+            "_attachPassiveBuffsOnDummy": 1,
+            "_ignoreIfOwnerDead": 0,
+            "_forceAsDmgOrHealAbility": 0,
+            "_waitForAttackEvent": 1,
+            "_interuptIfTargetDead": 0,
+            "_resetCdStrategy": 1,
+            "_selectTargetSource": 1,
+            "_selectTargetTiming": 0,
+            "_timeMode": 0,
+            "_alwaysIncludeTarget": 1,
+            "_allowNoTarget": 0,
+            "_animKey": "Attack",
+            "_endAnimKey": "Idle",
+            "_downAnimKey": "",
+            "_downEndAnimKey": "",
+            "_upAnimKey": "",
+            "_upEndAnimKey": "",
+            "_cooldown": 0.0,
+            "_cooldownKey": "duration",
+            "_preDelay": 0.0,
+            "_escapeTime": 0.0,
+            "_faceToTarget": 1,
+            "_faceToDefault": 0,
+            "_faceToFront": 0,
+            "_faceToFirstCastTarget": 0,
+            "_checkFaceToFirstCastTargetDownAttack": 0,
+            "_forceFaceToDirection": 0,
+            "_activeBuffs": [],
+            "_maxAnimScale": 1.0,
+            "_onlyPlayEndAnimWhenIsLastAbility": 0,
+            "_ignorePalsyInterrupt": 0,
+            "_affectedBySlowDown": 0,
+            "_atkScale": 1.0,
+            "_atkScaleKey": "atk_scale",
+            "_attackType": 1,
+            "_elementDamageType": 0,
+            "_epDamageRatio": 0.0,
+            "_useDynamicAttackType": 0,
+            "_deliveryParaWhenReplaceActionNode": 0,
+            "_projectileKey": "projectile_enemy_acduml",
+            "_mountPointType": 2,
+            "_useMountGroup": 0,
+            "_mountGroup": {
+              "loopType": 0,
+              "mountPoints": []
+            },
+            "_damageType": 1,
+            "_waitForProjectileInvalid": 0,
+            "_notClearProjectileWhenCastEnd": 0,
+            "_fireAttackFinishWhenProjectileInvalid": 0,
+            "_minPostDelayWhenProjectileInvalid": 0.0,
+            "_waitForAnimEndWhenProjectileInvalid": 0,
+            "_projectileDestination": 0,
+            "_extraDamageType": 0,
+            "_emitToInputPosWhenTargetIsInvalid": 0,
+            "_emitToInputRootTileWhenTargetIsInvalid": 0,
+            "_useCachedAtkOnly": 0,
+            "_transferSource": 0,
+            "_extraProjectileKeys": [],
+            "_fireCreateProjectileEvent": 0,
+            "_additionalTimes": 2,
+            "_triggerDelta": 0.25,
+            "_waitAttackEventForAllAttacks": 0,
+            "_additionalProjectile": "projectile_enemy_acduml",
+            "_useMultiAdditionalProjectiles": 0,
+            "_additionalProjectiles": [],
+            "_enableMountPointGroup": 0,
+            "_mountPointGroup": [],
+            "_onlyFeedActionsToFirstOne": 0,
+            "_onlyTrigAudioSignalForFirstOne": 0,
+            "_limitToOneTargetAfterFirstRound": 0,
+            "_splitDamage": 0,
+            "_addSpellCntToSignalId": 0,
+            "_onlyFeedActiveBuffToLastOne": 0,
+            "_onlyFeedActiveBuffToFirstOne": 0,
+            "_refreshTimesOnCastStart": 0,
+            "_castToFirstRoundTargetLocationsAtProjectileBirth": 0,
+            "_hookTheLastProjectile": ""
+          }
+        },
+        "-1066208372163243801": {
+          "scriptType": "Torappu.Battle.Abilities.UberEffectEmitter",
+          "fields": {
+            "_hitEffects": [],
+            "_castEffects": [
+              {
+                "_directionType": 0,
+                "_effects": [
+                  "enemy_acduml_skill_start"
+                ],
+                "_oneshot": 1,
+                "_startEvent": 2,
+                "_endEvent": 3,
+                "_onlyOnce": 0,
+                "_useFourDirectionalFace": 0,
+                "_delayIfFirstAttack": 0.0,
+                "_hookEffectAfterFirstAttack": ""
+              }
+            ],
+            "_attachEffects": [],
+            "_inputTargetEffects": [],
+            "_castTargetEffects": [
+              {
+                "_directionType": 0,
+                "_effects": [
+                  "enemy_acduml_lockon"
+                ],
+                "_oneshot": 0,
+                "_startEvent": 2,
+                "_endEvent": 3,
+                "_onlyOnce": 0,
+                "_useFourDirectionalFace": 0,
+                "_delayIfFirstAttack": 0.0,
+                "_hookEffectAfterFirstAttack": ""
+              }
+            ],
+            "_convertCastEndToAttachFinish": 0,
+            "_recalculatePlaybackSpeed": 0,
+            "_preDelayFactor": 0.0
+          }
+        },
+        "8060661167551779047": {
+          "scriptType": "Torappu.Battle.Abilities.MultiRangedAttack",
+          "fields": {
+            "_selector": {
+              "m_FileID": 0,
+              "m_PathID": 3598897560143892711
+            },
+            "_metadata": {
+              "namedAsAlias": "",
+              "blackboardPrefix": ""
+            },
+            "_interruptAbilityOnDetach": 1,
+            "_attachPassiveBuffsOnDummy": 1,
+            "_ignoreIfOwnerDead": 0,
+            "_forceAsDmgOrHealAbility": 0,
+            "_waitForAttackEvent": 1,
+            "_interuptIfTargetDead": 0,
+            "_resetCdStrategy": 1,
+            "_selectTargetSource": 1,
+            "_selectTargetTiming": 0,
+            "_timeMode": 0,
+            "_alwaysIncludeTarget": 1,
+            "_allowNoTarget": 0,
+            "_animKey": "Attack",
+            "_endAnimKey": "Idle",
+            "_downAnimKey": "",
+            "_downEndAnimKey": "",
+            "_upAnimKey": "",
+            "_upEndAnimKey": "",
+            "_cooldown": 0.0,
+            "_cooldownKey": "duration",
+            "_preDelay": 0.0,
+            "_escapeTime": 0.0,
+            "_faceToTarget": 1,
+            "_faceToDefault": 0,
+            "_faceToFront": 0,
+            "_faceToFirstCastTarget": 0,
+            "_checkFaceToFirstCastTargetDownAttack": 0,
+            "_forceFaceToDirection": 0,
+            "_activeBuffs": [],
+            "_maxAnimScale": 1.0,
+            "_onlyPlayEndAnimWhenIsLastAbility": 0,
+            "_ignorePalsyInterrupt": 0,
+            "_affectedBySlowDown": 1,
+            "_atkScale": 1.0,
+            "_atkScaleKey": "atk_scale",
+            "_attackType": 1,
+            "_elementDamageType": 0,
+            "_epDamageRatio": 0.0,
+            "_useDynamicAttackType": 0,
+            "_deliveryParaWhenReplaceActionNode": 0,
+            "_projectileKey": "projectile_enemy_acduml",
+            "_mountPointType": 2,
+            "_useMountGroup": 0,
+            "_mountGroup": {
+              "loopType": 0,
+              "mountPoints": []
+            },
+            "_damageType": 2,
+            "_waitForProjectileInvalid": 0,
+            "_notClearProjectileWhenCastEnd": 0,
+            "_fireAttackFinishWhenProjectileInvalid": 0,
+            "_minPostDelayWhenProjectileInvalid": 0.0,
+            "_waitForAnimEndWhenProjectileInvalid": 0,
+            "_projectileDestination": 0,
+            "_extraDamageType": 0,
+            "_emitToInputPosWhenTargetIsInvalid": 0,
+            "_emitToInputRootTileWhenTargetIsInvalid": 0,
+            "_useCachedAtkOnly": 0,
+            "_transferSource": 0,
+            "_extraProjectileKeys": [],
+            "_fireCreateProjectileEvent": 0,
+            "_additionalTimes": 2,
+            "_triggerDelta": 0.25,
+            "_waitAttackEventForAllAttacks": 0,
+            "_additionalProjectile": "projectile_enemy_acduml",
+            "_useMultiAdditionalProjectiles": 0,
+            "_additionalProjectiles": [],
+            "_enableMountPointGroup": 0,
+            "_mountPointGroup": [],
+            "_onlyFeedActionsToFirstOne": 0,
+            "_onlyTrigAudioSignalForFirstOne": 0,
+            "_limitToOneTargetAfterFirstRound": 0,
+            "_splitDamage": 0,
+            "_addSpellCntToSignalId": 0,
+            "_onlyFeedActiveBuffToLastOne": 0,
+            "_onlyFeedActiveBuffToFirstOne": 0,
+            "_refreshTimesOnCastStart": 0,
+            "_castToFirstRoundTargetLocationsAtProjectileBirth": 0,
+            "_hookTheLastProjectile": ""
+          }
+        },
+        "-7590849794935582489": {
+          "scriptType": "Torappu.Battle.GlobalRange",
+          "fields": {}
+        },
+        "3598897560143892711": {
+          "scriptType": "Torappu.Battle.AdvancedSelector",
+          "fields": {
+            "_targetSide": 2,
+            "_targetMotion": 3,
+            "_targetCategory": 1,
+            "_postFilter": 4,
+            "_ignoreTargetFree": 0,
+            "_onlyIgnoreSomeOfTargetFreeCase": 0,
+            "_abnormalFlag": 42,
+            "_abnormalCombo": 2,
+            "_ignoreAllyTargetFree": 0,
+            "_ignoreHealFree": 0,
+            "_ignoreMotionMode": 0,
+            "_forceIgnoreCamouflage": 0,
+            "_needProfessionMask": 0,
+            "_professionMask": 0,
+            "_excludeSomeAbnormalFlags": 0,
+            "_excludeAbnormalFlag": 46,
+            "_limitTargetNum": 1,
+            "_maxTargetKey": "max_target",
+            "_maxNum": 1,
+            "_excludeOwner": 0,
+            "_sortByTauntAtLast": 0,
+            "_ignoreHitRange": 0,
+            "_checkUnitType": 0,
+            "_unitTypeMask": 0,
+            "_abilityInputTargetAsSortSource": 0
+          }
+        },
+        "5445455493389914343": {
+          "scriptType": "Torappu.Battle.SelectorTrigger",
+          "fields": {
+            "_keepTarget": 0,
+            "_minTargetNum": 1,
+            "_overrideSearchTargetTick": -1
+          }
+        },
+        "-1582108295314763545": {
+          "scriptType": "Torappu.Battle.AdvancedSelectorWithEnemyOptions",
+          "fields": {
+            "_targetSide": 7,
+            "_targetMotion": 3,
+            "_targetCategory": 1,
+            "_postFilter": 4,
+            "_ignoreTargetFree": 0,
+            "_onlyIgnoreSomeOfTargetFreeCase": 0,
+            "_abnormalFlag": 42,
+            "_abnormalCombo": 2,
+            "_ignoreAllyTargetFree": 0,
+            "_ignoreHealFree": 0,
+            "_ignoreMotionMode": 0,
+            "_forceIgnoreCamouflage": 0,
+            "_needProfessionMask": 0,
+            "_professionMask": 0,
+            "_excludeSomeAbnormalFlags": 0,
+            "_excludeAbnormalFlag": 46,
+            "_limitTargetNum": 1,
+            "_maxTargetKey": "max_target",
+            "_maxNum": 1,
+            "_excludeOwner": 0,
+            "_sortByTauntAtLast": 0,
+            "_ignoreHitRange": 0,
+            "_checkUnitType": 0,
+            "_unitTypeMask": 0,
+            "_abilityInputTargetAsSortSource": 0,
+            "_enemyLevelMask": 7,
+            "_motionMask": 3,
+            "_allowNoneApplyWay": 1,
+            "_applyWay": 3,
+            "_filterByEnemiesKey": 1,
+            "_filterEnemyKeyMode": 0,
+            "_enemyKey": "enemy_9023_acdums",
+            "_filterByEnemiesMode": 1,
+            "_filterByEnemiesTag": 0,
+            "_enemyMode": 1,
+            "_enemyTag": "",
+            "_excludeDisappeared": 0,
+            "_excludeInCombat": 0,
+            "_filterBuff": 0,
+            "_buffKeyExcluded": 0,
+            "_buffKey": "",
+            "_checkReachableToOwner": 0,
+            "_avoidObstacleLike": 0,
+            "_checkOwnerCanBlockEnemy": 0,
+            "_filterUnbalance": 0,
+            "_filterNotInUnbalance": 0,
+            "_filterAbnormalImmune": 0,
+            "_abnormalFlagImmune": 42,
+            "_filterEnemyMassLevel": 0,
+            "_massCompareType": 0,
+            "_massLevel": 0
+          }
+        },
+        "-4982309943762054937": {
+          "scriptType": "Torappu.Battle.SelectorTrigger",
+          "fields": {
+            "_keepTarget": 0,
+            "_minTargetNum": 1,
+            "_overrideSearchTargetTick": -1
+          }
+        },
+        "2648386721880838375": {
+          "scriptType": "Torappu.Battle.GlobalRange",
+          "fields": {}
+        }
+      },
+      "ownership": {
+        "bundle": "assets/AB/Android/battle/enm_pfb_28.ab",
+        "bundleSha256": "8b8fbc4da8e0064177aaed3884db60b6595842f3eabe6f5a1334ed5e8cede4ea",
+        "rootComponentId": "3892556375459533031",
+        "rootGameObjectId": "-4853820110471851801",
+        "nodes": {
+          "-4853820110471851801": {
+            "pathId": "-4853820110471851801",
+            "unityType": "GameObject",
+            "fields": {
+              "m_Component": [
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "2342093542524752103"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "3892556375459533031"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-3946583061398384409"
+                  }
+                }
+              ],
+              "m_Layer": 12,
+              "m_Name": "Attack",
+              "m_Tag": 0,
+              "m_IsActive": true
+            }
+          },
+          "-3946583061398384409": {
+            "pathId": "-3946583061398384409",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-4853820110471851801"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-2995189732062982133"
+              },
+              "m_Name": ""
+            },
+            "fieldShape": "98e18c5d46fd8efc",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.AlwaysTrigger",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "-2995189732062982133",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "2342093542524752103": {
+            "pathId": "2342093542524752103",
+            "unityType": "Transform",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-4853820110471851801"
+              },
+              "m_LocalRotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -3.102349310779573e-08,
+                "w": 1.0
+              },
+              "m_LocalPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "m_LocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              },
+              "m_Children": [
+                {
+                  "m_FileID": 0,
+                  "m_PathID": "-1327712427114524441"
+                },
+                {
+                  "m_FileID": 0,
+                  "m_PathID": "-2063318037419290393"
+                }
+              ],
+              "m_Father": {
+                "m_FileID": 0,
+                "m_PathID": "-1153131827173879577"
+              }
+            }
+          },
+          "3892556375459533031": {
+            "pathId": "3892556375459533031",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-4853820110471851801"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "5752393290759919736"
+              },
+              "m_Name": "",
+              "_selector": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "_metadata": {
+                "namedAsAlias": "",
+                "blackboardPrefix": ""
+              },
+              "_interruptAbilityOnDetach": 1,
+              "_attachPassiveBuffsOnDummy": 1,
+              "_ignoreIfOwnerDead": 0,
+              "_forceAsDmgOrHealAbility": 0,
+              "_category": 4,
+              "_coolDownAbilityIndex": 0,
+              "_clearInternalCooldownWhenFinish": 1,
+              "_updateCooldownBySubAbilityCooldownDuringCasting": 0,
+              "_updateSubAbilitiesWhenExtendUpdated": 0,
+              "_abilityConfigs": [
+                {
+                  "_ability": {
+                    "m_FileID": 0,
+                    "m_PathID": "-5801921243878158105"
+                  },
+                  "_trigger": {
+                    "m_FileID": 0,
+                    "m_PathID": "-4982309943762054937"
+                  },
+                  "_alwaysUseTrigger": 0,
+                  "_useInputTarget": 0
+                },
+                {
+                  "_ability": {
+                    "m_FileID": 0,
+                    "m_PathID": "8060661167551779047"
+                  },
+                  "_trigger": {
+                    "m_FileID": 0,
+                    "m_PathID": "5445455493389914343"
+                  },
+                  "_alwaysUseTrigger": 0,
+                  "_useInputTarget": 0
+                }
+              ],
+              "_timeMode": 0,
+              "_selectAbilitySequentially": 0,
+              "_useSubAbilityEscapeTime": 0,
+              "_escapeTimeAbilityIndex": 0,
+              "_firstAttackIfAbilityChanged": 0,
+              "_resetSubAbilities": 0,
+              "_resetSubAbilityCooldown": 1,
+              "_useCurAbCheckAtPreCastPhase": 0
+            },
+            "fieldShape": "1a8bba0dbf6bf823",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.Abilities.AbilitySelectableGroup",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "5752393290759919736",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "-1327712427114524441": {
+            "pathId": "-1327712427114524441",
+            "unityType": "Transform",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-8847474076495277849"
+              },
+              "m_LocalRotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": 1.0
+              },
+              "m_LocalPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "m_LocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              },
+              "m_Children": [
+                {
+                  "m_FileID": 0,
+                  "m_PathID": "4941866753248432359"
+                }
+              ],
+              "m_Father": {
+                "m_FileID": 0,
+                "m_PathID": "2342093542524752103"
+              }
+            }
+          },
+          "-2063318037419290393": {
+            "pathId": "-2063318037419290393",
+            "unityType": "Transform",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-733320843583909657"
+              },
+              "m_LocalRotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": 1.0
+              },
+              "m_LocalPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "m_LocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              },
+              "m_Children": [
+                {
+                  "m_FileID": 0,
+                  "m_PathID": "7063325787945603303"
+                }
+              ],
+              "m_Father": {
+                "m_FileID": 0,
+                "m_PathID": "2342093542524752103"
+              }
+            }
+          },
+          "-733320843583909657": {
+            "pathId": "-733320843583909657",
+            "unityType": "GameObject",
+            "fields": {
+              "m_Component": [
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-2063318037419290393"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "8060661167551779047"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-1066208372163243801"
+                  }
+                }
+              ],
+              "m_Layer": 0,
+              "m_Name": "AbilityName",
+              "m_Tag": 0,
+              "m_IsActive": true
+            }
+          },
+          "-8847474076495277849": {
+            "pathId": "-8847474076495277849",
+            "unityType": "GameObject",
+            "fields": {
+              "m_Component": [
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-1327712427114524441"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-5801921243878158105"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-7940311890062634777"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "3805462630085660903"
+                  }
+                }
+              ],
+              "m_Layer": 0,
+              "m_Name": "AttackEnemy",
+              "m_Tag": 0,
+              "m_IsActive": true
+            }
+          },
+          "-5801921243878158105": {
+            "pathId": "-5801921243878158105",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-8847474076495277849"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-3698736381282439861"
+              },
+              "m_Name": "",
+              "_selector": {
+                "m_FileID": 0,
+                "m_PathID": "-1582108295314763545"
+              },
+              "_metadata": {
+                "namedAsAlias": "",
+                "blackboardPrefix": ""
+              },
+              "_interruptAbilityOnDetach": 1,
+              "_attachPassiveBuffsOnDummy": 1,
+              "_ignoreIfOwnerDead": 0,
+              "_forceAsDmgOrHealAbility": 0,
+              "_waitForAttackEvent": 1,
+              "_interuptIfTargetDead": 0,
+              "_resetCdStrategy": 1,
+              "_selectTargetSource": 1,
+              "_selectTargetTiming": 0,
+              "_timeMode": 0,
+              "_alwaysIncludeTarget": 1,
+              "_allowNoTarget": 0,
+              "_animKey": "Attack",
+              "_endAnimKey": "Idle",
+              "_downAnimKey": "",
+              "_downEndAnimKey": "",
+              "_upAnimKey": "",
+              "_upEndAnimKey": "",
+              "_cooldown": 0.0,
+              "_cooldownKey": "duration",
+              "_preDelay": 0.0,
+              "_escapeTime": 0.0,
+              "_faceToTarget": 1,
+              "_faceToDefault": 0,
+              "_faceToFront": 0,
+              "_faceToFirstCastTarget": 0,
+              "_forceFaceToDirection": 0,
+              "_activeBuffs": [],
+              "_maxAnimScale": 1.0,
+              "_onlyPlayEndAnimWhenIsLastAbility": 0,
+              "_ignorePalsyInterrupt": 0,
+              "_atkScale": 1.0,
+              "_atkScaleKey": "atk_scale",
+              "_attackType": 1,
+              "_elementDamageType": 0,
+              "_epDamageRatio": 0.0,
+              "_useDynamicAttackType": 0,
+              "_deliveryParaWhenReplaceActionNode": 0,
+              "_projectileKey": "projectile_enemy_acduml",
+              "_mountPointType": 2,
+              "_useMountGroup": 0,
+              "_mountGroup": {
+                "loopType": 0,
+                "mountPoints": []
+              },
+              "_damageType": 2,
+              "_waitForProjectileInvalid": 0,
+              "_notClearProjectileWhenCastEnd": 0,
+              "_fireAttackFinishWhenProjectileInvalid": 0,
+              "_minPostDelayWhenProjectileInvalid": 0.0,
+              "_waitForAnimEndWhenProjectileInvalid": 0,
+              "_projectileDestination": 0,
+              "_extraDamageType": 0,
+              "_emitToInputPosWhenTargetIsInvalid": 0,
+              "_emitToInputRootTileWhenTargetIsInvalid": 0,
+              "_useCachedAtkOnly": 0,
+              "_transferSource": 0,
+              "_extraProjectileKeys": [],
+              "_fireCreateProjectileEvent": 0,
+              "_additionalTimes": 2,
+              "_triggerDelta": 0.25,
+              "_waitAttackEventForAllAttacks": 0,
+              "_additionalProjectile": "projectile_enemy_acduml",
+              "_useMultiAdditionalProjectiles": 0,
+              "_additionalProjectiles": [],
+              "_enableMountPointGroup": 0,
+              "_mountPointGroup": [],
+              "_onlyFeedActionsToFirstOne": 0,
+              "_onlyTrigAudioSignalForFirstOne": 0,
+              "_limitToOneTargetAfterFirstRound": 0,
+              "_splitDamage": 0,
+              "_addSpellCntToSignalId": 0,
+              "_onlyFeedActiveBuffToLastOne": 0,
+              "_onlyFeedActiveBuffToFirstOne": 0,
+              "_refreshTimesOnCastStart": 0,
+              "_castToFirstRoundTargetLocationsAtProjectileBirth": 0,
+              "_hookTheLastProjectile": ""
+            },
+            "fieldShape": "64d272481e921e57",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.Abilities.MultiRangedAttack",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "-3698736381282439861",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "-7940311890062634777": {
+            "pathId": "-7940311890062634777",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-8847474076495277849"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-550693537895634864"
+              },
+              "m_Name": "",
+              "_hitEffects": [],
+              "_castEffects": [
+                {
+                  "_directionType": 0,
+                  "_effects": [
+                    "enemy_acduml_attack_start"
+                  ],
+                  "_oneshot": 1,
+                  "_startEvent": 2,
+                  "_endEvent": 3,
+                  "_onlyOnce": 0,
+                  "_useFourDirectionalFace": 0,
+                  "_delayIfFirstAttack": 0.0,
+                  "_hookEffectAfterFirstAttack": ""
+                }
+              ],
+              "_attachEffects": [],
+              "_inputTargetEffects": [],
+              "_castTargetEffects": [],
+              "_convertCastEndToAttachFinish": 0,
+              "_recalculatePlaybackSpeed": 0,
+              "_preDelayFactor": 0.0
+            },
+            "fieldShape": "bddc643f1659a6a3",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.Abilities.UberEffectEmitter",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "-550693537895634864",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "3805462630085660903": {
+            "pathId": "3805462630085660903",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-8847474076495277849"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-3698736381282439861"
+              },
+              "m_Name": "",
+              "_selector": {
+                "m_FileID": 0,
+                "m_PathID": "3598897560143892711"
+              },
+              "_metadata": {
+                "namedAsAlias": "",
+                "blackboardPrefix": ""
+              },
+              "_interruptAbilityOnDetach": 1,
+              "_attachPassiveBuffsOnDummy": 1,
+              "_ignoreIfOwnerDead": 0,
+              "_forceAsDmgOrHealAbility": 0,
+              "_waitForAttackEvent": 1,
+              "_interuptIfTargetDead": 0,
+              "_resetCdStrategy": 1,
+              "_selectTargetSource": 1,
+              "_selectTargetTiming": 0,
+              "_timeMode": 0,
+              "_alwaysIncludeTarget": 1,
+              "_allowNoTarget": 0,
+              "_animKey": "Attack",
+              "_endAnimKey": "Idle",
+              "_downAnimKey": "",
+              "_downEndAnimKey": "",
+              "_upAnimKey": "",
+              "_upEndAnimKey": "",
+              "_cooldown": 0.0,
+              "_cooldownKey": "duration",
+              "_preDelay": 0.0,
+              "_escapeTime": 0.0,
+              "_faceToTarget": 1,
+              "_faceToDefault": 0,
+              "_faceToFront": 0,
+              "_faceToFirstCastTarget": 0,
+              "_forceFaceToDirection": 0,
+              "_activeBuffs": [],
+              "_maxAnimScale": 1.0,
+              "_onlyPlayEndAnimWhenIsLastAbility": 0,
+              "_ignorePalsyInterrupt": 0,
+              "_atkScale": 1.0,
+              "_atkScaleKey": "atk_scale",
+              "_attackType": 1,
+              "_elementDamageType": 0,
+              "_epDamageRatio": 0.0,
+              "_useDynamicAttackType": 0,
+              "_deliveryParaWhenReplaceActionNode": 0,
+              "_projectileKey": "projectile_enemy_acduml",
+              "_mountPointType": 2,
+              "_useMountGroup": 0,
+              "_mountGroup": {
+                "loopType": 0,
+                "mountPoints": []
+              },
+              "_damageType": 1,
+              "_waitForProjectileInvalid": 0,
+              "_notClearProjectileWhenCastEnd": 0,
+              "_fireAttackFinishWhenProjectileInvalid": 0,
+              "_minPostDelayWhenProjectileInvalid": 0.0,
+              "_waitForAnimEndWhenProjectileInvalid": 0,
+              "_projectileDestination": 0,
+              "_extraDamageType": 0,
+              "_emitToInputPosWhenTargetIsInvalid": 0,
+              "_emitToInputRootTileWhenTargetIsInvalid": 0,
+              "_useCachedAtkOnly": 0,
+              "_transferSource": 0,
+              "_extraProjectileKeys": [],
+              "_fireCreateProjectileEvent": 0,
+              "_additionalTimes": 2,
+              "_triggerDelta": 0.25,
+              "_waitAttackEventForAllAttacks": 0,
+              "_additionalProjectile": "projectile_enemy_acduml",
+              "_useMultiAdditionalProjectiles": 0,
+              "_additionalProjectiles": [],
+              "_enableMountPointGroup": 0,
+              "_mountPointGroup": [],
+              "_onlyFeedActionsToFirstOne": 0,
+              "_onlyTrigAudioSignalForFirstOne": 0,
+              "_limitToOneTargetAfterFirstRound": 0,
+              "_splitDamage": 0,
+              "_addSpellCntToSignalId": 0,
+              "_onlyFeedActiveBuffToLastOne": 0,
+              "_onlyFeedActiveBuffToFirstOne": 0,
+              "_refreshTimesOnCastStart": 0,
+              "_castToFirstRoundTargetLocationsAtProjectileBirth": 0,
+              "_hookTheLastProjectile": ""
+            },
+            "fieldShape": "64d272481e921e57",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.Abilities.MultiRangedAttack",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "-3698736381282439861",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "-1066208372163243801": {
+            "pathId": "-1066208372163243801",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-733320843583909657"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-550693537895634864"
+              },
+              "m_Name": "",
+              "_hitEffects": [],
+              "_castEffects": [
+                {
+                  "_directionType": 0,
+                  "_effects": [
+                    "enemy_acduml_skill_start"
+                  ],
+                  "_oneshot": 1,
+                  "_startEvent": 2,
+                  "_endEvent": 3,
+                  "_onlyOnce": 0,
+                  "_useFourDirectionalFace": 0,
+                  "_delayIfFirstAttack": 0.0,
+                  "_hookEffectAfterFirstAttack": ""
+                }
+              ],
+              "_attachEffects": [],
+              "_inputTargetEffects": [],
+              "_castTargetEffects": [
+                {
+                  "_directionType": 0,
+                  "_effects": [
+                    "enemy_acduml_lockon"
+                  ],
+                  "_oneshot": 0,
+                  "_startEvent": 2,
+                  "_endEvent": 3,
+                  "_onlyOnce": 0,
+                  "_useFourDirectionalFace": 0,
+                  "_delayIfFirstAttack": 0.0,
+                  "_hookEffectAfterFirstAttack": ""
+                }
+              ],
+              "_convertCastEndToAttachFinish": 0,
+              "_recalculatePlaybackSpeed": 0,
+              "_preDelayFactor": 0.0
+            },
+            "fieldShape": "bddc643f1659a6a3",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.Abilities.UberEffectEmitter",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "-550693537895634864",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "8060661167551779047": {
+            "pathId": "8060661167551779047",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-733320843583909657"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-3698736381282439861"
+              },
+              "m_Name": "",
+              "_selector": {
+                "m_FileID": 0,
+                "m_PathID": "3598897560143892711"
+              },
+              "_metadata": {
+                "namedAsAlias": "",
+                "blackboardPrefix": ""
+              },
+              "_interruptAbilityOnDetach": 1,
+              "_attachPassiveBuffsOnDummy": 1,
+              "_ignoreIfOwnerDead": 0,
+              "_forceAsDmgOrHealAbility": 0,
+              "_waitForAttackEvent": 1,
+              "_interuptIfTargetDead": 0,
+              "_resetCdStrategy": 1,
+              "_selectTargetSource": 1,
+              "_selectTargetTiming": 0,
+              "_timeMode": 0,
+              "_alwaysIncludeTarget": 1,
+              "_allowNoTarget": 0,
+              "_animKey": "Attack",
+              "_endAnimKey": "Idle",
+              "_downAnimKey": "",
+              "_downEndAnimKey": "",
+              "_upAnimKey": "",
+              "_upEndAnimKey": "",
+              "_cooldown": 0.0,
+              "_cooldownKey": "duration",
+              "_preDelay": 0.0,
+              "_escapeTime": 0.0,
+              "_faceToTarget": 1,
+              "_faceToDefault": 0,
+              "_faceToFront": 0,
+              "_faceToFirstCastTarget": 0,
+              "_forceFaceToDirection": 0,
+              "_activeBuffs": [],
+              "_maxAnimScale": 1.0,
+              "_onlyPlayEndAnimWhenIsLastAbility": 0,
+              "_ignorePalsyInterrupt": 0,
+              "_atkScale": 1.0,
+              "_atkScaleKey": "atk_scale",
+              "_attackType": 1,
+              "_elementDamageType": 0,
+              "_epDamageRatio": 0.0,
+              "_useDynamicAttackType": 0,
+              "_deliveryParaWhenReplaceActionNode": 0,
+              "_projectileKey": "projectile_enemy_acduml",
+              "_mountPointType": 2,
+              "_useMountGroup": 0,
+              "_mountGroup": {
+                "loopType": 0,
+                "mountPoints": []
+              },
+              "_damageType": 2,
+              "_waitForProjectileInvalid": 0,
+              "_notClearProjectileWhenCastEnd": 0,
+              "_fireAttackFinishWhenProjectileInvalid": 0,
+              "_minPostDelayWhenProjectileInvalid": 0.0,
+              "_waitForAnimEndWhenProjectileInvalid": 0,
+              "_projectileDestination": 0,
+              "_extraDamageType": 0,
+              "_emitToInputPosWhenTargetIsInvalid": 0,
+              "_emitToInputRootTileWhenTargetIsInvalid": 0,
+              "_useCachedAtkOnly": 0,
+              "_transferSource": 0,
+              "_extraProjectileKeys": [],
+              "_fireCreateProjectileEvent": 0,
+              "_additionalTimes": 2,
+              "_triggerDelta": 0.25,
+              "_waitAttackEventForAllAttacks": 0,
+              "_additionalProjectile": "projectile_enemy_acduml",
+              "_useMultiAdditionalProjectiles": 0,
+              "_additionalProjectiles": [],
+              "_enableMountPointGroup": 0,
+              "_mountPointGroup": [],
+              "_onlyFeedActionsToFirstOne": 0,
+              "_onlyTrigAudioSignalForFirstOne": 0,
+              "_limitToOneTargetAfterFirstRound": 0,
+              "_splitDamage": 0,
+              "_addSpellCntToSignalId": 0,
+              "_onlyFeedActiveBuffToLastOne": 0,
+              "_onlyFeedActiveBuffToFirstOne": 0,
+              "_refreshTimesOnCastStart": 0,
+              "_castToFirstRoundTargetLocationsAtProjectileBirth": 0,
+              "_hookTheLastProjectile": ""
+            },
+            "fieldShape": "64d272481e921e57",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.Abilities.MultiRangedAttack",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "-3698736381282439861",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "4941866753248432359": {
+            "pathId": "4941866753248432359",
+            "unityType": "Transform",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "5056649451370811623"
+              },
+              "m_LocalRotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": 1.0
+              },
+              "m_LocalPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "m_LocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              },
+              "m_Children": [],
+              "m_Father": {
+                "m_FileID": 0,
+                "m_PathID": "-1327712427114524441"
+              }
+            }
+          },
+          "7063325787945603303": {
+            "pathId": "7063325787945603303",
+            "unityType": "Transform",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "7963647773191999719"
+              },
+              "m_LocalRotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": 1.0
+              },
+              "m_LocalPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "m_LocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              },
+              "m_Children": [],
+              "m_Father": {
+                "m_FileID": 0,
+                "m_PathID": "-2063318037419290393"
+              }
+            }
+          },
+          "5056649451370811623": {
+            "pathId": "5056649451370811623",
+            "unityType": "GameObject",
+            "fields": {
+              "m_Component": [
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "4941866753248432359"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "2648386721880838375"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-1582108295314763545"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-4982309943762054937"
+                  }
+                }
+              ],
+              "m_Layer": 12,
+              "m_Name": "Selector",
+              "m_Tag": 0,
+              "m_IsActive": true
+            }
+          },
+          "7963647773191999719": {
+            "pathId": "7963647773191999719",
+            "unityType": "GameObject",
+            "fields": {
+              "m_Component": [
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "7063325787945603303"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-7590849794935582489"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "3598897560143892711"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "5445455493389914343"
+                  }
+                }
+              ],
+              "m_Layer": 12,
+              "m_Name": "Selector",
+              "m_Tag": 0,
+              "m_IsActive": true
+            }
+          },
+          "-7590849794935582489": {
+            "pathId": "-7590849794935582489",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "7963647773191999719"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6275044311115013764"
+              },
+              "m_Name": ""
+            },
+            "fieldShape": "98e18c5d46fd8efc",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.GlobalRange",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "6275044311115013764",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "3598897560143892711": {
+            "pathId": "3598897560143892711",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "7963647773191999719"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "7080728813803358465"
+              },
+              "m_Name": "",
+              "_targetSide": 2,
+              "_targetMotion": 3,
+              "_targetCategory": 1,
+              "_postFilter": 4,
+              "_ignoreTargetFree": 0,
+              "_onlyIgnoreSomeOfTargetFreeCase": 0,
+              "_abnormalFlag": 42,
+              "_abnormalCombo": 2,
+              "_ignoreAllyTargetFree": 0,
+              "_ignoreHealFree": 0,
+              "_forceIgnoreCamouflage": 0,
+              "_needProfessionMask": 0,
+              "_professionMask": 0,
+              "_limitTargetNum": 1,
+              "_maxTargetKey": "max_target",
+              "_maxNum": 1,
+              "_excludeOwner": 0,
+              "_sortByTauntAtLast": 0,
+              "_ignoreHitRange": 0,
+              "_checkUnitType": 0,
+              "_unitTypeMask": 0,
+              "_abilityInputTargetAsSortSource": 0
+            },
+            "fieldShape": "f3e538c375076f15",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.AdvancedSelector",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "7080728813803358465",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "5445455493389914343": {
+            "pathId": "5445455493389914343",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "7963647773191999719"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "8607874384982393801"
+              },
+              "m_Name": "",
+              "_keepTarget": 0,
+              "_minTargetNum": 1,
+              "_overrideSearchTargetTick": -1
+            },
+            "fieldShape": "9ab0c85bbaa0c2e1",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.SelectorTrigger",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "8607874384982393801",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "-1582108295314763545": {
+            "pathId": "-1582108295314763545",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "5056649451370811623"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-4616102445704182007"
+              },
+              "m_Name": "",
+              "_targetSide": 7,
+              "_targetMotion": 3,
+              "_targetCategory": 1,
+              "_postFilter": 4,
+              "_ignoreTargetFree": 0,
+              "_onlyIgnoreSomeOfTargetFreeCase": 0,
+              "_abnormalFlag": 42,
+              "_abnormalCombo": 2,
+              "_ignoreAllyTargetFree": 0,
+              "_ignoreHealFree": 0,
+              "_forceIgnoreCamouflage": 0,
+              "_needProfessionMask": 0,
+              "_professionMask": 0,
+              "_limitTargetNum": 1,
+              "_maxTargetKey": "max_target",
+              "_maxNum": 1,
+              "_excludeOwner": 0,
+              "_sortByTauntAtLast": 0,
+              "_ignoreHitRange": 0,
+              "_checkUnitType": 0,
+              "_unitTypeMask": 0,
+              "_abilityInputTargetAsSortSource": 0,
+              "_enemyLevelMask": 7,
+              "_motionMask": 3,
+              "_allowNoneApplyWay": 1,
+              "_applyWay": 3,
+              "_filterByEnemiesKey": 1,
+              "_filterEnemyKeyMode": 0,
+              "_enemyKey": "enemy_9023_acdums",
+              "_filterByEnemiesMode": 1,
+              "_filterByEnemiesTag": 0,
+              "_enemyMode": 1,
+              "_enemyTag": "",
+              "_excludeDisappeared": 0,
+              "_excludeInCombat": 0,
+              "_filterBuff": 0,
+              "_buffKeyExcluded": 0,
+              "_buffKey": "",
+              "_checkReachableToOwner": 0,
+              "_avoidObstacleLike": 0,
+              "_filterUnbalance": 0,
+              "_filterNotInUnbalance": 0,
+              "_filterAbnormalImmune": 0,
+              "_abnormalFlagImmune": 42,
+              "_filterEnemyMassLevel": 0,
+              "_massCompareType": 0,
+              "_massLevel": 0
+            },
+            "fieldShape": "a55cc3dcbd1072fa",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.AdvancedSelectorWithEnemyOptions",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "-4616102445704182007",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "-4982309943762054937": {
+            "pathId": "-4982309943762054937",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "5056649451370811623"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "8607874384982393801"
+              },
+              "m_Name": "",
+              "_keepTarget": 0,
+              "_minTargetNum": 1,
+              "_overrideSearchTargetTick": -1
+            },
+            "fieldShape": "9ab0c85bbaa0c2e1",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.SelectorTrigger",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "8607874384982393801",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "2648386721880838375": {
+            "pathId": "2648386721880838375",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "5056649451370811623"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6275044311115013764"
+              },
+              "m_Name": ""
+            },
+            "fieldShape": "98e18c5d46fd8efc",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.GlobalRange",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "6275044311115013764",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          }
+        },
+        "failures": []
+      },
+      "projectile": {
+        "status": "source-fields-retrieved",
+        "source": {
+          "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_acduml.prefab",
+          "reference": {
+            "m_FileID": 0,
+            "m_PathID": "2848379474544646890"
+          }
+        },
+        "completeMonoBehaviourCoverage": true,
+        "failures": [],
+        "components": {
+          "4828803282618964714": {
+            "gameObjectPathID": "2848379474544646890",
+            "gameObjectName": "projectile_enemy_acduml",
+            "script": {
+              "status": "resolved",
+              "type": "Torappu.Battle.SimpleProjectile",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "-8797129986015012478",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            },
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2848379474544646890"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-8797129986015012478"
+              },
+              "m_Name": "",
+              "_randomDelayToBorn": 0.0,
+              "_bodyTransform": {
+                "m_FileID": 0,
+                "m_PathID": "-2724488329468224790"
+              },
+              "_keepAlreadyHitTime": -1.0,
+              "_mainEffect": "enemy_acduml_attack_trail",
+              "_clearMainEffectWhenReached": 1,
+              "_actionController": {
+                "_detachBuffsWhenTargetLeave": 0,
+                "_detachAllBuffsWhenStopped": 0,
+                "_onlyAddBuffsToTraceTarget": 0,
+                "_onlyAddBuffsToTargetOnce": 0,
+                "_dontAddBuffs": 0,
+                "_excludeAttachments": 0,
+                "_useSelfBlackboard": 0,
+                "_extraBuffsInTheEnd": [],
+                "_useExtraBuffsWhenStopHit": 0,
+                "_addExtraBuffsWhenReached": 0,
+                "_detachAllExtraBuffsWhenStopped": 0
+              },
+              "_fixDealHitTargetLeft": 1,
+              "_stopGraphicProjectileWhenClearMainEffect": 0,
+              "_overrideAudioSignal": "",
+              "_fireProjectileReachedEvent": 0,
+              "_eliminatableStatus": 0,
+              "_movementAdjustableStatus": 0,
+              "_managedBySource": 0,
+              "_projectileType": 0,
+              "_containsChildrenBehaviours": 0,
+              "_canHitSameTargetMultipleTimes": 0,
+              "_lifeTimeType": 1,
+              "_lifeTime": 10.0,
+              "_getLifeTimeFromBB": 0,
+              "_hitNumType": 2,
+              "_maxHitNum": 1,
+              "_getMaxHitNumFromBB": 0,
+              "_maxHitNumBBKey": "",
+              "_stopAfterMaxHit": 1,
+              "_stopAfterFirstHit": 0,
+              "_stopWhenSourceInvalid": 0,
+              "_alwaysHitTraceTargetInTheEnd": 1,
+              "_alwaysHitTraceTargetWhenReached": 0,
+              "_alwaysReachInTheEnd": 0,
+              "_limitedMaxHitNumToSourceBlockedCnt": 0,
+              "_allowZeroBlockCntLimit": 0
+            }
+          },
+          "-467374434433738006": {
+            "gameObjectPathID": "2848379474544646890",
+            "gameObjectName": "projectile_enemy_acduml",
+            "script": {
+              "status": "resolved",
+              "type": "Torappu.Battle.Projectiles.AdvancedMovement",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "-1429203677512073985",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            },
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2848379474544646890"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-1429203677512073985"
+              },
+              "m_Name": "",
+              "_rotateToTarget": 1,
+              "_forceReachedWhenTimeup": 1,
+              "_useSourceDirection": 0,
+              "_useTargetDirection": 0,
+              "_useStartToTarget": 0,
+              "_awayFromSourceAsDirection": 0,
+              "_flyToTargetLocationOnly": 0,
+              "_useSourceDirectionRandomArcAngleStart": 0,
+              "_useSourceToTargetRandomArcAngleStart": 0,
+              "_useSourceDirectionArcAngleWithRatio": 0,
+              "_useSourceToTargetArcAngleWithRatio": 0,
+              "_sourceDirectionArcAngleRatio": 0.0,
+              "_flyToPredefinedLocation": 0,
+              "_predefinedLocation": 0,
+              "_freezeRotationZ": 0,
+              "_freezeRotationXY": 0,
+              "_exactMatchCameraForward": 0,
+              "_resetToTargetPosWhenReached": 0,
+              "_resetToTracetargetMapPosV3": 0,
+              "_handleWithIBuildableTarget": 0,
+              "_forceResetToTargetPosWhenReached": 0,
+              "_fixOnProjectileReached": 1,
+              "_onlyReachedInTime": 0.0,
+              "_moveType": 1,
+              "_moveTypeData": {
+                "data": []
+              },
+              "_speed": 10.0,
+              "_distance": 0.0,
+              "_comeBack": 0,
+              "_comeBackSpeedScale": 0.25,
+              "_delayToStart": 0.0,
+              "_delayAfterReached": 0.0,
+              "_delayToReachAfterHit": 0.0,
+              "_clearTraceTargetWhenReached": 1,
+              "_updateDelayTimeOnlyOnce": 0,
+              "_skipSmoothLerpDirection": 0,
+              "_addInertia": 0,
+              "_turnSpeed": 0.0,
+              "_useDynamicSpeed": 0,
+              "_deltaSpeedPerSec": 0.0,
+              "_finalSpeed": 0.0,
+              "_randomOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "_forceUseTargetMountPoint": 0
+            }
+          },
+          "-3028578068281795862": {
+            "gameObjectPathID": "2848379474544646890",
+            "gameObjectName": "projectile_enemy_acduml",
+            "script": {
+              "status": "resolved",
+              "type": "Torappu.Battle.Projectiles.EffectBehaviour",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "6834194400804168919",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            },
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2848379474544646890"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6834194400804168919"
+              },
+              "m_Name": "",
+              "_effectsWhenStart": [],
+              "_effectsWhenReached": [
+                "enemy_acduml_attack_hit"
+              ],
+              "_effectsWhenHit": [],
+              "_effectsToTargetWhenStart": [],
+              "_effectsToTileWhenStart": [],
+              "_effectsWhenStop": [],
+              "_effectOnTrigger": [],
+              "_onlyPlayHitEffectOnTraceTarget": 0,
+              "_onlyPlayHitEffectOnNotTraceTarget": 0,
+              "_onlyPlayHitEffectOnce": 0,
+              "_clearHitEffectOnStop": 0,
+              "_clearPlayEffectOnStop": 0,
+              "_clearEffectsOnTileOnStop": 0,
+              "_clearReachedEffectWhenStop": 0,
+              "_alwaysPlayStartEffects": 0,
+              "_playStartEffectOnlyOnProjectile": 0,
+              "_useSourceFaceVector": 0,
+              "_useSourceFaceVectorOnHit": 0,
+              "_forceReachTargetGround": 0,
+              "_followTargetGround": 0,
+              "_replaceMainEffectWhenReach": 0,
+              "_mainEffectToReplace": "",
+              "_useTraceTargetWhenReach": 0,
+              "_setReachEffectOnProjectile": 0,
+              "_syncEffectScaleViaProjectile": 0
+            }
+          },
+          "-4311803533802972438": {
+            "gameObjectPathID": "2848379474544646890",
+            "gameObjectName": "projectile_enemy_acduml",
+            "script": {
+              "status": "resolved",
+              "type": "Torappu.Battle.Projectiles.HitBehaviour",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "-3494225671239136090",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            },
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2848379474544646890"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-3494225671239136090"
+              },
+              "m_Name": "",
+              "_targetOptions": {
+                "targetSide": 2,
+                "targetMotion": 3,
+                "targetCategory": 1,
+                "enableAdvancedOptions": 1,
+                "ignoreTargetFree": 0,
+                "ignoreAllyTargetFree": 0,
+                "ignoreHealFree": 0,
+                "ignoreTargetSide": 0,
+                "excludeSomeAbnormalFlags": 0,
+                "excludeAbnormalFlag": 0,
+                "purposeMask": 0,
+                "professionMask": 0,
+                "checkUnitType": 0,
+                "unitTypeMask": 0,
+                "onlyIgnoreSomeOfTargetFreeCase": 0,
+                "abnormalFlag": 0,
+                "abnormalCombo": 0
+              },
+              "_goThroughWall": 1,
+              "_onlyCheckHitWhenReachTarget": 1,
+              "_onlyCheckHitWhenStop": 0,
+              "_canFlyThroughTheDeathArea": 0,
+              "_exceptTraceTarget": 0,
+              "_overridePurposeMaskWithTargetOptions": 0,
+              "_rangeToLoad": {
+                "m_FileID": 0,
+                "m_PathID": "-8327330991646156054"
+              },
+              "_ignoreCamouflage": 1,
+              "_ignoreRangeScale": 0,
+              "_exceptSource": 0,
+              "_mergeTraceTargetMotion": 0,
+              "_markReachedOnlyWhenTargetEnter": 0
+            }
+          },
+          "-8327330991646156054": {
+            "gameObjectPathID": "2848379474544646890",
+            "gameObjectName": "projectile_enemy_acduml",
+            "script": {
+              "status": "resolved",
+              "type": "Torappu.Battle.CircleRange",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "6185056810787956083",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            },
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2848379474544646890"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6185056810787956083"
+              },
+              "m_Name": "",
+              "_extendable": 0,
+              "_scaleble": 1
+            }
+          }
+        },
+        "key": "projectile_enemy_acduml"
+      },
+      "projectileOwnership": {
+        "bundle": "assets/AB/Android/battle/prefabs/[uc]projectiles.ab",
+        "bundleSha256": "550ca691b8d9e96f29706c59beaaacf342c89cdace34b1bd28595b6e36c37234",
+        "rootComponentId": "4828803282618964714",
+        "rootGameObjectId": "2848379474544646890",
+        "nodes": {
+          "2848379474544646890": {
+            "pathId": "2848379474544646890",
+            "unityType": "GameObject",
+            "fields": {
+              "m_Component": [
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-5253418162853160214"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "4828803282618964714"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-467374434433738006"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-3028578068281795862"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-4311803533802972438"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-8327330991646156054"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-4370014192857752854"
+                  }
+                }
+              ],
+              "m_Layer": 14,
+              "m_Name": "projectile_enemy_acduml",
+              "m_Tag": 0,
+              "m_IsActive": true
+            }
+          },
+          "-3028578068281795862": {
+            "pathId": "-3028578068281795862",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2848379474544646890"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6834194400804168919"
+              },
+              "m_Name": "",
+              "_effectsWhenStart": [],
+              "_effectsWhenReached": [
+                "enemy_acduml_attack_hit"
+              ],
+              "_effectsWhenHit": [],
+              "_effectsToTargetWhenStart": [],
+              "_effectsToTileWhenStart": [],
+              "_effectsWhenStop": [],
+              "_effectOnTrigger": [],
+              "_onlyPlayHitEffectOnTraceTarget": 0,
+              "_onlyPlayHitEffectOnNotTraceTarget": 0,
+              "_onlyPlayHitEffectOnce": 0,
+              "_clearHitEffectOnStop": 0,
+              "_clearPlayEffectOnStop": 0,
+              "_clearEffectsOnTileOnStop": 0,
+              "_clearReachedEffectWhenStop": 0,
+              "_alwaysPlayStartEffects": 0,
+              "_playStartEffectOnlyOnProjectile": 0,
+              "_useSourceFaceVector": 0,
+              "_useSourceFaceVectorOnHit": 0,
+              "_forceReachTargetGround": 0,
+              "_followTargetGround": 0,
+              "_replaceMainEffectWhenReach": 0,
+              "_mainEffectToReplace": "",
+              "_useTraceTargetWhenReach": 0,
+              "_setReachEffectOnProjectile": 0,
+              "_syncEffectScaleViaProjectile": 0
+            },
+            "fieldShape": "9ef2cce7440786cf",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.Projectiles.EffectBehaviour",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "6834194400804168919",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "-4311803533802972438": {
+            "pathId": "-4311803533802972438",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2848379474544646890"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-3494225671239136090"
+              },
+              "m_Name": "",
+              "_targetOptions": {
+                "targetSide": 2,
+                "targetMotion": 3,
+                "targetCategory": 1,
+                "enableAdvancedOptions": 1,
+                "ignoreTargetFree": 0,
+                "ignoreAllyTargetFree": 0,
+                "ignoreHealFree": 0,
+                "ignoreTargetSide": 0,
+                "excludeSomeAbnormalFlags": 0,
+                "excludeAbnormalFlag": 0,
+                "purposeMask": 0,
+                "professionMask": 0,
+                "checkUnitType": 0,
+                "unitTypeMask": 0,
+                "onlyIgnoreSomeOfTargetFreeCase": 0,
+                "abnormalFlag": 0,
+                "abnormalCombo": 0
+              },
+              "_goThroughWall": 1,
+              "_onlyCheckHitWhenReachTarget": 1,
+              "_onlyCheckHitWhenStop": 0,
+              "_canFlyThroughTheDeathArea": 0,
+              "_exceptTraceTarget": 0,
+              "_overridePurposeMaskWithTargetOptions": 0,
+              "_rangeToLoad": {
+                "m_FileID": 0,
+                "m_PathID": "-8327330991646156054"
+              },
+              "_ignoreCamouflage": 1,
+              "_ignoreRangeScale": 0,
+              "_exceptSource": 0,
+              "_mergeTraceTargetMotion": 0,
+              "_markReachedOnlyWhenTargetEnter": 0
+            },
+            "fieldShape": "a845655334073b4b",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.Projectiles.HitBehaviour",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "-3494225671239136090",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "-4370014192857752854": {
+            "pathId": "-4370014192857752854",
+            "unityType": "CircleCollider2D",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2848379474544646890"
+              },
+              "m_Enabled": 1,
+              "m_Density": 1.0,
+              "m_Material": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "m_IsTrigger": true,
+              "m_UsedByEffector": false,
+              "m_UsedByComposite": false,
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "m_Radius": 1.7999999523162842
+            }
+          },
+          "-467374434433738006": {
+            "pathId": "-467374434433738006",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2848379474544646890"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-1429203677512073985"
+              },
+              "m_Name": "",
+              "_rotateToTarget": 1,
+              "_forceReachedWhenTimeup": 1,
+              "_useSourceDirection": 0,
+              "_useTargetDirection": 0,
+              "_useStartToTarget": 0,
+              "_awayFromSourceAsDirection": 0,
+              "_flyToTargetLocationOnly": 0,
+              "_useSourceDirectionRandomArcAngleStart": 0,
+              "_useSourceToTargetRandomArcAngleStart": 0,
+              "_useSourceDirectionArcAngleWithRatio": 0,
+              "_useSourceToTargetArcAngleWithRatio": 0,
+              "_sourceDirectionArcAngleRatio": 0.0,
+              "_flyToPredefinedLocation": 0,
+              "_predefinedLocation": 0,
+              "_freezeRotationZ": 0,
+              "_freezeRotationXY": 0,
+              "_exactMatchCameraForward": 0,
+              "_resetToTargetPosWhenReached": 0,
+              "_resetToTracetargetMapPosV3": 0,
+              "_handleWithIBuildableTarget": 0,
+              "_forceResetToTargetPosWhenReached": 0,
+              "_fixOnProjectileReached": 1,
+              "_onlyReachedInTime": 0.0,
+              "_moveType": 1,
+              "_moveTypeData": {
+                "data": []
+              },
+              "_speed": 10.0,
+              "_distance": 0.0,
+              "_comeBack": 0,
+              "_comeBackSpeedScale": 0.25,
+              "_delayToStart": 0.0,
+              "_delayAfterReached": 0.0,
+              "_delayToReachAfterHit": 0.0,
+              "_clearTraceTargetWhenReached": 1,
+              "_updateDelayTimeOnlyOnce": 0,
+              "_skipSmoothLerpDirection": 0,
+              "_addInertia": 0,
+              "_turnSpeed": 0.0,
+              "_useDynamicSpeed": 0,
+              "_deltaSpeedPerSec": 0.0,
+              "_finalSpeed": 0.0,
+              "_randomOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "_forceUseTargetMountPoint": 0
+            },
+            "fieldShape": "66b56387f485592d",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.Projectiles.AdvancedMovement",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "-1429203677512073985",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "-5253418162853160214": {
+            "pathId": "-5253418162853160214",
+            "unityType": "Transform",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2848379474544646890"
+              },
+              "m_LocalRotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+              },
+              "m_LocalPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "m_LocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              },
+              "m_Children": [
+                {
+                  "m_FileID": 0,
+                  "m_PathID": "-2724488329468224790"
+                }
+              ],
+              "m_Father": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              }
+            }
+          },
+          "-8327330991646156054": {
+            "pathId": "-8327330991646156054",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2848379474544646890"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6185056810787956083"
+              },
+              "m_Name": "",
+              "_extendable": 0,
+              "_scaleble": 1
+            },
+            "fieldShape": "a9c754f78ce08c58",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.CircleRange",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "6185056810787956083",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "4828803282618964714": {
+            "pathId": "4828803282618964714",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2848379474544646890"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-8797129986015012478"
+              },
+              "m_Name": "",
+              "_randomDelayToBorn": 0.0,
+              "_bodyTransform": {
+                "m_FileID": 0,
+                "m_PathID": "-2724488329468224790"
+              },
+              "_keepAlreadyHitTime": -1.0,
+              "_mainEffect": "enemy_acduml_attack_trail",
+              "_clearMainEffectWhenReached": 1,
+              "_actionController": {
+                "_detachBuffsWhenTargetLeave": 0,
+                "_detachAllBuffsWhenStopped": 0,
+                "_onlyAddBuffsToTraceTarget": 0,
+                "_onlyAddBuffsToTargetOnce": 0,
+                "_dontAddBuffs": 0,
+                "_excludeAttachments": 0,
+                "_useSelfBlackboard": 0,
+                "_extraBuffsInTheEnd": [],
+                "_useExtraBuffsWhenStopHit": 0,
+                "_addExtraBuffsWhenReached": 0,
+                "_detachAllExtraBuffsWhenStopped": 0
+              },
+              "_fixDealHitTargetLeft": 1,
+              "_stopGraphicProjectileWhenClearMainEffect": 0,
+              "_overrideAudioSignal": "",
+              "_fireProjectileReachedEvent": 0,
+              "_eliminatableStatus": 0,
+              "_movementAdjustableStatus": 0,
+              "_managedBySource": 0,
+              "_projectileType": 0,
+              "_containsChildrenBehaviours": 0,
+              "_canHitSameTargetMultipleTimes": 0,
+              "_lifeTimeType": 1,
+              "_lifeTime": 10.0,
+              "_getLifeTimeFromBB": 0,
+              "_hitNumType": 2,
+              "_maxHitNum": 1,
+              "_getMaxHitNumFromBB": 0,
+              "_maxHitNumBBKey": "",
+              "_stopAfterMaxHit": 1,
+              "_stopAfterFirstHit": 0,
+              "_stopWhenSourceInvalid": 0,
+              "_alwaysHitTraceTargetInTheEnd": 1,
+              "_alwaysHitTraceTargetWhenReached": 0,
+              "_alwaysReachInTheEnd": 0,
+              "_limitedMaxHitNumToSourceBlockedCnt": 0,
+              "_allowZeroBlockCntLimit": 0
+            },
+            "fieldShape": "2af792379c25a51f",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.SimpleProjectile",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "-8797129986015012478",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "-2724488329468224790": {
+            "pathId": "-2724488329468224790",
+            "unityType": "Transform",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-366194851023070486"
+              },
+              "m_LocalRotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": 1.0
+              },
+              "m_LocalPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "m_LocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              },
+              "m_Children": [],
+              "m_Father": {
+                "m_FileID": 0,
+                "m_PathID": "-5253418162853160214"
+              }
+            }
+          },
+          "-366194851023070486": {
+            "pathId": "-366194851023070486",
+            "unityType": "GameObject",
+            "fields": {
+              "m_Component": [
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-2724488329468224790"
+                  }
+                }
+              ],
+              "m_Layer": 14,
+              "m_Name": "Body",
+              "m_Tag": 0,
+              "m_IsActive": true
+            }
+          }
+        },
+        "failures": []
+      },
+      "databaseLevels": [
+        {
+          "level": 0,
+          "enemyData": {
+            "name": {
+              "m_defined": true,
+              "m_value": "假想敌：管"
+            },
+            "description": {
+              "m_defined": true,
+              "m_value": "优先攻击“断弦之音”"
+            },
+            "prefabKey": {
+              "m_defined": true,
+              "m_value": "enemy_9021_acduml"
+            },
+            "attributes": {
+              "maxHp": {
+                "m_defined": true,
+                "m_value": 85000
+              },
+              "atk": {
+                "m_defined": true,
+                "m_value": 300
+              },
+              "def": {
+                "m_defined": true,
+                "m_value": 700
+              },
+              "magicResistance": {
+                "m_defined": true,
+                "m_value": 50.0
+              },
+              "cost": {
+                "m_defined": false,
+                "m_value": 0
+              },
+              "blockCnt": {
+                "m_defined": false,
+                "m_value": 0
+              },
+              "moveSpeed": {
+                "m_defined": true,
+                "m_value": 1.0
+              },
+              "attackSpeed": {
+                "m_defined": true,
+                "m_value": 0.0
+              },
+              "baseAttackTime": {
+                "m_defined": true,
+                "m_value": 3.0
+              },
+              "respawnTime": {
+                "m_defined": false,
+                "m_value": 0
+              },
+              "hpRecoveryPerSec": {
+                "m_defined": true,
+                "m_value": 0.0
+              },
+              "spRecoveryPerSec": {
+                "m_defined": false,
+                "m_value": 0.0
+              },
+              "maxDeployCount": {
+                "m_defined": false,
+                "m_value": 0
+              },
+              "massLevel": {
+                "m_defined": true,
+                "m_value": 7
+              },
+              "baseForceLevel": {
+                "m_defined": false,
+                "m_value": 0
+              },
+              "tauntLevel": {
+                "m_defined": true,
+                "m_value": 0
+              },
+              "epDamageResistance": {
+                "m_defined": true,
+                "m_value": 0.0
+              },
+              "epResistance": {
+                "m_defined": true,
+                "m_value": 0.0
+              },
+              "damageHitratePhysical": {
+                "m_defined": false,
+                "m_value": 0.0
+              },
+              "damageHitrateMagical": {
+                "m_defined": false,
+                "m_value": 0.0
+              },
+              "epBreakRecoverSpeed": {
+                "m_defined": false,
+                "m_value": 0.0
+              },
+              "stunImmune": {
+                "m_defined": true,
+                "m_value": true
+              },
+              "silenceImmune": {
+                "m_defined": true,
+                "m_value": true
+              },
+              "sleepImmune": {
+                "m_defined": true,
+                "m_value": true
+              },
+              "frozenImmune": {
+                "m_defined": true,
+                "m_value": true
+              },
+              "levitateImmune": {
+                "m_defined": true,
+                "m_value": true
+              },
+              "disarmedCombatImmune": {
+                "m_defined": true,
+                "m_value": false
+              },
+              "fearedImmune": {
+                "m_defined": true,
+                "m_value": true
+              },
+              "palsyImmune": {
+                "m_defined": true,
+                "m_value": false
+              },
+              "attractImmune": {
+                "m_defined": false,
+                "m_value": false
+              },
+              "teleportImmune": {
+                "m_defined": false,
+                "m_value": false
+              },
+              "groundBoundImmune": {
+                "m_defined": false,
+                "m_value": false
+              }
+            },
+            "applyWay": {
+              "m_defined": true,
+              "m_value": "RANGED"
+            },
+            "motion": {
+              "m_defined": true,
+              "m_value": "WALK"
+            },
+            "enemyTags": {
+              "m_defined": true,
+              "m_value": [
+                "origen"
+              ]
+            },
+            "lifePointReduce": {
+              "m_defined": true,
+              "m_value": 2
+            },
+            "levelType": {
+              "m_defined": true,
+              "m_value": "BOSS"
+            },
+            "rangeRadius": {
+              "m_defined": true,
+              "m_value": -1.0
+            },
+            "numOfExtraDrops": {
+              "m_defined": true,
+              "m_value": 0
+            },
+            "viewRadius": {
+              "m_defined": true,
+              "m_value": 0.0
+            },
+            "notCountInTotal": {
+              "m_defined": false,
+              "m_value": false
+            },
+            "talentBlackboard": [
+              {
+                "key": "1.acduml_t_1[high_hp].interval",
+                "value": 40.0,
+                "valueStr": null
+              },
+              {
+                "key": "1.acduml_t_1[low_hp].interval",
+                "value": 20.0,
+                "valueStr": null
+              },
+              {
+                "key": "1.hp_ratio",
+                "value": 0.5,
+                "valueStr": null
+              },
+              {
+                "key": "1.enemy_key",
+                "value": 0.0,
+                "valueStr": "enemy_9023_acdums"
+              },
+              {
+                "key": "1.prob",
+                "value": 0.1,
+                "valueStr": null
+              }
+            ],
+            "skills": [
+              {
+                "prefabKey": "1",
+                "priority": 0,
+                "cooldown": 50.0,
+                "initCooldown": 40.0,
+                "spCost": 50,
+                "blackboard": [
+                  {
+                    "key": "range_radius",
+                    "value": 0.8,
+                    "valueStr": null
+                  },
+                  {
+                    "key": "ep_damage_ratio",
+                    "value": 0.25,
+                    "valueStr": null
+                  }
+                ]
+              }
+            ],
+            "spData": {
+              "spType": "INCREASE_WITH_TIME",
+              "maxSp": 50,
+              "initSp": 0,
+              "increment": 1.0
+            }
+          }
+        }
+      ]
+    },
+    "enemy_9021_acduml_2": {
+      "enemyId": "enemy_9021_acduml_2",
+      "mode": {
+        "modeIndex": 0,
+        "modePathID": -4706177899376822948,
+        "channels": {
+          "combat": {
+            "reference": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "status": "absent"
+          },
+          "attack": {
+            "reference": {
+              "m_FileID": 0,
+              "m_PathID": -6295750264029530788
+            },
+            "cabin": "CAB-ce545482313ddad0252173b3b1f77860",
+            "pathID": -6295750264029530788,
+            "fields": {
+              "_selector": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "_metadata": {
+                "namedAsAlias": "",
+                "blackboardPrefix": ""
+              },
+              "_interruptAbilityOnDetach": 1,
+              "_attachPassiveBuffsOnDummy": 1,
+              "_ignoreIfOwnerDead": 0,
+              "_forceAsDmgOrHealAbility": 0,
+              "_category": 4,
+              "_coolDownAbilityIndex": 0,
+              "_clearInternalCooldownWhenFinish": 1,
+              "_updateCooldownBySubAbilityCooldownDuringCasting": 0,
+              "_updateSubAbilitiesWhenExtendUpdated": 0,
+              "_abilityConfigs": [
+                {
+                  "_ability": {
+                    "m_FileID": 0,
+                    "m_PathID": 7832002301509547356
+                  },
+                  "_trigger": {
+                    "m_FileID": 0,
+                    "m_PathID": 1881009499158787420
+                  },
+                  "_alwaysUseTrigger": 0,
+                  "_useInputTarget": 0,
+                  "_checkInputTargetInTrigger": 0
+                },
+                {
+                  "_ability": {
+                    "m_FileID": 0,
+                    "m_PathID": -8924723807157111460
+                  },
+                  "_trigger": {
+                    "m_FileID": 0,
+                    "m_PathID": 4850881241672693084
+                  },
+                  "_alwaysUseTrigger": 0,
+                  "_useInputTarget": 0,
+                  "_checkInputTargetInTrigger": 0
+                }
+              ],
+              "_timeMode": 0,
+              "_updateCooldownAfterSubAbilitiesAttached": 0,
+              "_selectAbilitySequentially": 0,
+              "_useSubAbilityEscapeTime": 0,
+              "_escapeTimeAbilityIndex": 0,
+              "_firstAttackIfAbilityChanged": 0,
+              "_resetSubAbilities": 0,
+              "_resetSubAbilityCooldown": 1,
+              "_useCurAbCheckAtPreCastPhase": 0,
+              "_checkIAlwaysTriggerBySubAbility": 0,
+              "_finishByCbOnlyFromSubAbility": 0
+            },
+            "scriptPathID": 5752393290759919736,
+            "status": "non-damage-or-composite-root"
+          }
+        },
+        "animationAliases": []
+      },
+      "components": {
+        "-6295750264029530788": {
+          "scriptType": "Torappu.Battle.Abilities.AbilitySelectableGroup",
+          "fields": {
+            "_selector": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "_metadata": {
+              "namedAsAlias": "",
+              "blackboardPrefix": ""
+            },
+            "_interruptAbilityOnDetach": 1,
+            "_attachPassiveBuffsOnDummy": 1,
+            "_ignoreIfOwnerDead": 0,
+            "_forceAsDmgOrHealAbility": 0,
+            "_category": 4,
+            "_coolDownAbilityIndex": 0,
+            "_clearInternalCooldownWhenFinish": 1,
+            "_updateCooldownBySubAbilityCooldownDuringCasting": 0,
+            "_updateSubAbilitiesWhenExtendUpdated": 0,
+            "_abilityConfigs": [
+              {
+                "_ability": {
+                  "m_FileID": 0,
+                  "m_PathID": 7832002301509547356
+                },
+                "_trigger": {
+                  "m_FileID": 0,
+                  "m_PathID": 1881009499158787420
+                },
+                "_alwaysUseTrigger": 0,
+                "_useInputTarget": 0,
+                "_checkInputTargetInTrigger": 0
+              },
+              {
+                "_ability": {
+                  "m_FileID": 0,
+                  "m_PathID": -8924723807157111460
+                },
+                "_trigger": {
+                  "m_FileID": 0,
+                  "m_PathID": 4850881241672693084
+                },
+                "_alwaysUseTrigger": 0,
+                "_useInputTarget": 0,
+                "_checkInputTargetInTrigger": 0
+              }
+            ],
+            "_timeMode": 0,
+            "_updateCooldownAfterSubAbilitiesAttached": 0,
+            "_selectAbilitySequentially": 0,
+            "_useSubAbilityEscapeTime": 0,
+            "_escapeTimeAbilityIndex": 0,
+            "_firstAttackIfAbilityChanged": 0,
+            "_resetSubAbilities": 0,
+            "_resetSubAbilityCooldown": 1,
+            "_useCurAbCheckAtPreCastPhase": 0,
+            "_checkIAlwaysTriggerBySubAbility": 0,
+            "_finishByCbOnlyFromSubAbility": 0
+          }
+        },
+        "6577628180386329948": {
+          "scriptType": "Torappu.Battle.AlwaysTrigger",
+          "fields": {}
+        },
+        "-2315636123113900708": {
+          "scriptType": "Torappu.Battle.Abilities.UberEffectEmitter",
+          "fields": {
+            "_hitEffects": [],
+            "_castEffects": [
+              {
+                "_directionType": 0,
+                "_effects": [
+                  "enemy_acduml_skill_start"
+                ],
+                "_oneshot": 1,
+                "_startEvent": 2,
+                "_endEvent": 3,
+                "_onlyOnce": 0,
+                "_useFourDirectionalFace": 0,
+                "_delayIfFirstAttack": 0.0,
+                "_hookEffectAfterFirstAttack": ""
+              }
+            ],
+            "_attachEffects": [],
+            "_inputTargetEffects": [],
+            "_castTargetEffects": [
+              {
+                "_directionType": 0,
+                "_effects": [
+                  "enemy_acduml_lockon"
+                ],
+                "_oneshot": 0,
+                "_startEvent": 2,
+                "_endEvent": 3,
+                "_onlyOnce": 0,
+                "_useFourDirectionalFace": 0,
+                "_delayIfFirstAttack": 0.0,
+                "_hookEffectAfterFirstAttack": ""
+              }
+            ],
+            "_convertCastEndToAttachFinish": 0,
+            "_recalculatePlaybackSpeed": 0,
+            "_preDelayFactor": 0.0
+          }
+        },
+        "-8924723807157111460": {
+          "scriptType": "Torappu.Battle.Abilities.MultiRangedAttack",
+          "fields": {
+            "_selector": {
+              "m_FileID": 0,
+              "m_PathID": 504003501532755292
+            },
+            "_metadata": {
+              "namedAsAlias": "",
+              "blackboardPrefix": ""
+            },
+            "_interruptAbilityOnDetach": 1,
+            "_attachPassiveBuffsOnDummy": 1,
+            "_ignoreIfOwnerDead": 0,
+            "_forceAsDmgOrHealAbility": 0,
+            "_waitForAttackEvent": 1,
+            "_interuptIfTargetDead": 0,
+            "_resetCdStrategy": 1,
+            "_selectTargetSource": 1,
+            "_selectTargetTiming": 0,
+            "_timeMode": 0,
+            "_alwaysIncludeTarget": 1,
+            "_allowNoTarget": 0,
+            "_animKey": "Attack",
+            "_endAnimKey": "Idle",
+            "_downAnimKey": "",
+            "_downEndAnimKey": "",
+            "_upAnimKey": "",
+            "_upEndAnimKey": "",
+            "_cooldown": 0.0,
+            "_cooldownKey": "duration",
+            "_preDelay": 0.0,
+            "_escapeTime": 0.0,
+            "_faceToTarget": 1,
+            "_faceToDefault": 0,
+            "_faceToFront": 0,
+            "_faceToFirstCastTarget": 0,
+            "_checkFaceToFirstCastTargetDownAttack": 0,
+            "_forceFaceToDirection": 0,
+            "_activeBuffs": [],
+            "_maxAnimScale": 1.0,
+            "_onlyPlayEndAnimWhenIsLastAbility": 0,
+            "_ignorePalsyInterrupt": 0,
+            "_affectedBySlowDown": 1,
+            "_atkScale": 1.0,
+            "_atkScaleKey": "atk_scale",
+            "_attackType": 1,
+            "_elementDamageType": 0,
+            "_epDamageRatio": 0.0,
+            "_useDynamicAttackType": 0,
+            "_deliveryParaWhenReplaceActionNode": 0,
+            "_projectileKey": "projectile_enemy_acduml",
+            "_mountPointType": 2,
+            "_useMountGroup": 0,
+            "_mountGroup": {
+              "loopType": 0,
+              "mountPoints": []
+            },
+            "_damageType": 2,
+            "_waitForProjectileInvalid": 0,
+            "_notClearProjectileWhenCastEnd": 0,
+            "_fireAttackFinishWhenProjectileInvalid": 0,
+            "_minPostDelayWhenProjectileInvalid": 0.0,
+            "_waitForAnimEndWhenProjectileInvalid": 0,
+            "_projectileDestination": 0,
+            "_extraDamageType": 0,
+            "_emitToInputPosWhenTargetIsInvalid": 0,
+            "_emitToInputRootTileWhenTargetIsInvalid": 0,
+            "_useCachedAtkOnly": 0,
+            "_transferSource": 0,
+            "_extraProjectileKeys": [],
+            "_fireCreateProjectileEvent": 0,
+            "_additionalTimes": 2,
+            "_triggerDelta": 0.25,
+            "_waitAttackEventForAllAttacks": 0,
+            "_additionalProjectile": "projectile_enemy_acduml",
+            "_useMultiAdditionalProjectiles": 0,
+            "_additionalProjectiles": [],
+            "_enableMountPointGroup": 0,
+            "_mountPointGroup": [],
+            "_onlyFeedActionsToFirstOne": 0,
+            "_onlyTrigAudioSignalForFirstOne": 0,
+            "_limitToOneTargetAfterFirstRound": 0,
+            "_splitDamage": 0,
+            "_addSpellCntToSignalId": 0,
+            "_onlyFeedActiveBuffToLastOne": 0,
+            "_onlyFeedActiveBuffToFirstOne": 0,
+            "_refreshTimesOnCastStart": 0,
+            "_castToFirstRoundTargetLocationsAtProjectileBirth": 0,
+            "_hookTheLastProjectile": ""
+          }
+        },
+        "7832002301509547356": {
+          "scriptType": "Torappu.Battle.Abilities.MultiRangedAttack",
+          "fields": {
+            "_selector": {
+              "m_FileID": 0,
+              "m_PathID": 6902228921850049884
+            },
+            "_metadata": {
+              "namedAsAlias": "",
+              "blackboardPrefix": ""
+            },
+            "_interruptAbilityOnDetach": 1,
+            "_attachPassiveBuffsOnDummy": 1,
+            "_ignoreIfOwnerDead": 0,
+            "_forceAsDmgOrHealAbility": 0,
+            "_waitForAttackEvent": 1,
+            "_interuptIfTargetDead": 0,
+            "_resetCdStrategy": 1,
+            "_selectTargetSource": 1,
+            "_selectTargetTiming": 0,
+            "_timeMode": 0,
+            "_alwaysIncludeTarget": 1,
+            "_allowNoTarget": 0,
+            "_animKey": "Attack",
+            "_endAnimKey": "Idle",
+            "_downAnimKey": "",
+            "_downEndAnimKey": "",
+            "_upAnimKey": "",
+            "_upEndAnimKey": "",
+            "_cooldown": 0.0,
+            "_cooldownKey": "duration",
+            "_preDelay": 0.0,
+            "_escapeTime": 0.0,
+            "_faceToTarget": 1,
+            "_faceToDefault": 0,
+            "_faceToFront": 0,
+            "_faceToFirstCastTarget": 0,
+            "_checkFaceToFirstCastTargetDownAttack": 0,
+            "_forceFaceToDirection": 0,
+            "_activeBuffs": [],
+            "_maxAnimScale": 1.0,
+            "_onlyPlayEndAnimWhenIsLastAbility": 0,
+            "_ignorePalsyInterrupt": 0,
+            "_affectedBySlowDown": 1,
+            "_atkScale": 1.0,
+            "_atkScaleKey": "atk_scale",
+            "_attackType": 1,
+            "_elementDamageType": 0,
+            "_epDamageRatio": 0.0,
+            "_useDynamicAttackType": 0,
+            "_deliveryParaWhenReplaceActionNode": 0,
+            "_projectileKey": "projectile_enemy_acduml",
+            "_mountPointType": 2,
+            "_useMountGroup": 0,
+            "_mountGroup": {
+              "loopType": 0,
+              "mountPoints": []
+            },
+            "_damageType": 2,
+            "_waitForProjectileInvalid": 0,
+            "_notClearProjectileWhenCastEnd": 0,
+            "_fireAttackFinishWhenProjectileInvalid": 0,
+            "_minPostDelayWhenProjectileInvalid": 0.0,
+            "_waitForAnimEndWhenProjectileInvalid": 0,
+            "_projectileDestination": 0,
+            "_extraDamageType": 0,
+            "_emitToInputPosWhenTargetIsInvalid": 0,
+            "_emitToInputRootTileWhenTargetIsInvalid": 0,
+            "_useCachedAtkOnly": 0,
+            "_transferSource": 0,
+            "_extraProjectileKeys": [],
+            "_fireCreateProjectileEvent": 0,
+            "_additionalTimes": 2,
+            "_triggerDelta": 0.25,
+            "_waitAttackEventForAllAttacks": 0,
+            "_additionalProjectile": "projectile_enemy_acduml",
+            "_useMultiAdditionalProjectiles": 0,
+            "_additionalProjectiles": [],
+            "_enableMountPointGroup": 0,
+            "_mountPointGroup": [],
+            "_onlyFeedActionsToFirstOne": 0,
+            "_onlyTrigAudioSignalForFirstOne": 0,
+            "_limitToOneTargetAfterFirstRound": 0,
+            "_splitDamage": 0,
+            "_addSpellCntToSignalId": 0,
+            "_onlyFeedActiveBuffToLastOne": 0,
+            "_onlyFeedActiveBuffToFirstOne": 0,
+            "_refreshTimesOnCastStart": 0,
+            "_castToFirstRoundTargetLocationsAtProjectileBirth": 0,
+            "_hookTheLastProjectile": ""
+          }
+        },
+        "7888502444051969372": {
+          "scriptType": "Torappu.Battle.Abilities.UberEffectEmitter",
+          "fields": {
+            "_hitEffects": [],
+            "_castEffects": [
+              {
+                "_directionType": 0,
+                "_effects": [
+                  "enemy_acduml_attack_start"
+                ],
+                "_oneshot": 1,
+                "_startEvent": 2,
+                "_endEvent": 3,
+                "_onlyOnce": 0,
+                "_useFourDirectionalFace": 0,
+                "_delayIfFirstAttack": 0.0,
+                "_hookEffectAfterFirstAttack": ""
+              }
+            ],
+            "_attachEffects": [],
+            "_inputTargetEffects": [],
+            "_castTargetEffects": [],
+            "_convertCastEndToAttachFinish": 0,
+            "_recalculatePlaybackSpeed": 0,
+            "_preDelayFactor": 0.0
+          }
+        },
+        "-7578524524728896164": {
+          "scriptType": "Torappu.Battle.GlobalRange",
+          "fields": {}
+        },
+        "4850881241672693084": {
+          "scriptType": "Torappu.Battle.SelectorTrigger",
+          "fields": {
+            "_keepTarget": 0,
+            "_minTargetNum": 1,
+            "_overrideSearchTargetTick": -1
+          }
+        },
+        "504003501532755292": {
+          "scriptType": "Torappu.Battle.AdvancedSelector",
+          "fields": {
+            "_targetSide": 2,
+            "_targetMotion": 3,
+            "_targetCategory": 1,
+            "_postFilter": 4,
+            "_ignoreTargetFree": 0,
+            "_onlyIgnoreSomeOfTargetFreeCase": 0,
+            "_abnormalFlag": 42,
+            "_abnormalCombo": 2,
+            "_ignoreAllyTargetFree": 0,
+            "_ignoreHealFree": 0,
+            "_ignoreMotionMode": 0,
+            "_forceIgnoreCamouflage": 0,
+            "_needProfessionMask": 0,
+            "_professionMask": 0,
+            "_excludeSomeAbnormalFlags": 0,
+            "_excludeAbnormalFlag": 46,
+            "_limitTargetNum": 1,
+            "_maxTargetKey": "max_target",
+            "_maxNum": 1,
+            "_excludeOwner": 0,
+            "_sortByTauntAtLast": 0,
+            "_ignoreHitRange": 0,
+            "_checkUnitType": 0,
+            "_unitTypeMask": 0,
+            "_abilityInputTargetAsSortSource": 0
+          }
+        },
+        "-2663651133105392292": {
+          "scriptType": "Torappu.Battle.GlobalRange",
+          "fields": {}
+        },
+        "1881009499158787420": {
+          "scriptType": "Torappu.Battle.SelectorTrigger",
+          "fields": {
+            "_keepTarget": 0,
+            "_minTargetNum": 1,
+            "_overrideSearchTargetTick": -1
+          }
+        },
+        "6902228921850049884": {
+          "scriptType": "Torappu.Battle.AdvancedSelectorWithEnemyOptions",
+          "fields": {
+            "_targetSide": 7,
+            "_targetMotion": 3,
+            "_targetCategory": 1,
+            "_postFilter": 4,
+            "_ignoreTargetFree": 0,
+            "_onlyIgnoreSomeOfTargetFreeCase": 0,
+            "_abnormalFlag": 42,
+            "_abnormalCombo": 2,
+            "_ignoreAllyTargetFree": 0,
+            "_ignoreHealFree": 0,
+            "_ignoreMotionMode": 0,
+            "_forceIgnoreCamouflage": 0,
+            "_needProfessionMask": 0,
+            "_professionMask": 0,
+            "_excludeSomeAbnormalFlags": 0,
+            "_excludeAbnormalFlag": 46,
+            "_limitTargetNum": 1,
+            "_maxTargetKey": "max_target",
+            "_maxNum": 1,
+            "_excludeOwner": 0,
+            "_sortByTauntAtLast": 0,
+            "_ignoreHitRange": 0,
+            "_checkUnitType": 0,
+            "_unitTypeMask": 0,
+            "_abilityInputTargetAsSortSource": 0,
+            "_enemyLevelMask": 7,
+            "_motionMask": 3,
+            "_allowNoneApplyWay": 1,
+            "_applyWay": 3,
+            "_filterByEnemiesKey": 1,
+            "_filterEnemyKeyMode": 0,
+            "_enemyKey": "enemy_9023_acdums",
+            "_filterByEnemiesMode": 1,
+            "_filterByEnemiesTag": 0,
+            "_enemyMode": 1,
+            "_enemyTag": "",
+            "_excludeDisappeared": 0,
+            "_excludeInCombat": 0,
+            "_filterBuff": 0,
+            "_buffKeyExcluded": 0,
+            "_buffKey": "",
+            "_checkReachableToOwner": 0,
+            "_avoidObstacleLike": 0,
+            "_checkOwnerCanBlockEnemy": 0,
+            "_filterUnbalance": 0,
+            "_filterNotInUnbalance": 0,
+            "_filterAbnormalImmune": 0,
+            "_abnormalFlagImmune": 42,
+            "_filterEnemyMassLevel": 0,
+            "_massCompareType": 0,
+            "_massLevel": 0
+          }
+        }
+      },
+      "ownership": {
+        "bundle": "assets/AB/Android/battle/enm_pfb_29.ab",
+        "bundleSha256": "47d7292311730079ca1e09e5a8853b048064a93e108ef558652ebd662e0b96ab",
+        "rootComponentId": "-6295750264029530788",
+        "rootGameObjectId": "7515569547225380188",
+        "nodes": {
+          "7515569547225380188": {
+            "pathId": "7515569547225380188",
+            "unityType": "GameObject",
+            "fields": {
+              "m_Component": [
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-354342523803617956"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-6295750264029530788"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "6577628180386329948"
+                  }
+                }
+              ],
+              "m_Layer": 12,
+              "m_Name": "Attack",
+              "m_Tag": 0,
+              "m_IsActive": true
+            }
+          },
+          "-354342523803617956": {
+            "pathId": "-354342523803617956",
+            "unityType": "Transform",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "7515569547225380188"
+              },
+              "m_LocalRotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -3.102349310779573e-08,
+                "w": 1.0
+              },
+              "m_LocalPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "m_LocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              },
+              "m_Children": [
+                {
+                  "m_FileID": 0,
+                  "m_PathID": "-1357156696761322148"
+                },
+                {
+                  "m_FileID": 0,
+                  "m_PathID": "2064940152940901724"
+                }
+              ],
+              "m_Father": {
+                "m_FileID": 0,
+                "m_PathID": "2257769361396512092"
+              }
+            }
+          },
+          "-6295750264029530788": {
+            "pathId": "-6295750264029530788",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "7515569547225380188"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "5752393290759919736"
+              },
+              "m_Name": "",
+              "_selector": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "_metadata": {
+                "namedAsAlias": "",
+                "blackboardPrefix": ""
+              },
+              "_interruptAbilityOnDetach": 1,
+              "_attachPassiveBuffsOnDummy": 1,
+              "_ignoreIfOwnerDead": 0,
+              "_forceAsDmgOrHealAbility": 0,
+              "_category": 4,
+              "_coolDownAbilityIndex": 0,
+              "_clearInternalCooldownWhenFinish": 1,
+              "_updateCooldownBySubAbilityCooldownDuringCasting": 0,
+              "_updateSubAbilitiesWhenExtendUpdated": 0,
+              "_abilityConfigs": [
+                {
+                  "_ability": {
+                    "m_FileID": 0,
+                    "m_PathID": "7832002301509547356"
+                  },
+                  "_trigger": {
+                    "m_FileID": 0,
+                    "m_PathID": "1881009499158787420"
+                  },
+                  "_alwaysUseTrigger": 0,
+                  "_useInputTarget": 0
+                },
+                {
+                  "_ability": {
+                    "m_FileID": 0,
+                    "m_PathID": "-8924723807157111460"
+                  },
+                  "_trigger": {
+                    "m_FileID": 0,
+                    "m_PathID": "4850881241672693084"
+                  },
+                  "_alwaysUseTrigger": 0,
+                  "_useInputTarget": 0
+                }
+              ],
+              "_timeMode": 0,
+              "_selectAbilitySequentially": 0,
+              "_useSubAbilityEscapeTime": 0,
+              "_escapeTimeAbilityIndex": 0,
+              "_firstAttackIfAbilityChanged": 0,
+              "_resetSubAbilities": 0,
+              "_resetSubAbilityCooldown": 1,
+              "_useCurAbCheckAtPreCastPhase": 0
+            },
+            "fieldShape": "1a8bba0dbf6bf823",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.Abilities.AbilitySelectableGroup",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "5752393290759919736",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "6577628180386329948": {
+            "pathId": "6577628180386329948",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "7515569547225380188"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-2995189732062982133"
+              },
+              "m_Name": ""
+            },
+            "fieldShape": "98e18c5d46fd8efc",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.AlwaysTrigger",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "-2995189732062982133",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "-1357156696761322148": {
+            "pathId": "-1357156696761322148",
+            "unityType": "Transform",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "4103575086301230428"
+              },
+              "m_LocalRotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": 1.0
+              },
+              "m_LocalPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "m_LocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              },
+              "m_Children": [
+                {
+                  "m_FileID": 0,
+                  "m_PathID": "-6658794226668489380"
+                }
+              ],
+              "m_Father": {
+                "m_FileID": 0,
+                "m_PathID": "-354342523803617956"
+              }
+            }
+          },
+          "2064940152940901724": {
+            "pathId": "2064940152940901724",
+            "unityType": "Transform",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-3934611541008665252"
+              },
+              "m_LocalRotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": 1.0
+              },
+              "m_LocalPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "m_LocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              },
+              "m_Children": [
+                {
+                  "m_FileID": 0,
+                  "m_PathID": "2508026296557024604"
+                }
+              ],
+              "m_Father": {
+                "m_FileID": 0,
+                "m_PathID": "-354342523803617956"
+              }
+            }
+          },
+          "-3934611541008665252": {
+            "pathId": "-3934611541008665252",
+            "unityType": "GameObject",
+            "fields": {
+              "m_Component": [
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "2064940152940901724"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-8924723807157111460"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-2315636123113900708"
+                  }
+                }
+              ],
+              "m_Layer": 0,
+              "m_Name": "AbilityName",
+              "m_Tag": 0,
+              "m_IsActive": true
+            }
+          },
+          "4103575086301230428": {
+            "pathId": "4103575086301230428",
+            "unityType": "GameObject",
+            "fields": {
+              "m_Component": [
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-1357156696761322148"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "7832002301509547356"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "7888502444051969372"
+                  }
+                }
+              ],
+              "m_Layer": 0,
+              "m_Name": "AttackEnemy",
+              "m_Tag": 0,
+              "m_IsActive": true
+            }
+          },
+          "-2315636123113900708": {
+            "pathId": "-2315636123113900708",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-3934611541008665252"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-550693537895634864"
+              },
+              "m_Name": "",
+              "_hitEffects": [],
+              "_castEffects": [
+                {
+                  "_directionType": 0,
+                  "_effects": [
+                    "enemy_acduml_skill_start"
+                  ],
+                  "_oneshot": 1,
+                  "_startEvent": 2,
+                  "_endEvent": 3,
+                  "_onlyOnce": 0,
+                  "_useFourDirectionalFace": 0,
+                  "_delayIfFirstAttack": 0.0,
+                  "_hookEffectAfterFirstAttack": ""
+                }
+              ],
+              "_attachEffects": [],
+              "_inputTargetEffects": [],
+              "_castTargetEffects": [
+                {
+                  "_directionType": 0,
+                  "_effects": [
+                    "enemy_acduml_lockon"
+                  ],
+                  "_oneshot": 0,
+                  "_startEvent": 2,
+                  "_endEvent": 3,
+                  "_onlyOnce": 0,
+                  "_useFourDirectionalFace": 0,
+                  "_delayIfFirstAttack": 0.0,
+                  "_hookEffectAfterFirstAttack": ""
+                }
+              ],
+              "_convertCastEndToAttachFinish": 0,
+              "_recalculatePlaybackSpeed": 0,
+              "_preDelayFactor": 0.0
+            },
+            "fieldShape": "bddc643f1659a6a3",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.Abilities.UberEffectEmitter",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "-550693537895634864",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "-8924723807157111460": {
+            "pathId": "-8924723807157111460",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-3934611541008665252"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-3698736381282439861"
+              },
+              "m_Name": "",
+              "_selector": {
+                "m_FileID": 0,
+                "m_PathID": "504003501532755292"
+              },
+              "_metadata": {
+                "namedAsAlias": "",
+                "blackboardPrefix": ""
+              },
+              "_interruptAbilityOnDetach": 1,
+              "_attachPassiveBuffsOnDummy": 1,
+              "_ignoreIfOwnerDead": 0,
+              "_forceAsDmgOrHealAbility": 0,
+              "_waitForAttackEvent": 1,
+              "_interuptIfTargetDead": 0,
+              "_resetCdStrategy": 1,
+              "_selectTargetSource": 1,
+              "_selectTargetTiming": 0,
+              "_timeMode": 0,
+              "_alwaysIncludeTarget": 1,
+              "_allowNoTarget": 0,
+              "_animKey": "Attack",
+              "_endAnimKey": "Idle",
+              "_downAnimKey": "",
+              "_downEndAnimKey": "",
+              "_upAnimKey": "",
+              "_upEndAnimKey": "",
+              "_cooldown": 0.0,
+              "_cooldownKey": "duration",
+              "_preDelay": 0.0,
+              "_escapeTime": 0.0,
+              "_faceToTarget": 1,
+              "_faceToDefault": 0,
+              "_faceToFront": 0,
+              "_faceToFirstCastTarget": 0,
+              "_forceFaceToDirection": 0,
+              "_activeBuffs": [],
+              "_maxAnimScale": 1.0,
+              "_onlyPlayEndAnimWhenIsLastAbility": 0,
+              "_ignorePalsyInterrupt": 0,
+              "_atkScale": 1.0,
+              "_atkScaleKey": "atk_scale",
+              "_attackType": 1,
+              "_elementDamageType": 0,
+              "_epDamageRatio": 0.0,
+              "_useDynamicAttackType": 0,
+              "_deliveryParaWhenReplaceActionNode": 0,
+              "_projectileKey": "projectile_enemy_acduml",
+              "_mountPointType": 2,
+              "_useMountGroup": 0,
+              "_mountGroup": {
+                "loopType": 0,
+                "mountPoints": []
+              },
+              "_damageType": 2,
+              "_waitForProjectileInvalid": 0,
+              "_notClearProjectileWhenCastEnd": 0,
+              "_fireAttackFinishWhenProjectileInvalid": 0,
+              "_minPostDelayWhenProjectileInvalid": 0.0,
+              "_waitForAnimEndWhenProjectileInvalid": 0,
+              "_projectileDestination": 0,
+              "_extraDamageType": 0,
+              "_emitToInputPosWhenTargetIsInvalid": 0,
+              "_emitToInputRootTileWhenTargetIsInvalid": 0,
+              "_useCachedAtkOnly": 0,
+              "_transferSource": 0,
+              "_extraProjectileKeys": [],
+              "_fireCreateProjectileEvent": 0,
+              "_additionalTimes": 2,
+              "_triggerDelta": 0.25,
+              "_waitAttackEventForAllAttacks": 0,
+              "_additionalProjectile": "projectile_enemy_acduml",
+              "_useMultiAdditionalProjectiles": 0,
+              "_additionalProjectiles": [],
+              "_enableMountPointGroup": 0,
+              "_mountPointGroup": [],
+              "_onlyFeedActionsToFirstOne": 0,
+              "_onlyTrigAudioSignalForFirstOne": 0,
+              "_limitToOneTargetAfterFirstRound": 0,
+              "_splitDamage": 0,
+              "_addSpellCntToSignalId": 0,
+              "_onlyFeedActiveBuffToLastOne": 0,
+              "_onlyFeedActiveBuffToFirstOne": 0,
+              "_refreshTimesOnCastStart": 0,
+              "_castToFirstRoundTargetLocationsAtProjectileBirth": 0,
+              "_hookTheLastProjectile": ""
+            },
+            "fieldShape": "64d272481e921e57",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.Abilities.MultiRangedAttack",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "-3698736381282439861",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "7832002301509547356": {
+            "pathId": "7832002301509547356",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "4103575086301230428"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-3698736381282439861"
+              },
+              "m_Name": "",
+              "_selector": {
+                "m_FileID": 0,
+                "m_PathID": "6902228921850049884"
+              },
+              "_metadata": {
+                "namedAsAlias": "",
+                "blackboardPrefix": ""
+              },
+              "_interruptAbilityOnDetach": 1,
+              "_attachPassiveBuffsOnDummy": 1,
+              "_ignoreIfOwnerDead": 0,
+              "_forceAsDmgOrHealAbility": 0,
+              "_waitForAttackEvent": 1,
+              "_interuptIfTargetDead": 0,
+              "_resetCdStrategy": 1,
+              "_selectTargetSource": 1,
+              "_selectTargetTiming": 0,
+              "_timeMode": 0,
+              "_alwaysIncludeTarget": 1,
+              "_allowNoTarget": 0,
+              "_animKey": "Attack",
+              "_endAnimKey": "Idle",
+              "_downAnimKey": "",
+              "_downEndAnimKey": "",
+              "_upAnimKey": "",
+              "_upEndAnimKey": "",
+              "_cooldown": 0.0,
+              "_cooldownKey": "duration",
+              "_preDelay": 0.0,
+              "_escapeTime": 0.0,
+              "_faceToTarget": 1,
+              "_faceToDefault": 0,
+              "_faceToFront": 0,
+              "_faceToFirstCastTarget": 0,
+              "_forceFaceToDirection": 0,
+              "_activeBuffs": [],
+              "_maxAnimScale": 1.0,
+              "_onlyPlayEndAnimWhenIsLastAbility": 0,
+              "_ignorePalsyInterrupt": 0,
+              "_atkScale": 1.0,
+              "_atkScaleKey": "atk_scale",
+              "_attackType": 1,
+              "_elementDamageType": 0,
+              "_epDamageRatio": 0.0,
+              "_useDynamicAttackType": 0,
+              "_deliveryParaWhenReplaceActionNode": 0,
+              "_projectileKey": "projectile_enemy_acduml",
+              "_mountPointType": 2,
+              "_useMountGroup": 0,
+              "_mountGroup": {
+                "loopType": 0,
+                "mountPoints": []
+              },
+              "_damageType": 2,
+              "_waitForProjectileInvalid": 0,
+              "_notClearProjectileWhenCastEnd": 0,
+              "_fireAttackFinishWhenProjectileInvalid": 0,
+              "_minPostDelayWhenProjectileInvalid": 0.0,
+              "_waitForAnimEndWhenProjectileInvalid": 0,
+              "_projectileDestination": 0,
+              "_extraDamageType": 0,
+              "_emitToInputPosWhenTargetIsInvalid": 0,
+              "_emitToInputRootTileWhenTargetIsInvalid": 0,
+              "_useCachedAtkOnly": 0,
+              "_transferSource": 0,
+              "_extraProjectileKeys": [],
+              "_fireCreateProjectileEvent": 0,
+              "_additionalTimes": 2,
+              "_triggerDelta": 0.25,
+              "_waitAttackEventForAllAttacks": 0,
+              "_additionalProjectile": "projectile_enemy_acduml",
+              "_useMultiAdditionalProjectiles": 0,
+              "_additionalProjectiles": [],
+              "_enableMountPointGroup": 0,
+              "_mountPointGroup": [],
+              "_onlyFeedActionsToFirstOne": 0,
+              "_onlyTrigAudioSignalForFirstOne": 0,
+              "_limitToOneTargetAfterFirstRound": 0,
+              "_splitDamage": 0,
+              "_addSpellCntToSignalId": 0,
+              "_onlyFeedActiveBuffToLastOne": 0,
+              "_onlyFeedActiveBuffToFirstOne": 0,
+              "_refreshTimesOnCastStart": 0,
+              "_castToFirstRoundTargetLocationsAtProjectileBirth": 0,
+              "_hookTheLastProjectile": ""
+            },
+            "fieldShape": "64d272481e921e57",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.Abilities.MultiRangedAttack",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "-3698736381282439861",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "7888502444051969372": {
+            "pathId": "7888502444051969372",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "4103575086301230428"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-550693537895634864"
+              },
+              "m_Name": "",
+              "_hitEffects": [],
+              "_castEffects": [
+                {
+                  "_directionType": 0,
+                  "_effects": [
+                    "enemy_acduml_attack_start"
+                  ],
+                  "_oneshot": 1,
+                  "_startEvent": 2,
+                  "_endEvent": 3,
+                  "_onlyOnce": 0,
+                  "_useFourDirectionalFace": 0,
+                  "_delayIfFirstAttack": 0.0,
+                  "_hookEffectAfterFirstAttack": ""
+                }
+              ],
+              "_attachEffects": [],
+              "_inputTargetEffects": [],
+              "_castTargetEffects": [],
+              "_convertCastEndToAttachFinish": 0,
+              "_recalculatePlaybackSpeed": 0,
+              "_preDelayFactor": 0.0
+            },
+            "fieldShape": "bddc643f1659a6a3",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.Abilities.UberEffectEmitter",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "-550693537895634864",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "-6658794226668489380": {
+            "pathId": "-6658794226668489380",
+            "unityType": "Transform",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "3599137089136997724"
+              },
+              "m_LocalRotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": 1.0
+              },
+              "m_LocalPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "m_LocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              },
+              "m_Children": [],
+              "m_Father": {
+                "m_FileID": 0,
+                "m_PathID": "-1357156696761322148"
+              }
+            }
+          },
+          "2508026296557024604": {
+            "pathId": "2508026296557024604",
+            "unityType": "Transform",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-5525291567053163172"
+              },
+              "m_LocalRotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": 1.0
+              },
+              "m_LocalPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "m_LocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              },
+              "m_Children": [],
+              "m_Father": {
+                "m_FileID": 0,
+                "m_PathID": "2064940152940901724"
+              }
+            }
+          },
+          "-5525291567053163172": {
+            "pathId": "-5525291567053163172",
+            "unityType": "GameObject",
+            "fields": {
+              "m_Component": [
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "2508026296557024604"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-7578524524728896164"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "504003501532755292"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "4850881241672693084"
+                  }
+                }
+              ],
+              "m_Layer": 12,
+              "m_Name": "Selector",
+              "m_Tag": 0,
+              "m_IsActive": true
+            }
+          },
+          "3599137089136997724": {
+            "pathId": "3599137089136997724",
+            "unityType": "GameObject",
+            "fields": {
+              "m_Component": [
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-6658794226668489380"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-2663651133105392292"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "6902228921850049884"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "1881009499158787420"
+                  }
+                }
+              ],
+              "m_Layer": 12,
+              "m_Name": "Selector",
+              "m_Tag": 0,
+              "m_IsActive": true
+            }
+          },
+          "-7578524524728896164": {
+            "pathId": "-7578524524728896164",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-5525291567053163172"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6275044311115013764"
+              },
+              "m_Name": ""
+            },
+            "fieldShape": "98e18c5d46fd8efc",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.GlobalRange",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "6275044311115013764",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "4850881241672693084": {
+            "pathId": "4850881241672693084",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-5525291567053163172"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "8607874384982393801"
+              },
+              "m_Name": "",
+              "_keepTarget": 0,
+              "_minTargetNum": 1,
+              "_overrideSearchTargetTick": -1
+            },
+            "fieldShape": "9ab0c85bbaa0c2e1",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.SelectorTrigger",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "8607874384982393801",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "504003501532755292": {
+            "pathId": "504003501532755292",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-5525291567053163172"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "7080728813803358465"
+              },
+              "m_Name": "",
+              "_targetSide": 2,
+              "_targetMotion": 3,
+              "_targetCategory": 1,
+              "_postFilter": 4,
+              "_ignoreTargetFree": 0,
+              "_onlyIgnoreSomeOfTargetFreeCase": 0,
+              "_abnormalFlag": 42,
+              "_abnormalCombo": 2,
+              "_ignoreAllyTargetFree": 0,
+              "_ignoreHealFree": 0,
+              "_forceIgnoreCamouflage": 0,
+              "_needProfessionMask": 0,
+              "_professionMask": 0,
+              "_limitTargetNum": 1,
+              "_maxTargetKey": "max_target",
+              "_maxNum": 1,
+              "_excludeOwner": 0,
+              "_sortByTauntAtLast": 0,
+              "_ignoreHitRange": 0,
+              "_checkUnitType": 0,
+              "_unitTypeMask": 0,
+              "_abilityInputTargetAsSortSource": 0
+            },
+            "fieldShape": "f3e538c375076f15",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.AdvancedSelector",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "7080728813803358465",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "-2663651133105392292": {
+            "pathId": "-2663651133105392292",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "3599137089136997724"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6275044311115013764"
+              },
+              "m_Name": ""
+            },
+            "fieldShape": "98e18c5d46fd8efc",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.GlobalRange",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "6275044311115013764",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "1881009499158787420": {
+            "pathId": "1881009499158787420",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "3599137089136997724"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "8607874384982393801"
+              },
+              "m_Name": "",
+              "_keepTarget": 0,
+              "_minTargetNum": 1,
+              "_overrideSearchTargetTick": -1
+            },
+            "fieldShape": "9ab0c85bbaa0c2e1",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.SelectorTrigger",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "8607874384982393801",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "6902228921850049884": {
+            "pathId": "6902228921850049884",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "3599137089136997724"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-4616102445704182007"
+              },
+              "m_Name": "",
+              "_targetSide": 7,
+              "_targetMotion": 3,
+              "_targetCategory": 1,
+              "_postFilter": 4,
+              "_ignoreTargetFree": 0,
+              "_onlyIgnoreSomeOfTargetFreeCase": 0,
+              "_abnormalFlag": 42,
+              "_abnormalCombo": 2,
+              "_ignoreAllyTargetFree": 0,
+              "_ignoreHealFree": 0,
+              "_forceIgnoreCamouflage": 0,
+              "_needProfessionMask": 0,
+              "_professionMask": 0,
+              "_limitTargetNum": 1,
+              "_maxTargetKey": "max_target",
+              "_maxNum": 1,
+              "_excludeOwner": 0,
+              "_sortByTauntAtLast": 0,
+              "_ignoreHitRange": 0,
+              "_checkUnitType": 0,
+              "_unitTypeMask": 0,
+              "_abilityInputTargetAsSortSource": 0,
+              "_enemyLevelMask": 7,
+              "_motionMask": 3,
+              "_allowNoneApplyWay": 1,
+              "_applyWay": 3,
+              "_filterByEnemiesKey": 1,
+              "_filterEnemyKeyMode": 0,
+              "_enemyKey": "enemy_9023_acdums",
+              "_filterByEnemiesMode": 1,
+              "_filterByEnemiesTag": 0,
+              "_enemyMode": 1,
+              "_enemyTag": "",
+              "_excludeDisappeared": 0,
+              "_excludeInCombat": 0,
+              "_filterBuff": 0,
+              "_buffKeyExcluded": 0,
+              "_buffKey": "",
+              "_checkReachableToOwner": 0,
+              "_avoidObstacleLike": 0,
+              "_filterUnbalance": 0,
+              "_filterNotInUnbalance": 0,
+              "_filterAbnormalImmune": 0,
+              "_abnormalFlagImmune": 42,
+              "_filterEnemyMassLevel": 0,
+              "_massCompareType": 0,
+              "_massLevel": 0
+            },
+            "fieldShape": "a55cc3dcbd1072fa",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.AdvancedSelectorWithEnemyOptions",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "-4616102445704182007",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          }
+        },
+        "failures": []
+      },
+      "projectile": {
+        "status": "source-fields-retrieved",
+        "source": {
+          "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_acduml.prefab",
+          "reference": {
+            "m_FileID": 0,
+            "m_PathID": "2848379474544646890"
+          }
+        },
+        "completeMonoBehaviourCoverage": true,
+        "failures": [],
+        "components": {
+          "4828803282618964714": {
+            "gameObjectPathID": "2848379474544646890",
+            "gameObjectName": "projectile_enemy_acduml",
+            "script": {
+              "status": "resolved",
+              "type": "Torappu.Battle.SimpleProjectile",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "-8797129986015012478",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            },
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2848379474544646890"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-8797129986015012478"
+              },
+              "m_Name": "",
+              "_randomDelayToBorn": 0.0,
+              "_bodyTransform": {
+                "m_FileID": 0,
+                "m_PathID": "-2724488329468224790"
+              },
+              "_keepAlreadyHitTime": -1.0,
+              "_mainEffect": "enemy_acduml_attack_trail",
+              "_clearMainEffectWhenReached": 1,
+              "_actionController": {
+                "_detachBuffsWhenTargetLeave": 0,
+                "_detachAllBuffsWhenStopped": 0,
+                "_onlyAddBuffsToTraceTarget": 0,
+                "_onlyAddBuffsToTargetOnce": 0,
+                "_dontAddBuffs": 0,
+                "_excludeAttachments": 0,
+                "_useSelfBlackboard": 0,
+                "_extraBuffsInTheEnd": [],
+                "_useExtraBuffsWhenStopHit": 0,
+                "_addExtraBuffsWhenReached": 0,
+                "_detachAllExtraBuffsWhenStopped": 0
+              },
+              "_fixDealHitTargetLeft": 1,
+              "_stopGraphicProjectileWhenClearMainEffect": 0,
+              "_overrideAudioSignal": "",
+              "_fireProjectileReachedEvent": 0,
+              "_eliminatableStatus": 0,
+              "_movementAdjustableStatus": 0,
+              "_managedBySource": 0,
+              "_projectileType": 0,
+              "_containsChildrenBehaviours": 0,
+              "_canHitSameTargetMultipleTimes": 0,
+              "_lifeTimeType": 1,
+              "_lifeTime": 10.0,
+              "_getLifeTimeFromBB": 0,
+              "_hitNumType": 2,
+              "_maxHitNum": 1,
+              "_getMaxHitNumFromBB": 0,
+              "_maxHitNumBBKey": "",
+              "_stopAfterMaxHit": 1,
+              "_stopAfterFirstHit": 0,
+              "_stopWhenSourceInvalid": 0,
+              "_alwaysHitTraceTargetInTheEnd": 1,
+              "_alwaysHitTraceTargetWhenReached": 0,
+              "_alwaysReachInTheEnd": 0,
+              "_limitedMaxHitNumToSourceBlockedCnt": 0,
+              "_allowZeroBlockCntLimit": 0
+            }
+          },
+          "-467374434433738006": {
+            "gameObjectPathID": "2848379474544646890",
+            "gameObjectName": "projectile_enemy_acduml",
+            "script": {
+              "status": "resolved",
+              "type": "Torappu.Battle.Projectiles.AdvancedMovement",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "-1429203677512073985",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            },
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2848379474544646890"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-1429203677512073985"
+              },
+              "m_Name": "",
+              "_rotateToTarget": 1,
+              "_forceReachedWhenTimeup": 1,
+              "_useSourceDirection": 0,
+              "_useTargetDirection": 0,
+              "_useStartToTarget": 0,
+              "_awayFromSourceAsDirection": 0,
+              "_flyToTargetLocationOnly": 0,
+              "_useSourceDirectionRandomArcAngleStart": 0,
+              "_useSourceToTargetRandomArcAngleStart": 0,
+              "_useSourceDirectionArcAngleWithRatio": 0,
+              "_useSourceToTargetArcAngleWithRatio": 0,
+              "_sourceDirectionArcAngleRatio": 0.0,
+              "_flyToPredefinedLocation": 0,
+              "_predefinedLocation": 0,
+              "_freezeRotationZ": 0,
+              "_freezeRotationXY": 0,
+              "_exactMatchCameraForward": 0,
+              "_resetToTargetPosWhenReached": 0,
+              "_resetToTracetargetMapPosV3": 0,
+              "_handleWithIBuildableTarget": 0,
+              "_forceResetToTargetPosWhenReached": 0,
+              "_fixOnProjectileReached": 1,
+              "_onlyReachedInTime": 0.0,
+              "_moveType": 1,
+              "_moveTypeData": {
+                "data": []
+              },
+              "_speed": 10.0,
+              "_distance": 0.0,
+              "_comeBack": 0,
+              "_comeBackSpeedScale": 0.25,
+              "_delayToStart": 0.0,
+              "_delayAfterReached": 0.0,
+              "_delayToReachAfterHit": 0.0,
+              "_clearTraceTargetWhenReached": 1,
+              "_updateDelayTimeOnlyOnce": 0,
+              "_skipSmoothLerpDirection": 0,
+              "_addInertia": 0,
+              "_turnSpeed": 0.0,
+              "_useDynamicSpeed": 0,
+              "_deltaSpeedPerSec": 0.0,
+              "_finalSpeed": 0.0,
+              "_randomOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "_forceUseTargetMountPoint": 0
+            }
+          },
+          "-3028578068281795862": {
+            "gameObjectPathID": "2848379474544646890",
+            "gameObjectName": "projectile_enemy_acduml",
+            "script": {
+              "status": "resolved",
+              "type": "Torappu.Battle.Projectiles.EffectBehaviour",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "6834194400804168919",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            },
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2848379474544646890"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6834194400804168919"
+              },
+              "m_Name": "",
+              "_effectsWhenStart": [],
+              "_effectsWhenReached": [
+                "enemy_acduml_attack_hit"
+              ],
+              "_effectsWhenHit": [],
+              "_effectsToTargetWhenStart": [],
+              "_effectsToTileWhenStart": [],
+              "_effectsWhenStop": [],
+              "_effectOnTrigger": [],
+              "_onlyPlayHitEffectOnTraceTarget": 0,
+              "_onlyPlayHitEffectOnNotTraceTarget": 0,
+              "_onlyPlayHitEffectOnce": 0,
+              "_clearHitEffectOnStop": 0,
+              "_clearPlayEffectOnStop": 0,
+              "_clearEffectsOnTileOnStop": 0,
+              "_clearReachedEffectWhenStop": 0,
+              "_alwaysPlayStartEffects": 0,
+              "_playStartEffectOnlyOnProjectile": 0,
+              "_useSourceFaceVector": 0,
+              "_useSourceFaceVectorOnHit": 0,
+              "_forceReachTargetGround": 0,
+              "_followTargetGround": 0,
+              "_replaceMainEffectWhenReach": 0,
+              "_mainEffectToReplace": "",
+              "_useTraceTargetWhenReach": 0,
+              "_setReachEffectOnProjectile": 0,
+              "_syncEffectScaleViaProjectile": 0
+            }
+          },
+          "-4311803533802972438": {
+            "gameObjectPathID": "2848379474544646890",
+            "gameObjectName": "projectile_enemy_acduml",
+            "script": {
+              "status": "resolved",
+              "type": "Torappu.Battle.Projectiles.HitBehaviour",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "-3494225671239136090",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            },
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2848379474544646890"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-3494225671239136090"
+              },
+              "m_Name": "",
+              "_targetOptions": {
+                "targetSide": 2,
+                "targetMotion": 3,
+                "targetCategory": 1,
+                "enableAdvancedOptions": 1,
+                "ignoreTargetFree": 0,
+                "ignoreAllyTargetFree": 0,
+                "ignoreHealFree": 0,
+                "ignoreTargetSide": 0,
+                "excludeSomeAbnormalFlags": 0,
+                "excludeAbnormalFlag": 0,
+                "purposeMask": 0,
+                "professionMask": 0,
+                "checkUnitType": 0,
+                "unitTypeMask": 0,
+                "onlyIgnoreSomeOfTargetFreeCase": 0,
+                "abnormalFlag": 0,
+                "abnormalCombo": 0
+              },
+              "_goThroughWall": 1,
+              "_onlyCheckHitWhenReachTarget": 1,
+              "_onlyCheckHitWhenStop": 0,
+              "_canFlyThroughTheDeathArea": 0,
+              "_exceptTraceTarget": 0,
+              "_overridePurposeMaskWithTargetOptions": 0,
+              "_rangeToLoad": {
+                "m_FileID": 0,
+                "m_PathID": "-8327330991646156054"
+              },
+              "_ignoreCamouflage": 1,
+              "_ignoreRangeScale": 0,
+              "_exceptSource": 0,
+              "_mergeTraceTargetMotion": 0,
+              "_markReachedOnlyWhenTargetEnter": 0
+            }
+          },
+          "-8327330991646156054": {
+            "gameObjectPathID": "2848379474544646890",
+            "gameObjectName": "projectile_enemy_acduml",
+            "script": {
+              "status": "resolved",
+              "type": "Torappu.Battle.CircleRange",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "6185056810787956083",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            },
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2848379474544646890"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6185056810787956083"
+              },
+              "m_Name": "",
+              "_extendable": 0,
+              "_scaleble": 1
+            }
+          }
+        },
+        "key": "projectile_enemy_acduml"
+      },
+      "projectileOwnership": {
+        "bundle": "assets/AB/Android/battle/prefabs/[uc]projectiles.ab",
+        "bundleSha256": "550ca691b8d9e96f29706c59beaaacf342c89cdace34b1bd28595b6e36c37234",
+        "rootComponentId": "4828803282618964714",
+        "rootGameObjectId": "2848379474544646890",
+        "nodes": {
+          "2848379474544646890": {
+            "pathId": "2848379474544646890",
+            "unityType": "GameObject",
+            "fields": {
+              "m_Component": [
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-5253418162853160214"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "4828803282618964714"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-467374434433738006"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-3028578068281795862"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-4311803533802972438"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-8327330991646156054"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-4370014192857752854"
+                  }
+                }
+              ],
+              "m_Layer": 14,
+              "m_Name": "projectile_enemy_acduml",
+              "m_Tag": 0,
+              "m_IsActive": true
+            }
+          },
+          "-3028578068281795862": {
+            "pathId": "-3028578068281795862",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2848379474544646890"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6834194400804168919"
+              },
+              "m_Name": "",
+              "_effectsWhenStart": [],
+              "_effectsWhenReached": [
+                "enemy_acduml_attack_hit"
+              ],
+              "_effectsWhenHit": [],
+              "_effectsToTargetWhenStart": [],
+              "_effectsToTileWhenStart": [],
+              "_effectsWhenStop": [],
+              "_effectOnTrigger": [],
+              "_onlyPlayHitEffectOnTraceTarget": 0,
+              "_onlyPlayHitEffectOnNotTraceTarget": 0,
+              "_onlyPlayHitEffectOnce": 0,
+              "_clearHitEffectOnStop": 0,
+              "_clearPlayEffectOnStop": 0,
+              "_clearEffectsOnTileOnStop": 0,
+              "_clearReachedEffectWhenStop": 0,
+              "_alwaysPlayStartEffects": 0,
+              "_playStartEffectOnlyOnProjectile": 0,
+              "_useSourceFaceVector": 0,
+              "_useSourceFaceVectorOnHit": 0,
+              "_forceReachTargetGround": 0,
+              "_followTargetGround": 0,
+              "_replaceMainEffectWhenReach": 0,
+              "_mainEffectToReplace": "",
+              "_useTraceTargetWhenReach": 0,
+              "_setReachEffectOnProjectile": 0,
+              "_syncEffectScaleViaProjectile": 0
+            },
+            "fieldShape": "9ef2cce7440786cf",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.Projectiles.EffectBehaviour",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "6834194400804168919",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "-4311803533802972438": {
+            "pathId": "-4311803533802972438",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2848379474544646890"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-3494225671239136090"
+              },
+              "m_Name": "",
+              "_targetOptions": {
+                "targetSide": 2,
+                "targetMotion": 3,
+                "targetCategory": 1,
+                "enableAdvancedOptions": 1,
+                "ignoreTargetFree": 0,
+                "ignoreAllyTargetFree": 0,
+                "ignoreHealFree": 0,
+                "ignoreTargetSide": 0,
+                "excludeSomeAbnormalFlags": 0,
+                "excludeAbnormalFlag": 0,
+                "purposeMask": 0,
+                "professionMask": 0,
+                "checkUnitType": 0,
+                "unitTypeMask": 0,
+                "onlyIgnoreSomeOfTargetFreeCase": 0,
+                "abnormalFlag": 0,
+                "abnormalCombo": 0
+              },
+              "_goThroughWall": 1,
+              "_onlyCheckHitWhenReachTarget": 1,
+              "_onlyCheckHitWhenStop": 0,
+              "_canFlyThroughTheDeathArea": 0,
+              "_exceptTraceTarget": 0,
+              "_overridePurposeMaskWithTargetOptions": 0,
+              "_rangeToLoad": {
+                "m_FileID": 0,
+                "m_PathID": "-8327330991646156054"
+              },
+              "_ignoreCamouflage": 1,
+              "_ignoreRangeScale": 0,
+              "_exceptSource": 0,
+              "_mergeTraceTargetMotion": 0,
+              "_markReachedOnlyWhenTargetEnter": 0
+            },
+            "fieldShape": "a845655334073b4b",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.Projectiles.HitBehaviour",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "-3494225671239136090",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "-4370014192857752854": {
+            "pathId": "-4370014192857752854",
+            "unityType": "CircleCollider2D",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2848379474544646890"
+              },
+              "m_Enabled": 1,
+              "m_Density": 1.0,
+              "m_Material": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "m_IsTrigger": true,
+              "m_UsedByEffector": false,
+              "m_UsedByComposite": false,
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "m_Radius": 1.7999999523162842
+            }
+          },
+          "-467374434433738006": {
+            "pathId": "-467374434433738006",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2848379474544646890"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-1429203677512073985"
+              },
+              "m_Name": "",
+              "_rotateToTarget": 1,
+              "_forceReachedWhenTimeup": 1,
+              "_useSourceDirection": 0,
+              "_useTargetDirection": 0,
+              "_useStartToTarget": 0,
+              "_awayFromSourceAsDirection": 0,
+              "_flyToTargetLocationOnly": 0,
+              "_useSourceDirectionRandomArcAngleStart": 0,
+              "_useSourceToTargetRandomArcAngleStart": 0,
+              "_useSourceDirectionArcAngleWithRatio": 0,
+              "_useSourceToTargetArcAngleWithRatio": 0,
+              "_sourceDirectionArcAngleRatio": 0.0,
+              "_flyToPredefinedLocation": 0,
+              "_predefinedLocation": 0,
+              "_freezeRotationZ": 0,
+              "_freezeRotationXY": 0,
+              "_exactMatchCameraForward": 0,
+              "_resetToTargetPosWhenReached": 0,
+              "_resetToTracetargetMapPosV3": 0,
+              "_handleWithIBuildableTarget": 0,
+              "_forceResetToTargetPosWhenReached": 0,
+              "_fixOnProjectileReached": 1,
+              "_onlyReachedInTime": 0.0,
+              "_moveType": 1,
+              "_moveTypeData": {
+                "data": []
+              },
+              "_speed": 10.0,
+              "_distance": 0.0,
+              "_comeBack": 0,
+              "_comeBackSpeedScale": 0.25,
+              "_delayToStart": 0.0,
+              "_delayAfterReached": 0.0,
+              "_delayToReachAfterHit": 0.0,
+              "_clearTraceTargetWhenReached": 1,
+              "_updateDelayTimeOnlyOnce": 0,
+              "_skipSmoothLerpDirection": 0,
+              "_addInertia": 0,
+              "_turnSpeed": 0.0,
+              "_useDynamicSpeed": 0,
+              "_deltaSpeedPerSec": 0.0,
+              "_finalSpeed": 0.0,
+              "_randomOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "_forceUseTargetMountPoint": 0
+            },
+            "fieldShape": "66b56387f485592d",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.Projectiles.AdvancedMovement",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "-1429203677512073985",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "-5253418162853160214": {
+            "pathId": "-5253418162853160214",
+            "unityType": "Transform",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2848379474544646890"
+              },
+              "m_LocalRotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+              },
+              "m_LocalPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "m_LocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              },
+              "m_Children": [
+                {
+                  "m_FileID": 0,
+                  "m_PathID": "-2724488329468224790"
+                }
+              ],
+              "m_Father": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              }
+            }
+          },
+          "-8327330991646156054": {
+            "pathId": "-8327330991646156054",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2848379474544646890"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6185056810787956083"
+              },
+              "m_Name": "",
+              "_extendable": 0,
+              "_scaleble": 1
+            },
+            "fieldShape": "a9c754f78ce08c58",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.CircleRange",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "6185056810787956083",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "4828803282618964714": {
+            "pathId": "4828803282618964714",
+            "unityType": "MonoBehaviour",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2848379474544646890"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-8797129986015012478"
+              },
+              "m_Name": "",
+              "_randomDelayToBorn": 0.0,
+              "_bodyTransform": {
+                "m_FileID": 0,
+                "m_PathID": "-2724488329468224790"
+              },
+              "_keepAlreadyHitTime": -1.0,
+              "_mainEffect": "enemy_acduml_attack_trail",
+              "_clearMainEffectWhenReached": 1,
+              "_actionController": {
+                "_detachBuffsWhenTargetLeave": 0,
+                "_detachAllBuffsWhenStopped": 0,
+                "_onlyAddBuffsToTraceTarget": 0,
+                "_onlyAddBuffsToTargetOnce": 0,
+                "_dontAddBuffs": 0,
+                "_excludeAttachments": 0,
+                "_useSelfBlackboard": 0,
+                "_extraBuffsInTheEnd": [],
+                "_useExtraBuffsWhenStopHit": 0,
+                "_addExtraBuffsWhenReached": 0,
+                "_detachAllExtraBuffsWhenStopped": 0
+              },
+              "_fixDealHitTargetLeft": 1,
+              "_stopGraphicProjectileWhenClearMainEffect": 0,
+              "_overrideAudioSignal": "",
+              "_fireProjectileReachedEvent": 0,
+              "_eliminatableStatus": 0,
+              "_movementAdjustableStatus": 0,
+              "_managedBySource": 0,
+              "_projectileType": 0,
+              "_containsChildrenBehaviours": 0,
+              "_canHitSameTargetMultipleTimes": 0,
+              "_lifeTimeType": 1,
+              "_lifeTime": 10.0,
+              "_getLifeTimeFromBB": 0,
+              "_hitNumType": 2,
+              "_maxHitNum": 1,
+              "_getMaxHitNumFromBB": 0,
+              "_maxHitNumBBKey": "",
+              "_stopAfterMaxHit": 1,
+              "_stopAfterFirstHit": 0,
+              "_stopWhenSourceInvalid": 0,
+              "_alwaysHitTraceTargetInTheEnd": 1,
+              "_alwaysHitTraceTargetWhenReached": 0,
+              "_alwaysReachInTheEnd": 0,
+              "_limitedMaxHitNumToSourceBlockedCnt": 0,
+              "_allowZeroBlockCntLimit": 0
+            },
+            "fieldShape": "2af792379c25a51f",
+            "resolvedScript": {
+              "status": "resolved",
+              "type": "Torappu.Battle.SimpleProjectile",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "-8797129986015012478",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            }
+          },
+          "-2724488329468224790": {
+            "pathId": "-2724488329468224790",
+            "unityType": "Transform",
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-366194851023070486"
+              },
+              "m_LocalRotation": {
+                "x": -0.0,
+                "y": -0.0,
+                "z": -0.0,
+                "w": 1.0
+              },
+              "m_LocalPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "m_LocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              },
+              "m_Children": [],
+              "m_Father": {
+                "m_FileID": 0,
+                "m_PathID": "-5253418162853160214"
+              }
+            }
+          },
+          "-366194851023070486": {
+            "pathId": "-366194851023070486",
+            "unityType": "GameObject",
+            "fields": {
+              "m_Component": [
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-2724488329468224790"
+                  }
+                }
+              ],
+              "m_Layer": 14,
+              "m_Name": "Body",
+              "m_Tag": 0,
+              "m_IsActive": true
+            }
+          }
+        },
+        "failures": []
+      },
+      "databaseLevels": [
+        {
+          "level": 0,
+          "enemyData": {
+            "name": {
+              "m_defined": true,
+              "m_value": "假想敌：管"
+            },
+            "description": {
+              "m_defined": true,
+              "m_value": "优先攻击“断弦之音”"
+            },
+            "prefabKey": {
+              "m_defined": true,
+              "m_value": "enemy_9021_acduml_2"
+            },
+            "attributes": {
+              "maxHp": {
+                "m_defined": true,
+                "m_value": 85000
+              },
+              "atk": {
+                "m_defined": true,
+                "m_value": 300
+              },
+              "def": {
+                "m_defined": true,
+                "m_value": 700
+              },
+              "magicResistance": {
+                "m_defined": true,
+                "m_value": 50.0
+              },
+              "cost": {
+                "m_defined": false,
+                "m_value": 0
+              },
+              "blockCnt": {
+                "m_defined": false,
+                "m_value": 0
+              },
+              "moveSpeed": {
+                "m_defined": true,
+                "m_value": 1.0
+              },
+              "attackSpeed": {
+                "m_defined": true,
+                "m_value": 0.0
+              },
+              "baseAttackTime": {
+                "m_defined": true,
+                "m_value": 3.0
+              },
+              "respawnTime": {
+                "m_defined": false,
+                "m_value": 0
+              },
+              "hpRecoveryPerSec": {
+                "m_defined": true,
+                "m_value": 0.0
+              },
+              "spRecoveryPerSec": {
+                "m_defined": false,
+                "m_value": 0.0
+              },
+              "maxDeployCount": {
+                "m_defined": false,
+                "m_value": 0
+              },
+              "massLevel": {
+                "m_defined": true,
+                "m_value": 7
+              },
+              "baseForceLevel": {
+                "m_defined": false,
+                "m_value": 0
+              },
+              "tauntLevel": {
+                "m_defined": true,
+                "m_value": 0
+              },
+              "epDamageResistance": {
+                "m_defined": true,
+                "m_value": 0.0
+              },
+              "epResistance": {
+                "m_defined": true,
+                "m_value": 0.0
+              },
+              "damageHitratePhysical": {
+                "m_defined": false,
+                "m_value": 0.0
+              },
+              "damageHitrateMagical": {
+                "m_defined": false,
+                "m_value": 0.0
+              },
+              "epBreakRecoverSpeed": {
+                "m_defined": false,
+                "m_value": 0.0
+              },
+              "stunImmune": {
+                "m_defined": true,
+                "m_value": true
+              },
+              "silenceImmune": {
+                "m_defined": true,
+                "m_value": true
+              },
+              "sleepImmune": {
+                "m_defined": true,
+                "m_value": true
+              },
+              "frozenImmune": {
+                "m_defined": true,
+                "m_value": true
+              },
+              "levitateImmune": {
+                "m_defined": true,
+                "m_value": true
+              },
+              "disarmedCombatImmune": {
+                "m_defined": true,
+                "m_value": false
+              },
+              "fearedImmune": {
+                "m_defined": true,
+                "m_value": true
+              },
+              "palsyImmune": {
+                "m_defined": true,
+                "m_value": false
+              },
+              "attractImmune": {
+                "m_defined": false,
+                "m_value": false
+              },
+              "teleportImmune": {
+                "m_defined": false,
+                "m_value": false
+              },
+              "groundBoundImmune": {
+                "m_defined": false,
+                "m_value": false
+              }
+            },
+            "applyWay": {
+              "m_defined": true,
+              "m_value": "RANGED"
+            },
+            "motion": {
+              "m_defined": true,
+              "m_value": "WALK"
+            },
+            "enemyTags": {
+              "m_defined": true,
+              "m_value": [
+                "origen"
+              ]
+            },
+            "lifePointReduce": {
+              "m_defined": true,
+              "m_value": 2
+            },
+            "levelType": {
+              "m_defined": true,
+              "m_value": "BOSS"
+            },
+            "rangeRadius": {
+              "m_defined": true,
+              "m_value": -1.0
+            },
+            "numOfExtraDrops": {
+              "m_defined": true,
+              "m_value": 0
+            },
+            "viewRadius": {
+              "m_defined": true,
+              "m_value": 0.0
+            },
+            "notCountInTotal": {
+              "m_defined": false,
+              "m_value": false
+            },
+            "talentBlackboard": [
+              {
+                "key": "1.acduml_t_1[high_hp].interval",
+                "value": 40.0,
+                "valueStr": null
+              },
+              {
+                "key": "1.acduml_t_1[low_hp].interval",
+                "value": 20.0,
+                "valueStr": null
+              },
+              {
+                "key": "1.hp_ratio",
+                "value": 0.5,
+                "valueStr": null
+              },
+              {
+                "key": "1.enemy_key",
+                "value": 0.0,
+                "valueStr": "enemy_9023_acdums"
+              },
+              {
+                "key": "1.prob",
+                "value": 0.1,
+                "valueStr": null
+              }
+            ],
+            "skills": [
+              {
+                "prefabKey": "1",
+                "priority": 0,
+                "cooldown": 50.0,
+                "initCooldown": 40.0,
+                "spCost": 50,
+                "blackboard": [
+                  {
+                    "key": "range_radius",
+                    "value": 0.8,
+                    "valueStr": null
+                  },
+                  {
+                    "key": "ep_damage_ratio",
+                    "value": 0.25,
+                    "valueStr": null
+                  }
+                ]
+              }
+            ],
+            "spData": {
+              "spType": "INCREASE_WITH_TIME",
+              "maxSp": 50,
+              "initSp": 0,
+              "increment": 1.0
+            }
+          }
+        }
+      ]
+    }
+  },
+  "boundary": "Only frozen acduml ordinary root graphs. Unrelated common/skill components are not admitted and no enemy completion is claimed.",
+  "handbookEvidence": {
+    "enemy_9021_acduml": [
+      {
+        "text": "在场时持续召唤【暗色的喟叹】形态<“余音”>；生命值低于一定比例时，召唤间隔缩短",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "优先攻击【暗色的喟叹】形态<“余音”>",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "【裂管之奏】选择场上所有【暗色的喟叹】形态<“余音”>进行一次三连击，造成范围法术伤害和<$ba.dt.apoptosis>凋亡损伤</>",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "隐秘核心",
+        "textFormat": "TITLE"
+      },
+      {
+        "text": "在模拟中达成特定条件并进入隐秘核心回合时，<假想敌：弦>将与<假想敌：管>同时登场",
+        "textFormat": "NORMAL"
+      }
+    ],
+    "enemy_9021_acduml_2": [
+      {
+        "text": "在场时持续召唤【暗色的喟叹】形态<“余音”>；生命值低于一定比例时，召唤间隔缩短",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "优先攻击【暗色的喟叹】形态<“余音”>",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "【裂管之奏】选择场上所有【暗色的喟叹】形态<“余音”>进行一次三连击，造成范围法术伤害和<$ba.dt.apoptosis>凋亡损伤</>",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "隐秘核心",
+        "textFormat": "TITLE"
+      },
+      {
+        "text": "在模拟中达成特定条件并进入隐秘核心回合时，<假想敌：弦>将与<假想敌：管>同时登场",
+        "textFormat": "NORMAL"
+      }
+    ],
+    "enemy_9023_acdums": [
+      {
+        "text": "需要数次攻击击倒",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "只能被阻挡数大于等于2的单位阻挡",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "【复调】：在【金黄的悲号】与【暗色的喟叹】形态之间转换",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "【金黄的悲号】形态时攻击速度提升，受到数次伤害后转换为【暗色的喟叹】形态",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "【暗色的喟叹】形态时移动速度下降，攻击力提升，受到数次伤害后转换为【金黄的悲号】形态",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "受到伤害时以自身为中心造成一次范围法术伤害和<$ba.dt.apoptosis>凋亡损伤</>",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "全场所有<“余音”>周期性一同进行一次合奏造成范围法术伤害和<$ba.dt.apoptosis>凋亡损伤</>",
+        "textFormat": "NORMAL"
+      }
+    ]
+  },
+  "modelPolicies": {
+    "trace": "Opponent-only area plus forced valid trace once; source ALL key/mode aim + alwaysHitTraceTargetInTheEnd + official handbook preferred-attack and target on-damage effects. Cross-source inference, not native callback proof.",
+    "castEnd": "Emitted projectiles remain independent after cast/source end; cancel un-emitted shots. This is an explicit simulation policy retaining both source lifecycle flags, not proof of native notClearProjectileWhenCastEnd behavior."
+  }
+}

@@ -1,0 +1,31 @@
+PASS elemental source skills
+PASS operator skill levels source
+PASS marksman source skills
+PASS medic source skills
+PASS protective medic source skills
+PASS medical drone inventory and deployment
+PASS medical profession attack-speed aura
+PASS Dusk skills and freeling lifecycle
+PASS Goldenglow and Rockrock client funnels
+PASS contact and attack boundaries
+FAIL operator library
+node:internal/assert/utils:77
+    throw err;
+    ^
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(opCardHtml(ifrit).includes('disabled'))
+
+    at evalmachine.<anonymous>:25:62
+    at Script.runInContext (node:vm:149:12)
+    at Object.runInContext (node:vm:301:6)
+    at Object.run (D:\OneDrive\Project\ArknightsResearch\卫戍协议复刻\tools\_browser_fixture.js:13:49)
+    at main (D:\OneDrive\Project\ArknightsResearch\卫戍协议复刻\tools\_roster_catalog_smoke.js:5:4) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}

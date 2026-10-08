@@ -1,0 +1,21 @@
+'use strict';
+const fs = require('fs'), path = require('path'), vm = require('vm');
+const WEB = path.join(__dirname, '..', 'web');
+const sandbox = { console }; sandbox.window = sandbox;
+vm.createContext(sandbox);
+vm.runInContext(fs.readFileSync(path.join(WEB, 'src/domain/game-state.js'), 'utf8'), sandbox);
+vm.runInContext(fs.readFileSync(path.join(WEB, 'src/rules/session-commands.js'), 'utf8'), sandbox);
+const api = sandbox.ArkState;
+api.bindLegacy('session', { money:20, level:1, upgradeCost:4, frozen:false, phase:'setup' }, 'test');
+api.dispatch({ type:'economy/spend', payload:{ amount:3, reason:'shop' } });
+api.dispatch({ type:'shop/toggle-freeze' });
+api.dispatch({ type:'round/begin', payload:{ round:2, money:20 } });
+let s = api.getSnapshot().session;
+if (s.money !== 20 || s.round !== 2 || s.phase !== 'rest' || !s.frozen) throw new Error('Round/economy command sequence failed.');
+api.dispatch({ type:'shop/upgrade', payload:{ cost:4, nextCost:6 } });
+s = api.getSnapshot().session;
+if (s.money !== 16 || s.level !== 2 || s.upgradeCost !== 6) throw new Error('Shop upgrade command failed.');
+const revision = api.getSnapshot().revision;
+try { api.dispatch({ type:'economy/spend', payload:{ amount:999 } }); } catch (_) {}
+if (api.getSnapshot().revision !== revision) throw new Error('Rejected spend mutated state.');
+console.log('SESSION COMMANDS SMOKE OK');

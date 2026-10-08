@@ -1,0 +1,57 @@
+# 提取的素材与游戏资源（版权，不入库）
+assets-extracted/
+data/*.json
+data/gamedata/
+data/ArknightsGameData/
+web/avatars/
+web/enemy_avatars/
+web/portraits/
+web/enemy_portraits/
+web/ui/
+web/sfx/
+
+# 客户端 APK 与反编译产物
+*.apk
+*.xapk
+client-patch/il2cpp/
+client-patch/dump/
+client-patch/out/
+
+# 服务器运行数据
+server/*.db
+server/*.sqlite
+server/*.db-journal
+server/data/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node / Go
+node_modules/
+.runtime/
+online-room.json
+/user-config.json
+/user-config.json.*
+/.user-config.*.tmp
+/easytier-windows-*.zip
+/easytier-gui_*-setup.exe
+dist/
+build/
+
+# IDE / 通用
+.idea/
+.vscode/
+*.log
+.env
+
+# 临时工作目录
+work/
+
+# 外部 DLL 依赖（从 Audacity 等复制，不入库）
+tools/libs/
+
+# Agent 运行时互斥文件
+assets/state/*.lock

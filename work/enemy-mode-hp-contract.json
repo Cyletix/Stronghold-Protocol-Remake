@@ -1,0 +1,649 @@
+{
+  "schemaVersion": 1,
+  "rule": "native-hp-toggle-contract-v1",
+  "source": {
+    "nativeVersion": "JP 36.7.22",
+    "nativeBaselineOnly": true,
+    "communityCommit": "d2f6d76a7172cedc7583fc0a4eb998699abf25f5",
+    "crossVersionUse": "Applying JP native baseline to frozen CN configurations is Inferred; no XLua hotfix equivalence claim.",
+    "reuse": "Four prior HP methods reused; no repeated APK or full-source extraction."
+  },
+  "sourceHashes": {
+    "data/ArknightsGameData/zh_CN/gamedata/levels/enemydata/enemy_database.json": "d3f494055a1ec0d672b5a8c86b291be310a2f7a458c932fd6807c0f8b67fd7a9",
+    "work/apk-extracted/lib/arm64-v8a/libil2cpp.so": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+    "work/client-logic/metadata/global-metadata.candidate.dat": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819",
+    "work/client-logic/metadata/types.json": "30c99c16eb39696af8cf5ee76ff2888082234d62ffbd706fa02eba439cc03016",
+    "work/client-logic/native-enemy-hp/183375_GE.asm": "057c538e6f05685b51d0b42e521dd63be562079e55f69e09daade152d869608c",
+    "work/client-logic/native-enemy-hp/183376_LT.asm": "fd54e03958d13f8e9d8823f7c66f7a545adf491adbfa2a84a52c72777399c7da",
+    "work/client-logic/native-enemy-hp/183377_LE.asm": "ccb9579d8e3889cdf56f254c34fdde3385ec57db733a52c3b029832ff340ab73",
+    "work/client-logic/native-enemy-hp/183393_Between.asm": "af2f7770b73e9180c9fc42012b9c56af07bb4824654591a42a83f4647a745192",
+    "work/client-logic/native-enemy-hp/183473__cctor.asm": "32daa554abef3279cd754d72d59ec2f2a681fd0e9c1ac859e38eb05c720dd8bb",
+    "work/client-logic/native-enemy-hp/61329_get_talentKey.asm": "a5ffc2454083216cded32e9849fdeb7170d4226a6c79e6abd1c8f602f2eb2ed0",
+    "work/client-logic/native-enemy-hp/61359__CreateBlackboard.asm": "9301e1c8b65cceb9755a700cd86ef0f785d2d059f7c98baad654237f770b43ac",
+    "work/client-logic/native-enemy-hp/76249_get_restoreDelay.asm": "fd661d70aeaa61291f6d1701b779d3c27901dd6e5ba1ce6e11fc32460e055410",
+    "work/client-logic/native-enemy-hp/76250_get_setInitialToggle.asm": "b64647f54296ab9283c650094997b735ad363eb46d77d41454e7f312043d46b8",
+    "work/client-logic/native-enemy-hp/76368_get_restoreDelay.asm": "bc761e9b7b42e659d2a39c1b8dc3c02024f48a07b642dc7bf81b0510937dcd42",
+    "work/client-logic/native-enemy-hp/76372_OnAttached.asm": "032ba5152ffe827e185fc912ff725778260518c538784c855699c4032c8454b1",
+    "work/client-logic/native-enemy-hp/76374_OnTick.asm": "2122780fca2b40d1cc0d5f01abc4885b5db1b29dc7da44a14e962b6f3c0e9e3a",
+    "work/client-logic/native-enemy-hp/76376_UpdateNextActiveTime.asm": "61cc37c2b972ceb01f0a6cc72fdb62683d5e1a310774bc14f2be602ed803362b",
+    "work/client-logic/native-enemy-hp/80584_Execute.asm": "949716d13cb6c5528eb5483919d3a0b4a71ee7a9e7b18d3d0ec94cb24d80b7ea",
+    "work/client-logic/native-enemy-hp/FP-layout.json": "67e5cc64a0d9575b4cce78c06da97d8b6ecb9bc11a23483446aac83bd3416e26",
+    "work/client-logic/native-enemy-hp/MathUtil-layout.json": "0a688d6e362450b762a77289f58df6a1d8e9d5096d007e5a066624cf3343e305",
+    "work/client-logic/native-enemy-hp/damage-scale-keys.json": "d7379c63f17d9dee5443ebcc41fca89d0ec1f387ceaeab967c5b44ee1baeecb9",
+    "work/client-logic/native-enemy-hp/damage-scale-layout.json": "84b1f1bdc8e4dba84998616b1d88e729e6b50a9c9e56864e48388e7e06025ef0",
+    "work/client-logic/native-enemy-hp/literal-keys.json": "e52ef3f2d18c43fb8d561c5d82c5fd14ae74915d342b7608ed3f3dfde96c7b82",
+    "work/client-logic/native-enemy-hp/math-constants.json": "92236949fd5f64732837cd08b72959dde416c2214427bda3afbc4dc639c39604",
+    "work/client-logic/native-enemy-hp/method-evidence.json": "7fa4ed773b265cc100ef89fed1ffb0b6576760bf33ec456ea85630bf5c2e7f4e",
+    "work/client-logic/native-enemy-hp/owner-gate-slot.json": "ef5c2a80ad5c1b1baa306a00a4879f9c8c7a7d3ba675864d200b2200a70ed20c",
+    "work/client-logic/native-enemy-hp/talent-namespace-methods.json": "4e8f5e2ed424e7803778593452d699be1879ece46c9e9608162803d719c79cf4",
+    "work/client-logic/native-enemy-mode-dispatch/HpRatioToggleChecker.CheckInitialToggled.asm": "51734c06b572791e9a756b7db614a2f1d4d67c1fc7d9981bfff5592efa457821",
+    "work/client-logic/native-enemy-mode-dispatch/HpRatioToggleChecker.LoadData.asm": "560411e906dc612ac29fffe20d13708edfd197d2abf2ac4114fd896923f14db1",
+    "work/client-logic/native-enemy-mode-dispatch/HpRatioToggleChecker.OnTick.asm": "9663afee0716045b44c5446a9599bb8eef272f429cd9f07fe936db1f3edb3280",
+    "work/client-logic/native-enemy-mode-dispatch/HpRatioToggleChecker._CheckCondition.asm": "152a83b38fb4731082bf3ea26c84d47fe8728cc89486fb253e7441bd2bcdeb83",
+    "work/enemy-mode-dispatch-catalog.json": "1caf9827b1988aa1253284b52bea8e45cd8eea1ef0fb77b6454a4089a990d7df",
+    "work/enemy-mode-ownership-overlay.json": "3a5d079d9947a37c810b9da5b529483e15301c5d571d025313feb5b145acba41",
+    "work/enemy-mode-switch-contract.json": "8375d9507e0ea2e3abef00e8f105ad65e1b62e2fc8470feadb418a61a45dc3b7"
+  },
+  "sourceFingerprint": "dded8930b7615fe42c73b3759406f48bd845c38feb1f1c5cee73fceedafb69c1",
+  "parameterContract": {
+    "status": "Verified native baseline",
+    "fields": [
+      {
+        "index": 86263,
+        "name": "_minHpRatio",
+        "typeIndex": 60221,
+        "rawOffset": 32,
+        "offset": 32,
+        "offsetStatus": "plausible",
+        "nativeType": {
+          "il2CppTypeIndex": 60221,
+          "kind": 12,
+          "attrs": 1,
+          "byref": false,
+          "typeName": "float"
+        }
+      },
+      {
+        "index": 86264,
+        "name": "_maxHpRatio",
+        "typeIndex": 60221,
+        "rawOffset": 36,
+        "offset": 36,
+        "offsetStatus": "plausible",
+        "nativeType": {
+          "il2CppTypeIndex": 60221,
+          "kind": 12,
+          "attrs": 1,
+          "byref": false,
+          "typeName": "float"
+        }
+      },
+      {
+        "index": 86265,
+        "name": "_useLTForMax",
+        "typeIndex": 34597,
+        "rawOffset": 40,
+        "offset": 40,
+        "offsetStatus": "plausible",
+        "nativeType": {
+          "il2CppTypeIndex": 34597,
+          "kind": 2,
+          "attrs": 1,
+          "byref": false,
+          "typeName": "bool"
+        }
+      },
+      {
+        "index": 86266,
+        "name": "_restoreDelay",
+        "typeIndex": 60221,
+        "rawOffset": 44,
+        "offset": 44,
+        "offsetStatus": "plausible",
+        "nativeType": {
+          "il2CppTypeIndex": 60221,
+          "kind": 12,
+          "attrs": 1,
+          "byref": false,
+          "typeName": "float"
+        }
+      },
+      {
+        "index": 86267,
+        "name": "_toggleOnce",
+        "typeIndex": 34597,
+        "rawOffset": 48,
+        "offset": 48,
+        "offsetStatus": "plausible",
+        "nativeType": {
+          "il2CppTypeIndex": 34597,
+          "kind": 2,
+          "attrs": 1,
+          "byref": false,
+          "typeName": "bool"
+        }
+      },
+      {
+        "index": 86268,
+        "name": "_setInitialToggle",
+        "typeIndex": 34597,
+        "rawOffset": 49,
+        "offset": 49,
+        "offsetStatus": "plausible",
+        "nativeType": {
+          "il2CppTypeIndex": 34597,
+          "kind": 2,
+          "attrs": 1,
+          "byref": false,
+          "typeName": "bool"
+        }
+      },
+      {
+        "index": 86269,
+        "name": "_initialToggle",
+        "typeIndex": 34597,
+        "rawOffset": 50,
+        "offset": 50,
+        "offsetStatus": "plausible",
+        "nativeType": {
+          "il2CppTypeIndex": 34597,
+          "kind": 2,
+          "attrs": 1,
+          "byref": false,
+          "typeName": "bool"
+        }
+      },
+      {
+        "index": 86270,
+        "name": "_loadMinHpRatioFromBlackboard",
+        "typeIndex": 34597,
+        "rawOffset": 51,
+        "offset": 51,
+        "offsetStatus": "plausible",
+        "nativeType": {
+          "il2CppTypeIndex": 34597,
+          "kind": 2,
+          "attrs": 1,
+          "byref": false,
+          "typeName": "bool"
+        }
+      },
+      {
+        "index": 86271,
+        "name": "m_minHpRatio",
+        "typeIndex": 60221,
+        "rawOffset": 52,
+        "offset": 52,
+        "offsetStatus": "plausible",
+        "nativeType": {
+          "il2CppTypeIndex": 60221,
+          "kind": 12,
+          "attrs": 1,
+          "byref": false,
+          "typeName": "float"
+        }
+      },
+      {
+        "index": 86272,
+        "name": "m_maxHpRatio",
+        "typeIndex": 60221,
+        "rawOffset": 56,
+        "offset": 56,
+        "offsetStatus": "plausible",
+        "nativeType": {
+          "il2CppTypeIndex": 60221,
+          "kind": 12,
+          "attrs": 1,
+          "byref": false,
+          "typeName": "float"
+        }
+      },
+      {
+        "index": 86273,
+        "name": "m_restoreDelay",
+        "typeIndex": 60221,
+        "rawOffset": 60,
+        "offset": 60,
+        "offsetStatus": "plausible",
+        "nativeType": {
+          "il2CppTypeIndex": 60221,
+          "kind": 12,
+          "attrs": 1,
+          "byref": false,
+          "typeName": "float"
+        }
+      },
+      {
+        "index": 86274,
+        "name": "m_hasToggleChanged",
+        "typeIndex": 34597,
+        "rawOffset": 64,
+        "offset": 64,
+        "offsetStatus": "plausible",
+        "nativeType": {
+          "il2CppTypeIndex": 34597,
+          "kind": 2,
+          "attrs": 1,
+          "byref": false,
+          "typeName": "bool"
+        }
+      }
+    ],
+    "LoadData": {
+      "source": "work/client-logic/native-enemy-mode-dispatch/HpRatioToggleChecker.LoadData.asm",
+      "rva": "0x254b514",
+      "orderedOperations": [
+        "copy serialized _minHpRatio/_maxHpRatio/_restoreDelay to m_minHpRatio/m_maxHpRatio/m_restoreDelay",
+        "set m_hasToggleChanged=false",
+        "if blackboard is null, retain defaults and return",
+        "m_restoreDelay = blackboard.GetFloatOrDefault(\"delay\", _restoreDelay, false)",
+        "if _loadMinHpRatioFromBlackboard: m_minHpRatio=blackboard.GetFloatOrDefault(\"hp_ratio\", _minHpRatio, false); otherwise m_maxHpRatio=blackboard.GetFloatOrDefault(\"hp_ratio\", _maxHpRatio, false)"
+      ],
+      "scopeBoundary": "The caller-supplied blackboard is read; this method does not select a Talent namespace. Only one HP bound is overridden."
+    },
+    "literalKeys": [
+      {
+        "slotRva": "0xa603280",
+        "storageRva": "0xab1fb48",
+        "encoded": "0xa000be6d",
+        "metadataLiteralIndex": 24374,
+        "value": "delay"
+      },
+      {
+        "slotRva": "0xa6f4008",
+        "storageRva": "0xab22928",
+        "encoded": "0xa000c9e5",
+        "metadataLiteralIndex": 25842,
+        "value": "hp_ratio"
+      }
+    ],
+    "restoreDelay": {
+      "value": "m_restoreDelay",
+      "source": "work/client-logic/native-enemy-hp/76249_get_restoreDelay.asm",
+      "knownForwarding": "Checker.UpdateNextActiveTime forwards to ToggleablePassiveBuffAbility._UpdateNextActiveTime (0x255071c).",
+      "notEstablished": "Nonzero-delay scheduling, reset and interaction with delayed setters are outside this contract. No inference of first activation/falling-edge delay timing.",
+      "boundedExecutableGuard": "effective m_restoreDelay == 0"
+    }
+  },
+  "conditionContract": {
+    "status": "Verified native baseline",
+    "source": "work/client-logic/native-enemy-mode-dispatch/HpRatioToggleChecker._CheckCondition.asm",
+    "rva": "0x254b6ac",
+    "ownerGate": {
+      "virtualMethod": "Entity.get_alive",
+      "virtualSlot": 38,
+      "proof": "work/client-logic/native-enemy-hp/owner-gate-slot.json",
+      "falseResult": false
+    },
+    "ratio": "owner.get_hpRatio(); serialized float bounds converted to FP",
+    "useLTForMax": {
+      "true": "MathUtil.GE(hp, min) && MathUtil.LT(hp, max)",
+      "false": "MathUtil.Between(hp, min, max)"
+    },
+    "comparisonContract": {
+      "GE": "a > b - FP_LARGE_EPS",
+      "LT": "a < b - FP_LARGE_EPS",
+      "LE": "a < b + FP_LARGE_EPS",
+      "Between": "GE(a,min) && LE(a,max)",
+      "boundaryMeaning": "For positive FP_LARGE_EPS, Between includes both exact bounds; LT excludes exact max and a tolerance band below it. These are not literal >=, <, <= comparisons.",
+      "epsilon": {
+        "status": "Inferred numeric approximation",
+        "metadataFloatLARGE_EPS": {
+          "fieldIndex": 264579,
+          "typeIndex": 60220,
+          "dataIndex": 196988,
+          "rawBytes": "acc52737",
+          "floatValue": 9.999999747378752e-06
+        },
+        "runtimeField": "MathUtil.FP_LARGE_EPS (static offset 0)",
+        "unreadableInitializer": "work/client-logic/native-enemy-hp/183473__cctor.asm",
+        "suggestedSharedApproximation": 1e-05,
+        "notEstablished": "FP_LARGE_EPS initialization from LARGE_EPS and exact FP rounding are not decoded."
+      }
+    }
+  },
+  "lifecycleContract": {
+    "status": "Verified checker methods; provider attach/detach lifecycle Inferred separately",
+    "initial": {
+      "source": "work/client-logic/native-enemy-mode-dispatch/HpRatioToggleChecker.CheckInitialToggled.asm",
+      "rule": "_setInitialToggle ? _initialToggle : _CheckCondition()",
+      "boundary": "Initial provider getter/setter ordering remains governed by the provider contract."
+    },
+    "OnAttached": {
+      "rule": "No HpRatioToggleChecker override in metadata. Base Checker.OnAttached has a no-op non-hotfix baseline.",
+      "source": "work/client-logic/native-enemy-hp/76372_OnAttached.asm"
+    },
+    "OnTick": {
+      "source": "work/client-logic/native-enemy-mode-dispatch/HpRatioToggleChecker.OnTick.asm",
+      "repeat": "if !_toggleOnce: checker.toggled = _CheckCondition()",
+      "once": [
+        "if m_hasToggleChanged return",
+        "evaluate current checker.toggled and _CheckCondition()",
+        "if they differ: set m_hasToggleChanged=true, then assign checker.toggled=!checker.toggled"
+      ],
+      "boundary": "One-shot freezes after the first difference, either direction. The latch is set before the setter call; it is not proof that a Buff successfully changed. Do not replace this with always staying true after crossing HP."
+    },
+    "reset": {
+      "known": "LoadData sets m_hasToggleChanged=false",
+      "unknown": "Detach/reattach resets and preserved checker state are not established. Inverse provider semantics must retain getter/setter behavior."
+    }
+  },
+  "damageScaleNode": {
+    "status": "Verified native baseline for the formulas below, bounded integration requires supported filters/lifecycle",
+    "source": "work/client-logic/native-enemy-hp/80584_Execute.asm",
+    "rva": "0x268a4a4",
+    "keys": [
+      {
+        "slotRva": "0xa716148",
+        "storageRva": "0xab1f760",
+        "encoded": "0xa000bd73",
+        "metadataLiteralIndex": 24249,
+        "value": "damage_scale"
+      },
+      {
+        "slotRva": "0xa6e3100",
+        "storageRva": "0xab1f758",
+        "encoded": "0xa000bd71",
+        "metadataLiteralIndex": 24248,
+        "value": "damage_resistance"
+      }
+    ],
+    "keySelection": "nonempty _customKey wins; otherwise _isOneMinus ? \"damage_resistance\" : \"damage_scale\"",
+    "read": "blackboard.GetFpOrDefault(selectedKey, FP(1), true); custom-key lookup failure does not retry the default key",
+    "nonstacking": "_isOneMinus ? max(0, 1-value) : value",
+    "stacking": "_isOneMinus ? max(0,1-value*stackCnt) : 1+max(0,value)*stackCnt; _isValidStackCnt selects validStackCnt instead of stackCnt",
+    "operation": "snapshot.modifier.value = snapshot.modifier.value * effectiveScale",
+    "minimalGuards": [
+      "_filterDamageType=false",
+      "_filterApplyWay=false",
+      "_filterModifierKey=false",
+      "_isOneMinus=false",
+      "_isStackable=false",
+      "_isValidStackCnt=false",
+      "_cachedDeltaValueToBBKey empty",
+      "all event siblings preserved and fully supported"
+    ],
+    "integrationBoundary": "The node alone does not prove ON_OUTPUT_DAMAGE ordering relative to defense/resistance, emitted projectile snapshots, other Buffs or effect removal. Attribute modifier blackboard key/formula mapping is a separate contract."
+  },
+  "boundedProviderCandidate": {
+    "enemyId": "enemy_2020_cswrtr",
+    "candidateOnly": true,
+    "components": {
+      "CAB-45917fb008d9d99f506436a9f5988d3d:-5214174650258908553:9": {
+        "scriptType": "Torappu.Battle.Abilities.ToggleablePassiveBuffAbility",
+        "fields": {
+          "_selector": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "_metadata": {
+            "namedAsAlias": "",
+            "blackboardPrefix": ""
+          },
+          "_interruptAbilityOnDetach": 0,
+          "_attachPassiveBuffsOnDummy": 1,
+          "_ignoreIfOwnerDead": 0,
+          "_forceAsDmgOrHealAbility": 0,
+          "_buffs": [
+            {
+              "attributes": {
+                "abnormalFlags": [],
+                "abnormalImmunes": [],
+                "abnormalAntis": [],
+                "abnormalCombos": [],
+                "abnormalComboImmunes": [],
+                "attributeModifiers": []
+              },
+              "buffKey": "cswrtr_switch_mode",
+              "loadFromDB": 0,
+              "isDurableBuff": 0,
+              "isDamageMissable": 0,
+              "isSilenceable": 0,
+              "isStunnable": 0,
+              "isFreezable": 0,
+              "isLevitatable": 0,
+              "isGroundBoundable": 0,
+              "statusResistable": 2,
+              "templateKey": "switch_mode",
+              "disableOverride": 0,
+              "overrideKey": "",
+              "overrideType": 0,
+              "maxStackCnt": 1,
+              "refreshRemainingTimeWhenStackMax": 0,
+              "clearAllStackCntWhenTimeUp": 0,
+              "maxValidStackCnt": -1,
+              "independentCharacterSource": 0,
+              "overrideEffectKey": "enemy_cswrtr_beidong_buff",
+              "overrideOnEventPriority": 0,
+              "onEventPriority": 0,
+              "audioSignal": "",
+              "lifeTimeType": 2,
+              "takeSnapshotWhenExtend": 0,
+              "durationKey": "",
+              "lifeTime": 0.0,
+              "triggerLifeType": 0,
+              "triggerCnt": 0,
+              "triggerInterval": -1.0,
+              "waitFirstTriggerInterval": 1,
+              "firstTriggerInterval": -1.0,
+              "priority": -1,
+              "priorityBBKeys": [],
+              "stripBlackboardParamsWithBuffKey": 0,
+              "blackboard": [
+                {
+                  "key": "mode",
+                  "value": 1.0,
+                  "valueStr": ""
+                }
+              ],
+              "enableInitDirectionFromSource": 0
+            },
+            {
+              "attributes": {
+                "abnormalFlags": [],
+                "abnormalImmunes": [],
+                "abnormalAntis": [],
+                "abnormalCombos": [],
+                "abnormalComboImmunes": [],
+                "attributeModifiers": [
+                  {
+                    "attributeType": 2,
+                    "formulaItem": 1,
+                    "value": 0.0,
+                    "loadFromBlackboard": 1,
+                    "fetchBaseValueFromSourceEntity": 0
+                  },
+                  {
+                    "attributeType": 3,
+                    "formulaItem": 1,
+                    "value": 0.0,
+                    "loadFromBlackboard": 1,
+                    "fetchBaseValueFromSourceEntity": 0
+                  }
+                ]
+              },
+              "buffKey": "cswrtr_rage",
+              "loadFromDB": 0,
+              "isDurableBuff": 0,
+              "isDamageMissable": 0,
+              "isSilenceable": 0,
+              "isStunnable": 0,
+              "isFreezable": 0,
+              "isLevitatable": 0,
+              "isGroundBoundable": 0,
+              "statusResistable": 2,
+              "templateKey": "damage_scale[out]",
+              "disableOverride": 0,
+              "overrideKey": "",
+              "overrideType": 0,
+              "maxStackCnt": 1,
+              "refreshRemainingTimeWhenStackMax": 0,
+              "clearAllStackCntWhenTimeUp": 0,
+              "maxValidStackCnt": -1,
+              "independentCharacterSource": 0,
+              "overrideEffectKey": "",
+              "overrideOnEventPriority": 0,
+              "onEventPriority": 0,
+              "audioSignal": "cswrtr_rage[audio]",
+              "lifeTimeType": 2,
+              "takeSnapshotWhenExtend": 0,
+              "durationKey": "",
+              "lifeTime": 0.0,
+              "triggerLifeType": 0,
+              "triggerCnt": 0,
+              "triggerInterval": -1.0,
+              "waitFirstTriggerInterval": 1,
+              "firstTriggerInterval": -1.0,
+              "priority": -1,
+              "priorityBBKeys": [],
+              "stripBlackboardParamsWithBuffKey": 0,
+              "blackboard": [],
+              "enableInitDirectionFromSource": 0
+            }
+          ],
+          "_checker": {
+            "m_FileID": 0,
+            "m_PathID": -592581672532534665
+          },
+          "_unmanagedBuffsWhenToggleOn": [],
+          "_setToggleFalseOnDetached": 0,
+          "_isInverseToggle": 0,
+          "_buffsWhenToggleOff": []
+        }
+      },
+      "CAB-45917fb008d9d99f506436a9f5988d3d:-4884592943185290633:10": {
+        "scriptType": "Torappu.Battle.Talent",
+        "fields": {
+          "_overwriteTalentKey": "",
+          "_overwriteParentRangeId": 0,
+          "_checkValidBySkillIndex": [],
+          "_attachInDummy": 0,
+          "_defaultModeIndex": -1,
+          "_attackBlackboardModeIndex": -1,
+          "_extraAttackBlackboardModeIndices": [],
+          "_overrideDefaultRangeId": 0,
+          "_applyTalentScale": 0,
+          "_influenceSkillBlackboard": 0,
+          "_fromRawDataToSkill": 0,
+          "_applyTalentRange": 0,
+          "_applyBlackboardBySkill": 0,
+          "_applyStrBlackboardBySkill": 0,
+          "_writeRangeIdToProjectileBlackboard": 0,
+          "_affectWhenNotRootTalent": 0,
+          "_scaleCertainKeyFlag": 0,
+          "_scaleCertainKeyList": [],
+          "_scaleCertainMode": 0,
+          "_scaleModeIndices": []
+        }
+      },
+      "CAB-45917fb008d9d99f506436a9f5988d3d:-592581672532534665:24": {
+        "scriptType": "Torappu.Battle.Abilities.HpRatioToggleChecker",
+        "fields": {
+          "_minHpRatio": 0.0,
+          "_maxHpRatio": 1.0,
+          "_useLTForMax": 0,
+          "_restoreDelay": 0.0,
+          "_toggleOnce": 0,
+          "_setInitialToggle": 0,
+          "_initialToggle": 1,
+          "_loadMinHpRatioFromBlackboard": 0
+        }
+      }
+    },
+    "blackboardSource": {
+      "path": "data/ArknightsGameData/zh_CN/gamedata/levels/enemydata/enemy_database.json",
+      "pointer": "enemies[Key=enemy_2020_cswrtr].Value[level=0].enemyData.talentBlackboard",
+      "fields": [
+        {
+          "key": "rage.hp_ratio",
+          "value": 0.5,
+          "valueStr": null
+        },
+        {
+          "key": "rage.damage_scale",
+          "value": 1.5,
+          "valueStr": null
+        },
+        {
+          "key": "rage.def",
+          "value": 1.0,
+          "valueStr": null
+        },
+        {
+          "key": "rage.magic_resistance",
+          "value": 0.8,
+          "valueStr": null
+        }
+      ]
+    },
+    "namespaceBinding": {
+      "status": "Inferred",
+      "carrierGameObjectName": "Rage",
+      "overwriteTalentKey": "",
+      "namespace": "rage",
+      "candidateRule": "Require complete ownership and a unique source blackboard prefix matching the carrier GameObject name lowercased; preserve exact source keys and explicit namespace in the compiled receipt. Never infer per enemy ID.",
+      "evidence": "Four same-CN source keys share rage.; complete ownership identifies carrier Rage. BasicTalent.get_talentKey and _CreateBlackboard are unreadable in this snapshot.",
+      "guards": [
+        "do not silently fall back to a flat HP default while matching namespaced keys exist",
+        "reject ambiguous prefixes or unsupported explicit _overwriteTalentKey semantics",
+        "check all database levels/inheritance at compilation; the values here document level 0 only"
+      ]
+    },
+    "effectiveLevel0": {
+      "minHpRatio": 0,
+      "maxHpRatio": 0.5,
+      "restoreDelay": 0,
+      "damageScale": 1.5,
+      "defBlackboard": 1,
+      "magicResistanceBlackboard": 0.8
+    },
+    "requiredSiblings": [
+      "cswrtr_switch_mode / switch_mode",
+      "cswrtr_rage / damage_scale[out] including both attribute modifiers"
+    ],
+    "boundary": "This is a source candidate, not an assertion that all abilities of this enemy or any other HP family are complete."
+  },
+  "minimalProviderFields": {
+    "checker": "HpRatioToggleChecker with all eight serialized fields present and finite effective numeric values",
+    "initial": "_setInitialToggle=false for first bounded provider",
+    "oneShot": "_toggleOnce=false for first bounded provider; true requires the exact first-difference latch plus lifecycle persistence",
+    "delay": "effective restoreDelay=0 after the scoped delay lookup",
+    "provider": "noninverse root-shared Talent provider with supported explicit lifecycle, empty off/unmanaged Buff collections, complete supported Buff/event sibling list",
+    "mode": "valid compiled target and evidenced default mode; no mode 0 assumption",
+    "parameterScope": "fully retained per-use blackboard, talent namespace and level inheritance",
+    "tolerance": "use a shared explicitly Inferred epsilon approximation; retain native formulas and unresolved FP exactness"
+  },
+  "inferredBoundaries": [
+    "CN configuration versus JP native baseline",
+    "Talent GameObject name lowercasing as namespace selection",
+    "owner TARGET for this own-Buff START/FINISH provider and complete attach/detach ordering",
+    "JS numeric approximation for FP_LARGE_EPS",
+    "full event timing and attribute application are consumer contracts, not established by this checker"
+  ],
+  "doNotRetryInSameSnapshot": [
+    {
+      "type": "Torappu.MathUtil",
+      "method": ".cctor",
+      "file": "work/client-logic/native-enemy-hp/183473__cctor.asm",
+      "decodedInstructions": 0
+    },
+    {
+      "type": "Torappu.Battle.BasicTalent",
+      "method": "get_talentKey",
+      "rva": "0x211d2d8",
+      "file": "work/client-logic/native-enemy-hp/61329_get_talentKey.asm",
+      "decodedInstructions": 0
+    },
+    {
+      "type": "Torappu.Battle.BasicTalent",
+      "method": "_CreateBlackboard",
+      "rva": "0x211da0c",
+      "file": "work/client-logic/native-enemy-hp/61359__CreateBlackboard.asm",
+      "decodedInstructions": 0
+    },
+    {
+      "reuse": "work/enemy-mode-switch-contract.json",
+      "reason": "Prior Buff/provider unreadable methods remain cached; no repeat decoding."
+    }
+  ]
+}

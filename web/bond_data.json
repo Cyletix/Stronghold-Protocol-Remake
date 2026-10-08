@@ -1,0 +1,5045 @@
+{
+ "source": "activity_table.json:act2autochess",
+ "bonds": [
+  {
+   "bondId": "yanShip",
+   "name": "炎",
+   "type": "SEASON",
+   "order": 2,
+   "isPower": true,
+   "activeCount": 3,
+   "activeCondition": "BOARD",
+   "powerIdList": [
+    "yan",
+    "sui",
+    "lungmen",
+    "lee",
+    "lgd"
+   ],
+   "desc": "【炎】干员攻击力提升（受层数影响）\n<在场6名不同【炎】干员>战斗开始时召唤可自主行动的“炎佑”，其攻击力生命值分别为开战时【炎】干员攻击力生命值总和的30%，“炎佑”同时攻击3个目标，可使用“祛恶之焰”，攻击时附带攻击力一定比例的灼燃损伤且周围敌人受到一定比例的元素脆弱\n<在场9名不同【炎】干员>改为召唤2只“炎佑”，攻击力提升至1.5倍，受到的伤害-90%"
+  },
+  {
+   "bondId": "sargonShip",
+   "name": "萨尔贡",
+   "type": "SEASON",
+   "order": 2,
+   "isPower": true,
+   "activeCount": 3,
+   "activeCondition": "BOARD",
+   "powerIdList": [
+    "sargon"
+   ],
+   "desc": "【萨尔贡】干员开启技能时，所有【萨尔贡】干员攻击速度提升（有上限），持续一定时间（受层数影响，每层持续时间独立计算）\n<在场6名不同【萨尔贡】干员>开启技能还会为所有【萨尔贡】干员提供等持续时间的攻击力（有上限）\n选择策略【娜仁图亚】时，<在场6名不同【萨尔贡】干员>的效果会有所改变"
+  },
+  {
+   "bondId": "victoriaShip",
+   "name": "维多利亚",
+   "type": "SEASON",
+   "order": 2,
+   "isPower": true,
+   "activeCount": 3,
+   "activeCondition": "BOARD",
+   "powerIdList": [
+    "victoria",
+    "glasgow"
+   ],
+   "desc": "携带装备的【维多利亚】干员造成的伤害提升（受层数影响）\n<每叠加25层>获得1件带有随机效果的维式重锤\n<在场6名不同【维多利亚】干员>携带装备的【维多利亚】干员攻击力提升，携带进阶装备时额外提升"
+  },
+  {
+   "bondId": "kjeragShip",
+   "name": "谢拉格",
+   "type": "SEASON",
+   "order": 2,
+   "isPower": true,
+   "activeCount": 3,
+   "activeCondition": "BOARD",
+   "powerIdList": [
+    "kjerag",
+    "karlan"
+   ],
+   "desc": "【谢拉格】干员造成的伤害提升，对寒冷、冻结敌人获得额外提升（受层数影响）\n<在场6名不同【谢拉格】干员>战场上每25秒过一阵寒风使场上的敌人寒冷一定时间（受层数影响）"
+  },
+  {
+   "bondId": "lateranoShip",
+   "name": "拉特兰",
+   "type": "SEASON",
+   "order": 2,
+   "isPower": true,
+   "activeCount": 3,
+   "activeCondition": "BOARD",
+   "powerIdList": [
+    "laterano"
+   ],
+   "desc": "【拉特兰】干员开启技能获得的弹药量提升（受层数影响）\n<在场6名不同【拉特兰】干员>【拉特兰】干员每消耗1发弹药，所有【拉特兰】干员攻击力提升（有上限）"
+  },
+  {
+   "bondId": "egirShip",
+   "name": "阿戈尔",
+   "type": "SEASON",
+   "order": 2,
+   "isPower": true,
+   "activeCount": 3,
+   "activeCondition": "BOARD",
+   "powerIdList": [
+    "egir",
+    "abyssal"
+   ],
+   "desc": "【阿戈尔】干员生命值提升（受层数影响）\n战斗开始时，【阿戈尔】干员会吞噬身前一格干员对其造成5000点物理伤害并获得其基础攻击力和阻挡数，使【阿戈尔】叠加等于被吞噬者等阶的盟约层数（【阿戈尔】之间优先更靠左和靠上的干员发起吞噬）\n<在场5名不同【阿戈尔】干员>前3名【阿戈尔】干员首次被击倒时立刻复活"
+  },
+  {
+   "bondId": "siracusaShip",
+   "name": "叙拉古",
+   "type": "SEASON",
+   "order": 2,
+   "isPower": true,
+   "activeCount": 3,
+   "activeCondition": "BOARD",
+   "powerIdList": [
+    "siracusa",
+    "chiave"
+   ],
+   "desc": "【叙拉古】干员部署后攻击速度提升，持续一定时间（受层数影响）\n<在场6名不同【叙拉古】干员>【叙拉古】干员部署后进入等时长的隐匿状态，【叙拉古】干员隐匿状态下和脱离隐匿10秒内对敌人攻击时有3%的概率造成一定真实伤害（受层数影响）并恐惧3秒"
+  },
+  {
+   "bondId": "kazimierzShip",
+   "name": "卡西米尔",
+   "type": "SEASON",
+   "order": 2,
+   "isPower": true,
+   "activeCount": 3,
+   "activeCondition": "BOARD",
+   "powerIdList": [
+    "kazimierz",
+    "pinus"
+   ],
+   "desc": "每次有干员部署时，【卡西米尔】干员攻击力+20%持续至战斗结束（上限受层数影响）\n<在场6名不同【卡西米尔】干员>【卡西米尔】干员阻挡敌人时每2秒对周围敌人造成120%攻击力真实伤害和0.1秒晕眩，未阻挡敌人时攻击附带30%攻击力的真实伤害"
+  },
+  {
+   "bondId": "preciShip",
+   "name": "精准",
+   "type": "REGULAR",
+   "order": 2,
+   "isPower": false,
+   "activeCount": 2,
+   "activeCondition": "BOARD",
+   "powerIdList": [],
+   "desc": "【精准】干员攻击力提升（受层数影响）\n<在场3名不同【精准】干员>生效范围变为【精准】干员和所有远程干员，且攻击无视一定的防御力和法术抗性"
+  },
+  {
+   "bondId": "swiftShip",
+   "name": "迅捷",
+   "type": "REGULAR",
+   "order": 2,
+   "isPower": false,
+   "activeCount": 2,
+   "activeCondition": "BOARD",
+   "powerIdList": [],
+   "desc": "【迅捷】干员技能结束时有概率（受层数影响）立刻回复12点技力\n<达到40层>所有干员技能结束时有等概率额外回复15点技力"
+  },
+  {
+   "bondId": "skillfulShip",
+   "name": "灵巧",
+   "type": "REGULAR",
+   "order": 2,
+   "isPower": false,
+   "activeCount": 2,
+   "activeCondition": "BOARD",
+   "powerIdList": [],
+   "desc": "【灵巧】干员及周围4格干员攻击速度提升（受层数影响）\n<达到40层>生效范围变为【灵巧】干员周围8格"
+  },
+  {
+   "bondId": "arcaneShip",
+   "name": "奥术",
+   "type": "REGULAR",
+   "order": 2,
+   "isPower": false,
+   "activeCount": 2,
+   "activeCondition": "BOARD",
+   "powerIdList": [],
+   "desc": "【奥术】干员造成法术伤害时使目标受到的法术伤害提升（受层数影响），持续3秒\n<在场3名不同【奥术】干员>【奥术】干员对生命值低于50%的敌人施加的伤害提升比例提升（受层数影响）"
+  },
+  {
+   "bondId": "steadShip",
+   "name": "坚守",
+   "type": "REGULAR",
+   "order": 2,
+   "isPower": false,
+   "activeCount": 2,
+   "activeCondition": "BOARD",
+   "powerIdList": [],
+   "desc": "所有干员生命值提升（受层数影响）\n<在场3名不同【坚守】干员>场上非【坚守】干员受到伤害时，所受伤害的40%由所有【坚守】干员平均承担。【坚守】干员受到伤害时，伤害来源将受到一定法术伤害（受层数影响，每0.2秒至多触发1次）和持续5秒的40%脆弱效果"
+  },
+  {
+   "bondId": "deputShip",
+   "name": "助力",
+   "type": "REGULAR",
+   "order": 2,
+   "isPower": false,
+   "activeCount": 2,
+   "activeCondition": "BOARD",
+   "powerIdList": [],
+   "desc": "所有干员防御力提升（受层数影响），再部署时间减少\n休整期结束时，使当前所有已激活盟约层数+2\n<在场3名不同【助力】干员>改为层数+4"
+  },
+  {
+   "bondId": "visiShip",
+   "name": "远见",
+   "type": "REGULAR",
+   "order": 2,
+   "isPower": false,
+   "activeCount": 2,
+   "activeCondition": "BOARD_AND_DECK",
+   "powerIdList": [],
+   "desc": "<每叠加10层>获得一次2资金\n<首次达到80层>所有【远见】干员购买价格永久-1资金\n<首次达到150层>以上效果改为调度中心内所有干员的购买价格永久-1资金（整备区的【远见】干员也可用于激活盟约）"
+  },
+  {
+   "bondId": "miraShip",
+   "name": "奇迹",
+   "type": "REGULAR",
+   "order": 2,
+   "isPower": false,
+   "activeCount": 2,
+   "activeCondition": "BOARD_AND_DECK",
+   "powerIdList": [],
+   "desc": "刷新调度中心时，有概率使下次刷新不消耗资金（受层数影响）\n<每叠加100层>获得20资金（整备区的【奇迹】干员也可用于激活盟约）"
+  },
+  {
+   "bondId": "investShip",
+   "name": "投资人",
+   "type": "REGULAR",
+   "order": 2,
+   "isPower": false,
+   "activeCount": 3,
+   "activeCondition": "BOARD_AND_DECK",
+   "powerIdList": [],
+   "desc": "干员的“获得时”类特质每次触发2次\n<达到100层>“获得时”类特质每次触发3次（整备区的【投资人】干员也可用于激活盟约）"
+  },
+  {
+   "bondId": "raidShip",
+   "name": "突袭",
+   "type": "REGULAR",
+   "order": 2,
+   "isPower": false,
+   "activeCount": 2,
+   "activeCondition": "BOARD",
+   "powerIdList": [],
+   "desc": "【突袭】干员10秒内未进行攻击或技能就绪时，若范围内没有敌人，则保留技力立即再部署至一名地面敌人周围，期间攻击力和生命值提升（受层数影响）\n<达到50层>所有干员攻击速度+50"
+  },
+  {
+   "bondId": "indomShip",
+   "name": "不屈",
+   "type": "REGULAR",
+   "order": 2,
+   "isPower": false,
+   "activeCount": 2,
+   "activeCondition": "BOARD",
+   "powerIdList": [],
+   "desc": "地面干员被击倒时，有概率立即重新部署（受层数影响）\n<在场3名不同【不屈】干员>地面干员被击倒时使场上所有干员技力+5"
+  },
+  {
+   "bondId": "maniShip",
+   "name": "调和",
+   "type": "REGULAR",
+   "order": 1,
+   "isPower": false,
+   "activeCount": 1,
+   "activeCondition": "BOARD",
+   "powerIdList": [],
+   "desc": "激活时使场上核心盟约的激活人数+1，【调和】干员享受已激活的核心盟约的效果"
+  },
+  {
+   "bondId": "emptyShip",
+   "name": "协防干员",
+   "type": "REGULAR",
+   "order": 2,
+   "isPower": false,
+   "activeCount": 2,
+   "activeCondition": "BOARD",
+   "powerIdList": [],
+   "desc": "所有干员受到的物理和法术伤害-20%，【协防干员】伤害提升至120%，精锐【协防】干员造成伤害提升至140%"
+  },
+  {
+   "bondId": "soloShip",
+   "name": "独行",
+   "type": "REGULAR",
+   "order": 2,
+   "isPower": false,
+   "activeCount": 1,
+   "activeCondition": "BOARD",
+   "powerIdList": [],
+   "desc": "<在场1名【独行】干员>【独行】干员攻击力和生命值+60%，初始技力+15（在场2名及以上【独行】干员时失效）"
+  },
+  {
+   "bondId": "suntShip",
+   "name": "绝技",
+   "type": "REGULAR",
+   "order": 2,
+   "isPower": false,
+   "activeCount": 2,
+   "activeCondition": "BOARD_ALL_CHESS",
+   "powerIdList": [],
+   "desc": "<在场2名精锐状态的干员>精锐状态的干员攻击力+30%\n<在场5名精锐状态的干员>精锐状态的干员技力消耗-30%\n（所有干员的精锐状态均可激活本盟约）"
+  }
+ ],
+ "opers": [
+  {
+   "chessId": "chess_char_1_01_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 55,
+    "skill": 4
+   },
+   "bonds": [
+    "lateranoShip",
+    "swiftShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_16_a",
+     "desc": "【拉特兰】每叠加5层，本干员攻击速度<@ba.vup>+1</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_02_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 55,
+    "skill": 4
+   },
+   "bonds": [
+    "kjeragShip",
+    "steadShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_25_a",
+     "desc": "<获得时>自身所属盟约层数<@ba.vup>+2</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_03_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 55,
+    "skill": 4
+   },
+   "bonds": [
+    "yanShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_30_a",
+     "desc": "<获得时>获得等于当前调度中心等级的【炎】层数（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_04_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 55,
+    "skill": 4
+   },
+   "bonds": [
+    "egirShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_18_a",
+     "desc": "攻击海怪敌人时攻击力提升至<@ba.vup>150%</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_05_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 55,
+    "skill": 4
+   },
+   "bonds": [
+    "indomShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_04_a",
+     "desc": "购买价格为<@ba.vup>1</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_06_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 55,
+    "skill": 4
+   },
+   "bonds": [
+    "victoriaShip",
+    "deputShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_154_a",
+     "desc": "<休整期结束时>使已激活的【维多利亚】层数<@ba.vup>+1</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_07_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 55,
+    "skill": 4
+   },
+   "bonds": [
+    "siracusaShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_113_a",
+     "desc": "<获得时>获得1次免费刷新"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_08_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 55,
+    "skill": 4
+   },
+   "bonds": [
+    "soloShip",
+    "siracusaShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_120_a",
+     "desc": "<售出时>获得1次免费刷新"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_09_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 55,
+    "skill": 4
+   },
+   "bonds": [
+    "preciShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_19_a",
+     "desc": "攻击无人机敌人时攻击力提升至<@ba.vup>150%</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_10_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 55,
+    "skill": 4
+   },
+   "bonds": [
+    "steadShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_08_a",
+     "desc": "技力自然恢复速度<@ba.vup>+0.15/秒</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_11_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 55,
+    "skill": 4
+   },
+   "bonds": [
+    "miraShip",
+    "visiShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_25_a",
+     "desc": "<获得时>自身所属盟约层数<@ba.vup>+2</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_12_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 55,
+    "skill": 4
+   },
+   "bonds": [
+    "sargonShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_25_a",
+     "desc": "<获得时>自身所属盟约层数<@ba.vup>+2</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_13_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 55,
+    "skill": 4
+   },
+   "bonds": [
+    "deputShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_102_a",
+     "desc": "<休整期结束时>当前激活且层数最多的盟约层数<@ba.vup>+1</>，此干员在整备区时也有效"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_14_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 55,
+    "skill": 4
+   },
+   "bonds": [
+    "skillfulShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_67_a",
+     "desc": "<售出时>进入下个休整期额外获得1资金"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_15_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 55,
+    "skill": 4
+   },
+   "bonds": [
+    "maniShip",
+    "emptyShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_03_a",
+     "desc": "攻击力和生命值+<@ba.vup>20%</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_16_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 55,
+    "skill": 4
+   },
+   "bonds": [
+    "investShip",
+    "swiftShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_25_a",
+     "desc": "<获得时>自身所属盟约层数<@ba.vup>+2</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_17_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 55,
+    "skill": 4
+   },
+   "bonds": [
+    "arcaneShip",
+    "preciShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_25_a",
+     "desc": "<获得时>自身所属盟约层数<@ba.vup>+2</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_18_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 55,
+    "skill": 4
+   },
+   "bonds": [
+    "raidShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_01_a",
+     "desc": "<战斗中>造成的伤害变为弱点伤害（基于敌人的防御力和法术抗性变换物理和法术伤害）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_19_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 55,
+    "skill": 4
+   },
+   "bonds": [
+    "kazimierzShip",
+    "swiftShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_25_a",
+     "desc": "<获得时>自身所属盟约层数<@ba.vup>+2</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_20_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 55,
+    "skill": 4
+   },
+   "bonds": [
+    "indomShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_158_a",
+     "desc": "<休整期结束时>使已激活的【不屈】层数<@ba.vup>+1</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_01_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 60,
+    "skill": 4
+   },
+   "bonds": [
+    "lateranoShip",
+    "preciShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_138_a",
+     "desc": "<战斗中>首次击倒敌人时，使已激活的【精准】【拉特兰】层数<@ba.vup>+3</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_02_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 60,
+    "skill": 4
+   },
+   "bonds": [
+    "visiShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_80_a",
+     "desc": "<进入休整期时>使自身已激活的盟约层数<@ba.vup>+2</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_03_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 60,
+    "skill": 4
+   },
+   "bonds": [
+    "kjeragShip",
+    "indomShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_41_a",
+     "desc": "<获得时>自身所属盟约层数<@ba.vup>+3</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_04_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 60,
+    "skill": 4
+   },
+   "bonds": [
+    "yanShip",
+    "skillfulShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_31_a",
+     "desc": "<休整期结束时>本回合每获得过1名干员，使已激活的【炎】层数<@ba.vup>+1</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_05_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 60,
+    "skill": 4
+   },
+   "bonds": [
+    "kjeragShip",
+    "victoriaShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_09_a",
+     "desc": "攻击力和生命值+<@ba.vup>20%</>；核心盟约每叠加3层，本干员攻击力和生命值<@ba.vup>+1%</>"
+    },
+    {
+     "id": "garrison_03_a",
+     "desc": "攻击力和生命值+<@ba.vup>20%</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_06_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 60,
+    "skill": 4
+   },
+   "bonds": [
+    "sargonShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_42_a",
+     "desc": "<战斗中>首次开启技能时，使已激活的【萨尔贡】层数<@ba.vup>+5</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_07_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 60,
+    "skill": 4
+   },
+   "bonds": [
+    "egirShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_46_a",
+     "desc": "<战斗中>自身被击倒时，使已激活的【阿戈尔】层数<@ba.vup>+3</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_08_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 60,
+    "skill": 4
+   },
+   "bonds": [
+    "sargonShip",
+    "steadShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_15_a",
+     "desc": "【萨尔贡】【坚守】每叠加3层，本干员防御力<@ba.vup>+1%</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_09_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 60,
+    "skill": 4
+   },
+   "bonds": [
+    "raidShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_77_a",
+     "desc": "<战斗中>每击倒2名敌人时，使已激活的【突袭】层数<@ba.vup>+1</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_10_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 60,
+    "skill": 4
+   },
+   "bonds": [
+    "victoriaShip",
+    "arcaneShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_91_a",
+     "desc": "<获得时>随机制造1件洛洛的定制品"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_11_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 60,
+    "skill": 4
+   },
+   "bonds": [
+    "miraShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_93_a",
+     "desc": "只需2个相同的本干员即可合成精锐"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_12_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 60,
+    "skill": 4
+   },
+   "bonds": [
+    "kazimierzShip",
+    "indomShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_75_a",
+     "desc": "<部署时>使已激活的【卡西米尔】层数<@ba.vup>+1</>\n<被击倒时>使已激活的【不屈】层数<@ba.vup>+2</>"
+    },
+    {
+     "id": "garrison_143_a",
+     "desc": "<部署时>使已激活的【卡西米尔】层数<@ba.vup>+1</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_13_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 60,
+    "skill": 4
+   },
+   "bonds": [
+    "swiftShip",
+    "skillfulShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_80_a",
+     "desc": "<进入休整期时>使自身已激活的盟约层数<@ba.vup>+2</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_14_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 60,
+    "skill": 4
+   },
+   "bonds": [
+    "deputShip",
+    "emptyShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_81_a",
+     "desc": "<休整期结束时>当前激活且层数最多的盟约层数<@ba.vup>+2</>，此干员在整备区时也有效"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_15_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 60,
+    "skill": 4
+   },
+   "bonds": [
+    "arcaneShip",
+    "deputShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_130_a",
+     "desc": "<获得时>自身所属盟约层数<@ba.vup>+4</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_16_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 60,
+    "skill": 4
+   },
+   "bonds": [
+    "siracusaShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_123_a",
+     "desc": "<刷新时>若为本回合首次主动刷新，使已激活的【叙拉古】层数<@ba.vup>+4</>，此干员在整备区时也有效"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_17_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 60,
+    "skill": 4
+   },
+   "bonds": [
+    "steadShip",
+    "soloShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_69_a",
+     "desc": "<休整期结束时>使已激活的【坚守】层数<@ba.vup>+4</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_18_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 60,
+    "skill": 4
+   },
+   "bonds": [
+    "kazimierzShip",
+    "steadShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_105_a",
+     "desc": "<获得时>当前激活且层数最多的盟约层数<@ba.vup>+3</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_19_a",
+   "status": {
+    "phase": "PHASE_1",
+    "level": 60,
+    "skill": 4
+   },
+   "bonds": [
+    "investShip",
+    "swiftShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_151_a",
+     "desc": "攻击力和生命值+<@ba.vup>20%</>；【投资人】【迅捷】每叠加3层，本干员攻击力和生命值<@ba.vup>+1%</>"
+    },
+    {
+     "id": "garrison_03_a",
+     "desc": "攻击力和生命值+<@ba.vup>20%</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_01_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "lateranoShip",
+    "miraShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_26_a",
+     "desc": "<获得时>使下个休整期额外获得<@ba.vup>1</>资金"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_02_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "skillfulShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_47_a",
+     "desc": "<休整期结束时>使自身及身后一格干员的已激活盟约分别各层数<@ba.vup>+3</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_03_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "yanShip",
+    "visiShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_133_a",
+     "desc": "<获得时>获得1个“盟约之币”"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_04_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "yanShip",
+    "investShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_98_a",
+     "desc": "<休整期结束时>使下个休整期额外获得<@ba.vup>1</>资金（若已激活【炎】/【投资人】此特质在整备区也有效）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_05_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "egirShip",
+    "steadShip",
+    "raidShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_38_a",
+     "desc": "<战斗中>每击倒2名单位时，使已激活的【阿戈尔】【坚守】【突袭】层数<@ba.vup>+1</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_06_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "sargonShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_43_a",
+     "desc": "<战斗中>开启技能时，使已激活的【萨尔贡】层数<@ba.vup>+6</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_07_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "lateranoShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_47_a",
+     "desc": "<休整期结束时>使自身及身后一格干员的已激活盟约分别各层数<@ba.vup>+3</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_08_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "victoriaShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_48_a",
+     "desc": "<休整期结束时>场上每有1名不同阶的【维多利亚】干员，使已激活的【维多利亚】层数<@ba.vup>+2</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_09_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "egirShip",
+    "arcaneShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_131_a",
+     "desc": "<战斗中>首次击倒敌人或我方干员时，使已激活的【阿戈尔】【奥术】层数<@ba.vup>+3</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_10_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "swiftShip",
+    "emptyShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_116_a",
+     "desc": "<售出时>进行一次<@ba.vup>I阶</>干员的免费特殊招募\n本干员合成为精锐状态后，上述特殊招募变为<@ba.vup>V阶</>干员"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_11_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "kjeragShip",
+    "preciShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_111_a",
+     "desc": "<获得时>自身所属盟约层数<@ba.vup>+5</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_12_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "kazimierzShip",
+    "raidShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_106_a",
+     "desc": "<部署时>使自身已激活的盟约层数<@ba.vup>+4</>（每场作战至多12层）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_13_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "sargonShip",
+    "skillfulShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_13_a",
+     "desc": "购买价格为<@ba.vup>1</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_14_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "kjeragShip",
+    "visiShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_28_a",
+     "desc": "<战斗中>每当范围内1名敌人进入冻结时，有50%概率使已激活的【谢拉格】层数<@ba.vup>+1</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_15_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "siracusaShip",
+    "deputShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_132_a",
+     "desc": "<售出时>获得2次免费刷新"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_16_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "steadShip",
+    "indomShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_70_a",
+     "desc": "<休整期结束时>同一行每有1名干员，使已激活的【坚守】层数<@ba.vup>+1</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_17_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "kazimierzShip",
+    "soloShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_137_a",
+     "desc": "<战斗中>攻击力和生命值+<@ba.vup>25%</>，造成的伤害变为弱点伤害（基于敌人的防御力和法术抗性变换物理和法术伤害）"
+    },
+    {
+     "id": "garrison_01_a",
+     "desc": "<战斗中>造成的伤害变为弱点伤害（基于敌人的防御力和法术抗性变换物理和法术伤害）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_18_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "siracusaShip",
+    "swiftShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_71_a",
+     "desc": "<获得时>自身所属盟约层数<@ba.vup>+6</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_19_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "siracusaShip",
+    "miraShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_152_a",
+     "desc": "<战斗中>造成的伤害变为弱点伤害（基于敌人的防御力和法术抗性变换物理和法术伤害），前3次击倒敌人时使已激活的【叙拉古】层数<@ba.vup>+2</>、【奇迹】层数<@ba.vup>+1</>"
+    },
+    {
+     "id": "garrison_153_a",
+     "desc": "【152】<战斗中>造成的伤害变为弱点伤害（基于敌人的防御力和法术抗性变换物理和法术伤害），前3次击倒敌人时使已激活的【叙拉古】层数<@ba.vup>+2</>、【奇迹】层数<@ba.vup>+1</>"
+    },
+    {
+     "id": "garrison_01_a",
+     "desc": "<战斗中>造成的伤害变为弱点伤害（基于敌人的防御力和法术抗性变换物理和法术伤害）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_20_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "kjeragShip",
+    "deputShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_92_a",
+     "desc": "<获得时>获得1件“谢拉格不融冰”"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_21_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "lateranoShip",
+    "skillfulShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_150_a",
+     "desc": "<进入休整期时>使自身及身前一格干员的已激活盟约分别各层数<@ba.vup>+3</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_01_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "lateranoShip",
+    "steadShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_14_a",
+     "desc": "【拉特兰】【坚守】每叠加3层，本干员防御力<@ba.vup>+1%</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_02_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "lateranoShip",
+    "arcaneShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_22_a",
+     "desc": "<战斗中>自身<@ba.vup>周围4格</>的干员每消耗6发弹药，使已激活的【拉特兰】层数<@ba.vup>+1</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_03_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "kjeragShip",
+    "deputShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_92_a",
+     "desc": "<获得时>获得1件“谢拉格不融冰”"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_04_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "visiShip",
+    "raidShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_104_a",
+     "desc": "<休整期结束时>使自身已激活的盟约层数<@ba.vup>+5</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_05_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "sargonShip",
+    "deputShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_49_a",
+     "desc": "<获得时>获得1件“迅捷作战粮”"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_06_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "preciShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_73_a",
+     "desc": "<战斗开始时>使身前一格干员获得特质“开启技能时使已激活【精准】层数<@ba.vup>+1</>”（每场战斗至多10层）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_07_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "victoriaShip",
+    "visiShip",
+    "indomShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_50_a",
+     "desc": "<战斗中>前3次击倒敌人时，使已激活的【维多利亚】【远见】【不屈】层数<@ba.vup>+2</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_08_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "emptyShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_82_a",
+     "desc": "<售出时>触发场上一名拥有“休整期结束时”的干员的特质（优先触发部署位置更靠上的和更靠右的）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_09_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "egirShip",
+    "soloShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_07_a",
+     "desc": "【阿戈尔】每叠加3层，本干员攻击力<@ba.vup>+1%</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_10_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "siracusaShip",
+    "arcaneShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_122_a",
+     "desc": "<休整期结束时>本回合每刷新过1次，使已激活的【叙拉古】【奥术】层数<@ba.vup>+2</>（至多6层）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_11_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "victoriaShip",
+    "skillfulShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_127_a",
+     "desc": "<进入休整期时>若当前为奇数回合，获得1件随机装备"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_12_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "egirShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_39_a",
+     "desc": "<进入休整期时>若同一行有3名干员，获得1个斯卡蒂、幽灵鲨或深巡"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_13_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "kjeragShip",
+    "skillfulShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_111_a",
+     "desc": "<获得时>自身所属盟约层数<@ba.vup>+5</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_14_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "swiftShip",
+    "preciShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_51_a",
+     "desc": "<休整期结束时>使自身已激活的盟约层数<@ba.vup>+5</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_15_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "yanShip",
+    "miraShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_156_a",
+     "desc": "<获得时>【炎】层数<@ba.vup>+6</>、【奇迹】层数<@ba.vup>+3</>（无需激活盟约）"
+    },
+    {
+     "id": "garrison_157_a",
+     "desc": "<获得时>【炎】层数<@ba.vup>+6</>、【奇迹】层数<@ba.vup>+3</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_16_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "siracusaShip",
+    "raidShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_114_a",
+     "desc": "<进入休整期时>获得1次免费刷新"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_17_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "yanShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_65_a",
+     "desc": "<获得时>自身所属盟约层数<@ba.vup>+8</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_18_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "soloShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_21_a",
+     "desc": "<售出时>进入下个休整期额外获得2资金"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_19_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "kazimierzShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_149_a",
+     "desc": "<获得时>获得1个野鬃或灰毫，小概率获得远牙"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_20_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "kazimierzShip",
+    "preciShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_148_a",
+     "desc": "<战斗开始时>使同一行最右边一名干员获得特质“<部署时>使已激活的【卡西米尔】【精准】层数<@ba.vup>+4</>（每场作战至多24层）”"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_21_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "deputShip",
+    "skillfulShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_86_a",
+     "desc": "身前一格干员若为“进入休整期时”特质，本干员的特质与其相同"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_22_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "kjeragShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_28_a",
+     "desc": "<战斗中>每当范围内1名敌人进入冻结时，有50%概率使已激活的【谢拉格】层数<@ba.vup>+1</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_23_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "sargonShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_128_a",
+     "desc": "<战斗中>开启技能时，使已激活的【萨尔贡】层数<@ba.vup>+9</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_24_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "sargonShip",
+    "deputShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_49_a",
+     "desc": "<获得时>获得1件“迅捷作战粮”"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_25_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "emptyShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_59_a",
+     "desc": "<战斗中>战斗中当本干员身前一格的干员因特质使层数提升时，使其额外层数<@ba.vup>+1</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_26_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "miraShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_72_a",
+     "desc": "<战斗开始时>使身前一格干员获得特质“开启技能时使自身所属已激活盟约层数<@ba.vup>+1</>”（每场战斗至多7层）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_01_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "lateranoShip",
+    "visiShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_23_a",
+     "desc": "<战斗中>自身每消耗7发子弹，使已激活的【拉特兰】层数<@ba.vup>+7</>、【远见】层数<@ba.vup>+3</>（每场战斗分别至多触发7次）"
+    },
+    {
+     "id": "garrison_55_a",
+     "desc": "【23】<战斗中>自身每消耗7发子弹，使已激活的【拉特兰】层数<@ba.vup>+7</>、【远见】层数<@ba.vup>+3</>（【远见】每场战斗至多21层）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_02_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "sargonShip",
+    "preciShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_125_a",
+     "desc": "<战斗中>每当范围内有敌人或干员进入<@ba.vup>沉睡</>或<@ba.vup>晕眩</>时，使已激活的【萨尔贡】【精准】层数<@ba.vup>+1</>（每场战斗至多24层）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_03_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "victoriaShip",
+    "yanShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_35_a",
+     "desc": "<获得时>【炎】【维多利亚】层数<@ba.vup>+5</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_04_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "miraShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_72_a",
+     "desc": "<战斗开始时>使身前一格干员获得特质“开启技能时使自身所属已激活盟约层数<@ba.vup>+1</>”（每场战斗至多7层）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_05_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "egirShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_12_a",
+     "desc": "【阿戈尔】每叠加2层，本干员攻击力<@ba.vup>+1%</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_06_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "indomShip",
+    "skillfulShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_10_a",
+     "desc": "核心盟约每叠加3层，本干员攻击力和生命值<@ba.vup>+1%</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_07_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "raidShip",
+    "arcaneShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_107_a",
+     "desc": "<部署时>使已激活的【突袭】层数<@ba.vup>+8</>（每场作战至多50层）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_08_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "victoriaShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_61_a",
+     "desc": "<休整期结束时>当前已激活且层数最多的盟约每有1名不同阶干员在场，层数<@ba.vup>+2</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_09_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "emptyShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_59_a",
+     "desc": "<战斗中>战斗中当本干员身前一格的干员因特质使层数提升时，使其额外层数<@ba.vup>+1</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_10_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "siracusaShip",
+    "emptyShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_60_a",
+     "desc": "<进入休整期时>触发身前一格的其他干员的“获得时”类效果"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_11_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "steadShip",
+    "soloShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_99_a",
+     "desc": "身前一格干员若为“休整期结束时”特质，本干员的特质与其相同"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_12_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "yanShip",
+    "arcaneShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_119_a",
+     "desc": "<休整期结束时>当前休整期每获得过一名干员，使已激活的【炎】【奥术】层数<@ba.vup>+2</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_13_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "egirShip",
+    "indomShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_40_a",
+     "desc": "<战斗中>自身被击倒或替身与本体进行切换时，使已激活的【阿戈尔】层数<@ba.vup>+5</>、【不屈】层数<@ba.vup>+5</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_14_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "kjeragShip",
+    "investShip",
+    "swiftShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_126_a",
+     "desc": "<战斗开始时>使身前一格【谢拉格】干员获得特质“范围内1名敌人进入冻结时，有60%概率使已激活的【谢拉格】层数<@ba.vup>+1</>”"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_15_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "swiftShip",
+    "miraShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_79_a",
+     "desc": "<休整期结束时>使自身及身前一格干员的已激活盟约分别各层数<@ba.vup>+4</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_16_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "deputShip",
+    "skillfulShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_86_a",
+     "desc": "身前一格干员若为“进入休整期时”特质，本干员的特质与其相同"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_17_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "investShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_34_a",
+     "desc": "<休整期结束时>本回合每获得过1名干员，使已激活的【投资人】层数<@ba.vup>+1</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_18_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "sargonShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_128_a",
+     "desc": "<战斗中>开启技能时，使已激活的【萨尔贡】层数<@ba.vup>+9</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_19_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "kazimierzShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_115_a",
+     "desc": "【卡西米尔】每叠加5层，本干员部署后100秒内<@ba.vup>基础攻击力</>+10、<@ba.vup>基础生命值</>+50"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_20_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "siracusaShip",
+    "miraShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_147_a",
+     "desc": "<休整期结束时>本回合每刷新过1次，使已激活的【叙拉古】层数<@ba.vup>+4</>（每回合至多12层）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_21_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "visiShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_141_a",
+     "desc": "<进入休整期时><休整期结束时>使已激活的【远见】层数<@ba.vup>+4</>"
+    },
+    {
+     "id": "garrison_142_a",
+     "desc": "<休整期结束时>使已激活的【远见】层数<@ba.vup>+4</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_22_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "swiftShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_56_a",
+     "desc": "<休整期结束时>整备区每有1个干员，使已激活的【迅捷】层数<@ba.vup>+2</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_23_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "yanShip",
+    "miraShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_156_a",
+     "desc": "<获得时>【炎】层数<@ba.vup>+6</>、【奇迹】层数<@ba.vup>+3</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_01_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "lateranoShip",
+    "preciShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_24_a",
+     "desc": "<战斗中>自身每消耗10发子弹，若同一行有3名干员，使已激活的【拉特兰】【精准】层数<@ba.vup>+2</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_02_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "kjeragShip",
+    "arcaneShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_05_a",
+     "desc": "【谢拉格】【奥术】每叠加3层，本干员攻击力<@ba.vup>+1%</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_03_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "yanShip",
+    "steadShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_37_a",
+     "desc": "<进入休整期时>若同一行有3名干员，随机获得1名当前人数最多盟约的干员"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_04_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "egirShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_84_a",
+     "desc": "【阿戈尔】每叠加10层，本干员每秒回复50生命，自然技力回复速度+0.15/秒"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_05_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "sargonShip",
+    "swiftShip",
+    "preciShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_100_a",
+     "desc": "【萨尔贡】【迅捷】【精准】每叠加3层，本干员攻击力<@ba.vup>+2%</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_06_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "sargonShip",
+    "indomShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_94_a",
+     "desc": "<进入休整期时>获得1件“盟约之币”或“萨尔贡浓茶”，有小概率发现“黄沙罗盘”"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_07_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "victoriaShip",
+    "miraShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_53_a",
+     "desc": "<休整期结束时>场上每有1名不同阶的【维多利亚】/【奇迹】干员使已激活的【维多利亚】层数<@ba.vup>+3</>/【奇迹】层数<@ba.vup>+2</>"
+    },
+    {
+     "id": "garrison_54_a",
+     "desc": "<休整期结束时>场上每有1名不同阶的【维多利亚】/【奇迹】干员使已激活的【维多利亚】层数<@ba.vup>+3</>/【奇迹】层数<@ba.vup>+2</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_08_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "victoriaShip",
+    "preciShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_11_a",
+     "desc": "【维多利亚】每叠加3层，本干员攻击速度<@ba.vup>+1</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_09_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "lateranoShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_90_a",
+     "desc": "<战斗中>开启技能时，同一行每有1名干员，当前已激活且层数最多的盟约层数<@ba.vup>+1</>（每场作战至多10层）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_10_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "swiftShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_56_a",
+     "desc": "<休整期结束时>整备区每有1个干员，使已激活的【迅捷】层数<@ba.vup>+2</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_11_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "maniShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_76_a",
+     "desc": "<获得时>获得1个“变形同构体”"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_12_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "preciShip",
+    "visiShip",
+    "emptyShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_09_a",
+     "desc": "攻击力和生命值+<@ba.vup>20%</>；核心盟约每叠加3层，本干员攻击力和生命值<@ba.vup>+1%</>"
+    },
+    {
+     "id": "garrison_03_a",
+     "desc": "攻击力和生命值+<@ba.vup>20%</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_13_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "lateranoShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_32_a",
+     "desc": "<获得时>使下个休整期额外获得<@ba.vup>2</>资金"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_14_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "deputShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_57_a",
+     "desc": "<休整期结束时>整备区中每名干员所在的已激活盟约分别层数<@ba.vup>+2</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_15_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "yanShip",
+    "raidShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_101_a",
+     "desc": "【炎】【突袭】每叠加3层，本干员攻击束缚和停顿状态的敌人造成的伤害提升<@ba.vup>1%</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_16_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "arcaneShip",
+    "skillfulShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_121_a",
+     "desc": "<休整期结束时>本回合每花费<@ba.vup>3</>资金，使已激活的【灵巧】【奥术】层数<@ba.vup>+2</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_17_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "kazimierzShip",
+    "raidShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_145_a",
+     "desc": "<战斗开始时>使<@ba.vup>自身</>和<@ba.vup>身前一格</>干员获得特质“【卡西米尔】每叠加3层，本干员再部署时间<@ba.vup>-1.5%</>，攻击速度<@ba.vup>+0.5</>”"
+    },
+    {
+     "id": "garrison_144_a",
+     "desc": "【145】【卡西米尔】每叠加3层，本干员再部署时间<@ba.vup>-1.5%</>，攻击速度<@ba.vup>+0.5</>"
+    },
+    {
+     "id": "garrison_159_a",
+     "desc": "【145】【卡西米尔】每叠加3层，本干员攻击速度<@ba.vup>+0.5</>"
+    },
+    {
+     "id": "garrison_160_a",
+     "desc": "【145】<战斗开始时>使<@ba.vup>自身</>和<@ba.vup>身前一格</>干员获得特质“【卡西米尔】每叠加3层，攻击速度<@ba.vup>+0.5</>”"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_18_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "siracusaShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_118_a",
+     "desc": "<战斗中>击倒敌人时，使已激活的【叙拉古】层数<@ba.vup>+2</>\\n<@ba.rem>将荒芜拉普兰德合成为精锐即可在战斗中使所有【叙拉古】干员获得该效果</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_19_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "kjeragShip",
+    "kazimierzShip",
+    "swiftShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_155_a",
+     "desc": "<获得时>自身所属的盟约层数<@ba.vup>+8</>\\n<部署时>使自身已激活的盟约层数<@ba.vup>+8</>（至多24层）"
+    },
+    {
+     "id": "garrison_65_a",
+     "desc": "<获得时>自身所属盟约层数<@ba.vup>+8</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_20_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [
+    "deputShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_140_a",
+     "desc": "<战斗中>开启技能时，当前已激活且层数最多的盟约层数<@ba.vup>+3</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_diy1_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [],
+   "garrison": []
+  },
+  {
+   "chessId": "chess_char_5_diy2_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [],
+   "garrison": []
+  },
+  {
+   "chessId": "chess_char_6_diy1_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [],
+   "garrison": []
+  },
+  {
+   "chessId": "chess_char_6_diy2_a",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 1,
+    "skill": 4
+   },
+   "bonds": [],
+   "garrison": []
+  },
+  {
+   "chessId": "chess_char_1_01_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 50,
+    "skill": 7
+   },
+   "bonds": [
+    "lateranoShip",
+    "swiftShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_16_b",
+     "desc": "【拉特兰】每叠加5层，本干员攻击速度<@ba.vup>+2</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_02_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 50,
+    "skill": 7
+   },
+   "bonds": [
+    "kjeragShip",
+    "steadShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_25_b",
+     "desc": "<获得时>自身所属盟约层数<@ba.vup>+4</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_03_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 50,
+    "skill": 7
+   },
+   "bonds": [
+    "yanShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_30_b",
+     "desc": "<获得时>获得等于两倍的当前调度中心等级的【炎】层数（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_04_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 50,
+    "skill": 7
+   },
+   "bonds": [
+    "egirShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_18_b",
+     "desc": "攻击海怪敌人时攻击力提升至<@ba.vup>200%</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_05_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 50,
+    "skill": 7
+   },
+   "bonds": [
+    "indomShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_04_b",
+     "desc": "购买价格为<@ba.vup>1</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_06_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 50,
+    "skill": 7
+   },
+   "bonds": [
+    "victoriaShip",
+    "deputShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_154_b",
+     "desc": "<休整期结束时>使已激活的【维多利亚】层数<@ba.vup>+2</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_07_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 50,
+    "skill": 7
+   },
+   "bonds": [
+    "siracusaShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_113_b",
+     "desc": "<获得时>获得2次免费刷新"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_08_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 50,
+    "skill": 7
+   },
+   "bonds": [
+    "soloShip",
+    "siracusaShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_120_b",
+     "desc": "<售出时>获得2次免费刷新"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_09_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 50,
+    "skill": 7
+   },
+   "bonds": [
+    "preciShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_19_b",
+     "desc": "攻击无人机敌人时攻击力提升至<@ba.vup>200%</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_10_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 50,
+    "skill": 7
+   },
+   "bonds": [
+    "steadShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_08_b",
+     "desc": "技力自然恢复速度<@ba.vup>+0.3/秒</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_11_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 50,
+    "skill": 7
+   },
+   "bonds": [
+    "miraShip",
+    "visiShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_25_b",
+     "desc": "<获得时>自身所属盟约层数<@ba.vup>+4</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_12_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 50,
+    "skill": 7
+   },
+   "bonds": [
+    "sargonShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_25_b",
+     "desc": "<获得时>自身所属盟约层数<@ba.vup>+4</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_13_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 50,
+    "skill": 7
+   },
+   "bonds": [
+    "deputShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_102_b",
+     "desc": "<休整期结束时>当前激活且层数最多的盟约层数<@ba.vup>+2</>，此干员在整备区时也有效"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_14_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 50,
+    "skill": 7
+   },
+   "bonds": [
+    "skillfulShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_67_b",
+     "desc": "<售出时>进入下个休整期额外获得2资金"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_15_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 50,
+    "skill": 7
+   },
+   "bonds": [
+    "maniShip",
+    "emptyShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_03_b",
+     "desc": "攻击力和生命值+<@ba.vup>40%</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_16_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 50,
+    "skill": 7
+   },
+   "bonds": [
+    "investShip",
+    "swiftShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_25_b",
+     "desc": "<获得时>自身所属盟约层数<@ba.vup>+4</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_17_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 50,
+    "skill": 7
+   },
+   "bonds": [
+    "arcaneShip",
+    "preciShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_25_b",
+     "desc": "<获得时>自身所属盟约层数<@ba.vup>+4</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_18_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 50,
+    "skill": 7
+   },
+   "bonds": [
+    "raidShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_01_b",
+     "desc": "<战斗中>造成的伤害变为弱点伤害（基于敌人的防御力和法术抗性变换物理和法术伤害）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_19_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 50,
+    "skill": 7
+   },
+   "bonds": [
+    "kazimierzShip",
+    "swiftShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_25_b",
+     "desc": "<获得时>自身所属盟约层数<@ba.vup>+4</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_1_20_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 50,
+    "skill": 7
+   },
+   "bonds": [
+    "indomShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_158_b",
+     "desc": "<休整期结束时>使已激活的【不屈】层数<@ba.vup>+2</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_01_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 55,
+    "skill": 7
+   },
+   "bonds": [
+    "lateranoShip",
+    "preciShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_138_b",
+     "desc": "<战斗中>首次击倒敌人时，使已激活的【精准】【拉特兰】层数<@ba.vup>+6</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_02_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 55,
+    "skill": 7
+   },
+   "bonds": [
+    "visiShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_80_b",
+     "desc": "<进入休整期时>使自身已激活的盟约层数<@ba.vup>+4</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_03_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 55,
+    "skill": 7
+   },
+   "bonds": [
+    "kjeragShip",
+    "indomShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_41_b",
+     "desc": "<获得时>自身所属盟约层数<@ba.vup>+6</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_04_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 55,
+    "skill": 7
+   },
+   "bonds": [
+    "yanShip",
+    "skillfulShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_31_b",
+     "desc": "<休整期结束时>本回合每获得过1名干员，使已激活的【炎】层数<@ba.vup>+2</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_05_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 55,
+    "skill": 7
+   },
+   "bonds": [
+    "kjeragShip",
+    "victoriaShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_09_b",
+     "desc": "攻击力和生命值+<@ba.vup>40%</>；核心盟约每叠加3层，本干员攻击力和生命值<@ba.vup>+2%</>"
+    },
+    {
+     "id": "garrison_03_b",
+     "desc": "攻击力和生命值+<@ba.vup>40%</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_06_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 55,
+    "skill": 7
+   },
+   "bonds": [
+    "sargonShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_42_b",
+     "desc": "<战斗中>首次开启技能时，使已激活的【萨尔贡】层数<@ba.vup>+10</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_07_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 55,
+    "skill": 7
+   },
+   "bonds": [
+    "egirShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_46_b",
+     "desc": "<战斗中>自身被击倒时，使已激活的【阿戈尔】层数<@ba.vup>+6</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_08_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 55,
+    "skill": 7
+   },
+   "bonds": [
+    "sargonShip",
+    "steadShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_15_b",
+     "desc": "【萨尔贡】【坚守】每叠加3层，本干员防御力<@ba.vup>+2%</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_09_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 55,
+    "skill": 7
+   },
+   "bonds": [
+    "raidShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_77_b",
+     "desc": "<战斗中>每击倒2名敌人，使已激活的【突袭】层数<@ba.vup>+2</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_10_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 55,
+    "skill": 7
+   },
+   "bonds": [
+    "victoriaShip",
+    "arcaneShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_91_b",
+     "desc": "<获得时>随机制造2件洛洛的定制品"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_11_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 55,
+    "skill": 7
+   },
+   "bonds": [
+    "miraShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_93_b",
+     "desc": "只需2个相同的本干员即可合成精锐"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_12_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 55,
+    "skill": 7
+   },
+   "bonds": [
+    "kazimierzShip",
+    "indomShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_75_b",
+     "desc": "<部署时>使已激活的【卡西米尔】层数<@ba.vup>+2</>\n<被击倒时>使已激活的【不屈】层数<@ba.vup>+4</>"
+    },
+    {
+     "id": "garrison_143_b",
+     "desc": "<部署时>使已激活的【卡西米尔】层数<@ba.vup>+2</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_13_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 55,
+    "skill": 7
+   },
+   "bonds": [
+    "swiftShip",
+    "skillfulShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_80_b",
+     "desc": "<进入休整期时>使自身已激活的盟约层数<@ba.vup>+4</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_14_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 55,
+    "skill": 7
+   },
+   "bonds": [
+    "deputShip",
+    "emptyShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_81_b",
+     "desc": "<休整期结束时>当前激活且层数最多的盟约层数<@ba.vup>+4</>，此干员在整备区时也有效"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_15_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 55,
+    "skill": 7
+   },
+   "bonds": [
+    "arcaneShip",
+    "deputShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_130_b",
+     "desc": "<获得时>自身所属盟约层数<@ba.vup>+8</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_16_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 55,
+    "skill": 7
+   },
+   "bonds": [
+    "siracusaShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_123_b",
+     "desc": "<刷新时>若为本回合首次主动刷新，使已激活的【叙拉古】层数<@ba.vup>+8</>，此干员在整备区时也有效"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_17_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 55,
+    "skill": 7
+   },
+   "bonds": [
+    "steadShip",
+    "soloShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_69_b",
+     "desc": "<休整期结束时>使已激活的【坚守】层数<@ba.vup>+8</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_18_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 55,
+    "skill": 7
+   },
+   "bonds": [
+    "kazimierzShip",
+    "steadShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_105_b",
+     "desc": "<获得时>当前激活且层数最多的盟约层数<@ba.vup>+6</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_2_19_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 55,
+    "skill": 7
+   },
+   "bonds": [
+    "investShip",
+    "swiftShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_151_b",
+     "desc": "攻击力和生命值+<@ba.vup>40%</>；【投资人】【迅捷】每叠加3层，本干员攻击力和生命值<@ba.vup>+2%</>"
+    },
+    {
+     "id": "garrison_03_b",
+     "desc": "攻击力和生命值+<@ba.vup>40%</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_01_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "lateranoShip",
+    "miraShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_26_b",
+     "desc": "<获得时>使下个休整期额外获得<@ba.vup>2</>资金"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_02_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "skillfulShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_47_b",
+     "desc": "<休整期结束时>使自身及身后一格干员的已激活盟约分别各层数<@ba.vup>+6</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_03_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "yanShip",
+    "visiShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_133_b",
+     "desc": "<获得时>获得2个“盟约之币”"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_04_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "yanShip",
+    "investShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_98_b",
+     "desc": "<休整期结束时>使下个休整期额外获得<@ba.vup>2</>资金（若已激活【炎】/【投资人】此特质在整备区也有效）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_05_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "egirShip",
+    "steadShip",
+    "raidShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_38_b",
+     "desc": "<战斗中>每击倒2名敌人时，使已激活的【阿戈尔】【坚守】【突袭】层数<@ba.vup>+2</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_06_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "sargonShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_43_b",
+     "desc": "<战斗中>开启技能时，使已激活的【萨尔贡】层数<@ba.vup>+12</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_07_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "lateranoShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_47_b",
+     "desc": "<休整期结束时>使自身及身后一格干员的已激活盟约分别各层数<@ba.vup>+6</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_08_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "victoriaShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_48_b",
+     "desc": "<休整期结束时>场上每有1名不同阶的【维多利亚】干员，使已激活的【维多利亚】层数<@ba.vup>+4</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_09_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "egirShip",
+    "arcaneShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_131_b",
+     "desc": "<战斗中>首次击倒敌人或我方干员时，使已激活的【阿戈尔】【奥术】层数<@ba.vup>+6</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_10_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "swiftShip",
+    "emptyShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_116_b",
+     "desc": "<售出时>进行一次<@ba.vup>V阶</>干员的免费特殊招募"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_11_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "kjeragShip",
+    "preciShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_111_b",
+     "desc": "<获得时>自身所属盟约层数<@ba.vup>+10</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_12_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "kazimierzShip",
+    "raidShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_106_b",
+     "desc": "<部署时>使自身已激活的盟约层数<@ba.vup>+8</>（每场作战至多24层）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_13_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "sargonShip",
+    "skillfulShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_13_b",
+     "desc": "购买价格为<@ba.vup>1</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_14_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "kjeragShip",
+    "visiShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_28_b",
+     "desc": "<战斗中>每当范围内1名敌人进入冻结时，有50%概率使已激活的【谢拉格】层数<@ba.vup>+2</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_15_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "siracusaShip",
+    "deputShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_132_b",
+     "desc": "<售出时>获得4次免费刷新"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_16_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "steadShip",
+    "indomShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_70_b",
+     "desc": "<休整期结束时>同一行每有1名干员，使已激活的【坚守】层数<@ba.vup>+2</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_17_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "kazimierzShip",
+    "soloShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_137_b",
+     "desc": "<战斗中>攻击力和生命值+<@ba.vup>50%</>，造成的伤害变为弱点伤害（基于敌人的防御力和法术抗性变换物理和法术伤害）"
+    },
+    {
+     "id": "garrison_01_b",
+     "desc": "<战斗中>造成的伤害变为弱点伤害（基于敌人的防御力和法术抗性变换物理和法术伤害）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_18_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "siracusaShip",
+    "swiftShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_71_b",
+     "desc": "<获得时>自身所属盟约层数<@ba.vup>+12</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_19_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "siracusaShip",
+    "miraShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_152_b",
+     "desc": "<战斗中>造成的伤害变为弱点伤害（基于敌人的防御力和法术抗性变换物理和法术伤害），前3次击倒敌人时使已激活的【叙拉古】层数<@ba.vup>+4</>、【奇迹】层数<@ba.vup>+2</>"
+    },
+    {
+     "id": "garrison_153_b",
+     "desc": "【152】<战斗中>造成的伤害变为弱点伤害（基于敌人的防御力和法术抗性变换物理和法术伤害），前3次击倒敌人时使已激活的【叙拉古】层数<@ba.vup>+4</>、【奇迹】层数<@ba.vup>+2</>"
+    },
+    {
+     "id": "garrison_01_b",
+     "desc": "<战斗中>造成的伤害变为弱点伤害（基于敌人的防御力和法术抗性变换物理和法术伤害）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_20_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "kjeragShip",
+    "deputShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_92_b",
+     "desc": "<获得时>获得2件“谢拉格不融冰”"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_3_21_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "lateranoShip",
+    "skillfulShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_150_b",
+     "desc": "<进入休整期时>使自身及身前一格干员的已激活盟约分别各层数<@ba.vup>+6</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_01_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "lateranoShip",
+    "steadShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_14_b",
+     "desc": "【拉特兰】【坚守】每叠加3层，本干员防御力<@ba.vup>+2%</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_02_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "lateranoShip",
+    "arcaneShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_22_b",
+     "desc": "<战斗中>自身<@ba.vup>周围4格</>的干员每消耗6发弹药，使已激活的【拉特兰】层数<@ba.vup>+2</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_03_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "kjeragShip",
+    "deputShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_92_b",
+     "desc": "<获得时>获得2件“谢拉格不融冰”"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_04_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "visiShip",
+    "raidShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_104_b",
+     "desc": "<休整期结束时>使自身已激活的盟约层数<@ba.vup>+10</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_05_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "sargonShip",
+    "deputShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_49_b",
+     "desc": "<获得时>获得2件“迅捷作战粮”"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_06_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "preciShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_73_b",
+     "desc": "<战斗开始时>使身前一格干员获得特质“开启技能时使已激活【精准】层数<@ba.vup>+2</>”（每场战斗至多20层）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_07_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "victoriaShip",
+    "visiShip",
+    "indomShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_50_b",
+     "desc": "<战斗中>前3次击倒敌人时，使已激活的【维多利亚】【远见】【不屈】层数<@ba.vup>+4</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_08_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "emptyShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_82_b",
+     "desc": "<售出时>触发场上一名拥有“休整期结束时”的干员的特质（优先触发部署位置更靠上的和更靠右的）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_09_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "egirShip",
+    "soloShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_07_b",
+     "desc": "【阿戈尔】每叠加3层，本干员攻击力<@ba.vup>+2%</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_10_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "siracusaShip",
+    "arcaneShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_122_b",
+     "desc": "<休整期结束时>本回合每刷新过1次，使已激活的【叙拉古】【奥术】层数<@ba.vup>+4</>（每回合至多12层）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_11_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "victoriaShip",
+    "skillfulShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_127_b",
+     "desc": "<进入休整期时>若当前为奇数回合，获得2件随机装备"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_12_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "egirShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_39_b",
+     "desc": "<进入休整期时>若同一行有3名干员，获得1个斯卡蒂、幽灵鲨或深巡，重复2次"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_13_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "kjeragShip",
+    "skillfulShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_111_b",
+     "desc": "<获得时>自身所属盟约层数<@ba.vup>+10</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_14_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "swiftShip",
+    "preciShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_51_b",
+     "desc": "<休整期结束时>使自身已激活的盟约层数<@ba.vup>+10</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_15_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "yanShip",
+    "miraShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_156_b",
+     "desc": "<获得时>【炎】层数<@ba.vup>+12</>、【奇迹】层数<@ba.vup>+6</>（无需激活盟约）"
+    },
+    {
+     "id": "garrison_157_b",
+     "desc": "<获得时>【炎】层数<@ba.vup>+12</>、【奇迹】层数<@ba.vup>+6</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_16_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "siracusaShip",
+    "raidShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_114_b",
+     "desc": "<进入休整期时>获得2次免费刷新"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_17_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "yanShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_65_b",
+     "desc": "<获得时>自身所属盟约层数<@ba.vup>+16</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_18_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "soloShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_21_b",
+     "desc": "<售出时>进入下个休整期额外获得4资金"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_19_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "kazimierzShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_149_b",
+     "desc": "<获得时>获得2个野鬃或灰毫，小概率获得远牙"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_20_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "kazimierzShip",
+    "preciShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_148_b",
+     "desc": "<战斗开始时>使同一行最右边一名干员获得特质“<部署时>使已激活的【卡西米尔】【精准】层数<@ba.vup>+8</>（每场作战至多48层）”"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_21_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "deputShip",
+    "skillfulShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_86_b",
+     "desc": "身前一格干员若为“进入休整期时”特质，本干员的特质与其相同"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_22_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "kjeragShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_28_b",
+     "desc": "<战斗中>每当范围内1名敌人进入冻结时，有50%概率使已激活的【谢拉格】层数<@ba.vup>+2</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_23_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "sargonShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_128_b",
+     "desc": "<战斗中>开启技能时，使已激活的【萨尔贡】层数<@ba.vup>+18</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_24_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "sargonShip",
+    "deputShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_49_b",
+     "desc": "<获得时>获得2件“迅捷作战粮”"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_25_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "emptyShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_59_b",
+     "desc": "<战斗中>战斗中当本干员身前一格的干员因特质使层数提升时，使其额外层数<@ba.vup>+2</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_4_26_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "miraShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_72_b",
+     "desc": "<战斗开始时>使身前一格干员获得特质“开启技能时使自身所属已激活盟约层数<@ba.vup>+2</>”（每场战斗至多14层）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_01_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "lateranoShip",
+    "visiShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_23_b",
+     "desc": "<战斗中>自身每消耗7发子弹，使已激活的【拉特兰】层数<@ba.vup>+14</>、【远见】层数<@ba.vup>+6</>（每场战斗至多触发7次）"
+    },
+    {
+     "id": "garrison_55_b",
+     "desc": "【23】<战斗中>自身每消耗7发子弹，使已激活的【拉特兰】层数<@ba.vup>+14</>、【远见】层数<@ba.vup>+6</>（【远见】每场战斗至多42层）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_02_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "sargonShip",
+    "preciShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_125_b",
+     "desc": "<战斗中>每当范围内有敌人或干员进入<@ba.vup>沉睡</>或<@ba.vup>晕眩</>时，使已激活的【萨尔贡】【精准】层数<@ba.vup>+2</>（每场战斗至多48层）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_03_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "victoriaShip",
+    "yanShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_35_b",
+     "desc": "<获得时>【炎】【维多利亚】层数<@ba.vup>+10</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_04_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "miraShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_72_b",
+     "desc": "<战斗开始时>使身前一格干员获得特质“开启技能时使自身所属已激活盟约层数<@ba.vup>+2</>”（每场战斗至多14层）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_05_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "egirShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_12_b",
+     "desc": "【阿戈尔】每叠加2层，本干员攻击力<@ba.vup>+2%</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_06_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "indomShip",
+    "skillfulShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_10_b",
+     "desc": "核心盟约每叠加3层，本干员攻击力和生命值<@ba.vup>+2%</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_07_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "raidShip",
+    "arcaneShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_107_b",
+     "desc": "<部署时>使已激活的【突袭】层数<@ba.vup>+16</>（每场作战至多100层）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_08_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "victoriaShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_61_b",
+     "desc": "<休整期结束时>当前已激活且层数最多的盟约每有1名不同阶干员在场，层数<@ba.vup>+4</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_09_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "emptyShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_59_b",
+     "desc": "<战斗中>战斗中当本干员身前一格的干员因特质使层数提升时，使其额外层数<@ba.vup>+2</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_10_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "siracusaShip",
+    "emptyShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_60_b",
+     "desc": "<进入休整期时>触发身前两格的其他干员的“获得时”类效果"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_11_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "steadShip",
+    "soloShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_99_b",
+     "desc": "身前一格干员若为“休整期结束时”特质，本干员的特质与其相同"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_12_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "yanShip",
+    "arcaneShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_119_b",
+     "desc": "<休整期结束时>当前休整期每获得过一名干员，使已激活的【炎】【奥术】层数<@ba.vup>+4</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_13_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "egirShip",
+    "indomShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_40_b",
+     "desc": "<战斗中>自身被击倒或替身与本体进行切换时，使已激活的【阿戈尔】层数<@ba.vup>+10</>、【不屈】层数<@ba.vup>+10</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_14_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "kjeragShip",
+    "investShip",
+    "swiftShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_126_b",
+     "desc": "<战斗开始时>使身前一格【谢拉格】干员获得特质“范围内1名敌人进入冻结时，有60%概率使已激活的【谢拉格】层数<@ba.vup>+2</>”"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_15_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "swiftShip",
+    "miraShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_79_b",
+     "desc": "<休整期结束时>使自身及身前一格干员的已激活盟约分别各层数<@ba.vup>+8</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_16_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "deputShip",
+    "skillfulShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_86_b",
+     "desc": "身前一格干员若为“进入休整期时”特质，本干员的特质与其相同"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_17_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "investShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_34_b",
+     "desc": "<休整期结束时>本回合每获得过1名干员，使已激活的【投资人】层数<@ba.vup>+2</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_18_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "sargonShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_128_b",
+     "desc": "<战斗中>开启技能时，使已激活的【萨尔贡】层数<@ba.vup>+18</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_19_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "kazimierzShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_115_b",
+     "desc": "【卡西米尔】每叠加5层，本干员部署后100秒内<@ba.vup>基础攻击力</>+20、<@ba.vup>基础生命值</>+100"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_20_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "siracusaShip",
+    "miraShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_147_b",
+     "desc": "<休整期结束时>本回合每刷新过1次，使已激活的【叙拉古】层数<@ba.vup>+8</>（每回合至多24层）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_21_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "visiShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_141_b",
+     "desc": "<进入休整期时><休整期结束时>使已激活的【远见】层数<@ba.vup>+8</>"
+    },
+    {
+     "id": "garrison_142_b",
+     "desc": "<休整期结束时>使已激活的【远见】层数<@ba.vup>+8</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_22_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "swiftShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_56_b",
+     "desc": "<休整期结束时>整备区每有1个干员，使已激活的【迅捷】层数<@ba.vup>+4</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_23_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "yanShip",
+    "miraShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_156_b",
+     "desc": "<获得时>【炎】层数<@ba.vup>+12</>、【奇迹】层数<@ba.vup>+6</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_01_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "lateranoShip",
+    "preciShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_24_b",
+     "desc": "<战斗中>自身每消耗10发子弹，若同一行有3名干员，使已激活的【拉特兰】【精准】层数<@ba.vup>+4</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_02_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "kjeragShip",
+    "arcaneShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_05_b",
+     "desc": "【谢拉格】【奥术】每叠加3层，本干员攻击力<@ba.vup>+2%</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_03_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "yanShip",
+    "steadShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_37_b",
+     "desc": "<进入休整期时>随机获得1名当前人数最多盟约的干员"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_04_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "egirShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_84_b",
+     "desc": "【阿戈尔】每叠加10层，本干员每秒回复100生命，自然技力回复速度+0.3/秒"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_05_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "sargonShip",
+    "swiftShip",
+    "preciShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_100_b",
+     "desc": "【萨尔贡】【迅捷】【精准】每叠加3层，本干员攻击力<@ba.vup>+4%</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_06_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "sargonShip",
+    "indomShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_94_b",
+     "desc": "<进入休整期时>获得2件“盟约之币”或“萨尔贡浓茶”，有概率发现“黄沙罗盘”"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_07_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "victoriaShip",
+    "miraShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_53_b",
+     "desc": "<休整期结束时>场上每有1名不同阶的【维多利亚】/【奇迹】干员使已激活的【维多利亚】层数<@ba.vup>+6</>/【奇迹】层数<@ba.vup>+4</>"
+    },
+    {
+     "id": "garrison_54_b",
+     "desc": "<休整期结束时>场上每有1名不同阶的【维多利亚】/【奇迹】干员使已激活的【维多利亚】层数+<@ba.vup>6</>/【奇迹】层数<@ba.vup>+4</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_08_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "victoriaShip",
+    "preciShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_11_b",
+     "desc": "【维多利亚】每叠加3层，本干员攻击速度<@ba.vup>+2</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_09_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "lateranoShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_90_b",
+     "desc": "<战斗中>开启技能时，同一行每有1名干员，当前已激活且层数最多的盟约层数<@ba.vup>+2</>（每场作战至多20层）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_10_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "swiftShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_56_b",
+     "desc": "<休整期结束时>整备区每有1个干员，使已激活的【迅捷】层数<@ba.vup>+4</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_11_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "maniShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_76_b",
+     "desc": "<获得时>获得2个“变形同构体”"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_12_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "preciShip",
+    "visiShip",
+    "emptyShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_09_b",
+     "desc": "攻击力和生命值+<@ba.vup>40%</>；核心盟约每叠加3层，本干员攻击力和生命值<@ba.vup>+2%</>"
+    },
+    {
+     "id": "garrison_03_b",
+     "desc": "攻击力和生命值+<@ba.vup>40%</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_13_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "lateranoShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_32_b",
+     "desc": "<获得时>使下个休整期额外获得<@ba.vup>4</>资金"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_14_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "deputShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_57_b",
+     "desc": "<休整期结束时>整备区中每名干员所在的已激活盟约分别层数<@ba.vup>+4</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_15_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "yanShip",
+    "raidShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_101_b",
+     "desc": "【炎】【突袭】每叠加3层，本干员攻击束缚和停顿状态的敌人造成的伤害提升<@ba.vup>2%</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_16_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "arcaneShip",
+    "skillfulShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_121_b",
+     "desc": "<休整期结束时>本回合每花费<@ba.vup>3</>资金，使已激活的【灵巧】【奥术】层数<@ba.vup>+4</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_17_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "kazimierzShip",
+    "raidShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_145_b",
+     "desc": "<战斗开始时>使<@ba.vup>自身</>和<@ba.vup>身前一格</>干员获得特质“【卡西米尔】每叠加3层，本干员再部署时间<@ba.vup>-3%</>，攻击速度<@ba.vup>+1</>”"
+    },
+    {
+     "id": "garrison_144_b",
+     "desc": "【卡西米尔】每叠加3层，本干员再部署时间<@ba.vup>-3%</>，攻击速度<@ba.vup>+1</>"
+    },
+    {
+     "id": "garrison_159_b",
+     "desc": "【145】【卡西米尔】每叠加3层，本干员攻击速度<@ba.vup>+1</>"
+    },
+    {
+     "id": "garrison_160_b",
+     "desc": "【145】<战斗开始时>使<@ba.vup>自身</>和<@ba.vup>身前一格</>干员获得特质“【卡西米尔】每叠加3层，攻击速度<@ba.vup>+1</>”"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_18_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "siracusaShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_118_b",
+     "desc": "<战斗开始时>使<@ba.vup>所有</>【叙拉古】干员获得特质“击倒敌人时，使已激活的【叙拉古】层数<@ba.vup>+2</>”"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_19_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "kjeragShip",
+    "kazimierzShip",
+    "swiftShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_155_b",
+     "desc": "<获得时>自身所属的盟约层数<@ba.vup>+16</>\\n<部署时>使自身已激活的盟约层数<@ba.vup>+16</>（至多48层）"
+    },
+    {
+     "id": "garrison_65_b",
+     "desc": "<获得时>自身所属盟约层数<@ba.vup>+16</>（无需激活盟约）"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_6_20_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [
+    "deputShip"
+   ],
+   "garrison": [
+    {
+     "id": "garrison_140_b",
+     "desc": "<战斗中>开启技能时，当前已激活且层数最多的盟约层数<@ba.vup>+6</>"
+    }
+   ]
+  },
+  {
+   "chessId": "chess_char_5_diy1_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [],
+   "garrison": []
+  },
+  {
+   "chessId": "chess_char_5_diy2_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [],
+   "garrison": []
+  },
+  {
+   "chessId": "chess_char_6_diy1_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [],
+   "garrison": []
+  },
+  {
+   "chessId": "chess_char_6_diy2_b",
+   "status": {
+    "phase": "PHASE_2",
+    "level": 60,
+    "skill": 7
+   },
+   "bonds": [],
+   "garrison": []
+  }
+ ]
+}

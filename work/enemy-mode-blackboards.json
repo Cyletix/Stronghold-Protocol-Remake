@@ -1,0 +1,1340 @@
+{
+  "rule": "mode-provider-talent-blackboards-v1",
+  "inputs": {
+    "rule": "mode-provider-talent-blackboards-v1",
+    "databaseSha256": "d3f494055a1ec0d672b5a8c86b291be310a2f7a458c932fd6807c0f8b67fd7a9",
+    "memberIDs": [
+      "enemy_1557_trcerb",
+      "enemy_2020_cswrtr",
+      "enemy_2089_skzjkl",
+      "enemy_7028_xbscp",
+      "enemy_7028_xbscp_2",
+      "enemy_8010_mcnist",
+      "enemy_8010_mcnist_2",
+      "enemy_8010_mcnist_3"
+    ],
+    "importerSha256": "db1264a637ce52a48fad2a7e03fe28365ddf8950d208858d7fcb0c6b25776d89"
+  },
+  "enemies": {
+    "enemy_1557_trcerb": {
+      "levels": [
+        {
+          "level": 0,
+          "blackboard": [
+            {
+              "key": "P1Passive.enemy_trcerb_branch.interval",
+              "value": 10.0,
+              "valueStr": null
+            },
+            {
+              "key": "P1Food.enemy_key",
+              "value": 0.0,
+              "valueStr": "enemy_10001_trslim"
+            },
+            {
+              "key": "P2Food.enemy_key",
+              "value": 0.0,
+              "valueStr": "enemy_10002_trtrsl"
+            },
+            {
+              "key": "P2Passive.enemy_trcerb_branch.interval",
+              "value": 20.0,
+              "valueStr": null
+            },
+            {
+              "key": "P3Food.enemy_key",
+              "value": 0.0,
+              "valueStr": "enemy_10004_trdiam"
+            },
+            {
+              "key": "P3Passive.enemy_trcerb_branch.interval",
+              "value": 25.0,
+              "valueStr": null
+            },
+            {
+              "key": "PositionCheck.wait_row",
+              "value": 5.0,
+              "valueStr": null
+            },
+            {
+              "key": "PositionCheck.wait_col",
+              "value": 1.0,
+              "valueStr": null
+            },
+            {
+              "key": "PositionCheck.eat_row",
+              "value": 5.0,
+              "valueStr": null
+            },
+            {
+              "key": "PositionCheck.eat_col",
+              "value": 8.0,
+              "valueStr": null
+            },
+            {
+              "key": "PositionCheck.eat_move_speed",
+              "value": 4.0,
+              "valueStr": null
+            },
+            {
+              "key": "PositionCheck.back_move_speed",
+              "value": 1.3,
+              "valueStr": null
+            },
+            {
+              "key": "PositionCheck.enemy_trcerb_wait_to_eat.interval",
+              "value": 3.0,
+              "valueStr": null
+            },
+            {
+              "key": "Rage.atk",
+              "value": 0.5,
+              "valueStr": null
+            },
+            {
+              "key": "Rage.move_speed",
+              "value": 1.2,
+              "valueStr": null
+            },
+            {
+              "key": "Strong.damage_resistance_max",
+              "value": 0.8,
+              "valueStr": null
+            },
+            {
+              "key": "ClearTrpotSp.sp_cost_0",
+              "value": 90.0,
+              "valueStr": null
+            },
+            {
+              "key": "ClearTrpotSp.sp_cost_1",
+              "value": 45.0,
+              "valueStr": null
+            },
+            {
+              "key": "ClearTrpotSp.sp_cost_2",
+              "value": 42.0,
+              "valueStr": null
+            },
+            {
+              "key": "ClearTrpotSp.sp_cost_3",
+              "value": 70.0,
+              "valueStr": null
+            },
+            {
+              "key": "P3Passive.attack@atk_scale",
+              "value": 0.8,
+              "valueStr": null
+            },
+            {
+              "key": "PositionCheck.enemy_trcerb_wait_to_eat.food_effect_level_1",
+              "value": 1.0,
+              "valueStr": null
+            },
+            {
+              "key": "PositionCheck.enemy_trcerb_wait_to_eat.food_effect_level_2",
+              "value": 2.0,
+              "valueStr": null
+            },
+            {
+              "key": "PositionCheck.enemy_trcerb_wait_to_eat.food_effect_level_3",
+              "value": 5.0,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "level": 1,
+          "blackboard": [
+            {
+              "key": "P1Passive.enemy_trcerb_branch.interval",
+              "value": 35.0,
+              "valueStr": null
+            },
+            {
+              "key": "P1Food.enemy_key",
+              "value": 0.0,
+              "valueStr": "enemy_1309_mhboar"
+            },
+            {
+              "key": "P2Food.enemy_key",
+              "value": 0.0,
+              "valueStr": "enemy_10002_trtrsl_2"
+            },
+            {
+              "key": "P2Passive.enemy_trcerb_branch.interval",
+              "value": 60.0,
+              "valueStr": null
+            },
+            {
+              "key": "P3Food.enemy_key",
+              "value": 0.0,
+              "valueStr": "enemy_1050_lslime"
+            },
+            {
+              "key": "P3Passive.enemy_trcerb_branch.interval",
+              "value": 60.0,
+              "valueStr": null
+            },
+            {
+              "key": "PositionCheck.wait_row",
+              "value": 7.0,
+              "valueStr": null
+            },
+            {
+              "key": "PositionCheck.wait_col",
+              "value": 6.0,
+              "valueStr": null
+            },
+            {
+              "key": "PositionCheck.eat_row",
+              "value": 4.0,
+              "valueStr": null
+            },
+            {
+              "key": "PositionCheck.eat_col",
+              "value": 10.0,
+              "valueStr": null
+            },
+            {
+              "key": "PositionCheck.eat_move_speed",
+              "value": 4.0,
+              "valueStr": null
+            },
+            {
+              "key": "PositionCheck.back_move_speed",
+              "value": 1.3,
+              "valueStr": null
+            },
+            {
+              "key": "PositionCheck.enemy_trcerb_wait_to_eat.interval",
+              "value": 3.0,
+              "valueStr": null
+            },
+            {
+              "key": "Rage.atk",
+              "value": 0.5,
+              "valueStr": null
+            },
+            {
+              "key": "Rage.move_speed",
+              "value": 1.2,
+              "valueStr": null
+            },
+            {
+              "key": "Strong.damage_resistance_max",
+              "value": 0.8,
+              "valueStr": null
+            },
+            {
+              "key": "ClearTrpotSp.sp_cost_0",
+              "value": 90.0,
+              "valueStr": null
+            },
+            {
+              "key": "ClearTrpotSp.sp_cost_1",
+              "value": 90.0,
+              "valueStr": null
+            },
+            {
+              "key": "ClearTrpotSp.sp_cost_2",
+              "value": 45.0,
+              "valueStr": null
+            },
+            {
+              "key": "ClearTrpotSp.sp_cost_3",
+              "value": 60.0,
+              "valueStr": null
+            },
+            {
+              "key": "P3Passive.attack@atk_scale",
+              "value": 1.0,
+              "valueStr": null
+            },
+            {
+              "key": "PositionCheck.enemy_trcerb_wait_to_eat.food_effect_level_1",
+              "value": 4.0,
+              "valueStr": null
+            },
+            {
+              "key": "PositionCheck.enemy_trcerb_wait_to_eat.food_effect_level_2",
+              "value": 3.0,
+              "valueStr": null
+            },
+            {
+              "key": "PositionCheck.enemy_trcerb_wait_to_eat.food_effect_level_3",
+              "value": 0.0,
+              "valueStr": null
+            }
+          ]
+        }
+      ],
+      "blackboard": null,
+      "status": "missing-or-level-dependent",
+      "sourceRef": {
+        "path": "data\\ArknightsGameData\\zh_CN\\gamedata\\levels\\enemydata\\enemy_database.json",
+        "enemyKey": "enemy_1557_trcerb",
+        "field": "Value[].enemyData.talentBlackboard"
+      }
+    },
+    "enemy_2020_cswrtr": {
+      "levels": [
+        {
+          "level": 0,
+          "blackboard": [
+            {
+              "key": "rage.hp_ratio",
+              "value": 0.5,
+              "valueStr": null
+            },
+            {
+              "key": "rage.damage_scale",
+              "value": 1.5,
+              "valueStr": null
+            },
+            {
+              "key": "rage.def",
+              "value": 1.0,
+              "valueStr": null
+            },
+            {
+              "key": "rage.magic_resistance",
+              "value": 0.8,
+              "valueStr": null
+            }
+          ]
+        }
+      ],
+      "blackboard": [
+        {
+          "key": "rage.hp_ratio",
+          "value": 0.5,
+          "valueStr": null
+        },
+        {
+          "key": "rage.damage_scale",
+          "value": 1.5,
+          "valueStr": null
+        },
+        {
+          "key": "rage.def",
+          "value": 1.0,
+          "valueStr": null
+        },
+        {
+          "key": "rage.magic_resistance",
+          "value": 0.8,
+          "valueStr": null
+        }
+      ],
+      "status": "all-levels-agree",
+      "sourceRef": {
+        "path": "data\\ArknightsGameData\\zh_CN\\gamedata\\levels\\enemydata\\enemy_database.json",
+        "enemyKey": "enemy_2020_cswrtr",
+        "field": "Value[].enemyData.talentBlackboard"
+      }
+    },
+    "enemy_2089_skzjkl": {
+      "levels": [
+        {
+          "level": 0,
+          "blackboard": [
+            {
+              "key": "M0_T1.interval",
+              "value": 25.0,
+              "valueStr": null
+            },
+            {
+              "key": "M0_T1.branch_id",
+              "value": 0.0,
+              "valueStr": "skzjkl_skzth_m0"
+            },
+            {
+              "key": "M0_T2.interval",
+              "value": 55.0,
+              "valueStr": null
+            },
+            {
+              "key": "M0_T2.branch_id",
+              "value": 0.0,
+              "valueStr": "skzjkl_m0_summon_enemy"
+            },
+            {
+              "key": "M1Reborn.duration",
+              "value": 0.33,
+              "valueStr": null
+            },
+            {
+              "key": "M1_T1.interval",
+              "value": 35.0,
+              "valueStr": null
+            },
+            {
+              "key": "M1_T1.branch_id",
+              "value": 0.0,
+              "valueStr": "skzjkl_skzth_m1"
+            },
+            {
+              "key": "M1_T2.interval",
+              "value": 38.0,
+              "valueStr": null
+            },
+            {
+              "key": "M1_T2.branch_id",
+              "value": 0.0,
+              "valueStr": "skzjkl_m1_summon_enemy"
+            },
+            {
+              "key": "M1_T31.hp_ratio",
+              "value": 0.5,
+              "valueStr": null
+            },
+            {
+              "key": "M1_T32.hp_ratio",
+              "value": 0.25,
+              "valueStr": null
+            },
+            {
+              "key": "M2Passive.m2_revive_duration",
+              "value": 7.0,
+              "valueStr": null
+            },
+            {
+              "key": "M2ReviveEnd.location",
+              "value": 0.0,
+              "valueStr": "(5,20)"
+            },
+            {
+              "key": "M2ReviveEnd.branch_id",
+              "value": 0.0,
+              "valueStr": "skzjkl_stage_2"
+            },
+            {
+              "key": "M2ReviveEnd.delay",
+              "value": 7.0,
+              "valueStr": null
+            },
+            {
+              "key": "M3_T1.interval",
+              "value": 10.0,
+              "valueStr": null
+            },
+            {
+              "key": "M3_T1.branch_id",
+              "value": 0.0,
+              "valueStr": "skzjkl_skzth_m3"
+            },
+            {
+              "key": "M3_T2.interval",
+              "value": 20.0,
+              "valueStr": null
+            },
+            {
+              "key": "M3_T2.branch_id",
+              "value": 0.0,
+              "valueStr": "skzjkl_m3_summon_enemy"
+            },
+            {
+              "key": "M1_T33.hp_ratio",
+              "value": 0.75,
+              "valueStr": null
+            }
+          ]
+        }
+      ],
+      "blackboard": [
+        {
+          "key": "M0_T1.interval",
+          "value": 25.0,
+          "valueStr": null
+        },
+        {
+          "key": "M0_T1.branch_id",
+          "value": 0.0,
+          "valueStr": "skzjkl_skzth_m0"
+        },
+        {
+          "key": "M0_T2.interval",
+          "value": 55.0,
+          "valueStr": null
+        },
+        {
+          "key": "M0_T2.branch_id",
+          "value": 0.0,
+          "valueStr": "skzjkl_m0_summon_enemy"
+        },
+        {
+          "key": "M1Reborn.duration",
+          "value": 0.33,
+          "valueStr": null
+        },
+        {
+          "key": "M1_T1.interval",
+          "value": 35.0,
+          "valueStr": null
+        },
+        {
+          "key": "M1_T1.branch_id",
+          "value": 0.0,
+          "valueStr": "skzjkl_skzth_m1"
+        },
+        {
+          "key": "M1_T2.interval",
+          "value": 38.0,
+          "valueStr": null
+        },
+        {
+          "key": "M1_T2.branch_id",
+          "value": 0.0,
+          "valueStr": "skzjkl_m1_summon_enemy"
+        },
+        {
+          "key": "M1_T31.hp_ratio",
+          "value": 0.5,
+          "valueStr": null
+        },
+        {
+          "key": "M1_T32.hp_ratio",
+          "value": 0.25,
+          "valueStr": null
+        },
+        {
+          "key": "M2Passive.m2_revive_duration",
+          "value": 7.0,
+          "valueStr": null
+        },
+        {
+          "key": "M2ReviveEnd.location",
+          "value": 0.0,
+          "valueStr": "(5,20)"
+        },
+        {
+          "key": "M2ReviveEnd.branch_id",
+          "value": 0.0,
+          "valueStr": "skzjkl_stage_2"
+        },
+        {
+          "key": "M2ReviveEnd.delay",
+          "value": 7.0,
+          "valueStr": null
+        },
+        {
+          "key": "M3_T1.interval",
+          "value": 10.0,
+          "valueStr": null
+        },
+        {
+          "key": "M3_T1.branch_id",
+          "value": 0.0,
+          "valueStr": "skzjkl_skzth_m3"
+        },
+        {
+          "key": "M3_T2.interval",
+          "value": 20.0,
+          "valueStr": null
+        },
+        {
+          "key": "M3_T2.branch_id",
+          "value": 0.0,
+          "valueStr": "skzjkl_m3_summon_enemy"
+        },
+        {
+          "key": "M1_T33.hp_ratio",
+          "value": 0.75,
+          "valueStr": null
+        }
+      ],
+      "status": "all-levels-agree",
+      "sourceRef": {
+        "path": "data\\ArknightsGameData\\zh_CN\\gamedata\\levels\\enemydata\\enemy_database.json",
+        "enemyKey": "enemy_2089_skzjkl",
+        "field": "Value[].enemyData.talentBlackboard"
+      }
+    },
+    "enemy_7028_xbscp": {
+      "levels": [
+        {
+          "level": 0,
+          "blackboard": [
+            {
+              "key": "TraceTime.duration",
+              "value": 20.0,
+              "valueStr": null
+            },
+            {
+              "key": "Trace.view_radius",
+              "value": 2.0,
+              "valueStr": null
+            },
+            {
+              "key": "DefDown.def",
+              "value": -100.0,
+              "valueStr": null
+            },
+            {
+              "key": "t.move_speed",
+              "value": 3.0,
+              "valueStr": null
+            },
+            {
+              "key": "t.duration",
+              "value": 4.0,
+              "valueStr": null
+            },
+            {
+              "key": "Trace.range_radius",
+              "value": 5.0,
+              "valueStr": null
+            },
+            {
+              "key": "t.range_radius",
+              "value": 0.5,
+              "valueStr": null
+            },
+            {
+              "key": "Shield.cnt",
+              "value": 80.0,
+              "valueStr": null
+            },
+            {
+              "key": "Shield.max_stack.cnt",
+              "value": 1.0,
+              "valueStr": null
+            },
+            {
+              "key": "Shield.interval",
+              "value": 120.0,
+              "valueStr": null
+            }
+          ]
+        }
+      ],
+      "blackboard": [
+        {
+          "key": "TraceTime.duration",
+          "value": 20.0,
+          "valueStr": null
+        },
+        {
+          "key": "Trace.view_radius",
+          "value": 2.0,
+          "valueStr": null
+        },
+        {
+          "key": "DefDown.def",
+          "value": -100.0,
+          "valueStr": null
+        },
+        {
+          "key": "t.move_speed",
+          "value": 3.0,
+          "valueStr": null
+        },
+        {
+          "key": "t.duration",
+          "value": 4.0,
+          "valueStr": null
+        },
+        {
+          "key": "Trace.range_radius",
+          "value": 5.0,
+          "valueStr": null
+        },
+        {
+          "key": "t.range_radius",
+          "value": 0.5,
+          "valueStr": null
+        },
+        {
+          "key": "Shield.cnt",
+          "value": 80.0,
+          "valueStr": null
+        },
+        {
+          "key": "Shield.max_stack.cnt",
+          "value": 1.0,
+          "valueStr": null
+        },
+        {
+          "key": "Shield.interval",
+          "value": 120.0,
+          "valueStr": null
+        }
+      ],
+      "status": "all-levels-agree",
+      "sourceRef": {
+        "path": "data\\ArknightsGameData\\zh_CN\\gamedata\\levels\\enemydata\\enemy_database.json",
+        "enemyKey": "enemy_7028_xbscp",
+        "field": "Value[].enemyData.talentBlackboard"
+      }
+    },
+    "enemy_7028_xbscp_2": {
+      "levels": [
+        {
+          "level": 0,
+          "blackboard": [
+            {
+              "key": "TraceTime.duration",
+              "value": 20.0,
+              "valueStr": null
+            },
+            {
+              "key": "Trace.view_radius",
+              "value": 2.0,
+              "valueStr": null
+            },
+            {
+              "key": "DefDown.def",
+              "value": -100.0,
+              "valueStr": null
+            },
+            {
+              "key": "t.move_speed",
+              "value": 3.0,
+              "valueStr": null
+            },
+            {
+              "key": "t.duration",
+              "value": 4.0,
+              "valueStr": null
+            },
+            {
+              "key": "Trace.range_radius",
+              "value": 5.0,
+              "valueStr": null
+            },
+            {
+              "key": "t.range_radius",
+              "value": 0.5,
+              "valueStr": null
+            },
+            {
+              "key": "Shield.cnt",
+              "value": 80.0,
+              "valueStr": null
+            },
+            {
+              "key": "Shield.max_stack.cnt",
+              "value": 1.0,
+              "valueStr": null
+            },
+            {
+              "key": "Shield.interval",
+              "value": 120.0,
+              "valueStr": null
+            }
+          ]
+        }
+      ],
+      "blackboard": [
+        {
+          "key": "TraceTime.duration",
+          "value": 20.0,
+          "valueStr": null
+        },
+        {
+          "key": "Trace.view_radius",
+          "value": 2.0,
+          "valueStr": null
+        },
+        {
+          "key": "DefDown.def",
+          "value": -100.0,
+          "valueStr": null
+        },
+        {
+          "key": "t.move_speed",
+          "value": 3.0,
+          "valueStr": null
+        },
+        {
+          "key": "t.duration",
+          "value": 4.0,
+          "valueStr": null
+        },
+        {
+          "key": "Trace.range_radius",
+          "value": 5.0,
+          "valueStr": null
+        },
+        {
+          "key": "t.range_radius",
+          "value": 0.5,
+          "valueStr": null
+        },
+        {
+          "key": "Shield.cnt",
+          "value": 80.0,
+          "valueStr": null
+        },
+        {
+          "key": "Shield.max_stack.cnt",
+          "value": 1.0,
+          "valueStr": null
+        },
+        {
+          "key": "Shield.interval",
+          "value": 120.0,
+          "valueStr": null
+        }
+      ],
+      "status": "all-levels-agree",
+      "sourceRef": {
+        "path": "data\\ArknightsGameData\\zh_CN\\gamedata\\levels\\enemydata\\enemy_database.json",
+        "enemyKey": "enemy_7028_xbscp_2",
+        "field": "Value[].enemyData.talentBlackboard"
+      }
+    },
+    "enemy_8010_mcnist": {
+      "levels": [
+        {
+          "level": 0,
+          "blackboard": [
+            {
+              "key": "shield.times",
+              "value": 50.0,
+              "valueStr": null
+            },
+            {
+              "key": "shield.cooldown",
+              "value": 20.0,
+              "valueStr": null
+            },
+            {
+              "key": "reborn.duration",
+              "value": 0.1,
+              "valueStr": null
+            },
+            {
+              "key": "reborn.hp_ratio",
+              "value": 0.02,
+              "valueStr": null
+            },
+            {
+              "key": "hp_recover.enemy_mcnist_heal.duration",
+              "value": 20.0,
+              "valueStr": null
+            },
+            {
+              "key": "hp_recover.enemy_mcnist_heal.hp_ratio",
+              "value": 0.05,
+              "valueStr": null
+            },
+            {
+              "key": "hp_recover.enemy_mcnist_heal.interval",
+              "value": 1.0,
+              "valueStr": null
+            },
+            {
+              "key": "reborn_real.max_respawn_cnt",
+              "value": 0.0,
+              "valueStr": null
+            },
+            {
+              "key": "reborn_real.duration_loop",
+              "value": 0.0,
+              "valueStr": null
+            }
+          ]
+        }
+      ],
+      "blackboard": [
+        {
+          "key": "shield.times",
+          "value": 50.0,
+          "valueStr": null
+        },
+        {
+          "key": "shield.cooldown",
+          "value": 20.0,
+          "valueStr": null
+        },
+        {
+          "key": "reborn.duration",
+          "value": 0.1,
+          "valueStr": null
+        },
+        {
+          "key": "reborn.hp_ratio",
+          "value": 0.02,
+          "valueStr": null
+        },
+        {
+          "key": "hp_recover.enemy_mcnist_heal.duration",
+          "value": 20.0,
+          "valueStr": null
+        },
+        {
+          "key": "hp_recover.enemy_mcnist_heal.hp_ratio",
+          "value": 0.05,
+          "valueStr": null
+        },
+        {
+          "key": "hp_recover.enemy_mcnist_heal.interval",
+          "value": 1.0,
+          "valueStr": null
+        },
+        {
+          "key": "reborn_real.max_respawn_cnt",
+          "value": 0.0,
+          "valueStr": null
+        },
+        {
+          "key": "reborn_real.duration_loop",
+          "value": 0.0,
+          "valueStr": null
+        }
+      ],
+      "status": "all-levels-agree",
+      "sourceRef": {
+        "path": "data\\ArknightsGameData\\zh_CN\\gamedata\\levels\\enemydata\\enemy_database.json",
+        "enemyKey": "enemy_8010_mcnist",
+        "field": "Value[].enemyData.talentBlackboard"
+      }
+    },
+    "enemy_8010_mcnist_2": {
+      "levels": [
+        {
+          "level": 0,
+          "blackboard": [
+            {
+              "key": "shield.times",
+              "value": 50.0,
+              "valueStr": null
+            },
+            {
+              "key": "shield.cooldown",
+              "value": 20.0,
+              "valueStr": null
+            },
+            {
+              "key": "reborn.duration",
+              "value": 0.1,
+              "valueStr": null
+            },
+            {
+              "key": "reborn.hp_ratio",
+              "value": 0.02,
+              "valueStr": null
+            },
+            {
+              "key": "hp_recover.enemy_mcnist_heal.duration",
+              "value": 20.0,
+              "valueStr": null
+            },
+            {
+              "key": "hp_recover.enemy_mcnist_heal.hp_ratio",
+              "value": 0.05,
+              "valueStr": null
+            },
+            {
+              "key": "hp_recover.enemy_mcnist_heal.interval",
+              "value": 1.0,
+              "valueStr": null
+            },
+            {
+              "key": "reborn_real.duration",
+              "value": 30.933001,
+              "valueStr": null
+            },
+            {
+              "key": "reborn_real.hit_interval",
+              "value": 5.0,
+              "valueStr": null
+            },
+            {
+              "key": "reborn_real.times",
+              "value": 6.0,
+              "valueStr": null
+            },
+            {
+              "key": "reborn_real.atk_scale",
+              "value": 1.7,
+              "valueStr": null
+            },
+            {
+              "key": "reborn_real.block_cnt",
+              "value": -1.0,
+              "valueStr": null
+            },
+            {
+              "key": "reborn_real.duration_loop",
+              "value": 30.0,
+              "valueStr": null
+            },
+            {
+              "key": "clear_abnormal.hp_ratio",
+              "value": 0.5,
+              "valueStr": null
+            },
+            {
+              "key": "block_attack.attack@multi.atk_scale",
+              "value": 0.4,
+              "valueStr": null
+            },
+            {
+              "key": "block_attack.attack@multi.block_cnt",
+              "value": -1.0,
+              "valueStr": null
+            },
+            {
+              "key": "block_attack.attack@multi.block_down",
+              "value": 8.0,
+              "valueStr": null
+            },
+            {
+              "key": "attribute.atk",
+              "value": 2.0,
+              "valueStr": null
+            },
+            {
+              "key": "attribute.def",
+              "value": 0.8,
+              "valueStr": null
+            },
+            {
+              "key": "attribute.magic_resistance",
+              "value": 20.0,
+              "valueStr": null
+            },
+            {
+              "key": "clear_abnormal.hp_ratio",
+              "value": 0.0,
+              "valueStr": null
+            }
+          ]
+        }
+      ],
+      "blackboard": [
+        {
+          "key": "shield.times",
+          "value": 50.0,
+          "valueStr": null
+        },
+        {
+          "key": "shield.cooldown",
+          "value": 20.0,
+          "valueStr": null
+        },
+        {
+          "key": "reborn.duration",
+          "value": 0.1,
+          "valueStr": null
+        },
+        {
+          "key": "reborn.hp_ratio",
+          "value": 0.02,
+          "valueStr": null
+        },
+        {
+          "key": "hp_recover.enemy_mcnist_heal.duration",
+          "value": 20.0,
+          "valueStr": null
+        },
+        {
+          "key": "hp_recover.enemy_mcnist_heal.hp_ratio",
+          "value": 0.05,
+          "valueStr": null
+        },
+        {
+          "key": "hp_recover.enemy_mcnist_heal.interval",
+          "value": 1.0,
+          "valueStr": null
+        },
+        {
+          "key": "reborn_real.duration",
+          "value": 30.933001,
+          "valueStr": null
+        },
+        {
+          "key": "reborn_real.hit_interval",
+          "value": 5.0,
+          "valueStr": null
+        },
+        {
+          "key": "reborn_real.times",
+          "value": 6.0,
+          "valueStr": null
+        },
+        {
+          "key": "reborn_real.atk_scale",
+          "value": 1.7,
+          "valueStr": null
+        },
+        {
+          "key": "reborn_real.block_cnt",
+          "value": -1.0,
+          "valueStr": null
+        },
+        {
+          "key": "reborn_real.duration_loop",
+          "value": 30.0,
+          "valueStr": null
+        },
+        {
+          "key": "clear_abnormal.hp_ratio",
+          "value": 0.5,
+          "valueStr": null
+        },
+        {
+          "key": "block_attack.attack@multi.atk_scale",
+          "value": 0.4,
+          "valueStr": null
+        },
+        {
+          "key": "block_attack.attack@multi.block_cnt",
+          "value": -1.0,
+          "valueStr": null
+        },
+        {
+          "key": "block_attack.attack@multi.block_down",
+          "value": 8.0,
+          "valueStr": null
+        },
+        {
+          "key": "attribute.atk",
+          "value": 2.0,
+          "valueStr": null
+        },
+        {
+          "key": "attribute.def",
+          "value": 0.8,
+          "valueStr": null
+        },
+        {
+          "key": "attribute.magic_resistance",
+          "value": 20.0,
+          "valueStr": null
+        },
+        {
+          "key": "clear_abnormal.hp_ratio",
+          "value": 0.0,
+          "valueStr": null
+        }
+      ],
+      "status": "all-levels-agree",
+      "sourceRef": {
+        "path": "data\\ArknightsGameData\\zh_CN\\gamedata\\levels\\enemydata\\enemy_database.json",
+        "enemyKey": "enemy_8010_mcnist_2",
+        "field": "Value[].enemyData.talentBlackboard"
+      }
+    },
+    "enemy_8010_mcnist_3": {
+      "levels": [
+        {
+          "level": 0,
+          "blackboard": [
+            {
+              "key": "shield.times",
+              "value": 50.0,
+              "valueStr": null
+            },
+            {
+              "key": "shield.cooldown",
+              "value": 20.0,
+              "valueStr": null
+            },
+            {
+              "key": "reborn.duration",
+              "value": 0.1,
+              "valueStr": null
+            },
+            {
+              "key": "reborn.hp_ratio",
+              "value": 0.02,
+              "valueStr": null
+            },
+            {
+              "key": "hp_recover.enemy_mcnist_heal.duration",
+              "value": 20.0,
+              "valueStr": null
+            },
+            {
+              "key": "hp_recover.enemy_mcnist_heal.hp_ratio",
+              "value": 0.05,
+              "valueStr": null
+            },
+            {
+              "key": "hp_recover.enemy_mcnist_heal.interval",
+              "value": 1.0,
+              "valueStr": null
+            },
+            {
+              "key": "reborn_real.duration",
+              "value": 30.933001,
+              "valueStr": null
+            },
+            {
+              "key": "reborn_real.hit_interval",
+              "value": 5.0,
+              "valueStr": null
+            },
+            {
+              "key": "reborn_real.times",
+              "value": 6.0,
+              "valueStr": null
+            },
+            {
+              "key": "reborn_real.atk_scale",
+              "value": 1.7,
+              "valueStr": null
+            },
+            {
+              "key": "reborn_real.block_cnt",
+              "value": -1.0,
+              "valueStr": null
+            },
+            {
+              "key": "reborn_real.duration_loop",
+              "value": 30.0,
+              "valueStr": null
+            },
+            {
+              "key": "clear_abnormal.hp_ratio",
+              "value": 0.5,
+              "valueStr": null
+            },
+            {
+              "key": "block_attack.attack@multi.atk_scale",
+              "value": 0.4,
+              "valueStr": null
+            },
+            {
+              "key": "block_attack.attack@multi.block_cnt",
+              "value": -1.0,
+              "valueStr": null
+            },
+            {
+              "key": "block_attack.attack@multi.block_down",
+              "value": 8.0,
+              "valueStr": null
+            },
+            {
+              "key": "attribute.atk",
+              "value": 2.0,
+              "valueStr": null
+            },
+            {
+              "key": "attribute.def",
+              "value": 0.8,
+              "valueStr": null
+            },
+            {
+              "key": "attribute.magic_resistance",
+              "value": 20.0,
+              "valueStr": null
+            }
+          ]
+        }
+      ],
+      "blackboard": [
+        {
+          "key": "shield.times",
+          "value": 50.0,
+          "valueStr": null
+        },
+        {
+          "key": "shield.cooldown",
+          "value": 20.0,
+          "valueStr": null
+        },
+        {
+          "key": "reborn.duration",
+          "value": 0.1,
+          "valueStr": null
+        },
+        {
+          "key": "reborn.hp_ratio",
+          "value": 0.02,
+          "valueStr": null
+        },
+        {
+          "key": "hp_recover.enemy_mcnist_heal.duration",
+          "value": 20.0,
+          "valueStr": null
+        },
+        {
+          "key": "hp_recover.enemy_mcnist_heal.hp_ratio",
+          "value": 0.05,
+          "valueStr": null
+        },
+        {
+          "key": "hp_recover.enemy_mcnist_heal.interval",
+          "value": 1.0,
+          "valueStr": null
+        },
+        {
+          "key": "reborn_real.duration",
+          "value": 30.933001,
+          "valueStr": null
+        },
+        {
+          "key": "reborn_real.hit_interval",
+          "value": 5.0,
+          "valueStr": null
+        },
+        {
+          "key": "reborn_real.times",
+          "value": 6.0,
+          "valueStr": null
+        },
+        {
+          "key": "reborn_real.atk_scale",
+          "value": 1.7,
+          "valueStr": null
+        },
+        {
+          "key": "reborn_real.block_cnt",
+          "value": -1.0,
+          "valueStr": null
+        },
+        {
+          "key": "reborn_real.duration_loop",
+          "value": 30.0,
+          "valueStr": null
+        },
+        {
+          "key": "clear_abnormal.hp_ratio",
+          "value": 0.5,
+          "valueStr": null
+        },
+        {
+          "key": "block_attack.attack@multi.atk_scale",
+          "value": 0.4,
+          "valueStr": null
+        },
+        {
+          "key": "block_attack.attack@multi.block_cnt",
+          "value": -1.0,
+          "valueStr": null
+        },
+        {
+          "key": "block_attack.attack@multi.block_down",
+          "value": 8.0,
+          "valueStr": null
+        },
+        {
+          "key": "attribute.atk",
+          "value": 2.0,
+          "valueStr": null
+        },
+        {
+          "key": "attribute.def",
+          "value": 0.8,
+          "valueStr": null
+        },
+        {
+          "key": "attribute.magic_resistance",
+          "value": 20.0,
+          "valueStr": null
+        }
+      ],
+      "status": "all-levels-agree",
+      "sourceRef": {
+        "path": "data\\ArknightsGameData\\zh_CN\\gamedata\\levels\\enemydata\\enemy_database.json",
+        "enemyKey": "enemy_8010_mcnist_3",
+        "field": "Value[].enemyData.talentBlackboard"
+      }
+    }
+  }
+}

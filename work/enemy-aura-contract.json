@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "rule": "maintained-enemy-circle-aura-damage-event-self-resistance-v1",
+  "scope": "Only complete enemy Talent aura/damage-event/self-resistance chain; not ordinary attacks, stages or whole enemies.",
+  "inputs": {
+    "tools/enemy_auras.py": "89b160ab25f5e8db0d11188677956f499c1aa5d28e5e3fc353d326e4b36ecfb0",
+    "work/enemy-aura-candidates.json": "8190aace944ecd78171291fdd9afe74caee2c8b543ba9058927b8bdefa24e638",
+    "work/enemy-aura-template-source.json": "153a0bb103c4b601c061e9a22f3e934aa247a12ad020f3acb88e1222af7cdca7",
+    "work/enemy-aura-sluggish-source.json": "03f021bf8fe9936224b944e98e493515db4e87b8a62a105ebb3c183b35920371"
+  },
+  "sourceEvidence": {
+    "cn": "pinned-emulator-current",
+    "jp": "36.7.22"
+  },
+  "selections": {
+    "enemy_1234_dsubrl": {
+      "accepted": true,
+      "rule": "maintained-enemy-circle-aura-damage-event-self-resistance-v1",
+      "modes": {
+        "0": {
+          "modeIndex": 0,
+          "channels": {
+            "combat": null,
+            "attack": null
+          },
+          "sourceNoBasicAttack": true
+        }
+      },
+      "initialMode": 0,
+      "enemyAura": {
+        "rule": "maintained-enemy-circle-aura-damage-event-self-resistance-v1",
+        "version": 1,
+        "range": {
+          "kind": "circle",
+          "radius": 0.5,
+          "extendable": false,
+          "scalable": false,
+          "evidenceLevel": "Inferred",
+          "boundary": "JP complete local collider and identity-scale ancestors applied to matching CN CircleRange/Talent fields; enemy database rangeRadius does not overwrite this explicit collider in this model. Native initialization setter timing is not asserted."
+        },
+        "selection": {
+          "side": "opponent",
+          "motionMask": 3,
+          "categoryMask": 1,
+          "respectTargetFree": true
+        },
+        "membership": {
+          "removeOnLeave": true,
+          "removeOnDetach": true,
+          "independentSources": true,
+          "firstTick": "one-period-after-entry"
+        },
+        "interval": 1,
+        "buffKey": "dsubrl_aoe[aura]",
+        "damage": {
+          "kind": "arts",
+          "attackType": "normal",
+          "applyWay": "none",
+          "ignoreForSp": true,
+          "skipModifierEvent": false,
+          "scale": {
+            "key": "AOE.atk_scale",
+            "default": 1
+          }
+        },
+        "damageEvent": {
+          "kind": "nerve",
+          "base": "source-current-attack",
+          "trigger": "accepted-damage-event",
+          "zeroDamagePolicy": "no-element-after-zero-or-fully-absorbed-damage",
+          "evidenceLevel": "Inferred",
+          "boundary": "Event 11 is source damage notification; zero/fully absorbed event dispatch is not native-verified. This model requires positive applied damage and does not multiply the ratio by actual HP loss.",
+          "ratio": {
+            "key": "EpDamage.ep_damage_ratio",
+            "default": 0.05
+          }
+        },
+        "selfResistance": {
+          "id": "dsubrl_buff",
+          "attribute": "one_minus_status_resistance",
+          "formula": "addition",
+          "value": {
+            "key": "Buff.one_minus_status_resistance",
+            "default": -0.5
+          },
+          "stacking": {
+            "disableOverride": false,
+            "independentSource": false,
+            "overrideKey": "sluggish",
+            "priority": 1,
+            "priorityKeys": [],
+            "maxStacks": 1
+          }
+        },
+        "statusOverrides": {
+          "sluggish": {
+            "overrideKey": "sluggish",
+            "priority": -1,
+            "kind": "slow",
+            "disableOverride": false,
+            "sourceSha256": "f751cb7975fc88053ea13c1d94a10cbe8b3aae3701bd1181346cfd4e6555496c"
+          }
+        },
+        "evidenceLevel": "Inferred",
+        "boundaries": [
+          "Complete source Talent graph; ordinary action and whole-enemy completion are separate.",
+          "Membership uses current-frame positions; native enter/leave frame ordering is not reproduced.",
+          "Timers pause neither for source stun nor silence: source Buff flags are not silenceable/stunnable.",
+          "Matching standard loaded status Buffs use the shared higher-priority-wins model; protected native winner ordering is not reasserted.",
+          "AppearSyncedTalent attaches after appearance; precise native appearance frame remains a model boundary."
+        ]
+      }
+    },
+    "enemy_1234_dsubrl_2": {
+      "accepted": true,
+      "rule": "maintained-enemy-circle-aura-damage-event-self-resistance-v1",
+      "modes": {
+        "0": {
+          "modeIndex": 0,
+          "channels": {
+            "combat": null,
+            "attack": null
+          },
+          "sourceNoBasicAttack": true
+        }
+      },
+      "initialMode": 0,
+      "enemyAura": {
+        "rule": "maintained-enemy-circle-aura-damage-event-self-resistance-v1",
+        "version": 1,
+        "range": {
+          "kind": "circle",
+          "radius": 0.5,
+          "extendable": false,
+          "scalable": false,
+          "evidenceLevel": "Inferred",
+          "boundary": "JP complete local collider and identity-scale ancestors applied to matching CN CircleRange/Talent fields; enemy database rangeRadius does not overwrite this explicit collider in this model. Native initialization setter timing is not asserted."
+        },
+        "selection": {
+          "side": "opponent",
+          "motionMask": 3,
+          "categoryMask": 1,
+          "respectTargetFree": true
+        },
+        "membership": {
+          "removeOnLeave": true,
+          "removeOnDetach": true,
+          "independentSources": true,
+          "firstTick": "one-period-after-entry"
+        },
+        "interval": 1,
+        "buffKey": "dsubrl_aoe[aura]",
+        "damage": {
+          "kind": "arts",
+          "attackType": "normal",
+          "applyWay": "none",
+          "ignoreForSp": true,
+          "skipModifierEvent": false,
+          "scale": {
+            "key": "AOE.atk_scale",
+            "default": 1
+          }
+        },
+        "damageEvent": {
+          "kind": "nerve",
+          "base": "source-current-attack",
+          "trigger": "accepted-damage-event",
+          "zeroDamagePolicy": "no-element-after-zero-or-fully-absorbed-damage",
+          "evidenceLevel": "Inferred",
+          "boundary": "Event 11 is source damage notification; zero/fully absorbed event dispatch is not native-verified. This model requires positive applied damage and does not multiply the ratio by actual HP loss.",
+          "ratio": {
+            "key": "EpDamage.ep_damage_ratio",
+            "default": 0.05
+          }
+        },
+        "selfResistance": {
+          "id": "dsubrl_buff",
+          "attribute": "one_minus_status_resistance",
+          "formula": "addition",
+          "value": {
+            "key": "Buff.one_minus_status_resistance",
+            "default": -0.5
+          },
+          "stacking": {
+            "disableOverride": false,
+            "independentSource": false,
+            "overrideKey": "sluggish",
+            "priority": 1,
+            "priorityKeys": [],
+            "maxStacks": 1
+          }
+        },
+        "statusOverrides": {
+          "sluggish": {
+            "overrideKey": "sluggish",
+            "priority": -1,
+            "kind": "slow",
+            "disableOverride": false,
+            "sourceSha256": "f751cb7975fc88053ea13c1d94a10cbe8b3aae3701bd1181346cfd4e6555496c"
+          }
+        },
+        "evidenceLevel": "Inferred",
+        "boundaries": [
+          "Complete source Talent graph; ordinary action and whole-enemy completion are separate.",
+          "Membership uses current-frame positions; native enter/leave frame ordering is not reproduced.",
+          "Timers pause neither for source stun nor silence: source Buff flags are not silenceable/stunnable.",
+          "Matching standard loaded status Buffs use the shared higher-priority-wins model; protected native winner ordering is not reasserted.",
+          "AppearSyncedTalent attaches after appearance; precise native appearance frame remains a model boundary."
+        ]
+      }
+    }
+  },
+  "counts": {
+    "candidates": 2,
+    "accepted": 2
+  },
+  "geometryBoundary": {
+    "prefabColliderRadius": 0.5,
+    "databaseRangeRadius": 1.6,
+    "allTalentAncestorScales": [
+      1,
+      1,
+      1
+    ],
+    "allLocalOffsets": [
+      0,
+      0,
+      0
+    ],
+    "initializationFlags": "CircleRange extendable/scaleble=0; complete Talent apply/overwrite flags=0. Native initialization setters not re-inspected."
+  },
+  "verification": {
+    "pythonContracts": 13,
+    "runtimeIsolated": "13 categories plus exact-key priority exclusion passed; actual engine/host pending"
+  },
+  "ordinaryModeContract": "Each complete CN/JP sole mode has absent attack and EmptyAnimatedAbility combat with empty animation and Buff body. sourceNoBasicAttack disables fallback; no new damaging ordinary action counted.",
+  "overrideBoundary": "Self Buff priority1 competes with source standard sluggish priority-1, using explicit shared higher-priority-wins model. Other slowdown keys are unaffected; protected native winner branch remains unverified."
+}

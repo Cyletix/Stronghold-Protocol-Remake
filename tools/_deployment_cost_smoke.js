@@ -1,0 +1,25 @@
+'use strict';
+const assert=require('assert/strict'),f=require('./_browser_fixture')();f.ctx.assert=assert;
+f.run(`(async()=>{
+ await initMode();chooseBand('band_amiya');startBattleRound();
+ assert.equal(B.dp,10,'source opening deployment cost');assert.equal(B.dpMax,99);assert.equal(B.dpInterval,1);B.dp=0;
+ B.waveScheduler=null;B.spawn=[{at:10000}];B.enemies=[];G.money=0;
+ const e=ROSTER_LIST[0],stats=finalizeOperator(e,null,[],false);
+ assert.equal(stats.cost,phaseDataOf(e,false).cost);
+ const o={...stats,id:1,charId:e.charId,name:e.name,row:3,col:2,hp:0,respawnTime:0.5,events:[],cost:2};B.operators=[o];
+ tryKill(o);for(let i=0;i<29;i++)update(1/30,0);
+ assert.equal(B.dp,0);assert.equal(o.dead,true);
+ update(1/30,0);assert.equal(B.dp,1);assert.equal(o.dead,true,'cooldown complete but waiting for DP');
+ for(let i=0;i<30;i++)update(1/30,0);
+ assert.equal(o.dead,false);assert.equal(o.hp,o.maxHp);assert.equal(B.dp,0);assert.equal(G.money,0);
+ onSkillDp(5);assert.equal(B.dp,5);assert.equal(G.money,0);
+ assert.equal(onRespawn(6),false);assert.equal(B.dp,5);assert.equal(onRespawn(5),true);assert.equal(B.dp,0);
+ B.dp=98;onSkillDp(5);assert.equal(B.dp,99);update(1,0);assert.equal(B.dp,99);onRespawn(2);update(1,0);assert.equal(B.dp,98);
+ B.dp=98;B.dpProgress=.9;update(.2,0);assert.equal(B.dp,99);assert.equal(B.dpProgress,0,'reaching the cap discards overflow recovery');
+ update(.37,0);update(.81,0);assert.equal(B.dp,99);assert.equal(B.dpProgress,0,'full cost does not keep cycling the meter');
+ updateCountdown(30);const fullMeter=document.getElementById('deployment-cost').innerHTML;assert.equal((fullMeter.match(/class="on"/g)||[]).length,30);
+ update(.43,0);updateCountdown(29);assert.equal(document.getElementById('deployment-cost').innerHTML,fullMeter,'full meter remains steady');
+ onRespawn(2);for(let i=0;i<29;i++)update(1/30,0);assert.equal(B.dp,97,'spending from full starts a fresh recovery interval');update(1/30,0);assert.equal(B.dp,98);
+ B.dpProgress=.8;onSkillDp(5);assert.equal(B.dp,99);assert.equal(B.dpProgress,0,'skill recovery also freezes a full meter');
+ console.log('DEPLOYMENT COST OK 30 ticks per point, cooldown+cost gating, automatic revival, phase cost and no shop-money mutation');
+})()`).catch(e=>{console.error(e);process.exitCode=1;});

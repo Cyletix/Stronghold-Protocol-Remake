@@ -1,0 +1,10 @@
+{
+  "batch": "room-game-20260918.9",
+  "before": "work/garrison-checked-before-20260918.9.json",
+  "output": "work/garrison-skill-batch-acceptance-20260918-9.json",
+  "validations": [".runtime/skill-mode-blockees-receipts.json", "tools/test_skill_mode_blockees.py", "tools/_skill_mode_blockees_smoke.js", "work/skill-blockee-batch-contract.json"],
+  "tasks": {
+    "op/char_416_zumama/skill/skchr_zumama_2/source-mode-body": "2026-09-18 .9 阻挡目标限定源主体：本项10源等级随同组20等级通过，act1实际森蚺普通/精锐共2变体、两技能活动/临界结束共4主机恢复通过；当前blockees持续眩晕按来源撤销，保留外部旧眩晕，真实前摇中断及结束复攻已核。checker(0,0,0)映射为字段与中文描述联合推断，原生阈值/首帧、敌受击SP和历史帧回放未复现，完整天赋模组与整技能另核。",
+    "op/char_610_acfend/skill/skchr_acfend_3/source-mode-body": "2026-09-18 .9 阻挡目标限定源主体：本项10源等级随同组20等级通过，周期法伤沿实时攻击力/实际防御/伤害统计/死亡入口执行，首周期、末尾补跳、解除阻挡/结束/死亡及来源归属通过；两技能共4主机恢复，Mechanist使用扩展身份测试，不冒称两季固定商店可选。原生首帧、敌受击SP与历史帧回放未复现，完整天赋模组与整技能另核。"
+  }
+}

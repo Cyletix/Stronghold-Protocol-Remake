@@ -1,0 +1,59 @@
+{
+  "date": "2026-09-14",
+  "version": "room-game-20260914.17",
+  "catalog": "923a32c4b22ef100",
+  "scope": "Shared source program execution; limited skill bodies, not complete original-client behavior",
+  "compiled": {
+    "previous": 17,
+    "current": 27,
+    "totalPrefabs": 893
+  },
+  "web": {
+    "sourceSkillIds": 28,
+    "prefabs": 19,
+    "sourceLevels": 265,
+    "oldMigratedIds": 25,
+    "newIds": [
+      "skchr_acfend_1",
+      "skchr_udflow_1",
+      "skchr_yak_2"
+    ],
+    "actualIdentitySlotLevelCases": 878
+  },
+  "dps": {
+    "damageSlots": 110,
+    "totalSlots": 1001,
+    "separateSelfHealModels": 3,
+    "programSlots": 92,
+    "e1DamageSlots": 87,
+    "e1TotalSlots": 807,
+    "e1ProgramSlots": 73,
+    "relatedTests": 130
+  },
+  "checks": {
+    "selected": 67,
+    "registered": 132,
+    "allSelectedPassed": true,
+    "candidateTests": 9,
+    "compilerTests": 7,
+    "finalDocumentationChecksPassed": true
+  },
+  "acceptance": {
+    "beforeIds": 6328,
+    "afterIds": 6331,
+    "originalAccepted": 501,
+    "originalNotesPreserved": true,
+    "newAccepted": 3,
+    "accepted": 504,
+    "centralRevalidated": 491
+  },
+  "evidenceDatabaseSha256": "36d499444dd469cdf5b188e9e2a245a523f3472c470aa94818644aebf5618095",
+  "reports": [
+    "docs/research/client-program-integration.md",
+    "work/program-impact-final.json",
+    "work/program-passed-checks.json",
+    "work/program-checklist-revalidation.json",
+    "work/checklist-acceptance-map.json"
+  ],
+  "next": "docs/plan.md"
+}

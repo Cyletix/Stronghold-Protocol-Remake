@@ -1,0 +1,1316 @@
+PASS elemental combat
+PASS elemental source
+PASS operator skill levels consumers
+PASS vanguard source skills
+PASS periodic medic source skills
+PASS medic talent SP events
+PASS medical SP module effects
+PASS Beeswax source skills and obelisk
+PASS Click released funnel
+PASS operator combat
+PASS flying enemies and blocking
+PASS season roster slots
+PASS DIY selection and runtime
+PASS loadout and items
+PASS detail catalogs
+PASS garrison source
+PASS basic attack profiles
+PASS common deployment-cost skills
+PASS common skill account-level expansion
+PASS client stat graph execution
+PASS mystic storage and Indigo
+PASS tactical reinforcements and flowing shapes
+PASS Blacknight and source sleep rules
+PASS common buff families and attribute layers
+PASS debug and enemy effects
+PASS enemy cold mechanics
+PASS local solo
+PASS HUD feedback
+PASS render surfaces and recovery
+PASS terrain placement
+PASS boss_mechanics
+PASS boss_victory
+PASS paired_battle
+PASS decision_confirm
+PASS settlement_review
+PASS boss_formation
+PASS decision_reward
+PASS battle_feedback
+PASS room_server
+PASS room_game_server
+PASS room_battle_runtime
+PASS room_battle_server
+PASS round data
+PASS enemy encounter inputs
+PASS enemy death spawn lifecycle
+PASS enemy passive source
+PASS enemy child damage transfer
+PASS shop item eligibility
+PASS equipment protection impacts
+PASS training source economy
+PASS enemy template replacement
+PASS enemy runtime integration
+PASS economy/terrain
+PASS skill_timing
+PASS source_battles
+PASS source_mode
+PASS source_coordinates
+PASS projectile_lifecycle
+FAIL rest_save
+AssertionError [ERR_ASSERTION]: exact previous catalog keeps quoted stock
++ actual - expected
+... Skipped lines
+
+  [
+    {
+      cost: 1,
+      equip: {
+        chessId: 'chess_item_1_02_e_a',
+...
+    {
+-     charId: 'char_258_podego',
+      cost: 2,
++     entry: {
++       appellation: 'Podenco',
++       atkType: 'arts',
++       baseAtk: 208,
++       baseAttackTime: 1.9,
++       baseBlockCnt: 1,
++       baseDef: 43,
++       baseMagicRes: 10,
++       baseMaxHp: 528,
++       bondGarrison: [
++         {
++           bb: {
++             count: 1
++           },
++           desc: '<休整期结束时>当前激活且层数最多的盟约层数<@ba.vup>+1</>，此干员在整备区时也有效',
++           eventType: 'SERVER_PREP_FIN',
++           icon: 'icon_bond',
++           id: 'garrison_102_a',
++           kind: 'SERVER_ADD_BOND_ACTIVATED_MOST_LAYER',
++           label: '持续叠加',
++           rune: ''
++         }
++       ],
++       charId: 'char_258_podego',
++       chessId: 'chess_char_1_13_a',
++       isHidden: false,
++       module: {
++         elite: {
++           aspd: 0,
++           atk: 25,
++           def: 0,
++           hp: 70,
++           magicRes: 0
++         },
++         name: '“不谢的苗圃”',
++         normal: {
++           aspd: 0,
++           atk: 0,
++           def: 0,
++           hp: 0,
++           magicRes: 0
++         },
++         uniEquipId: 'uniequip_002_podego'
++       },
++       name: '波登可',
++       position: 'RANGED',
++       power: [
++         'rhodes'
++       ],
++       profession: 'SUPPORT',
++       profile: {
++         backupCharId: 'char_258_podego',
++         backupCharPotRank: 0,
++         backupCharSkillIndex: 1,
++         backupCharUniEquipId: 'uniequip_002_podego',
++         backupTmplId: null,
++         bondIds: [
++           'deputShip'
++         ],
++         charId: 'char_258_podego',
++         chessId: 'chess_char_1_13_a',
++         chessType: 'PRESET',
++         defaultSkillIndex: 1,
++         defaultUniEquipId: 'uniequip_002_podego',
++         elite: {
++           charLevel: 50,
++           equipLevel: 1,
++           evolvePhase: 'PHASE_2',
++           favorPoint: 0,
++           skillLevel: 7
++         },
++         garrisonIds: [
++           'garrison_102_a'
++         ],
++         goldenBondIds: [
++           'deputShip'
++         ],
++         goldenChessId: 'chess_char_1_13_b',
++         goldenGarrisonIds: [
++           'garrison_102_b'
++         ],
++         isHidden: false,
++         normal: {
++           charLevel: 55,
++           equipLevel: 0,
++           evolvePhase: 'PHASE_1',
++           favorPoint: 0,
++           skillLevel: 4
++         },
++         shopLevelSortId: 13,
++         tier: 1,
++         tmplId: null
++       },
++       rangeGrids: [
++         {
++           col: -1,
++           row: 1
++         },
++         {
++           col: 0,
++           row: 1
++         },
++         {
++           col: 1,
++           row: 1
++         },
++         {
++           col: 2,
++           row: 1
++         },
++         {
++           col: -1,
++           row: 0
++         },
++         {
++           col: 0,
++           row: 0
++         },
++         {
++           col: 1,
++           row: 0
++         },
++         {
++           col: 2,
++           row: 0
++         },
++         {
++           col: -1,
++           row: -1
++         },
++         {
++           col: 0,
++           row: -1
++         },
++         {
++           col: 1,
++           row: -1
++         },
++         {
++           col: 2,
++           row: -1
++         }
++       ],
++       rangePhases: [
++         {
++           grids: [
++             {
++               col: -1,
++               row: 1
++             },
++             {
++               col: 0,
++               row: 1
++             },
++             {
++               col: 1,
++               row: 1
++             },
++             {
++               col: 2,
++               row: 1
++             },
++             {
++               col: -1,
++               row: 0
++             },
++             {
++               col: 0,
++               row: 0
++             },
++             {
++               col: 1,
++               row: 0
++             },
++             {
++               col: 2,
++               row: 0
++             },
++             {
++               col: -1,
++               row: -1
++             },
++             {
++               col: 0,
++               row: -1
++             },
++             {
++               col: 1,
++               row: -1
++             },
++             {
++               col: 2,
++               row: -1
++             }
++           ],
++           rangeId: 'y-2'
++         },
++         {
++           grids: [
++             {
++               col: -1,
++               row: 1
++             },
++             {
++               col: 0,
++               row: 1
++             },
++             {
++               col: 1,
++               row: 1
++             },
++             {
++               col: 2,
++               row: 1
++             },
++             {
++               col: -1,
++               row: 0
++             },
++             {
++               col: 0,
++               row: 0
++             },
++             {
++               col: 1,
++               row: 0
++             },
++             {
++               col: 2,
++               row: 0
++             },
++             {
++               col: -1,
++               row: -1
++             },
++             {
++               col: 0,
++               row: -1
++             },
++             {
++               col: 1,
++               row: -1
++             },
++             {
++               col: 2,
++               row: -1
++             }
++           ],
++           rangeId: 'y-2'
++         },
++         {
++           grids: [
++             {
++               col: -1,
++               row: 1
++             },
++             {
++               col: 0,
++               row: 1
++             },
++             {
++               col: 1,
++               row: 1
++             },
++             {
++               col: 2,
++               row: 1
++             },
++             {
++               col: -1,
++               row: 0
++             },
++             {
++               col: 0,
++               row: 0
++             },
++             {
++               col: 1,
++               row: 0
++             },
++             {
++               col: 2,
++               row: 0
++             },
++             {
++               col: -1,
++               row: -1
++             },
++             {
++               col: 0,
++               row: -1
++             },
++             {
++               col: 1,
++               row: -1
++             },
++             {
++               col: 2,
++               row: -1
++             }
++           ],
++           rangeId: 'y-2'
++         }
++       ],
++       rarity: 4,
++       regBonds: [
++         'deputShip'
++       ],
++       seasonBond: null,
++       seasonId: 'act2autochess',
++       skill: {
++         duration: 6,
++         elite: {
++           blackboard: {
++             atk_scale: 0.6,
++             projectile_delay_time: 5
++           },
++           desc: '立即投掷一个小瓶，碎裂后在周围产生一个持续<@ba.vup>5</>秒的孢子群\\n孢子群范围内所有敌人被<$ba.sluggish>停顿</>且失去特殊能力，每秒受到相当于攻击力<@ba.vup>60%</>的法术伤害',
++           duration: 0,
++           durationType: 'NONE',
++           effects: [
++             {
++               power: 0.6,
++               type: 'aoe_damage'
++             },
++             {
++               power: 0.4,
++               type: 'slow'
++             }
++           ],
++           initSp: 10,
++           isPassive: false,
++           maxCharge: 1,
++           name: '孢子扩散',
++           prefabId: 'skchr_podego_2',
++           rangeGrids: null,
++           rangeId: null,
++           skillType: 'MANUAL',
++           spCost: 29,
++           spIncrement: 1,
++           spType: 'INCREASE_WITH_TIME'
++         },
++         name: '支援强化',
++         normal: {
++           blackboard: {
++             atk_scale: 0.5,
++             projectile_delay_time: 5
++           },
++           desc: '立即投掷一个小瓶，碎裂后在周围产生一个持续<@ba.vup>5</>秒的孢子群\\n孢子群范围内所有敌人被<$ba.sluggish>停顿</>且失去特殊能力，每秒受到相当于攻击力<@ba.vup>50%</>的法术伤害',
++           duration: 0,
++           durationType: 'NONE',
++           effects: [
++             {
++               power: 0.5,
++               type: 'aoe_damage'
++             },
++             {
++               power: 0.4,
++               type: 'slow'
++             }
++           ],
++           initSp: 10,
++           isPassive: false,
++           maxCharge: 1,
++           name: '孢子扩散',
++           prefabId: 'skchr_podego_2',
++           rangeGrids: null,
++           rangeId: null,
++           skillType: 'MANUAL',
++           spCost: 32,
++           spIncrement: 1,
++           spType: 'INCREASE_WITH_TIME'
++         },
++         power: 0.4,
++         realDesc: '立即投掷一个小瓶，碎裂后在周围产生一个持续<@ba.vup>5</>秒的孢子群\\n孢子群范围内所有敌人被<$ba.sluggish>停顿</>且失去特殊能力，每秒受到相当于攻击力<@ba.vup>60%</>的法术伤害',
++         realDurationType: 'NONE',
++         realIcon: 'skchr_podego_2',
++         realMaxCharge: 1,
++         realName: '孢子扩散',
++         realRangeId: null,
++         realType: 'MANUAL',
++         spCost: 18,
++         type: 'buff_atk'
++       },
++       subProfession: 'slower',
++       talents: [
++         [
++           {
++             blackboard: [
++               {
++                 key: 'atk',
++                 value: 0.05,
++                 valueStr: null
++               }
++             ],
++             description: '在场时，所有【辅助】干员攻击力+5%',
++             effects: [
++               {
++                 power: 0.05,
++                 trigger: 'passive',
++                 type: 'buff_atk'
++               }
++             ],
++             level: 1,
++             name: '园丁',
++             phase: 1,
++             potential: 0,
++             rangeId: null
++           },
++           {
++             blackboard: [
++               {
++                 key: 'atk',
++                 value: 0.07,
++                 valueStr: null
++               }
++             ],
++             description: '在场时，所有【辅助】干员攻击力+7%<@ba.talpu>（+2%）</>',
++             effects: [
++               {
++                 power: 0.07,
++                 trigger: 'passive',
++                 type: 'buff_atk'
++               }
++             ],
++             level: 1,
++             name: '园丁',
++             phase: 1,
++             potential: 4,
++             rangeId: null
++           },
++           {
++             blackboard: [
++               {
++                 key: 'atk',
++                 value: 0.09,
++                 valueStr: null
++               }
++             ],
++             description: '在场时，所有【辅助】干员攻击力+9%',
++             effects: [
++               {
++                 power: 0.09,
++                 trigger: 'passive',
++                 type: 'buff_atk'
++               }
++             ],
++             level: 1,
++             name: '园丁',
++             phase: 2,
++             potential: 0,
++             rangeId: null
++           },
++           {
++             blackboard: [
++               {
++                 key: 'atk',
++                 value: 0.11,
++                 valueStr: null
++               }
++             ],
++             description: '在场时，所有【辅助】干员攻击力+11%<@ba.talpu>（+2%）</>',
++             effects: [
++               {
++                 power: 0.11,
++                 trigger: 'passive',
++                 type: 'buff_atk'
++               }
++             ],
++             level: 1,
++             name: '园丁',
++             phase: 2,
++             potential: 4,
++             rangeId: null
++           }
++         ]
++       ],
++       tier: 1
++     },
+      type: 'op'
+    },
+    {
+-     charId: 'char_127_estell',
+      cost: 2,
++     entry: {
++       appellation: 'Estelle',
++       atkType: 'phys',
++       baseAtk: 278,
++       baseAttackTime: 1.2,
++       baseBlockCnt: 2,
++       baseDef: 133,
++       baseMagicRes: 0,
++       baseMaxHp: 1140,
++       bondGarrison: [
++         {
++           bb: {
++             count: 2
++           },
++           desc: '<获得时>自身所属盟约层数<@ba.vup>+2</>（无需激活盟约）',
++           eventType: 'SERVER_GAIN',
++           icon: 'icon_bond',
++           id: 'garrison_25_a',
++           kind: 'SERVER_ADD_BOND_CHESS_ALL',
++           label: '单次叠加',
++           rune: ''
++         }
++       ],
++       charId: 'char_127_estell',
++       chessId: 'chess_char_1_12_a',
++       isHidden: false,
++       module: {
++         elite: {
++           aspd: 0,
++           atk: 32,
++           def: 0,
++           hp: 70,
++           magicRes: 0
++         },
++         name: '荒野地的饯别礼',
++         normal: {
++           aspd: 0,
++           atk: 0,
++           def: 0,
++           hp: 0,
++           magicRes: 0
++         },
++         uniEquipId: 'uniequip_002_estell'
++       },
++       name: '艾丝黛尔',
++       position: 'MELEE',
++       power: [
++         'sargon'
++       ],
++       profession: 'WARRIOR',
++       profile: {
++         backupCharId: 'char_127_estell',
++         backupCharPotRank: 0,
++         backupCharSkillIndex: 1,
++         backupCharUniEquipId: 'uniequip_002_estell',
++         backupTmplId: null,
++         bondIds: [
++           'sargonShip'
++         ],
++         charId: 'char_127_estell',
++         chessId: 'chess_char_1_12_a',
++         chessType: 'PRESET',
++         defaultSkillIndex: 1,
++         defaultUniEquipId: 'uniequip_002_estell',
++         elite: {
++           charLevel: 50,
++           equipLevel: 1,
++           evolvePhase: 'PHASE_2',
++           favorPoint: 0,
++           skillLevel: 7
++         },
++         garrisonIds: [
++           'garrison_25_a'
++         ],
++         goldenBondIds: [
++           'sargonShip'
++         ],
++         goldenChessId: 'chess_char_1_12_b',
++         goldenGarrisonIds: [
++           'garrison_25_b'
++         ],
++         isHidden: false,
++         normal: {
++           charLevel: 55,
++           equipLevel: 0,
++           evolvePhase: 'PHASE_1',
++           favorPoint: 0,
++           skillLevel: 4
++         },
++         shopLevelSortId: 12,
++         tier: 1,
++         tmplId: null
++       },
++       rangeGrids: [
++         {
++           col: 0,
++           row: 0
++         },
++         {
++           col: 1,
++           row: 0
++         }
++       ],
++       rangePhases: [
++         {
++           grids: [
++             {
++               col: 0,
++               row: 0
++             },
++             {
++               col: 1,
++               row: 0
++             }
++           ],
++           rangeId: '1-1'
++         },
++         {
++           grids: [
++             {
++               col: 0,
++               row: 0
++             },
++             {
++               col: 1,
++               row: 0
++             }
++           ],
++           rangeId: '1-1'
++         },
++         {
++           grids: [
++             {
++               col: 0,
++               row: 0
++             },
++             {
++               col: 1,
++               row: 0
++             }
++           ],
++           rangeId: '1-1'
++         }
++       ],
++       rarity: 4,
++       regBonds: [],
++       seasonBond: 'sargonShip',
++       seasonId: 'act2autochess',
++       skill: {
++         count: 3,
++         elite: {
++           blackboard: {
++             atk: 1.15,
++             block_cnt: 0
++           },
++           desc: '攻击力<@ba.vup>+115%</>，不再成为其他角色的治疗目标',
++           duration: 15,
++           durationType: 'NONE',
++           effects: [
++             {
++               power: 1.15,
++               type: 'buff_atk'
++             }
++           ],
++           initSp: 10,
++           isPassive: false,
++           maxCharge: 1,
++           name: '舍身突击',
++           prefabId: 'skchr_estell_2',
++           rangeGrids: null,
++           rangeId: null,
++           skillType: 'MANUAL',
++           spCost: 23,
++           spIncrement: 1,
++           spType: 'INCREASE_WHEN_TAKEN_DAMAGE'
++         },
++         name: '强袭',
++         normal: {
++           blackboard: {
++             atk: 1,
++             block_cnt: 0
++           },
++           desc: '攻击力<@ba.vup>+100%</>，不再成为其他角色的治疗目标',
++           duration: 15,
++           durationType: 'NONE',
++           effects: [
++             {
++               power: 1,
++               type: 'buff_atk'
++             }
++           ],
++           initSp: 10,
++           isPassive: false,
++           maxCharge: 1,
++           name: '舍身突击',
++           prefabId: 'skchr_estell_2',
++           rangeGrids: null,
++           rangeId: null,
++           skillType: 'MANUAL',
++           spCost: 24,
++           spIncrement: 1,
++           spType: 'INCREASE_WHEN_TAKEN_DAMAGE'
++         },
++         power: 2,
++         realDesc: '攻击力<@ba.vup>+115%</>，不再成为其他角色的治疗目标',
++         realDurationType: 'NONE',
++         realIcon: 'skchr_estell_2',
++         realMaxCharge: 1,
++         realName: '舍身突击',
++         realRangeId: null,
++         realType: 'MANUAL',
++         spCost: 20,
++         type: 'burst_damage'
++       },
++       subProfession: 'centurion',
++       talents: [
++         [
++           {
++             blackboard: [
++               {
++                 key: 'hp_ratio',
++                 value: 0.07,
++                 valueStr: null
++               }
++             ],
++             description: '周围8格内有敌人倒下时，恢复自身最大生命值7%的生命',
++             effects: [
++               {
++                 power: 0.3,
++                 trigger: 'passive',
++                 type: 'heal_self'
++               }
++             ],
++             level: 1,
++             name: '自愈能力',
++             phase: 1,
++             potential: 0,
++             rangeId: 'x-4'
++           },
++           {
++             blackboard: [
++               {
++                 key: 'hp_ratio',
++                 value: 0.09,
++                 valueStr: null
++               }
++             ],
++             description: '周围8格内有敌人倒下时，恢复自身最大生命值9%<@ba.talpu>（+2%）</>的生命',
++             effects: [
++               {
++                 power: 0.3,
++                 trigger: 'passive',
++                 type: 'heal_self'
++               }
++             ],
++             level: 1,
++             name: '自愈能力',
++             phase: 1,
++             potential: 4,
++             rangeId: 'x-4'
++           },
++           {
++             blackboard: [
++               {
++                 key: 'hp_ratio',
++                 value: 0.12,
++                 valueStr: null
++               }
++             ],
++             description: '周围8格内有敌人倒下时，恢复自身最大生命值12%的生命',
++             effects: [
++               {
++                 power: 0.3,
++                 trigger: 'passive',
++                 type: 'heal_self'
++               }
++             ],
++             level: 1,
++             name: '自愈能力',
++             phase: 2,
++             potential: 0,
++             rangeId: 'x-4'
++           },
++           {
++             blackboard: [
++               {
++                 key: 'hp_ratio',
++                 value: 0.14,
++                 valueStr: null
++               }
++             ],
++             description: '周围8格内有敌人倒下时，恢复自身最大生命值14%<@ba.talpu>（+2%）</>的生命',
++             effects: [
++               {
++                 power: 0.3,
++                 trigger: 'passive',
++                 type: 'heal_self'
++               }
++             ],
++             level: 1,
++             name: '自愈能力',
++             phase: 2,
++             potential: 4,
++             rangeId: 'x-4'
++           }
++         ]
++       ],
++       tier: 1
++     },
+      type: 'op'
+    },
+    {
+-     charId: 'char_469_indigo',
+      cost: 2,
++     entry: {
++       appellation: 'Indigo',
++       atkType: 'arts',
++       baseAtk: 486,
++       baseAttackTime: 3,
++       baseBlockCnt: 1,
++       baseDef: 44,
++       baseMagicRes: 20,
++       baseMaxHp: 625,
++       bondGarrison: [
++         {
++           bb: {
++             count: 2
++           },
++           desc: '<获得时>自身所属盟约层数<@ba.vup>+2</>（无需激活盟约）',
++           eventType: 'SERVER_GAIN',
++           icon: 'icon_bond',
++           id: 'garrison_25_a',
++           kind: 'SERVER_ADD_BOND_CHESS_ALL',
++           label: '单次叠加',
++           rune: ''
++         }
++       ],
++       charId: 'char_469_indigo',
++       chessId: 'chess_char_1_17_a',
++       isHidden: false,
++       module: {
++         elite: {
++           aspd: 0.03,
++           atk: 45,
++           def: 0,
++           hp: 0,
++           magicRes: 0
++         },
++         name: '法杖保养套装',
++         normal: {
++           aspd: 0,
++           atk: 0,
++           def: 0,
++           hp: 0,
++           magicRes: 0
++         },
++         uniEquipId: 'uniequip_002_indigo'
++       },
++       name: '深靛',
++       position: 'RANGED',
++       power: [
++         'iberia'
++       ],
++       profession: 'CASTER',
++       profile: {
++         backupCharId: 'char_469_indigo',
++         backupCharPotRank: 0,
++         backupCharSkillIndex: 1,
++         backupCharUniEquipId: 'uniequip_002_indigo',
++         backupTmplId: null,
++         bondIds: [
++           'arcaneShip',
++           'preciShip'
++         ],
++         charId: 'char_469_indigo',
++         chessId: 'chess_char_1_17_a',
++         chessType: 'PRESET',
++         defaultSkillIndex: 1,
++         defaultUniEquipId: 'uniequip_002_indigo',
++         elite: {
++           charLevel: 50,
++           equipLevel: 1,
++           evolvePhase: 'PHASE_2',
++           favorPoint: 0,
++           skillLevel: 7
++         },
++         garrisonIds: [
++           'garrison_25_a'
++         ],
++         goldenBondIds: [
++           'arcaneShip',
++           'preciShip'
++         ],
++         goldenChessId: 'chess_char_1_17_b',
++         goldenGarrisonIds: [
++           'garrison_25_b'
++         ],
++         isHidden: false,
++         normal: {
++           charLevel: 55,
++           equipLevel: 0,
++           evolvePhase: 'PHASE_1',
++           favorPoint: 0,
++           skillLevel: 4
++         },
++         shopLevelSortId: 17,
++         tier: 1,
++         tmplId: null
++       },
++       rangeGrids: [
++         {
++           col: 1,
++           row: 1
++         },
++         {
++           col: 2,
++           row: 1
++         },
++         {
++           col: 0,
++           row: 0
++         },
++         {
++           col: 1,
++           row: 0
++         },
++         {
++           col: 2,
++           row: 0
++         },
++         {
++           col: 3,
++           row: 0
++         },
++         {
++           col: 1,
++           row: -1
++         },
++         {
++           col: 2,
++           row: -1
++         }
++       ],
++       rangePhases: [
++         {
++           grids: [
++             {
++               col: 1,
++               row: 1
++             },
++             {
++               col: 2,
++               row: 1
++             },
++             {
++               col: 0,
++               row: 0
++             },
++             {
++               col: 1,
++               row: 0
++             },
++             {
++               col: 2,
++               row: 0
++             },
++             {
++               col: 3,
++               row: 0
++             },
++             {
++               col: 1,
++               row: -1
++             },
++             {
++               col: 2,
++               row: -1
++             }
++           ],
++           rangeId: '3-13'
++         },
++         {
++           grids: [
++             {
++               col: 1,
++               row: 1
++             },
++             {
++               col: 2,
++               row: 1
++             },
++             {
++               col: 3,
++               row: 1
++             },
++             {
++               col: 0,
++               row: 0
++             },
++             {
++               col: 1,
++               row: 0
++             },
++             {
++               col: 2,
++               row: 0
++             },
++             {
++               col: 3,
++               row: 0
++             },
++             {
++               col: 1,
++               row: -1
++             },
++             {
++               col: 2,
++               row: -1
++             },
++             {
++               col: 3,
++               row: -1
++             }
++           ],
++           rangeId: '3-14'
++         },
++         {
++           grids: [
++             {
++               col: 1,
++               row: 1
++             },
++             {
++               col: 2,
++               row: 1
++             },
++             {
++               col: 3,
++               row: 1
++             },
++             {
++               col: 0,
++               row: 0
++             },
++             {
++               col: 1,
++               row: 0
++             },
++             {
++               col: 2,
++               row: 0
++             },
++             {
++               col: 3,
++               row: 0
++             },
++             {
++               col: 1,
++               row: -1
++             },
++             {
++               col: 2,
++               row: -1
++             },
++             {
++               col: 3,
++               row: -1
++             }
++           ],
++           rangeId: '3-14'
++         }
++       ],
++       rarity: 4,
++       regBonds: [
++         'arcaneShip',
++         'preciShip'
++       ],
++       seasonBond: null,
++       seasonId: 'act2autochess',
++       skill: {
++         elite: {
++           blackboard: {
++             'indigo_s_2[damage].atk_scale': 0.15,
++             'indigo_s_2[damage].interval': 0.5,
++             base_attack_time: 0.65,
++             talent_scale: 2.5
++           },
++           desc: '攻击间隔<@ba.vup>一定程度缩短</>，天赋的触发几率提升至<@ba.vup>2.5</>倍，攻击范围内处于<$ba.root>束缚</>状态的敌人每<@ba.vup>{indigo_s_2[damage].interval}</>秒受到相当于深靛攻击力<@ba.vup>{indigo_s_2[damage].atk_scale:0%}</>的法术伤害',
++           duration: 20,
++           durationType: 'NONE',
++           effects: [
++             {
++               power: 0.1,
++               type: 'buff_atkspd'
++             },
++             {
++               power: 1,
++               type: 'buff_range'
++             }
++           ],
++           initSp: 15,
++           isPassive: false,
++           maxCharge: 1,
++           name: '光影迷宫',
++           prefabId: 'skchr_indigo_2',
++           rangeGrids: null,
++           rangeId: null,
++           skillType: 'MANUAL',
++           spCost: 44,
++           spIncrement: 1,
++           spType: 'INCREASE_WITH_TIME'
++         },
++         name: '术式轰击',
++         normal: {
++           blackboard: {
++             'indigo_s_2[damage].atk_scale': 0.12,
++             'indigo_s_2[damage].interval': 0.5,
++             base_attack_time: 0.7,
++             talent_scale: 2
++           },
++           desc: '攻击间隔<@ba.vup>略微缩短</>，天赋的触发几率提升至<@ba.vup>2</>倍，攻击范围内处于<$ba.root>束缚</>状态的敌人每<@ba.vup>{indigo_s_2[damage].interval}</>秒受到相当于深靛攻击力<@ba.vup>{indigo_s_2[damage].atk_scale:0%}</>的法术伤害',
++           duration: 20,
++           durationType: 'NONE',
++           effects: [
++             {
++               power: 0.1,
++               type: 'buff_atkspd'
++             },
++             {
++               power: 1,
++               type: 'buff_range'
++             }
++           ],
++           initSp: 10,
++           isPassive: false,
++           maxCharge: 1,
++           name: '光影迷宫',
++           prefabId: 'skchr_indigo_2',
++           rangeGrids: null,
++           rangeId: null,
++           skillType: 'MANUAL',
++           spCost: 47,
++           spIncrement: 1,
++           spType: 'INCREASE_WITH_TIME'
++         },
++         power: 1.5,
++         realDesc: '攻击间隔<@ba.vup>一定程度缩短</>，天赋的触发几率提升至<@ba.vup>2.5</>倍，攻击范围内处于<$ba.root>束缚</>状态的敌人每<@ba.vup>{indigo_s_2[damage].interval}</>秒受到相当于深靛攻击力<@ba.vup>{indigo_s_2[damage].atk_scale:0%}</>的法术伤害',
++         realDurationType: 'NONE',
++         realIcon: 'skchr_indigo_2',
++         realMaxCharge: 1,
++         realName: '光影迷宫',
++         realRangeId: null,
++         realType: 'MANUAL',
++         spCost: 20,
++         type: 'aoe_damage'
++       },
++       subProfession: 'mystic',
++       talents: [
++         [
++           {
++             blackboard: [
++               {
++                 key: 'prob',
++                 value: 0.12,
++                 valueStr: null
++               },
++               {
++                 key: 'duration',
++                 value: 4,
++                 valueStr: null
++               }
++             ],
++             description: '攻击时有12%的几率使目标<$ba.root>束缚</>4秒，不以束缚状态的敌人为攻击目标',
++             effects: [],
++             level: 1,
++             name: '柔光缚目',
++             phase: 1,
++             potential: 0,
++             rangeId: null
++           },
++           {
++             blackboard: [
++               {
++                 key: 'prob',
++                 value: 0.14,
++                 valueStr: null
++               },
++               {
++                 key: 'duration',
++                 value: 4,
++                 valueStr: null
++               }
++             ],
++             description: '攻击时有14%<@ba.talpu>（+2%）</>的几率使目标<$ba.root>束缚</>4秒，不以束缚状态的敌人为攻击目标',
++             effects: [],
++             level: 1,
++             name: '柔光缚目',
++             phase: 1,
++             potential: 4,
++             rangeId: null
++           },
++           {
++             blackboard: [
++               {
++                 key: 'prob',
++                 value: 0.18,
++                 valueStr: null
++               },
++               {
++                 key: 'duration',
++                 value: 4,
++                 valueStr: null
++               }
++             ],
++             description: '攻击时有18%的几率使目标<$ba.root>束缚</>4秒，不以束缚状态的敌人为攻击目标',
++             effects: [],
++             level: 1,
++             name: '柔光缚目',
++             phase: 2,
++             potential: 0,
++             rangeId: null
++           },
++           {
++             blackboard: [
++               {
++                 key: 'prob',
++                 value: 0.2,
++                 valueStr: null
++               },
++               {
++                 key: 'duration',
++                 value: 4,
++                 valueStr: null
++               }
++             ],
++             description: '攻击时有20%<@ba.talpu>（+2%）</>的几率使目标<$ba.root>束缚</>4秒，不以束缚状态的敌人为攻击目标',
++             effects: [],
++             level: 1,
++             name: '柔光缚目',
++             phase: 2,
++             potential: 4,
++             rangeId: null
++           }
++         ]
++       ],
++       tier: 1
++     },
+      type: 'op'
+    }
+  ]
+
+    at evalmachine.<anonymous>:15:9 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: [Array],
+  expected: [Array],
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+

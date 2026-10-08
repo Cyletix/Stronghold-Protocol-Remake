@@ -1,0 +1,385 @@
+[
+ {
+  "id": "eff_acarm066",
+  "name": "盟约之币",
+  "desc": "装备时销毁，并获得<@ba.vup>1</>资金",
+  "events": [
+   {
+    "key": "equip_destory_gain_random_coin",
+    "bb": [
+     {
+      "k": "min",
+      "v": 1
+     },
+     {
+      "k": "max",
+      "v": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm069",
+  "name": "拟态物质",
+  "desc": "装备时销毁，若已拥有至少2名该初始干员，则再获得1名该初始干员；否则随机获得1名同盟约初始干员",
+  "events": [
+   {
+    "key": "use_equip_reward_char_chess",
+    "bb": []
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm070",
+  "name": "人事部文档",
+  "desc": "装备时销毁，最大可部署人数变为9",
+  "events": [
+   {
+    "key": "equip_destory_deployment_cnt_change",
+    "bb": [
+     {
+      "k": "count",
+      "v": 9
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm071",
+  "name": "博士投影",
+  "desc": "任意干员可装备，下个回合开始时销毁，并使该干员晋升为精锐干员",
+  "events": []
+ },
+ {
+  "id": "eff_acarm072",
+  "name": "突变细胞",
+  "desc": "战斗结束后，装备者替换为高一阶的随机干员",
+  "events": []
+ },
+ {
+  "id": "eff_acarm074",
+  "name": "商业包装方案",
+  "desc": "每出售8名干员，额外获得一个与此装备携带者的同盟约初始干员（不高于当前调度中心等级）",
+  "events": []
+ },
+ {
+  "id": "eff_acarm075",
+  "name": "寻呼模块",
+  "desc": "装备时销毁，立即特殊刷新一次调度中心，出现三名与该干员有相同盟约的干员，免费获取其中一名！（不高于当前调度中心等级）",
+  "events": [
+   {
+    "key": "use_equip_reward_special_goods_char_chess",
+    "bb": [
+     {
+      "k": "refresh_cnt",
+      "v": 3
+     },
+     {
+      "k": "choice_cnt",
+      "v": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm109",
+  "name": "信标",
+  "desc": "装备时，目标干员和本装备销毁并进行一次特殊刷新，出现两名与携带者同等阶的干员，免费获取其中一名\\n<@ba.rem>若在同盟模拟中且存在其他队友，下个休整期向相应盟约人数最多的队友发送1个原干员</>\\n<@ba.acrem>相应盟约人数相同则随机发送</>\\n<@ba.acrem>无法装备给自编干员</>",
+  "events": [
+   {
+    "key": "use_equip_recruit_new_char_and_give_char_to_player_most_bond",
+    "bb": [
+     {
+      "k": "refresh_cnt",
+      "v": 2
+     },
+     {
+      "k": "choice_cnt",
+      "v": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm114",
+  "name": "简易通讯机",
+  "desc": "装备时销毁，随机获得<@ba.vup>1</>名与该干员有相同盟约的干员",
+  "events": [
+   {
+    "key": "use_equip_reward_char_chess_with_same_bond",
+    "bb": [
+     {
+      "k": "count",
+      "v": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm115",
+  "name": "紧急调度券",
+  "desc": "装备时销毁，随机获取当前调度中心内的<@ba.vup>1</>名干员 （调度中心中对应干员消失）",
+  "events": [
+   {
+    "key": "use_equip_reward_random_char_chess_in_shop",
+    "bb": [
+     {
+      "k": "count",
+      "v": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm116",
+  "name": "见钱眼开玩偶",
+  "desc": "装备时销毁，下回合额外获得<@ba.vup>2</>资金",
+  "events": [
+   {
+    "key": "use_equip_gain_coin_when_next_round_start",
+    "bb": [
+     {
+      "k": "count",
+      "v": 2
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm123",
+  "name": "骑士储蓄罐",
+  "desc": "装备时销毁，并随机获得<@ba.vup>1~6</>资金",
+  "events": [
+   {
+    "key": "equip_destory_gain_random_coin",
+    "bb": [
+     {
+      "k": "min",
+      "v": 1
+     },
+     {
+      "k": "max",
+      "v": 6
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acarm124",
+  "name": "随身身份牌",
+  "desc": "装备时销毁，并使携带者所属盟约层数<@ba.vup>+3</>（无需激活盟约）",
+  "events": [
+   {
+    "key": "use_equip_reward_char_chess_bond_layer",
+    "bb": [
+     {
+      "k": "layer",
+      "v": 3
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm066",
+  "name": "盟约之币",
+  "desc": "装备时销毁，并获得<@ba.vup>2</>资金",
+  "events": [
+   {
+    "key": "equip_destory_gain_random_coin",
+    "bb": [
+     {
+      "k": "min",
+      "v": 2
+     },
+     {
+      "k": "max",
+      "v": 2
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm069",
+  "name": "拟态物质",
+  "desc": "装备时销毁，若已拥有至少2名该初始干员，则再获得1名该初始干员；否则随机获得1名同盟约初始干员",
+  "events": [
+   {
+    "key": "use_equip_reward_char_chess",
+    "bb": []
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm070",
+  "name": "人事部文档",
+  "desc": "装备时销毁，最大可部署人数变为9",
+  "events": [
+   {
+    "key": "equip_destory_deployment_cnt_change",
+    "bb": [
+     {
+      "k": "count",
+      "v": 9
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm071",
+  "name": "博士投影",
+  "desc": "任意干员可装备，立即使该干员晋升为精锐干员",
+  "events": [
+   {
+    "key": "use_equip_upgrade_char",
+    "bb": []
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm072",
+  "name": "突变细胞",
+  "desc": "战斗结束后，装备者替换为高一阶的随机干员",
+  "events": []
+ },
+ {
+  "id": "eff_acgarm074",
+  "name": "商业包装方案",
+  "desc": "每出售7名干员，额外获得一个与此装备携带者的同盟约初始干员（不高于当前调度中心等级）",
+  "events": []
+ },
+ {
+  "id": "eff_acgarm075",
+  "name": "寻呼模块",
+  "desc": "装备时销毁，立即特殊刷新一次调度中心，出现三名与该干员有相同盟约的干员，免费获取其中一名！（不高于当前调度中心等级）",
+  "events": [
+   {
+    "key": "use_equip_reward_special_goods_char_chess",
+    "bb": [
+     {
+      "k": "refresh_cnt",
+      "v": 3
+     },
+     {
+      "k": "choice_cnt",
+      "v": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm109",
+  "name": "信标",
+  "desc": "装备时，目标干员和本装备销毁并进行一次特殊刷新，出现两名与携带者同等阶的干员，免费获取其中一名\\n<@ba.rem>若在同盟模拟中且存在其他队友，下个休整期向相应盟约人数最多的队友发送1个原干员</>\\n<@ba.acrem>相应盟约人数相同则随机发送</>\\n<@ba.acrem>无法装备给自编干员</>",
+  "events": [
+   {
+    "key": "use_equip_recruit_new_char_and_give_char_to_player_most_bond",
+    "bb": [
+     {
+      "k": "refresh_cnt",
+      "v": 2
+     },
+     {
+      "k": "choice_cnt",
+      "v": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm114",
+  "name": "简易通讯机",
+  "desc": "装备时销毁，随机获得<@ba.vup>2</>名与该干员有相同盟约的干员",
+  "events": [
+   {
+    "key": "use_equip_reward_char_chess_with_same_bond",
+    "bb": [
+     {
+      "k": "count",
+      "v": 2
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm115",
+  "name": "紧急调度券",
+  "desc": "装备时销毁，随机获取当前调度中心内的<@ba.vup>2</>名干员 （调度中心中对应干员消失）",
+  "events": [
+   {
+    "key": "use_equip_reward_random_char_chess_in_shop",
+    "bb": [
+     {
+      "k": "count",
+      "v": 2
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm116",
+  "name": "见钱眼开玩偶",
+  "desc": "装备时销毁，下回合额外获得<@ba.vup>4</>资金",
+  "events": [
+   {
+    "key": "use_equip_gain_coin_when_next_round_start",
+    "bb": [
+     {
+      "k": "count",
+      "v": 4
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm123",
+  "name": "骑士储蓄罐",
+  "desc": "装备时销毁，并随机获得<@ba.vup>2~12</>资金",
+  "events": [
+   {
+    "key": "equip_destory_gain_random_coin",
+    "bb": [
+     {
+      "k": "min",
+      "v": 2
+     },
+     {
+      "k": "max",
+      "v": 12
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eff_acgarm124",
+  "name": "随身身份牌",
+  "desc": "装备时销毁，并使携带者所属盟约层数<@ba.vup>+6</>（无需激活盟约）",
+  "events": [
+   {
+    "key": "use_equip_reward_char_chess_bond_layer",
+    "bb": [
+     {
+      "k": "layer",
+      "v": 6
+     }
+    ]
+   }
+  ]
+ }
+]

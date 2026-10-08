@@ -1,0 +1,34 @@
+{
+  "batch": "room-game-20260918.6",
+  "newLimitedTasks": [
+    "op/char_237_gravel/skill/skchr_gravel_1/source-mode-body",
+    "op/char_237_gravel/skill/skchr_gravel_2/source-mode-body",
+    "op/char_243_waaifu/skill/skchr_waaifu_1/source-mode-body",
+    "op/char_263_skadi/skill/skchr_skadi_2/source-mode-body",
+    "op/char_337_utage/skill/skchr_utage_2/source-mode-body",
+    "op/char_496_wildmn/skill/skchr_wildmn_1/source-mode-body",
+    "op/char_607_cspec/skill/skcom_born_up[1]/source-mode-body",
+    "op/char_607_cspec/skill/skcom_born_up[2]/source-mode-body",
+    "op/char_607_cspec/skill/skcom_born_up[3]/source-mode-body",
+    "op/char_615_acspec/skill/skchr_acspec_2/source-mode-body"
+  ],
+  "retainedHistoricalTasks": [
+    "op/char_607_cspec/skill/skcom_born_up[1]",
+    "op/char_607_cspec/skill/skcom_born_up[2]",
+    "op/char_607_cspec/skill/skcom_born_up[3]"
+  ],
+  "checked": 558,
+  "stats": {
+    "fixedAssociations": 363,
+    "expandedAssociations": 423,
+    "fixedExplicitBefore": 141,
+    "fixedNewExplicit": 6,
+    "fixedExplicitAfter": 147,
+    "fixedPendingAfter": 216,
+    "expandedExplicitBefore": 175,
+    "expandedNewExplicit": 7,
+    "expandedExplicitAfter": 182,
+    "expandedPendingAfter": 241
+  },
+  "note": "2026-09-18；部署公共模板10项（7条净新增/3条迁移），97源等级、20实际赛季普通/精锐组合、4次主机恢复及12项编译边界通过。见 `_skill_mode_deployment_smoke.js`；周期DEF/独立衰减盾、自损绕盾、被动寿命及大步/逐步恢复另经 `_deployment_programs_smoke.js`，命中攻击削弱公共消费者窄测通过。部署每生幂等，死亡/复活与源Buff到期清理。原生AppearSkill入口和DEF公式分派受保护；两相触发、首周期及全局技能开启事件仍为明确边界，不勾整技能。"
+}

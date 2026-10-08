@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "inputs": {
+    "work/client-logic/program-compilation.json": "972bc0d63070e03acf8733c82e8480a29a92952c01bce07ff1f8240eb169c0b3",
+    "data/ArknightsGameData/zh_CN/gamedata/excel/skill_table.json": "9eaaecacd024b8e2177ddb44e0c306bed609b53ef79d2e6446dda9dae49d6435",
+    "data/ArknightsGameData/zh_CN/gamedata/excel/character_table.json": "05fddd1e746d66be22580b51e9e44be75b38aef95169477b2e55150b89a2fed7",
+    "work/client-logic/bundles/battle/prefabs/[uc]projectiles.ab.json": "5fa76222ae24a8d5bff935ad7d4219df58ffacac03ea761f98d3d4df136a9505",
+    "work/client-logic/script-types.json": "1fc6554278c7432c6ba9aa68b6332ee6cabbc3b8ef9a8f1b6394d838d49af041",
+    "work/client-logic/buff-templates.json": "f8cc1f74e426d0111803d68154335a748bfee377a2d826d84135f60a41280d24",
+    "data/ArknightsGameData/zh_CN/gamedata/buff_table.json": "366876f94b336364e243f1a14171b5395240d66c79f86cfb16038cc75ed8e0c3",
+    "work/client-logic/native-enemy-skill-sp/Torappu.Battle.AbilityStandard_Event-enum.json": "562e277eac3454f9ec65d3e1bb7e863a67d6aa14181e63ea90780def87c4c598",
+    "tools/build_direct_skill_data.py": "eaaad9ce9e881ab9934a4e3f4a3c167ce1a76c818d0422f374c36a8b8673abb8",
+    "tools/direct_skill_compiler.py": "b34a869077a158cf1bdce5a52a94e33cb543accbaac3290d383bacd698f36234",
+    "tools/next_attack_compiler.py": "8f1ddcb4393bcb90ffadbccc235866086ab9bd8d2a2d18e474d8191ee569c69d",
+    "tools/next_attack_hit_buffs.py": "83166b4d721c7463d77d3984a41a744912e7589d491f50504dd97c713984480c",
+    "tools/enemy_chain_projectiles.py": "ba2a06ce22f647ad444005892c09176fa1f389fa79921cf89160e7cfd0f1540b",
+    "tools/enemy_hit_sequences.py": "d8e57b198bf2a4fd3d6c74ba5e8191254c60d157faf216abdb22ae900b98361c",
+    "tools/garrison_skill_scope.py": "030c9f9f4c85d0153a7eb71408da6ee5adad4564ccad93f6b89208beed99af76",
+    "web/src/simulation/direct-skill-actions.js": "0695c064997504606500b8f98f04cc00feeaac6097e035b33a264d388b38440d",
+    "web/src/simulation/operator-combat.js": "fd138e37e4e76f72875b1186cc23bb4c5066551c4177b3e31433c59f9a7ca014",
+    "tools/test_direct_skill_compiler.py": "5fc157d28a83d4279060f4dcfe0daeccb68b443ccae0a8b1aa15d0f9f78c929c",
+    "tools/_direct_skill_actions_smoke.js": "545d6eb2ee4a1565681df413c9a546895ddd4e4f9aaa0a595a04bb1fb1ab8f97",
+    "work/direct-skill-candidate-inventory-20260918.json": "d03c6a53b7a81c9fbdf7ad993e45a93ca805375755bd221a2e74884f2a65e65c"
+  },
+  "tests": {
+    "python tools/test_direct_skill_compiler.py": {
+      "passed": 5
+    },
+    "node tools/_direct_skill_actions_smoke.js": {
+      "sourceLevels": 50,
+      "actualSeasonVariants": 12,
+      "hostReplays": 10,
+      "boundary": "Complete source CastSkill numeric/target/action bodies; no unknown sibling action is discarded. JP 36.7.22 component graphs are bound to current CN source levels with exact key and prefab checks. Cast-event resolution uses shared geometry, targeting priority and damage/heal hooks. Source preDelay/timeMode are retained; native protected animation hit-frame/lock and precise event phase are not recovered. Melee hit-Buff versus damage event order, shared status reapplication and hit-cancellation rules remain runtime boundaries until protected native paths are recovered. No basic-attack SP or onBasicAttackHit is generated. Talent/module closure is not whole-operator completion.",
+      "receipts": [
+        {
+          "charId": "char_608_acpion",
+          "skillId": "skchr_acpion_1",
+          "level": 1
+        },
+        {
+          "charId": "char_608_acpion",
+          "skillId": "skchr_acpion_1",
+          "level": 2
+        },
+        {
+          "charId": "char_608_acpion",
+          "skillId": "skchr_acpion_1",
+          "level": 3
+        },
+        {
+          "charId": "char_608_acpion",
+          "skillId": "skchr_acpion_1",
+          "level": 4
+        },
+        {
+          "charId": "char_608_acpion",
+          "skillId": "skchr_acpion_1",
+          "level": 5
+        },
+        {
+          "charId": "char_608_acpion",
+          "skillId": "skchr_acpion_1",
+          "level": 6
+        },
+        {
+          "charId": "char_608_acpion",
+          "skillId": "skchr_acpion_1",
+          "level": 7
+        },
+        {
+          "charId": "char_608_acpion",
+          "skillId": "skchr_acpion_1",
+          "level": 8
+        },
+        {
+          "charId": "char_608_acpion",
+          "skillId": "skchr_acpion_1",
+          "level": 9
+        },
+        {
+          "charId": "char_608_acpion",
+          "skillId": "skchr_acpion_1",
+          "level": 10
+        },
+        {
+          "charId": "char_202_demkni",
+          "skillId": "skchr_demkni_2",
+          "level": 1
+        },
+        {
+          "charId": "char_202_demkni",
+          "skillId": "skchr_demkni_2",
+          "level": 2
+        },
+        {
+          "charId": "char_202_demkni",
+          "skillId": "skchr_demkni_2",
+          "level": 3
+        },
+        {
+          "charId": "char_202_demkni",
+          "skillId": "skchr_demkni_2",
+          "level": 4
+        },
+        {
+          "charId": "char_202_demkni",
+          "skillId": "skchr_demkni_2",
+          "level": 5
+        },
+        {
+          "charId": "char_202_demkni",
+          "skillId": "skchr_demkni_2",
+          "level": 6
+        },
+        {
+          "charId": "char_202_demkni",
+          "skillId": "skchr_demkni_2",
+          "level": 7
+        },
+        {
+          "charId": "char_202_demkni",
+          "skillId": "skchr_demkni_2",
+          "level": 8
+        },
+        {
+          "charId": "char_202_demkni",
+          "skillId": "skchr_demkni_2",
+          "level": 9
+        },
+        {
+          "charId": "char_202_demkni",
+          "skillId": "skchr_demkni_2",
+          "level": 10
+        },
+        {
+          "charId": "char_440_pinecn",
+          "skillId": "skchr_pinecn_1",
+          "level": 1
+        },
+        {
+          "charId": "char_440_pinecn",
+          "skillId": "skchr_pinecn_1",
+          "level": 2
+        },
+        {
+          "charId": "char_440_pinecn",
+          "skillId": "skchr_pinecn_1",
+          "level": 3
+        },
+        {
+          "charId": "char_440_pinecn",
+          "skillId": "skchr_pinecn_1",
+          "level": 4
+        },
+        {
+          "charId": "char_440_pinecn",
+          "skillId": "skchr_pinecn_1",
+          "level": 5
+        },
+        {
+          "charId": "char_440_pinecn",
+          "skillId": "skchr_pinecn_1",
+          "level": 6
+        },
+        {
+          "charId": "char_440_pinecn",
+          "skillId": "skchr_pinecn_1",
+          "level": 7
+        },
+        {
+          "charId": "char_440_pinecn",
+          "skillId": "skchr_pinecn_1",
+          "level": 8
+        },
+        {
+          "charId": "char_440_pinecn",
+          "skillId": "skchr_pinecn_1",
+          "level": 9
+        },
+        {
+          "charId": "char_440_pinecn",
+          "skillId": "skchr_pinecn_1",
+          "level": 10
+        },
+        {
+          "charId": "char_230_savage",
+          "skillId": "skchr_savage_2",
+          "level": 1
+        },
+        {
+          "charId": "char_230_savage",
+          "skillId": "skchr_savage_2",
+          "level": 2
+        },
+        {
+          "charId": "char_230_savage",
+          "skillId": "skchr_savage_2",
+          "level": 3
+        },
+        {
+          "charId": "char_230_savage",
+          "skillId": "skchr_savage_2",
+          "level": 4
+        },
+        {
+          "charId": "char_230_savage",
+          "skillId": "skchr_savage_2",
+          "level": 5
+        },
+        {
+          "charId": "char_230_savage",
+          "skillId": "skchr_savage_2",
+          "level": 6
+        },
+        {
+          "charId": "char_230_savage",
+          "skillId": "skchr_savage_2",
+          "level": 7
+        },
+        {
+          "charId": "char_230_savage",
+          "skillId": "skchr_savage_2",
+          "level": 8
+        },
+        {
+          "charId": "char_230_savage",
+          "skillId": "skchr_savage_2",
+          "level": 9
+        },
+        {
+          "charId": "char_230_savage",
+          "skillId": "skchr_savage_2",
+          "level": 10
+        },
+        {
+          "charId": "char_4026_vulpis",
+          "skillId": "skchr_vulpis_2",
+          "level": 1
+        },
+        {
+          "charId": "char_4026_vulpis",
+          "skillId": "skchr_vulpis_2",
+          "level": 2
+        },
+        {
+          "charId": "char_4026_vulpis",
+          "skillId": "skchr_vulpis_2",
+          "level": 3
+        },
+        {
+          "charId": "char_4026_vulpis",
+          "skillId": "skchr_vulpis_2",
+          "level": 4
+        },
+        {
+          "charId": "char_4026_vulpis",
+          "skillId": "skchr_vulpis_2",
+          "level": 5
+        },
+        {
+          "charId": "char_4026_vulpis",
+          "skillId": "skchr_vulpis_2",
+          "level": 6
+        },
+        {
+          "charId": "char_4026_vulpis",
+          "skillId": "skchr_vulpis_2",
+          "level": 7
+        },
+        {
+          "charId": "char_4026_vulpis",
+          "skillId": "skchr_vulpis_2",
+          "level": 8
+        },
+        {
+          "charId": "char_4026_vulpis",
+          "skillId": "skchr_vulpis_2",
+          "level": 9
+        },
+        {
+          "charId": "char_4026_vulpis",
+          "skillId": "skchr_vulpis_2",
+          "level": 10
+        }
+      ]
+    }
+  },
+  "semanticInputs": {
+    "work/client-logic/program-compilation.json": "972bc0d63070e03acf8733c82e8480a29a92952c01bce07ff1f8240eb169c0b3",
+    "data/ArknightsGameData/zh_CN/gamedata/excel/skill_table.json": "9eaaecacd024b8e2177ddb44e0c306bed609b53ef79d2e6446dda9dae49d6435",
+    "data/ArknightsGameData/zh_CN/gamedata/excel/character_table.json": "05fddd1e746d66be22580b51e9e44be75b38aef95169477b2e55150b89a2fed7",
+    "work/client-logic/bundles/battle/prefabs/[uc]projectiles.ab.json": "5fa76222ae24a8d5bff935ad7d4219df58ffacac03ea761f98d3d4df136a9505",
+    "work/client-logic/script-types.json": "1fc6554278c7432c6ba9aa68b6332ee6cabbc3b8ef9a8f1b6394d838d49af041",
+    "work/client-logic/buff-templates.json": "f8cc1f74e426d0111803d68154335a748bfee377a2d826d84135f60a41280d24",
+    "data/ArknightsGameData/zh_CN/gamedata/buff_table.json": "366876f94b336364e243f1a14171b5395240d66c79f86cfb16038cc75ed8e0c3",
+    "work/client-logic/native-enemy-skill-sp/Torappu.Battle.AbilityStandard_Event-enum.json": "562e277eac3454f9ec65d3e1bb7e863a67d6aa14181e63ea90780def87c4c598",
+    "docs/checklists/implementation-checklist.json#garrison-identity-projection": "3fbe1bd8ca9e21e13ee217c44b885ca1535c45079df5834a89cc18063f1e37a4",
+    "tools/build_direct_skill_data.py": "eaaad9ce9e881ab9934a4e3f4a3c167ce1a76c818d0422f374c36a8b8673abb8",
+    "tools/direct_skill_compiler.py": "b34a869077a158cf1bdce5a52a94e33cb543accbaac3290d383bacd698f36234",
+    "tools/next_attack_compiler.py": "8f1ddcb4393bcb90ffadbccc235866086ab9bd8d2a2d18e474d8191ee569c69d",
+    "tools/next_attack_hit_buffs.py": "83166b4d721c7463d77d3984a41a744912e7589d491f50504dd97c713984480c",
+    "tools/enemy_chain_projectiles.py": "ba2a06ce22f647ad444005892c09176fa1f389fa79921cf89160e7cfd0f1540b",
+    "tools/enemy_hit_sequences.py": "d8e57b198bf2a4fd3d6c74ba5e8191254c60d157faf216abdb22ae900b98361c",
+    "tools/garrison_skill_scope.py": "030c9f9f4c85d0153a7eb71408da6ee5adad4564ccad93f6b89208beed99af76"
+  },
+  "sourceVersion": {
+    "evidence_id": "jp-36.7.22-client-logic",
+    "source_version": "JP 36.7.22 (local XAPK label; bundle hashes authoritative)",
+    "evidence_database_sha256": "36d499444dd469cdf5b188e9e2a245a523f3472c470aa94818644aebf5618095",
+    "artifact_hashes": {
+      "bundles/battle/prefabs/[uc]skills.ab.json": "25ef1235e954dbe9d38f41918f8f9c764a9b9d1552873752a722da42e296aedb",
+      "skill-index.json": "643ff660b636185119e5b1c5766bb1c6bf7e1f8c433a1db619eb8e1a50a2e446",
+      "buff-templates.json": "f8cc1f74e426d0111803d68154335a748bfee377a2d826d84135f60a41280d24"
+    },
+    "script_supplement": "jp-36.7.22-script-types-r1",
+    "boundary": "Executable expression mapping with explicit model boundaries, not complete native execution recovery. Rejected component fields remain research input."
+  },
+  "counts": {
+    "candidates": 51,
+    "accepted": 5,
+    "acceptedFixed": 4,
+    "rejected": 46,
+    "sourceLevels": 50
+  },
+  "boundary": "Complete source CastSkill numeric/target/action bodies; no unknown sibling action is discarded. JP 36.7.22 component graphs are bound to current CN source levels with exact key and prefab checks. Cast-event resolution uses shared geometry, targeting priority and damage/heal hooks. Source preDelay/timeMode are retained; native protected animation hit-frame/lock and precise event phase are not recovered. Melee hit-Buff versus damage event order, shared status reapplication and hit-cancellation rules remain runtime boundaries until protected native paths are recovered. No basic-attack SP or onBasicAttackHit is generated. Talent/module closure is not whole-operator completion.",
+  "additionalChecks": [
+    "full unknown sibling / field / blackboard / source ref rejection",
+    "source-equivalent future identity compiles without ID whitelist",
+    "exact sluggish key excludes unrelated slow and survives shared source replay",
+    "real replacement-provider loaded sluggish triggers direct conditional branch",
+    "direct healing obeys dynamic noDirectHeal",
+    "SP charged exactly once, no basic hit SP event, original body cleared"
+  ],
+  "testComparisonBoundary": "Room deterministic replay compares full battle state except decoration-only particles generated with Math.random; HP/SP/DP/statuses/game RNG and ownership are compared."
+}

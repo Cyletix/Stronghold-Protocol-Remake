@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "completed": true,
+  "source_id": "gamedata-cc5bf84b0e6d",
+  "cache_initialized_from_report": false,
+  "calculation_skipped": true,
+  "compile_skipped": true,
+  "actions": [
+    {
+      "name": "refresh-status",
+      "cached": true,
+      "reclassify": false,
+      "result": {
+        "cached": true,
+        "reclassified": false,
+        "remaining": 98,
+        "counts": {
+          "calculated": 243,
+          "no_reference": 95,
+          "no_output": 1,
+          "unsupported": 2
+        }
+      }
+    }
+  ],
+  "state_key": "70017cef4877c4e435fcaad28c188e9d1f36119d3c3ac2ede42aacf8206f0838",
+  "compile_key": "2b3a6ddde4c36a90af53010771e37ed172c090d88cb4f5127d14836990786e14",
+  "inputs": {
+    "source_id": "gamedata-cc5bf84b0e6d",
+    "source_tables": {
+      "character_table": "570152c0e8e8b2adac7edcee2a69ef398876e069ec55c4d4f8dd6f8791aca5d3",
+      "skill_table": "cd5c5799d1b9a14e0807212f41054d3cc372c1dfb332278ffd50cc3d15f65125",
+      "range_table": "613a9038351fc1067c41e2ff4dcd8caa084734d5de26691ed55ecef86263effd",
+      "uniequip_table": "872278756822723d2449692b4bbf125270a97923481149c2736c44539a1c0de5",
+      "battle_equip_table": "3ee4832c5a51cfa4c041a14f38343b9ad771048accaa59709ed80fd15f94f514",
+      "gamedata_const": "9c9c8f82a8b3c32a750d6e5558737d57a5c49933fd50c5da3bc4fd0570abb079",
+      "enemy_database": "a894b3323e9b91d747caef58b68686ad42d651dd34c2aa6739b3f3be70de59cd"
+    },
+    "files": {
+      "D:\\OneDrive\\Project\\ArknightsResearch\\apps\\dps\\community_templates.cjs": "bf2c3d0b1dc88d024b0c561bc5ba4ea5f3bae19d1f889525faf9e3d41ddf333b",
+      "D:\\OneDrive\\Project\\ArknightsResearch\\apps\\dps\\community_bridge.cjs": "23d32ab4aa624bc3a851306aa33b17afe4c3f492d40a2aaeee0dd84bf4626df3",
+      "D:\\OneDrive\\Project\\ArknightsResearch\\apps\\dps\\community_compat.cjs": "9ab127a46b0f5e180b8b9c501362cfa3ec45bee165f298aefa81e7c472676af6",
+      "D:\\OneDrive\\Project\\ArknightsResearch\\apps\\dps\\community_engine.py": "a1a2a78886ce131c6989537a164141584f13d7defa2318e7467c29db1bf8d8e6",
+      "D:\\OneDrive\\Project\\ArknightsResearch\\apps\\dps\\reference_formula_engine.py": "98d0b1e19592129bc8a3a3a711144dda946318b709043ebd16ea15f64258f6e2",
+      "D:\\OneDrive\\Project\\ArknightsResearch\\apps\\dps\\simulation_data.py": "a21900f7705f22d933fb25f3c345258a55c1eaa7b456a2605e8c25f3ff99d495",
+      "D:\\OneDrive\\Project\\ArknightsResearch\\apps\\dps\\original_simulation.py": "47a5655a66a36e1189cb5e5789891cff9e55d797b99b8567f2a6c4661017a7a7",
+      "D:\\OneDrive\\Project\\ArknightsResearch\\tools\\community_dps.py": "b44b802465044951fc378a15ebecf446a3c3b9fbed116485777c4277be340849",
+      "D:\\OneDrive\\Project\\ArknightsResearch\\data\\derived\\community-templates\\existing-formula-links.json": "8a28ba25e3aab272cf236d6f900f0e72f7bce33edcb5cef79ae1fc9db81c39cd",
+      "D:\\OneDrive\\Project\\ArknightsResearch\\apps\\dps\\vendor\\akdata\\attributes.js": "4ab74731b13ea287fe634568fc401dae805a1a1aa1aab755810646833f8fbdb5",
+      "D:\\OneDrive\\Project\\ArknightsResearch\\apps\\dps\\vendor\\akdata\\dps_anim.json": "86ebea71b9712020e874130f6b6befb2f0defaf09e4d694d1db761461c7ccfb6",
+      "D:\\OneDrive\\Project\\ArknightsResearch\\apps\\dps\\vendor\\akdata\\dps_options.json": "dcfd3ce53343a159608a8866b9720a7228913d880834e7526eccb2bd3a8a67a9",
+      "D:\\OneDrive\\Project\\ArknightsResearch\\apps\\dps\\vendor\\akdata\\dps_specialtags.json": "7670682734f904df251f83652f2b938b74049584d69c94be1d4a8774ecd8499f",
+      "D:\\OneDrive\\Project\\ArknightsResearch\\apps\\dps\\vendor\\akdata\\enums.json": "ef0106bb1003b5a7837e8713da5bdeb5dc5e21e3e1ba76d2f99bc9d9b5d73ebf",
+      "D:\\OneDrive\\Project\\ArknightsResearch\\apps\\dps\\vendor\\akdata\\source-manifest.json": "9fb1e02be80536df9f9ee8b6896a615f45e546174098942a743ecc7e0ee84b4e",
+      "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\work\\external-dps-search\\WhoAteMyCQQkie__ArknightsDpsCompare\\Database\\JsonReader.py": "31719509c80f99d3e86597549870d9211234f32ba2904bb4b9d0fe903309e25f",
+      "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\work\\external-dps-search\\WhoAteMyCQQkie__ArknightsDpsCompare\\damagecalc\\damage_formulas.py": "33ba01b49c37d011e1c77fa918b41cea6f4f4a76ca4f6f5557c4cb75a9ea58b6",
+      "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\work\\external-dps-search\\WhoAteMyCQQkie__ArknightsDpsCompare\\damagecalc\\healing_formulas.py": "ae543f9fd5d449b3c05a311ff3e25c5fd33375adbb65d009a15b7c16864098cb",
+      "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\work\\external-dps-search\\WhoAteMyCQQkie__ArknightsDpsCompare\\damagecalc\\utils.py": "a0ab965d173950157fe08a4881abf2c1cdf82e580dfe1970404783a2caaf13e4",
+      "D:\\OneDrive\\Project\\ArknightsResearch\\.venv\\Lib\\site-packages\\numpy\\__init__.py": "a6958cb364663b7acce81ccfd58eeb65a2b34d5376157f924777b97211a73be4",
+      "D:\\OneDrive\\Project\\ArknightsResearch\\data\\derived\\community-templates\\input-snapshot.json": "d9a960c1c22324f326b024f4714f09ac68c27289a93e848caba88964cec42240",
+      "D:\\OneDrive\\Project\\ArknightsResearch\\data\\derived\\community-templates\\bindings.json": "12a52e046ff380f90845e9e11aac8b71a5bd0c7d510bd63eb8569e1116d6b633"
+    }
+  },
+  "report_sha256": "1c385535b28e19bd7480e3a8db2c132c02a863061682462a85abf7c66786d009",
+  "finished_at": "2026-09-15T13:43:00.187377+00:00",
+  "remaining": 98
+}

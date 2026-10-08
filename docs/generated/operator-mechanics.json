@@ -1,0 +1,4545 @@
+{
+  "schema": 1,
+  "scope": "default act2autochess fixed roster skill associations",
+  "sourceInventory": {
+    "characters": 454,
+    "skillIds": 917
+  },
+  "rosterCount": 112,
+  "skillCount": 283,
+  "explicitAttackHandlerCount": 96,
+  "notes": "Explicit means a registered combat, common, elemental, medic or branch handler (including tactician/flow/special tactical), not full skill/talent/module fidelity. Legacy entries can contain working behavior; source IDs, roster skill associations and checked behavior scopes are separate counts.",
+  "rows": [
+    {
+      "id": "char_102_texas",
+      "name": "德克萨斯",
+      "tier": 1,
+      "branch": "pioneer",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_texas_2",
+      "skills": [
+        {
+          "id": "skcom_charge_cost[3]",
+          "name": "冲锋号令·γ型",
+          "explicitAttackHandler": true,
+          "description": "立即获得12点部署费用",
+          "keys": [
+            "cost"
+          ]
+        },
+        {
+          "id": "skchr_texas_2",
+          "name": "剑雨",
+          "explicitAttackHandler": true,
+          "description": "立即获得10点费用；对周围所有敌人造成两次相当于攻击力120%的法术伤害，并令击中目标晕眩2秒",
+          "keys": [
+            "cost",
+            "atk_scale",
+            "stun"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_107_liskam",
+      "name": "雷蛇",
+      "tier": 1,
+      "branch": "shotprotector",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_liskam_2",
+      "skills": [
+        {
+          "id": "skchr_liskam_1",
+          "name": "充能防御",
+          "explicitAttackHandler": false,
+          "description": "抵挡下一次伤害，在8秒内防御力+60%\\n技能自动开启",
+          "keys": [
+            "def",
+            "duration"
+          ]
+        },
+        {
+          "id": "skchr_liskam_2",
+          "name": "反击电弧",
+          "explicitAttackHandler": false,
+          "description": "攻击间隔增大，攻击力+105%，每次攻击对最多3个敌人造成法术伤害，并有15%概率使命中目标晕眩1秒\\n持续时间结束后雷蛇晕眩5秒",
+          "keys": [
+            "atk",
+            "base_attack_time",
+            "attack@buff_prob",
+            "attack@stun",
+            "stun",
+            "attack@max_target"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_127_estell",
+      "name": "艾丝黛尔",
+      "tier": 1,
+      "branch": "centurion",
+      "action": "attack",
+      "shape": "blockCount",
+      "moduleAction": false,
+      "defaultSkill": "skchr_estell_2",
+      "skills": [
+        {
+          "id": "skcom_atk_up[2]",
+          "name": "攻击力强化·β型",
+          "explicitAttackHandler": true,
+          "description": "攻击力+35%",
+          "keys": [
+            "atk"
+          ]
+        },
+        {
+          "id": "skchr_estell_2",
+          "name": "舍身突击",
+          "explicitAttackHandler": false,
+          "description": "攻击力+100%，不再成为其他角色的治疗目标",
+          "keys": [
+            "atk",
+            "block_cnt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_145_prove",
+      "name": "普罗旺斯",
+      "tier": 1,
+      "branch": "closerange",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_prove_1",
+      "skills": [
+        {
+          "id": "skchr_prove_1",
+          "name": "狼眼",
+          "explicitAttackHandler": false,
+          "description": "目标敌人的生命每降低20%，对其造成伤害时的攻击力+12%",
+          "keys": [
+            "hp_ratio_drop",
+            "atk_scale_up"
+          ]
+        },
+        {
+          "id": "skchr_prove_2",
+          "name": "杀戮嗅觉",
+          "explicitAttackHandler": false,
+          "description": "攻击力+145%，但普通攻击不再以生命值高于80%的敌人作为目标",
+          "keys": [
+            "atk"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_196_sunbr",
+      "name": "古米",
+      "tier": 1,
+      "branch": "guardian",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_sunbr_1",
+      "skills": [
+        {
+          "id": "skchr_sunbr_1",
+          "name": "备用军粮",
+          "explicitAttackHandler": true,
+          "description": "下次攻击会恢复附近一名友方角色相当于古米攻击力115%的生命值\\n可充能1次",
+          "keys": [
+            "heal_scale",
+            "ct"
+          ]
+        },
+        {
+          "id": "skchr_sunbr_2",
+          "name": "食粮烹制",
+          "explicitAttackHandler": false,
+          "description": "开始烹饪，10秒内停止攻击敌人，防御力+60%\\n烹饪完成后专注于治疗附近的友方角色，攻击力+40%",
+          "keys": [
+            "atk",
+            "base_attack_time",
+            "disarm",
+            "def"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_199_yak",
+      "name": "角峰",
+      "tier": 1,
+      "branch": "protector",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_yak_2",
+      "skills": [
+        {
+          "id": "skchr_yak_1",
+          "name": "体能强化",
+          "explicitAttackHandler": false,
+          "description": "生命上限+30%，每秒恢复{HP_RECOVERY_PER_SEC}点生命",
+          "keys": [
+            "max_hp",
+            "hp_recovery_per_sec"
+          ]
+        },
+        {
+          "id": "skchr_yak_2",
+          "name": "抗寒体质",
+          "explicitAttackHandler": true,
+          "description": "生命上限+30%，防御力+10%，法术抗性+60%",
+          "keys": [
+            "max_hp",
+            "def",
+            "magic_resistance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_253_greyy",
+      "name": "格雷伊",
+      "tier": 1,
+      "branch": "splashcaster",
+      "action": "attack",
+      "shape": "splash",
+      "moduleAction": false,
+      "defaultSkill": "skchr_greyy_2",
+      "skills": [
+        {
+          "id": "skcom_magic_rage[2]",
+          "name": "战术咏唱·β型",
+          "explicitAttackHandler": true,
+          "description": "攻击速度+30",
+          "keys": [
+            "attack_speed"
+          ]
+        },
+        {
+          "id": "skchr_greyy_2",
+          "name": "静电释放",
+          "explicitAttackHandler": false,
+          "description": "攻击速度+50，天赋停顿的持续时间提升至1.6倍",
+          "keys": [
+            "attack_speed",
+            "talent_scale"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_258_podego",
+      "name": "波登可",
+      "tier": 1,
+      "branch": "slower",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_podego_2",
+      "skills": [
+        {
+          "id": "skchr_podego_1",
+          "name": "花香疗法",
+          "explicitAttackHandler": false,
+          "description": "攻击力+20%，普通攻击改为治疗友方单位",
+          "keys": [
+            "atk"
+          ]
+        },
+        {
+          "id": "skchr_podego_2",
+          "name": "孢子扩散",
+          "explicitAttackHandler": false,
+          "description": "立即投掷一个小瓶，碎裂后在周围产生一个持续5秒的孢子群\\n孢子群范围内所有敌人被停顿且失去特殊能力，每秒受到相当于攻击力50%的法术伤害",
+          "keys": [
+            "projectile_delay_time",
+            "atk_scale"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_306_leizi",
+      "name": "惊蛰",
+      "tier": 1,
+      "branch": "chain",
+      "action": "attack",
+      "shape": "chain",
+      "moduleAction": true,
+      "defaultSkill": "skchr_leizi_2",
+      "skills": [
+        {
+          "id": "skcom_atk_up[3]",
+          "name": "攻击力强化·γ型",
+          "explicitAttackHandler": true,
+          "description": "攻击力+45%",
+          "keys": [
+            "atk"
+          ]
+        },
+        {
+          "id": "skchr_leizi_2",
+          "name": "初雷",
+          "explicitAttackHandler": true,
+          "description": "攻击力+80%，攻击在跳跃时不再降低伤害",
+          "keys": [
+            "atk"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_337_utage",
+      "name": "宴",
+      "tier": 1,
+      "branch": "musha",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_utage_2",
+      "skills": [
+        {
+          "id": "skchr_utage_1",
+          "name": "分神",
+          "explicitAttackHandler": false,
+          "description": "停止攻击，阻挡数变为0，防御力+130%，每秒恢复7%的最大生命值",
+          "keys": [
+            "def",
+            "hp_recovery_per_sec_by_max_hp_ratio"
+          ]
+        },
+        {
+          "id": "skchr_utage_2",
+          "name": "落地斩·破门",
+          "explicitAttackHandler": false,
+          "description": "部署后立即流失50%当前生命，并在14秒内攻击力+65%，伤害类型变为法术",
+          "keys": [
+            "atk",
+            "duration",
+            "hp_ratio",
+            "respawn_time"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4100_caper",
+      "name": "跃跃",
+      "tier": 1,
+      "branch": "loopshooter",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_caper_2",
+      "skills": [
+        {
+          "id": "skchr_caper_1",
+          "name": "强力击·β型",
+          "explicitAttackHandler": false,
+          "description": "下次攻击的攻击力提高至185%",
+          "keys": [
+            "atk_scale"
+          ]
+        },
+        {
+          "id": "skchr_caper_2",
+          "name": "乐趣加倍",
+          "explicitAttackHandler": false,
+          "description": "攻击力+25%，每次攻击额外发射1个回旋投射物",
+          "keys": [
+            "atk",
+            "cnt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4137_udflow",
+      "name": "深巡",
+      "tier": 1,
+      "branch": "shotprotector",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_udflow_2",
+      "skills": [
+        {
+          "id": "skchr_udflow_1",
+          "name": "侵袭破坏应对",
+          "explicitAttackHandler": true,
+          "description": "攻击力+32%，防御力+32%",
+          "keys": [
+            "atk",
+            "def"
+          ]
+        },
+        {
+          "id": "skchr_udflow_2",
+          "name": "行动能力剥夺",
+          "explicitAttackHandler": false,
+          "description": "攻击距离加长，攻击力+30%，攻击速度+25，攻击变为向正前方发射的毒性鳍刺，能穿过3个目标且造成1秒停顿。",
+          "keys": [
+            "atk",
+            "mode",
+            "attack@sluggish",
+            "attack_speed",
+            "attack@max_target"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_469_indigo",
+      "name": "深靛",
+      "tier": 1,
+      "branch": "mystic",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": true,
+      "defaultSkill": "skchr_indigo_2",
+      "skills": [
+        {
+          "id": "skchr_indigo_1",
+          "name": "灯塔守卫者",
+          "explicitAttackHandler": true,
+          "description": "攻击范围改变，攻击间隔大幅度缩短，每次攻击造成相当于攻击力35%的法术伤害",
+          "keys": [
+            "attack@atk_scale",
+            "base_attack_time"
+          ]
+        },
+        {
+          "id": "skchr_indigo_2",
+          "name": "光影迷宫",
+          "explicitAttackHandler": true,
+          "description": "攻击间隔略微缩短，天赋的触发几率提升至2倍，攻击范围内处于束缚状态的敌人每{indigo_s_2[damage].interval}秒受到相当于深靛攻击力{indigo_s_2[damage].atk_scale:0%}的法术伤害",
+          "keys": [
+            "base_attack_time",
+            "talent_scale",
+            "indigo_s_2[damage].atk_scale",
+            "indigo_s_2[damage].interval"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_494_vendla",
+      "name": "刺玫",
+      "tier": 1,
+      "branch": "incantationmedic",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_vendla_2",
+      "skills": [
+        {
+          "id": "skcom_magic_rage[3]",
+          "name": "战术咏唱·γ型",
+          "explicitAttackHandler": true,
+          "description": "攻击速度+45",
+          "keys": [
+            "attack_speed"
+          ]
+        },
+        {
+          "id": "skchr_vendla_2",
+          "name": "荆藤庇荫",
+          "explicitAttackHandler": false,
+          "description": "攻击力+55%，使攻击范围内生命上限最高的友方角色更容易受到敌人攻击，且该角色受到攻击时刺玫对目标造成攻击力20%的法术伤害并仅对该角色触发刺玫特性",
+          "keys": [
+            "atk_scale",
+            "taunt_level",
+            "atk"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_496_wildmn",
+      "name": "野鬃",
+      "tier": 1,
+      "branch": "charger",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_wildmn_2",
+      "skills": [
+        {
+          "id": "skchr_wildmn_1",
+          "name": "骑枪刺击",
+          "explicitAttackHandler": false,
+          "description": "部署后攻击速度+80",
+          "keys": [
+            "attack_speed"
+          ]
+        },
+        {
+          "id": "skchr_wildmn_2",
+          "name": "夹枪冲锋",
+          "explicitAttackHandler": false,
+          "description": "攻击范围扩大，攻击力+45%，攻击会把目标往攻击方向中等力度地推开",
+          "keys": [
+            "atk",
+            "attack@force"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_498_inside",
+      "name": "隐现",
+      "tier": 1,
+      "branch": "fastshot",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_inside_2",
+      "skills": [
+        {
+          "id": "skchr_inside_1",
+          "name": "“不惹麻烦”",
+          "explicitAttackHandler": false,
+          "description": "每次攻击造成相当于攻击力185%的物理伤害\\n攻击装有4发弹药，打完后结束（可随时停止技能）",
+          "keys": [
+            "attack@atk_scale",
+            "attack@trigger_time"
+          ]
+        },
+        {
+          "id": "skchr_inside_2",
+          "name": "“解决麻烦”",
+          "explicitAttackHandler": false,
+          "description": "攻击力+80%，攻击间隔略微缩短，优先攻击使用远程武器的敌人并且不容易成为敌人的攻击目标\\n攻击装有14发弹药，打完后结束（可随时停止技能）",
+          "keys": [
+            "atk",
+            "base_attack_time",
+            "attack@trigger_time"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_108_silent",
+      "name": "赫默",
+      "tier": 2,
+      "branch": "physician",
+      "action": "heal",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_silent_2",
+      "skills": [
+        {
+          "id": "skcom_heal_up[3]",
+          "name": "治疗强化·γ型",
+          "explicitAttackHandler": true,
+          "description": "攻击力+55%",
+          "keys": [
+            "atk"
+          ]
+        },
+        {
+          "id": "skchr_silent_2",
+          "name": "医疗无人机",
+          "explicitAttackHandler": true,
+          "description": "获得一个医疗无人机\\n最多可库存1个无人机；无人机投入战场后治疗周围友军，10秒后自动销毁",
+          "keys": [
+            "cnt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_140_whitew",
+      "name": "拉普兰德",
+      "tier": 2,
+      "branch": "lord",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_whitew_2",
+      "skills": [
+        {
+          "id": "skchr_whitew_1",
+          "name": "日晷",
+          "explicitAttackHandler": false,
+          "description": "攻击力+43%，有25%的概率抵挡物理伤害\\n持续时间无限",
+          "keys": [
+            "atk",
+            "prob"
+          ]
+        },
+        {
+          "id": "skchr_whitew_2",
+          "name": "狼魂",
+          "explicitAttackHandler": true,
+          "description": "攻击力+75%，伤害类型变为法术，额外攻击一个目标，远程攻击不再降低攻击力\\n技能自动开启",
+          "keys": [
+            "atk"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_143_ghost",
+      "name": "幽灵鲨",
+      "tier": 2,
+      "branch": "centurion",
+      "action": "attack",
+      "shape": "blockCount",
+      "moduleAction": false,
+      "defaultSkill": "skchr_ghost_2",
+      "skills": [
+        {
+          "id": "skcom_atk_up[3]",
+          "name": "攻击力强化·γ型",
+          "explicitAttackHandler": true,
+          "description": "攻击力+45%",
+          "keys": [
+            "atk"
+          ]
+        },
+        {
+          "id": "skchr_ghost_2",
+          "name": "肉斩骨断",
+          "explicitAttackHandler": true,
+          "description": "技能持续期间内干员的生命值始终不会低于1，攻击力+70%\\n技能结束后干员晕眩10秒",
+          "keys": [
+            "atk",
+            "stun"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_181_flower",
+      "name": "调香师",
+      "tier": 2,
+      "branch": "ringhealer",
+      "action": "heal",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_flower_2",
+      "skills": [
+        {
+          "id": "skcom_heal_up[2]",
+          "name": "治疗强化·β型",
+          "explicitAttackHandler": true,
+          "description": "攻击力+30%",
+          "keys": [
+            "atk"
+          ]
+        },
+        {
+          "id": "skchr_flower_2",
+          "name": "精调",
+          "explicitAttackHandler": true,
+          "description": "攻击速度-{-attack_speed}，攻击力+180%",
+          "keys": [
+            "atk",
+            "attack_speed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_237_gravel",
+      "name": "砾",
+      "tier": 2,
+      "branch": "executor",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_gravel_2",
+      "skills": [
+        {
+          "id": "skchr_gravel_1",
+          "name": "影袭",
+          "explicitAttackHandler": false,
+          "description": "部署后防御力+270%，在7秒内持续衰减",
+          "keys": [
+            "def",
+            "duration"
+          ]
+        },
+        {
+          "id": "skchr_gravel_2",
+          "name": "鼠群",
+          "explicitAttackHandler": false,
+          "description": "部署后获得可吸收相当于自己最大生命140%的屏障，该屏障会在10秒内持续衰减",
+          "keys": [
+            "hp_ratio",
+            "duration"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_279_excu",
+      "name": "送葬人",
+      "tier": 2,
+      "branch": "reaperrange",
+      "action": "attack",
+      "shape": "rangeAll",
+      "moduleAction": false,
+      "defaultSkill": "skchr_excu_2",
+      "skills": [
+        {
+          "id": "skchr_excu_1",
+          "name": "铳口收束",
+          "explicitAttackHandler": false,
+          "description": "攻击力+35%，攻击时对攻击范围内的所有敌人应用特性加成",
+          "keys": [
+            "atk"
+          ]
+        },
+        {
+          "id": "skchr_excu_2",
+          "name": "最终旅程",
+          "explicitAttackHandler": false,
+          "description": "普通攻击变为二连击，且攻击间隔少量缩短",
+          "keys": [
+            "base_attack_time"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_381_bubble",
+      "name": "泡泡",
+      "tier": 2,
+      "branch": "protector",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_bubble_2",
+      "skills": [
+        {
+          "id": "skcom_def_up[2]",
+          "name": "防御力强化·β型",
+          "explicitAttackHandler": true,
+          "description": "防御力+35%",
+          "keys": [
+            "def"
+          ]
+        },
+        {
+          "id": "skchr_bubble_2",
+          "name": "“挨打”",
+          "explicitAttackHandler": false,
+          "description": "停止攻击敌人；防御力+65%，自身更易受敌人攻击，每次受到攻击时对目标造成相当于泡泡防御力40%的物理伤害",
+          "keys": [
+            "def",
+            "taunt_level",
+            "atk_scale"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4016_kazema",
+      "name": "风丸",
+      "tier": 2,
+      "branch": "dollkeeper",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": true,
+      "defaultSkill": "skchr_kazema_2",
+      "skills": [
+        {
+          "id": "skchr_kazema_1",
+          "name": "纸艺·迅击",
+          "explicitAttackHandler": true,
+          "description": "下次攻击的攻击力提高至235%，并使自身流失10%的生命",
+          "keys": [
+            "atk_scale",
+            "hp_ratio"
+          ]
+        },
+        {
+          "id": "skchr_kazema_2",
+          "name": "纸艺·双影",
+          "explicitAttackHandler": true,
+          "description": "立即流失50%当前生命，攻击力+70%，并在周围的近战部署位召唤协助作战",
+          "keys": [
+            "atk",
+            "hp_ratio"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4040_rockr",
+      "name": "洛洛",
+      "tier": 2,
+      "branch": "funnel",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_rockr_2",
+      "skills": [
+        {
+          "id": "skcom_magic_rage[3]",
+          "name": "战术咏唱·γ型",
+          "explicitAttackHandler": true,
+          "description": "攻击速度+45",
+          "keys": [
+            "attack_speed"
+          ]
+        },
+        {
+          "id": "skchr_rockr_2",
+          "name": "自负此轭",
+          "explicitAttackHandler": true,
+          "description": "攻击速度+45，释放浮游单元锁定敌人攻击\\n过载：特性浮游单元伤害上限提升至1.6倍，攻击力+40%，技能结束后晕眩过载持续时间的等长时间\\n浮游单元锁敌后直至敌人被击杀或技能结束后返回干员身边，可随时主动关闭技能",
+          "keys": [
+            "atk",
+            "attack_speed",
+            "attack@cnt",
+            "scale"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4114_harold",
+      "name": "哈洛德",
+      "tier": 2,
+      "branch": "wandermedic",
+      "action": "heal",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_harold_2",
+      "skills": [
+        {
+          "id": "skcom_heal_up[3]",
+          "name": "治疗强化·γ型",
+          "explicitAttackHandler": true,
+          "description": "攻击力+55%",
+          "keys": [
+            "atk"
+          ]
+        },
+        {
+          "id": "skchr_harold_2",
+          "name": "重症优先",
+          "explicitAttackHandler": false,
+          "description": "攻击速度+55，优先治疗元素损伤最严重的目标。治疗元素损伤累计超过一半的目标时，元素损伤回复量提升至160%",
+          "keys": [
+            "attack_speed",
+            "trait_scale"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4122_grabds",
+      "name": "小满",
+      "tier": 2,
+      "branch": "slower",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_grabds_2",
+      "skills": [
+        {
+          "id": "skchr_grabds_1",
+          "name": "竹笛飞声",
+          "explicitAttackHandler": false,
+          "description": "下次攻击造成相当于攻击力140%的法术伤害，并额外攻击一个敌人\\n可充能2次",
+          "keys": [
+            "atk_scale",
+            "ct"
+          ]
+        },
+        {
+          "id": "skchr_grabds_2",
+          "name": "乡音沉沉",
+          "explicitAttackHandler": false,
+          "description": "停止攻击敌人并使攻击范围内3个敌方单位沉睡4秒，之后攻击速度+45，且攻击3个敌人",
+          "keys": [
+            "max_target",
+            "sleep",
+            "attack_speed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4139_papyrs",
+      "name": "莎草",
+      "tier": 2,
+      "branch": "chainhealer",
+      "action": "heal",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_papyrs_1",
+      "skills": [
+        {
+          "id": "skchr_papyrs_1",
+          "name": "巧思乍现",
+          "explicitAttackHandler": true,
+          "description": "下次治疗时的治疗量提升至攻击力的160%，天赋附加屏障效果提升至150%\\n可充能2次",
+          "keys": [
+            "heal_scale",
+            "shield_scale_skill"
+          ]
+        },
+        {
+          "id": "skchr_papyrs_2",
+          "name": "临考发挥",
+          "explicitAttackHandler": true,
+          "description": "立刻锁定攻击范围内除自身外生命值上限最高的干员，技能期间莎草仅可以该干员作为治疗主目标，攻击间隔缩短，攻击力+20%，每次治疗跳跃次数+{attack@chain.extra_value} ",
+          "keys": [
+            "base_attack_time",
+            "atk",
+            "attack@chain.extra_value"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4151_tinman",
+      "name": "锡人",
+      "tier": 2,
+      "branch": "alchemist",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_tinman_2",
+      "skills": [
+        {
+          "id": "skchr_tinman_1",
+          "name": "“老科利”",
+          "explicitAttackHandler": false,
+          "description": "投掷一个炼金单元，在8秒内使落点周围的地面敌人获得{-atk:0%}的虚弱效果且每秒受到相当于攻击力45%的法术伤害",
+          "keys": [
+            "projectile_delay_time",
+            "atk",
+            "atk_scale",
+            "projectile_range"
+          ]
+        },
+        {
+          "id": "skchr_tinman_2",
+          "name": "“大拉里”",
+          "explicitAttackHandler": false,
+          "description": "投掷一个炼金单元，在11秒内使落点周围的地面敌人每秒受到相当于攻击力65%的法术伤害、友方单位每秒恢复相当于攻击力15%的生命\\n可充能1次",
+          "keys": [
+            "projectile_delay_time",
+            "hp_recovery_per_sec_ratio",
+            "atk_scale",
+            "projectile_range"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4191_tippi",
+      "name": "蒂比",
+      "tier": 2,
+      "branch": "skywalker",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_tippi_2",
+      "skills": [
+        {
+          "id": "skchr_tippi_1",
+          "name": "专业喷绘技巧",
+          "explicitAttackHandler": false,
+          "description": "立刻起飞，攻击范围扩大，攻击力+45%",
+          "keys": [
+            "atk",
+            "attack@height_offset"
+          ]
+        },
+        {
+          "id": "skchr_tippi_2",
+          "name": "紧急赶场通知",
+          "explicitAttackHandler": false,
+          "description": "立刻起飞，攻击范围扩大，攻击力+20%，攻击变为3连射\\n受到攻击后触发，并闪避本次物理或法术伤害",
+          "keys": [
+            "atk",
+            "attack@height_offset"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4207_branch",
+      "name": "折桠",
+      "tier": 2,
+      "branch": "unyield",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_branch_2",
+      "skills": [
+        {
+          "id": "skchr_branch_1",
+          "name": "绝境抵抗",
+          "explicitAttackHandler": false,
+          "description": "防御力+75%，获得抵抗",
+          "keys": [
+            "def",
+            "one_minus_status_resistance"
+          ]
+        },
+        {
+          "id": "skchr_branch_2",
+          "name": "生存决心",
+          "explicitAttackHandler": false,
+          "description": "技能开启时使自身周围的地面敌人战栗5秒；攻击力+100%，防御力+30%，同时攻击阻挡的所有敌人",
+          "keys": [
+            "atk",
+            "not_combat",
+            "def"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_431_ashlok",
+      "name": "灰毫",
+      "tier": 2,
+      "branch": "fortress",
+      "action": "attack",
+      "shape": "splash",
+      "moduleAction": false,
+      "defaultSkill": "skcom_atk_up[3]",
+      "skills": [
+        {
+          "id": "skcom_atk_up[3]",
+          "name": "攻击力强化·γ型",
+          "explicitAttackHandler": true,
+          "description": "攻击力+45%",
+          "keys": [
+            "atk"
+          ]
+        },
+        {
+          "id": "skchr_ashlok_2",
+          "name": "专注轰击",
+          "explicitAttackHandler": false,
+          "description": "阻挡数变为0，只进行远程攻击，攻击间隔一定程度缩短，攻击力+25%",
+          "keys": [
+            "atk",
+            "base_attack_time"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_491_humus",
+      "name": "休谟斯",
+      "tier": 2,
+      "branch": "reaper",
+      "action": "attack",
+      "shape": "rangeAll",
+      "moduleAction": false,
+      "defaultSkill": "skchr_humus_2",
+      "skills": [
+        {
+          "id": "skchr_humus_1",
+          "name": "固废切割",
+          "explicitAttackHandler": false,
+          "description": "下次攻击的攻击力提升至190%，并额外回复自身60生命值",
+          "keys": [
+            "atk_scale",
+            "value"
+          ]
+        },
+        {
+          "id": "skchr_humus_2",
+          "name": "高效处理",
+          "explicitAttackHandler": false,
+          "description": "技能持续时间内阻挡数+1，生命值高于{humus_s_2[peak_1].peak_performance.hp_ratio:0%}时，获得+{humus_s_2[peak_1].peak_performance.atk:0%}攻击力的精力充沛；高于{humus_s_2[peak_2].peak_performance.hp_ratio:0%}时效果翻倍",
+          "keys": [
+            "humus_s_2[peak_1].peak_performance.atk",
+            "humus_s_2[peak_1].peak_performance.hp_ratio",
+            "humus_s_2[peak_2].peak_performance.atk",
+            "humus_s_2[peak_2].peak_performance.hp_ratio",
+            "block_cnt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_103_angel",
+      "name": "能天使",
+      "tier": 3,
+      "branch": "fastshot",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_angel_3",
+      "skills": [
+        {
+          "id": "skchr_angel_1",
+          "name": "冲锋模式",
+          "explicitAttackHandler": true,
+          "description": "下次攻击变为3连射，每次射击造成相当于攻击力113%的伤害",
+          "keys": [
+            "atk_scale",
+            "times"
+          ]
+        },
+        {
+          "id": "skchr_angel_2",
+          "name": "扫射模式",
+          "explicitAttackHandler": true,
+          "description": "攻击变为4连射，每次射击造成相当于攻击力105%的伤害",
+          "keys": [
+            "attack@atk_scale",
+            "attack@times"
+          ]
+        },
+        {
+          "id": "skchr_angel_3",
+          "name": "过载模式",
+          "explicitAttackHandler": true,
+          "description": "攻击变为5连射，攻击间隔略微缩短\\n技能会自动开启",
+          "keys": [
+            "attack@atk_scale",
+            "attack@times",
+            "base_attack_time"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_1033_swire2",
+      "name": "琳琅诗怀雅",
+      "tier": 3,
+      "branch": "merchant",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_swire2_2",
+      "skills": [
+        {
+          "id": "skchr_swire2_1",
+          "name": "仗义疏财",
+          "explicitAttackHandler": false,
+          "description": "消耗一枚金币，下一次攻击会为周围八格内血量不足70%的一名友方单位恢复相当于攻击力40%的生命\\n携带此技能时金币上限为2",
+          "keys": [
+            "attack@heal_scale",
+            "sp",
+            "attack@sp"
+          ]
+        },
+        {
+          "id": "skchr_swire2_2",
+          "name": "“见面礼”",
+          "explicitAttackHandler": false,
+          "description": "消耗一枚金币在范围内一个可放置且可通行的地面放置香槟炸弹，香槟炸弹会对触碰到的首个敌人造成相当于攻击力155%的物理伤害，并使目标停顿2秒\\n香槟炸弹在场3秒后可额外造成一次伤害；携带此技能时金币上限为3",
+          "keys": [
+            "sp",
+            "atk_scale",
+            "sluggish",
+            "attack@sp"
+          ]
+        },
+        {
+          "id": "skchr_swire2_3",
+          "name": "千金一掷",
+          "explicitAttackHandler": false,
+          "description": "攻击变为二连击，击倒敌人时获得一枚金币；主动关闭技能时消耗所有金币对前方范围内敌人随机攻击，每消耗一枚金币造成一次相当于攻击力100%的物理伤害，并将目标小力地向前推开\\n持续时间无限，可随时主动关闭技能；携带此技能时金币上限为10",
+          "keys": [
+            "atk_scale",
+            "force",
+            "sp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_126_shotst",
+      "name": "流星",
+      "tier": 3,
+      "branch": "fastshot",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_shotst_2",
+      "skills": [
+        {
+          "id": "skchr_shotst_1",
+          "name": "碎甲击",
+          "explicitAttackHandler": true,
+          "description": "下一次攻击造成相当于攻击力135%的物理伤害，5秒内使命中目标的防御力-{-def:0%}",
+          "keys": [
+            "atk_scale",
+            "def",
+            "duration"
+          ]
+        },
+        {
+          "id": "skchr_shotst_2",
+          "name": "碎甲击·扩散",
+          "explicitAttackHandler": true,
+          "description": "立即对攻击范围内至多5个敌人造成相当于攻击力155%的物理伤害，5秒内使命中目标的防御力-{-def:0%}",
+          "keys": [
+            "atk_scale",
+            "def",
+            "duration"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_150_snakek",
+      "name": "蛇屠箱",
+      "tier": 3,
+      "branch": "protector",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_snakek_2",
+      "skills": [
+        {
+          "id": "skcom_def_up[2]",
+          "name": "防御力强化·β型",
+          "explicitAttackHandler": true,
+          "description": "防御力+35%",
+          "keys": [
+            "def"
+          ]
+        },
+        {
+          "id": "skchr_snakek_2",
+          "name": "壳状防御",
+          "explicitAttackHandler": false,
+          "description": "停止攻击敌人；阻挡数+1，防御力+75%，每秒恢复最大生命的1%",
+          "keys": [
+            "def",
+            "block_cnt",
+            "hp_recovery_per_sec_by_max_hp_ratio"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_174_slbell",
+      "name": "初雪",
+      "tier": 3,
+      "branch": "underminer",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_slbell_2",
+      "skills": [
+        {
+          "id": "skchr_slbell_1",
+          "name": "传音回响",
+          "explicitAttackHandler": false,
+          "description": "同时攻击2个目标，攻击范围内所有敌人攻击速度-{-attack_speed}",
+          "keys": [
+            "attack_speed",
+            "attack@max_target"
+          ]
+        },
+        {
+          "id": "skchr_slbell_2",
+          "name": "自然震慑",
+          "explicitAttackHandler": false,
+          "description": "攻击范围内所有敌人防御力-{-def:0%}，法术抗性-{-magic_resistance:0%}",
+          "keys": [
+            "def",
+            "magic_resistance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_263_skadi",
+      "name": "斯卡蒂",
+      "tier": 3,
+      "branch": "fearless",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_skadi_3",
+      "skills": [
+        {
+          "id": "skcom_quickattack[3]",
+          "name": "迅捷打击·γ型",
+          "explicitAttackHandler": true,
+          "description": "攻击力+27%，攻击速度+25",
+          "keys": [
+            "atk",
+            "attack_speed"
+          ]
+        },
+        {
+          "id": "skchr_skadi_2",
+          "name": "跃浪击",
+          "explicitAttackHandler": false,
+          "description": "部署后20秒内攻击力+100%",
+          "keys": [
+            "atk",
+            "duration"
+          ]
+        },
+        {
+          "id": "skchr_skadi_3",
+          "name": "涌潮悲歌",
+          "explicitAttackHandler": false,
+          "description": "攻击力、防御力和生命上限各+85%",
+          "keys": [
+            "atk",
+            "def",
+            "max_hp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_294_ayer",
+      "name": "断崖",
+      "tier": 3,
+      "branch": "lord",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_ayer_2",
+      "skills": [
+        {
+          "id": "skchr_ayer_1",
+          "name": "多导向散射弹丸",
+          "explicitAttackHandler": false,
+          "description": "下次攻击对攻击范围内最多2名敌人造成攻击力125%的法术伤害，并使目标停顿1秒",
+          "keys": [
+            "atk_scale",
+            "sluggish",
+            "max_target"
+          ]
+        },
+        {
+          "id": "skchr_ayer_2",
+          "name": "浮游刃启动",
+          "explicitAttackHandler": false,
+          "description": "攻击范围扩大，伤害类型变为法术；每次攻击时，额外对周围8格友方单位阻挡的所有敌人造成相当于攻击力100%的法术伤害(均视为近战攻击）",
+          "keys": [
+            "attack@atk_scale",
+            "atk_scale"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_308_swire",
+      "name": "诗怀雅",
+      "tier": 3,
+      "branch": "instructor",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_swire_2",
+      "skills": [
+        {
+          "id": "skchr_swire_1",
+          "name": "指挥调度",
+          "explicitAttackHandler": false,
+          "description": "第一天赋生效范围扩大，效果提升至2倍",
+          "keys": [
+            "talent_scale",
+            "talent_range_flag"
+          ]
+        },
+        {
+          "id": "skchr_swire_2",
+          "name": "协同作战",
+          "explicitAttackHandler": false,
+          "description": "攻击力+40%，第一天赋效果提升至2.4倍",
+          "keys": [
+            "talent_scale",
+            "atk"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_332_archet",
+      "name": "空弦",
+      "tier": 3,
+      "branch": "fastshot",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_archet_3",
+      "skills": [
+        {
+          "id": "skchr_archet_1",
+          "name": "箭矢·散逸",
+          "explicitAttackHandler": false,
+          "description": "下次攻击造成相当于攻击力185%的物理伤害，并额外选择目标周围最多3名其他敌人造成攻击力135%的物理伤害",
+          "keys": [
+            "atk_scale",
+            "atk_scale_2",
+            "max_target",
+            "show_max_target"
+          ]
+        },
+        {
+          "id": "skchr_archet_2",
+          "name": "箭矢·追猎",
+          "explicitAttackHandler": false,
+          "description": "立即发射箭矢对目标进行攻击力114%的5次攻击，可弹射至目标周围的下一个未选择过的敌人（每次弹射减少1次攻击次数）；可充能1次",
+          "keys": [
+            "atk_scale",
+            "times",
+            "cnt"
+          ]
+        },
+        {
+          "id": "skchr_archet_3",
+          "name": "箭矢·暴风",
+          "explicitAttackHandler": false,
+          "description": "攻击力+10%，攻击距离+1，攻击变为3连击，每次可以攻击2个敌人",
+          "keys": [
+            "atk",
+            "ability_range_forward_extend",
+            "attack@max_target",
+            "attack@times"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_388_mint",
+      "name": "薄绿",
+      "tier": 3,
+      "branch": "phalanx",
+      "action": "phalanx",
+      "shape": "rangeAll",
+      "moduleAction": false,
+      "defaultSkill": "skchr_mint_2",
+      "skills": [
+        {
+          "id": "skchr_mint_1",
+          "name": "风语",
+          "explicitAttackHandler": false,
+          "description": "攻击范围扩大，攻击造成相当于攻击力125%的法术伤害",
+          "keys": [
+            "attack@atk_scale"
+          ]
+        },
+        {
+          "id": "skchr_mint_2",
+          "name": "聚能涡旋",
+          "explicitAttackHandler": false,
+          "description": "每次攻击把目标小力地拖拽至面前，并造成相当于攻击力110%的法术伤害。技能结束时对攻击范围内所有敌人造成相当于攻击力210%的法术伤害",
+          "keys": [
+            "attack@atk_scale",
+            "atk_scale",
+            "attack@force"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4013_kjera",
+      "name": "耶拉",
+      "tier": 3,
+      "branch": "funnel",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_kjera_2",
+      "skills": [
+        {
+          "id": "skcom_atk_up[3]",
+          "name": "攻击力强化·γ型",
+          "explicitAttackHandler": true,
+          "description": "攻击力+45%",
+          "keys": [
+            "atk"
+          ]
+        },
+        {
+          "id": "skchr_kjera_2",
+          "name": "心随意动",
+          "explicitAttackHandler": false,
+          "description": "浮游单元+1，释放浮游单元锁定敌人攻击，攻击力+29%，自身与浮游单元攻击有15%概率对敌人造成2.5秒寒冷。\\n浮游单元锁敌后直至敌人被击杀或技能结束后返回干员身边",
+          "keys": [
+            "atk",
+            "attack@cnt",
+            "attack@prob",
+            "attack@cold"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4026_vulpis",
+      "name": "忍冬",
+      "tier": 3,
+      "branch": "pioneer",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_vulpis_3",
+      "skills": [
+        {
+          "id": "skchr_vulpis_1",
+          "name": "小施惩戒",
+          "explicitAttackHandler": false,
+          "description": "下次攻击额外造成攻击力215%的法术伤害，并获得1点部署费用\\n可充能3次",
+          "keys": [
+            "cost",
+            "extra_damage_ratio",
+            "ct"
+          ]
+        },
+        {
+          "id": "skchr_vulpis_2",
+          "name": "坠刃拷问",
+          "explicitAttackHandler": false,
+          "description": "立即获得5点部署费用，对周围最多6名敌人造成相当于攻击力200%的法术伤害，并令击中目标停顿4.5秒；若敌人已经处于停顿状态，则额外使敌人晕眩4秒\\n可充能2次",
+          "keys": [
+            "max_target",
+            "atk_scale",
+            "cost",
+            "sluggish",
+            "stun",
+            "ct"
+          ]
+        },
+        {
+          "id": "skchr_vulpis_3",
+          "name": "隐狐之艺",
+          "explicitAttackHandler": false,
+          "description": "技能开启时立即获得7点部署费用，攻击距离+1，攻击力+65%，攻击速度从+160逐渐衰减至+0，同时攻击阻挡的所有敌人，每次攻击晕眩敌人0.2秒\\n若技能期间击倒敌人，则技能结束时进入迷彩状态，直至下一次开启技能",
+          "keys": [
+            "cost",
+            "atk",
+            "attack_speed",
+            "attack@stun"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4054_malist",
+      "name": "至简",
+      "tier": 3,
+      "branch": "funnel",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_malist_2",
+      "skills": [
+        {
+          "id": "skcom_quickattack[3]",
+          "name": "迅捷打击·γ型",
+          "explicitAttackHandler": true,
+          "description": "攻击力+27%，攻击速度+25",
+          "keys": [
+            "atk",
+            "attack_speed"
+          ]
+        },
+        {
+          "id": "skchr_malist_2",
+          "name": "神工意匠",
+          "explicitAttackHandler": false,
+          "description": "下次攻击造成相当于攻击力130%的法术伤害，并连续攻击两次\\n可充能2次",
+          "keys": [
+            "atk_scale",
+            "ct"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4079_haini",
+      "name": "海霓",
+      "tier": 3,
+      "branch": "underminer",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_haini_2",
+      "skills": [
+        {
+          "id": "skchr_haini_1",
+          "name": "迷惑性洋流图",
+          "explicitAttackHandler": false,
+          "description": "下次攻击的攻击力提升至125%，并同时攻击4个敌人",
+          "keys": [
+            "atk_scale",
+            "max_target"
+          ]
+        },
+        {
+          "id": "skchr_haini_2",
+          "name": "阻滞性显色剂",
+          "explicitAttackHandler": false,
+          "description": "攻击力+30%，额外攻击一个目标，攻击范围内的非精英和领袖敌人移动速度-40%，且被击倒时使天赋效果提升0.4倍，最多提升至2.6倍，持续至技能结束",
+          "keys": [
+            "atk",
+            "attack@move_speed",
+            "attack@talent_up",
+            "attack@max_talent_up",
+            "attack@max_target"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4148_philae",
+      "name": "菲莱",
+      "tier": 3,
+      "branch": "primprotector",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_philae_2",
+      "skills": [
+        {
+          "id": "skchr_philae_1",
+          "name": "灵河护佑",
+          "explicitAttackHandler": false,
+          "description": "生命上限+45%，立刻清除自身的元素损伤并获得900点损伤屏障",
+          "keys": [
+            "max_hp",
+            "shield_value"
+          ]
+        },
+        {
+          "id": "skchr_philae_2",
+          "name": "冥河诅咒",
+          "explicitAttackHandler": false,
+          "description": "停止攻击，生命上限+40%，受到攻击时对周围的地面敌人造成攻击力110%的法术伤害并附带25%攻击力的凋亡损伤（每2秒最多触发一次）；若技能期间受到元素损伤则攻击力+70%至技能结束",
+          "keys": [
+            "atk_scale",
+            "ep_damage_ratio",
+            "atk",
+            "aoe_cd",
+            "max_hp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4211_snhunt",
+      "name": "雪猎",
+      "tier": 3,
+      "branch": "hunter",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": true,
+      "defaultSkill": "skchr_snhunt_2",
+      "skills": [
+        {
+          "id": "skchr_snhunt_1",
+          "name": "强力击·β型",
+          "explicitAttackHandler": true,
+          "description": "下次攻击的攻击力提高至185%",
+          "keys": [
+            "atk_scale"
+          ]
+        },
+        {
+          "id": "skchr_snhunt_2",
+          "name": "风雪连弩",
+          "explicitAttackHandler": true,
+          "description": "立即使用特殊子弹发动相当于攻击力160%的两连击（对非移动敌人提升至185%）\\n可充能1次",
+          "keys": [
+            "atk_scale_1",
+            "atk_scale_2",
+            "ct"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_423_blemsh",
+      "name": "瑕光",
+      "tier": 3,
+      "branch": "guardian",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_blemsh_3",
+      "skills": [
+        {
+          "id": "skchr_blemsh_1",
+          "name": "光芒涌动",
+          "explicitAttackHandler": false,
+          "description": "下次攻击造成相当于攻击力200%的物理伤害，且恢复周围一名友方单位相当于攻击力110%的生命\\n可充能1次",
+          "keys": [
+            "atk_scale",
+            "heal_scale",
+            "ct"
+          ]
+        },
+        {
+          "id": "skchr_blemsh_2",
+          "name": "慑敌辉光",
+          "explicitAttackHandler": false,
+          "description": "攻击力+55%，立即使自身这格内的所有地面敌人陷入沉睡，且周围的所有友方单位每秒恢复相当于攻击力16%的生命值",
+          "keys": [
+            "atk",
+            "attack@atk_to_hp_recovery_ratio"
+          ]
+        },
+        {
+          "id": "skchr_blemsh_3",
+          "name": "先贤化身",
+          "explicitAttackHandler": false,
+          "description": "攻击力+65%，防御力+25%，每次攻击额外造成相当于攻击力{attack@blemsh_s_3_extra_dmg[magic].atk_scale:0%}的法术伤害，并恢复周围一名其他友方单位相当于攻击力70%的生命",
+          "keys": [
+            "atk",
+            "def",
+            "attack@blemsh_s_3_extra_dmg[magic].atk_scale",
+            "heal_scale"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_427_vigil",
+      "name": "伺夜",
+      "tier": 3,
+      "branch": "tactician",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": true,
+      "defaultSkill": "skchr_vigil_3",
+      "skills": [
+        {
+          "id": "skchr_vigil_1",
+          "name": "领袖的呼唤",
+          "explicitAttackHandler": true,
+          "description": "立即获得7点部署费用，并增加一只“狼影”",
+          "keys": [
+            "cost"
+          ]
+        },
+        {
+          "id": "skchr_vigil_2",
+          "name": "领袖的馈赠",
+          "explicitAttackHandler": true,
+          "description": "立即获得2点部署费用，并使狼群下次攻击的攻击力提升至{vigil_wolf_s_2.atk_scale:0%}且狼群恢复{vigil_wolf_s_2.hp_ratio:0%}生命值；若狼群击倒敌人则额外获得{vigil_wolf_s_2.cost}点部署费用",
+          "keys": [
+            "cost",
+            "vigil_wolf_s_2.atk_scale",
+            "vigil_wolf_s_2.hp_ratio",
+            "vigil_wolf_s_2.cost"
+          ]
+        },
+        {
+          "id": "skchr_vigil_3",
+          "name": "领袖的尊严",
+          "explicitAttackHandler": true,
+          "description": "技能持续时间内逐渐获得10点部署费用，攻击变为三连击；狼群与伺夜攻击被狼群阻挡的单位造成伤害时，额外造成相当于伺夜攻击力{attack@vigil_s_3.atk_scale:0%}的法术伤害",
+          "keys": [
+            "attack@vigil_s_3.atk_scale",
+            "value",
+            "interval",
+            "cost"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_440_pinecn",
+      "name": "松果",
+      "tier": 3,
+      "branch": "reaperrange",
+      "action": "attack",
+      "shape": "rangeAll",
+      "moduleAction": false,
+      "defaultSkill": "skchr_pinecn_2",
+      "skills": [
+        {
+          "id": "skchr_pinecn_1",
+          "name": "RMA长钉",
+          "explicitAttackHandler": false,
+          "description": "立即以165%的攻击力进行一次攻击，无视敌人180的防御力\\n可充能2次",
+          "keys": [
+            "atk_scale",
+            "def_penetrate_fixed",
+            "cnt"
+          ]
+        },
+        {
+          "id": "skchr_pinecn_2",
+          "name": "电能过载",
+          "explicitAttackHandler": false,
+          "description": "攻击力+{pinecn_s_2[a].atk:0%}，攻击范围缩短；每使用过一次技能额外追加攻击力+20%的效果（最多+60%）",
+          "keys": [
+            "pinecn_s_2[a].atk",
+            "pinecn_s_2[b].atk",
+            "pinecn_s_2[c].atk",
+            "pinecn_s_2[d].atk"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_1021_kroos2",
+      "name": "寒芒克洛丝",
+      "tier": 4,
+      "branch": "fastshot",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_kroos2_2",
+      "skills": [
+        {
+          "id": "skchr_kroos2_1",
+          "name": "无痕",
+          "explicitAttackHandler": false,
+          "description": "攻击力+20%，攻击变为2连射，并获得迷彩",
+          "keys": [
+            "atk"
+          ]
+        },
+        {
+          "id": "skchr_kroos2_2",
+          "name": "封喉",
+          "explicitAttackHandler": false,
+          "description": "攻击间隔少量缩短，攻击变为2连射，击中目标40次后技能剩余时间内攻击变为4连射",
+          "keys": [
+            "base_attack_time",
+            "attack@max_stack_count"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_1026_gvial2",
+      "name": "百炼嘉维尔",
+      "tier": 4,
+      "branch": "centurion",
+      "action": "attack",
+      "shape": "blockCount",
+      "moduleAction": false,
+      "defaultSkill": "skchr_gvial2_3",
+      "skills": [
+        {
+          "id": "skchr_gvial2_1",
+          "name": "精准痛击",
+          "explicitAttackHandler": false,
+          "description": "攻击力+45%，每次攻击治疗自身相当于造成伤害30%的生命值",
+          "keys": [
+            "atk",
+            "heal_scale"
+          ]
+        },
+        {
+          "id": "skchr_gvial2_2",
+          "name": "链锯强袭",
+          "explicitAttackHandler": false,
+          "description": "攻击范围扩大，攻击力+110%，防御力+35%；攻击到未被阻挡的敌人时，将其中等力度地拖拽至面前",
+          "keys": [
+            "atk",
+            "def",
+            "block_cnt",
+            "attack@force"
+          ]
+        },
+        {
+          "id": "skchr_gvial2_3",
+          "name": "丛林之魂",
+          "explicitAttackHandler": false,
+          "description": "攻击力+85%，攻击速度+60，阻挡数+2，技能期间暂时只受到50%的伤害，其余伤害延后至技能结束，变为持续20秒等量的生命流失效果",
+          "keys": [
+            "atk",
+            "attack_speed",
+            "damage_resistance",
+            "final_duration",
+            "interval",
+            "priority",
+            "block_cnt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_1028_texas2",
+      "name": "缄默德克萨斯",
+      "tier": 4,
+      "branch": "executor",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_texas2_3",
+      "skills": [
+        {
+          "id": "skchr_texas2_1",
+          "name": "细雨无声",
+          "explicitAttackHandler": false,
+          "description": "部署后攻击力+40%，攻击使命中目标失去特殊能力5秒，期间目标每秒受到{attack@texas2_s_1[dot].dot_damage}点法术伤害",
+          "keys": [
+            "atk",
+            "attack@texas2_s_1[dot].duration",
+            "attack@texas2_s_1[dot].dot_damage",
+            "attack@texas2_s_1[dot].interval",
+            "attack@silence"
+          ]
+        },
+        {
+          "id": "skchr_texas2_2",
+          "name": "阵雨连绵",
+          "explicitAttackHandler": false,
+          "description": "部署后立即对周围所有敌人造成相当于攻击力150%的法术伤害，并使命中目标在8秒内法术抗性-{-magic_resistance:0%}；攻击力+30%，攻击变为二连击并造成法术伤害",
+          "keys": [
+            "atk",
+            "magic_resistance",
+            "atk_scale",
+            "debuff_duration"
+          ]
+        },
+        {
+          "id": "skchr_texas2_3",
+          "name": "剑雨滂沱",
+          "explicitAttackHandler": false,
+          "description": "部署后立即对周围所有敌人造成两次相当于攻击力{appear.atk_scale:0%}的法术伤害并使目标晕眩{appear.stun}秒，之后每秒释放剑雨攻击范围内最多2个不同的目标，造成攻击力85%的法术伤害和0.2秒晕眩",
+          "keys": [
+            "atk_scale",
+            "stun",
+            "max_target",
+            "texas2_s_3[sword].interval",
+            "appear.atk_scale",
+            "appear.stun"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_128_plosis",
+      "name": "白面鸮",
+      "tier": 4,
+      "branch": "ringhealer",
+      "action": "heal",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_plosis_2",
+      "skills": [
+        {
+          "id": "skcom_heal_up[3]",
+          "name": "治疗强化·γ型",
+          "explicitAttackHandler": true,
+          "description": "攻击力+55%",
+          "keys": [
+            "atk"
+          ]
+        },
+        {
+          "id": "skchr_plosis_2",
+          "name": "脑啡肽",
+          "explicitAttackHandler": true,
+          "description": "攻击范围扩大，攻击间隔较大幅度缩短",
+          "keys": [
+            "base_attack_time"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_136_hsguma",
+      "name": "星熊",
+      "tier": 4,
+      "branch": "protector",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_hsguma_2",
+      "skills": [
+        {
+          "id": "skchr_hsguma_1",
+          "name": "战意",
+          "explicitAttackHandler": true,
+          "description": "防御力+50%，攻击力+20%",
+          "keys": [
+            "atk",
+            "def"
+          ]
+        },
+        {
+          "id": "skchr_hsguma_2",
+          "name": "荆棘",
+          "explicitAttackHandler": false,
+          "description": "防御力+13%\\n每次受到攻击时对目标造成相当于星熊攻击力65%的物理伤害",
+          "keys": [
+            "atk_scale",
+            "def"
+          ]
+        },
+        {
+          "id": "skchr_hsguma_3",
+          "name": "力之锯",
+          "explicitAttackHandler": false,
+          "description": "攻击力+80%，防御力+50%，对前方一格的所有敌人使用盾牌进行切割",
+          "keys": [
+            "atk",
+            "def"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_171_bldsk",
+      "name": "华法琳",
+      "tier": 4,
+      "branch": "physician",
+      "action": "heal",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_bldsk_1",
+      "skills": [
+        {
+          "id": "skchr_bldsk_1",
+          "name": "紧急包扎",
+          "explicitAttackHandler": true,
+          "description": "下次治疗额外回复目标最大生命值的15%\\n只当目标生命值不满一半时才会触发，可充能2次",
+          "keys": [
+            "hp_ratio",
+            "ct"
+          ]
+        },
+        {
+          "id": "skchr_bldsk_2",
+          "name": "不稳定血浆",
+          "explicitAttackHandler": true,
+          "description": "自身和攻击范围内随机一名我方单位获得以下状态：\\n攻击力+45%，每秒流失3%最大生命值，持续15秒",
+          "keys": [
+            "atk",
+            "hp_ratio",
+            "interval",
+            "duration"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_172_svrash",
+      "name": "银灰",
+      "tier": 4,
+      "branch": "lord",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_svrash_3",
+      "skills": [
+        {
+          "id": "skchr_svrash_1",
+          "name": "强力击·γ型",
+          "explicitAttackHandler": true,
+          "description": "下次攻击的攻击力提高至205%",
+          "keys": [
+            "atk_scale"
+          ]
+        },
+        {
+          "id": "skchr_svrash_2",
+          "name": "雪境生存法则",
+          "explicitAttackHandler": false,
+          "description": "可以在下列状态和初始状态间切换：\\n攻击范围缩小，防御力+50%，每秒恢复最大生命的0.0%",
+          "keys": [
+            "def",
+            "hp_recovery_per_sec_by_max_hp_ratio"
+          ]
+        },
+        {
+          "id": "skchr_svrash_3",
+          "name": "真银斩",
+          "explicitAttackHandler": true,
+          "description": "防御力-{-def:0%}，攻击力+125%，攻击范围扩大，同时攻击至多4个目标（视为近距离攻击）",
+          "keys": [
+            "def",
+            "atk",
+            "attack@max_target"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_206_gnosis",
+      "name": "灵知",
+      "tier": 4,
+      "branch": "underminer",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_gnosis_2",
+      "skills": [
+        {
+          "id": "skchr_gnosis_1",
+          "name": "高速思考",
+          "explicitAttackHandler": false,
+          "description": "下次攻击连续攻击两次，每次造成相当于攻击力135%的法术伤害",
+          "keys": [
+            "atk_scale"
+          ]
+        },
+        {
+          "id": "skchr_gnosis_2",
+          "name": "零度爆发",
+          "explicitAttackHandler": false,
+          "description": "对范围内所有敌人造成2.5秒寒冷和相当于攻击力130%的法术伤害；蓄力：额外造成一层寒冷",
+          "keys": [
+            "atk_scale",
+            "cold"
+          ]
+        },
+        {
+          "id": "skchr_gnosis_3",
+          "name": "失温症",
+          "explicitAttackHandler": false,
+          "description": "攻击速度+120，同时攻击2个敌人；范围内所有敌人的冻结延长至技能结束，且技能结束时对所有冻结的敌人造成300%的法术伤害并结束冻结；优先攻击未冻结的单位",
+          "keys": [
+            "atk_scale",
+            "attack_speed",
+            "max_target"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_213_mostma",
+      "name": "莫斯提马",
+      "tier": 4,
+      "branch": "splashcaster",
+      "action": "attack",
+      "shape": "splash",
+      "moduleAction": false,
+      "defaultSkill": "skchr_mostma_3",
+      "skills": [
+        {
+          "id": "skcom_atk_up[3]",
+          "name": "攻击力强化·γ型",
+          "explicitAttackHandler": true,
+          "description": "攻击力+45%",
+          "keys": [
+            "atk"
+          ]
+        },
+        {
+          "id": "skchr_mostma_2",
+          "name": "荒时之锁",
+          "explicitAttackHandler": true,
+          "description": "攻击范围内的敌人全部晕眩，且每秒受到攻击力100%的法术伤害",
+          "keys": [
+            "atk_scale"
+          ]
+        },
+        {
+          "id": "skchr_mostma_3",
+          "name": "序时之匙",
+          "explicitAttackHandler": false,
+          "description": "攻击范围扩大，攻击变为向外扩散的波纹，攻击力+90%，第二天赋的效果提升至3倍，小力度地击退攻击目标",
+          "keys": [
+            "atk",
+            "attack@force",
+            "talent_scale",
+            "base_attack_time"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_222_bpipe",
+      "name": "风笛",
+      "tier": 4,
+      "branch": "charger",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_bpipe_2",
+      "skills": [
+        {
+          "id": "skcom_quickattack[3]",
+          "name": "迅捷打击·γ型",
+          "explicitAttackHandler": true,
+          "description": "攻击力+27%，攻击速度+25",
+          "keys": [
+            "atk",
+            "attack_speed"
+          ]
+        },
+        {
+          "id": "skchr_bpipe_2",
+          "name": "高效冲击",
+          "explicitAttackHandler": true,
+          "description": "下一次的攻击力提升至145%，且额外攻击一次\\n可充能1次",
+          "keys": [
+            "atk_scale",
+            "cnt"
+          ]
+        },
+        {
+          "id": "skchr_bpipe_3",
+          "name": "闭膛连发",
+          "explicitAttackHandler": true,
+          "description": "攻击间隔增大，阻挡数+1，攻击力和防御力+60%，攻击变为三连击",
+          "keys": [
+            "atk",
+            "def",
+            "base_attack_time",
+            "block_cnt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_311_mudrok",
+      "name": "泥岩",
+      "tier": 4,
+      "branch": "unyield",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_mudrok_2",
+      "skills": [
+        {
+          "id": "skcom_def_up[3]",
+          "name": "防御力强化·γ型",
+          "explicitAttackHandler": true,
+          "description": "防御力+45%",
+          "keys": [
+            "def"
+          ]
+        },
+        {
+          "id": "skchr_mudrok_2",
+          "name": "岩崩锤",
+          "explicitAttackHandler": false,
+          "description": "下次攻击时回复自身4%的最大生命，对周围所有地面敌人造成相当于攻击力190%的物理伤害，并有30%的几率晕眩其0.5秒",
+          "keys": [
+            "atk_scale",
+            "buff_prob",
+            "stun",
+            "hp_ratio"
+          ]
+        },
+        {
+          "id": "skchr_mudrok_3",
+          "name": "秽壤的血脉",
+          "explicitAttackHandler": false,
+          "description": "技能开启后无法行动且不受到伤害10秒并使周围敌人移动速度-{-move_speed:0%}；该状态结束后晕眩周围地面敌人3秒，攻击间隔缩短，攻击力+85%，防御力+40%，攻击阻挡的所有敌人",
+          "keys": [
+            "atk",
+            "def",
+            "move_speed",
+            "sleep",
+            "awake",
+            "base_attack_time",
+            "stun"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_373_lionhd",
+      "name": "莱恩哈特",
+      "tier": 4,
+      "branch": "splashcaster",
+      "action": "attack",
+      "shape": "splash",
+      "moduleAction": false,
+      "defaultSkill": "skchr_lionhd_2",
+      "skills": [
+        {
+          "id": "skcom_atk_up[3]",
+          "name": "攻击力强化·γ型",
+          "explicitAttackHandler": true,
+          "description": "攻击力+45%",
+          "keys": [
+            "atk"
+          ]
+        },
+        {
+          "id": "skchr_lionhd_2",
+          "name": "解构与爆破",
+          "explicitAttackHandler": false,
+          "description": "攻击范围扩大，立即对攻击范围内的所有敌人造成相当于攻击力170%的法术伤害且使其在6秒内法术抗性-{-magic_resistance:0%}\\n可充能2次",
+          "keys": [
+            "atk_scale",
+            "magic_resistance",
+            "duration",
+            "ct",
+            "talent_range_flag"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4087_ines",
+      "name": "伊内丝",
+      "tier": 4,
+      "branch": "agent",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_ines_2",
+      "skills": [
+        {
+          "id": "skchr_ines_1",
+          "name": "淬影突袭",
+          "explicitAttackHandler": false,
+          "description": "下次攻击使目标3秒内每秒受到相当于伊内丝攻击力40%的法术伤害（不叠加），并获得2点部署费用",
+          "keys": [
+            "cost",
+            "bleed_atk_scale",
+            "bleed_duration"
+          ]
+        },
+        {
+          "id": "skchr_ines_2",
+          "name": "暗夜无明",
+          "explicitAttackHandler": false,
+          "description": "攻击范围扩大，攻击力+60%，自身获得隐匿，每次攻击获得1点部署费用并偷取目标5点攻击速度（最多50点，持续至技能结束或伊内丝离场）",
+          "keys": [
+            "cost",
+            "atk",
+            "attack@steal_atk_speed",
+            "attack@steal_atk_speed_max"
+          ]
+        },
+        {
+          "id": "skchr_ines_3",
+          "name": "独影归途",
+          "explicitAttackHandler": false,
+          "description": "首次部署时不消耗部署费用，放置一个影哨后离场并立刻刷新再部署时间\\n部署后攻击力+90%，立刻收回影哨对穿过的最多4名敌人造成相当于攻击力110%的物理伤害，技能期间每对一个敌人造成伤害就获得1点部署费用",
+          "keys": [
+            "cost",
+            "atk",
+            "atk_scale",
+            "max_target",
+            "projectile_range"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4134_cetsyr",
+      "name": "魔王",
+      "tier": 4,
+      "branch": "bard",
+      "action": "bard",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_cetsyr_3",
+      "skills": [
+        {
+          "id": "skchr_cetsyr_1",
+          "name": "往昔萦绕身旁",
+          "explicitAttackHandler": false,
+          "description": "自身特性效果提高至20%，“微尘”的重生速度加快\\n持续时间无限",
+          "keys": [
+            "attack@atk_to_hp_recovery_ratio",
+            "talent_cool_down"
+          ]
+        },
+        {
+          "id": "skchr_cetsyr_2",
+          "name": "明日渺远不及",
+          "explicitAttackHandler": false,
+          "description": "“微尘”上限+3，立刻获得6枚“微尘”，“微尘”旋转半径扩大，攻击范围内所有其他友方单位获得相当于魔王65%攻击力的鼓舞效果，“微尘”不再碰撞友方干员，“微尘”碰撞敌方单位时造成相当于魔王攻击力220%的真实伤害，并使目标束缚3秒",
+          "keys": [
+            "extra_cnt",
+            "outside_radius",
+            "attack@atk",
+            "atk_scale",
+            "unmoveable_duration",
+            "dynamic_spd"
+          ]
+        },
+        {
+          "id": "skchr_cetsyr_3",
+          "name": "编织重构现世",
+          "explicitAttackHandler": false,
+          "description": "攻击范围扩大，自身特性效果提高至65%，“微尘”不再消失，攻击范围内所有其它友方单位获得相当于魔王65%的最大生命值的鼓舞效果，每隔2秒重新分配攻击范围内所有友方单位的生命",
+          "keys": [
+            "attack@atk_to_hp_recovery_ratio",
+            "max_hp",
+            "attack@cetsyr_s_3[cal_hp_ratio].interval",
+            "attack@cetsyr_s_3[collect_hp_ratio].interval"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4162_cathy",
+      "name": "凯瑟琳",
+      "tier": 4,
+      "branch": "craftsman",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_cathy_2",
+      "skills": [
+        {
+          "id": "skchr_cathy_1",
+          "name": "岁月锻打",
+          "explicitAttackHandler": false,
+          "description": "自身和拥有装置屏障的其他干员攻击力+8%，防御力+8%",
+          "keys": [
+            "s1_atk",
+            "s1_def"
+          ]
+        },
+        {
+          "id": "skchr_cathy_2",
+          "name": "战火淬炼",
+          "explicitAttackHandler": false,
+          "description": "停止攻击，生命上限+40%，防御力+10%，装置效果改为使目标干员每秒获得相当于凯瑟琳生命上限6%的屏障（不会超过天赋上限）",
+          "keys": [
+            "max_hp",
+            "def",
+            "overwrite_ratio",
+            "interval"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4194_rmixer",
+      "name": "信仰搅拌机",
+      "tier": 4,
+      "branch": "shotprotector",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_rmixer_3",
+      "skills": [
+        {
+          "id": "skchr_rmixer_1",
+          "name": "铳骑主考官",
+          "explicitAttackHandler": false,
+          "description": "下次攻击变为三连击，每次造成相当于130%攻击力的物理伤害，并为自身周围另一名开启弹药类技能的【拉特兰】干员补弹1发",
+          "keys": [
+            "atk_scale",
+            "charge"
+          ]
+        },
+        {
+          "id": "skchr_rmixer_2",
+          "name": "八臂电锯侠",
+          "explicitAttackHandler": false,
+          "description": "攻击力+80%，防御力+70%，技能期间若受到致命伤害，立即消耗30发弹药抵挡这次伤害\\n攻击装有42发弹药，打完后结束（可随时停止技能）",
+          "keys": [
+            "atk",
+            "def",
+            "ammo_cost",
+            "attack@trigger_time"
+          ]
+        },
+        {
+          "id": "skchr_rmixer_3",
+          "name": "退休前布道",
+          "explicitAttackHandler": false,
+          "description": "技能开启时为所有其他【拉特兰】干员补弹2发；攻击范围扩大，生命上限+35%，攻击力+140%，防御力+35%，停止主动攻击敌人，受到攻击时立即向攻击范围内最多3个敌人进行1次反击，反击最小间隔为实际攻击间隔的60%\\n攻击装有30发弹药，打完后结束（可随时停止技能）",
+          "keys": [
+            "atk",
+            "def",
+            "max_hp",
+            "ammo",
+            "attack@max_target",
+            "attack@trigger_time",
+            "base_attack_time"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_420_flamtl",
+      "name": "焰尾",
+      "tier": 4,
+      "branch": "pioneer",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_flamtl_3",
+      "skills": [
+        {
+          "id": "skchr_flamtl_1",
+          "name": "迅敏直觉",
+          "explicitAttackHandler": false,
+          "description": "立即获得6点部署费用，并闪避下次物理攻击",
+          "keys": [
+            "cost"
+          ]
+        },
+        {
+          "id": "skchr_flamtl_2",
+          "name": "“红松林”",
+          "explicitAttackHandler": false,
+          "description": "立即获得11点部署费用；对周围最多6名敌人造成两次相当于攻击力180%的物理伤害，并令击中目标晕眩0.5秒；范围内友方单位获得{flamtl_s_2.prob:0%}的物理闪避，持续{flamtl_s_2.duration}秒",
+          "keys": [
+            "cost",
+            "atk_scale",
+            "stun",
+            "max_target",
+            "flamtl_s_2.prob",
+            "flamtl_s_2.duration"
+          ]
+        },
+        {
+          "id": "skchr_flamtl_3",
+          "name": "焰心",
+          "explicitAttackHandler": false,
+          "description": "技能持续时间内逐渐获得8点部署费用，攻击间隔缩短，攻击力+45%，阻挡数+1，获得60%的物理和法术闪避",
+          "keys": [
+            "atk",
+            "cost",
+            "prob",
+            "base_attack_time",
+            "block_cnt",
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_426_billro",
+      "name": "卡涅利安",
+      "tier": 4,
+      "branch": "phalanx",
+      "action": "phalanx",
+      "shape": "rangeAll",
+      "moduleAction": false,
+      "defaultSkill": "skchr_billro_2",
+      "skills": [
+        {
+          "id": "skchr_billro_1",
+          "name": "沙暴守卫",
+          "explicitAttackHandler": false,
+          "description": "攻击力+25%，防御力+40%；\\n蓄力额外效果：特性效果在技能期间继续生效",
+          "keys": [
+            "atk",
+            "def"
+          ]
+        },
+        {
+          "id": "skchr_billro_2",
+          "name": "沙缚镣锁",
+          "explicitAttackHandler": false,
+          "description": "攻击间隔缩短，每次攻击对目标造成0.3秒停顿；\\n蓄力额外效果：攻击力+10%且停顿变为束缚0.3秒",
+          "keys": [
+            "base_attack_time",
+            "attack@sluggish",
+            "atk",
+            "attack@root"
+          ]
+        },
+        {
+          "id": "skchr_billro_3",
+          "name": "食噬之印",
+          "explicitAttackHandler": false,
+          "description": "攻击范围扩大，攻击力逐渐增至+140%\\n蓄力额外效果：每次攻击使目标受到来自卡涅利安的伤害提升20%（最多叠加5次），持续至技能结束",
+          "keys": [
+            "atk",
+            "attack@damage_scale"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_430_fartth",
+      "name": "远牙",
+      "tier": 4,
+      "branch": "longrange",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_fartth_3",
+      "skills": [
+        {
+          "id": "skcom_quickattack[3]",
+          "name": "迅捷打击·γ型",
+          "explicitAttackHandler": true,
+          "description": "攻击力+27%，攻击速度+25",
+          "keys": [
+            "atk",
+            "attack_speed"
+          ]
+        },
+        {
+          "id": "skchr_fartth_2",
+          "name": "同盟支援",
+          "explicitAttackHandler": false,
+          "description": "可以攻击到范围外被阻挡的敌方单位，攻击速度+75",
+          "keys": [
+            "attack_speed"
+          ]
+        },
+        {
+          "id": "skchr_fartth_3",
+          "name": "光羽箭",
+          "explicitAttackHandler": false,
+          "description": "攻击范围改为前方无限长的直线，攻击力+80%，攻击原本范围以外的目标时，造成的伤害提高至125%",
+          "keys": [
+            "atk",
+            "damage_scale"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_437_mizuki",
+      "name": "水月",
+      "tier": 4,
+      "branch": "stalker",
+      "action": "attack",
+      "shape": "rangeAll",
+      "moduleAction": false,
+      "defaultSkill": "skchr_mizuki_2",
+      "skills": [
+        {
+          "id": "skchr_mizuki_1",
+          "name": "唤醒",
+          "explicitAttackHandler": false,
+          "description": "下次攻击造成相当于攻击力200%的物理伤害，且第一天赋伤害倍率提升至2倍\\n可充能2次",
+          "keys": [
+            "atk_scale",
+            "talent_scale",
+            "cnt"
+          ]
+        },
+        {
+          "id": "skchr_mizuki_2",
+          "name": "囚徒困境",
+          "explicitAttackHandler": false,
+          "description": "攻击间隔小幅度缩短，攻击力+15%，第一天赋额外攻击1个目标并附加0.8秒束缚",
+          "keys": [
+            "base_attack_time",
+            "atk",
+            "attack@unmovable",
+            "attack@max_target"
+          ]
+        },
+        {
+          "id": "skchr_mizuki_3",
+          "name": "镜花水月",
+          "explicitAttackHandler": false,
+          "description": "攻击范围扩大，攻击力+90%，第一天赋额外攻击2个目标并附加0.7秒晕眩；每次攻击命中目标少于3名敌人时，自身流失最大生命值的15%。",
+          "keys": [
+            "atk",
+            "attack@stun",
+            "attack@hp_ratio",
+            "attack@max_target"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_446_aroma",
+      "name": "阿罗玛",
+      "tier": 4,
+      "branch": "blastcaster",
+      "action": "attack",
+      "shape": "rangeAll",
+      "moduleAction": false,
+      "defaultSkill": "skchr_aroma_2",
+      "skills": [
+        {
+          "id": "skchr_aroma_1",
+          "name": "强效清洁",
+          "explicitAttackHandler": false,
+          "description": "下次攻击造成相当于攻击力150%的法术伤害，对空中敌人额外造成相当于攻击力55%的法术伤害\\n可充能2次",
+          "keys": [
+            "atk_scale",
+            "atk_scale_to_fly"
+          ]
+        },
+        {
+          "id": "skchr_aroma_2",
+          "name": "小心地滑",
+          "explicitAttackHandler": false,
+          "description": "攻击力+65%，攻击范围内浮空状态的敌人结束浮空落地时，对其造成攻击力65%的法术伤害",
+          "keys": [
+            "atk",
+            "attack@atk_scale_when_fly_finish",
+            "attack@duration"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_474_glady",
+      "name": "歌蕾蒂娅",
+      "tier": 4,
+      "branch": "hookmaster",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_glady_3",
+      "skills": [
+        {
+          "id": "skchr_glady_1",
+          "name": "缺水的大洋裂断",
+          "explicitAttackHandler": false,
+          "description": "下次攻击会将目标中等力度地拖拽至面前，并对其造成相当于攻击力150%的物理伤害\\n可充能2次",
+          "keys": [
+            "atk_scale",
+            "force",
+            "cnt"
+          ]
+        },
+        {
+          "id": "skchr_glady_2",
+          "name": "缺水的掌握怒海",
+          "explicitAttackHandler": false,
+          "description": "攻击间隔增大，攻击范围扩大，每次攻击优先对被阻挡的两个目标造成相当于攻击力135%的物理伤害且以中等力度地拖拽至自己面前",
+          "keys": [
+            "base_attack_time",
+            "attack@max_target",
+            "attack@atk_scale",
+            "attack@force"
+          ]
+        },
+        {
+          "id": "skchr_glady_3",
+          "name": "缺水的碎漩狂舞",
+          "explicitAttackHandler": false,
+          "description": "对一个远处目标束缚并制造一个龙卷风使周围敌人移动速度-{-move_speed:0%}，每1.5秒造成85%攻击力的法术伤害并小力地拖拽至中心。技能结束时把目标地点周围的敌人小力地拖拽至面前",
+          "keys": [
+            "atk_scale",
+            "attack@force",
+            "force",
+            "projectile_delay_time",
+            "interval",
+            "hit_duration",
+            "move_speed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_1023_ghost2",
+      "name": "归溟幽灵鲨",
+      "tier": 5,
+      "branch": "dollkeeper",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": true,
+      "defaultSkill": "skchr_ghost2_2",
+      "skills": [
+        {
+          "id": "skchr_ghost2_1",
+          "name": "生存的技巧",
+          "explicitAttackHandler": true,
+          "description": "开启时立即与范围内生命上限比例最低的其他我方干员交换生命上限比例，自身攻击力+90%",
+          "keys": [
+            "atk"
+          ]
+        },
+        {
+          "id": "skchr_ghost2_2",
+          "name": "生存的渴望",
+          "explicitAttackHandler": true,
+          "description": "攻击力+70%，攻击速度+22，技能持续期间内干员的生命值不会低于1\\n技能结束后视为被击倒",
+          "keys": [
+            "atk",
+            "attack_speed"
+          ]
+        },
+        {
+          "id": "skchr_ghost2_3",
+          "name": "生存的重压",
+          "explicitAttackHandler": true,
+          "description": "攻击间隔延长，攻击所有阻挡的敌人，攻击力+170%，生命上限+130%，攻击生命比例高于或等于自身的敌人时额外造成一次攻击力50%的物理伤害，否则自身流失3%生命",
+          "keys": [
+            "atk",
+            "max_hp",
+            "attack@atk_scale_ex",
+            "base_attack_time",
+            "attack@hp_ratio"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_1032_excu2",
+      "name": "圣约送葬人",
+      "tier": 5,
+      "branch": "reaper",
+      "action": "attack",
+      "shape": "rangeAll",
+      "moduleAction": false,
+      "defaultSkill": "skchr_excu2_2",
+      "skills": [
+        {
+          "id": "skchr_excu2_1",
+          "name": "遗嘱执行",
+          "explicitAttackHandler": false,
+          "description": "攻击范围扩大，攻击力+20%，攻击时无视目标190的防御力\\n攻击装有8发弹药，打完后结束（可随时停止技能）",
+          "keys": [
+            "atk",
+            "def_penetrate_fixed",
+            "attack@trigger_time"
+          ]
+        },
+        {
+          "id": "skchr_excu2_2",
+          "name": "近身铳斗",
+          "explicitAttackHandler": false,
+          "description": "攻击力+45%，防御力+45%，阻挡数+1，受到敌人的近战攻击时有20%几率闪避并补充1颗弹药\\n攻击装有12发弹药，打完后结束（可随时停止技能）",
+          "keys": [
+            "atk",
+            "def",
+            "block_cnt",
+            "prob",
+            "recover_cnt",
+            "attack@trigger_time"
+          ]
+        },
+        {
+          "id": "skchr_excu2_3",
+          "name": "圣约决裁",
+          "explicitAttackHandler": false,
+          "description": "攻击间隔略微增大，攻击范围扩大，攻击力+120%，每消耗1颗弹药攻击力额外+4%（最多30层），特性的回复生命效果提高至2倍；技能结束时，对技能期间攻击过的目标造成相当于攻击力200%的物理伤害\\n攻击装有16发弹药，打完后结束（可随时停止技能）",
+          "keys": [
+            "atk",
+            "attack@atk",
+            "trait_ratio",
+            "attack@final_atk_scale",
+            "base_attack_time",
+            "attack@trigger_time",
+            "attack@max_stack_cnt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_1039_thorn2",
+      "name": "引星棘刺",
+      "tier": 5,
+      "branch": "alchemist",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_thorn2_2",
+      "skills": [
+        {
+          "id": "skchr_thorn2_1",
+          "name": "度算浪波",
+          "explicitAttackHandler": false,
+          "description": "向友方单位投掷一个炼金单元，在6秒内使落点和周围8格的友方单位防御力+60，每秒回复相当于攻击力11%的生命值",
+          "keys": [
+            "hp_recovery_per_sec_ratio",
+            "projectile_delay_time",
+            "def",
+            "projectile_range"
+          ]
+        },
+        {
+          "id": "skchr_thorn2_2",
+          "name": "解构涌潮",
+          "explicitAttackHandler": false,
+          "description": "投掷一个炼金单元，在12秒内使落点周围的地面敌人受到的治疗和回复效果降低50%，每秒受到相当于攻击力120%的法术伤害，友方单位每秒恢复相当于攻击力12%的生命；炼金单元能在12秒内缓慢沿投掷方向移动且影响范围持续扩大\\n可充能1次",
+          "keys": [
+            "heal_scale",
+            "hp_recovery_per_sec",
+            "hp_recovery_per_sec_by_max_hp_ratio",
+            "projectile_delay_time",
+            "atk_scale",
+            "value",
+            "projectile_move_speed",
+            "projectile_range",
+            "remaining_time",
+            "hp_recovery_per_sec_ratio_chr"
+          ]
+        },
+        {
+          "id": "skchr_thorn2_3",
+          "name": "“我的海疆”",
+          "explicitAttackHandler": false,
+          "description": "被动效果：攻击范围扩大\n主动开启：向阻挡数最低的3名干员投掷炼金单元，在19秒内使围绕区域内的敌人攻击力-{-atk:0%}，防御力-{-def:0%}，法术抗性-{-magic_resistance:0%}（不叠加），每秒受到攻击力120%的法术伤害，效果逐渐提升（15秒后达到最大，攻击力-{-max_atk:0%}，防御力-{-max_def:0%}，法术抗性-{-max_magic_resistance:0%}，每秒伤害300%）",
+          "keys": [
+            "max_target_token",
+            "projectile_delay_time",
+            "max_stack_cnt",
+            "interval",
+            "atk_scale",
+            "max_atk_scale",
+            "atk_scale_per_interval",
+            "atk",
+            "max_atk",
+            "atk_per_interval",
+            "def",
+            "max_def",
+            "def_per_interval",
+            "magic_resistance",
+            "max_magic_resistance",
+            "magic_resistance_per_interval"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_1040_blaze2",
+      "name": "烛煌",
+      "tier": 5,
+      "branch": "primcaster",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_blaze2_3",
+      "skills": [
+        {
+          "id": "skchr_blaze2_1",
+          "name": "炙手之援",
+          "explicitAttackHandler": false,
+          "description": "立即选择攻击范围内生命上限最高的一名干员，每秒对其周围所有敌人造成相当于攻击力46%的法术伤害和相当于法术伤害30%的灼燃损伤，持续20秒",
+          "keys": [
+            "atk_scale",
+            "element_multiplier",
+            "max_duration",
+            "range_radius",
+            "interval"
+          ]
+        },
+        {
+          "id": "skchr_blaze2_2",
+          "name": "沸血燎原",
+          "explicitAttackHandler": false,
+          "description": "攻击范围改变，攻击间隔增大，攻击力+90%，同时攻击3名敌人；攻击时流失5%的生命并在目标所在位置留下灼烧地段：经过的敌人移动速度-50%，每秒受到烛煌攻击力35%的法术伤害和相当于法术伤害30%的灼燃损伤",
+          "keys": [
+            "atk",
+            "base_attack_time",
+            "atk_scale",
+            "attack@max_target",
+            "attack@hp_ratio",
+            "element_damage_scale",
+            "move_speed"
+          ]
+        },
+        {
+          "id": "skchr_blaze2_3",
+          "name": "众恶的焚场",
+          "explicitAttackHandler": false,
+          "description": "攻击范围改变，攻击力+70%，攻击间隔大幅缩短，攻击变为群体攻击；若目标处于灼燃损伤爆发期间则额外造成攻击力60%的元素伤害\\n自身每秒流失最大生命的3%，攻击装有18发弹药，全场有敌人进入灼燃损伤爆发时获得2颗额外弹药，弹药打完后结束（可随时停止技能）",
+          "keys": [
+            "atk",
+            "base_attack_time",
+            "attack@trigger_time",
+            "attack@atk_scale",
+            "lose_hp_scale",
+            "ammo_recover",
+            "skill_max_trigger_time"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_1045_svash2",
+      "name": "凛御银灰",
+      "tier": 5,
+      "branch": "counsellor",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_svash2_2",
+      "skills": [
+        {
+          "id": "skchr_svash2_1",
+          "name": "周旋的谋略",
+          "explicitAttackHandler": false,
+          "description": "立刻获得10点部署费用。待部署区中距离“风雪之眼”最近的1名干员费用-{svash2_s_1[deck].cost}（优先选择右侧近卫/术师/狙击干员），且部署后获得相当于凛御银灰最大生命值{svash2_s_1[deck].shield:0%}的屏障",
+          "keys": [
+            "cost",
+            "svash2_s_1[deck].cost",
+            "svash2_s_1[deck].shield",
+            "token_cost_modify"
+          ]
+        },
+        {
+          "id": "skchr_svash2_2",
+          "name": "御敌的锋锐",
+          "explicitAttackHandler": false,
+          "description": "对前方6名敌人造成攻击力260%的物理伤害，使其4秒内寒冷且隐匿失效；待部署区中距离“风雪之眼”最近的1名干员费用-11（优先选择右侧近卫/术师/狙击干员）；使“风雪之眼”左侧所有干员部署时以自身攻击力施放一次本技能的范围效果（最多叠加2次）\\n可充能2次",
+          "keys": [
+            "cost",
+            "atk_scale",
+            "cold",
+            "max_target",
+            "range_id",
+            "cost_scale_display",
+            "cnt",
+            "max_stack_cnt",
+            "token_cost_modify"
+          ]
+        },
+        {
+          "id": "skchr_svash2_3",
+          "name": "变革已至",
+          "explicitAttackHandler": false,
+          "description": "攻击范围扩大并使敌人隐匿失效，攻击对直线范围造成攻击力140%的物理伤害和20%的脆弱；立即获得{svash2_s_3[start_cost].cost}点后持续获得24点部署费用\\n首次开启时交换待部署区中费用最高（优先选择近卫/术师/狙击干员）与最低干员的基础部署费用\\n技能期间“风雪之眼”变为可部署",
+          "keys": [
+            "svash2_s_3[start_cost].cost",
+            "svash2_s_3[cost].cost",
+            "svash2_s_3[cost].interval",
+            "change_cnt",
+            "bird_atk_scale",
+            "damage_scale",
+            "cnt",
+            "weak[limit]",
+            "range_id",
+            "damage_scale_display",
+            "cost_reduce_max"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_2015_dusk",
+      "name": "夕",
+      "tier": 5,
+      "branch": "splashcaster",
+      "action": "attack",
+      "shape": "splash",
+      "moduleAction": true,
+      "defaultSkill": "skchr_dusk_1",
+      "skills": [
+        {
+          "id": "skchr_dusk_1",
+          "name": "工笔入化",
+          "explicitAttackHandler": true,
+          "description": "下一次攻击溅射范围扩大，造成相当于攻击力180%的法术伤害\\n可充能2次",
+          "keys": [
+            "atk_scale",
+            "cnt"
+          ]
+        },
+        {
+          "id": "skchr_dusk_2",
+          "name": "泼墨淋漓",
+          "explicitAttackHandler": true,
+          "description": "攻击范围扩大，攻击力+29%，攻击速度+29，攻击范围内的所有敌人且对生命值低于一半的敌人造成的法术伤害提升至120%",
+          "keys": [
+            "atk",
+            "attack_speed",
+            "hp_ratio",
+            "damage_scale"
+          ]
+        },
+        {
+          "id": "skchr_dusk_3",
+          "name": "写意胜形",
+          "explicitAttackHandler": true,
+          "description": "攻击间隔增大，优先攻击未阻挡的敌人，攻击范围与溅射范围扩大，攻击力+70%，每次攻击时在目标位置（可部署地面）召唤/刷新一个\"小自在\"（持续25秒）",
+          "keys": [
+            "base_attack_time",
+            "atk"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_202_demkni",
+      "name": "塞雷娅",
+      "tier": 5,
+      "branch": "guardian",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_demkni_2",
+      "skills": [
+        {
+          "id": "skchr_demkni_1",
+          "name": "急救",
+          "explicitAttackHandler": true,
+          "description": "下一次攻击会为周围血量不足一半的一名友方单位恢复相当于攻击力130%的生命\\n可充能1次",
+          "keys": [
+            "heal_scale",
+            "ct"
+          ]
+        },
+        {
+          "id": "skchr_demkni_2",
+          "name": "药物配置",
+          "explicitAttackHandler": true,
+          "description": "治疗附近一定范围内的所有友军相当于塞雷娅攻击力95%的生命",
+          "keys": [
+            "heal_scale"
+          ]
+        },
+        {
+          "id": "skchr_demkni_3",
+          "name": "钙质化",
+          "explicitAttackHandler": true,
+          "description": "附近所有友军每秒回复相当于塞雷娅攻击力15%的生命\\n附近所有敌军受到的法术伤害+{fake.b:0%}，移动速度-{-demkni_s_3.move_speed:0%}",
+          "keys": [
+            "attack@heal_scale",
+            "demkni_s_3.move_speed",
+            "demkni_s_3.damage_scale",
+            "fake.b"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_264_f12yin",
+      "name": "山",
+      "tier": 5,
+      "branch": "fighter",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_f12yin_2",
+      "skills": [
+        {
+          "id": "skchr_f12yin_1",
+          "name": "左勾扫拳",
+          "explicitAttackHandler": false,
+          "description": "下次攻击的攻击力提升至170%，额外攻击一个目标",
+          "keys": [
+            "atk_scale",
+            "max_target"
+          ]
+        },
+        {
+          "id": "skchr_f12yin_2",
+          "name": "横扫架势",
+          "explicitAttackHandler": false,
+          "description": "可以在下列状态和初始状态间切换：\\n防御力-{-def:0%}，攻击距离缩短，攻击力+35%，阻挡数+1，同时攻击阻挡的所有敌人，每秒恢复最大生命的0.0%",
+          "keys": [
+            "atk",
+            "def",
+            "hp_recovery_per_sec_by_max_hp_ratio",
+            "block_cnt"
+          ]
+        },
+        {
+          "id": "skchr_f12yin_3",
+          "name": "震地碎岩击",
+          "explicitAttackHandler": false,
+          "description": "攻击间隔增大，攻击力+55%，攻击变为2连击，第一天赋的发动几率提升至48%，每次攻击周围最多3个敌人并将其中等力度地推动",
+          "keys": [
+            "base_attack_time",
+            "atk",
+            "talent@prob",
+            "attack@force",
+            "attack@max_target"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_291_aglina",
+      "name": "安洁莉娜",
+      "tier": 5,
+      "branch": "slower",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_aglina_3",
+      "skills": [
+        {
+          "id": "skchr_aglina_1",
+          "name": "秘杖·速充模式",
+          "explicitAttackHandler": false,
+          "description": "攻击力+60%\\n技能自动开启",
+          "keys": [
+            "atk"
+          ]
+        },
+        {
+          "id": "skchr_aglina_2",
+          "name": "秘杖·微粒模式",
+          "explicitAttackHandler": true,
+          "description": "攻击间隔极大幅度缩短，但每次攻击只能造成相当于攻击力35%的法术伤害\\n技能未开启时无法普通攻击",
+          "keys": [
+            "base_attack_time",
+            "damage_scale"
+          ]
+        },
+        {
+          "id": "skchr_aglina_3",
+          "name": "秘杖·反重力模式",
+          "explicitAttackHandler": true,
+          "description": "全场所有敌人失重，攻击范围扩大，攻击力+90%，可以攻击4个敌人\\n技能未开启时无法普通攻击",
+          "keys": [
+            "atk",
+            "attack@max_target"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_341_sntlla",
+      "name": "寒檀",
+      "tier": 5,
+      "branch": "splashcaster",
+      "action": "attack",
+      "shape": "splash",
+      "moduleAction": false,
+      "defaultSkill": "skchr_sntlla_2",
+      "skills": [
+        {
+          "id": "skcom_quickattack[3]",
+          "name": "迅捷打击·γ型",
+          "explicitAttackHandler": true,
+          "description": "攻击力+27%，攻击速度+25",
+          "keys": [
+            "atk",
+            "attack_speed"
+          ]
+        },
+        {
+          "id": "skchr_sntlla_2",
+          "name": "“女巫之泪”",
+          "explicitAttackHandler": false,
+          "description": "攻击范围扩大，攻击间隔超大幅度缩短，攻击变为向攻击范围内的随机地块召唤冰凌，冰凌落地后对周围所有敌人造成1秒寒冷和相当于寒檀攻击力65%的法术伤害",
+          "keys": [
+            "base_attack_time",
+            "attack@cold",
+            "attack@atk_scale"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_350_surtr",
+      "name": "史尔特尔",
+      "tier": 5,
+      "branch": "artsfghter",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_surtr_3",
+      "skills": [
+        {
+          "id": "skchr_surtr_1",
+          "name": "烈焰魔剑",
+          "explicitAttackHandler": false,
+          "description": "下次攻击的攻击力提升至220%，如果将目标击倒则立即恢复所有技力",
+          "keys": [
+            "atk_scale"
+          ]
+        },
+        {
+          "id": "skchr_surtr_2",
+          "name": "熔核巨影",
+          "explicitAttackHandler": false,
+          "description": "攻击力+65%，攻击距离+1，攻击目标数+1，仅攻击到一个敌人时对其攻击力提升至{attack@surtr_s_2[critical].atk_scale:0%}",
+          "keys": [
+            "atk",
+            "ability_range_forward_extend",
+            "attack@max_target",
+            "attack@surtr_s_2[critical].atk_scale"
+          ]
+        },
+        {
+          "id": "skchr_surtr_3",
+          "name": "黄昏",
+          "explicitAttackHandler": false,
+          "description": "立即恢复所有生命；攻击力+210%，攻击距离+2，攻击目标数+2，生命上限+5000，逐渐流失生命（60秒后到达最大生命20%/秒）；持续时间无限",
+          "keys": [
+            "atk",
+            "ability_range_forward_extend",
+            "max_hp",
+            "interval",
+            "hp_ratio",
+            "duration",
+            "attack@max_target"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_358_lisa",
+      "name": "铃兰",
+      "tier": 5,
+      "branch": "slower",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_lisa_3",
+      "skills": [
+        {
+          "id": "skchr_lisa_1",
+          "name": "全力以赴",
+          "explicitAttackHandler": true,
+          "description": "攻击力+45%，攻击速度+10\\n技能自动开启",
+          "keys": [
+            "atk",
+            "attack_speed"
+          ]
+        },
+        {
+          "id": "skchr_lisa_2",
+          "name": "儿时的舞乐",
+          "explicitAttackHandler": true,
+          "description": "攻击力+20%，可以同时攻击2个敌方单位\\n持续时间无限",
+          "keys": [
+            "atk",
+            "attack@max_target"
+          ]
+        },
+        {
+          "id": "skchr_lisa_3",
+          "name": "狐火渺然",
+          "explicitAttackHandler": true,
+          "description": "停止攻击，攻击范围扩大，第二天赋效果提升至1.4倍，攻击范围内的所有敌人被停顿，且每秒回复范围内所有友方单位相当于攻击力9%的生命",
+          "keys": [
+            "scale_delta_to_one",
+            "attack@atk_to_hp_recovery_ratio"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4010_etlchi",
+      "name": "隐德来希",
+      "tier": 5,
+      "branch": "reaper",
+      "action": "attack",
+      "shape": "rangeAll",
+      "moduleAction": false,
+      "defaultSkill": "skchr_etlchi_3",
+      "skills": [
+        {
+          "id": "skchr_etlchi_1",
+          "name": "玫影觅迹",
+          "explicitAttackHandler": false,
+          "description": "下次攻击的攻击力提升至125%，并连续攻击两次",
+          "keys": [
+            "atk_scale"
+          ]
+        },
+        {
+          "id": "skchr_etlchi_2",
+          "name": "绯红壁合",
+          "explicitAttackHandler": false,
+          "description": "停止攻击，在自身及1名其他地面单位处召唤血镰，对周围所有敌人进行切割，每0.5秒造成相当于攻击力135%的物理伤害",
+          "keys": [
+            "atk_scale",
+            "interval"
+          ]
+        },
+        {
+          "id": "skchr_etlchi_3",
+          "name": "灵与欲的惜别",
+          "explicitAttackHandler": false,
+          "description": "攻击范围扩大，攻击力+80%，攻击速度+100，立刻为攻击范围内最多3名生命值最高的地面敌人召唤对应的心烛，每次攻击对心烛至少造成35%攻击力的伤害，心烛继承原敌人当前60%的生命值，被攻击时原敌人也会流失同等生命值\\n心烛只受隐德来希攻击的影响",
+          "keys": [
+            "atk",
+            "attack_speed",
+            "attack@max_target",
+            "attack@max_hp_scale",
+            "attack@def_scale",
+            "attack@magic_resistance_scale"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4039_horn",
+      "name": "号角",
+      "tier": 5,
+      "branch": "fortress",
+      "action": "attack",
+      "shape": "splash",
+      "moduleAction": false,
+      "defaultSkill": "skchr_horn_3",
+      "skills": [
+        {
+          "id": "skchr_horn_1",
+          "name": "照明榴弹",
+          "explicitAttackHandler": false,
+          "description": "下次攻击时造成190%攻击力的物理伤害，若为远程攻击则溅射范围扩大且在周围产生一个持续6秒的照明区域使敌人隐匿失效\\n可充能1次",
+          "keys": [
+            "atk_scale",
+            "projectile_delay_time",
+            "projectile_range",
+            "cnt"
+          ]
+        },
+        {
+          "id": "skchr_horn_2",
+          "name": "暴风号令",
+          "explicitAttackHandler": false,
+          "description": "每次攻击造成{attack@s2.atk_scale:0%}攻击力的物理溅射伤害\\n过载：每次攻击额外造成{attack@s2.magic_atk_scale:0%}攻击力的法术溅射伤害，主动关闭时发射剩余全部弹药并流失{attack@s2.hp_ratio:0%}生命值\\n技能拥有10枚弹药，可随时主动关闭",
+          "keys": [
+            "attack@s2.atk_scale",
+            "attack@s2.magic_atk_scale",
+            "attack@s2.hp_ratio",
+            "attack@s2.trigger_time",
+            "hp_ratio"
+          ]
+        },
+        {
+          "id": "skchr_horn_3",
+          "name": "终极防线",
+          "explicitAttackHandler": false,
+          "description": "攻击力+25%，攻击间隔缩短\\n过载：攻击力改为+{horn_s_3[overload_start].atk:0%}，逐渐流失生命（{horn_s_3[overload_start].damage_duration}秒后到达最大生命{horn_s_3[overload_start].hp_ratio:0%}/秒）该技能可随时主动关闭",
+          "keys": [
+            "atk",
+            "base_attack_time",
+            "horn_s_3[overload_start].atk",
+            "horn_s_3[overload_start].interval",
+            "horn_s_3[overload_start].hp_ratio",
+            "horn_s_3[overload_start].damage_duration"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4056_titi",
+      "name": "缇缇",
+      "tier": 5,
+      "branch": "incantationmedic",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_titi_3",
+      "skills": [
+        {
+          "id": "skchr_titi_1",
+          "name": "缓蚀",
+          "explicitAttackHandler": false,
+          "description": "攻击力+65%，每次攻击有30%概率使目标沉睡2秒",
+          "keys": [
+            "attack@sleep",
+            "attack@prob",
+            "atk"
+          ]
+        },
+        {
+          "id": "skchr_titi_2",
+          "name": "封护",
+          "explicitAttackHandler": false,
+          "description": "停止攻击，攻击力+115%，技能开启时使自身与攻击范围内生命比例最低的干员陷入沉睡直到技能结束，期间持续使自身与该目标周围的敌人陷入沉睡，第一天赋效果提升至2.4倍\\n可主动关闭技能（期间可随时停止技能）",
+          "keys": [
+            "talent_scale",
+            "atk"
+          ]
+        },
+        {
+          "id": "skchr_titi_3",
+          "name": "旧日绽放",
+          "explicitAttackHandler": false,
+          "description": "攻击力+110%，同时攻击两名敌人，攻击非沉睡目标时使其沉睡5秒，技能期间，全场敌人从沉睡状态醒来或于沉睡中被击倒时，受到法术伤害（随沉睡时长提高至攻击力370%），并使周围一名其他敌人沉睡5秒，攻击范围内的其他友方干员受到致命伤害时，陷入沉睡至生命值完全恢复或技能结束",
+          "keys": [
+            "atk",
+            "attack@max_target",
+            "attack@sleep",
+            "max_target",
+            "min_atk_scale",
+            "max_atk_scale",
+            "sleep",
+            "range_radius"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4064_mlynar",
+      "name": "玛恩纳",
+      "tier": 5,
+      "branch": "librator",
+      "action": "librator",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_mlynar_3",
+      "skills": [
+        {
+          "id": "skchr_mlynar_1",
+          "name": "未声张的怒火",
+          "explicitAttackHandler": true,
+          "description": "攻击造成相当于145%攻击力的物理伤害，防御力+30%",
+          "keys": [
+            "attack@atk_scale",
+            "def"
+          ]
+        },
+        {
+          "id": "skchr_mlynar_2",
+          "name": "未宽解的悲哀",
+          "explicitAttackHandler": true,
+          "description": "攻击间隔延长，攻击范围扩大，攻击造成相当于130%攻击力的二连击。\\n技能期间若击倒敌人，技能结束时特性效果不重置，可主动关闭（期间可随时停止技能）",
+          "keys": [
+            "attack@atk_scale",
+            "base_attack_time"
+          ]
+        },
+        {
+          "id": "skchr_mlynar_3",
+          "name": "未照耀的荣光",
+          "explicitAttackHandler": false,
+          "description": "攻击范围扩大，特性提升至2倍（每击倒一名敌人时特性倍率-10%），攻击对5个目标造成相当于125%攻击力的物理伤害。范围内所有敌人受到卡西米尔干员攻击时额外附带玛恩纳10%攻击力的真实伤害",
+          "keys": [
+            "attack@atk_scale",
+            "atk_scale",
+            "attack@max_target",
+            "trait_up",
+            "per_kill_reduce"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4145_ulpia",
+      "name": "乌尔比安",
+      "tier": 5,
+      "branch": "crusher",
+      "action": "attack",
+      "shape": "blockCount",
+      "moduleAction": false,
+      "defaultSkill": "skchr_ulpia_3",
+      "skills": [
+        {
+          "id": "skchr_ulpia_1",
+          "name": "必须促成的接触",
+          "explicitAttackHandler": false,
+          "description": "向前方扔出船锚，船锚会把目标地点周围的两名敌人中等力度地拖拽至面前，对其造成相当于攻击力185%的物理伤害",
+          "keys": [
+            "atk_scale",
+            "max_target",
+            "force"
+          ]
+        },
+        {
+          "id": "skchr_ulpia_2",
+          "name": "必须维系的界限",
+          "explicitAttackHandler": false,
+          "description": "第一天赋的效果提升至1.6倍，阻挡数+1，生命上限+30%，攻击力+115%\\n持续时间无限",
+          "keys": [
+            "talent_scale",
+            "atk",
+            "max_hp",
+            "block_cnt"
+          ]
+        },
+        {
+          "id": "skchr_ulpia_3",
+          "name": "必须开辟的通路",
+          "explicitAttackHandler": false,
+          "description": "最大生命值+40%，攻击力+200%，立即朝面前扔出一个船锚，撞击到目标或达到最远距离时停止，并对周围所有敌人造成攻击力135%的物理伤害和6秒晕眩。若船锚停留的位置可以部署，乌尔比安会移动到该位置\\n可以手动结束技能，技能结束时乌尔比安会返回到初始的位置",
+          "keys": [
+            "max_hp",
+            "atk",
+            "atk_scale",
+            "stun",
+            "projectile_range"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4146_nymph",
+      "name": "妮芙",
+      "tier": 5,
+      "branch": "primcaster",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_nymph_2",
+      "skills": [
+        {
+          "id": "skchr_nymph_1",
+          "name": "笞心击",
+          "explicitAttackHandler": true,
+          "description": "攻击力+60%，攻击附带造成法术伤害10%的凋亡损伤，若目标处于凋亡损伤爆发期间则对其额外造成相当于攻击力30%的元素伤害",
+          "keys": [
+            "atk",
+            "attack@ep_damage_ratio",
+            "attack@extra_ep_damage_scale"
+          ]
+        },
+        {
+          "id": "skchr_nymph_2",
+          "name": "怵然震爆",
+          "explicitAttackHandler": true,
+          "description": "对敌人造成一次相当于攻击力270%的法术伤害、使其恐惧4秒，并对目标周围造成一次等额法术溅射伤害，均附带造成法术伤害18%的凋亡损伤；若攻击到的单位处于凋亡损伤爆发期间，使第一天赋造成的伤害效果提高至攻击力的70%\\n可充能1次",
+          "keys": [
+            "atk_scale",
+            "ep_damage_ratio",
+            "fear",
+            "element_atk_scale",
+            "projectile_range",
+            "ct"
+          ]
+        },
+        {
+          "id": "skchr_nymph_3",
+          "name": "心防溃决",
+          "explicitAttackHandler": true,
+          "description": "攻击范围扩大，攻击力+140%，攻击速度+30，同时攻击2个目标，若目标处于凋亡损伤爆发期间，攻击造成元素伤害",
+          "keys": [
+            "atk",
+            "attack_speed",
+            "attack@max_target",
+            "attack@split_atk_scale",
+            "attack@magic_atk_scale"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4196_reckpr",
+      "name": "录武官",
+      "tier": 5,
+      "branch": "physician",
+      "action": "heal",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_reckpr_2",
+      "skills": [
+        {
+          "id": "skchr_reckpr_1",
+          "name": "触类旁通",
+          "explicitAttackHandler": true,
+          "description": "下次治疗可以恢复相当于攻击力115%的生命，并额外治疗一个目标\\n可充能2次",
+          "keys": [
+            "heal_scale",
+            "max_target",
+            "cnt"
+          ]
+        },
+        {
+          "id": "skchr_reckpr_2",
+          "name": "一点关窍",
+          "explicitAttackHandler": true,
+          "description": "攻击力+45%，治疗干员后为其施加一个增益，使其在10秒内每次受到伤害时恢复80点生命",
+          "keys": [
+            "attack@buff_duration",
+            "attack@fixed_heal_value",
+            "atk"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_1012_skadi2",
+      "name": "浊心斯卡蒂",
+      "tier": 6,
+      "branch": "bard",
+      "action": "bard",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_skadi2_3",
+      "skills": [
+        {
+          "id": "skchr_skadi2_1",
+          "name": "同归殊途之吟",
+          "explicitAttackHandler": false,
+          "description": "立即回复自身所有生命值且生命上限+110%，特性效果提高至50%，攻击范围内我方所有单位受到伤害的50%直接转移给浊心斯卡蒂承担（同类效果取最高）",
+          "keys": [
+            "max_hp",
+            "attack@atk_to_hp_recovery_ratio",
+            "damage_resistance"
+          ]
+        },
+        {
+          "id": "skchr_skadi2_2",
+          "name": "同葬无光之愿",
+          "explicitAttackHandler": false,
+          "description": "攻击范围内所有其他友方单位获得相当于浊心斯卡蒂30%攻击力与防御力的鼓舞效果，自身特性效果提高至16%\\n持续时间无限",
+          "keys": [
+            "atk",
+            "def",
+            "attack@atk_to_hp_recovery_ratio"
+          ]
+        },
+        {
+          "id": "skchr_skadi2_3",
+          "name": "\"潮涌，潮枯\"",
+          "explicitAttackHandler": false,
+          "description": "特性变为自身每秒流失5%生命，使范围内所有敌人每秒受到40%攻击力的真实伤害（自身与海嗣造成的伤害可叠加），范围内所有友方单位获得相当于浊心斯卡蒂65%攻击力的鼓舞效果",
+          "keys": [
+            "atk_scale",
+            "atk",
+            "hp_ratio"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_1014_nearl2",
+      "name": "耀骑士临光",
+      "tier": 6,
+      "branch": "fearless",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_nearl2_3",
+      "skills": [
+        {
+          "id": "skchr_nearl2_1",
+          "name": "灿焰长刃",
+          "explicitAttackHandler": false,
+          "description": "攻击范围扩大，攻击力+40%，攻击速度+26\\n持续时间无限",
+          "keys": [
+            "atk",
+            "attack_speed"
+          ]
+        },
+        {
+          "id": "skchr_nearl2_2",
+          "name": "逐夜烁光",
+          "explicitAttackHandler": false,
+          "description": "被动效果：部署不消耗部署位。\\n部署后攻击力+90%，获得3层护盾。技能结束后自动撤退，本次再部署时间延长25%，上一名部署干员势力为【卡西米尔】时本次再部署时间不再延长",
+          "keys": [
+            "atk",
+            "times",
+            "respawn_time",
+            "nearl2_s_2[withdraw][combo].respawn_time",
+            "value"
+          ]
+        },
+        {
+          "id": "skchr_nearl2_3",
+          "name": "耀阳颔首",
+          "explicitAttackHandler": false,
+          "description": "在周围四格可部署地面召唤一把\"耀阳\"对周围敌人造成90%耀骑士临光攻击力的真实伤害并晕眩3秒，自身攻击范围扩大，攻击力+70%、防御力+40%，攻击自身与\"耀阳\"阻挡的单位时伤害类型变为真实",
+          "keys": [
+            "atk",
+            "def",
+            "value",
+            "value2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_1016_agoat2",
+      "name": "纯烬艾雅法拉",
+      "tier": 6,
+      "branch": "wandermedic",
+      "action": "heal",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_agoat2_3",
+      "skills": [
+        {
+          "id": "skchr_agoat2_1",
+          "name": "无声润物",
+          "explicitAttackHandler": true,
+          "description": "攻击力+20%，每次可额外治疗一名单位，攻击范围内所有友方单位每秒回复纯烬艾雅法拉攻击力{agoat2_s_1[aura].ep_heal_ratio:0%}的元素损伤\\n持续时间无限",
+          "keys": [
+            "atk",
+            "agoat2_s_1[aura].ep_heal_ratio"
+          ]
+        },
+        {
+          "id": "skchr_agoat2_2",
+          "name": "云霭荫佑",
+          "explicitAttackHandler": true,
+          "description": "立即对攻击范围内所有友方单位进行一次治疗，并生成一个持续12秒的范围损伤屏障，为范围内的友方单位吸收相当于攻击力{agoat2_s_2[shield].atk_scale:0%}的元素损伤",
+          "keys": [
+            "agoat2_s_2[shield].atk_scale",
+            "duration"
+          ]
+        },
+        {
+          "id": "skchr_agoat2_3",
+          "name": "火山回响",
+          "explicitAttackHandler": true,
+          "description": "攻击范围扩大至整个战场，治疗变为35%治疗量和元素损伤回复量的5连发，优先治疗不同的目标，第二天赋的效果提升至2.9倍",
+          "keys": [
+            "attack@heal_scale",
+            "talent_scale"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_1019_siege2",
+      "name": "维娜·维多利亚",
+      "tier": 6,
+      "branch": "artsfghter",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_siege2_3",
+      "skills": [
+        {
+          "id": "skchr_siege2_1",
+          "name": "重铸晖光",
+          "explicitAttackHandler": false,
+          "description": "下次攻击对四周所有地面敌人额外造成相当于攻击力90%的真实伤害",
+          "keys": [
+            "atk_scale"
+          ]
+        },
+        {
+          "id": "skchr_siege2_2",
+          "name": "进赴故土",
+          "explicitAttackHandler": false,
+          "description": "被动效果：天赋一生效范围内若有2个及以上友方单位，维娜技力回复速度+0.3/秒\\n自动开启：攻击距离+1，攻击力+135%，攻击目标数+1 \\n持续时间无限",
+          "keys": [
+            "sp_recovery_per_sec",
+            "atk",
+            "attack@max_target",
+            "buff_stack_cnt"
+          ]
+        },
+        {
+          "id": "skchr_siege2_3",
+          "name": "俱以我之名",
+          "explicitAttackHandler": false,
+          "description": "立即在天赋一生效范围内可部署地面召唤“黄金盟誓”；技能期间可攻击被天赋一生效范围友方单位阻挡的敌人，攻击力+145%，攻击目标数+1，攻击间隔缩短，攻击时伤害类型变为真实",
+          "keys": [
+            "base_attack_time",
+            "atk",
+            "attack@max_target"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_1020_reed2",
+      "name": "焰影苇草",
+      "tier": 6,
+      "branch": "incantationmedic",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_reed2_3",
+      "skills": [
+        {
+          "id": "skcom_quickattack[3]",
+          "name": "迅捷打击·γ型",
+          "explicitAttackHandler": true,
+          "description": "攻击力+27%，攻击速度+25",
+          "keys": [
+            "atk",
+            "attack_speed"
+          ]
+        },
+        {
+          "id": "skchr_reed2_2",
+          "name": "枯荣共息",
+          "explicitAttackHandler": false,
+          "description": "优先使一名部署在地面的干员获得三颗火球，效果如下：每1.5秒对一名敌人造成相当于焰影苇草160%攻击力的法术伤害并仅对该干员触发焰影苇草特性",
+          "keys": [
+            "projectile_life_time",
+            "atk_scale",
+            "cooldown",
+            "max_target"
+          ]
+        },
+        {
+          "id": "skchr_reed2_3",
+          "name": "生命火种",
+          "explicitAttackHandler": false,
+          "description": "同时攻击两名敌人，攻击力+{reed2_skil_3[switch_mode].atk:0%}，第一天赋触发几率提升至100%，技能期间附带灼痕效果的敌人每秒受到20%焰影苇草攻击力的法术伤害、被击倒时对周围敌人造成100%焰影苇草攻击力的法术伤害并施加灼痕效果\\n灼痕效果持续至技能结束",
+          "keys": [
+            "talent@prob",
+            "reed2_skil_3[switch_mode].atk",
+            "talent@s3_atk_scale",
+            "talent@aoe_scale",
+            "talent@range_radius",
+            "talent@atk",
+            "talent@damage_scale",
+            "max_target"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_1038_whitw2",
+      "name": "荒芜拉普兰德",
+      "tier": 6,
+      "branch": "funnel",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_whitw2_3",
+      "skills": [
+        {
+          "id": "skchr_whitw2_1",
+          "name": "慵怠者悲鸣",
+          "explicitAttackHandler": false,
+          "description": "被动效果：浮游单元+1\\n主动触发可以在下列状态和初始状态间切换：\\n攻击力+14%，释放浮游单元随机锁定整个战场内的非移动敌人进行攻击，目标移动或倒下后重新索敌",
+          "keys": [
+            "atk",
+            "attack@cnt"
+          ]
+        },
+        {
+          "id": "skchr_whitw2_2",
+          "name": "逐猎狂飙",
+          "explicitAttackHandler": false,
+          "description": "浮游单元+3，攻击范围扩大，攻击力+60%，释放浮游单元随机锁定敌人攻击，浮游单元攻击时有10%几率使目标恐惧1秒\\n浮游单元在锁定目标倒下后重新索敌，直至技能结束后返回干员身边",
+          "keys": [
+            "atk",
+            "attack@cnt",
+            "attack@prob",
+            "attack@fear"
+          ]
+        },
+        {
+          "id": "skchr_whitw2_3",
+          "name": "终幕·浩劫",
+          "explicitAttackHandler": false,
+          "description": "浮游单元+2，攻击力+45%，释放特殊形态的浮游单元散开后在整个战场范围各自追逐较近的敌人，追上时使目标恐惧2秒并锁定其攻击，浮游单元周围的敌人移动速度-30%且每秒受到相当于攻击力100%的法术伤害（不叠加）；浮游单元在锁定目标倒下后重新索敌，直至技能结束后返回干员身边",
+          "keys": [
+            "atk",
+            "attack@cnt",
+            "attack@times",
+            "attack@move_speed",
+            "attack@magic_atk_scale",
+            "attack@fear",
+            "attack@projectile_move_speed",
+            "attack@range_radius",
+            "attack@projectile_turn_speed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_1041_angel2",
+      "name": "新约能天使",
+      "tier": 6,
+      "branch": "geek",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_angel2_2",
+      "skills": [
+        {
+          "id": "skchr_angel2_1",
+          "name": "天空大扫除",
+          "explicitAttackHandler": false,
+          "description": "每次攻击造成攻击力180%的物理伤害，优先攻击空中单位，主动关闭时发射剩余所有弹药攻击范围内的随机敌人\\n攻击装有8发弹药，打完后结束（可随时停止技能）",
+          "keys": [
+            "attack@atk_scale",
+            "attack@trigger_time",
+            "range_id"
+          ]
+        },
+        {
+          "id": "skchr_angel2_2",
+          "name": "开火成瘾症",
+          "explicitAttackHandler": false,
+          "description": "立即偷取攻击范围内1名友方干员70点攻击速度（持续至技能结束或新约能天使离场），自身与其获得最大生命值180%的屏障，该屏障会持续衰减，攻击间隔降低，每次攻击造成攻击力230%的物理伤害\\n攻击装有35发弹药，打完后结束（可随时停止技能），如果成功偷取攻击速度则额外获得5发弹药",
+          "keys": [
+            "attack@atk_scale",
+            "attack@trigger_time",
+            "addtional_ammo_each",
+            "max_target",
+            "recover_each_cnt",
+            "shield_max_hp_ratio",
+            "shield_max_duration",
+            "steal",
+            "base_attack_time",
+            "steal_max"
+          ]
+        },
+        {
+          "id": "skchr_angel2_3",
+          "name": "使命必达！",
+          "explicitAttackHandler": false,
+          "description": "攻击力+15%，每次攻击变为相当于攻击力115%的5连击，若存在投递坐标，立即对该处造成一次相当于攻击力250%的物理溅射伤害并将一名再部署时间最长的地面干员部署至该处，使其获得6点技力\\n部署后获得投递坐标，攻击装有50发弹药，每次攻击消耗5发，打完后结束（可随时停止技能）",
+          "keys": [
+            "attack@cannon_atk_scale",
+            "attack@trigger_time",
+            "max_deploy_character",
+            "attack@atk_scale",
+            "attack@sp",
+            "atk"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_1046_sbell2",
+      "name": "圣聆初雪",
+      "tier": 6,
+      "branch": "phalanx",
+      "action": "phalanx",
+      "shape": "rangeAll",
+      "moduleAction": false,
+      "defaultSkill": "skchr_sbell2_3",
+      "skills": [
+        {
+          "id": "skchr_sbell2_1",
+          "name": "铃音吹雪",
+          "explicitAttackHandler": false,
+          "description": "立即对范围内所有敌人造成相当于攻击力390%的法术伤害及3.5秒寒冷并将其中等力度地朝部署方向推动，之后积雪向前方地面扩散（最多向前扩散5格）\\n可充能2次",
+          "keys": [
+            "atk_scale",
+            "force",
+            "cold",
+            "trig_cnt"
+          ]
+        },
+        {
+          "id": "skchr_sbell2_2",
+          "name": "霜涛覆岭",
+          "explicitAttackHandler": false,
+          "description": "每次攻击造成相当于攻击力310%的法术伤害，积雪超过5层时会向周围扩散一层（最多向外扩散20格），处于积雪上的地面敌人每秒受到攻击力20%的法术伤害，敌人离开积雪时获得5秒寒冷，积雪在目标点积累至5层时，使目标点变为冻结状态\\n持续时间无限，可主动关闭技能（期间可随时停止技能）",
+          "keys": [
+            "attack@atk_scale_s2",
+            "talent@s2_magic_scale",
+            "talent@max_cast_tile_count",
+            "talent@cold",
+            "talent@token_key"
+          ]
+        },
+        {
+          "id": "skchr_sbell2_3",
+          "name": "群山俯首",
+          "explicitAttackHandler": false,
+          "description": "攻击范围扩大，立即诱导攻击范围内的所有敌人至自身周围的可达地面，持续10秒，积雪生成速度加快，攻击力+35%，攻击速度+30，攻击无视目标10点法术抗性，每次攻击造成相当于攻击力180%的法术伤害",
+          "keys": [
+            "atk",
+            "attack_speed",
+            "magic_resist_penetrate_fixed",
+            "attract_time",
+            "interval",
+            "attack@atk_scale_s3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_1047_halo2",
+      "name": "溯光星源",
+      "tier": 6,
+      "branch": "slower",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_halo2_3",
+      "skills": [
+        {
+          "id": "skchr_halo2_1",
+          "name": "星图闪烁",
+          "explicitAttackHandler": false,
+          "description": "攻击力+45%，攻击可在敌人间重复跳跃，最多跳跃{attack@chain.max_target}次",
+          "keys": [
+            "atk",
+            "attack@chain.max_target",
+            "attack@projectile_range"
+          ]
+        },
+        {
+          "id": "skchr_halo2_2",
+          "name": "星束引力",
+          "explicitAttackHandler": false,
+          "description": "下次攻击选择攻击范围内距离目标点最远的1个敌人为目标，造成相当于攻击力115%的法术伤害，攻击造成的停顿时间延长至3秒，并分别链接目标附近的最多2个敌人小力地拉向目标所在位置同时造成相同的法术伤害",
+          "keys": [
+            "atk_scale",
+            "sluggish",
+            "max_target",
+            "force",
+            "ability_range_radius",
+            "atk_scale_link",
+            "max_target_attack"
+          ]
+        },
+        {
+          "id": "skchr_halo2_3",
+          "name": "并流连锁",
+          "explicitAttackHandler": false,
+          "description": "攻击范围扩大，攻击力+35%，攻击间隔缩短，持续锁定2个敌人进行攻击，被锁定的敌人会互相链接；每个被链接的敌人会把即将受到法术伤害的15%额外传导给其他链接目标",
+          "keys": [
+            "atk",
+            "base_attack_time",
+            "attack@max_target",
+            "attack@atk_share"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_2026_yu",
+      "name": "余",
+      "tier": 6,
+      "branch": "primprotector",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_yu_3",
+      "skills": [
+        {
+          "id": "skchr_yu_1",
+          "name": "今日做东",
+          "explicitAttackHandler": true,
+          "description": "被动效果：自身更容易受到敌人攻击\\n生命上限+25%，防御力+25%，每次受到攻击对目标造成相当于余攻击力30%的灼燃损伤",
+          "keys": [
+            "max_hp",
+            "def",
+            "ep_damage_ratio",
+            "taunt_level"
+          ]
+        },
+        {
+          "id": "skchr_yu_2",
+          "name": "厚礼上宾",
+          "explicitAttackHandler": false,
+          "description": "立即对周围所有敌人造成相当于攻击力100%的法术伤害并将其中的地面可达目标传送至自身位置，阻挡数+2，生命上限+100%，攻击力+170%，普通攻击造成法术伤害",
+          "keys": [
+            "max_hp",
+            "atk",
+            "atk_scale",
+            "block_cnt"
+          ]
+        },
+        {
+          "id": "skchr_yu_3",
+          "name": "灶里乾坤",
+          "explicitAttackHandler": false,
+          "description": "生命上限+50%，攻击力+50%，防御力+50%，将第二天赋效果赋予全场所有干员；生成一面跨越整个战场的火墙，其他友方穿过火墙造成法术伤害时附带相当于余攻击力6%的灼燃损伤，敌方子弹穿过火墙时有10%几率被清除",
+          "keys": [
+            "max_hp",
+            "atk",
+            "def",
+            "ep_damage_ratio",
+            "prob"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_245_cello",
+      "name": "塑心",
+      "tier": 6,
+      "branch": "ritualist",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_cello_1",
+      "skills": [
+        {
+          "id": "skchr_cello_1",
+          "name": "“黄金的狂喜”",
+          "explicitAttackHandler": true,
+          "description": "对一个未处于损伤爆发期间的敌人造成相当于攻击力210%的法术伤害并附带85%攻击力的凋亡损伤\\n可充能2次，技能未开启时无法普通攻击",
+          "keys": [
+            "atk_scale",
+            "ep_damage_ratio"
+          ]
+        },
+        {
+          "id": "skchr_cello_2",
+          "name": "“安魂的弥撒”",
+          "explicitAttackHandler": true,
+          "description": "攻击速度+30，额外攻击1个目标，自身和攻击范围内攻击力最高的另一名友方干员对敌人造成伤害时附带自身15%攻击力的凋亡损伤",
+          "keys": [
+            "attack_speed",
+            "ep_damage_ratio"
+          ]
+        },
+        {
+          "id": "skchr_cello_3",
+          "name": "“自由的探戈”",
+          "explicitAttackHandler": true,
+          "description": "停止攻击，攻击范围扩大，攻击力+105%，第二天赋效果提升至1.9倍；技能期间使攻击范围内其他干员生命上限最高的生命上限+{cello_s_3[max_hp].max_hp:0%}、攻击力最高的攻击力+{cello_s_3[atk].atk:0%}、防御力最高的防御力+{cello_s_3[def].def:0%}",
+          "keys": [
+            "atk",
+            "scale_delta_to_one",
+            "cello_s_3[max_hp].max_hp",
+            "cello_s_3[atk].atk",
+            "cello_s_3[def].def"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_249_mlyss",
+      "name": "缪尔赛思",
+      "tier": 6,
+      "branch": "tactician",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": true,
+      "defaultSkill": "skchr_mlyss_3",
+      "skills": [
+        {
+          "id": "skchr_mlyss_1",
+          "name": "渐进性润化",
+          "explicitAttackHandler": true,
+          "description": "期间逐渐回复11点费用，自身与流形攻击力+22%，攻击速度+22",
+          "keys": [
+            "mlyss_s_1[cost].cost",
+            "mlyss_s_1[cost].interval",
+            "atk",
+            "attack_speed",
+            "fake_cost"
+          ]
+        },
+        {
+          "id": "skchr_mlyss_2",
+          "name": "生态耦合",
+          "explicitAttackHandler": true,
+          "description": "立即获得13点费用，自身与流形攻击力+22%，若流形为近战复制体时，每秒回复2%的生命值，获得15%的庇护，若为远程复制体时，攻击变为二连击，随机攻击范围内的目标",
+          "keys": [
+            "cost",
+            "atk",
+            "damage_resistance",
+            "hp_recovery_per_sec_by_max_hp_ratio"
+          ]
+        },
+        {
+          "id": "skchr_mlyss_3",
+          "name": "浅层非熵适应",
+          "explicitAttackHandler": true,
+          "description": "立即获得13点费用，自身与流形攻击力+22%，若流形为近战复制体时每{mlyss_s_3[token_melee_trigger].interval}秒对周围八格敌人向自己中心小力度地拖拽并使所有阻挡的单位持续晕眩，若为远程复制体时刷新所有流形且攻击附带持续{mlyss_s_3[unmoveable].duration}秒的束缚",
+          "keys": [
+            "cost",
+            "atk",
+            "mlyss_s_3[token_melee_trigger].interval",
+            "mlyss_s_3[unmoveable].duration"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_391_rosmon",
+      "name": "迷迭香",
+      "tier": 6,
+      "branch": "bombarder",
+      "action": "attack",
+      "shape": "splash",
+      "moduleAction": true,
+      "defaultSkill": "skchr_rosmon_2",
+      "skills": [
+        {
+          "id": "skchr_rosmon_1",
+          "name": "思维膨大",
+          "explicitAttackHandler": true,
+          "description": "下次攻击额外造成一次相当于攻击力100%的法术伤害",
+          "keys": [
+            "extra_atk_scale",
+            "append_atk_scale"
+          ]
+        },
+        {
+          "id": "skchr_rosmon_2",
+          "name": "末梢阻断",
+          "explicitAttackHandler": true,
+          "description": "攻击间隔增大，攻击力+20%，溅射范围扩大，每次攻击额外造成2次余震；受到攻击和余震的目标有20%的几率晕眩0.9秒",
+          "keys": [
+            "base_attack_time",
+            "atk",
+            "add_times",
+            "attack@prob",
+            "attack@stun"
+          ]
+        },
+        {
+          "id": "skchr_rosmon_3",
+          "name": "“如你所愿”",
+          "explicitAttackHandler": true,
+          "description": "攻击间隔缩短，攻击力+25%，同时攻击2个敌人但仅选择被阻挡的敌人作为目标；立即在攻击范围内的近战位部署两个战术装备（部署后晕眩周围敌人2秒，阻挡的敌人防御力-160）",
+          "keys": [
+            "base_attack_time",
+            "atk",
+            "attack@max_target",
+            "def",
+            "attack@append_atk_scale",
+            "stun"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4042_lumen",
+      "name": "流明",
+      "tier": 6,
+      "branch": "healer",
+      "action": "heal",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_lumen_3",
+      "skills": [
+        {
+          "id": "skchr_lumen_1",
+          "name": "沐雨",
+          "explicitAttackHandler": false,
+          "description": "下次攻击使目标和周围的友军每秒受到相当于{aura.heal_scale:0%}流明攻击力的治疗效果，持续{aura.projectile_life_time}秒",
+          "keys": [
+            "aura.heal_scale",
+            "aura.projectile_life_time",
+            "aura.interval"
+          ]
+        },
+        {
+          "id": "skchr_lumen_2",
+          "name": "沛霖",
+          "explicitAttackHandler": false,
+          "description": "立刻恢复攻击范围内最多2名友方单位相当于攻击力160%的生命；\\n蓄力额外效果：并解除目标所受的异常状态",
+          "keys": [
+            "heal_scale",
+            "max_target"
+          ]
+        },
+        {
+          "id": "skchr_lumen_3",
+          "name": "灯火不灭",
+          "explicitAttackHandler": false,
+          "description": "攻击力+30%，攻击速度+20，优先治疗处于异常状态中的单位；只在治疗异常状态中的单位时会消耗子弹，使该次治疗量提升至攻击力的135%并解除目标所受的异常状态\\n攻击装有4发子弹，打完后技能结束（期间可随时停止技能）",
+          "keys": [
+            "attack_speed",
+            "heal_scale",
+            "attack@trigger_time",
+            "atk"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4058_pepe",
+      "name": "佩佩",
+      "tier": 6,
+      "branch": "hammer",
+      "action": "attack",
+      "shape": "splash",
+      "moduleAction": false,
+      "defaultSkill": "skchr_pepe_3",
+      "skills": [
+        {
+          "id": "skchr_pepe_1",
+          "name": "盖戳！",
+          "explicitAttackHandler": false,
+          "description": "下次攻击造成相当于攻击力190%的物理伤害，处于异常状态时可以释放技能并清除异常状态\\n可充能1次",
+          "keys": [
+            "atk_scale"
+          ]
+        },
+        {
+          "id": "skchr_pepe_2",
+          "name": "阻遏混乱锤",
+          "explicitAttackHandler": false,
+          "description": "攻击范围扩大，攻击力+55%，攻击速度+50，随机攻击范围内的目标\\n每次使用时，使后续开启技能的攻击速度额外+25，最多叠加2层",
+          "keys": [
+            "atk",
+            "attack_speed",
+            "attack_speed_extra",
+            "max_stack_cnt"
+          ]
+        },
+        {
+          "id": "skchr_pepe_3",
+          "name": "时光震荡",
+          "explicitAttackHandler": false,
+          "description": "攻击间隔略微增大，攻击力+150%，攻击使命中的目标晕眩0.8秒，对主目标提升至1秒，每次攻击后使溅射范围扩大且攻击力额外+13%，最多叠加4层",
+          "keys": [
+            "atk",
+            "attack@stun",
+            "attack@atk",
+            "attack@stun_main",
+            "attack@ability_range_forward_extend",
+            "attack@max_stack_cnt",
+            "base_attack_time"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4082_qiubai",
+      "name": "仇白",
+      "tier": 6,
+      "branch": "lord",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_qiubai_3",
+      "skills": [
+        {
+          "id": "skchr_qiubai_1",
+          "name": "留羽",
+          "explicitAttackHandler": false,
+          "description": "下次攻击使目标束缚2秒，该次束缚结束时对目标和附近的所有敌人造成相当于攻击力210%的法术伤害",
+          "keys": [
+            "aoe_scale",
+            "duration"
+          ]
+        },
+        {
+          "id": "skchr_qiubai_2",
+          "name": "承影",
+          "explicitAttackHandler": false,
+          "description": "对前方范围内的地面敌人造成攻击力195%的法术伤害；攻击范围改变，攻击力+75%，攻击范围内的地面敌人停顿；技能结束时对范围内的地面敌人造成攻击力195%的物理伤害",
+          "keys": [
+            "sword_begin_atk_scale",
+            "sword_end_atk_scale",
+            "atk",
+            "sword_end_duration"
+          ]
+        },
+        {
+          "id": "skchr_qiubai_3",
+          "name": "问雪",
+          "explicitAttackHandler": true,
+          "description": "攻击范围扩大，攻击力+30%，伤害类型变为法术，额外攻击2个目标，远程攻击不再降低伤害，每次攻击使自身攻击速度+10（最多叠加5次）",
+          "keys": [
+            "atk",
+            "attack_speed",
+            "max_stack_cnt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4116_blkkgt",
+      "name": "锏",
+      "tier": 6,
+      "branch": "sword",
+      "action": "attack",
+      "shape": "double",
+      "moduleAction": false,
+      "defaultSkill": "skchr_blkkgt_3",
+      "skills": [
+        {
+          "id": "skchr_blkkgt_1",
+          "name": "纯粹的武力",
+          "explicitAttackHandler": false,
+          "description": "下次攻击对周围最多5名地面敌人造成两次相当于攻击力175%的物理伤害",
+          "keys": [
+            "atk_scale_s1",
+            "max_target"
+          ]
+        },
+        {
+          "id": "skchr_blkkgt_2",
+          "name": "无声的嘲笑",
+          "explicitAttackHandler": false,
+          "description": "对前方范围内最多5名地面敌人发动{blkkgt_s_2[not_blocked].trig_cnt}次斩击，攻击被阻挡的敌人时改为{blkkgt_s_2[blocked].trig_cnt}次斩击，天赋的发动概率提升至100%，每次斩击造成相当于攻击力250%的物理伤害\\n可充能2次",
+          "keys": [
+            "dot_scale",
+            "max_target",
+            "blkkgt_s_2[not_blocked].trig_cnt",
+            "blkkgt_s_2[blocked].trig_cnt",
+            "prob"
+          ]
+        },
+        {
+          "id": "skchr_blkkgt_3",
+          "name": "归于宁静",
+          "explicitAttackHandler": false,
+          "description": "持续发动总计10次斩击，每次斩击对最多5名敌人造成相当于攻击力180%的物理伤害，天赋的发动概率提升至100%，并持续将敌人中等力度地拖拽至自身中心，之后将造成一次相当于攻击力300%的物理伤害并将敌人较大力地拖拽至自身中心",
+          "keys": [
+            "prob",
+            "max_target",
+            "d_atk_scale",
+            "d_hit_interval",
+            "p_force",
+            "p_hit_interval",
+            "e_atk_scale_end",
+            "e_force"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_4193_lemuen",
+      "name": "蕾缪安",
+      "tier": 6,
+      "branch": "longrange",
+      "action": "attack",
+      "shape": "single",
+      "moduleAction": false,
+      "defaultSkill": "skchr_lemuen_3",
+      "skills": [
+        {
+          "id": "skchr_lemuen_1",
+          "name": "重逢问候",
+          "explicitAttackHandler": false,
+          "description": "攻击时攻击力提升至165%，额外攻击1名敌人\\n攻击装有5发弹药，打完后结束（可随时停止技能）",
+          "keys": [
+            "attack@atk_scale",
+            "attack@trigger_time"
+          ]
+        },
+        {
+          "id": "skchr_lemuen_2",
+          "name": "归乡邀约",
+          "explicitAttackHandler": false,
+          "description": "攻击速度+50，攻击力+40%，场上有被通缉敌人时会消耗子弹对其瞄准最多2.5秒后进行无视闪避的狙击（期间攻击力从180%逐渐提升至355%，攻击力高于敌人剩余生命值和防御力之和时停止瞄准并立刻攻击）\\n攻击装有6发弹药，打完后结束（可随时停止技能）",
+          "keys": [
+            "attack_speed",
+            "atk",
+            "attack@trigger_time",
+            "attack@aim_duration",
+            "attack@trig_cnt",
+            "attack@interval",
+            "attack@ex_atk_scale",
+            "attack@main_atk_scale",
+            "attack@fin_atk_scale"
+          ]
+        },
+        {
+          "id": "skchr_lemuen_3",
+          "name": "礼炮·强制追思",
+          "explicitAttackHandler": false,
+          "description": "停止攻击，每0.5秒消耗1发子弹依次锁定敌人，技能结束时对每名被锁定的敌人所在位置进行轰炸，轰炸造成攻击力240%的范围物理伤害（中心伤害提升至攻击力的360%）\\n攻击装有5发弹药，打完后结束（可随时停止技能）",
+          "keys": [
+            "attack@trigger_time",
+            "attack@projectile_range",
+            "attack@aim_interval",
+            "attack@emit_offset",
+            "attack@proj_atk_scale_1",
+            "attack@dist_1",
+            "attack@proj_atk_scale_2",
+            "attack@dist_2",
+            "attack@limited_hit_time"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "char_472_pasngr",
+      "name": "异客",
+      "tier": 6,
+      "branch": "chain",
+      "action": "attack",
+      "shape": "chain",
+      "moduleAction": true,
+      "defaultSkill": "skchr_pasngr_3",
+      "skills": [
+        {
+          "id": "skchr_pasngr_1",
+          "name": "电能之触",
+          "explicitAttackHandler": true,
+          "description": "下次攻击时攻击力提升至{pasngr_s_1.atk_scale:0%}，最多在{pasngr_s_1.max_target}个目标间跳跃，攻击造成的停顿时间延长至{pasngr_s_1.sluggish}秒",
+          "keys": [
+            "pasngr_s_1.atk_scale",
+            "pasngr_s_1.sluggish",
+            "pasngr_s_1.max_target"
+          ]
+        },
+        {
+          "id": "skchr_pasngr_2",
+          "name": "聚焦指令",
+          "explicitAttackHandler": true,
+          "description": "攻击距离+1，攻击力+15%，攻击间隔小幅度缩短，攻击最大弹跳次数提升至5",
+          "keys": [
+            "base_attack_time",
+            "ability_range_forward_extend",
+            "atk",
+            "attack@max_target"
+          ]
+        },
+        {
+          "id": "skchr_pasngr_3",
+          "name": "辉煌裂片",
+          "explicitAttackHandler": false,
+          "description": "立即寻找大范围内生命值最高的目标，在其位置生成持续4秒的雷暴区域，期间每0.5秒以115%的攻击力对雷暴区域内的随机敌人进行一次额外攻击；可充能2次",
+          "keys": [
+            "atk_scale",
+            "duration",
+            "ct",
+            "projectile_delay_time",
+            "interval",
+            "chain.max_target",
+            "sluggish"
+          ]
+        }
+      ]
+    }
+  ]
+}

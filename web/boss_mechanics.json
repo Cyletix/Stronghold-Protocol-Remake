@@ -1,0 +1,1132 @@
+{
+  "schemaVersion": 1,
+  "generatedBy": "tools/build_boss_mechanics.js",
+  "sourceHashes": {
+    "data/ArknightsGameData/zh_CN/gamedata/excel/enemy_handbook_table.json": "0ab2b97d6bc4da6825fed60af634bd72197d2aba56ac5848f944c4016ea8bf43",
+    "data/ArknightsGameData/zh_CN/gamedata/levels/enemydata/enemy_database.json": "d3f494055a1ec0d672b5a8c86b291be310a2f7a458c932fd6807c0f8b67fd7a9",
+    "data/ArknightsGameData/zh_CN/gamedata/excel/activity_table.json": "27d95d26e42dc9cd133ed568181ea389b056a4faaaee1a9952dde57fdf149e1f"
+  },
+  "profiles": {
+    "enemy_9013_acstmk": {
+      "bossId": "boss_1",
+      "name": "假想敌：胄",
+      "prefabKey": "enemy_9013_acstmk",
+      "movement": "fixed",
+      "hitbox": {
+        "width": 4.949999809265137,
+        "height": 2.950000047683716,
+        "offsetX": 0,
+        "offsetY": 1
+      },
+      "evidence": {
+        "level": "Verified",
+        "prefab": "assets/AB/Android/battle/enm_pfb_28.ab",
+        "rootPathId": "8915770806903392567",
+        "colliderPathId": "9061330787609626935",
+        "commonBuffPathId": "8917350904993237303",
+        "commonBuffKey": "acstmk_passive",
+        "handbook": "data/ArknightsGameData/zh_CN/gamedata/excel/enemy_handbook_table.json#enemyData.enemy_9013_acstmk.abilityList"
+      },
+      "attack": {
+        "selection": "random",
+        "targets": 1,
+        "damageType": "arts"
+      },
+      "damageReduction": {
+        "thresholdKey": "1.hp_ratio",
+        "scaleKey": "1.damage_scale",
+        "inclusive": false
+      }
+    },
+    "enemy_1521_dslily": {
+      "bossId": "boss_4",
+      "name": "盐风主教昆图斯",
+      "prefabKey": "enemy_1521_dslily",
+      "movement": "fixed",
+      "hitbox": {
+        "width": 4.949999809265137,
+        "height": 2.950000047683716,
+        "offsetX": 0,
+        "offsetY": 1
+      },
+      "evidence": {
+        "level": "Verified",
+        "prefab": "assets/AB/Android/battle/enm_pfb_18.ab",
+        "rootPathId": "-1225244058112211443",
+        "colliderPathId": "-5871092945827969523",
+        "commonBuffPathId": "-6119291241878305267",
+        "commonBuffKey": "dslily_common_unmove",
+        "handbook": "data/ArknightsGameData/zh_CN/gamedata/excel/enemy_handbook_table.json#enemyData.enemy_1521_dslily.abilityList"
+      },
+      "attack": {
+        "selection": "highestDefense",
+        "targets": 2,
+        "damageType": "phys",
+        "damageDelay": 0.4000000059604645
+      },
+      "skills": {
+        "Rockfall": {
+          "mode": 0,
+          "selection": "highestDefense",
+          "targets": 2,
+          "damageType": "phys",
+          "damageDelay": 1,
+          "elementType": null,
+          "sourcePathId": "-2817791767968594419"
+        },
+        "RockfallG1": {
+          "mode": 1,
+          "selection": "highestDefense",
+          "targets": 4,
+          "damageType": "phys",
+          "damageDelay": 1,
+          "elementType": null,
+          "sourcePathId": "-764859684864309747"
+        },
+        "RockfallG2": {
+          "mode": 2,
+          "selection": "highestDefense",
+          "targets": 8,
+          "damageType": "phys",
+          "damageDelay": 1,
+          "elementType": null,
+          "sourcePathId": "-4875174298131937779"
+        },
+        "Tidewater": {
+          "mode": 0,
+          "selection": "all",
+          "targets": null,
+          "damageType": "arts",
+          "damageDelay": 0,
+          "elementType": "nervous",
+          "sourcePathId": "-4228060237934148083"
+        },
+        "TidewaterG1": {
+          "mode": 1,
+          "selection": "all",
+          "targets": null,
+          "damageType": "arts",
+          "damageDelay": 0,
+          "elementType": "nervous",
+          "sourcePathId": "3604489481151792653"
+        },
+        "TidewaterG2": {
+          "mode": 2,
+          "selection": "all",
+          "targets": null,
+          "damageType": "arts",
+          "damageDelay": 0,
+          "elementType": "nervous",
+          "sourcePathId": "-5614989952579647987"
+        }
+      }
+    },
+    "enemy_9032_aclionk": {
+      "bossId": "boss_6",
+      "name": "阿利斯泰尔，帝国余晖",
+      "prefabKey": "enemy_9032_aclionk",
+      "movement": "fixed",
+      "hitbox": {
+        "width": 4.949999809265137,
+        "height": 2.950000047683716,
+        "offsetX": 0,
+        "offsetY": 1
+      },
+      "evidence": {
+        "level": "Verified",
+        "prefab": "assets/AB/Android/battle/enm_pfb_29.ab",
+        "rootPathId": "1770554816996651062",
+        "colliderPathId": "-1663214121109999562",
+        "commonBuffPathId": "-6604256259827814346",
+        "commonBuffKey": "enemy_vtlionk_unmove",
+        "handbook": "data/ArknightsGameData/zh_CN/gamedata/excel/enemy_handbook_table.json#enemyData.enemy_9032_aclionk.abilityList"
+      },
+      "defensePhase": {
+        "thresholdKey": "advance.hp_ratio",
+        "defenseKey": "advance.def",
+        "resistanceKey": "advance.magic_resistance",
+        "inclusive": true
+      }
+    },
+    "enemy_9033_acdeer": {
+      "bossId": "boss_7",
+      "name": "“萨米的意志”",
+      "prefabKey": "enemy_9033_acdeer",
+      "movement": "fixed",
+      "hitbox": {
+        "width": 4.949999809265137,
+        "height": 2.950000047683716,
+        "offsetX": 0,
+        "offsetY": 1
+      },
+      "evidence": {
+        "level": "Verified",
+        "prefab": "assets/AB/Android/battle/enm_pfb_29.ab",
+        "rootPathId": "7859740430962114931",
+        "colliderPathId": "4165954101551219059",
+        "commonBuffPathId": "-8004128765363502733",
+        "commonBuffKey": "enemy_smdeer_passive",
+        "handbook": "data/ArknightsGameData/zh_CN/gamedata/excel/enemy_handbook_table.json#enemyData.enemy_9033_acdeer.abilityList"
+      }
+    },
+    "enemy_9013_acstmk_2": {
+      "bossId": "boss_8",
+      "name": "假想敌：胄",
+      "prefabKey": "enemy_9013_acstmk",
+      "movement": "fixed",
+      "hitbox": {
+        "width": 4.949999809265137,
+        "height": 2.950000047683716,
+        "offsetX": 0,
+        "offsetY": 1
+      },
+      "evidence": {
+        "level": "Verified",
+        "prefab": "assets/AB/Android/battle/enm_pfb_28.ab",
+        "rootPathId": "8915770806903392567",
+        "colliderPathId": "9061330787609626935",
+        "commonBuffPathId": "8917350904993237303",
+        "commonBuffKey": "acstmk_passive",
+        "handbook": "data/ArknightsGameData/zh_CN/gamedata/excel/enemy_handbook_table.json#enemyData.enemy_9013_acstmk_2.abilityList"
+      },
+      "attack": {
+        "selection": "random",
+        "targets": 1,
+        "damageType": "arts"
+      },
+      "damageReduction": {
+        "thresholdKey": "1.hp_ratio",
+        "scaleKey": "1.damage_scale",
+        "inclusive": false
+      }
+    }
+  },
+  "prefabEvidence": {
+    "enemy_1521_dslily": {
+      "attacks": [
+        {
+          "_animKey": "Attack",
+          "_atkScale": 0,
+          "_attackType": 1,
+          "_damageType": 1,
+          "_epDamageRatio": 0,
+          "buffs": [
+            {
+              "attributes": {
+                "abnormalAntis": [],
+                "abnormalComboImmunes": [],
+                "abnormalCombos": [],
+                "abnormalFlags": [],
+                "abnormalImmunes": [],
+                "attributeModifiers": []
+              },
+              "blackboard": [
+                {
+                  "key": "atk_scale",
+                  "value": 1,
+                  "valueStr": ""
+                }
+              ],
+              "buffKey": "dslily_attack[damage]",
+              "durationKey": "",
+              "firstTriggerInterval": -1,
+              "lifeTime": 0,
+              "lifeTimeType": 2,
+              "templateKey": "dslily_attack[damage]",
+              "triggerCnt": 1,
+              "triggerInterval": 0.4000000059604645,
+              "triggerLifeType": 1,
+              "waitFirstTriggerInterval": 1
+            }
+          ],
+          "mode": 0,
+          "modePathId": "-2090441622201874931",
+          "pathId": "-4506200466473990643",
+          "selector": {
+            "_limitTargetNum": 1,
+            "_maxNum": 2,
+            "_postFilter": 8,
+            "_sortByTauntAtLast": 1,
+            "pathId": "-1654097967916104179"
+          }
+        },
+        {
+          "_animKey": "Attack",
+          "_atkScale": 0,
+          "_attackType": 1,
+          "_damageType": 1,
+          "_epDamageRatio": 0,
+          "buffs": [
+            {
+              "attributes": {
+                "abnormalAntis": [],
+                "abnormalComboImmunes": [],
+                "abnormalCombos": [],
+                "abnormalFlags": [],
+                "abnormalImmunes": [],
+                "attributeModifiers": []
+              },
+              "blackboard": [
+                {
+                  "key": "atk_scale",
+                  "value": 1,
+                  "valueStr": ""
+                }
+              ],
+              "buffKey": "dslily_attack[damage]",
+              "durationKey": "",
+              "firstTriggerInterval": -1,
+              "lifeTime": 0,
+              "lifeTimeType": 2,
+              "templateKey": "dslily_attack[damage]",
+              "triggerCnt": 1,
+              "triggerInterval": 0.4000000059604645,
+              "triggerLifeType": 1,
+              "waitFirstTriggerInterval": 1
+            }
+          ],
+          "mode": 1,
+          "modePathId": "-8096558976125417971",
+          "pathId": "-7217777191151778291",
+          "selector": {
+            "_limitTargetNum": 1,
+            "_maxNum": 2,
+            "_postFilter": 8,
+            "_sortByTauntAtLast": 1,
+            "pathId": "-1654097967916104179"
+          }
+        },
+        {
+          "_animKey": "Attack",
+          "_atkScale": 0,
+          "_attackType": 1,
+          "_damageType": 1,
+          "_epDamageRatio": 0,
+          "buffs": [
+            {
+              "attributes": {
+                "abnormalAntis": [],
+                "abnormalComboImmunes": [],
+                "abnormalCombos": [],
+                "abnormalFlags": [],
+                "abnormalImmunes": [],
+                "attributeModifiers": []
+              },
+              "blackboard": [
+                {
+                  "key": "atk_scale",
+                  "value": 1,
+                  "valueStr": ""
+                }
+              ],
+              "buffKey": "dslily_attack[damage]",
+              "durationKey": "",
+              "firstTriggerInterval": -1,
+              "lifeTime": 0,
+              "lifeTimeType": 2,
+              "templateKey": "dslily_attack[damage]",
+              "triggerCnt": 1,
+              "triggerInterval": 0.4000000059604645,
+              "triggerLifeType": 1,
+              "waitFirstTriggerInterval": 1
+            }
+          ],
+          "mode": 2,
+          "modePathId": "-612818819033840115",
+          "pathId": "3200548221703374349",
+          "selector": {
+            "_limitTargetNum": 1,
+            "_maxNum": 2,
+            "_postFilter": 8,
+            "_sortByTauntAtLast": 1,
+            "pathId": "-1654097967916104179"
+          }
+        }
+      ],
+      "bodyType": 1,
+      "bundle": "assets/AB/Android/battle/enm_pfb_18.ab",
+      "bundleSha256": "75fe6d370e038e9097809df60c7c9483131898993e879a7ac57915dc2e6e41aa",
+      "collider": {
+        "m_IsTrigger": true,
+        "m_Offset": {
+          "x": 0,
+          "y": 1
+        },
+        "m_Size": {
+          "x": 4.949999809265137,
+          "y": 2.950000047683716
+        },
+        "pathId": "-5871092945827969523"
+      },
+      "commonBuffs": [
+        {
+          "attributes": {
+            "abnormalAntis": [],
+            "abnormalComboImmunes": [
+              0
+            ],
+            "abnormalCombos": [],
+            "abnormalFlags": [
+              22,
+              3
+            ],
+            "abnormalImmunes": [],
+            "attributeModifiers": []
+          },
+          "blackboard": [],
+          "buffKey": "dslily_common_unmove",
+          "durationKey": "",
+          "firstTriggerInterval": -1,
+          "lifeTime": 0,
+          "lifeTimeType": 2,
+          "pathId": "-6119291241878305267",
+          "templateKey": "empty",
+          "triggerCnt": 0,
+          "triggerInterval": -1,
+          "triggerLifeType": 0,
+          "waitFirstTriggerInterval": 1
+        }
+      ],
+      "controllerPathId": "-3971049304553535987",
+      "phaseBindings": {
+        "AtkUp1": {
+          "buffs": [
+            {
+              "attributes": {
+                "abnormalAntis": [],
+                "abnormalComboImmunes": [],
+                "abnormalCombos": [],
+                "abnormalFlags": [],
+                "abnormalImmunes": [],
+                "attributeModifiers": [
+                  {
+                    "attributeType": 1,
+                    "fetchBaseValueFromSourceEntity": 0,
+                    "formulaItem": 1,
+                    "loadFromBlackboard": 1,
+                    "value": 0
+                  }
+                ]
+              },
+              "blackboard": [],
+              "buffKey": "dslily_atkup_1",
+              "durationKey": "",
+              "firstTriggerInterval": -1,
+              "lifeTime": 0,
+              "lifeTimeType": 2,
+              "templateKey": "empty",
+              "triggerCnt": 0,
+              "triggerInterval": -1,
+              "triggerLifeType": 0,
+              "waitFirstTriggerInterval": 1
+            }
+          ],
+          "hierarchy": "enemy_1521_dslily/Modes/G1/Talents/AtkUp1",
+          "metadata": {
+            "blackboardPrefix": "",
+            "namedAsAlias": ""
+          },
+          "pathId": "8737076099377415693"
+        },
+        "AtkUp2": {
+          "buffs": [
+            {
+              "attributes": {
+                "abnormalAntis": [],
+                "abnormalComboImmunes": [],
+                "abnormalCombos": [],
+                "abnormalFlags": [],
+                "abnormalImmunes": [],
+                "attributeModifiers": [
+                  {
+                    "attributeType": 1,
+                    "fetchBaseValueFromSourceEntity": 0,
+                    "formulaItem": 1,
+                    "loadFromBlackboard": 1,
+                    "value": 0
+                  }
+                ]
+              },
+              "blackboard": [],
+              "buffKey": "dslily_atkup_2",
+              "durationKey": "",
+              "firstTriggerInterval": -1,
+              "lifeTime": 0,
+              "lifeTimeType": 2,
+              "templateKey": "empty",
+              "triggerCnt": 0,
+              "triggerInterval": -1,
+              "triggerLifeType": 0,
+              "waitFirstTriggerInterval": 1
+            },
+            {
+              "attributes": {
+                "abnormalAntis": [],
+                "abnormalComboImmunes": [],
+                "abnormalCombos": [],
+                "abnormalFlags": [],
+                "abnormalImmunes": [],
+                "attributeModifiers": []
+              },
+              "blackboard": [],
+              "buffKey": "dslily_atkup_2[effect]",
+              "durationKey": "",
+              "firstTriggerInterval": -1,
+              "lifeTime": 0,
+              "lifeTimeType": 2,
+              "templateKey": "empty",
+              "triggerCnt": 0,
+              "triggerInterval": -1,
+              "triggerLifeType": 0,
+              "waitFirstTriggerInterval": 1
+            }
+          ],
+          "hierarchy": "enemy_1521_dslily/Modes/G2/Talents/AtkUp2",
+          "metadata": {
+            "blackboardPrefix": "",
+            "namedAsAlias": ""
+          },
+          "pathId": "3313364034577253901"
+        },
+        "GrowUp1": {
+          "buffs": [
+            {
+              "attributes": {
+                "abnormalAntis": [],
+                "abnormalComboImmunes": [],
+                "abnormalCombos": [],
+                "abnormalFlags": [],
+                "abnormalImmunes": [],
+                "attributeModifiers": []
+              },
+              "blackboard": [
+                {
+                  "key": "mode",
+                  "value": 1,
+                  "valueStr": ""
+                }
+              ],
+              "buffKey": "dslily_growup[countdown]",
+              "durationKey": "",
+              "firstTriggerInterval": -1,
+              "lifeTime": 0,
+              "lifeTimeType": 2,
+              "templateKey": "dslily_growup[countdown]",
+              "triggerCnt": 1,
+              "triggerInterval": -1,
+              "triggerLifeType": 1,
+              "waitFirstTriggerInterval": 1
+            },
+            {
+              "attributes": {
+                "abnormalAntis": [],
+                "abnormalComboImmunes": [],
+                "abnormalCombos": [],
+                "abnormalFlags": [],
+                "abnormalImmunes": [],
+                "attributeModifiers": []
+              },
+              "blackboard": [
+                {
+                  "key": "times",
+                  "value": 1,
+                  "valueStr": ""
+                },
+                {
+                  "key": "mode",
+                  "value": 1,
+                  "valueStr": ""
+                }
+              ],
+              "buffKey": "dslily_growup[hpratio]",
+              "durationKey": "",
+              "firstTriggerInterval": -1,
+              "lifeTime": 0,
+              "lifeTimeType": 2,
+              "templateKey": "dslily_growup_hp_ratio",
+              "triggerCnt": 0,
+              "triggerInterval": 0.10000000149011612,
+              "triggerLifeType": 0,
+              "waitFirstTriggerInterval": 1
+            }
+          ],
+          "hierarchy": "enemy_1521_dslily/Modes/Default/Talents/GrowUp1",
+          "metadata": {
+            "blackboardPrefix": "",
+            "namedAsAlias": ""
+          },
+          "pathId": "2222114179615114765"
+        },
+        "GrowUp2": {
+          "buffs": [
+            {
+              "attributes": {
+                "abnormalAntis": [],
+                "abnormalComboImmunes": [],
+                "abnormalCombos": [],
+                "abnormalFlags": [],
+                "abnormalImmunes": [],
+                "attributeModifiers": []
+              },
+              "blackboard": [
+                {
+                  "key": "mode",
+                  "value": 2,
+                  "valueStr": ""
+                }
+              ],
+              "buffKey": "dslily_growup[countdown]",
+              "durationKey": "growup_duration",
+              "firstTriggerInterval": -1,
+              "lifeTime": 0,
+              "lifeTimeType": 2,
+              "templateKey": "dslily_growup[countdown]",
+              "triggerCnt": 1,
+              "triggerInterval": -1,
+              "triggerLifeType": 1,
+              "waitFirstTriggerInterval": 1
+            },
+            {
+              "attributes": {
+                "abnormalAntis": [],
+                "abnormalComboImmunes": [],
+                "abnormalCombos": [],
+                "abnormalFlags": [],
+                "abnormalImmunes": [],
+                "attributeModifiers": []
+              },
+              "blackboard": [
+                {
+                  "key": "times",
+                  "value": 2,
+                  "valueStr": ""
+                },
+                {
+                  "key": "mode",
+                  "value": 2,
+                  "valueStr": ""
+                }
+              ],
+              "buffKey": "dslily_growup[hpratio]",
+              "durationKey": "",
+              "firstTriggerInterval": -1,
+              "lifeTime": 0,
+              "lifeTimeType": 2,
+              "templateKey": "dslily_growup_hp_ratio",
+              "triggerCnt": 0,
+              "triggerInterval": 0.10000000149011612,
+              "triggerLifeType": 0,
+              "waitFirstTriggerInterval": 1
+            }
+          ],
+          "hierarchy": "enemy_1521_dslily/Modes/G1/Talents/GrowUp2",
+          "metadata": {
+            "blackboardPrefix": "",
+            "namedAsAlias": ""
+          },
+          "pathId": "-2030677711115631091"
+        }
+      },
+      "phaseTemplates": {
+        "bundle": "assets/AB/Android/config/buff_template_holder.ab",
+        "bundleSha256": "e092efe8b6479546a0641449c1e2ef81ba51b8bac67f7a5d1bbf3c3bbdd817ce",
+        "holderPathId": "6070581171229484677",
+        "templates": {
+          "dslily_growup[countdown]": {
+            "events": [
+              {
+                "actions": [
+                  {
+                    "$type": "Torappu.Battle.Action.Nodes+SwitchMode",
+                    "_loadModeFromBlackboard": true,
+                    "_modeIndex": 0,
+                    "_restartFSM": true,
+                    "_restoreDefault": false,
+                    "_targetType": "TARGET"
+                  }
+                ],
+                "eventKey": 2
+              }
+            ],
+            "index": 532
+          },
+          "dslily_growup_hp_ratio": {
+            "events": [
+              {
+                "actions": [
+                  {
+                    "$type": "Torappu.Battle.Action.Nodes+HpRatioTrigger",
+                    "_condType": "GT",
+                    "_hpRatioEachTime": 0,
+                    "_minHpKey": null,
+                    "_targetType": "BUFF_OWNER",
+                    "_useMinHpRatio": false
+                  },
+                  {
+                    "$type": "Torappu.Battle.Action.Nodes+SwitchMode",
+                    "_loadModeFromBlackboard": true,
+                    "_modeIndex": 0,
+                    "_restartFSM": true,
+                    "_restoreDefault": false,
+                    "_targetType": "TARGET"
+                  }
+                ],
+                "eventKey": 7
+              }
+            ],
+            "index": 524
+          }
+        }
+      },
+      "rootPathId": "-1225244058112211443",
+      "skillTriggers": {
+        "Rockfall": {
+          "_checkParentActive": 0,
+          "_overwriteInitCooldown": -1,
+          "_resetCdWaitFirstPeriod": 1,
+          "_resetMainAbilityCdWhenCastEnd": 0,
+          "hierarchy": "enemy_1521_dslily/Modes/Default/Skills/Rockfall",
+          "pathId": "2424647126851798541"
+        },
+        "RockfallG1": {
+          "_checkParentActive": 1,
+          "_overwriteInitCooldown": -1,
+          "_resetCdWaitFirstPeriod": 1,
+          "_resetMainAbilityCdWhenCastEnd": 0,
+          "hierarchy": "enemy_1521_dslily/Modes/G1/Skills/RockfallG1",
+          "pathId": "6187376951704897037"
+        },
+        "RockfallG2": {
+          "_checkParentActive": 1,
+          "_overwriteInitCooldown": -1,
+          "_resetCdWaitFirstPeriod": 1,
+          "_resetMainAbilityCdWhenCastEnd": 0,
+          "hierarchy": "enemy_1521_dslily/Modes/G2/Skills/RockfallG2",
+          "pathId": "-5052583564731726323"
+        },
+        "Tidewater": {
+          "_checkParentActive": 0,
+          "_overwriteInitCooldown": -1,
+          "_resetCdWaitFirstPeriod": 1,
+          "_resetMainAbilityCdWhenCastEnd": 0,
+          "hierarchy": "enemy_1521_dslily/Modes/Default/Skills/Tidewater",
+          "pathId": "-6833827742784141811"
+        },
+        "TidewaterG1": {
+          "_checkParentActive": 1,
+          "_overwriteInitCooldown": -1,
+          "_resetCdWaitFirstPeriod": 1,
+          "_resetMainAbilityCdWhenCastEnd": 0,
+          "hierarchy": "enemy_1521_dslily/Modes/G1/Skills/TidewaterG1",
+          "pathId": "-3879469895634631155"
+        },
+        "TidewaterG2": {
+          "_checkParentActive": 1,
+          "_overwriteInitCooldown": -1,
+          "_resetCdWaitFirstPeriod": 1,
+          "_resetMainAbilityCdWhenCastEnd": 0,
+          "hierarchy": "enemy_1521_dslily/Modes/G2/Skills/TidewaterG2",
+          "pathId": "-1637502277743589875"
+        }
+      },
+      "specialSkills": {
+        "Rockfall": {
+          "_atkScale": 0,
+          "_atkScaleKey": "atk_scale",
+          "_damageType": 1,
+          "_elementDamageType": 0,
+          "buffs": [
+            {
+              "attributes": {
+                "abnormalAntis": [],
+                "abnormalComboImmunes": [],
+                "abnormalCombos": [],
+                "abnormalFlags": [],
+                "abnormalImmunes": [],
+                "attributeModifiers": []
+              },
+              "blackboard": [],
+              "buffKey": "dslily_rockfall[damage]",
+              "durationKey": "",
+              "firstTriggerInterval": -1,
+              "lifeTime": 1.5,
+              "lifeTimeType": 2,
+              "templateKey": "dslily_rockfall[damage]",
+              "triggerCnt": 1,
+              "triggerInterval": 1,
+              "triggerLifeType": 1,
+              "waitFirstTriggerInterval": 1
+            }
+          ],
+          "pathId": "-2817791767968594419",
+          "selector": {
+            "_limitTargetNum": 1,
+            "_maxNum": 2,
+            "_postFilter": 8,
+            "pathId": "-2590755357898488307"
+          }
+        },
+        "RockfallG1": {
+          "_atkScale": 0,
+          "_atkScaleKey": "atk_scale",
+          "_damageType": 1,
+          "_elementDamageType": 0,
+          "buffs": [
+            {
+              "attributes": {
+                "abnormalAntis": [],
+                "abnormalComboImmunes": [],
+                "abnormalCombos": [],
+                "abnormalFlags": [],
+                "abnormalImmunes": [],
+                "attributeModifiers": []
+              },
+              "blackboard": [],
+              "buffKey": "dslily_rockfall[damage]",
+              "durationKey": "",
+              "firstTriggerInterval": -1,
+              "lifeTime": 1.5,
+              "lifeTimeType": 2,
+              "templateKey": "dslily_rockfall[damage]",
+              "triggerCnt": 1,
+              "triggerInterval": 1,
+              "triggerLifeType": 1,
+              "waitFirstTriggerInterval": 1
+            }
+          ],
+          "pathId": "-764859684864309747",
+          "selector": {
+            "_limitTargetNum": 1,
+            "_maxNum": 4,
+            "_postFilter": 8,
+            "pathId": "8845833415036847629"
+          }
+        },
+        "RockfallG2": {
+          "_atkScale": 0,
+          "_atkScaleKey": "atk_scale",
+          "_damageType": 1,
+          "_elementDamageType": 0,
+          "buffs": [
+            {
+              "attributes": {
+                "abnormalAntis": [],
+                "abnormalComboImmunes": [],
+                "abnormalCombos": [],
+                "abnormalFlags": [],
+                "abnormalImmunes": [],
+                "attributeModifiers": []
+              },
+              "blackboard": [],
+              "buffKey": "dslily_rockfall[damage]",
+              "durationKey": "",
+              "firstTriggerInterval": -1,
+              "lifeTime": 1.5,
+              "lifeTimeType": 2,
+              "templateKey": "dslily_rockfall[damage]",
+              "triggerCnt": 1,
+              "triggerInterval": 1,
+              "triggerLifeType": 1,
+              "waitFirstTriggerInterval": 1
+            }
+          ],
+          "pathId": "-4875174298131937779",
+          "selector": {
+            "_limitTargetNum": 1,
+            "_maxNum": 8,
+            "_postFilter": 8,
+            "pathId": "-3237387026433358323"
+          }
+        },
+        "Tidewater": {
+          "_atkScale": 1,
+          "_atkScaleKey": "atk_scale",
+          "_damageType": 2,
+          "_elementDamageType": 1,
+          "buffs": [],
+          "pathId": "-4228060237934148083",
+          "selector": {
+            "_limitTargetNum": 0,
+            "_maxNum": 1,
+            "_postFilter": 4,
+            "pathId": "-8987191821072775667"
+          }
+        },
+        "TidewaterG1": {
+          "_atkScale": 1,
+          "_atkScaleKey": "atk_scale",
+          "_damageType": 2,
+          "_elementDamageType": 1,
+          "buffs": [],
+          "pathId": "3604489481151792653",
+          "selector": {
+            "_limitTargetNum": 0,
+            "_maxNum": 1,
+            "_postFilter": 4,
+            "pathId": "3803249100368332301"
+          }
+        },
+        "TidewaterG2": {
+          "_atkScale": 1,
+          "_atkScaleKey": "atk_scale",
+          "_damageType": 2,
+          "_elementDamageType": 1,
+          "buffs": [],
+          "pathId": "-5614989952579647987",
+          "selector": {
+            "_limitTargetNum": 0,
+            "_maxNum": 1,
+            "_postFilter": 4,
+            "pathId": "-4130079309532805619"
+          }
+        }
+      }
+    },
+    "enemy_9013_acstmk": {
+      "attacks": [
+        {
+          "_animKey": "Attack",
+          "_atkScale": 1,
+          "_attackType": 1,
+          "_damageType": 2,
+          "_epDamageRatio": 0,
+          "buffs": [
+            {
+              "attributes": {
+                "abnormalAntis": [],
+                "abnormalComboImmunes": [],
+                "abnormalCombos": [],
+                "abnormalFlags": [],
+                "abnormalImmunes": [],
+                "attributeModifiers": []
+              },
+              "blackboard": [],
+              "buffKey": "acstmk_line_effect",
+              "durationKey": "duration",
+              "firstTriggerInterval": -1,
+              "lifeTime": 5,
+              "lifeTimeType": 1,
+              "templateKey": "acstmk_line_effect",
+              "triggerCnt": 0,
+              "triggerInterval": -1,
+              "triggerLifeType": 0,
+              "waitFirstTriggerInterval": 1
+            }
+          ],
+          "mode": 0,
+          "modePathId": "-8927152514178528969",
+          "pathId": "-2968527378029590217",
+          "selector": {
+            "pathId": "0"
+          }
+        }
+      ],
+      "bodyType": 0,
+      "bundle": "assets/AB/Android/battle/enm_pfb_28.ab",
+      "bundleSha256": "8b8fbc4da8e0064177aaed3884db60b6595842f3eabe6f5a1334ed5e8cede4ea",
+      "collider": {
+        "m_IsTrigger": true,
+        "m_Offset": {
+          "x": 0,
+          "y": 1
+        },
+        "m_Size": {
+          "x": 4.949999809265137,
+          "y": 2.950000047683716
+        },
+        "pathId": "9061330787609626935"
+      },
+      "commonBuffs": [
+        {
+          "attributes": {
+            "abnormalAntis": [],
+            "abnormalComboImmunes": [],
+            "abnormalCombos": [],
+            "abnormalFlags": [
+              3,
+              22
+            ],
+            "abnormalImmunes": [],
+            "attributeModifiers": []
+          },
+          "blackboard": [],
+          "buffKey": "acstmk_passive",
+          "durationKey": "duration",
+          "firstTriggerInterval": -1,
+          "lifeTime": 0,
+          "lifeTimeType": 2,
+          "pathId": "8917350904993237303",
+          "templateKey": "empty",
+          "triggerCnt": 0,
+          "triggerInterval": -1,
+          "triggerLifeType": 0,
+          "waitFirstTriggerInterval": 1
+        }
+      ],
+      "controllerPathId": "-6950253598612960969",
+      "rootPathId": "8915770806903392567"
+    },
+    "enemy_9032_aclionk": {
+      "attacks": [
+        {
+          "_animKey": "Attack",
+          "_atkScale": 1,
+          "_attackType": 1,
+          "_damageType": 1,
+          "_epDamageRatio": 0,
+          "buffs": [],
+          "mode": 0,
+          "modePathId": "-3451688949403144138",
+          "pathId": "7110451240905093174",
+          "selector": {
+            "pathId": "0"
+          }
+        },
+        {
+          "_animKey": "Attack",
+          "_atkScale": 1,
+          "_attackType": 1,
+          "_damageType": 1,
+          "_epDamageRatio": 0,
+          "buffs": [],
+          "mode": 1,
+          "modePathId": "-2396227014198284234",
+          "pathId": "-6114099663226720202",
+          "selector": {
+            "pathId": "0"
+          }
+        }
+      ],
+      "bodyType": 0,
+      "bundle": "assets/AB/Android/battle/enm_pfb_29.ab",
+      "bundleSha256": "47d7292311730079ca1e09e5a8853b048064a93e108ef558652ebd662e0b96ab",
+      "collider": {
+        "m_IsTrigger": true,
+        "m_Offset": {
+          "x": 0,
+          "y": 1
+        },
+        "m_Size": {
+          "x": 4.949999809265137,
+          "y": 2.950000047683716
+        },
+        "pathId": "-1663214121109999562"
+      },
+      "commonBuffs": [
+        {
+          "attributes": {
+            "abnormalAntis": [],
+            "abnormalComboImmunes": [],
+            "abnormalCombos": [],
+            "abnormalFlags": [
+              22
+            ],
+            "abnormalImmunes": [],
+            "attributeModifiers": []
+          },
+          "blackboard": [],
+          "buffKey": "enemy_vtlionk_unmove",
+          "durationKey": "duration",
+          "firstTriggerInterval": -1,
+          "lifeTime": 0,
+          "lifeTimeType": 2,
+          "pathId": "-6604256259827814346",
+          "templateKey": "enemy_vtlionk_unmove",
+          "triggerCnt": 0,
+          "triggerInterval": -1,
+          "triggerLifeType": 0,
+          "waitFirstTriggerInterval": 1
+        }
+      ],
+      "controllerPathId": "-3322581356743479242",
+      "rootPathId": "1770554816996651062"
+    },
+    "enemy_9033_acdeer": {
+      "attacks": [
+        {
+          "_animKey": "Attack",
+          "_atkScale": 0,
+          "_attackType": 1,
+          "_damageType": 1,
+          "_epDamageRatio": 0,
+          "buffs": [],
+          "mode": 0,
+          "modePathId": "7708930080125665651",
+          "pathId": "-6635260290501262989",
+          "selector": {
+            "_limitTargetNum": 1,
+            "_maxNum": 2,
+            "pathId": "-1129596541571120781"
+          }
+        }
+      ],
+      "bodyType": 0,
+      "bundle": "assets/AB/Android/battle/enm_pfb_29.ab",
+      "bundleSha256": "47d7292311730079ca1e09e5a8853b048064a93e108ef558652ebd662e0b96ab",
+      "collider": {
+        "m_IsTrigger": true,
+        "m_Offset": {
+          "x": 0,
+          "y": 1
+        },
+        "m_Size": {
+          "x": 4.949999809265137,
+          "y": 2.950000047683716
+        },
+        "pathId": "4165954101551219059"
+      },
+      "commonBuffs": [
+        {
+          "attributes": {
+            "abnormalAntis": [],
+            "abnormalComboImmunes": [],
+            "abnormalCombos": [],
+            "abnormalFlags": [
+              8,
+              22,
+              3
+            ],
+            "abnormalImmunes": [],
+            "attributeModifiers": []
+          },
+          "blackboard": [],
+          "buffKey": "enemy_smdeer_passive",
+          "durationKey": "duration",
+          "firstTriggerInterval": -1,
+          "lifeTime": 0,
+          "lifeTimeType": 2,
+          "pathId": "-8004128765363502733",
+          "templateKey": "empty",
+          "triggerCnt": 0,
+          "triggerInterval": -1,
+          "triggerLifeType": 0,
+          "waitFirstTriggerInterval": 1
+        },
+        {
+          "attributes": {
+            "abnormalAntis": [],
+            "abnormalComboImmunes": [],
+            "abnormalCombos": [],
+            "abnormalFlags": [],
+            "abnormalImmunes": [],
+            "attributeModifiers": []
+          },
+          "blackboard": [],
+          "buffKey": "enemy_smdeer_log_killed",
+          "durationKey": "",
+          "firstTriggerInterval": -1,
+          "lifeTime": 0,
+          "lifeTimeType": 2,
+          "pathId": "-5826122599139196557",
+          "templateKey": "log_killed",
+          "triggerCnt": 0,
+          "triggerInterval": -1,
+          "triggerLifeType": 0,
+          "waitFirstTriggerInterval": 1
+        }
+      ],
+      "controllerPathId": "-886268251704409741",
+      "rootPathId": "7859740430962114931"
+    }
+  }
+}

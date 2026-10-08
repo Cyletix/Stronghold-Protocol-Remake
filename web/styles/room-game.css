@@ -1,0 +1,30 @@
+#room-game-panel[hidden]{display:none!important}
+#room-entry-status[hidden]{display:none!important}#room-entry-status{position:fixed;inset:0;z-index:90;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:24px;box-sizing:border-box;background:#0d151b;color:#d8e9e3;text-align:center}#room-entry-status h1{font-size:24px;margin:0}#room-entry-status p{max-width:560px;font-size:14px;line-height:1.8}#room-entry-status a{display:inline-block;margin:6px 10px;color:#a4dfcb;border:1px solid #487c68;border-radius:6px;padding:8px 16px;text-decoration:none}#room-entry-status a[hidden]{display:none}
+.room-session-invalid #setup,.room-session-invalid #menu,.room-session-invalid #main,.room-session-invalid #room-game-connection,.room-session-invalid #room-game-panel{display:none!important}
+/* Four stable slots, inset clear of the top controls and bottom hand. */
+:root{--ally-rail-w:72px}
+.room-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;pointer-events:none}
+#room-game-panel{position:fixed;left:0;top:clamp(132px,22vh,210px);z-index:35;width:var(--ally-rail-w);padding:0;pointer-events:none;max-height:calc(100dvh - var(--shop-h,180px) - 142px)}
+#room-game-players{display:grid;grid-template-columns:1fr;grid-template-rows:repeat(4,minmax(0,1fr));gap:5px;height:min(340px,calc(100dvh - var(--shop-h,180px) - 155px));min-height:184px}
+#room-game-players .room-slot{position:relative;display:block;width:100%;min-height:0;padding:0;border:1px solid #597e8b;border-left:0;border-radius:0 3px 3px 0;overflow:hidden;background:#12242be8;color:#e1edef;pointer-events:auto;cursor:pointer;font:inherit;text-align:left}
+#room-game-players .room-slot>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 28%;opacity:.78}
+#room-game-players .room-slot>span:not(.slot-life):not(.slot-action){position:absolute;inset:auto 0 0;padding:13px 4px 3px;background:linear-gradient(transparent,#061518ee 42%)}
+#room-game-players .room-slot b,#room-game-players .room-slot small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:10px;line-height:1.3}
+#room-game-players .room-slot small{color:#bbd6d9;font-size:9px}
+#room-game-players .slot-life{position:absolute;top:2px;right:3px;padding:1px 3px;background:#0b171fd9;color:#ecedba;font-size:10px}
+#room-game-players .slot-action{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;white-space:pre-line;font-size:11px;font-weight:700;line-height:1.7;background:#093a39df;color:#b6ffee;opacity:0}
+#room-game-players .armed .slot-action,#room-game-players .watching .slot-action{opacity:1}
+#room-game-players .watching,#room-game-players .selected{border-color:#32e1be;box-shadow:inset -3px 0 #32e1be}
+#room-game-players .ready{border-color:#50dca1}#room-game-players .offline{filter:grayscale(1)}
+#room-game-players .room-slot:disabled{cursor:default;opacity:.65}#room-game-players .room-slot:focus-visible{outline:2px solid #a2fdeb;outline-offset:-3px}
+#room-game-players .empty{display:flex;align-items:center;justify-content:center;background:#11232b99;color:#68818b;border-style:dashed;pointer-events:none;cursor:default}
+#room-game-events[hidden]{display:none!important}
+#room-game-events{position:fixed;left:calc(var(--ally-rail-w) + 10px);bottom:calc(var(--shop-h,180px) + 14px);z-index:34;max-width:min(330px,calc(100vw - var(--ally-rail-w) - 24px));margin:0;padding:8px 12px 8px 25px;border:1px solid #34685c;background:#0d241ff0;color:#b9ecd8;font-size:11px;line-height:1.5;pointer-events:none}
+.room-connection[hidden]{display:none!important}.room-connection{position:fixed;top:72px;left:50%;transform:translateX(-50%);z-index:70;box-sizing:border-box;width:460px;max-width:calc(100vw - 24px);padding:10px 14px;border:1px solid #c8a35f;border-radius:7px;background:rgba(43,35,18,.97);box-shadow:0 4px 24px #0009;color:#ffe2a5;font-size:12px;line-height:1.5;pointer-events:none}.room-connection b,.room-connection span{display:block;overflow-wrap:anywhere}.room-connection span{margin-top:3px;font-size:11px;color:#e8d9b8}.room-connection.error{background:rgba(57,22,24,.97);border-color:#da8086;color:#ffd0d3}.room-connection.restored{background:rgba(15,45,35,.97);border-color:#78c59e;color:#b9f0d3}
+body.room-game-active #save-run-btn,body.room-game-active #next-btn,body.room-game-active #shot-btn{display:none!important}
+body.room-game-locked #shop-left,body.room-game-locked #shop .shop-card{pointer-events:none;opacity:.7}
+body.room-game-spectating #shopdrawer{filter:saturate(.6)}
+@media(max-width:700px){:root{--ally-rail-w:58px}#room-game-panel{top:clamp(132px,23vh,210px)}#room-game-players{gap:3px;height:min(264px,calc(100dvh - var(--shop-h,180px) - clamp(132px,23vh,210px) - 12px));min-height:0}#room-game-players .room-slot small{display:none}.room-connection{top:66px;padding:8px 10px;font-size:11px}.room-connection span{font-size:10px}}
+@media(max-height:540px) and (min-width:701px){:root{--ally-rail-w:58px}#room-game-panel{top:124px}#room-game-players{height:calc(100dvh - var(--shop-h,148px) - 136px);min-height:0;gap:3px}#room-game-players .room-slot small{display:none}}
+
+@media(max-width:600px){body.room-game-active #bondbar{left:calc(var(--ally-rail-w) + 8px)}}

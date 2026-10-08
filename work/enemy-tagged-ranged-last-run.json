@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "completed": true,
+  "recordedAt": "2026-09-14T23:54:51.405702+00:00",
+  "gameVersion": "room-game-20260915.3",
+  "scope": "Complete shared attack-SP / tagged-ground selector / loaded active-Buff ranged projectile group.",
+  "sourceContracts": {
+    "work/enemy-area-melee-contract.json": {
+      "sourceFingerprint": "aafe4370cd6c070c901afcb668145b6bd81651ec83e2b40ea7755bca73757d54",
+      "fileSha256": "3345fa186649fc0ec4acc1ad34418547bc27fbe92aae7e9192ddd3c98ee8e65a"
+    },
+    "work/enemy-skill-sp-contract.json": {
+      "sourceFingerprint": "24c9a8d57cd4a2da7d6c895fbaa78b6bdb081460a2ea7ab225bf1b6453747eaf",
+      "fileSha256": "1741d76be4b8c91563c63159b7cf259ca8b8dd74fd09015bbab887b0a5f05937"
+    },
+    "work/enemy-awake-contract.json": {
+      "sourceFingerprint": "32454aade6017fdccaae6a3a09a70dc538535132904de6f44f4c2b8934522353",
+      "fileSha256": "96d42cc91907a7cd7da2beee5a1c26430818cbe6eff487379ffc787f0be08c32"
+    },
+    "work/enemy-periodic-ability-contract.json": {
+      "sourceFingerprint": "c209f2d8b755aba00c4135c3ac93ef96c2c5644a26208690d268bbb995834f1e",
+      "fileSha256": "4d13eda3596ab6267068fc5d7195f7027a7a81eeedd8656d2d1733f80e5acbd7"
+    },
+    "work/enemy-tagged-ranged-contract.json": {
+      "sourceFingerprint": "7372ddb421f347ae40878502d1436e03984e7ef297c1b748f6283c75f447bbcd",
+      "fileSha256": "ba6527d680099164621d423fe389a6cea48987a2ff55808ed2ec35ac4a20615f"
+    }
+  },
+  "newSkillIDs": [
+    "enemy_1516_jakill|CAB-0df5f4c8c8dade07e2ee475a972da576:-3090488545889101355:11"
+  ],
+  "skillCounts": {
+    "candidates": 27,
+    "selectedSkills": 6,
+    "selectedEnemies": 5,
+    "pendingSkills": 21,
+    "pendingEnemies": 13,
+    "deferredSkills": 5,
+    "deferredEnemies": 5,
+    "executablePendingSkills": 16,
+    "executablePendingEnemies": 8,
+    "encounterSelectedEnemies": 5
+  },
+  "periodicCounts": {
+    "groups": 2,
+    "enemies": 2,
+    "encounterGroups": 2,
+    "encounterEnemies": 2,
+    "capabilityKinds": 4,
+    "capabilityBindings": 8
+  },
+  "basicActionGaps": {
+    "allEnemies": 435,
+    "encounterEnemies": 36
+  },
+  "validation": [
+    {
+      "suite": "tools/test_enemy_tagged_ranged_skills.py",
+      "result": "passed",
+      "groups": 7
+    },
+    {
+      "suite": "node tools/_enemy_tagged_ranged_smoke.js",
+      "result": "passed",
+      "firstRunPassed": true
+    },
+    {
+      "suite": "node tools/_enemy_skill_dispatch_smoke.js",
+      "result": "passed"
+    },
+    {
+      "suite": "node tools/_enemy_area_melee_smoke.js",
+      "result": "passed"
+    },
+    {
+      "suite": "node tools/_enemy_periodic_smoke.js",
+      "result": "passed"
+    },
+    {
+      "suite": "node tools/_external_combat_smoke.js",
+      "result": "passed"
+    },
+    {
+      "suite": "focused runtime SP/packet/timeout/status consumer review",
+      "result": "passed"
+    },
+    {
+      "suite": "node tools/check_docs.js",
+      "result": "passed",
+      "documents": 80,
+      "localLinks": 2339
+    },
+    {
+      "suite": "Python compiler and changed JavaScript syntax; tracked diff whitespace",
+      "result": "passed"
+    }
+  ],
+  "sourceRefresh": {
+    "oldContractsChanged": false,
+    "wholeCohortRescan": false,
+    "focusedMissingFieldsAndNativeSupplement": true
+  },
+  "refresh": {
+    "actionTemplateCacheHit": true,
+    "modeSourceAnalysisSkipped": true,
+    "buffTemplateQueriesSkipped": true,
+    "dpsCompileSkipped": true,
+    "dpsCalculationSkipped": true,
+    "dpsRemaining": 98
+  },
+  "boundary": "One complete shared class, not whole-enemy or automatic phase completion. Engine event bridging, equal-hatred ordering, entity geometry, timeout terminal hit, normalized status-resistance scaling, stun expiry merge, same-hit damage/Buff order and mid-cast speed snapshots retain explicit Inferred boundaries.",
+  "nextSharedSlice": {
+    "path": "work/enemy-tagged-ranged-next-slice.json",
+    "family": "cast-scoped attribute Buffs and multi-melee output plus actual phase entry",
+    "representative": "enemy_1516_jakill:ArmorPiercing",
+    "requiredEntry": "actual Reborn phase lifecycle; explicit mode selection does not close automatic encounter reachability"
+  },
+  "automationChanged": false,
+  "packaged": false,
+  "published": false
+}

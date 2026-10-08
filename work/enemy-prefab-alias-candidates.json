@@ -1,0 +1,4771 @@
+{
+  "schemaVersion": 1,
+  "ruleVersion": "defined-prefab-key-all-levels-v1",
+  "scope": {
+    "pendingEnemiesAtSnapshot": 616,
+    "templates": [
+      "source-prefab",
+      "animation-source"
+    ],
+    "rule": "Only explicit m_defined true prefabKey values and subsequent inherited values; all database levels must resolve to the same nonempty key. No suffix inference or downloads."
+  },
+  "source": {
+    "tim": {
+      "repository": "Tim23333/Arknights_timer",
+      "commit": "d2f6d76a7172cedc7583fc0a4eb998699abf25f5",
+      "license": "Tim23333 Non-Commercial v1",
+      "licensePath": "licenses/Tim23333-Arknights_timer-LICENSE.txt",
+      "sourceHashes": {
+        "data_enemy_spine_events.json": "22ee68e69ee716bdea3d99e3311a72763c1097ca7854767579f005a7d30d1a81",
+        "data_enemy_prefab_catalog_current.json": "ebe89ba77e15541b52bf117820ecf65838c840fee6e65d397ebc46c601c17ef8",
+        "data_projectile_speeds.json": "b739fdabae9ec304972d3ade626ea24efaa45a834882e6b33216cb86a9bc473f",
+        "web/battle_data.json": "7270b410e4526079a986c291a152f30bf3048fce0c56528d070ddb50fa34088b"
+      }
+    },
+    "supplement": {
+      "repository": "isHarryh/Ark-Models",
+      "commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+      "date": "2026-08-02T04:43:55Z",
+      "urls": {
+        "tree.json": "https://api.github.com/repos/isHarryh/Ark-Models/git/trees/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b?recursive=1",
+        "models_data.json": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+        "README.md": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/README.md"
+      },
+      "gameDataVersion": "Producer: ArkUnpacker 5\nDate: 2026-08-02\n",
+      "region": "zh_CN",
+      "license": "Game assets copyright Hypergryph; local extraction for research",
+      "parser": "spine-asset-1.1.1-big-endian-v1"
+    },
+    "hashes": {
+      "database": {
+        "path": "data\\ArknightsGameData\\zh_CN\\gamedata\\levels\\enemydata\\enemy_database.json",
+        "sha256": "d3f494055a1ec0d672b5a8c86b291be310a2f7a458c932fd6807c0f8b67fd7a9"
+      },
+      "classification": {
+        "path": "work\\enemy-action-template-catalog.json",
+        "sha256": "6444694c6439fd41e7381a09dcd6f1a0e0a9a4264e988a0a02a45923711a4596"
+      },
+      "prefabs": {
+        "path": "work\\external-ready-data-20260914\\Tim23333-Arknights_timer\\snapshot\\Ark_emulator\\ark_emulator\\data_enemy_prefab_catalog_current.json",
+        "sha256": "ebe89ba77e15541b52bf117820ecf65838c840fee6e65d397ebc46c601c17ef8"
+      },
+      "timAnimations": {
+        "path": "work\\external-ready-data-20260914\\Tim23333-Arknights_timer\\snapshot\\Ark_emulator\\ark_emulator\\data_enemy_spine_events.json",
+        "sha256": "22ee68e69ee716bdea3d99e3311a72763c1097ca7854767579f005a7d30d1a81"
+      },
+      "supplement": {
+        "path": "work\\enemy-animation-supplement.json",
+        "sha256": "db4d3ef989615b5f2bcec2e6dc844dab8bd7a0201d546a4581f0e7cb3118659a"
+      }
+    },
+    "supplementContentFingerprint": "cbb32d034425e30e4b5220f8e7cb9c6cc5b07c534c824c892f71f04429c60aa6"
+  },
+  "counts": {
+    "scopedEnemies": 237,
+    "byTemplate": {
+      "animation-source": 175,
+      "source-prefab": 62
+    },
+    "stableAllLevels": 237,
+    "nonIdentityStableAliases": 12,
+    "candidateEnemies": 12,
+    "candidateEncounterEnemies": 4,
+    "missingPrefabCandidates": 12,
+    "missingAnimationCandidates": 0,
+    "allDeclaredAnimationNamesFound": 0,
+    "newAnimationNamesAcrossCandidates": 96,
+    "reasons": {
+      "identity-key-no-new-alias": 225,
+      "existing-explicit-alias-source": 12
+    }
+  },
+  "boundaries": [
+    "A source key mapping proves asset identity lookup only, not support for every root behavior.",
+    "Keep original enemy IDs and their database stats; alias only prefab/animation resource lookup.",
+    "Never overwrite a target enemy animation with conflicting alias timing.",
+    "Candidate counts mean existing missing assets can be supplied; do not equate them with newly completed enemies.",
+    "Missing animation name matches are inventory joins, not proof of a unique single-hit timing contract."
+  ],
+  "representatives": [
+    {
+      "enemyId": "enemy_2002_bearmi_2",
+      "name": "高普尼克",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": true,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_2002_bearmi",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_2002_bearmi",
+      "alias": true,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "hasTimPrefab": true,
+      "hasTimAnimations": true,
+      "hasSupplementAnimations": false,
+      "newAnimationNames": [
+        "Attack",
+        "Default",
+        "Die",
+        "Idle",
+        "Move"
+      ],
+      "missingAnimationKeys": [],
+      "missingNamesFound": {},
+      "coversDeclaredMissingNames": false,
+      "sourcePrefabPointer": "/prefabs/enemy_2002_bearmi",
+      "sourceAnimationPointer": "/enemy_2002_bearmi/animations",
+      "supplementSource": null,
+      "canSupplyMissingPrefab": true,
+      "canSupplyMissingAnimationNames": false,
+      "candidate": true,
+      "reason": "existing-explicit-alias-source"
+    },
+    {
+      "enemyId": "enemy_1177_dufrbl_2",
+      "name": "净浊之焰",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1177_dufrbl",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1177_dufrbl",
+      "alias": true,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "hasTimPrefab": true,
+      "hasTimAnimations": false,
+      "hasSupplementAnimations": false,
+      "newAnimationNames": [],
+      "missingAnimationKeys": [],
+      "missingNamesFound": {},
+      "coversDeclaredMissingNames": false,
+      "sourcePrefabPointer": "/prefabs/enemy_1177_dufrbl",
+      "sourceAnimationPointer": null,
+      "supplementSource": null,
+      "canSupplyMissingPrefab": true,
+      "canSupplyMissingAnimationNames": false,
+      "candidate": true,
+      "reason": "existing-explicit-alias-source"
+    }
+  ],
+  "enemies": {
+    "enemy_1010_demon": {
+      "enemyId": "enemy_1010_demon",
+      "name": "萨卡兹大剑手",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": true,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1010_demon",
+          "explicitlyDefined": true
+        },
+        {
+          "level": 1,
+          "prefabKey": "enemy_1010_demon",
+          "explicitlyDefined": false
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1010_demon",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1010_demon_2": {
+      "enemyId": "enemy_1010_demon_2",
+      "name": "萨卡兹大剑组长",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": true,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1010_demon_2",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1010_demon_2",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_10121_uasnip": {
+      "enemyId": "enemy_10121_uasnip",
+      "name": "集团军机动弩手",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_10121_uasnip",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_10121_uasnip",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_10121_uasnip_2": {
+      "enemyId": "enemy_10121_uasnip_2",
+      "name": "集团军精锐弩手",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_10121_uasnip_2",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_10121_uasnip_2",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_10210_muwiz_2": {
+      "enemyId": "enemy_10210_muwiz_2",
+      "name": "乌萨斯战争术师",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_10210_muwiz_2",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_10210_muwiz_2",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1027_mob_2": {
+      "enemyId": "enemy_1027_mob_2",
+      "name": "暴乱分子",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1027_mob_2",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1027_mob_2",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1037_lunsbr": {
+      "enemyId": "enemy_1037_lunsbr",
+      "name": "特战士兵",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1037_lunsbr",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1037_lunsbr",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1043_zomsbr": {
+      "enemyId": "enemy_1043_zomsbr",
+      "name": "宿主士兵",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": true,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1043_zomsbr",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1043_zomsbr",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1043_zomsbr_2": {
+      "enemyId": "enemy_1043_zomsbr_2",
+      "name": "宿主士兵组长",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1043_zomsbr_2",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1043_zomsbr_2",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1046_agent_2": {
+      "enemyId": "enemy_1046_agent_2",
+      "name": "步兵组长",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1046_agent_2",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1046_agent_2",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1047_sagent_2": {
+      "enemyId": "enemy_1047_sagent_2",
+      "name": "狙击步兵组长",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1047_sagent_2",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1047_sagent_2",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1049_eagent_2": {
+      "enemyId": "enemy_1049_eagent_2",
+      "name": "特工组长",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1049_eagent_2",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1049_eagent_2",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1085_sotiwz": {
+      "enemyId": "enemy_1085_sotiwz",
+      "name": "游击队萨卡兹术师",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1085_sotiwz",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1085_sotiwz",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1085_sotiwz_2": {
+      "enemyId": "enemy_1085_sotiwz_2",
+      "name": "游击队萨卡兹术师组长",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1085_sotiwz_2",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1085_sotiwz_2",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1085_sotiwz_3": {
+      "enemyId": "enemy_1085_sotiwz_3",
+      "name": "雇佣军萨卡兹术师",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1085_sotiwz_3",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1085_sotiwz_3",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1093_ccsbr_2": {
+      "enemyId": "enemy_1093_ccsbr_2",
+      "name": "提亚卡乌卫士",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": true,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1093_ccsbr_2",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1093_ccsbr_2",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1115_embald": {
+      "enemyId": "enemy_1115_embald",
+      "name": "“皇帝的利刃”",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1115_embald",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1115_embald",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1169_duphlx": {
+      "enemyId": "enemy_1169_duphlx",
+      "name": "深池方阵步兵",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": true,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1169_duphlx",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1169_duphlx",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1169_duphlx_2": {
+      "enemyId": "enemy_1169_duphlx_2",
+      "name": "深池方阵指挥官",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": true,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1169_duphlx_2",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1169_duphlx_2",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1177_dufrbl_2": {
+      "enemyId": "enemy_1177_dufrbl_2",
+      "name": "净浊之焰",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1177_dufrbl",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1177_dufrbl",
+      "alias": true,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "hasTimPrefab": true,
+      "hasTimAnimations": false,
+      "hasSupplementAnimations": false,
+      "newAnimationNames": [],
+      "missingAnimationKeys": [],
+      "missingNamesFound": {},
+      "coversDeclaredMissingNames": false,
+      "sourcePrefabPointer": "/prefabs/enemy_1177_dufrbl",
+      "sourceAnimationPointer": null,
+      "supplementSource": null,
+      "canSupplyMissingPrefab": true,
+      "canSupplyMissingAnimationNames": false,
+      "candidate": true,
+      "reason": "existing-explicit-alias-source"
+    },
+    "enemy_1230_dsbudr_4": {
+      "enemyId": "enemy_1230_dsbudr_4",
+      "name": "退行的奠基者",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1230_dsbudr_4",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1230_dsbudr_4",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1231_dsrunr_4": {
+      "enemyId": "enemy_1231_dsrunr_4",
+      "name": "退行的猎食者",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1231_dsrunr_4",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1231_dsrunr_4",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1232_dssalr_4": {
+      "enemyId": "enemy_1232_dssalr_4",
+      "name": "退行的引痕者",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1232_dssalr_4",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1232_dssalr_4",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1233_dsshtr_4": {
+      "enemyId": "enemy_1233_dsshtr_4",
+      "name": "退行的喷溅者",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1233_dsshtr_4",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1233_dsshtr_4",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1235_dsbskr_4": {
+      "enemyId": "enemy_1235_dsbskr_4",
+      "name": "退行的裂礁者",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1235_dsbskr_4",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1235_dsbskr_4",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1276_telex": {
+      "enemyId": "enemy_1276_telex",
+      "name": "特雷西斯",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1276_telex",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1276_telex",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1286_dumcy_2": {
+      "enemyId": "enemy_1286_dumcy_2",
+      "name": "特别行动队队长",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1286_dumcy_2",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1286_dumcy_2",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1294_duchns_2": {
+      "enemyId": "enemy_1294_duchns_2",
+      "name": "焦竭之火",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1294_duchns",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1294_duchns",
+      "alias": true,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "hasTimPrefab": true,
+      "hasTimAnimations": false,
+      "hasSupplementAnimations": false,
+      "newAnimationNames": [],
+      "missingAnimationKeys": [],
+      "missingNamesFound": {},
+      "coversDeclaredMissingNames": false,
+      "sourcePrefabPointer": "/prefabs/enemy_1294_duchns",
+      "sourceAnimationPointer": null,
+      "supplementSource": null,
+      "canSupplyMissingPrefab": true,
+      "canSupplyMissingAnimationNames": false,
+      "candidate": true,
+      "reason": "existing-explicit-alias-source"
+    },
+    "enemy_1393_dhele": {
+      "enemyId": "enemy_1393_dhele",
+      "name": "玷",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1393_dhele",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1393_dhele",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1393_dhele_2": {
+      "enemyId": "enemy_1393_dhele_2",
+      "name": "勿玷",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1393_dhele_2",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1393_dhele_2",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1420_lrmm": {
+      "enemyId": "enemy_1420_lrmm",
+      "name": "活性源石风暴",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1420_lrmm",
+          "explicitlyDefined": true
+        },
+        {
+          "level": 1,
+          "prefabKey": "enemy_1420_lrmm",
+          "explicitlyDefined": false
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1420_lrmm",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1434_dsshel": {
+      "enemyId": "enemy_1434_dsshel",
+      "name": "微核沉积者",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1434_dsshel",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1434_dsshel",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1442_dsgun": {
+      "enemyId": "enemy_1442_dsgun",
+      "name": "坚守15秒!",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1442_dsgun",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1442_dsgun",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15001_dqsmwa": {
+      "enemyId": "enemy_15001_dqsmwa",
+      "name": "北方战士",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15001_dqsmwa",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15001_dqsmwa",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15003_dqltsw": {
+      "enemyId": "enemy_15003_dqltsw",
+      "name": "失业萨克斯手",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15003_dqltsw",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15003_dqltsw",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15004_dqdhdt": {
+      "enemyId": "enemy_15004_dqdhdt",
+      "name": "硕鼷",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15004_dqdhdt",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15004_dqdhdt",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15005_dqdsbs": {
+      "enemyId": "enemy_15005_dqdsbs",
+      "name": "狂躁珊瑚",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15005_dqdsbs",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15005_dqdsbs",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15006_dqkrgm": {
+      "enemyId": "enemy_15006_dqkrgm",
+      "name": "雪境精锐",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15006_dqkrgm",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15006_dqkrgm",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15007_dqbear": {
+      "enemyId": "enemy_15007_dqbear",
+      "name": "高普尼克",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15007_dqbear",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15007_dqbear",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15008_dqspsb": {
+      "enemyId": "enemy_15008_dqspsb",
+      "name": "清醒的墨魉",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15008_dqspsb",
+          "explicitlyDefined": true
+        },
+        {
+          "level": 1,
+          "prefabKey": "enemy_15008_dqspsb",
+          "explicitlyDefined": false
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15008_dqspsb",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15009_dqmgcs": {
+      "enemyId": "enemy_15009_dqmgcs",
+      "name": "星星魔法师",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15009_dqmgcs",
+          "explicitlyDefined": true
+        },
+        {
+          "level": 1,
+          "prefabKey": "enemy_15009_dqmgcs",
+          "explicitlyDefined": false
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15009_dqmgcs",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15010_dqcadk": {
+      "enemyId": "enemy_15010_dqcadk",
+      "name": "点灯骑士",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15010_dqcadk",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15010_dqcadk",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15011_dqnhst": {
+      "enemyId": "enemy_15011_dqnhst",
+      "name": "食腐野兽",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15011_dqnhst",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15011_dqnhst",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15012_dqbsli": {
+      "enemyId": "enemy_15012_dqbsli",
+      "name": "易爆源石虫",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15012_dqbsli",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15012_dqbsli",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15013_dqsnsl": {
+      "enemyId": "enemy_15013_dqsnsl",
+      "name": "自爆冰虫",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15013_dqsnsl",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15013_dqsnsl",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15017_dqdwlo": {
+      "enemyId": "enemy_15017_dqdwlo",
+      "name": "凋零萨卡兹",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15017_dqdwlo",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15017_dqdwlo",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15018_dqskzc": {
+      "enemyId": "enemy_15018_dqskzc",
+      "name": "“门”",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15018_dqskzc",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15018_dqskzc",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15019_dqharc": {
+      "enemyId": "enemy_15019_dqharc",
+      "name": "大喷蛛",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15019_dqharc",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15019_dqharc",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15020_dqplas": {
+      "enemyId": "enemy_15020_dqplas",
+      "name": "畸变赘生物",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15020_dqplas",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15020_dqplas",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15021_dqdurg": {
+      "enemyId": "enemy_15021_dqdurg",
+      "name": "超级洗地机",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15021_dqdurg",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15021_dqdurg",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15022_dqhvys": {
+      "enemyId": "enemy_15022_dqhvys",
+      "name": "过气水手",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15022_dqhvys",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15022_dqhvys",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15023_dqwlfm": {
+      "enemyId": "enemy_15023_dqwlfm",
+      "name": "依然“狼之主”",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15023_dqwlfm",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15023_dqwlfm",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15024_dqreid": {
+      "enemyId": "enemy_15024_dqreid",
+      "name": "“火与钢”",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15024_dqreid",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15024_dqreid",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15026_dqmtrf": {
+      "enemyId": "enemy_15026_dqmtrf",
+      "name": "“大斧”",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15026_dqmtrf",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15026_dqmtrf",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15027_dqmtrs": {
+      "enemyId": "enemy_15027_dqmtrs",
+      "name": "玻璃球打手",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15027_dqmtrs",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15027_dqmtrs",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15029_dqfrtu": {
+      "enemyId": "enemy_15029_dqfrtu",
+      "name": "畸变之矛",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15029_dqfrtu",
+          "explicitlyDefined": true
+        },
+        {
+          "level": 1,
+          "prefabKey": "enemy_15029_dqfrtu",
+          "explicitlyDefined": false
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15029_dqfrtu",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15032_dqhrgr": {
+      "enemyId": "enemy_15032_dqhrgr",
+      "name": "大力锤球手",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15032_dqhrgr",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15032_dqhrgr",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15033_dqclif": {
+      "enemyId": "enemy_15033_dqclif",
+      "name": "蟹蟹爷爷",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15033_dqclif",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15033_dqclif",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15034_dqdrp": {
+      "enemyId": "enemy_15034_dqdrp",
+      "name": "喷射背包客",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15034_dqdrp",
+          "explicitlyDefined": true
+        },
+        {
+          "level": 1,
+          "prefabKey": "enemy_15034_dqdrp",
+          "explicitlyDefined": false
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15034_dqdrp",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15035_dqbone": {
+      "enemyId": "enemy_15035_dqbone",
+      "name": "黑土游击弩手",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15035_dqbone",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15035_dqbone",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15036_dqalme": {
+      "enemyId": "enemy_15036_dqalme",
+      "name": "污水虫虫",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15036_dqalme",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15036_dqalme",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15037_dqhtms": {
+      "enemyId": "enemy_15037_dqhtms",
+      "name": "赛场流氓",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15037_dqhtms",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15037_dqhtms",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15038_dqhtbw": {
+      "enemyId": "enemy_15038_dqhtbw",
+      "name": "赛场无赖射手",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15038_dqhtbw",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15038_dqhtbw",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15039_dqrgrd": {
+      "enemyId": "enemy_15039_dqrgrd",
+      "name": "过激的竞猜者",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15039_dqrgrd",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15039_dqrgrd",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15040_dqrdmn": {
+      "enemyId": "enemy_15040_dqrdmn",
+      "name": "虹吸巨刃",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15040_dqrdmn",
+          "explicitlyDefined": true
+        },
+        {
+          "level": 1,
+          "prefabKey": "enemy_15040_dqrdmn",
+          "explicitlyDefined": false
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15040_dqrdmn",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15041_dqgrg": {
+      "enemyId": "enemy_15041_dqgrg",
+      "name": "爆裂冰法师",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15041_dqgrg",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15041_dqgrg",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15043_dqrckm": {
+      "enemyId": "enemy_15043_dqrckm",
+      "name": "“配重投石机”",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15043_dqrckm",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15043_dqrckm",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15044_dqtisd": {
+      "enemyId": "enemy_15044_dqtisd",
+      "name": "臭嗓门战士",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15044_dqtisd",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15044_dqtisd",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15046_dqxts": {
+      "enemyId": "enemy_15046_dqxts",
+      "name": "最普通的鼷",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15046_dqxts",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15046_dqxts",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15048_dqdivi": {
+      "enemyId": "enemy_15048_dqdivi",
+      "name": "高敏感积藏者",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15048_dqdivi",
+          "explicitlyDefined": true
+        },
+        {
+          "level": 1,
+          "prefabKey": "enemy_15048_dqdivi",
+          "explicitlyDefined": false
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15048_dqdivi",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15051_dqxjl": {
+      "enemyId": "enemy_15051_dqxjl",
+      "name": "“巢穴”",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15051_dqxjl",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15051_dqxjl",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15052_dqboar": {
+      "enemyId": "enemy_15052_dqboar",
+      "name": "狂躁觅食兽",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15052_dqboar",
+          "explicitlyDefined": true
+        },
+        {
+          "level": 1,
+          "prefabKey": "enemy_15052_dqboar",
+          "explicitlyDefined": false
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15052_dqboar",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15053_dqtrtl": {
+      "enemyId": "enemy_15053_dqtrtl",
+      "name": "勇敢的壳",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15053_dqtrtl",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15053_dqtrtl",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15054_dqprpn": {
+      "enemyId": "enemy_15054_dqprpn",
+      "name": "荒原刺背兽",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15054_dqprpn",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15054_dqprpn",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15055_dqrhcr": {
+      "enemyId": "enemy_15055_dqrhcr",
+      "name": "石头脑袋",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15055_dqrhcr",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15055_dqrhcr",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15057_dqmram": {
+      "enemyId": "enemy_15057_dqmram",
+      "name": "勤奋的钻头",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15057_dqmram",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15057_dqmram",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15058_dqtank": {
+      "enemyId": "enemy_15058_dqtank",
+      "name": "改装排污车",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15058_dqtank",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15058_dqtank",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15059_dqhmmr": {
+      "enemyId": "enemy_15059_dqhmmr",
+      "name": "覆面大锤客",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15059_dqhmmr",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15059_dqhmmr",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15064_dqdru": {
+      "enemyId": "enemy_15064_dqdru",
+      "name": "街头乐队鼓手",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15064_dqdru",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15064_dqdru",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15066_dqdudu": {
+      "enemyId": "enemy_15066_dqdudu",
+      "name": "街头乐队贝斯手",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15066_dqdudu",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15066_dqdudu",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15067_dqdidi": {
+      "enemyId": "enemy_15067_dqdidi",
+      "name": "街头乐队吉他手",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15067_dqdidi",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15067_dqdidi",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15069_dqdeer": {
+      "enemyId": "enemy_15069_dqdeer",
+      "name": "“萨米的意志”",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15069_dqdeer",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15069_dqdeer",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15071_dqyrzf": {
+      "enemyId": "enemy_15071_dqyrzf",
+      "name": "炭长矛",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15071_dqyrzf",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15071_dqyrzf",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15072_dqlbgg": {
+      "enemyId": "enemy_15072_dqlbgg",
+      "name": "侠客三人行",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15072_dqlbgg",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15072_dqlbgg",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15073_dqkght": {
+      "enemyId": "enemy_15073_dqkght",
+      "name": "并驾骑士",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15073_dqkght",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15073_dqkght",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15074_dqdght": {
+      "enemyId": "enemy_15074_dqdght",
+      "name": "凋零骑士",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15074_dqdght",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15074_dqdght",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15075_dqzklz": {
+      "enemyId": "enemy_15075_dqzklz",
+      "name": "调停的意志",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15075_dqzklz",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15075_dqzklz",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15076_dqzmst": {
+      "enemyId": "enemy_15076_dqzmst",
+      "name": "Mon2tr",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15076_dqzmst",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15076_dqzmst",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15077_dqqzts": {
+      "enemyId": "enemy_15077_dqqzts",
+      "name": "群集之瘴",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15077_dqqzts",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15077_dqqzts",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15078_dqcjld": {
+      "enemyId": "enemy_15078_dqcjld",
+      "name": "“食器时代”",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15078_dqcjld",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15078_dqcjld",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15081_dqmage": {
+      "enemyId": "enemy_15081_dqmage",
+      "name": "“睡眠不足”",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15081_dqmage",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15081_dqmage",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15082_dqklr": {
+      "enemyId": "enemy_15082_dqklr",
+      "name": "“情绪失控”",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15082_dqklr",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15082_dqklr",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15083_dqymot": {
+      "enemyId": "enemy_15083_dqymot",
+      "name": "匪帮欢乐船",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15083_dqymot",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15083_dqymot",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15085_dqji": {
+      "enemyId": "enemy_15085_dqji",
+      "name": "止戈者",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15085_dqji",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15085_dqji",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15086_dqcbld": {
+      "enemyId": "enemy_15086_dqcbld",
+      "name": "速胜卫士",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15086_dqcbld",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15086_dqcbld",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15087_dqkkt": {
+      "enemyId": "enemy_15087_dqkkt",
+      "name": "“染血之盾”",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15087_dqkkt",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15087_dqkkt",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15088_dqterm": {
+      "enemyId": "enemy_15088_dqterm",
+      "name": "“交通亭”量产型",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15088_dqterm",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15088_dqterm",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15089_dqbgpa": {
+      "enemyId": "enemy_15089_dqbgpa",
+      "name": "神拳机甲",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15089_dqbgpa",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15089_dqbgpa",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15090_dqacpa": {
+      "enemyId": "enemy_15090_dqacpa",
+      "name": "神射机甲",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15090_dqacpa",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15090_dqacpa",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15091_dqbus": {
+      "enemyId": "enemy_15091_dqbus",
+      "name": "度假区越野车",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15091_dqbus",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15091_dqbus",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15093_dqzfkl": {
+      "enemyId": "enemy_15093_dqzfkl",
+      "name": "奎隆，摩诃萨埵权化",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15093_dqzfkl",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15093_dqzfkl",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15094_dqgent": {
+      "enemyId": "enemy_15094_dqgent",
+      "name": "橡胶弹狙击手",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15094_dqgent",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15094_dqgent",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_15095_dqams": {
+      "enemyId": "enemy_15095_dqams",
+      "name": "迷茫的合声",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_15095_dqams",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_15095_dqams",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1510_frstar2_s": {
+      "enemyId": "enemy_1510_frstar2_s",
+      "name": "霜星S",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1510_frstar2_s",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1510_frstar2_s",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1518_dusk": {
+      "enemyId": "enemy_1518_dusk",
+      "name": "夕",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1518_dusk",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1518_dusk",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1538_ymmons_3": {
+      "enemyId": "enemy_1538_ymmons_3",
+      "name": "妄境",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1538_ymmons_3",
+          "explicitlyDefined": true
+        },
+        {
+          "level": 1,
+          "prefabKey": "enemy_1538_ymmons_3",
+          "explicitlyDefined": false
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1538_ymmons_3",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1542_wdslm_3": {
+      "enemyId": "enemy_1542_wdslm_3",
+      "name": "同构碎片",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1542_wdslm_3",
+          "explicitlyDefined": true
+        },
+        {
+          "level": 1,
+          "prefabKey": "enemy_1542_wdslm_3",
+          "explicitlyDefined": false
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1542_wdslm_3",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1547_blord_2": {
+      "enemyId": "enemy_1547_blord_2",
+      "name": "杜卡雷，“君主之红”",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1547_blord_2",
+          "explicitlyDefined": true
+        },
+        {
+          "level": 1,
+          "prefabKey": "enemy_1547_blord_2",
+          "explicitlyDefined": false
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1547_blord_2",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_1555_lrking": {
+      "enemyId": "enemy_1555_lrking",
+      "name": "孽茨雷，“食腐者之王”",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_1555_lrking",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_1555_lrking",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19001_akshep": {
+      "enemyId": "enemy_19001_akshep",
+      "name": "星术绒绒",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19001_akshep",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19001_akshep",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19002_akspsp": {
+      "enemyId": "enemy_19002_akspsp",
+      "name": "奥术绒绒",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19002_akspsp",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19002_akspsp",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19003_akbudy": {
+      "enemyId": "enemy_19003_akbudy",
+      "name": "大个子绒绒",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19003_akbudy",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19003_akbudy",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19004_akbdsn": {
+      "enemyId": "enemy_19004_akbdsn",
+      "name": "小个子绒绒",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19004_akbdsn",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19004_akbdsn",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19005_akplsp": {
+      "enemyId": "enemy_19005_akplsp",
+      "name": "活泼绒绒",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19005_akplsp",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19005_akplsp",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19006_aksnil": {
+      "enemyId": "enemy_19006_aksnil",
+      "name": "固海凿石者",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19006_aksnil",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19006_aksnil",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19007_akplbt": {
+      "enemyId": "enemy_19007_akplbt",
+      "name": "“阿咬”",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19007_akplbt",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19007_akplbt",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19008_akplbr": {
+      "enemyId": "enemy_19008_akplbr",
+      "name": "高普尼克",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19008_akplbr",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19008_akplbr",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19009_akcrab": {
+      "enemyId": "enemy_19009_akcrab",
+      "name": "石背岩壳蟹",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19009_akcrab",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19009_akcrab",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19010_akplsn": {
+      "enemyId": "enemy_19010_akplsn",
+      "name": "直立小雪怪",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19010_akplsn",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19010_akplsn",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19011_akdog": {
+      "enemyId": "enemy_19011_akdog",
+      "name": "花冠园丁",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19011_akdog",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19011_akdog",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19012_akdgsp": {
+      "enemyId": "enemy_19012_akdgsp",
+      "name": "黑毛花冠园丁",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19012_akdgsp",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19012_akdgsp",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19013_akslm": {
+      "enemyId": "enemy_19013_akslm",
+      "name": "果冻清道夫",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19013_akslm",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19013_akslm",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19014_akslsn": {
+      "enemyId": "enemy_19014_akslsn",
+      "name": "果冻清道夫幼体",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19014_akslsn",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19014_akslsn",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19015_akftr": {
+      "enemyId": "enemy_19015_akftr",
+      "name": "大嘴捕食草",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19015_akftr",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19015_akftr",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19016_akmage": {
+      "enemyId": "enemy_19016_akmage",
+      "name": "爬行鬼伞",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19016_akmage",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19016_akmage",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19017_akrang": {
+      "enemyId": "enemy_19017_akrang",
+      "name": "红宝石投石虫",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19017_akrang",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19017_akrang",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19018_akshd": {
+      "enemyId": "enemy_19018_akshd",
+      "name": "困困荪茸",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19018_akshd",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19018_akshd",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19019_akbow": {
+      "enemyId": "enemy_19019_akbow",
+      "name": "石榴弩手",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19019_akbow",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19019_akbow",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19020_akdef": {
+      "enemyId": "enemy_19020_akdef",
+      "name": "椰壳蟹",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19020_akdef",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19020_akdef",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19024_akfire": {
+      "enemyId": "enemy_19024_akfire",
+      "name": "灼热跳跳蜥",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19024_akfire",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19024_akfire",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19026_aktele": {
+      "enemyId": "enemy_19026_aktele",
+      "name": "蓝冠羽镖客",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19026_aktele",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19026_aktele",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19027_aktesp": {
+      "enemyId": "enemy_19027_aktesp",
+      "name": "橙冠羽镖客",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19027_aktesp",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19027_aktesp",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19031_akrage": {
+      "enemyId": "enemy_19031_akrage",
+      "name": "密林锋脊裂兽",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19031_akrage",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19031_akrage",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19032_akrgsp": {
+      "enemyId": "enemy_19032_akrgsp",
+      "name": "枯焦锋脊裂兽",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19032_akrgsp",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19032_akrgsp",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19035_wlftr": {
+      "enemyId": "enemy_19035_wlftr",
+      "name": "大嘴捕食草",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19035_wlftr",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19035_wlftr",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19036_wlmage": {
+      "enemyId": "enemy_19036_wlmage",
+      "name": "爬行鬼伞",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19036_wlmage",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19036_wlmage",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19037_wlrang": {
+      "enemyId": "enemy_19037_wlrang",
+      "name": "红宝石投石虫",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19037_wlrang",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19037_wlrang",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19038_wlshd": {
+      "enemyId": "enemy_19038_wlshd",
+      "name": "困困荪茸",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19038_wlshd",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19038_wlshd",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19039_wlbow": {
+      "enemyId": "enemy_19039_wlbow",
+      "name": "石榴弩手",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19039_wlbow",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19039_wlbow",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19040_wldef": {
+      "enemyId": "enemy_19040_wldef",
+      "name": "椰壳蟹",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19040_wldef",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19040_wldef",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19044_wlfire": {
+      "enemyId": "enemy_19044_wlfire",
+      "name": "灼热跳跳蜥",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19044_wlfire",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19044_wlfire",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19046_wltele": {
+      "enemyId": "enemy_19046_wltele",
+      "name": "蓝冠羽镖客",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19046_wltele",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19046_wltele",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19047_wltesp": {
+      "enemyId": "enemy_19047_wltesp",
+      "name": "橙冠羽镖客",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19047_wltesp",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19047_wltesp",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19051_wlrage": {
+      "enemyId": "enemy_19051_wlrage",
+      "name": "密林锋脊裂兽",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19051_wlrage",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19051_wlrage",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19053_akrbt": {
+      "enemyId": "enemy_19053_akrbt",
+      "name": "深林伪形兽",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19053_akrbt",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19053_akrbt",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19054_akrbsp": {
+      "enemyId": "enemy_19054_akrbsp",
+      "name": "赤黑伪形兽",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19054_akrbsp",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19054_akrbsp",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19055_akblcr": {
+      "enemyId": "enemy_19055_akblcr",
+      "name": "浪花小壳蟹",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19055_akblcr",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19055_akblcr",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19056_akrdcr": {
+      "enemyId": "enemy_19056_akrdcr",
+      "name": "熔火小壳蟹",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19056_akrdcr",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19056_akrdcr",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19057_akickb": {
+      "enemyId": "enemy_19057_akickb",
+      "name": "寒山大角驮兽",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19057_akickb",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19057_akickb",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19058_akdrgn": {
+      "enemyId": "enemy_19058_akdrgn",
+      "name": "锐爪巨翼兽",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19058_akdrgn",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19058_akdrgn",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19059_akkabi": {
+      "enemyId": "enemy_19059_akkabi",
+      "name": "温和驮兽",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19059_akkabi",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19059_akkabi",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19060_akmndx": {
+      "enemyId": "enemy_19060_akmndx",
+      "name": "未定义石兽",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19060_akmndx",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19060_akmndx",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19061_akqhc": {
+      "enemyId": "enemy_19061_akqhc",
+      "name": "青花",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19061_akqhc",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19061_akqhc",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19062_akqhsp": {
+      "enemyId": "enemy_19062_akqhsp",
+      "name": "赤霞",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19062_akqhsp",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19062_akqhsp",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19063_akpeat": {
+      "enemyId": "enemy_19063_akpeat",
+      "name": "不知足吞噬者",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19063_akpeat",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19063_akpeat",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19064_akflwr": {
+      "enemyId": "enemy_19064_akflwr",
+      "name": "钵海收割者",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19064_akflwr",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19064_akflwr",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19065_aktstn": {
+      "enemyId": "enemy_19065_aktstn",
+      "name": "孤独的巨像",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19065_aktstn",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19065_aktstn",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_19066_akmdbf": {
+      "enemyId": "enemy_19066_akmdbf",
+      "name": "“酩酊”",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_19066_akmdbf",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_19066_akmdbf",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_2002_bearmi_2": {
+      "enemyId": "enemy_2002_bearmi_2",
+      "name": "高普尼克",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": true,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_2002_bearmi",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_2002_bearmi",
+      "alias": true,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "hasTimPrefab": true,
+      "hasTimAnimations": true,
+      "hasSupplementAnimations": false,
+      "newAnimationNames": [
+        "Attack",
+        "Default",
+        "Die",
+        "Idle",
+        "Move"
+      ],
+      "missingAnimationKeys": [],
+      "missingNamesFound": {},
+      "coversDeclaredMissingNames": false,
+      "sourcePrefabPointer": "/prefabs/enemy_2002_bearmi",
+      "sourceAnimationPointer": "/enemy_2002_bearmi/animations",
+      "supplementSource": null,
+      "canSupplyMissingPrefab": true,
+      "canSupplyMissingAnimationNames": false,
+      "candidate": true,
+      "reason": "existing-explicit-alias-source"
+    },
+    "enemy_2034_sythef_2": {
+      "enemyId": "enemy_2034_sythef_2",
+      "name": "流泪小子",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": true,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_2034_sythef",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_2034_sythef",
+      "alias": true,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "hasTimPrefab": true,
+      "hasTimAnimations": true,
+      "hasSupplementAnimations": false,
+      "newAnimationNames": [
+        "Attack",
+        "Default",
+        "Die",
+        "Idle",
+        "Move"
+      ],
+      "missingAnimationKeys": [],
+      "missingNamesFound": {},
+      "coversDeclaredMissingNames": false,
+      "sourcePrefabPointer": "/prefabs/enemy_2034_sythef",
+      "sourceAnimationPointer": "/enemy_2034_sythef/animations",
+      "supplementSource": null,
+      "canSupplyMissingPrefab": true,
+      "canSupplyMissingAnimationNames": false,
+      "candidate": true,
+      "reason": "existing-explicit-alias-source"
+    },
+    "enemy_2074_skzgly": {
+      "enemyId": "enemy_2074_skzgly",
+      "name": "歌利亚",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_2074_skzgly",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_2074_skzgly",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_2075_skgly2": {
+      "enemyId": "enemy_2075_skgly2",
+      "name": "遗忘创伤的战士",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_2075_skgly2",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_2075_skgly2",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_2097_skzfdd": {
+      "enemyId": "enemy_2097_skzfdd",
+      "name": "博卓卡斯替，圣卫铳骑",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_2097_skzfdd",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_2097_skzfdd",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_2098_skzftx": {
+      "enemyId": "enemy_2098_skzftx",
+      "name": "特雷西斯，黑冠尊主",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_2098_skzftx",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_2098_skzftx",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_2099_skzfkl": {
+      "enemyId": "enemy_2099_skzfkl",
+      "name": "奎隆，摩诃萨埵权化",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_2099_skzfkl",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_2099_skzfkl",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_2100_skzfmf": {
+      "enemyId": "enemy_2100_skzfmf",
+      "name": "曼弗雷德",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_2100_skzfmf",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_2100_skzfmf",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_2119_dyshhj_2": {
+      "enemyId": "enemy_2119_dyshhj_2",
+      "name": "“岁躯”",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_2119_dyshhj_2",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_2119_dyshhj_2",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_2155_shloon": {
+      "enemyId": "enemy_2155_shloon",
+      "name": "\"炎佑\"",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_2155_shloon",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_2155_shloon",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_3002_ftrtal_s": {
+      "enemyId": "enemy_3002_ftrtal_s",
+      "name": "斗士塔露拉",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_3002_ftrtal_s",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_3002_ftrtal_s",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_3010_mcreep": {
+      "enemyId": "enemy_3010_mcreep",
+      "name": "矿工游击队",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_3010_mcreep",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_3010_mcreep",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_4061_mulinb_2": {
+      "enemyId": "enemy_4061_mulinb_2",
+      "name": "直球队坚定守门员",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_4061_mulinb_2",
+          "explicitlyDefined": true
+        },
+        {
+          "level": 1,
+          "prefabKey": "enemy_4061_mulinb_2",
+          "explicitlyDefined": false
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_4061_mulinb_2",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5003_fostfd": {
+      "enemyId": "enemy_5003_fostfd",
+      "name": "好强无人机",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5003_fostfd",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5003_fostfd",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5006_hymtfd": {
+      "enemyId": "enemy_5006_hymtfd",
+      "name": "沙车",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5006_hymtfd",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5006_hymtfd",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5007_lancfd": {
+      "enemyId": "enemy_5007_lancfd",
+      "name": "萨卡兹穿刺哥（暂命名）",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5007_lancfd",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5007_lancfd",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5012_mstntd": {
+      "enemyId": "enemy_5012_mstntd",
+      "name": "巨大丑东西（愚人节）",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5012_mstntd",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5012_mstntd",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5014_dmanfd": {
+      "enemyId": "enemy_5014_dmanfd",
+      "name": "酒类爱好者（愚人节）",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5014_dmanfd",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5014_dmanfd",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5015_ccsbrf": {
+      "enemyId": "enemy_5015_ccsbrf",
+      "name": "提亚卡乌鳄鱼（愚人节）",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5015_ccsbrf",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5015_ccsbrf",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5016_ciprfd": {
+      "enemyId": "enemy_5016_ciprfd",
+      "name": "提亚卡乌好战者（愚人节）",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5016_ciprfd",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5016_ciprfd",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5017_dwarfd": {
+      "enemyId": "enemy_5017_dwarfd",
+      "name": "湖畔志愿者（愚人节）",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5017_dwarfd",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5017_dwarfd",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5018_tethfd": {
+      "enemyId": "enemy_5018_tethfd",
+      "name": "流浪者（愚人节）",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5018_tethfd",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5018_tethfd",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5019_hmotfd": {
+      "enemyId": "enemy_5019_hmotfd",
+      "name": "码头重艇（愚人节）",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5019_hmotfd",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5019_hmotfd",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5020_hslrfd": {
+      "enemyId": "enemy_5020_hslrfd",
+      "name": "水手（愚人节）",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5020_hslrfd",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5020_hslrfd",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5021_tmagfd": {
+      "enemyId": "enemy_5021_tmagfd",
+      "name": "控潮术士（愚人节）",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5021_tmagfd",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5021_tmagfd",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5022_smbone": {
+      "enemyId": "enemy_5022_smbone",
+      "name": "不法分子（愚人节）",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5022_smbone",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5022_smbone",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5023_smbtwo": {
+      "enemyId": "enemy_5023_smbtwo",
+      "name": "精英不法分子(愚人节)",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5023_smbtwo",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5023_smbtwo",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5024_divmfd": {
+      "enemyId": "enemy_5024_divmfd",
+      "name": "潜水员(愚人节)",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5024_divmfd",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5024_divmfd",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5025_bmbdfd": {
+      "enemyId": "enemy_5025_bmbdfd",
+      "name": "暴鸰（愚人节）",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5025_bmbdfd",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5025_bmbdfd",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5026_icedfd": {
+      "enemyId": "enemy_5026_icedfd",
+      "name": "虚幻（愚人节）",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5026_icedfd",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5026_icedfd",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5028_dqlime_2": {
+      "enemyId": "enemy_5028_dqlime_2",
+      "name": "流鼻涕虫虫",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5028_dqlime_2",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5028_dqlime_2",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5029_dqslim": {
+      "enemyId": "enemy_5029_dqslim",
+      "name": "巧克力流心虫虫",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5029_dqslim",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5029_dqslim",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5030_dqpro_3": {
+      "enemyId": "enemy_5030_dqpro_3",
+      "name": "狗Pro",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5030_dqpro_3",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5030_dqpro_3",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5031_dqrtar_2": {
+      "enemyId": "enemy_5031_dqrtar_2",
+      "name": "迫击炮弹投手",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5031_dqrtar_2",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5031_dqrtar_2",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5032_dqmon": {
+      "enemyId": "enemy_5032_dqmon",
+      "name": "普通的萨卡兹",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5032_dqmon",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5032_dqmon",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5033_dqmstr_2": {
+      "enemyId": "enemy_5033_dqmstr_2",
+      "name": "源石的腿脚",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5033_dqmstr_2",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5033_dqmstr_2",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5034_dqield": {
+      "enemyId": "enemy_5034_dqield",
+      "name": "迟钝的持盾者",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5034_dqield",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5034_dqield",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5035_dqveng_2": {
+      "enemyId": "enemy_5035_dqveng_2",
+      "name": "“火苗与软钢”",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5035_dqveng_2",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5035_dqveng_2",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5036_dqger_2": {
+      "enemyId": "enemy_5036_dqger_2",
+      "name": "苦难的具象",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5036_dqger_2",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5036_dqger_2",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5037_dqdbox": {
+      "enemyId": "enemy_5037_dqdbox",
+      "name": "锁链拳手",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5037_dqdbox",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5037_dqdbox",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5039_dqgint": {
+      "enemyId": "enemy_5039_dqgint",
+      "name": "砸人的石头",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5039_dqgint",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5039_dqgint",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5040_dqmage": {
+      "enemyId": "enemy_5040_dqmage",
+      "name": "扩音术师",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5040_dqmage",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5040_dqmage",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5041_dqkght": {
+      "enemyId": "enemy_5041_dqkght",
+      "name": "保鲜膜骑士",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5041_dqkght",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5041_dqkght",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5043_dqgscr": {
+      "enemyId": "enemy_5043_dqgscr",
+      "name": "冰手术师",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5043_dqgscr",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5043_dqgscr",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5044_dqzeni": {
+      "enemyId": "enemy_5044_dqzeni",
+      "name": "小寄居蟹",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5044_dqzeni",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5044_dqzeni",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5045_dqjedi_2": {
+      "enemyId": "enemy_5045_dqjedi_2",
+      "name": "弧光武士",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5045_dqjedi_2",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5045_dqjedi_2",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5046_dqmir": {
+      "enemyId": "enemy_5046_dqmir",
+      "name": "镜子机关枪",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5046_dqmir",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5046_dqmir",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5047_dqripr": {
+      "enemyId": "enemy_5047_dqripr",
+      "name": "窃笑鳄鱼",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5047_dqripr",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5047_dqripr",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5048_dqingd": {
+      "enemyId": "enemy_5048_dqingd",
+      "name": "扎人的石头",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5048_dqingd",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5048_dqingd",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5049_dqat": {
+      "enemyId": "enemy_5049_dqat",
+      "name": "责罚者",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5049_dqat",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5049_dqat",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5050_dqomg": {
+      "enemyId": "enemy_5050_dqomg",
+      "name": "大君之赐",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5050_dqomg",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5050_dqomg",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5051_dqrwar": {
+      "enemyId": "enemy_5051_dqrwar",
+      "name": "拳击宗师",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5051_dqrwar",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5051_dqrwar",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5053_dqllme": {
+      "enemyId": "enemy_5053_dqllme",
+      "name": "“庞贝”",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5053_dqllme",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5053_dqllme",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5056_yrnorm": {
+      "enemyId": "enemy_5056_yrnorm",
+      "name": "士兵",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5056_yrnorm",
+          "explicitlyDefined": true
+        },
+        {
+          "level": 1,
+          "prefabKey": "enemy_5056_yrnorm",
+          "explicitlyDefined": false
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5056_yrnorm",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5059_yrlanc": {
+      "enemyId": "enemy_5059_yrlanc",
+      "name": "萨卡兹穿刺手",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5059_yrlanc",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5059_yrlanc",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5068_iznsbr": {
+      "enemyId": "enemy_5068_iznsbr",
+      "name": "落魄士兵",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5068_iznsbr",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5068_iznsbr",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5069_izsdkn": {
+      "enemyId": "enemy_5069_izsdkn",
+      "name": "持盾战败骑士",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5069_izsdkn",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5069_izsdkn",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5070_izuabn": {
+      "enemyId": "enemy_5070_izuabn",
+      "name": "乌萨斯弩手幸存者",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5070_izuabn",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5070_izuabn",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5071_izduph": {
+      "enemyId": "enemy_5071_izduph",
+      "name": "深池搅局战士",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5071_izduph",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5071_izduph",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5072_izdmge": {
+      "enemyId": "enemy_5072_izdmge",
+      "name": "萨卡兹业余术师",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5072_izdmge",
+          "explicitlyDefined": true
+        },
+        {
+          "level": 1,
+          "prefabKey": "enemy_5072_izdmge",
+          "explicitlyDefined": false
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5072_izdmge",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5073_izbslm": {
+      "enemyId": "enemy_5073_izbslm",
+      "name": "稳定的高能源石虫",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5073_izbslm",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5073_izbslm",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5075_izbear": {
+      "enemyId": "enemy_5075_izbear",
+      "name": "下班的高普尼克",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5075_izbear",
+          "explicitlyDefined": true
+        },
+        {
+          "level": 1,
+          "prefabKey": "enemy_5075_izbear",
+          "explicitlyDefined": false
+        },
+        {
+          "level": 2,
+          "prefabKey": "enemy_5075_izbear",
+          "explicitlyDefined": false
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5075_izbear",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5503_arcslma": {
+      "enemyId": "enemy_5503_arcslma",
+      "name": "果冻小子",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5503_arcslma",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5503_arcslma",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_5504_arcslmi": {
+      "enemyId": "enemy_5504_arcslmi",
+      "name": "果冻丁",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_5504_arcslmi",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_5504_arcslmi",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_6024_crnbug": {
+      "enemyId": "enemy_6024_crnbug",
+      "name": "“特别任性的生物”",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_6024_crnbug",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_6024_crnbug",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_6025_tinker": {
+      "enemyId": "enemy_6025_tinker",
+      "name": "怨恨祭坛",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_6025_tinker",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_6025_tinker",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_6034_vampir": {
+      "enemyId": "enemy_6034_vampir",
+      "name": "“枯槁者”维奇科",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_6034_vampir",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_6034_vampir",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_7027_xbbtl_2": {
+      "enemyId": "enemy_7027_xbbtl_2",
+      "name": "晶玲兽",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_7027_xbbtl_2",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_7027_xbbtl_2",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_7061_xbsmiy": {
+      "enemyId": "enemy_7061_xbsmiy",
+      "name": "香草翼兽（友方闪光）",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_7061_xbsmiy",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_7061_xbsmiy",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_8007_eltrsm_2": {
+      "enemyId": "enemy_8007_eltrsm_2",
+      "name": "“迷迭香”，虚实之握",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_8007_eltrsm_3",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_8007_eltrsm_3",
+      "alias": true,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "hasTimPrefab": true,
+      "hasTimAnimations": false,
+      "hasSupplementAnimations": false,
+      "newAnimationNames": [],
+      "missingAnimationKeys": [],
+      "missingNamesFound": {},
+      "coversDeclaredMissingNames": false,
+      "sourcePrefabPointer": "/prefabs/enemy_8007_eltrsm_3",
+      "sourceAnimationPointer": null,
+      "supplementSource": null,
+      "canSupplyMissingPrefab": true,
+      "canSupplyMissingAnimationNames": false,
+      "candidate": true,
+      "reason": "existing-explicit-alias-source"
+    },
+    "enemy_8010_mcnist_2": {
+      "enemyId": "enemy_8010_mcnist_2",
+      "name": "“Mechanist”，机械之心",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_8010_mcnist_3",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_8010_mcnist_3",
+      "alias": true,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "hasTimPrefab": true,
+      "hasTimAnimations": false,
+      "hasSupplementAnimations": false,
+      "newAnimationNames": [],
+      "missingAnimationKeys": [],
+      "missingNamesFound": {},
+      "coversDeclaredMissingNames": false,
+      "sourcePrefabPointer": "/prefabs/enemy_8010_mcnist_3",
+      "sourceAnimationPointer": null,
+      "supplementSource": null,
+      "canSupplyMissingPrefab": true,
+      "canSupplyMissingAnimationNames": false,
+      "candidate": true,
+      "reason": "existing-explicit-alias-source"
+    },
+    "enemy_8011_mcndog_2": {
+      "enemyId": "enemy_8011_mcndog_2",
+      "name": "结构性原理",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_8011_mcndog_3",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_8011_mcndog_3",
+      "alias": true,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "hasTimPrefab": true,
+      "hasTimAnimations": false,
+      "hasSupplementAnimations": false,
+      "newAnimationNames": [],
+      "missingAnimationKeys": [],
+      "missingNamesFound": {},
+      "coversDeclaredMissingNames": false,
+      "sourcePrefabPointer": "/prefabs/enemy_8011_mcndog_3",
+      "sourceAnimationPointer": null,
+      "supplementSource": null,
+      "canSupplyMissingPrefab": true,
+      "canSupplyMissingAnimationNames": false,
+      "candidate": true,
+      "reason": "existing-explicit-alias-source"
+    },
+    "enemy_8016_misery_1": {
+      "enemyId": "enemy_8016_misery_1",
+      "name": "“Misery”，静默之刃",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_8016_misery",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_8016_misery",
+      "alias": true,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "hasTimPrefab": true,
+      "hasTimAnimations": true,
+      "hasSupplementAnimations": false,
+      "newAnimationNames": [
+        "A_Attack",
+        "A_Default",
+        "A_Idle",
+        "A_Move",
+        "A_Skill_1_Aid",
+        "A_Skill_2_Begin",
+        "A_Skill_2_End",
+        "A_Skill_2_Loop",
+        "A_Start",
+        "B_Attack",
+        "B_Default",
+        "B_Die",
+        "B_Idle",
+        "B_Move",
+        "B_Skill_1_Aid",
+        "B_Skill_2_Begin",
+        "B_Skill_2_End",
+        "B_Skill_2_Loop",
+        "B_Skill_3_Retreat_Begin",
+        "B_Skill_3_Retreat_End",
+        "Revive_Begin",
+        "Revive_End",
+        "Revive_Loop"
+      ],
+      "missingAnimationKeys": [],
+      "missingNamesFound": {},
+      "coversDeclaredMissingNames": false,
+      "sourcePrefabPointer": "/prefabs/enemy_8016_misery",
+      "sourceAnimationPointer": "/enemy_8016_misery/animations",
+      "supplementSource": null,
+      "canSupplyMissingPrefab": true,
+      "canSupplyMissingAnimationNames": false,
+      "candidate": true,
+      "reason": "existing-explicit-alias-source"
+    },
+    "enemy_8016_misery_2": {
+      "enemyId": "enemy_8016_misery_2",
+      "name": "“Misery”，静默之刃",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_8016_misery",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_8016_misery",
+      "alias": true,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "hasTimPrefab": true,
+      "hasTimAnimations": true,
+      "hasSupplementAnimations": false,
+      "newAnimationNames": [
+        "A_Attack",
+        "A_Default",
+        "A_Idle",
+        "A_Move",
+        "A_Skill_1_Aid",
+        "A_Skill_2_Begin",
+        "A_Skill_2_End",
+        "A_Skill_2_Loop",
+        "A_Start",
+        "B_Attack",
+        "B_Default",
+        "B_Die",
+        "B_Idle",
+        "B_Move",
+        "B_Skill_1_Aid",
+        "B_Skill_2_Begin",
+        "B_Skill_2_End",
+        "B_Skill_2_Loop",
+        "B_Skill_3_Retreat_Begin",
+        "B_Skill_3_Retreat_End",
+        "Revive_Begin",
+        "Revive_End",
+        "Revive_Loop"
+      ],
+      "missingAnimationKeys": [],
+      "missingNamesFound": {},
+      "coversDeclaredMissingNames": false,
+      "sourcePrefabPointer": "/prefabs/enemy_8016_misery",
+      "sourceAnimationPointer": "/enemy_8016_misery/animations",
+      "supplementSource": null,
+      "canSupplyMissingPrefab": true,
+      "canSupplyMissingAnimationNames": false,
+      "candidate": true,
+      "reason": "existing-explicit-alias-source"
+    },
+    "enemy_8016_misery_3": {
+      "enemyId": "enemy_8016_misery_3",
+      "name": "“Misery”，静默之刃",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": false,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_8016_misery",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_8016_misery",
+      "alias": true,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "hasTimPrefab": true,
+      "hasTimAnimations": true,
+      "hasSupplementAnimations": false,
+      "newAnimationNames": [
+        "A_Attack",
+        "A_Default",
+        "A_Idle",
+        "A_Move",
+        "A_Skill_1_Aid",
+        "A_Skill_2_Begin",
+        "A_Skill_2_End",
+        "A_Skill_2_Loop",
+        "A_Start",
+        "B_Attack",
+        "B_Default",
+        "B_Die",
+        "B_Idle",
+        "B_Move",
+        "B_Skill_1_Aid",
+        "B_Skill_2_Begin",
+        "B_Skill_2_End",
+        "B_Skill_2_Loop",
+        "B_Skill_3_Retreat_Begin",
+        "B_Skill_3_Retreat_End",
+        "Revive_Begin",
+        "Revive_End",
+        "Revive_Loop"
+      ],
+      "missingAnimationKeys": [],
+      "missingNamesFound": {},
+      "coversDeclaredMissingNames": false,
+      "sourcePrefabPointer": "/prefabs/enemy_8016_misery",
+      "sourceAnimationPointer": "/enemy_8016_misery/animations",
+      "supplementSource": null,
+      "canSupplyMissingPrefab": true,
+      "canSupplyMissingAnimationNames": false,
+      "candidate": true,
+      "reason": "existing-explicit-alias-source"
+    },
+    "enemy_9013_acstmk_2": {
+      "enemyId": "enemy_9013_acstmk_2",
+      "name": "假想敌：胄",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": true,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_9013_acstmk",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_9013_acstmk",
+      "alias": true,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "hasTimPrefab": true,
+      "hasTimAnimations": true,
+      "hasSupplementAnimations": false,
+      "newAnimationNames": [
+        "Attack",
+        "Default",
+        "Die",
+        "Idle",
+        "Revive",
+        "Skill_1",
+        "Skill_2",
+        "Skill_3"
+      ],
+      "missingAnimationKeys": [],
+      "missingNamesFound": {},
+      "coversDeclaredMissingNames": false,
+      "sourcePrefabPointer": "/prefabs/enemy_9013_acstmk",
+      "sourceAnimationPointer": "/enemy_9013_acstmk/animations",
+      "supplementSource": null,
+      "canSupplyMissingPrefab": true,
+      "canSupplyMissingAnimationNames": false,
+      "candidate": true,
+      "reason": "existing-explicit-alias-source"
+    },
+    "enemy_9017_achunt_2": {
+      "enemyId": "enemy_9017_achunt_2",
+      "name": "假想敌：铳",
+      "primaryTemplate": "source-prefab",
+      "inEncounterPool": true,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_9017_achunt",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_9017_achunt",
+      "alias": true,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "hasTimPrefab": true,
+      "hasTimAnimations": true,
+      "hasSupplementAnimations": false,
+      "newAnimationNames": [
+        "Attack",
+        "Default",
+        "Die",
+        "Idle",
+        "Move",
+        "Skill_1",
+        "Skill_2_Begin",
+        "Skill_2_End",
+        "Skill_2_Loop"
+      ],
+      "missingAnimationKeys": [],
+      "missingNamesFound": {},
+      "coversDeclaredMissingNames": false,
+      "sourcePrefabPointer": "/prefabs/enemy_9017_achunt",
+      "sourceAnimationPointer": "/enemy_9017_achunt/animations",
+      "supplementSource": null,
+      "canSupplyMissingPrefab": true,
+      "canSupplyMissingAnimationNames": false,
+      "candidate": true,
+      "reason": "existing-explicit-alias-source"
+    },
+    "enemy_9032_aclionk": {
+      "enemyId": "enemy_9032_aclionk",
+      "name": "阿利斯泰尔，帝国余晖",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": true,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_9032_aclionk",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_9032_aclionk",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    },
+    "enemy_9033_acdeer": {
+      "enemyId": "enemy_9033_acdeer",
+      "name": "“萨米的意志”",
+      "primaryTemplate": "animation-source",
+      "inEncounterPool": true,
+      "databaseLevels": [
+        {
+          "level": 0,
+          "prefabKey": "enemy_9033_acdeer",
+          "explicitlyDefined": true
+        }
+      ],
+      "stableAllLevels": true,
+      "prefabKey": "enemy_9033_acdeer",
+      "alias": false,
+      "evidenceLevel": "Verified source-field mapping; not full behavior validation",
+      "reason": "identity-key-no-new-alias"
+    }
+  }
+}

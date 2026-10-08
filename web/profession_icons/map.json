@@ -1,0 +1,82 @@
+{
+ "SUPPORT": {
+  "name": "icon_csuppo",
+  "atlas": "atlas1_3.png",
+  "rect": [
+   546,
+   1617,
+   180,
+   180
+  ]
+ },
+ "SPECIAL": {
+  "name": "icon_cspec",
+  "atlas": "atlas1_3.png",
+  "rect": [
+   546,
+   1435,
+   180,
+   180
+  ]
+ },
+ "SNIPER": {
+  "name": "icon_csnipe",
+  "atlas": "atlas1_3.png",
+  "rect": [
+   546,
+   1253,
+   180,
+   180
+  ]
+ },
+ "PIONEER": {
+  "name": "icon_cpione",
+  "atlas": "atlas1_3.png",
+  "rect": [
+   546,
+   1092,
+   180,
+   159
+  ]
+ },
+ "MEDIC": {
+  "name": "icon_cmedic",
+  "atlas": "atlas1_3.png",
+  "rect": [
+   546,
+   910,
+   180,
+   180
+  ]
+ },
+ "GUARD": {
+  "name": "icon_cguard",
+  "atlas": "atlas1_3.png",
+  "rect": [
+   546,
+   728,
+   180,
+   180
+  ]
+ },
+ "DEFENDER": {
+  "name": "icon_cdfend",
+  "atlas": "atlas1_3.png",
+  "rect": [
+   546,
+   364,
+   180,
+   180
+  ]
+ },
+ "CASTER": {
+  "name": "icon_ccast",
+  "atlas": "atlas1_3.png",
+  "rect": [
+   364,
+   910,
+   180,
+   180
+  ]
+ }
+}

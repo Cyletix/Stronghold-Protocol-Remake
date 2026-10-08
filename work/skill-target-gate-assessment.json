@@ -1,0 +1,320 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-09-18T16:28:32.554478+09:00",
+  "kind": "read-only-controlled-precompile",
+  "scope": "three requested garrison switch-mode graphs; no generated/runtime/source write or true admission",
+  "inputs": {
+    "work/operator-mode-next-group.json": "99eaae7a2ff1219affa7dab614b84959f80b908deb190ac49de1ecbf5f86adb2",
+    "work/client-logic/program-compilation.json": "972bc0d63070e03acf8733c82e8480a29a92952c01bce07ff1f8240eb169c0b3",
+    "work/client-logic/buff-templates.json": "f8cc1f74e426d0111803d68154335a748bfee377a2d826d84135f60a41280d24",
+    "data/ArknightsGameData/zh_CN/gamedata/excel/skill_table.json": "9eaaecacd024b8e2177ddb44e0c306bed609b53ef79d2e6446dda9dae49d6435",
+    "tools/skill_mode_compiler.py": "40bb7d900316bb149452fd49d2261bea9d449166e708f8395ca055d4169a192e",
+    "tools/skill_mode_appear.py": "2053420c9bfd0bb25bdac39e52e15570ce41051d6b916bab362004d4e7be09e1"
+  },
+  "databaseSha256": "36d499444dd469cdf5b188e9e2a245a523f3472c470aa94818644aebf5618095",
+  "scopeSources": {
+    "docs/checklists/implementation-checklist.json#garrison-identity-projection": "3fbe1bd8ca9e21e13ee217c44b885ca1535c45079df5834a89cc18063f1e37a4"
+  },
+  "members": [
+    {
+      "skillId": "skchr_kroos2_1",
+      "charId": "char_1021_kroos2",
+      "prefabId": "skchr_kroos2_1",
+      "sourceLevelCount": 10,
+      "controllerNode": "-3856061771990080173",
+      "originalControllerFields": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": "5967904953797207379"
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": "6851783972288338031"
+        },
+        "m_Name": "",
+        "_maxTriggerTime": -1,
+        "_allowSpRecoveryWhenAffecting": 0,
+        "_limitGlobalTriggerTime": 0,
+        "_hidden": 0,
+        "_showSpBarEvenHidden": 0,
+        "_showSpAsBulletMode": 0,
+        "_showSpRatioAsProgress": 0,
+        "_playCharWordVoice": 1,
+        "_playCharWordWithPassiveType": 0,
+        "_canCastWithNoSp": 0,
+        "_canSilenced": 0,
+        "_canUseInAbnormalState": 0,
+        "_defaultModeIndex": -1,
+        "_attackBlackboardModeIndex": -1,
+        "_extraAttackBlackboardModeIndices": [],
+        "_rangeIdModeIndex": -1,
+        "_extraRangeIdModeIndices": [],
+        "_rangeIdUsageType": 7,
+        "_writeDurationToAttackBlackboard": 0,
+        "_attachSignalIds": 0,
+        "_extraAbilities": [],
+        "_useEscapeTime": 0,
+        "_earlySkillFinishAtAttackFinished": 0,
+        "_showProgressToNext": 0,
+        "_hideSkillStackCount": 0,
+        "_hideHudSkillStackCount": 0,
+        "_playSkillBeginAnim": 1,
+        "_beginAnim": "Skill_Begin",
+        "_beginAnimDown": "",
+        "_beginEffect": [],
+        "_useFaceVector": 0,
+        "_beginAnimValidator": {
+          "m_FileID": 0,
+          "m_PathID": "0"
+        },
+        "_availableValidator": {
+          "m_FileID": 0,
+          "m_PathID": "0"
+        },
+        "_trigger": {
+          "m_FileID": 0,
+          "m_PathID": "0"
+        },
+        "_switchToState": 1,
+        "_uninterruptibleOnAbilityPredelay": 0,
+        "_canSwitchDuringBorn": 1,
+        "_canCastDuringBorn": 1,
+        "_checkHasTargetBeforeDoCast": 0,
+        "_useTriggerInManualMode": 0,
+        "_allowNoTarget": 0,
+        "_shouldCastLikeAttack": 0,
+        "_isRemoteControlled": 0,
+        "_hideRangeToShow": 0,
+        "_forceUseBaseShowRange": 0,
+        "_rangeToShow": {
+          "m_FileID": 0,
+          "m_PathID": "0"
+        },
+        "_recoverSpIfNoTarget": 0,
+        "_resetAbilityCooldownWhenCastEnd": 0,
+        "_onlyAvailableWhenTokenValid": 0,
+        "_hasUniStackColor": 0
+      },
+      "controlledChange": {
+        "path": "CastSkill/_allowNoTarget",
+        "from": 0,
+        "to": 1
+      },
+      "originalResult": {
+        "reason": "unsupported-field",
+        "path": "CastSkill/_allowNoTarget",
+        "actual": 0
+      },
+      "variantResult": {
+        "status": "rejected",
+        "reason": "unsupported-field",
+        "path": "ActiveBuffAbility/_checkBuffEarlyFinish",
+        "actual": 1
+      },
+      "onlyMissingTargetGate": false
+    },
+    {
+      "skillId": "skchr_halo2_1",
+      "charId": "char_1047_halo2",
+      "prefabId": "skchr_halo2_1",
+      "sourceLevelCount": 10,
+      "controllerNode": "-5777201709861661896",
+      "originalControllerFields": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": "2394434251572941624"
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": "6851783972288338031"
+        },
+        "m_Name": "",
+        "_maxTriggerTime": -1,
+        "_allowSpRecoveryWhenAffecting": 0,
+        "_limitGlobalTriggerTime": 0,
+        "_hidden": 0,
+        "_showSpBarEvenHidden": 0,
+        "_showSpAsBulletMode": 0,
+        "_showSpRatioAsProgress": 0,
+        "_playCharWordVoice": 1,
+        "_playCharWordWithPassiveType": 0,
+        "_canCastWithNoSp": 0,
+        "_canSilenced": 0,
+        "_canUseInAbnormalState": 0,
+        "_defaultModeIndex": -1,
+        "_attackBlackboardModeIndex": 1,
+        "_extraAttackBlackboardModeIndices": [],
+        "_rangeIdModeIndex": 1,
+        "_extraRangeIdModeIndices": [],
+        "_rangeIdUsageType": 7,
+        "_writeDurationToAttackBlackboard": 0,
+        "_attachSignalIds": 0,
+        "_extraAbilities": [],
+        "_useEscapeTime": 0,
+        "_earlySkillFinishAtAttackFinished": 0,
+        "_showProgressToNext": 0,
+        "_hideSkillStackCount": 0,
+        "_hideHudSkillStackCount": 0,
+        "_playSkillBeginAnim": 0,
+        "_beginAnim": "",
+        "_beginAnimDown": "",
+        "_beginEffect": [],
+        "_useFaceVector": 0,
+        "_beginAnimValidator": {
+          "m_FileID": 0,
+          "m_PathID": "0"
+        },
+        "_availableValidator": {
+          "m_FileID": 0,
+          "m_PathID": "0"
+        },
+        "_trigger": {
+          "m_FileID": 0,
+          "m_PathID": "0"
+        },
+        "_switchToState": 1,
+        "_uninterruptibleOnAbilityPredelay": 1,
+        "_canSwitchDuringBorn": 1,
+        "_canCastDuringBorn": 1,
+        "_checkHasTargetBeforeDoCast": 0,
+        "_useTriggerInManualMode": 0,
+        "_allowNoTarget": 0,
+        "_shouldCastLikeAttack": 0,
+        "_isRemoteControlled": 0,
+        "_hideRangeToShow": 0,
+        "_forceUseBaseShowRange": 0,
+        "_rangeToShow": {
+          "m_FileID": 0,
+          "m_PathID": "0"
+        },
+        "_recoverSpIfNoTarget": 0,
+        "_resetAbilityCooldownWhenCastEnd": 0,
+        "_onlyAvailableWhenTokenValid": 0,
+        "_hasUniStackColor": 0
+      },
+      "controlledChange": {
+        "path": "CastSkill/_allowNoTarget",
+        "from": 0,
+        "to": 1
+      },
+      "originalResult": {
+        "reason": "unsupported-field",
+        "path": "CastSkill/_allowNoTarget",
+        "actual": 0
+      },
+      "variantResult": {
+        "status": "rejected",
+        "reason": "unsupported-mode-projectile",
+        "path": "projectile-special-behaviour",
+        "actual": "projectile_chr_halo2_s1: Torappu.Battle.CircleRange"
+      },
+      "onlyMissingTargetGate": false
+    },
+    {
+      "skillId": "skchr_halo_2",
+      "charId": "char_135_halo",
+      "prefabId": "skchr_halo_2",
+      "sourceLevelCount": 10,
+      "controllerNode": "-5530740954485206935",
+      "originalControllerFields": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": "-8191590984810213271"
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": "6851783972288338031"
+        },
+        "m_Name": "",
+        "_maxTriggerTime": -1,
+        "_allowSpRecoveryWhenAffecting": 0,
+        "_limitGlobalTriggerTime": 0,
+        "_hidden": 0,
+        "_showSpBarEvenHidden": 0,
+        "_showSpAsBulletMode": 0,
+        "_showSpRatioAsProgress": 0,
+        "_playCharWordVoice": 1,
+        "_playCharWordWithPassiveType": 0,
+        "_canCastWithNoSp": 0,
+        "_canSilenced": 0,
+        "_canUseInAbnormalState": 0,
+        "_defaultModeIndex": -1,
+        "_attackBlackboardModeIndex": 1,
+        "_extraAttackBlackboardModeIndices": [],
+        "_rangeIdModeIndex": 1,
+        "_extraRangeIdModeIndices": [],
+        "_rangeIdUsageType": 7,
+        "_writeDurationToAttackBlackboard": 0,
+        "_attachSignalIds": 0,
+        "_extraAbilities": [],
+        "_useEscapeTime": 0,
+        "_earlySkillFinishAtAttackFinished": 0,
+        "_showProgressToNext": 0,
+        "_hideSkillStackCount": 0,
+        "_hideHudSkillStackCount": 0,
+        "_playSkillBeginAnim": 0,
+        "_beginAnim": "Skill_2_Begin",
+        "_beginAnimDown": "",
+        "_beginEffect": [],
+        "_useFaceVector": 0,
+        "_beginAnimValidator": {
+          "m_FileID": 0,
+          "m_PathID": "0"
+        },
+        "_availableValidator": {
+          "m_FileID": 0,
+          "m_PathID": "0"
+        },
+        "_trigger": {
+          "m_FileID": 0,
+          "m_PathID": "0"
+        },
+        "_switchToState": 1,
+        "_uninterruptibleOnAbilityPredelay": 0,
+        "_canSwitchDuringBorn": 1,
+        "_canCastDuringBorn": 1,
+        "_checkHasTargetBeforeDoCast": 0,
+        "_useTriggerInManualMode": 0,
+        "_allowNoTarget": 0,
+        "_shouldCastLikeAttack": 0,
+        "_isRemoteControlled": 0,
+        "_hideRangeToShow": 0,
+        "_forceUseBaseShowRange": 0,
+        "_rangeToShow": {
+          "m_FileID": 0,
+          "m_PathID": "0"
+        },
+        "_recoverSpIfNoTarget": 0,
+        "_resetAbilityCooldownWhenCastEnd": 0,
+        "_onlyAvailableWhenTokenValid": 0,
+        "_hasUniStackColor": 0
+      },
+      "controlledChange": {
+        "path": "CastSkill/_allowNoTarget",
+        "from": 0,
+        "to": 1
+      },
+      "originalResult": {
+        "reason": "unsupported-field",
+        "path": "CastSkill/_allowNoTarget",
+        "actual": 0
+      },
+      "variantResult": {
+        "status": "rejected",
+        "reason": "unsupported-mode-projectile",
+        "path": "unsupported-field-values",
+        "actual": "Torappu.Battle.ChainedSelector: _useChainPrefix"
+      },
+      "onlyMissingTargetGate": false
+    }
+  ],
+  "counts": {
+    "tested": 3,
+    "onlyMissingTargetGate": 0,
+    "additionalBlockers": 3
+  },
+  "boundary": "Setting allowNoTarget from0 to1 is solely an in-memory diagnostic. Success does not recover native target selection or certify safe admission; real source field must stay0 and receive an executable cast gate."
+}

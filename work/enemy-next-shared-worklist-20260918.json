@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-09-18T17:46:06.372215+09:00",
+  "scope": "Exactly current12 actual-pool ordinary gap IDs plus one required acdums dependency; existing cached sources only, no APP/native extraction and no runtime/data mutation.",
+  "inputs": {
+    "work/external-combat-import-report.json": "2fda57e9e3aa75732813a0ecaf3f8cc7fc58f169b71f13fd0baefad949a98d18",
+    "work/garrison-encounter-scope.json": "e9bef70e971e05551bc287b3b99452ff213d41d44f12cc4b534253dcba6d09c6",
+    "work/enemy-ordinary-action-priority-20260918.json": "f1abd7ed7475ba31aa05199fa957b95157d1efee011c261e45bdd875cd7f8e14",
+    "work/enemy-mode-dispatch-catalog.json": "1caf9827b1988aa1253284b52bea8e45cd8eea1ef0fb77b6454a4089a990d7df",
+    "work/enemy-next-ordinary-source-selection.json": "1c7a3522db46451150a1f527f538e4c0c1a336056aafeac0e0afe0d216be9033",
+    "work/enemy-next-template-selection.json": "587939270a72fbfbf0aba928fea4945a380cbe15862e2a2024c866f092906c51",
+    "work/enemy-next-shared-provider-selection.json": "c360f886b712618d1295b5bd4ad5639626b975fcb8b670d1699f1c70c7c08ff7",
+    "work/enemy-acdums-dependency-selection.json": "6d356a0b311ceade8637b6bd3f53f18cbcd27db8e47461100b27b0e8fb4929e6"
+  },
+  "ordinaryGapIDs": [
+    "enemy_1040_bombd",
+    "enemy_1112_emppnt",
+    "enemy_1234_dsubrl",
+    "enemy_1234_dsubrl_2",
+    "enemy_1373_ltnhor_2",
+    "enemy_1422_lrsldr",
+    "enemy_1422_lrsldr_2",
+    "enemy_1425_lrcmra",
+    "enemy_1425_lrcmra_2",
+    "enemy_1439_dslntf",
+    "enemy_2025_syufo",
+    "enemy_9021_acduml"
+  ],
+  "groups": [
+    {
+      "id": "enemy-aura-periodic-damage",
+      "members": [
+        "enemy_1234_dsubrl",
+        "enemy_1234_dsubrl_2"
+      ],
+      "kind": "持续光环，非两个待补普通攻击",
+      "sourceSummary": "Empty combat/absent attack；AuraAbility selector=NULL、TargetValidator side2/motion3/category1；离开/Detach移除。携带Buff每1秒触发，waitFirst=true；AdvancedApplyDamage+CreateEffect。另有根damage事件→CreateBuff(MODIFIER_TARGET)→SANITY元素结算、属性26黑板层。",
+      "existingConsumers": [
+        "web/src/simulation/skill-auras.js",
+        "web/src/simulation/enemy-periodic.js",
+        "web/src/simulation/elemental.js"
+      ],
+      "minimumSharedWork": [
+        "共用敌方Aura来源挂载、成员进入/退出和周期Buff，不使用普通攻击调度代替",
+        "完整闭合主动光环+源命中事件元素依赖+属性26；目标几何与根挂载从已有所有权缓存定向补齐",
+        "仅模板完整匹配者放行，两变体源参数分别绑定"
+      ],
+      "canBatchImmediately": false,
+      "canImplementSharedBatchNow": true,
+      "recommendedPriority": 1,
+      "readyScope": "2个同构能力提供者候选；不能声称新增2个完整普通攻击/整敌"
+    },
+    {
+      "id": "external-marker-mode-gates",
+      "members": [
+        "enemy_1422_lrsldr",
+        "enemy_1422_lrsldr_2"
+      ],
+      "kind": "已有双模式普通动作，缺环境标记触发",
+      "sourceSummary": "两个Melee模式和initialMode0已生成；0.5秒Buff周期检查 enemy_bigstorm[mark] / buff_originum[tile] / enemy_lrcmra[originum][mark] 任一存在。正/反条件切1/0并创建/清理mode_fx。",
+      "existingConsumers": [
+        "tools/enemy_mode_events.py",
+        "web/src/simulation/external-combat.js"
+      ],
+      "minimumSharedWork": [
+        "编译带CheckContainsBuff/IfNot的周期模式命令并保留完整字段",
+        "先确认三种实际环境标记的来源、作用区域与撤销；只造fixture标记不等于自然模式闭环"
+      ],
+      "canBatchImmediately": false,
+      "canImplementSharedBatchNow": true,
+      "recommendedPriority": 3,
+      "readyScope": "2个模式触发主体可共编译；自然环境依赖尚不闭合"
+    },
+    {
+      "id": "originum-environment-controller",
+      "members": [
+        "enemy_1425_lrcmra",
+        "enemy_1425_lrcmra_2"
+      ],
+      "kind": "已生成双模式，环境技能/源石区域链缺口",
+      "sourceSummary": "switchMode/triggerSkillAnim模板含TriggerEnemySkill、CreateBuff、FinishBuffsById；originum damage模板含按其他Buff黑板取值、条件固定伤害、区域标记创建/结束。",
+      "existingConsumers": [
+        "web/src/simulation/enemy-skills.js",
+        "web/src/simulation/external-combat.js"
+      ],
+      "minimumSharedWork": [
+        "环境进入触发→技能演出→模式→区域标记与伤害完整依赖一起绑定",
+        "保留先前环境入口延期记录，不把lrsldr简单marker谓词当作摄像头完整主体"
+      ],
+      "canBatchImmediately": false,
+      "canImplementSharedBatchNow": false,
+      "recommendedPriority": 5,
+      "readyScope": "2个复杂环境成员，先依赖环境层"
+    },
+    {
+      "id": "attach-to-target-projectile",
+      "members": [
+        "enemy_1112_emppnt"
+      ],
+      "kind": "普通Ranged+贴附弹体",
+      "sourceSummary": "combat/attack同一Ranged；SecondaryFilterAdvancedSelector。弹体SimpleProjectile+AttachToTarget(delayToStart3)+HitBehaviour到达命中；lifeTime10、hitNum INFINITY、stopWhenSourceInvalid0、alwaysHitTraceTargetInTheEnd0。",
+      "existingConsumers": [
+        "tools/direct_skill_compiler.py",
+        "web/src/simulation/direct-skill-actions.js",
+        "web/src/simulation/external-combat.js"
+      ],
+      "minimumSharedWork": [
+        "共享AttachToTarget配送合同与到达/寿命规则，不能套移动速度或普通直击",
+        "完整SecondaryFilter选择器和命中受体范围/资格闭合"
+      ],
+      "canBatchImmediately": false,
+      "canImplementSharedBatchNow": true,
+      "recommendedPriority": 2,
+      "readyScope": "目前实际池1个；可复用配送能力，不扩报受影响名单"
+    },
+    {
+      "id": "enthusiasm-mode-entry",
+      "members": [
+        "enemy_1373_ltnhor_2"
+      ],
+      "kind": "已有两mode/两技能，缺模式入口",
+      "sourceSummary": "modes0/1、initial0和skills/skillSp已生成；4条combat/attack roots，普通/enthu不同projectiles；PassiveBuff有enemy_act29side[siwtch_mode_enthu] 0.2秒检查。",
+      "existingConsumers": [
+        "web/src/simulation/enemy-skills.js",
+        "web/src/simulation/external-combat.js"
+      ],
+      "minimumSharedWork": [
+        "完整场景热情标记与条件切换入口；不重复做已验两技能或仅取mode0"
+      ],
+      "canBatchImmediately": false,
+      "canImplementSharedBatchNow": false,
+      "recommendedPriority": 6,
+      "readyScope": "模式入场依赖，不是4份缺失动作"
+    },
+    {
+      "id": "dormant-reactive-transform",
+      "members": [
+        "enemy_1439_dslntf"
+      ],
+      "kind": "受击/阻挡转醒与持续元素能力",
+      "sourceSummary": "只有mode1普通Melee已生成；mode0非damage composite，initial未绑定。dslntf_tr_1事件10/37检查Buff/阻挡者Buff、创建标记、SwitchMode、EnemySkipWaitCheckPoint；另有周期元素Aura及阻挡技能InstantKill链。",
+      "existingConsumers": [
+        "web/src/simulation/enemy-skill-lifecycle.js",
+        "web/src/simulation/enemy-periodic.js",
+        "web/src/simulation/external-combat.js"
+      ],
+      "minimumSharedWork": [
+        "模式0完整休眠体、受击/阻挡双事件入口、标记寿命和路线检查点",
+        "元素Aura/阻挡技能必须独立完整保留，不能把醒来Melee当整组完成"
+      ],
+      "canBatchImmediately": false,
+      "canImplementSharedBatchNow": false,
+      "recommendedPriority": 7,
+      "readyScope": "完整事件FSM提供者，非单一动画缺口"
+    },
+    {
+      "id": "existing-hover-provider",
+      "members": [
+        "enemy_2025_syufo"
+      ],
+      "kind": "已有专用hover，旧普通gap仍保留",
+      "sourceSummary": "当前profile已有modes0/1、initial0、timing/projectile/hover；源fly Buff含ChangeMotionMode、SwitchMode、UpdateEnemyCurrentTile及DeathReason分支。",
+      "existingConsumers": [
+        "web/src/simulation/enemy-hover.js"
+      ],
+      "minimumSharedWork": [
+        "后续状态表单独映射已实现hover范围与剩余组合边界；不重写飞行切地面提供者"
+      ],
+      "canBatchImmediately": false,
+      "canImplementSharedBatchNow": false,
+      "recommendedPriority": 8,
+      "readyScope": "分类/接受范围调整候选，非新增普通执行器"
+    },
+    {
+      "id": "selectable-extra-enabled-sibling",
+      "members": [
+        "enemy_9021_acduml"
+      ],
+      "kind": "同模板基型有额外启用动作",
+      "sourceSummary": "已有同图_2完整提供者；基型CN和JP都有第3启用MultiRanged，同GO但未在group的两_abilityConfigs中；未证明无附着/同对象副作用。",
+      "existingConsumers": [
+        "tools/enemy_selectable_attacks.py",
+        "web/src/simulation/enemy-selective-attacks.js"
+      ],
+      "minimumSharedWork": [
+        "仅在有明确组件激活/调用合同后区分不可达与附着副作用；当前整项拒绝保留",
+        "不得删除第3动作字段或按ID白名单放行"
+      ],
+      "canBatchImmediately": false,
+      "canImplementSharedBatchNow": false,
+      "recommendedPriority": 9,
+      "readyScope": "1个已固定结构障碍，不重复扫protected native"
+    },
+    {
+      "id": "existing-bomb-native-boundary",
+      "members": [
+        "enemy_1040_bombd"
+      ],
+      "kind": "已有投弹参数，完整原生模式仍受阻",
+      "sourceSummary": "timing+bombParameters已生成；两个模式combat non-damage roots，既有源前摇/3x3/移速参数已处理；原生mode/flight触发已固定不可读。",
+      "existingConsumers": [
+        "web/src/simulation/enemy-skills.js",
+        "tools/enemy_bomb_parameters.py"
+      ],
+      "minimumSharedWork": [
+        "保留既定不可读障碍，等不同来源证据再恢复；不重扫同二进制"
+      ],
+      "canBatchImmediately": false,
+      "canImplementSharedBatchNow": false,
+      "recommendedPriority": 10,
+      "readyScope": "既有参数修复不等于完整Boss/阶段"
+    }
+  ],
+  "acdumsDependency": {
+    "id": "enemy_9023_acdums",
+    "partOfTwelveOrdinaryGaps": false,
+    "currentBinding": "timing/delivery only; no source modes/provider",
+    "layers": [
+      {
+        "layer": "源实体/受击生命",
+        "source": "PropLikeEnemy；blockVolume2；数据库level0 maxHp10，acceptSpecificDamageType0。",
+        "existing": "敌方器物生命公共执行框架可复用，但当前acdums profile只含timing/delivery。",
+        "missing": "绑定真实来源身份/关卡HP覆写及与ON_TAKE_DAMAGE的事件顺序；不能按普通HP伤害或仅命名推断已接。"
+      },
+      {
+        "layer": "自然模式与属性",
+        "source": "2个UnitMode：combat Attack / Attack_2；每模式的acdums_t_1被动含mode黑板1/0，分别攻速加法/移速与ATK乘法；talent默认-1。",
+        "existing": "ArkExternalCombat模式选择/属性层与restart接口。",
+        "missing": "真实talent/GameObject所属及初始模式、Buff附着/撤销；当前mode1 fixture没有自然出生/切换证明。"
+      },
+      {
+        "layer": "受击计数切换",
+        "source": "acdums_t_1 START: hit_times=hit_times_to_switch；event10减1、<=0按本Buff mode切换并restartFSM；两档源阈值都是10。",
+        "existing": "Buff事件解析/可序列化状态和模式基础设施。",
+        "missing": "ON_TAKE_DAMAGE完整事件消费者、每模式独立计数/重置、死亡同帧顺序；绝不能按elapsed或随机概率代替。"
+      },
+      {
+        "layer": "受击反击",
+        "source": "acdums_t_3 event10：ResetAbilityAtkScale(AOE,atk_scale)→TriggerAbilityUseSelectorMergeBB(AOE,castDirectly=true,checkAbilityIsReady=false,checkSrcCastable=false)。AOE命名Melee空动画带自定义选择器/范围；源3.atk_scale0.1、ep_damage_ratio0.1，hit Buff acdums_t_3[damage]为元素结算。",
+        "existing": "命名能力、范围直击、元素伤害算子已有可复用消费者。",
+        "missing": "完整命名能力/selector/CircleRange归属、继承BB与源伤害来源、同一受击的计数/反击先后及重入。"
+      },
+      {
+        "layer": "集体合奏",
+        "source": "SkillTrigger被动每1秒查SP>=1，CreateBuffToCertainSideUnits ENEMY→过滤enemy9023→按mode0/其他触发PassionSkill/DepassionSkill并ClearEnemySp；源Skill cooldown5/init2/spCost12，元素比.3/.5。",
+        "existing": "敌方SP/多技能调度、命名能力、全局侧别选择基础接口。",
+        "missing": "跨单位广播Buff、所有接收者当前mode、三个命名能力的完整依赖、SP恢复来源/清空与广播归属；不能用单个技能AOE代替同步全场事件。"
+      },
+      {
+        "layer": "音效与表现依赖",
+        "source": "三个BuffDuringCastingFixed分别acdums_audio[passion/depassion/aoe]，完整模板只有PlayAudio。",
+        "existing": "已定义纯表现辅助节点排除边界。",
+        "missing": "在完整图编译明确记录这些表现节点，未知同级动作继续拒绝。"
+      }
+    ],
+    "sourceComponentIDs": {
+      "-8898357046835969232": "Torappu.Battle.Abilities.UberEffectEmitter",
+      "-8695609833215786192": "Torappu.Battle.Abilities.UberEffectEmitter",
+      "-8312826762468621520": "Torappu.Battle.AdvancedSelector",
+      "-7690875736064556240": "Torappu.Battle.Abilities.UberEffectEmitter",
+      "-7043787385786957008": "Torappu.Battle.Abilities.MeleeAttack",
+      "-6417709427057065168": "Torappu.Battle.AdvancedSelector",
+      "-6069427705037618384": "Torappu.Battle.Abilities.PassiveBuffAbility",
+      "-5824192443278720208": "Torappu.Battle.Abilities.PassiveBuffAbility",
+      "-5602759618123889872": "Torappu.Battle.Talent",
+      "-4533255049282813136": "Torappu.Battle.UnitMode",
+      "-4025364139539332304": "Torappu.Battle.Talent",
+      "-3044759003123383504": "Torappu.Battle.Abilities.MeleeAttack",
+      "-1769117885827546320": "Torappu.Battle.Abilities.BuffDuringCastingFixed",
+      "-280353518945402064": "Torappu.Battle.Abilities.BuffDuringCastingFixed",
+      "414258797788431152": "Torappu.Battle.Abilities.UberEffectEmitter",
+      "1091038353292755760": "Torappu.Battle.Talent",
+      "1600267817454240560": "Torappu.Battle.Abilities.MeleeAttack",
+      "1846654489083806512": "Torappu.Battle.Abilities.PassiveBuffAbility",
+      "2315827645574710064": "Torappu.Battle.Abilities.BuffDuringCastingFixed",
+      "3186253543414989616": "Torappu.Battle.Abilities.MeleeAttack",
+      "3595557273060803376": "Torappu.Battle.CircleRange",
+      "4279543471133393712": "Torappu.Battle.Abilities.MeleeAttack",
+      "6105778778646020912": "Torappu.Battle.CircleRange",
+      "6223747211943117616": "Torappu.Battle.Abilities.UberEffectEmitter",
+      "7046664064947815216": "Torappu.Battle.Abilities.PassiveBuffAbility",
+      "7159519819120542512": "Torappu.Battle.UnitMode",
+      "7402895042217935664": "Torappu.Battle.CircleRange",
+      "8005990904743166768": "Torappu.Battle.PropLikeEnemy",
+      "8452124788232192816": "Torappu.Battle.Talent",
+      "8697766788378886960": "Torappu.Battle.AdvancedSelector"
+    },
+    "immediatelyComplete": false
+  },
+  "recommendation": {
+    "nextSharedBatch": "enemy-aura-periodic-damage",
+    "candidateCount": 2,
+    "rationale": "Smallest remaining two-member source family, reusable Aura membership and periodic damage. Complete event/element/attribute dependencies still required; no ready bindings are claimed.",
+    "immediateWholeGroupBindings": 0,
+    "parallelDependencyBatch": "acdums on-damage counter + named reactive ability, then global concert; prerequisite for natural preferential targeting closure.",
+    "doNotReopen": [
+      "bombd protected-native pages",
+      "acduml extra enabled sibling without new execution evidence",
+      "already accepted ltnhor two skills",
+      "already implemented syufo hover",
+      "all thousands of enemies"
+    ]
+  }
+}

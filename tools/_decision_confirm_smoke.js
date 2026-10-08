@@ -1,0 +1,22 @@
+'use strict';
+const assert=require('assert/strict'),fs=require('fs'),path=require('path');
+const f=require('./_browser_fixture')();f.ctx.assert=assert;
+f.run(fs.readFileSync(path.join(__dirname,'../web/mode/decision.js'),'utf8').replace(/const DECISION_ROUNDS = \{[\s\S]*?\r?\n\};\r?\n/,''));
+f.run(`(async()=>{
+ await initMode();setSetupSeason('act1autochess');curDiff='difficult';curMatch='team';chooseBand('band_amiya');startRound(3);
+ G._decisionOffer={round:G.round,kind:'supply',options:decisionCandidates().supply.slice(0,3)};showDecision();const first=decisionOptions()[0].id,second=decisionOptions()[1].id;
+ const modal=document.getElementById('decision-modal'),money=G.money,equipment=G.equipInv.length;
+ assert.equal(modal.style.display,'flex');assert.match(modal.innerHTML,/确认选择/);assert.match(modal.innerHTML,/previewDecision/);
+ assert.equal(applyDecision('invalid'),false);assert.equal(modal.style.display,'flex','invalid commands must not end the stage');
+ assert.equal(applyDecision(first),false,'legacy one-click command only previews');
+ assert.equal(G.money,money);assert.equal(G.equipInv.length,equipment);assert.equal(modal.style.display,'flex');
+ assert.equal(previewDecision(second),true);assert.equal(G.money,money,'changing preview has no effect');
+ assert.equal(applyDecision(first),false,'confirmation must match the latest selected option');
+ assert.equal(G.equipInv.length,equipment);assert.equal(applyDecision(first),true);
+ assert.equal(G.equipInv.length,equipment+1);assert.equal(modal.style.display,'none');
+ assert.equal(applyDecision(first),false);showDecision();assert.equal(modal.style.display,'none','resolved stage cannot be claimed twice');
+ startRound(9);G._decisionOffer={round:G.round,kind:'supply',options:decisionCandidates().supply.slice(0,3)};showDecision();assert.equal(modal.style.display,'flex');assert.equal(G._decisionSelection,null,'new special round resets preview');
+ assert.equal(previewDecision(first),true);G.phase='battle';assert.equal(applyDecision(first),false,'stale selection cannot apply during battle');
+ assert.equal(G.equipInv.length,equipment+1);G.phase='rest';startRound(10);assert.notEqual(modal.style.display,'flex');assert.equal(previewDecision(first),false);
+ console.log('DECISION CONFIRM OK: preview without side effects, explicit confirmation, invalid/stale commands, one-time rewards and round reset');
+})()`).catch(e=>{console.error(e);process.exitCode=1;});

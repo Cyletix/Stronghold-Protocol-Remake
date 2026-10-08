@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-09-18T16:58:26.850276+09:00",
+  "gameVersion": "room-game-20260918.7",
+  "catalog": "edcbad4282d368b6",
+  "basis": "Frozen source snapshot after root READY and before full package copy; later workspace development must not be used for comparison",
+  "files": {
+    "web/engine.js": {
+      "sha256": "29b71c8941cfe02658bd4df96b22c40ecec378dd6ad53e8555b5fb5beb2a588a",
+      "bytes": 198222
+    },
+    "web/src/simulation/operator-combat.js": {
+      "sha256": "cc6b5f7dd51c6ab3f38fe8c6d372e7b34396bfbbd1c1719ce9aa2dfb7671ae02",
+      "bytes": 53568
+    },
+    "web/src/simulation/client-programs.js": {
+      "sha256": "c43a102a32a866ca27f9898bbff4fbd7cb22a0750a06af7be3b8f7a2b598217b",
+      "bytes": 16179
+    },
+    "web/src/simulation/skill-modes.js": {
+      "sha256": "2bb9867dc6c3fa1e5772b143a4e2fe7b3b9967d2097513eec35952919ec2a3b6",
+      "bytes": 7422
+    },
+    "web/src/simulation/common-skills.js": {
+      "sha256": "2cece4a5f8cb1bfac0e98bb95af57a06cedc35cb2acd89d27c29553320525c12",
+      "bytes": 5709
+    },
+    "web/src/simulation/direct-skill-actions.js": {
+      "sha256": "91b5788f09c87559c721666f136b892d000accadd3342fde981fe7a84fa4a6d2",
+      "bytes": 5408
+    },
+    "web/client_program_data.js": {
+      "sha256": "43d168f81e2e2672782633831fc96bca4942e1ccce12d96cb6922012dd9597b7",
+      "bytes": 78862
+    },
+    "web/next_attack_skill_data.js": {
+      "sha256": "9a6dc28dbd158f917ef050939d45cb98856f03bdf2c974f04ef99cef74df1053",
+      "bytes": 22755
+    },
+    "web/skill_mode_data.js": {
+      "sha256": "7ae7f1f680c38fcfacb65388c17154427bb5d5bb23fb03958b07d508deb03935",
+      "bytes": 309284
+    },
+    "web/direct_skill_data.js": {
+      "sha256": "d5dbda8c59d25ab27d89ffcbba4dd3dc1c5ff61d767c50d75401a2eb93931402",
+      "bytes": 10788
+    },
+    "tools/room_server.js": {
+      "sha256": "2b2289156dc76aa55d6332693d2f244d61848d48aa722b752e2a68f9bbed60f9",
+      "bytes": 32784
+    },
+    "web/room-game.js": {
+      "sha256": "1a56425fc44804ae3bce9d7590ec42f576b381baf3590ac822e1efff9af86a5d",
+      "bytes": 40372
+    },
+    "web/room-presence.js": {
+      "sha256": "406d8132ce979592d73132947e714928e23ecd3f68e265b75e2e7385c972fe3b",
+      "bytes": 7939
+    },
+    "web/mode.js": {
+      "sha256": "19f796b7415dd7cc16a0fa4eb4869baa84d439c5bdf2900062568feab5cbaaaa",
+      "bytes": 325458
+    },
+    "web/mode/save.js": {
+      "sha256": "a9b9f3119536da1818d22582060b4f6d89809203bdeeb47997ec693c01d0ca81",
+      "bytes": 16865
+    },
+    "web/mode/rules.js": {
+      "sha256": "ea6bc23a9ed2d27437f5377670f8a7558546daa45d884d4d58de95f27876661d",
+      "bytes": 52217
+    },
+    "web/mode/debug.js": {
+      "sha256": "2e5471b07ae7df9c46479dc9a780b42642d5d49afdfa9049c20d235ab8f22f48",
+      "bytes": 15813
+    },
+    "web/index.html": {
+      "sha256": "4d074be78e5fd971628a3cae2e3a8658d27e80b007ed3a7247415e92d6d01a3d",
+      "bytes": 23025
+    },
+    "tools/lib/listen-port.js": {
+      "sha256": "caeb7f93cc720cd4f5d5455d0d88a3b8081bb49abb4939c50a0b4f191eb32d18",
+      "bytes": 1212
+    },
+    "tools/lib/room-game-runtime.js": {
+      "sha256": "69229084854c8b817828a44f60b4157c49ab031321c407673755ca39b04ad8b7",
+      "bytes": 40307
+    },
+    "tools/room-launcher.js": {
+      "sha256": "519baf60f31b56061a8e1782340f64555b051a4a51c676de17385430d0dc59fd",
+      "bytes": 14522
+    },
+    "tools/room-online.js": {
+      "sha256": "e92d33a9988e928f1970c0011fbb1a45eec81c2053721b194ac579371d58f4e3",
+      "bytes": 12632
+    },
+    "tools/start-room.js": {
+      "sha256": "931d05690da3c10690a0225e7f728d2ea7bff849b98b7cdbe5d559d8a719697b",
+      "bytes": 4652
+    },
+    ".runtime/node-win-x64/node.exe": {
+      "sha256": "0d0f5e39f9f3d9587bc19f73eab3c2c9c4903fd02d6dbf9c853dd81b3d95fad4",
+      "bytes": 86997320
+    },
+    ".runtime/node-win-x64/LICENSE": {
+      "sha256": "8cc9bb466b19fc7e7cc99d03e9df1132021fda8b01eea2624c58bb372dbef576",
+      "bytes": 148217
+    },
+    ".runtime/easytier-v2.6.4-x64/easytier-core.exe": {
+      "sha256": "da7eb2d24b5416f3d3407636949e964a0750e3f9dc53a828cb6799a57ead445d",
+      "bytes": 24395776
+    },
+    ".runtime/easytier-v2.6.4-x64/easytier-cli.exe": {
+      "sha256": "d8783e851e944b44a9b71b39fd02f227ec0a2a82b3165c55ead5dd32dcde53a1",
+      "bytes": 9973248
+    },
+    ".runtime/easytier-v2.6.4-x64/Packet.dll": {
+      "sha256": "c7c03a87eac7243ccbe331554624b18803010b740e311fc8cfddb573096eacac",
+      "bytes": 220032
+    },
+    ".runtime/easytier-v2.6.4-x64/wintun.dll": {
+      "sha256": "e5da8447dc2c320edc0fc52fa01885c103de8c118481f683643cacc3220dafce",
+      "bytes": 427552
+    },
+    ".runtime/easytier-v2.6.4-x64/WinDivert64.sys": {
+      "sha256": "8da085332782708d8767bcace5327a6ec7283c17cfb85e40b03cd2323a90ddc2",
+      "bytes": 94144
+    },
+    ".runtime/easytier-v2.6.4-x64/verified-files.json": {
+      "sha256": "7065f8e76b23be35f35cb38dca49c36f4db4eab8b2e5f4673a585887772d96e3",
+      "bytes": 758
+    },
+    "web/src/simulation/medic-skills.js": {
+      "sha256": "cb0506766a346b92f1f44450cd8a0376143defb39122671c2718bcbe42f87678",
+      "bytes": 15316
+    },
+    "web/src/simulation/skill-auras.js": {
+      "sha256": "aa0a6068a46dc3f50a4f475a7be9801018ff6b4f693cb16b093beef819729c76",
+      "bytes": 7798
+    },
+    "web/src/simulation/attributes.js": {
+      "sha256": "fd20f995f8888e744fe7f885980438e1d649d4a64f8734446d2a568c051e4fe1",
+      "bytes": 2946
+    },
+    "web/src/simulation/hunter.js": {
+      "sha256": "d03289715c2539083627e3fc0f22b29379f14e706e5765d3a26939391e0039ac",
+      "bytes": 5956
+    },
+    "web/src/simulation/enemy-cold.js": {
+      "sha256": "59655593f1601c920cc7acc55fb5150852df9f563db790b1c0af21136d1600cf",
+      "bytes": 2135
+    },
+    "web/src/simulation/enemy-skills.js": {
+      "sha256": "e9c7d6652e8b59ac9b8fbe8f4909d2ea9c9d045cb29d80302b2cfc896ccf9a15",
+      "bytes": 19441
+    },
+    "web/src/simulation/mystic.js": {
+      "sha256": "f33891626d1d11b9126ada2e6db4a4b67c57f4b8162755116acc64d70c1805dc",
+      "bytes": 5499
+    }
+  }
+}

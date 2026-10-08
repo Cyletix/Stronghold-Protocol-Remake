@@ -1,0 +1,4374 @@
+{
+  "schemaVersion": 1,
+  "contractRegistryHash": "f2c6b3f5893d281bfcb36c186570637e9b604b469b5d1310d6f04cc83cc38a4f",
+  "scope": "local implementation impact; not native-semantic evidence or acceptance mutation",
+  "changes": [
+    {
+      "path": "tools/_client_programs_smoke.js",
+      "beforeHash": null,
+      "afterHash": "f376238a636ac3d90f34bc70bd74c8a0b7840f008abd2491f2bf6fd7e6cff465",
+      "kind": "added",
+      "reasons": [
+        "registered-check"
+      ]
+    },
+    {
+      "path": "tools/build_client_programs.py",
+      "beforeHash": null,
+      "afterHash": "260fbf3464e3896d54d744bb40f5d0126cf9b83e2e92b5baa9462d157ca027d2",
+      "kind": "added",
+      "reasons": [
+        "module scope; byte hashes do not assert semantic change"
+      ],
+      "dataKeys": [],
+      "sourceSlices": []
+    },
+    {
+      "path": "tools/check_game.js",
+      "beforeHash": "726d3aa28d20c2aeab9bb915bdabf84879b87d16d715ed3a756648d453a4a273",
+      "afterHash": "96000f6cfe29db6950b9378609d23b34204b08fcc253755d63ddcc8a5d240621",
+      "kind": "modified",
+      "reasons": [
+        "module scope; byte hashes do not assert semantic change"
+      ],
+      "dataKeys": [],
+      "sourceSlices": []
+    },
+    {
+      "path": "web/client_program_data.js",
+      "beforeHash": null,
+      "afterHash": "5f09f51d693c7b95e461e72562c9465b114939df2da16892b1e1ff0317376db7",
+      "kind": "added",
+      "reasons": [
+        "module scope; byte hashes do not assert semantic change"
+      ],
+      "dataKeys": [],
+      "sourceSlices": [
+        {
+          "pointer": "/profiles/skchr_acfend_1",
+          "beforeHash": null,
+          "afterHash": "2ea1a91ec2b9dcc4e0398c74fcbe4a3fd301c7cebeaa9f8adbcd09d69c687287"
+        },
+        {
+          "pointer": "/profiles/skchr_astesi_1",
+          "beforeHash": null,
+          "afterHash": "4ab046304ef62abc89448612afd670eff58e5396e64290dcfd6aadfe3229797e"
+        },
+        {
+          "pointer": "/profiles/skchr_flower_2",
+          "beforeHash": null,
+          "afterHash": "c3d05b1e69ea0289714485ad335d956f2bfae20777b904864ee07bf4fd357926"
+        },
+        {
+          "pointer": "/profiles/skchr_glassb_1",
+          "beforeHash": null,
+          "afterHash": "05ae64dff1a5c0f4f5719181781d87eca03f927feffa2baf63977c98c602b831"
+        },
+        {
+          "pointer": "/profiles/skchr_gyuki_2",
+          "beforeHash": null,
+          "afterHash": "c15044d2f8107748e74de3c0c82389789377fe144519b647bf7314f1c2263bc9"
+        },
+        {
+          "pointer": "/profiles/skchr_hsguma_1",
+          "beforeHash": null,
+          "afterHash": "0d0bf990b43e0012a5a9f87fc24fa068b45a7229202f16d12d8f2d2f5d390ee0"
+        },
+        {
+          "pointer": "/profiles/skchr_ifrit_1",
+          "beforeHash": null,
+          "afterHash": "085c45233a1e777fddf84ae0284fc77dc430f825ae535f8c3b1cdf945d614843"
+        },
+        {
+          "pointer": "/profiles/skchr_lisa_1",
+          "beforeHash": null,
+          "afterHash": "1bf0cca081bb73713938291b5d5c5f28da84505f84d17a62453e226c9e7dd1d1"
+        },
+        {
+          "pointer": "/profiles/skchr_shining_1",
+          "beforeHash": null,
+          "afterHash": "6629f30dc1a79e5ca390a6ade8534556743472492f7fc3cd5364d8f5ee0d6f04"
+        },
+        {
+          "pointer": "/profiles/skchr_udflow_1",
+          "beforeHash": null,
+          "afterHash": "514251cd07b2b87922ee6532fcb5daa5b971e9b21e6e5311e2fe7a224d322746"
+        },
+        {
+          "pointer": "/profiles/skchr_vigna_1",
+          "beforeHash": null,
+          "afterHash": "52c837e8b02b063eaf44b7456bf1c82d5cc9b2fd570832dd13cbcc9fab3ac88b"
+        },
+        {
+          "pointer": "/profiles/skchr_vigna_2",
+          "beforeHash": null,
+          "afterHash": "b041c73f247ce00a3bcfd54e26a51fdd59f7a9b309610a2148fe2699851f9a28"
+        },
+        {
+          "pointer": "/profiles/skchr_yak_2",
+          "beforeHash": null,
+          "afterHash": "d6d53408c9a1616a7ecf6f1ff4893700b70a1a19fd48a08bff14837ced63efa0"
+        },
+        {
+          "pointer": "/profiles/skcom_atk_up[1]",
+          "beforeHash": null,
+          "afterHash": "64180652bfd16ee42cfc03e3e87da85c3e61b8db229636a33261a0f63d323da2"
+        },
+        {
+          "pointer": "/profiles/skcom_atk_up[2]",
+          "beforeHash": null,
+          "afterHash": "e79daec4f891ae676ce107b5994f7852745a153a056a1c0f8947d254c0bfb35b"
+        },
+        {
+          "pointer": "/profiles/skcom_atk_up[3]",
+          "beforeHash": null,
+          "afterHash": "8e2b3f1dee995e6f012eecd556e33b9b514ee145bc078fa7c1d88df50a5a8530"
+        },
+        {
+          "pointer": "/profiles/skcom_def_up[1]",
+          "beforeHash": null,
+          "afterHash": "2e8a7b23be5c683273f6daed84b1a8979f9eab05b7b3119e5af0e91a5d146b8b"
+        },
+        {
+          "pointer": "/profiles/skcom_def_up[2]",
+          "beforeHash": null,
+          "afterHash": "c132e57bcd489d3174b58bce07969fa3f446753731bcb01c08cdc03e4cf3fefb"
+        },
+        {
+          "pointer": "/profiles/skcom_def_up[3]",
+          "beforeHash": null,
+          "afterHash": "7c24dfd5b28a00467c3771dc03256d51aeb43cf2e06b531a4ae2ad7de51f8fe7"
+        },
+        {
+          "pointer": "/profiles/skcom_heal_rage[3]",
+          "beforeHash": null,
+          "afterHash": "8e942db8252542557d85db77c8c081c6940c32f4cbc9ab3bf57d7ef6954cc4f5"
+        },
+        {
+          "pointer": "/profiles/skcom_heal_up[1]",
+          "beforeHash": null,
+          "afterHash": "3ab84b18aa88de8169bf4ff7170173d9423c3ebeda1821752c854a053b9972b9"
+        },
+        {
+          "pointer": "/profiles/skcom_heal_up[2]",
+          "beforeHash": null,
+          "afterHash": "72444dc84a25d5a0f0ada41f2accb15df129c32a26944bc8a6c4e2b533cb1075"
+        },
+        {
+          "pointer": "/profiles/skcom_heal_up[3]",
+          "beforeHash": null,
+          "afterHash": "4d9ea49ba7f0ffffbda4dd90c9b4420378d17844c1c696abea7684c11479e197"
+        },
+        {
+          "pointer": "/profiles/skcom_magic_rage[1]",
+          "beforeHash": null,
+          "afterHash": "34dbed72cd6bec68084c6fd3539f461073d30ed7d93fa3cef729fd432048a7fd"
+        },
+        {
+          "pointer": "/profiles/skcom_magic_rage[2]",
+          "beforeHash": null,
+          "afterHash": "884444d3b924e32366399f9b1be2d8798f40bf88556da1f72258cff8b97a88a1"
+        },
+        {
+          "pointer": "/profiles/skcom_magic_rage[3]",
+          "beforeHash": null,
+          "afterHash": "50b5e8afa7f6e9e10a9d78b94452da36c99f44795c01626ea29436c0d63d8a9d"
+        },
+        {
+          "pointer": "/profiles/skcom_quickattack[1]",
+          "beforeHash": null,
+          "afterHash": "f9a35c65d7669a727966299ff494724b7a77b52d2e1a3efdebfb2a902459df2d"
+        },
+        {
+          "pointer": "/profiles/skcom_quickattack[3]",
+          "beforeHash": null,
+          "afterHash": "b9528eb004981db42e74484834281c62848235e3862ac0279627156680b3375a"
+        },
+        {
+          "pointer": "/programs/skchr_acfend_1",
+          "beforeHash": null,
+          "afterHash": "4aac0198144e870f6b20e7744b492fbf924268dfcb6152e66cc3cc66cf23203d"
+        },
+        {
+          "pointer": "/programs/skchr_astesi_1",
+          "beforeHash": null,
+          "afterHash": "9b3284a756d32460baea801e3ab35523aa5d3cc8384d55f8582ff0dc004e91b6"
+        },
+        {
+          "pointer": "/programs/skchr_flower_2",
+          "beforeHash": null,
+          "afterHash": "605db7c19ca659ce5f88bf4b68ac17572f2379c63bdfcf067848c9e41fe43243"
+        },
+        {
+          "pointer": "/programs/skchr_glassb_1",
+          "beforeHash": null,
+          "afterHash": "2592fc88742de949a5143bf9a12ddbe3f6fdc3e7e5303d6a992b1e46c7c1f82f"
+        },
+        {
+          "pointer": "/programs/skchr_gyuki_2",
+          "beforeHash": null,
+          "afterHash": "276b88432710a8f826d407b7a914b666832bee9e98f710a64924ea44783e2244"
+        },
+        {
+          "pointer": "/programs/skchr_hsguma_1",
+          "beforeHash": null,
+          "afterHash": "cddb9e1338819e089430d5626a647f0661236d3862d12afff603a33f310b7a51"
+        },
+        {
+          "pointer": "/programs/skchr_ifrit_1",
+          "beforeHash": null,
+          "afterHash": "6e346c601a6cd114bdd1762b43ebbad958076a61ff1f20d4be2000f99071f5e8"
+        },
+        {
+          "pointer": "/programs/skchr_lisa_1",
+          "beforeHash": null,
+          "afterHash": "fb7d48628863ef0c741fbe4c555726278a818459065ed703210d24089a20f03f"
+        },
+        {
+          "pointer": "/programs/skchr_shining_1",
+          "beforeHash": null,
+          "afterHash": "62264b835cdc8eb778a01ff69880e34a85f3eaf0277583173bcb56df09139a22"
+        },
+        {
+          "pointer": "/programs/skchr_udflow_1",
+          "beforeHash": null,
+          "afterHash": "e4143bb1faa2d7511617e7f235de2ffbb3df6c6a55ed49b55835986a550a7e1c"
+        },
+        {
+          "pointer": "/programs/skchr_vigna_1",
+          "beforeHash": null,
+          "afterHash": "436408eebc0823775aaa1fe5679029ba02649a861b49207e499205fea57b2ccc"
+        },
+        {
+          "pointer": "/programs/skchr_vigna_2",
+          "beforeHash": null,
+          "afterHash": "1123d9fac4410c3f5a999913612be5f672668334c34450622570ce2451e49967"
+        },
+        {
+          "pointer": "/programs/skchr_yak_2",
+          "beforeHash": null,
+          "afterHash": "2a5e37c92ec27630c8b8fe0aa3d4597cb84e698faa47af75e049d5d2296a5dba"
+        },
+        {
+          "pointer": "/programs/skcom_atk_up",
+          "beforeHash": null,
+          "afterHash": "ae907a832e3eeca6ab813a07020e353ddadfe59a02d480d19a9feea89660eeb3"
+        },
+        {
+          "pointer": "/programs/skcom_attack_speed_up",
+          "beforeHash": null,
+          "afterHash": "3a345b86eb827fe8bf31c1b3a22b33b0756838b92e99db5c566e482861e02a1e"
+        },
+        {
+          "pointer": "/programs/skcom_def_up",
+          "beforeHash": null,
+          "afterHash": "1de7d197765361b1e1c5d459e92a7a1b355abaa34e8bca79730fabf74ea5048e"
+        },
+        {
+          "pointer": "/programs/skcom_heal_rage",
+          "beforeHash": null,
+          "afterHash": "48878af5dbe385f02a145a19182419bef3074dd21c735cbc0c1d09cf67b28335"
+        },
+        {
+          "pointer": "/programs/skcom_heal_up",
+          "beforeHash": null,
+          "afterHash": "9ecdf95499eeb5f0b05ed4988f8cd855e5e5b37df538356125201b8658bc7b58"
+        },
+        {
+          "pointer": "/programs/skcom_quickattack",
+          "beforeHash": null,
+          "afterHash": "353987b48bf9d0ef421ea2511df2126069b04e2cd6b3730f5617d7f624476c31"
+        }
+      ]
+    },
+    {
+      "path": "web/engine.js",
+      "beforeHash": "03fa3bad57fec24bb7f53e354d4b04840d100c7f38b9fb9f89ddf077e1277098",
+      "afterHash": "1b6f3326577f098e889ff6268c778437f373e35ba22087a285eb6beb82f280b7",
+      "kind": "modified",
+      "reasons": [
+        "only declared helper added outside existing bodies: operatorResistance",
+        "update: only the exact owner/time tick call was inserted after skill expiry",
+        "complete changed function bodies mapped"
+      ],
+      "functions": [
+        "update",
+        "operatorAttackPower",
+        "enemyDamageToOperator",
+        "endOperatorSkill",
+        "updateOperatorBaseStats",
+        "castSkill",
+        "operatorResistance"
+      ]
+    },
+    {
+      "path": "web/index.html",
+      "beforeHash": "39a384ecdbe4c13eeca849a8f7fcaf6619c7fcfa93160c3b880da96660477225",
+      "afterHash": "10f709659352c92e5ebef12adc6b71ed0693d7b56ec220631dff8aeab523b853",
+      "kind": "modified",
+      "reasons": [
+        "script-list change"
+      ]
+    },
+    {
+      "path": "web/mode.js",
+      "beforeHash": null,
+      "afterHash": "46c9cf2a0f0da4ea9663ea93e01ef486af5b1dff07e321fdb875a22699641092",
+      "kind": "unknown-before",
+      "reasons": [
+        "derived bundle; source changes remain independently checked"
+      ]
+    },
+    {
+      "path": "web/mode/debug.js",
+      "beforeHash": "ed953d73d2c4d6e3d21c709e1dccd949437a6ac98b86ea98d43ecdfd20c49d64",
+      "afterHash": "1c6d88083cb36609fb1b3cc0e0c98b18179ba257db3bebb6c4bf928d23c694a0",
+      "kind": "modified",
+      "reasons": [
+        "complete changed function bodies mapped"
+      ],
+      "functions": [
+        "debugTacticalEntry"
+      ]
+    },
+    {
+      "path": "web/mode/rules.js",
+      "beforeHash": "f3a6d08b512da6db2e9fab069b3babeadfb0c7c6a1c318884da1284c93ee1725",
+      "afterHash": "e62f07f0ea0aa689af7f8e6f76ec86e89fbe2a9f3d395de25b2a7e3b68230675",
+      "kind": "modified",
+      "reasons": [
+        "complete changed function bodies mapped"
+      ],
+      "functions": [
+        "finalizeOperator"
+      ]
+    },
+    {
+      "path": "web/mode/save.js",
+      "beforeHash": "a57278625f649420ece07d1f2bbd0fde426acd951a684b5d866d39a0e6b9ed25",
+      "afterHash": "0cffe4288fc6e5264336068186a994679b1870cfc1686d94f6ed7f6895d817f8",
+      "kind": "modified",
+      "reasons": [
+        "module scope; byte hashes do not assert semantic change"
+      ],
+      "dataKeys": [],
+      "sourceSlices": []
+    },
+    {
+      "path": "web/mode/ui.js",
+      "beforeHash": "7bae03e390ca2abe4a522a2d8c20d0010a33d362a14d1fd4a740ce164ed21cad",
+      "afterHash": "ba1fd2d23045c2b3b3feacaafaea8c4865a622fa1e34595b82decd5256674270",
+      "kind": "modified",
+      "reasons": [
+        "complete changed function bodies mapped"
+      ],
+      "functions": [
+        "buildOperatorDetailModel"
+      ]
+    },
+    {
+      "path": "web/src/simulation/attributes.js",
+      "beforeHash": "7140591114039dab5cad4a073a11996457de66bb8c0a4879c73530a064a0eeb0",
+      "afterHash": "266fdcaab55fc4b318173210a55b2c68628db9363797371cc496bae027f755bf",
+      "kind": "modified",
+      "reasons": [
+        "module scope; byte hashes do not assert semantic change"
+      ],
+      "dataKeys": [],
+      "sourceSlices": []
+    },
+    {
+      "path": "web/src/simulation/client-programs.js",
+      "beforeHash": null,
+      "afterHash": "d3e5da494343f98c48aec2dd05161dc45cdc7cf31d85f98397f577be5b99c38c",
+      "kind": "added",
+      "reasons": [
+        "module scope; byte hashes do not assert semantic change"
+      ],
+      "dataKeys": [],
+      "sourceSlices": []
+    },
+    {
+      "path": "web/src/simulation/operator-combat.js",
+      "beforeHash": "07bac39faf0fa3bf49d4ca9e3497dc1dc494321a4ba71b5695e4fce212d81f3e",
+      "afterHash": "626b74a22b89bfd9e27deed39637e47902c7fedbdf4d7596412779a47b3d26ea",
+      "kind": "modified",
+      "reasons": [
+        "complete changed function bodies mapped"
+      ],
+      "functions": [
+        "attackInterval"
+      ]
+    },
+    {
+      "path": "tools/room_server.js",
+      "beforeHash": "4bea4c8072defca45df6a488346bb777ce14e5bef5e4f2ac0d013bb169f4b7ca",
+      "afterHash": "a25dd5fcc6ea3cca38203729fc1442c3c42144bbe844a657c023e32f7b53abb0",
+      "kind": "modified",
+      "reasons": [
+        "only the registered version declaration changed"
+      ]
+    },
+    {
+      "path": "web/room-game.js",
+      "beforeHash": "1569a271ac98dc6abc5759a236a2492a00bef734ecb08b104d634284ecaa3302",
+      "afterHash": "a42007992f7b239014c6222ea029550c6b27742f73a5ea0837bef39ed8a0bdda",
+      "kind": "modified",
+      "reasons": [
+        "only the registered version declaration changed"
+      ]
+    },
+    {
+      "path": "web/room-presence.js",
+      "beforeHash": "78cd05dba86ccdcaf08a82464fffee1abcd9a90a509e064940ec6105b624300c",
+      "afterHash": "b759db3f7ec8cbe86ebf261bad42ff0f6d63f659d2232b66bbb1ef1a6eaa1f99",
+      "kind": "modified",
+      "reasons": [
+        "only the registered version declaration changed"
+      ]
+    },
+    {
+      "path": "tools/_rest_save_smoke.js",
+      "beforeHash": null,
+      "afterHash": "2036613c1b29e6f5360392db9eea495b725c0231e5adb6b7f4338155a23ffdbe",
+      "kind": "unknown-before",
+      "reasons": [
+        "registered-check"
+      ]
+    },
+    {
+      "path": "tools/_common_expansion_smoke.js",
+      "beforeHash": null,
+      "afterHash": "90612f5500e5b5a177ce7a814d936e9b16fa74e471c11cd3fc6fb6c51872cbcf",
+      "kind": "unknown-before",
+      "reasons": [
+        "registered-check"
+      ]
+    },
+    {
+      "path": "tools/_medic_skills_smoke.js",
+      "beforeHash": null,
+      "afterHash": "d1ad4d2c0b053ef99a3156e55c125e5996aeae5273251c3ea5e8180e9d24986a",
+      "kind": "unknown-before",
+      "reasons": [
+        "registered-check"
+      ]
+    },
+    {
+      "path": "tools/_checklist_revalidation_smoke.js",
+      "beforeHash": null,
+      "afterHash": "b754ee39aa51e0bc8a372d13080fd610ba1aac05fe4930be38ec95e1e11f80f8",
+      "kind": "unknown-before",
+      "reasons": [
+        "registered-check"
+      ]
+    }
+  ],
+  "contracts": [
+    {
+      "id": "client-programs",
+      "reasons": [
+        "tools/build_client_programs.py: declared module dependency",
+        "web/client_program_data.js: declared module dependency",
+        "web/engine.js#update: exact tick insertion",
+        "web/index.html: script client_program_data.js",
+        "web/index.html: script src/simulation/client-programs.js",
+        "web/src/simulation/client-programs.js: declared module dependency",
+        "depends on skill-lifecycle",
+        "depends on attributes",
+        "depends on attack-interval",
+        "depends on skill-bindings"
+      ],
+      "consumers": [
+        "compiled client program configuration and lifecycle",
+        "compatibility with the previous stat graph runtime"
+      ]
+    },
+    {
+      "id": "impact-tooling",
+      "reasons": [
+        "tools/check_game.js: declared module dependency"
+      ],
+      "consumers": [
+        "check selection and unknown-change fallback"
+      ]
+    },
+    {
+      "id": "program-tick-hook",
+      "reasons": [
+        "web/engine.js#update: after endOperatorSkill(expire)"
+      ],
+      "consumers": [
+        "program Buff expiry immediately after normal skill expiry",
+        "simulation time, HP sync and restored owner state"
+      ]
+    },
+    {
+      "id": "attributes",
+      "reasons": [
+        "web/engine.js#operatorAttackPower",
+        "web/engine.js#updateOperatorBaseStats",
+        "web/mode/rules.js#finalizeOperator",
+        "web/src/simulation/attributes.js: declared module dependency"
+      ],
+      "consumers": [
+        "operator attack/defense/interval queries",
+        "Boss defense selection and elemental defense links"
+      ]
+    },
+    {
+      "id": "damage",
+      "reasons": [
+        "web/engine.js#enemyDamageToOperator"
+      ],
+      "consumers": [
+        "actual HP modification, source/type and modifier-event suppression"
+      ]
+    },
+    {
+      "id": "resistance-query",
+      "reasons": [
+        "web/engine.js#enemyDamageToOperator",
+        "web/engine.js#operatorResistance"
+      ],
+      "consumers": [
+        "enemyDamageToOperator arts mitigation",
+        "phalanx innate resistance, elemental flat changes and program layers"
+      ]
+    },
+    {
+      "id": "skill-lifecycle",
+      "reasons": [
+        "web/engine.js#endOperatorSkill",
+        "web/engine.js#castSkill"
+      ],
+      "consumers": [
+        "skill dispatch, SP lock and skill cleanup",
+        "equipment/medical skill-start listeners"
+      ]
+    },
+    {
+      "id": "skill-bindings",
+      "reasons": [
+        "web/engine.js#updateOperatorBaseStats",
+        "web/mode/debug.js#debugTacticalEntry",
+        "web/mode/rules.js#finalizeOperator"
+      ],
+      "consumers": [
+        "finalizeOperator and debugTacticalEntry",
+        "source skill IDs, training levels and runtime configuration"
+      ]
+    },
+    {
+      "id": "bootstrap",
+      "reasons": [
+        "web/index.html: script loading",
+        "web/mode.js: derived mode bundle, source changes also supplied",
+        "tools/room_server.js: version compatibility",
+        "web/room-game.js: version compatibility",
+        "web/room-presence.js: version compatibility"
+      ],
+      "consumers": [
+        "browser and room VM script loading"
+      ]
+    },
+    {
+      "id": "runtime-state",
+      "reasons": [
+        "web/mode/save.js: declared module dependency",
+        "tools/room_server.js: version declaration",
+        "web/room-game.js: version declaration",
+        "web/room-presence.js: version declaration"
+      ],
+      "consumers": [
+        "catalog/version validation",
+        "rest save, owner identity and authenticated battle restore"
+      ]
+    },
+    {
+      "id": "operator-detail",
+      "reasons": [
+        "web/mode/ui.js#buildOperatorDetailModel"
+      ],
+      "consumers": [
+        "buildOperatorDetailModel live ATK/DEF/RES versus rest source values"
+      ]
+    },
+    {
+      "id": "attack-interval",
+      "reasons": [
+        "web/src/simulation/operator-combat.js#attackInterval"
+      ],
+      "consumers": [
+        "operator-combat attack scheduling",
+        "stored attacks and skill interval modifiers"
+      ]
+    },
+    {
+      "id": "client-stat",
+      "reasons": [
+        "depends on skill-lifecycle",
+        "depends on attributes",
+        "depends on attack-interval",
+        "depends on skill-bindings"
+      ],
+      "consumers": [
+        "ArkClientStatBuffSkills.configure/interval/defense"
+      ]
+    },
+    {
+      "id": "equipment-stacks",
+      "reasons": [
+        "depends on skill-lifecycle",
+        "depends on attributes"
+      ],
+      "consumers": [
+        "equipment source identity, skill activation and deployment state"
+      ]
+    },
+    {
+      "id": "equipment-protection",
+      "reasons": [
+        "depends on damage"
+      ],
+      "consumers": [
+        "damage source and current blocking relation"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "elemental source skills",
+      "args": [
+        "tools/_elemental_sources_smoke.js"
+      ],
+      "reasons": [
+        "attributes: web/engine.js#operatorAttackPower; web/engine.js#updateOperatorBaseStats; web/mode/rules.js#finalizeOperator; web/src/simulation/attributes.js: declared module dependency",
+        "attributes: web/engine.js#operatorAttackPower; web/engine.js#updateOperatorBaseStats; web/mode/rules.js#finalizeOperator; web/src/simulation/attributes.js: declared module dependency; previous acceptance test consumers",
+        "damage: web/engine.js#enemyDamageToOperator",
+        "resistance-query: web/engine.js#enemyDamageToOperator; web/engine.js#operatorResistance",
+        "skill-lifecycle: web/engine.js#endOperatorSkill; web/engine.js#castSkill; previous acceptance test consumers"
+      ]
+    },
+    {
+      "name": "operator skill levels source",
+      "args": [
+        "tools/build_operator_skill_levels.js",
+        "--check"
+      ],
+      "reasons": [
+        "skill-bindings: web/engine.js#updateOperatorBaseStats; web/mode/debug.js#debugTacticalEntry; web/mode/rules.js#finalizeOperator"
+      ]
+    },
+    {
+      "name": "operator skill levels consumers",
+      "args": [
+        "tools/_operator_skill_levels_smoke.js"
+      ],
+      "reasons": [
+        "skill-bindings: web/engine.js#updateOperatorBaseStats; web/mode/debug.js#debugTacticalEntry; web/mode/rules.js#finalizeOperator",
+        "operator-detail: web/mode/ui.js#buildOperatorDetailModel"
+      ]
+    },
+    {
+      "name": "marksman source skills",
+      "args": [
+        "tools/_marksman_skills_smoke.js"
+      ],
+      "reasons": [
+        "attributes: web/engine.js#operatorAttackPower; web/engine.js#updateOperatorBaseStats; web/mode/rules.js#finalizeOperator; web/src/simulation/attributes.js: declared module dependency; previous acceptance test consumers",
+        "skill-lifecycle: web/engine.js#endOperatorSkill; web/engine.js#castSkill; previous acceptance test consumers"
+      ]
+    },
+    {
+      "name": "vanguard source skills",
+      "args": [
+        "tools/_vanguard_skills_smoke.js"
+      ],
+      "reasons": [
+        "attributes: web/engine.js#operatorAttackPower; web/engine.js#updateOperatorBaseStats; web/mode/rules.js#finalizeOperator; web/src/simulation/attributes.js: declared module dependency; previous acceptance test consumers",
+        "skill-lifecycle: web/engine.js#endOperatorSkill; web/engine.js#castSkill; previous acceptance test consumers"
+      ]
+    },
+    {
+      "name": "medic source skills",
+      "args": [
+        "tools/_medic_skills_smoke.js"
+      ],
+      "reasons": [
+        "tools/_medic_skills_smoke.js: changed registered check",
+        "attributes: web/engine.js#operatorAttackPower; web/engine.js#updateOperatorBaseStats; web/mode/rules.js#finalizeOperator; web/src/simulation/attributes.js: declared module dependency; previous acceptance test consumers",
+        "skill-lifecycle: web/engine.js#endOperatorSkill; web/engine.js#castSkill; previous acceptance test consumers"
+      ]
+    },
+    {
+      "name": "periodic medic source skills",
+      "args": [
+        "tools/_periodic_medic_smoke.js"
+      ],
+      "reasons": [
+        "attributes: web/engine.js#operatorAttackPower; web/engine.js#updateOperatorBaseStats; web/mode/rules.js#finalizeOperator; web/src/simulation/attributes.js: declared module dependency; previous acceptance test consumers",
+        "skill-lifecycle: web/engine.js#endOperatorSkill; web/engine.js#castSkill; previous acceptance test consumers"
+      ]
+    },
+    {
+      "name": "protective medic source skills",
+      "args": [
+        "tools/_protective_medic_smoke.js"
+      ],
+      "reasons": [
+        "attributes: web/engine.js#operatorAttackPower; web/engine.js#updateOperatorBaseStats; web/mode/rules.js#finalizeOperator; web/src/simulation/attributes.js: declared module dependency; previous acceptance test consumers",
+        "damage: web/engine.js#enemyDamageToOperator",
+        "skill-lifecycle: web/engine.js#endOperatorSkill; web/engine.js#castSkill; previous acceptance test consumers"
+      ]
+    },
+    {
+      "name": "medic talent SP events",
+      "args": [
+        "tools/_medic_talents_smoke.js"
+      ],
+      "reasons": [
+        "skill-lifecycle: web/engine.js#endOperatorSkill; web/engine.js#castSkill"
+      ]
+    },
+    {
+      "name": "medical drone inventory and deployment",
+      "args": [
+        "tools/_medic_drone_smoke.js"
+      ],
+      "reasons": [
+        "attributes: web/engine.js#operatorAttackPower; web/engine.js#updateOperatorBaseStats; web/mode/rules.js#finalizeOperator; web/src/simulation/attributes.js: declared module dependency; previous acceptance test consumers",
+        "skill-lifecycle: web/engine.js#endOperatorSkill; web/engine.js#castSkill; previous acceptance test consumers"
+      ]
+    },
+    {
+      "name": "medical SP module effects",
+      "args": [
+        "tools/_medic_module_sp_smoke.js"
+      ],
+      "reasons": [
+        "Explicit prior accepted consumer: op/char_128_plosis/module/source-body"
+      ]
+    },
+    {
+      "name": "medical profession attack-speed aura",
+      "args": [
+        "tools/_medic_aura_smoke.js"
+      ],
+      "reasons": [
+        "Explicit prior accepted consumer: op/char_108_silent/talent/1/source-aura"
+      ]
+    },
+    {
+      "name": "Beeswax source skills and obelisk",
+      "args": [
+        "tools/_beeswax_smoke.js"
+      ],
+      "reasons": [
+        "attributes: web/engine.js#operatorAttackPower; web/engine.js#updateOperatorBaseStats; web/mode/rules.js#finalizeOperator; web/src/simulation/attributes.js: declared module dependency; previous acceptance test consumers",
+        "resistance-query: web/engine.js#enemyDamageToOperator; web/engine.js#operatorResistance",
+        "skill-lifecycle: web/engine.js#endOperatorSkill; web/engine.js#castSkill; previous acceptance test consumers"
+      ]
+    },
+    {
+      "name": "Dusk skills and freeling lifecycle",
+      "args": [
+        "tools/_dusk_smoke.js"
+      ],
+      "reasons": [
+        "attributes: web/engine.js#operatorAttackPower; web/engine.js#updateOperatorBaseStats; web/mode/rules.js#finalizeOperator; web/src/simulation/attributes.js: declared module dependency; previous acceptance test consumers",
+        "skill-lifecycle: web/engine.js#endOperatorSkill; web/engine.js#castSkill; previous acceptance test consumers"
+      ]
+    },
+    {
+      "name": "Click released funnel",
+      "args": [
+        "tools/_click_smoke.js"
+      ],
+      "reasons": [
+        "attributes: web/engine.js#operatorAttackPower; web/engine.js#updateOperatorBaseStats; web/mode/rules.js#finalizeOperator; web/src/simulation/attributes.js: declared module dependency; previous acceptance test consumers",
+        "skill-lifecycle: web/engine.js#endOperatorSkill; web/engine.js#castSkill; previous acceptance test consumers"
+      ]
+    },
+    {
+      "name": "Goldenglow and Rockrock client funnels",
+      "args": [
+        "tools/_funnel_smoke.js"
+      ],
+      "reasons": [
+        "attributes: web/engine.js#operatorAttackPower; web/engine.js#updateOperatorBaseStats; web/mode/rules.js#finalizeOperator; web/src/simulation/attributes.js: declared module dependency; previous acceptance test consumers",
+        "skill-lifecycle: web/engine.js#endOperatorSkill; web/engine.js#castSkill; previous acceptance test consumers",
+        "attack-interval: web/src/simulation/operator-combat.js#attackInterval"
+      ]
+    },
+    {
+      "name": "operator combat",
+      "args": [
+        "tools/_operator_combat_smoke.js"
+      ],
+      "reasons": [
+        "attributes: web/engine.js#operatorAttackPower; web/engine.js#updateOperatorBaseStats; web/mode/rules.js#finalizeOperator; web/src/simulation/attributes.js: declared module dependency",
+        "damage: web/engine.js#enemyDamageToOperator",
+        "skill-lifecycle: web/engine.js#endOperatorSkill; web/engine.js#castSkill",
+        "attack-interval: web/src/simulation/operator-combat.js#attackInterval"
+      ]
+    },
+    {
+      "name": "operator library",
+      "args": [
+        "tools/_roster_catalog_smoke.js"
+      ],
+      "reasons": [
+        "skill-bindings: web/engine.js#updateOperatorBaseStats; web/mode/debug.js#debugTacticalEntry; web/mode/rules.js#finalizeOperator",
+        "operator-detail: web/mode/ui.js#buildOperatorDetailModel"
+      ]
+    },
+    {
+      "name": "season roster slots",
+      "args": [
+        "tools/_season_roster_smoke.js"
+      ],
+      "reasons": [
+        "skill-bindings: web/engine.js#updateOperatorBaseStats; web/mode/debug.js#debugTacticalEntry; web/mode/rules.js#finalizeOperator"
+      ]
+    },
+    {
+      "name": "loadout and items",
+      "args": [
+        "tools/_loadout_items_smoke.js"
+      ],
+      "reasons": [
+        "equipment-stacks: depends on skill-lifecycle; depends on attributes",
+        "equipment-protection: depends on damage"
+      ]
+    },
+    {
+      "name": "strategy item rewards",
+      "args": [
+        "tools/_items_smoke.js"
+      ],
+      "reasons": [
+        "equipment-stacks: depends on skill-lifecycle; depends on attributes"
+      ]
+    },
+    {
+      "name": "mode build",
+      "args": [
+        "tools/build_mode.js",
+        "--check"
+      ],
+      "reasons": [
+        "bootstrap: web/index.html: script loading; web/mode.js: derived mode bundle, source changes also supplied; tools/room_server.js: version compatibility; web/room-game.js: version compatibility; web/room-presence.js: version compatibility"
+      ]
+    },
+    {
+      "name": "basic attacks",
+      "args": [
+        "tools/_basic_attacks_smoke.js"
+      ],
+      "reasons": [
+        "attributes: web/engine.js#operatorAttackPower; web/engine.js#updateOperatorBaseStats; web/mode/rules.js#finalizeOperator; web/src/simulation/attributes.js: declared module dependency",
+        "attack-interval: web/src/simulation/operator-combat.js#attackInterval"
+      ]
+    },
+    {
+      "name": "common deployment-cost skills",
+      "args": [
+        "tools/_common_cost_skills_smoke.js"
+      ],
+      "reasons": [
+        "attributes: web/engine.js#operatorAttackPower; web/engine.js#updateOperatorBaseStats; web/mode/rules.js#finalizeOperator; web/src/simulation/attributes.js: declared module dependency; previous acceptance test consumers",
+        "skill-lifecycle: web/engine.js#endOperatorSkill; web/engine.js#castSkill",
+        "skill-lifecycle: web/engine.js#endOperatorSkill; web/engine.js#castSkill; previous acceptance test consumers"
+      ]
+    },
+    {
+      "name": "common skill account-level expansion",
+      "args": [
+        "tools/_common_expansion_smoke.js"
+      ],
+      "reasons": [
+        "tools/_common_expansion_smoke.js: changed registered check",
+        "client-programs: tools/build_client_programs.py: declared module dependency; web/client_program_data.js: declared module dependency; web/engine.js#update: exact tick insertion; web/index.html: script client_program_data.js; web/index.html: script src/simulation/client-programs.js; web/src/simulation/client-programs.js: declared module dependency; depends on skill-lifecycle; depends on attributes; depends on attack-interval; depends on skill-bindings",
+        "attributes: web/engine.js#operatorAttackPower; web/engine.js#updateOperatorBaseStats; web/mode/rules.js#finalizeOperator; web/src/simulation/attributes.js: declared module dependency; previous acceptance test consumers",
+        "skill-lifecycle: web/engine.js#endOperatorSkill; web/engine.js#castSkill",
+        "skill-lifecycle: web/engine.js#endOperatorSkill; web/engine.js#castSkill; previous acceptance test consumers",
+        "skill-bindings: web/engine.js#updateOperatorBaseStats; web/mode/debug.js#debugTacticalEntry; web/mode/rules.js#finalizeOperator"
+      ]
+    },
+    {
+      "name": "client stat graph source",
+      "args": [
+        "tools/_client_stat_buff_smoke.js",
+        "--source-only"
+      ],
+      "reasons": [
+        "client-programs: tools/build_client_programs.py: declared module dependency; web/client_program_data.js: declared module dependency; web/engine.js#update: exact tick insertion; web/index.html: script client_program_data.js; web/index.html: script src/simulation/client-programs.js; web/src/simulation/client-programs.js: declared module dependency; depends on skill-lifecycle; depends on attributes; depends on attack-interval; depends on skill-bindings",
+        "attributes: web/engine.js#operatorAttackPower; web/engine.js#updateOperatorBaseStats; web/mode/rules.js#finalizeOperator; web/src/simulation/attributes.js: declared module dependency",
+        "attributes: web/engine.js#operatorAttackPower; web/engine.js#updateOperatorBaseStats; web/mode/rules.js#finalizeOperator; web/src/simulation/attributes.js: declared module dependency; previous acceptance test consumers",
+        "skill-lifecycle: web/engine.js#endOperatorSkill; web/engine.js#castSkill; previous acceptance test consumers",
+        "client-stat: depends on skill-lifecycle; depends on attributes; depends on attack-interval; depends on skill-bindings"
+      ]
+    },
+    {
+      "name": "client stat graph execution",
+      "args": [
+        "tools/_client_stat_buff_smoke.js"
+      ],
+      "reasons": [
+        "client-programs: tools/build_client_programs.py: declared module dependency; web/client_program_data.js: declared module dependency; web/engine.js#update: exact tick insertion; web/index.html: script client_program_data.js; web/index.html: script src/simulation/client-programs.js; web/src/simulation/client-programs.js: declared module dependency; depends on skill-lifecycle; depends on attributes; depends on attack-interval; depends on skill-bindings",
+        "attributes: web/engine.js#operatorAttackPower; web/engine.js#updateOperatorBaseStats; web/mode/rules.js#finalizeOperator; web/src/simulation/attributes.js: declared module dependency",
+        "attributes: web/engine.js#operatorAttackPower; web/engine.js#updateOperatorBaseStats; web/mode/rules.js#finalizeOperator; web/src/simulation/attributes.js: declared module dependency; previous acceptance test consumers",
+        "skill-lifecycle: web/engine.js#endOperatorSkill; web/engine.js#castSkill; previous acceptance test consumers",
+        "client-stat: depends on skill-lifecycle; depends on attributes; depends on attack-interval; depends on skill-bindings"
+      ]
+    },
+    {
+      "name": "client execution program source",
+      "args": [
+        "tools/_client_programs_smoke.js",
+        "--source-only"
+      ],
+      "reasons": [
+        "tools/_client_programs_smoke.js: changed registered check",
+        "client-programs: tools/build_client_programs.py: declared module dependency; web/client_program_data.js: declared module dependency; web/engine.js#update: exact tick insertion; web/index.html: script client_program_data.js; web/index.html: script src/simulation/client-programs.js; web/src/simulation/client-programs.js: declared module dependency; depends on skill-lifecycle; depends on attributes; depends on attack-interval; depends on skill-bindings",
+        "program-tick-hook: web/engine.js#update: after endOperatorSkill(expire)",
+        "resistance-query: web/engine.js#enemyDamageToOperator; web/engine.js#operatorResistance",
+        "operator-detail: web/mode/ui.js#buildOperatorDetailModel"
+      ]
+    },
+    {
+      "name": "client execution program runtime",
+      "args": [
+        "tools/_client_programs_smoke.js"
+      ],
+      "reasons": [
+        "tools/_client_programs_smoke.js: changed registered check",
+        "client-programs: tools/build_client_programs.py: declared module dependency; web/client_program_data.js: declared module dependency; web/engine.js#update: exact tick insertion; web/index.html: script client_program_data.js; web/index.html: script src/simulation/client-programs.js; web/src/simulation/client-programs.js: declared module dependency; depends on skill-lifecycle; depends on attributes; depends on attack-interval; depends on skill-bindings",
+        "program-tick-hook: web/engine.js#update: after endOperatorSkill(expire)",
+        "resistance-query: web/engine.js#enemyDamageToOperator; web/engine.js#operatorResistance",
+        "operator-detail: web/mode/ui.js#buildOperatorDetailModel"
+      ]
+    },
+    {
+      "name": "change impact selection",
+      "args": [
+        "tools/_check_impact_smoke.js"
+      ],
+      "reasons": [
+        "impact-tooling: tools/check_game.js: declared module dependency"
+      ]
+    },
+    {
+      "name": "checklist revalidation receipts",
+      "args": [
+        "tools/_checklist_revalidation_smoke.js"
+      ],
+      "reasons": [
+        "tools/_checklist_revalidation_smoke.js: changed registered check"
+      ]
+    },
+    {
+      "name": "check runner behavior",
+      "args": [
+        "tools/_check_game_smoke.js"
+      ],
+      "reasons": [
+        "impact-tooling: tools/check_game.js: declared module dependency"
+      ]
+    },
+    {
+      "name": "final defense consumers",
+      "args": [
+        "tools/_final_defense_smoke.js"
+      ],
+      "reasons": [
+        "attributes: web/engine.js#operatorAttackPower; web/engine.js#updateOperatorBaseStats; web/mode/rules.js#finalizeOperator; web/src/simulation/attributes.js: declared module dependency",
+        "attributes: web/engine.js#operatorAttackPower; web/engine.js#updateOperatorBaseStats; web/mode/rules.js#finalizeOperator; web/src/simulation/attributes.js: declared module dependency; previous acceptance test consumers",
+        "resistance-query: web/engine.js#enemyDamageToOperator; web/engine.js#operatorResistance",
+        "skill-lifecycle: web/engine.js#endOperatorSkill; web/engine.js#castSkill; previous acceptance test consumers",
+        "operator-detail: web/mode/ui.js#buildOperatorDetailModel",
+        "client-stat: depends on skill-lifecycle; depends on attributes; depends on attack-interval; depends on skill-bindings"
+      ]
+    },
+    {
+      "name": "hunter magazines and Snow Hunter",
+      "args": [
+        "tools/_hunter_smoke.js"
+      ],
+      "reasons": [
+        "attributes: web/engine.js#operatorAttackPower; web/engine.js#updateOperatorBaseStats; web/mode/rules.js#finalizeOperator; web/src/simulation/attributes.js: declared module dependency; previous acceptance test consumers",
+        "skill-lifecycle: web/engine.js#endOperatorSkill; web/engine.js#castSkill; previous acceptance test consumers",
+        "attack-interval: web/src/simulation/operator-combat.js#attackInterval"
+      ]
+    },
+    {
+      "name": "mystic storage and Indigo",
+      "args": [
+        "tools/_mystic_smoke.js"
+      ],
+      "reasons": [
+        "attributes: web/engine.js#operatorAttackPower; web/engine.js#updateOperatorBaseStats; web/mode/rules.js#finalizeOperator; web/src/simulation/attributes.js: declared module dependency; previous acceptance test consumers",
+        "skill-lifecycle: web/engine.js#endOperatorSkill; web/engine.js#castSkill; previous acceptance test consumers",
+        "attack-interval: web/src/simulation/operator-combat.js#attackInterval"
+      ]
+    },
+    {
+      "name": "dollkeeper forms and source skills",
+      "args": [
+        "tools/_dollkeeper_smoke.js"
+      ],
+      "reasons": [
+        "attributes: web/engine.js#operatorAttackPower; web/engine.js#updateOperatorBaseStats; web/mode/rules.js#finalizeOperator; web/src/simulation/attributes.js: declared module dependency; previous acceptance test consumers",
+        "skill-lifecycle: web/engine.js#endOperatorSkill; web/engine.js#castSkill; previous acceptance test consumers"
+      ]
+    },
+    {
+      "name": "tactical reinforcements and flowing shapes",
+      "args": [
+        "tools/_tactician_smoke.js"
+      ],
+      "reasons": [
+        "attributes: web/engine.js#operatorAttackPower; web/engine.js#updateOperatorBaseStats; web/mode/rules.js#finalizeOperator; web/src/simulation/attributes.js: declared module dependency; previous acceptance test consumers",
+        "skill-lifecycle: web/engine.js#endOperatorSkill; web/engine.js#castSkill; previous acceptance test consumers"
+      ]
+    },
+    {
+      "name": "manual tactical deployment and copy",
+      "args": [
+        "tools/_tactical_controls_smoke.js"
+      ],
+      "reasons": [
+        "Explicit prior accepted consumer: op/char_427_vigil/basic/tactical-point"
+      ]
+    },
+    {
+      "name": "Blacknight and source sleep rules",
+      "args": [
+        "tools/_blacknight_smoke.js"
+      ],
+      "reasons": [
+        "attributes: web/engine.js#operatorAttackPower; web/engine.js#updateOperatorBaseStats; web/mode/rules.js#finalizeOperator; web/src/simulation/attributes.js: declared module dependency; previous acceptance test consumers",
+        "damage: web/engine.js#enemyDamageToOperator",
+        "skill-lifecycle: web/engine.js#endOperatorSkill; web/engine.js#castSkill; previous acceptance test consumers"
+      ]
+    },
+    {
+      "name": "tactical exclusive mechanisms",
+      "args": [
+        "tools/_tactical_specials_smoke.js"
+      ],
+      "reasons": [
+        "attributes: web/engine.js#operatorAttackPower; web/engine.js#updateOperatorBaseStats; web/mode/rules.js#finalizeOperator; web/src/simulation/attributes.js: declared module dependency; previous acceptance test consumers",
+        "skill-lifecycle: web/engine.js#endOperatorSkill; web/engine.js#castSkill; previous acceptance test consumers"
+      ]
+    },
+    {
+      "name": "common buff families and attribute layers",
+      "args": [
+        "tools/_common_buff_skills_smoke.js"
+      ],
+      "reasons": [
+        "client-programs: tools/build_client_programs.py: declared module dependency; web/client_program_data.js: declared module dependency; web/engine.js#update: exact tick insertion; web/index.html: script client_program_data.js; web/index.html: script src/simulation/client-programs.js; web/src/simulation/client-programs.js: declared module dependency; depends on skill-lifecycle; depends on attributes; depends on attack-interval; depends on skill-bindings",
+        "attributes: web/engine.js#operatorAttackPower; web/engine.js#updateOperatorBaseStats; web/mode/rules.js#finalizeOperator; web/src/simulation/attributes.js: declared module dependency",
+        "attributes: web/engine.js#operatorAttackPower; web/engine.js#updateOperatorBaseStats; web/mode/rules.js#finalizeOperator; web/src/simulation/attributes.js: declared module dependency; previous acceptance test consumers",
+        "skill-lifecycle: web/engine.js#endOperatorSkill; web/engine.js#castSkill",
+        "skill-lifecycle: web/engine.js#endOperatorSkill; web/engine.js#castSkill; previous acceptance test consumers",
+        "attack-interval: web/src/simulation/operator-combat.js#attackInterval"
+      ]
+    },
+    {
+      "name": "enemy cold mechanics",
+      "args": [
+        "tools/_enemy_cold_smoke.js"
+      ],
+      "reasons": [
+        "Explicit prior accepted consumer: enemy/enemy_1067_snslime/talents"
+      ]
+    },
+    {
+      "name": "local solo",
+      "args": [
+        "tools/_solo_local_smoke.js"
+      ],
+      "reasons": [
+        "bootstrap: web/index.html: script loading; web/mode.js: derived mode bundle, source changes also supplied; tools/room_server.js: version compatibility; web/room-game.js: version compatibility; web/room-presence.js: version compatibility"
+      ]
+    },
+    {
+      "name": "boss_runtime_integration",
+      "args": [
+        "tools/_boss_runtime_integration_smoke.js"
+      ],
+      "reasons": [
+        "attributes: web/engine.js#operatorAttackPower; web/engine.js#updateOperatorBaseStats; web/mode/rules.js#finalizeOperator; web/src/simulation/attributes.js: declared module dependency"
+      ]
+    },
+    {
+      "name": "room_game_runtime",
+      "args": [
+        "tools/_room_game_runtime_smoke.js"
+      ],
+      "reasons": [
+        "bootstrap: web/index.html: script loading; web/mode.js: derived mode bundle, source changes also supplied; tools/room_server.js: version compatibility; web/room-game.js: version compatibility; web/room-presence.js: version compatibility",
+        "runtime-state: web/mode/save.js: declared module dependency; tools/room_server.js: version declaration; web/room-game.js: version declaration; web/room-presence.js: version declaration"
+      ]
+    },
+    {
+      "name": "room_game_server",
+      "args": [
+        "tools/_room_game_server_smoke.js"
+      ],
+      "reasons": [
+        "runtime-state: web/mode/save.js: declared module dependency; tools/room_server.js: version declaration; web/room-game.js: version declaration; web/room-presence.js: version declaration"
+      ]
+    },
+    {
+      "name": "room_game_client",
+      "args": [
+        "tools/_room_game_client_smoke.js"
+      ],
+      "reasons": [
+        "bootstrap: web/index.html: script loading; web/mode.js: derived mode bundle, source changes also supplied; tools/room_server.js: version compatibility; web/room-game.js: version compatibility; web/room-presence.js: version compatibility",
+        "runtime-state: web/mode/save.js: declared module dependency; tools/room_server.js: version declaration; web/room-game.js: version declaration; web/room-presence.js: version declaration"
+      ]
+    },
+    {
+      "name": "room_battle_runtime",
+      "args": [
+        "tools/_room_battle_runtime_smoke.js"
+      ],
+      "reasons": [
+        "program-tick-hook: web/engine.js#update: after endOperatorSkill(expire)",
+        "runtime-state: web/mode/save.js: declared module dependency; tools/room_server.js: version declaration; web/room-game.js: version declaration; web/room-presence.js: version declaration"
+      ]
+    },
+    {
+      "name": "room_battle_session",
+      "args": [
+        "tools/_room_battle_session_smoke.js"
+      ],
+      "reasons": [
+        "runtime-state: web/mode/save.js: declared module dependency; tools/room_server.js: version declaration; web/room-game.js: version declaration; web/room-presence.js: version declaration"
+      ]
+    },
+    {
+      "name": "enemy death spawn lifecycle",
+      "args": [
+        "tools/_enemy_death_spawn_smoke.js"
+      ],
+      "reasons": [
+        "Explicit prior accepted consumer: enemy/enemy_1195_sfyin/death-spawn/source-body"
+      ]
+    },
+    {
+      "name": "enemy prop hit counts",
+      "args": [
+        "tools/_enemy_prop_smoke.js"
+      ],
+      "reasons": [
+        "damage: web/engine.js#enemyDamageToOperator"
+      ]
+    },
+    {
+      "name": "enemy permanent block-free",
+      "args": [
+        "tools/_enemy_passives_smoke.js"
+      ],
+      "reasons": [
+        "Explicit prior accepted consumer: enemy/enemy_1521_dslily/passive/block-free"
+      ]
+    },
+    {
+      "name": "enemy child damage transfer",
+      "args": [
+        "tools/_enemy_transfer_smoke.js"
+      ],
+      "reasons": [
+        "damage: web/engine.js#enemyDamageToOperator"
+      ]
+    },
+    {
+      "name": "achunt marked death cleanup",
+      "args": [
+        "tools/_achunt_cleanup_smoke.js"
+      ],
+      "reasons": [
+        "Explicit prior accepted consumer: enemy/enemy_9017_achunt/passive/marked-death-cleanup"
+      ]
+    },
+    {
+      "name": "shop item source",
+      "args": [
+        "tools/build_equip_data.js",
+        "--check"
+      ],
+      "reasons": [
+        "equipment-stacks: depends on skill-lifecycle; depends on attributes"
+      ]
+    },
+    {
+      "name": "shop item eligibility",
+      "args": [
+        "tools/_shop_items_smoke.js"
+      ],
+      "reasons": [
+        "equipment-stacks: depends on skill-lifecycle; depends on attributes"
+      ]
+    },
+    {
+      "name": "equipment protection source",
+      "args": [
+        "tools/build_equip_protection.js",
+        "--check"
+      ],
+      "reasons": [
+        "equipment-protection: depends on damage"
+      ]
+    },
+    {
+      "name": "equipment protection impacts",
+      "args": [
+        "tools/_equip_protection_smoke.js"
+      ],
+      "reasons": [
+        "damage: web/engine.js#enemyDamageToOperator",
+        "equipment-protection: depends on damage"
+      ]
+    },
+    {
+      "name": "equipment skill stacks source",
+      "args": [
+        "tools/build_equip_skill_stacks.js",
+        "--check"
+      ],
+      "reasons": [
+        "equipment-stacks: depends on skill-lifecycle; depends on attributes"
+      ]
+    },
+    {
+      "name": "equipment skill stacks runtime",
+      "args": [
+        "tools/_equip_skill_stacks_smoke.js"
+      ],
+      "reasons": [
+        "skill-lifecycle: web/engine.js#endOperatorSkill; web/engine.js#castSkill",
+        "equipment-stacks: depends on skill-lifecycle; depends on attributes"
+      ]
+    },
+    {
+      "name": "training source runtime",
+      "args": [
+        "tools/_training_runtime_smoke.js"
+      ],
+      "reasons": [
+        "Explicit prior accepted consumer: batch/B03/training/act1/initial-hp"
+      ]
+    },
+    {
+      "name": "enemy template replacement",
+      "args": [
+        "tools/_enemy_replacement_smoke.js"
+      ],
+      "reasons": [
+        "Explicit prior accepted consumer: enemy/enemy_1067_snslime/talents"
+      ]
+    },
+    {
+      "name": "enemy plan source phases",
+      "args": [
+        "tools/_enemy_plan_source_smoke.js"
+      ],
+      "reasons": [
+        "Explicit prior accepted consumer: enemy/enemy_1067_snslime/talents"
+      ]
+    },
+    {
+      "name": "enemy runtime integration",
+      "args": [
+        "tools/_enemy_runtime_smoke.js"
+      ],
+      "reasons": [
+        "Explicit prior accepted consumer: enemy/enemy_1067_snslime/talents"
+      ]
+    },
+    {
+      "name": "skill_timing",
+      "args": [
+        "tools/_skill_timing_smoke.js"
+      ],
+      "reasons": [
+        "program-tick-hook: web/engine.js#update: after endOperatorSkill(expire)",
+        "skill-lifecycle: web/engine.js#endOperatorSkill; web/engine.js#castSkill",
+        "attack-interval: web/src/simulation/operator-combat.js#attackInterval"
+      ]
+    },
+    {
+      "name": "simulation_clock",
+      "args": [
+        "tools/_simulation_clock_smoke.js"
+      ],
+      "reasons": [
+        "program-tick-hook: web/engine.js#update: after endOperatorSkill(expire)"
+      ]
+    },
+    {
+      "name": "rest_save",
+      "args": [
+        "tools/_rest_save_smoke.js"
+      ],
+      "reasons": [
+        "tools/_rest_save_smoke.js: changed registered check",
+        "runtime-state: web/mode/save.js: declared module dependency; tools/room_server.js: version declaration; web/room-game.js: version declaration; web/room-presence.js: version declaration",
+        "equipment-stacks: depends on skill-lifecycle; depends on attributes",
+        "equipment-protection: depends on damage"
+      ]
+    }
+  ],
+  "unregisteredTests": [],
+  "acceptanceNavigation": [
+    {
+      "id": "batch/B03/skill-levels",
+      "tests": [
+        "tools/_operator_skill_levels_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_102_texas/fixed/act2autochess/chess_char_1_08_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_102_texas/fixed/act1autochess/chess_char_1_08_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_102_texas/skill/skcom_charge_cost[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js",
+        "tools/_common_cost_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_102_texas/skill/skchr_texas_2/source-body",
+      "tests": [
+        "tools/_vanguard_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_107_liskam/fixed/act2autochess/chess_char_1_20_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_109_fmout/fixed/act1autochess/chess_char_1_11_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_109_fmout/skill/skcom_magic_rage[2]",
+      "tests": [
+        "tools/_common_expansion_smoke.js",
+        "tools/_common_buff_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_127_estell/fixed/act2autochess/chess_char_1_12_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_127_estell/skill/skcom_atk_up[2]",
+      "tests": [
+        "tools/_common_expansion_smoke.js",
+        "tools/_common_buff_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_133_mm/fixed/act1autochess/chess_char_1_06_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_133_mm/skill/skchr_mm_1",
+      "tests": [
+        "tools/_marksman_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_133_mm/skill/skchr_mm_2",
+      "tests": [
+        "tools/_marksman_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_140_whitew/fixed/act2autochess/chess_char_2_16_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_140_whitew/fixed/act1autochess/chess_char_1_07_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_143_ghost/fixed/act2autochess/chess_char_2_07_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_143_ghost/fixed/act1autochess/chess_char_1_04_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_143_ghost/skill/skcom_atk_up[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js",
+        "tools/_common_buff_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_145_prove/fixed/act2autochess/chess_char_1_07_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_150_snakek/fixed/act2autochess/chess_char_3_16_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_150_snakek/fixed/act1autochess/chess_char_1_10_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_150_snakek/skill/skcom_def_up[2]",
+      "tests": [
+        "tools/_common_expansion_smoke.js",
+        "tools/_common_buff_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_183_skgoat/skill/skcom_atk_up[2]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_196_sunbr/fixed/act2autochess/chess_char_1_10_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_198_blackd/fixed/act1autochess/chess_char_1_02_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_198_blackd/skill/skcom_charge_cost[2]",
+      "tests": [
+        "tools/_common_expansion_smoke.js",
+        "tools/_common_cost_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_198_blackd/skill/skchr_blackd_2",
+      "tests": [
+        "tools/_vanguard_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_199_yak/fixed/act2autochess/chess_char_1_02_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_199_yak/fixed/act1autochess/chess_char_2_03_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_215_mantic/fixed/act1autochess/chess_char_1_12_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_230_savage/fixed/act1autochess/chess_char_1_13_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_253_greyy/fixed/act2autochess/chess_char_1_14_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_253_greyy/skill/skcom_magic_rage[2]",
+      "tests": [
+        "tools/_common_expansion_smoke.js",
+        "tools/_common_buff_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_258_podego/fixed/act2autochess/chess_char_1_13_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_290_vigna/fixed/act1autochess/chess_char_1_05_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_306_leizi/fixed/act2autochess/chess_char_1_03_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_306_leizi/fixed/act1autochess/chess_char_1_03_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_306_leizi/skill/skcom_atk_up[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js",
+        "tools/_common_buff_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_337_utage/fixed/act2autochess/chess_char_1_18_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_337_utage/fixed/act1autochess/chess_char_2_09_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4004_pudd/fixed/act1autochess/chess_char_1_14_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4004_pudd/skill/skcom_magic_rage[2]",
+      "tests": [
+        "tools/_common_expansion_smoke.js",
+        "tools/_common_buff_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4100_caper/fixed/act2autochess/chess_char_1_09_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4100_caper/fixed/act1autochess/chess_char_1_09_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4137_udflow/fixed/act2autochess/chess_char_1_04_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4137_udflow/fixed/act1autochess/chess_char_2_07_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4151_tinman/fixed/act2autochess/chess_char_2_19_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4151_tinman/fixed/act1autochess/chess_char_2_13_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_469_indigo/fixed/act2autochess/chess_char_1_17_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_469_indigo/basic/mystic-fixed",
+      "tests": [
+        "tools/_mystic_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_469_indigo/skill/skchr_indigo_1/fixed",
+      "tests": [
+        "tools/_mystic_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_469_indigo/skill/skchr_indigo_2/fixed",
+      "tests": [
+        "tools/_mystic_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_469_indigo/talent/1/fixed",
+      "tests": [
+        "tools/_mystic_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_469_indigo/module/fixed-level1",
+      "tests": [
+        "tools/_mystic_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_494_vendla/fixed/act2autochess/chess_char_1_06_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_494_vendla/skill/skcom_magic_rage[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js",
+        "tools/_common_buff_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_496_wildmn/fixed/act2autochess/chess_char_1_19_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_498_inside/fixed/act2autochess/chess_char_1_01_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_498_inside/fixed/act1autochess/chess_char_1_01_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_108_silent/fixed/act2autochess/chess_char_2_02_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_108_silent/fixed/act1autochess/chess_char_2_02_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_108_silent/skill/skcom_heal_up[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js",
+        "tools/_common_buff_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_108_silent/skill/skchr_silent_2/source-body",
+      "tests": [
+        "tools/_medic_drone_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_108_silent/token/token_10000_silent_healrb/source-body",
+      "tests": [
+        "tools/_medic_drone_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_181_flower/fixed/act2autochess/chess_char_2_14_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_181_flower/skill/skcom_heal_up[2]",
+      "tests": [
+        "tools/_common_expansion_smoke.js",
+        "tools/_common_buff_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_181_flower/skill/skchr_flower_2",
+      "tests": [
+        "tools/_medic_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_237_gravel/fixed/act2autochess/chess_char_2_12_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_237_gravel/fixed/act1autochess/chess_char_2_12_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_271_spikes/fixed/act1autochess/chess_char_2_15_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_279_excu/fixed/act2autochess/chess_char_2_01_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_279_excu/fixed/act1autochess/chess_char_2_01_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_304_zebra/fixed/act1autochess/chess_char_2_08_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_348_ceylon/fixed/act1autochess/chess_char_2_14_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_381_bubble/fixed/act2autochess/chess_char_2_08_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_381_bubble/skill/skcom_def_up[2]",
+      "tests": [
+        "tools/_common_expansion_smoke.js",
+        "tools/_common_buff_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4016_kazema/fixed/act2autochess/chess_char_2_11_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4016_kazema/fixed/act1autochess/chess_char_2_11_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4016_kazema/basic/dollkeeper-fixed",
+      "tests": [
+        "tools/_dollkeeper_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4016_kazema/talent/1/fixed",
+      "tests": [
+        "tools/_dollkeeper_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4016_kazema/module/fixed-level1",
+      "tests": [
+        "tools/_dollkeeper_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4016_kazema/skill/skchr_kazema_1/fixed",
+      "tests": [
+        "tools/_dollkeeper_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4016_kazema/skill/skchr_kazema_2/fixed",
+      "tests": [
+        "tools/_dollkeeper_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4016_kazema/token/token_10022_kazema_shadow/fixed-placement",
+      "tests": [
+        "tools/_dollkeeper_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4040_rockr/fixed/act2autochess/chess_char_2_10_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js",
+        "tools/_funnel_smoke.js",
+        "tools/_click_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4040_rockr/fixed/act1autochess/chess_char_2_10_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js",
+        "tools/_funnel_smoke.js",
+        "tools/_click_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4040_rockr/skill/skcom_magic_rage[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js",
+        "tools/_common_buff_skills_smoke.js",
+        "tools/_funnel_smoke.js",
+        "tools/_click_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4040_rockr/skill/skchr_rockr_2/client-overload",
+      "tests": [
+        "tools/_funnel_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4040_rockr/talent/1/source-stacks",
+      "tests": [
+        "tools/_funnel_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4114_harold/fixed/act2autochess/chess_char_2_05_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4114_harold/fixed/act1autochess/chess_char_2_05_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4114_harold/skill/skcom_heal_up[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js",
+        "tools/_common_buff_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4119_wanqin/fixed/act1autochess/chess_char_2_04_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4119_wanqin/skill/skcom_assist_cost[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js",
+        "tools/_common_cost_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4122_grabds/fixed/act2autochess/chess_char_2_04_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4139_papyrs/fixed/act2autochess/chess_char_2_06_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4139_papyrs/fixed/act1autochess/chess_char_2_06_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4139_papyrs/module/source-body",
+      "tests": [
+        "tools/_medic_talents_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4139_papyrs/skill/skchr_papyrs_1/source-body",
+      "tests": [
+        "tools/_protective_medic_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4139_papyrs/skill/skchr_papyrs_2/source-body",
+      "tests": [
+        "tools/_protective_medic_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4191_tippi/fixed/act2autochess/chess_char_2_13_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4207_branch/fixed/act2autochess/chess_char_2_17_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_431_ashlok/fixed/act2autochess/chess_char_2_18_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_431_ashlok/skill/skcom_atk_up[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js",
+        "tools/_common_buff_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_491_humus/fixed/act2autochess/chess_char_2_09_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_103_angel/fixed/act2autochess/chess_char_3_01_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_103_angel/fixed/act1autochess/chess_char_3_01_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1033_swire2/fixed/act2autochess/chess_char_3_04_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1033_swire2/fixed/act1autochess/chess_char_3_04_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_126_shotst/fixed/act2autochess/chess_char_3_17_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_174_slbell/fixed/act2autochess/chess_char_3_14_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_174_slbell/fixed/act1autochess/chess_char_4_03_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_218_cuttle/fixed/act1autochess/chess_char_3_10_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_218_cuttle/skill/skcom_atk_up[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js",
+        "tools/_common_buff_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_243_waaifu/fixed/act1autochess/chess_char_3_03_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_263_skadi/fixed/act2autochess/chess_char_3_05_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_263_skadi/fixed/act1autochess/chess_char_3_05_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_263_skadi/skill/skcom_quickattack[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js",
+        "tools/_common_buff_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_294_ayer/fixed/act2autochess/chess_char_3_02_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_308_swire/fixed/act2autochess/chess_char_3_03_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_332_archet/fixed/act2autochess/chess_char_3_21_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_355_ethan/fixed/act1autochess/chess_char_3_12_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_388_mint/fixed/act2autochess/chess_char_3_08_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4013_kjera/fixed/act2autochess/chess_char_3_20_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4013_kjera/fixed/act1autochess/chess_char_3_14_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4013_kjera/skill/skcom_atk_up[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js",
+        "tools/_common_buff_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4026_vulpis/fixed/act2autochess/chess_char_3_18_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4026_vulpis/fixed/act1autochess/chess_char_4_10_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4036_forcer/fixed/act1autochess/chess_char_3_07_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4045_heidi/fixed/act1autochess/chess_char_3_08_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4054_malist/fixed/act2autochess/chess_char_3_13_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4054_malist/fixed/act1autochess/chess_char_3_13_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4054_malist/skill/skcom_quickattack[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js",
+        "tools/_common_buff_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4079_haini/fixed/act2autochess/chess_char_3_09_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4148_philae/fixed/act2autochess/chess_char_3_06_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4148_philae/fixed/act1autochess/chess_char_3_06_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4211_snhunt/fixed/act2autochess/chess_char_3_11_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4211_snhunt/fixed/act1autochess/chess_char_3_11_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4211_snhunt/basic/hunter-fixed",
+      "tests": [
+        "tools/_hunter_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4211_snhunt/skill/skchr_snhunt_1/fixed",
+      "tests": [
+        "tools/_hunter_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4211_snhunt/skill/skchr_snhunt_2/fixed-actions",
+      "tests": [
+        "tools/_hunter_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4211_snhunt/talent/1/fixed",
+      "tests": [
+        "tools/_hunter_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4211_snhunt/module/fixed-level1",
+      "tests": [
+        "tools/_hunter_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_422_aurora/fixed/act1autochess/chess_char_3_02_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_423_blemsh/fixed/act2autochess/chess_char_3_12_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_427_vigil/fixed/act2autochess/chess_char_3_19_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_427_vigil/basic/tactical-point",
+      "tests": [
+        "tools/_tactician_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_427_vigil/token/wolf-source",
+      "tests": [
+        "tools/_tactician_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_427_vigil/talent/1/fixed-stacks",
+      "tests": [
+        "tools/_tactician_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_427_vigil/talent/2/fixed-blocker",
+      "tests": [
+        "tools/_tactician_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_427_vigil/skill/skchr_vigil_1/fixed",
+      "tests": [
+        "tools/_tactician_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_427_vigil/skill/skchr_vigil_2/fixed",
+      "tests": [
+        "tools/_tactician_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_427_vigil/skill/skchr_vigil_3/fixed",
+      "tests": [
+        "tools/_tactician_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_427_vigil/module/fixed",
+      "tests": [
+        "tools/_tactician_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_440_pinecn/fixed/act2autochess/chess_char_3_10_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_449_glider/fixed/act1autochess/chess_char_3_09_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_017_huang/fixed/act1autochess/chess_char_4_17_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1021_kroos2/fixed/act2autochess/chess_char_4_06_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1021_kroos2/fixed/act1autochess/chess_char_4_06_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1026_gvial2/fixed/act2autochess/chess_char_4_23_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1028_texas2/fixed/act2autochess/chess_char_4_16_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1028_texas2/fixed/act1autochess/chess_char_4_16_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_128_plosis/fixed/act2autochess/chess_char_4_21_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_128_plosis/fixed/act1autochess/chess_char_5_16_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_128_plosis/talent/1/source-body",
+      "tests": [
+        "tools/_medic_talents_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_128_plosis/skill/skcom_heal_up[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js",
+        "tools/_common_buff_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_128_plosis/skill/skchr_plosis_2",
+      "tests": [
+        "tools/_medic_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_135_halo/fixed/act1autochess/chess_char_4_12_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_136_hsguma/fixed/act2autochess/chess_char_4_17_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_171_bldsk/fixed/act2autochess/chess_char_4_26_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_171_bldsk/fixed/act1autochess/chess_char_4_11_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_171_bldsk/talent/1/source-body",
+      "tests": [
+        "tools/_medic_talents_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_171_bldsk/skill/skchr_bldsk_1",
+      "tests": [
+        "tools/_medic_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_171_bldsk/skill/skchr_bldsk_2/source-body",
+      "tests": [
+        "tools/_periodic_medic_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_172_svrash/fixed/act2autochess/chess_char_4_22_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_172_svrash/fixed/act1autochess/chess_char_5_14_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_206_gnosis/fixed/act2autochess/chess_char_4_13_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_206_gnosis/fixed/act1autochess/chess_char_4_13_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_213_mostma/fixed/act2autochess/chess_char_4_02_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_213_mostma/skill/skcom_atk_up[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js",
+        "tools/_common_buff_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_222_bpipe/fixed/act2autochess/chess_char_4_07_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_222_bpipe/fixed/act1autochess/chess_char_4_07_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_222_bpipe/skill/skcom_quickattack[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js",
+        "tools/_common_buff_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_264_f12yin/fixed/act2autochess/chess_char_5_17_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_264_f12yin/fixed/act1autochess/chess_char_4_08_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_300_phenxi/fixed/act1autochess/chess_char_4_02_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_311_mudrok/fixed/act2autochess/chess_char_4_18_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_311_mudrok/fixed/act1autochess/chess_char_6_16_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_311_mudrok/skill/skcom_def_up[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js",
+        "tools/_common_buff_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_344_beewax/skill/skchr_beewax_1/source-body",
+      "tests": [
+        "tools/_beeswax_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_344_beewax/talent/1/idle-recovery",
+      "tests": [
+        "tools/_beeswax_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_344_beewax/token/token_10011_beewax_oblisk/lifecycle",
+      "tests": [
+        "tools/_beeswax_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_345_folnic/fixed/act1autochess/chess_char_4_18_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_345_folnic/skill/skchr_folnic_1",
+      "tests": [
+        "tools/_medic_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_373_lionhd/fixed/act2autochess/chess_char_4_14_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_373_lionhd/fixed/act1autochess/chess_char_4_14_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_373_lionhd/skill/skcom_atk_up[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js",
+        "tools/_common_buff_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4087_ines/fixed/act2autochess/chess_char_4_04_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4087_ines/fixed/act1autochess/chess_char_4_04_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4134_cetsyr/fixed/act2autochess/chess_char_4_25_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4134_cetsyr/fixed/act1autochess/chess_char_5_09_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_416_zumama/fixed/act1autochess/chess_char_4_05_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4162_cathy/fixed/act2autochess/chess_char_4_11_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4163_rosesa/fixed/act1autochess/chess_char_5_17_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4163_rosesa/skill/skchr_rosesa_1",
+      "tests": [
+        "tools/_medic_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4194_rmixer/fixed/act2autochess/chess_char_4_01_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4194_rmixer/fixed/act1autochess/chess_char_4_01_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4196_reckpr/fixed/act2autochess/chess_char_5_23_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4196_reckpr/talent/1/source-body",
+      "tests": [
+        "tools/_medic_talents_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4196_reckpr/module/source-body",
+      "tests": [
+        "tools/_medic_talents_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4196_reckpr/skill/skchr_reckpr_1",
+      "tests": [
+        "tools/_medic_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4196_reckpr/skill/skchr_reckpr_2/source-body",
+      "tests": [
+        "tools/_protective_medic_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_420_flamtl/fixed/act2autochess/chess_char_4_19_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_426_billro/fixed/act2autochess/chess_char_4_24_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_430_fartth/fixed/act2autochess/chess_char_4_20_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_430_fartth/skill/skcom_quickattack[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js",
+        "tools/_common_buff_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_437_mizuki/fixed/act2autochess/chess_char_4_09_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_437_mizuki/fixed/act1autochess/chess_char_4_09_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_446_aroma/fixed/act2autochess/chess_char_4_10_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_473_mberry/fixed/act1autochess/chess_char_4_15_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_474_glady/fixed/act2autochess/chess_char_4_12_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_474_glady/fixed/act1autochess/chess_char_5_06_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1023_ghost2/fixed/act2autochess/chess_char_5_13_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1023_ghost2/fixed/act1autochess/chess_char_5_13_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1023_ghost2/basic/dollkeeper-fixed",
+      "tests": [
+        "tools/_dollkeeper_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1023_ghost2/talent/1/fixed",
+      "tests": [
+        "tools/_dollkeeper_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1023_ghost2/module/fixed-level1",
+      "tests": [
+        "tools/_dollkeeper_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1023_ghost2/skill/skchr_ghost2_1/fixed",
+      "tests": [
+        "tools/_dollkeeper_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1023_ghost2/skill/skchr_ghost2_2/fixed",
+      "tests": [
+        "tools/_dollkeeper_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1023_ghost2/skill/skchr_ghost2_3/fixed",
+      "tests": [
+        "tools/_dollkeeper_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1032_excu2/fixed/act2autochess/chess_char_5_01_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1032_excu2/fixed/act1autochess/chess_char_5_01_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1034_jesca2/fixed/act1autochess/chess_char_5_08_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1039_thorn2/fixed/act2autochess/chess_char_5_15_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1039_thorn2/fixed/act1autochess/chess_char_5_15_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1040_blaze2/fixed/act2autochess/chess_char_5_03_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1040_blaze2/fixed/act1autochess/chess_char_5_03_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1045_svash2/fixed/act2autochess/chess_char_5_14_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_2012_typhon/fixed/act1autochess/chess_char_5_18_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_2012_typhon/skill/skcom_quickattack[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js",
+        "tools/_common_buff_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_2015_dusk/fixed/act2autochess/chess_char_5_12_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_2015_dusk/skill/skchr_dusk_1/source-body",
+      "tests": [
+        "tools/_dusk_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_2015_dusk/skill/skchr_dusk_2/source-body",
+      "tests": [
+        "tools/_dusk_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_2015_dusk/skill/skchr_dusk_3/source-body",
+      "tests": [
+        "tools/_dusk_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_2015_dusk/talent/1/source-stacks",
+      "tests": [
+        "tools/_dusk_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_2015_dusk/talent/2/source-first-attack",
+      "tests": [
+        "tools/_dusk_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_2015_dusk/token/token_10015_dusk_drgn/source-body",
+      "tests": [
+        "tools/_dusk_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_2015_dusk/module/x-source-body",
+      "tests": [
+        "tools/_dusk_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_202_demkni/fixed/act2autochess/chess_char_5_11_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_202_demkni/fixed/act1autochess/chess_char_5_11_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_291_aglina/fixed/act2autochess/chess_char_5_20_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_341_sntlla/fixed/act2autochess/chess_char_5_21_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_341_sntlla/skill/skcom_quickattack[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js",
+        "tools/_common_buff_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_350_surtr/fixed/act2autochess/chess_char_5_07_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_350_surtr/fixed/act1autochess/chess_char_5_07_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_358_lisa/fixed/act2autochess/chess_char_5_10_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_358_lisa/fixed/act1autochess/chess_char_5_10_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4010_etlchi/fixed/act2autochess/chess_char_5_06_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4039_horn/fixed/act2autochess/chess_char_5_08_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4056_titi/fixed/act2autochess/chess_char_5_02_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4064_mlynar/fixed/act2autochess/chess_char_5_19_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4080_lin/fixed/act1autochess/chess_char_5_12_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4121_zuole/fixed/act1autochess/chess_char_5_04_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4145_ulpia/fixed/act2autochess/chess_char_5_05_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4145_ulpia/fixed/act1autochess/chess_char_5_05_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4146_nymph/fixed/act2autochess/chess_char_5_22_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_472_pasngr/fixed/act2autochess/chess_char_6_05_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_472_pasngr/fixed/act1autochess/chess_char_5_02_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1012_skadi2/fixed/act2autochess/chess_char_6_04_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1012_skadi2/fixed/act1autochess/chess_char_6_04_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1014_nearl2/fixed/act2autochess/chess_char_6_17_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1016_agoat2/fixed/act2autochess/chess_char_6_20_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1016_agoat2/fixed/act1autochess/chess_char_6_09_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1019_siege2/fixed/act2autochess/chess_char_6_07_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1019_siege2/fixed/act1autochess/chess_char_6_07_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1020_reed2/fixed/act2autochess/chess_char_6_08_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1020_reed2/skill/skcom_quickattack[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js",
+        "tools/_common_buff_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1031_slent2/fixed/act1autochess/chess_char_6_15_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1038_whitw2/fixed/act2autochess/chess_char_6_18_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1041_angel2/fixed/act2autochess/chess_char_6_13_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1041_angel2/fixed/act1autochess/chess_char_6_13_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1046_sbell2/fixed/act2autochess/chess_char_6_02_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1047_halo2/fixed/act2autochess/chess_char_6_16_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_134_ifrit/fixed/act1autochess/chess_char_6_12_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_2026_yu/fixed/act2autochess/chess_char_6_03_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_2026_yu/fixed/act1autochess/chess_char_6_03_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_245_cello/fixed/act2autochess/chess_char_6_09_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_249_mlyss/fixed/act2autochess/chess_char_6_11_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_249_mlyss/fixed/act1autochess/chess_char_6_11_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_249_mlyss/basic/tactical-point",
+      "tests": [
+        "tools/_tactician_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_249_mlyss/token/flow-copy",
+      "tests": [
+        "tools/_tactician_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_249_mlyss/token/melee-steal",
+      "tests": [
+        "tools/_tactician_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_249_mlyss/token/ranged-split",
+      "tests": [
+        "tools/_tactician_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_249_mlyss/skill/skchr_mlyss_1/fixed",
+      "tests": [
+        "tools/_tactician_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_249_mlyss/skill/skchr_mlyss_2/fixed",
+      "tests": [
+        "tools/_tactician_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_249_mlyss/skill/skchr_mlyss_3/ranged-and-stun",
+      "tests": [
+        "tools/_tactician_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_249_mlyss/module/fixed",
+      "tests": [
+        "tools/_tactician_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_249_mlyss/talent/2/carry-mode",
+      "tests": [
+        "tools/_blacknight_smoke.js",
+        "tools/_tactician_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_377_gdglow/fixed/act1autochess/chess_char_6_08_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js",
+        "tools/_funnel_smoke.js",
+        "tools/_click_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_377_gdglow/skill/skchr_gdglow_1/client-body",
+      "tests": [
+        "tools/_funnel_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_377_gdglow/skill/skchr_gdglow_2/client-body",
+      "tests": [
+        "tools/_funnel_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_377_gdglow/skill/skchr_gdglow_3/client-body",
+      "tests": [
+        "tools/_funnel_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_377_gdglow/talent/1/client-prd",
+      "tests": [
+        "tools/_funnel_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_377_gdglow/talent/2/source-penetration",
+      "tests": [
+        "tools/_funnel_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_391_rosmon/fixed/act2autochess/chess_char_6_12_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4042_lumen/fixed/act2autochess/chess_char_6_14_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4042_lumen/fixed/act1autochess/chess_char_6_14_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4058_pepe/fixed/act2autochess/chess_char_6_06_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4058_pepe/fixed/act1autochess/chess_char_6_06_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4082_qiubai/fixed/act2autochess/chess_char_6_15_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4116_blkkgt/fixed/act2autochess/chess_char_6_19_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4116_blkkgt/fixed/act1autochess/chess_char_6_02_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4138_narant/fixed/act1autochess/chess_char_6_05_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4193_lemuen/fixed/act2autochess/chess_char_6_01_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4193_lemuen/fixed/act1autochess/chess_char_6_01_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_450_necras/fixed/act1autochess/chess_char_6_10_a",
+      "tests": [
+        "tools/_season_roster_smoke.js",
+        "tools/_room_game_runtime_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_600_cpione/skill/skcom_charge_cost[1]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_600_cpione/skill/skcom_charge_cost[2]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_600_cpione/skill/skcom_charge_cost[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_601_cguard/skill/skcom_atk_up[1]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_601_cguard/skill/skcom_atk_up[2]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_601_cguard/skill/skcom_atk_up[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_602_cdfend/skill/skcom_def_up[1]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_602_cdfend/skill/skcom_def_up[2]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_602_cdfend/skill/skcom_def_up[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_603_csnipe/skill/skcom_atk_up[1]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_603_csnipe/skill/skcom_atk_up[2]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_603_csnipe/skill/skcom_atk_up[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_604_ccast/skill/skcom_magic_rage[1]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_604_ccast/skill/skcom_magic_rage[2]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_604_ccast/skill/skcom_magic_rage[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_605_cmedic/skill/skcom_heal_up[1]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_605_cmedic/skill/skcom_heal_up[2]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_605_cmedic/skill/skcom_heal_up[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_606_csuppo/skill/skcom_magic_rage[1]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_606_csuppo/skill/skcom_magic_rage[2]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_606_csuppo/skill/skcom_magic_rage[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_607_cspec/skill/skcom_born_up[1]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_607_cspec/skill/skcom_born_up[2]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_607_cspec/skill/skcom_born_up[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_002_amiya/skill/skcom_magic_rage[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1024_hbisc2/skill/skcom_atk_up[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_1027_greyy2/skill/skcom_quickattack[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_106_franka/skill/skcom_quickattack[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_112_siege/skill/skcom_charge_cost[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_115_headbr/skill/skcom_charge_cost[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_117_myrrh/skill/skchr_myrrh_1",
+      "tests": [
+        "tools/_medic_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_117_myrrh/skill/skchr_myrrh_2",
+      "tests": [
+        "tools/_medic_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_120_hibisc/skill/skcom_heal_up[1]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_121_lava/skill/skcom_magic_rage[1]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_122_beagle/skill/skcom_def_up[1]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_123_fang/skill/skcom_charge_cost[1]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_124_kroos/skill/skchr_kroos_1",
+      "tests": [
+        "tools/_marksman_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_141_nights/skill/skcom_atk_up[2]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_149_scave/skill/skcom_charge_cost[2]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_149_scave/skill/skchr_scave_2",
+      "tests": [
+        "tools/_vanguard_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_151_myrtle/skill/skcom_assist_cost[2]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_166_skfire/skill/skcom_atk_up[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_179_cgbird/skill/skcom_heal_up[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_187_ccheal/skill/skchr_ccheal_1/source-body",
+      "tests": [
+        "tools/_periodic_medic_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_187_ccheal/skill/skchr_ccheal_2/source-body",
+      "tests": [
+        "tools/_periodic_medic_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_190_clour/skill/skcom_atk_up[2]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_192_falco/skill/skcom_quickattack[1]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_194_leto/skill/skcom_quickattack[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_197_poca/skill/skcom_atk_up[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_204_platnm/skill/skcom_atk_up[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_208_melan/skill/skcom_atk_up[1]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_209_ardign/skill/skcom_heal_self[1]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_211_adnach/skill/skcom_atk_up[1]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_220_grani/skill/skcom_def_up[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_235_jesica/skill/skchr_jesica_1",
+      "tests": [
+        "tools/_marksman_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_260_durnar/skill/skcom_atk_up[2]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_261_sddrag/skill/skcom_quickattack[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_275_breeze/skill/skchr_breeze_1",
+      "tests": [
+        "tools/_medic_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_278_orchid/skill/skcom_quickattack[1]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_281_popka/skill/skcom_atk_up[1]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_289_gyuki/skill/skcom_heal_self[2]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_293_thorns/skill/skcom_atk_up[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_298_susuro/skill/skcom_heal_up[2]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_298_susuro/skill/skchr_susuro_2",
+      "tests": [
+        "tools/_medic_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_325_bison/skill/skcom_def_up[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_328_cammou/skill/skcom_atk_up[2]",
+      "tests": [
+        "tools/_common_expansion_smoke.js",
+        "tools/_funnel_smoke.js",
+        "tools/_click_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_333_sidero/skill/skcom_heal_self[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_346_aosta/skill/skcom_quickattack[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_349_chiave/skill/skcom_charge_cost[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_362_saga/skill/skcom_charge_cost[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_379_sesa/skill/skcom_atk_up[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_385_finlpp/skill/skchr_finlpp_1/source-body",
+      "tests": [
+        "tools/_medic_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_385_finlpp/skill/skchr_finlpp_2/source-body",
+      "tests": [
+        "tools/_medic_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_401_elysm/skill/skcom_assist_cost[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4023_rfalcn/skill/skcom_charge_cost[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4062_totter/skill/skchr_totter_1",
+      "tests": [
+        "tools/_marksman_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4062_totter/skill/skchr_totter_2",
+      "tests": [
+        "tools/_marksman_skills_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4063_quartz/skill/skcom_atk_up[2]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4071_peper/skill/skcom_heal_rage[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4081_warmy/skill/skchr_warmy_1/element-source-levels",
+      "tests": [
+        "tools/_elemental_sources_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4081_warmy/talent/element-source-scope",
+      "tests": [
+        "tools/_elemental_sources_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4083_chimes/skill/skcom_atk_up[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4102_threye/skill/skchr_threye_1/element-source-levels",
+      "tests": [
+        "tools/_elemental_sources_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4102_threye/skill/skchr_threye_2/element-source-levels",
+      "tests": [
+        "tools/_elemental_sources_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4102_threye/talent/element-source-scope",
+      "tests": [
+        "tools/_elemental_sources_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4104_coldst/skill/skcom_atk_up[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4147_mitm/basic/library-point",
+      "tests": [
+        "tools/_tactical_specials_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4147_mitm/token/cherry-remnants",
+      "tests": [
+        "tools/_tactical_specials_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4147_mitm/skill/skchr_mitm_1/source-levels",
+      "tests": [
+        "tools/_tactical_specials_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4147_mitm/skill/skchr_mitm_2/source-levels",
+      "tests": [
+        "tools/_tactical_specials_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4147_mitm/module/y-remnants",
+      "tests": [
+        "tools/_tactical_specials_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4215_buddy/basic/library-point",
+      "tests": [
+        "tools/_tactical_specials_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4215_buddy/talent/bombs-source",
+      "tests": [
+        "tools/_tactical_specials_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4215_buddy/token/hound-source",
+      "tests": [
+        "tools/_tactical_specials_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4228_closur/basic/library-point",
+      "tests": [
+        "tools/_tactical_specials_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4228_closur/token/command-zone",
+      "tests": [
+        "tools/_tactical_specials_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4228_closur/skill/skchr_closur_1/source-levels",
+      "tests": [
+        "tools/_tactical_specials_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4228_closur/skill/skchr_closur_2/source-levels",
+      "tests": [
+        "tools/_tactical_specials_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4228_closur/skill/skchr_closur_3/source-levels",
+      "tests": [
+        "tools/_tactical_specials_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4228_closur/talent/carry-floor",
+      "tests": [
+        "tools/_tactical_specials_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4236_tmslot/skill/skcom_atk_up[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_4237_jcinta/skill/skcom_assist_cost[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_452_bstalk/basic/library-point",
+      "tests": [
+        "tools/_blacknight_smoke.js",
+        "tools/_tactician_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_452_bstalk/skill/skchr_bstalk_1/source-levels",
+      "tests": [
+        "tools/_blacknight_smoke.js",
+        "tools/_tactician_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_452_bstalk/skill/skchr_bstalk_2/source-levels",
+      "tests": [
+        "tools/_blacknight_smoke.js",
+        "tools/_tactician_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_452_bstalk/module/y-effects",
+      "tests": [
+        "tools/_blacknight_smoke.js",
+        "tools/_tactician_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_476_blkngt/basic/library-point",
+      "tests": [
+        "tools/_blacknight_smoke.js",
+        "tools/_tactician_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_476_blkngt/skill/skchr_blkngt_1/source-levels",
+      "tests": [
+        "tools/_blacknight_smoke.js",
+        "tools/_tactician_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_476_blkngt/skill/skchr_blkngt_2/source-levels",
+      "tests": [
+        "tools/_blacknight_smoke.js",
+        "tools/_tactician_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_476_blkngt/module/x-effects",
+      "tests": [
+        "tools/_blacknight_smoke.js",
+        "tools/_tactician_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_476_blkngt/token/sleep-ownership",
+      "tests": [
+        "tools/_blacknight_smoke.js",
+        "tools/_tactician_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_479_sleach/skill/skcom_assist_cost[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_488_buildr/skill/skcom_charge_cost[3]",
+      "tests": [
+        "tools/_common_expansion_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_499_kaitou/skill/skchr_kaitou_1/element-source-levels",
+      "tests": [
+        "tools/_elemental_sources_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_499_kaitou/skill/skchr_kaitou_2/element-source-levels",
+      "tests": [
+        "tools/_elemental_sources_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_499_kaitou/talent/element-source-scope",
+      "tests": [
+        "tools/_elemental_sources_smoke.js"
+      ]
+    },
+    {
+      "id": "enemy/enemy_1067_snslime/talents",
+      "tests": [
+        "tools/_hunter_smoke.js"
+      ]
+    },
+    {
+      "id": "enemy/enemy_1069_icebrk/ability/0",
+      "tests": [
+        "tools/_hunter_smoke.js"
+      ]
+    },
+    {
+      "id": "enemy/enemy_1069_icebrk/talents",
+      "tests": [
+        "tools/_hunter_smoke.js"
+      ]
+    },
+    {
+      "id": "enemy/enemy_1069_icebrk_2/ability/0",
+      "tests": [
+        "tools/_hunter_smoke.js"
+      ]
+    },
+    {
+      "id": "enemy/enemy_1069_icebrk_2/talents",
+      "tests": [
+        "tools/_hunter_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_136_hsguma/skill/skchr_hsguma_1/source-body",
+      "tests": [
+        "tools/_client_stat_buff_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_358_lisa/skill/skchr_lisa_1/source-body",
+      "tests": [
+        "tools/_client_stat_buff_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_134_ifrit/skill/skchr_ifrit_1/source-body",
+      "tests": [
+        "tools/_client_stat_buff_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_147_shining/skill/skchr_shining_1/source-body",
+      "tests": [
+        "tools/_client_stat_buff_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_195_glassb/skill/skchr_glassb_1/source-body",
+      "tests": [
+        "tools/_client_stat_buff_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_274_astesi/skill/skchr_astesi_1/source-body",
+      "tests": [
+        "tools/_client_stat_buff_smoke.js"
+      ]
+    },
+    {
+      "id": "enemy/enemy_1196_msfyin/prop-like/source-body",
+      "tests": [
+        "tools/_enemy_prop_smoke.js"
+      ]
+    },
+    {
+      "id": "enemy/enemy_1196_msfyin_2/prop-like/source-body",
+      "tests": [
+        "tools/_enemy_prop_smoke.js"
+      ]
+    },
+    {
+      "id": "enemy/enemy_1198_msfshu/prop-like/source-body",
+      "tests": [
+        "tools/_enemy_prop_smoke.js"
+      ]
+    },
+    {
+      "id": "enemy/enemy_1198_msfshu_2/prop-like/source-body",
+      "tests": [
+        "tools/_enemy_prop_smoke.js"
+      ]
+    },
+    {
+      "id": "enemy/enemy_1200_msfjin/prop-like/source-body",
+      "tests": [
+        "tools/_enemy_prop_smoke.js"
+      ]
+    },
+    {
+      "id": "enemy/enemy_1200_msfjin_2/prop-like/source-body",
+      "tests": [
+        "tools/_enemy_prop_smoke.js"
+      ]
+    },
+    {
+      "id": "enemy/enemy_1202_msfzhi/prop-like/source-body",
+      "tests": [
+        "tools/_enemy_prop_smoke.js"
+      ]
+    },
+    {
+      "id": "enemy/enemy_1202_msfzhi_2/prop-like/source-body",
+      "tests": [
+        "tools/_enemy_prop_smoke.js"
+      ]
+    },
+    {
+      "id": "enemy/enemy_1204_msfhu/prop-like/source-body",
+      "tests": [
+        "tools/_enemy_prop_smoke.js"
+      ]
+    },
+    {
+      "id": "enemy/enemy_1204_msfhu_2/prop-like/source-body",
+      "tests": [
+        "tools/_enemy_prop_smoke.js"
+      ]
+    },
+    {
+      "id": "enemy/enemy_1210_msfden/prop-like/source-body",
+      "tests": [
+        "tools/_enemy_prop_smoke.js"
+      ]
+    },
+    {
+      "id": "enemy/enemy_1210_msfden_2/prop-like/source-body",
+      "tests": [
+        "tools/_enemy_prop_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_290_vigna/skill/skchr_vigna_1/source-body",
+      "tests": [
+        "tools/_client_stat_buff_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_290_vigna/skill/skchr_vigna_2/source-body",
+      "tests": [
+        "tools/_client_stat_buff_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_289_gyuki/skill/skchr_gyuki_2/source-body",
+      "tests": [
+        "tools/_client_stat_buff_smoke.js"
+      ]
+    },
+    {
+      "id": "enemy/enemy_9014_acstma/passive/damage-transfer",
+      "tests": [
+        "tools/_enemy_transfer_smoke.js"
+      ]
+    },
+    {
+      "id": "enemy/enemy_9015_acstmb/passive/damage-transfer",
+      "tests": [
+        "tools/_enemy_transfer_smoke.js"
+      ]
+    },
+    {
+      "id": "batch/B07/equip/eff_acarm060/source-body",
+      "tests": [
+        "tools/_equip_protection_smoke.js"
+      ]
+    },
+    {
+      "id": "op/char_172_svrash/skill/skchr_svrash_3/final-defense",
+      "tests": [
+        "tools/_final_defense_smoke.js"
+      ]
+    },
+    {
+      "id": "batch/B07/equip/eff_acarm040/skill-stacks",
+      "tests": [
+        "tools/_equip_skill_stacks_smoke.js"
+      ]
+    },
+    {
+      "id": "batch/B07/equip/eff_acgarm040/skill-stacks",
+      "tests": [
+        "tools/_equip_skill_stacks_smoke.js"
+      ]
+    }
+  ],
+  "totalRegistered": 132,
+  "explicitPreviousAcceptanceSupplement": true
+}

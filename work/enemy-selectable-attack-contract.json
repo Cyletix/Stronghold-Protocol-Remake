@@ -1,0 +1,729 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-09-18T17:24:53.633182+09:00",
+  "rule": "global-selector-shared-cooldown-multi-ranged-circle-v1",
+  "sourceInputs": {
+    "work/external-ready-data-20260914/Tim23333-Arknights_timer/snapshot/Ark_emulator/ark_emulator/data_enemy_prefab_catalog_current.json": "ebe89ba77e15541b52bf117820ecf65838c840fee6e65d397ebc46c601c17ef8",
+    "work/enemy-selectable-attack-ownership.json": "40ba3d0dcf5022d6d09e57ddc1ba6475c91d242baa7e81c83d31115b25c0d275",
+    "work/enemy-mode-channels.json": "724ddcad312bdf6e20f31dd04851254a71fb0d6b20d79b135ab239c345709092",
+    "data/ArknightsGameData/zh_CN/gamedata/levels/enemydata/enemy_database.json": "d3f494055a1ec0d672b5a8c86b291be310a2f7a458c932fd6807c0f8b67fd7a9",
+    "work/garrison-projectile-priority-resource-cache.json": "824491523dda0d3406c00ce05f77cde408c0240554293ec79115bab37f85e739",
+    "work/enemy-ordinary-action-priority-20260918.json": "f1abd7ed7475ba31aa05199fa957b95157d1efee011c261e45bdd875cd7f8e14",
+    "work/enemy-selectable-attack-enums.json": "0b9b6bde556b8fba4142c4830d62ebec2270883a9fba15461982a44244812c62",
+    "work/client-logic/selector-post-filter-enum.json": "eef8cb1ffbb348a15cce1a530e1314dadcaa829f75810050f008b41f3f82106a",
+    "data/ArknightsGameData/zh_CN/gamedata/excel/enemy_handbook_table.json": "0ab2b97d6bc4da6825fed60af634bd72197d2aba56ac5848f944c4016ea8bf43"
+  },
+  "implementationFiles": {
+    "tools/enemy_selectable_attacks.py": "e5e9d7bb7d1f491d48c6c2c0ffd7ca6861a38ef69f230605d593b3e352876dd0",
+    "tools/test_enemy_selectable_attacks.py": "dd1765b1b7604a14ec03186eaa19a802548fcafcafc24c5d9ebc7b9d6ea64fdc",
+    "tools/build_external_combat_data.py": "42be8555720499c25a0d8e0dda7b87ae5d2ff55fa78a0d36d9919fafc8452abf",
+    "work/enemy-selectable-attack-candidates.json": "c8138eb262b0ca7bed029480f85217f9cc315e32808b2903577e5dfbc7435c17",
+    "work/enemy-selectable-attack-ownership.json": "40ba3d0dcf5022d6d09e57ddc1ba6475c91d242baa7e81c83d31115b25c0d275",
+    "work/enemy-selectable-attack-enums.json": "0b9b6bde556b8fba4142c4830d62ebec2270883a9fba15461982a44244812c62",
+    "web/external_combat_data.js": "91208cc70824f2d4d11cd66548f6a06cbee0f4ea6dae1efc8de1b77f2c706848"
+  },
+  "sourceVersions": {
+    "actions": "Tim23333-Arknights_timer@d2f6d76a7172cedc7583fc0a4eb998699abf25f5 pinned CN fields",
+    "ownershipAndProjectile": "JP36.7.22, matched shared source fields; explicit known CN-only schema fields",
+    "nativeBinarySha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+    "nativeMetadataSha256": "2f96360fb0661d1ca323a2210eb859430f874887bc5e98c5af473d2ccf267819"
+  },
+  "scope": {
+    "candidates": [
+      "enemy_9021_acduml",
+      "enemy_9021_acduml_2"
+    ],
+    "accepted": [
+      "enemy_9021_acduml_2"
+    ],
+    "rejected": {
+      "enemy_9021_acduml": [
+        "extra-or-missing-multi-ranged-gameplay-sibling"
+      ]
+    },
+    "wholeEnemyCompletions": 0,
+    "notClaimed": "Independent summon/skill/target mode-transition and damage-triggered abilities remain separate."
+  },
+  "enums": {
+    "Torappu.Battle.SideType": {
+      "NONE": 0,
+      "ALLY": 1,
+      "ENEMY": 2,
+      "BOTH_ALLY_AND_ENEMY": 3,
+      "NEUTRAL": 4,
+      "ALL": 7
+    },
+    "Torappu.LifeType": {
+      "IMMEDIATELY": 0,
+      "LIMITED": 1,
+      "INFINITY": 2,
+      "CUSTOM": 3
+    }
+  },
+  "handbookEvidence": {
+    "enemy_9021_acduml": [
+      {
+        "text": "在场时持续召唤【暗色的喟叹】形态<“余音”>；生命值低于一定比例时，召唤间隔缩短",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "优先攻击【暗色的喟叹】形态<“余音”>",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "【裂管之奏】选择场上所有【暗色的喟叹】形态<“余音”>进行一次三连击，造成范围法术伤害和<$ba.dt.apoptosis>凋亡损伤</>",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "隐秘核心",
+        "textFormat": "TITLE"
+      },
+      {
+        "text": "在模拟中达成特定条件并进入隐秘核心回合时，<假想敌：弦>将与<假想敌：管>同时登场",
+        "textFormat": "NORMAL"
+      }
+    ],
+    "enemy_9021_acduml_2": [
+      {
+        "text": "在场时持续召唤【暗色的喟叹】形态<“余音”>；生命值低于一定比例时，召唤间隔缩短",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "优先攻击【暗色的喟叹】形态<“余音”>",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "【裂管之奏】选择场上所有【暗色的喟叹】形态<“余音”>进行一次三连击，造成范围法术伤害和<$ba.dt.apoptosis>凋亡损伤</>",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "隐秘核心",
+        "textFormat": "TITLE"
+      },
+      {
+        "text": "在模拟中达成特定条件并进入隐秘核心回合时，<假想敌：弦>将与<假想敌：管>同时登场",
+        "textFormat": "NORMAL"
+      }
+    ],
+    "enemy_9023_acdums": [
+      {
+        "text": "需要数次攻击击倒",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "只能被阻挡数大于等于2的单位阻挡",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "【复调】：在【金黄的悲号】与【暗色的喟叹】形态之间转换",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "【金黄的悲号】形态时攻击速度提升，受到数次伤害后转换为【暗色的喟叹】形态",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "【暗色的喟叹】形态时移动速度下降，攻击力提升，受到数次伤害后转换为【金黄的悲号】形态",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "受到伤害时以自身为中心造成一次范围法术伤害和<$ba.dt.apoptosis>凋亡损伤</>",
+        "textFormat": "NORMAL"
+      },
+      {
+        "text": "全场所有<“余音”>周期性一同进行一次合奏造成范围法术伤害和<$ba.dt.apoptosis>凋亡损伤</>",
+        "textFormat": "NORMAL"
+      }
+    ]
+  },
+  "modelPolicies": {
+    "trace": "Opponent-only area plus forced valid trace once; source ALL key/mode aim + alwaysHitTraceTargetInTheEnd + official handbook preferred-attack and target on-damage effects. Cross-source inference, not native callback proof.",
+    "castEnd": "Emitted projectiles remain independent after cast/source end; cancel un-emitted shots. This is an explicit simulation policy retaining both source lifecycle flags, not proof of native notClearProjectileWhenCastEnd behavior."
+  },
+  "acceptedIR": {
+    "enemy_9021_acduml_2": {
+      "rule": "global-selector-shared-cooldown-multi-ranged-circle-v1",
+      "kind": "selectable-multi-ranged",
+      "branches": [
+        {
+          "index": 0,
+          "selector": {
+            "side": "all",
+            "range": "global",
+            "enemyKey": "enemy_9023_acdums",
+            "enemyMode": 1,
+            "limit": 1,
+            "sort": "hatred-desc",
+            "ignoreTargetFree": false,
+            "forceIgnoreCamouflage": false,
+            "motionMask": 3,
+            "categoryMask": 1
+          },
+          "action": {
+            "damageType": "arts",
+            "atkScale": 1,
+            "shots": 3,
+            "interval": 0.25,
+            "offsets": [
+              0.0,
+              0.25,
+              0.5
+            ],
+            "firstShot": "animation-OnAttack",
+            "laterShots": "fixed-interval-after-first",
+            "animation": "Attack",
+            "maxAnimationScale": 1.0,
+            "affectedBySlowDown": true,
+            "targetSource": "selector",
+            "selectTargetTiming": "at-beginning",
+            "sourceTimingOptions": {
+              "_selectTargetSource": 1,
+              "_selectTargetTiming": 0,
+              "_timeMode": 0,
+              "_resetCdStrategy": 1,
+              "_interuptIfTargetDead": 0,
+              "_waitForAttackEvent": 1,
+              "_waitAttackEventForAllAttacks": 0,
+              "_refreshTimesOnCastStart": 0
+            },
+            "lifecycle": {
+              "waitForProjectileInvalid": false,
+              "notClearProjectileWhenCastEnd": false,
+              "fireAttackFinishWhenProjectileInvalid": false,
+              "emitToInputPosWhenTargetInvalid": false,
+              "emitToInputRootTileWhenTargetInvalid": false
+            }
+          },
+          "sourceSelectorOptions": {
+            "_targetSide": 7,
+            "_targetMotion": 3,
+            "_targetCategory": 1,
+            "_postFilter": 4,
+            "_ignoreTargetFree": 0,
+            "_onlyIgnoreSomeOfTargetFreeCase": 0,
+            "_abnormalFlag": 42,
+            "_abnormalCombo": 2,
+            "_ignoreAllyTargetFree": 0,
+            "_ignoreHealFree": 0,
+            "_ignoreMotionMode": 0,
+            "_forceIgnoreCamouflage": 0,
+            "_needProfessionMask": 0,
+            "_professionMask": 0,
+            "_excludeSomeAbnormalFlags": 0,
+            "_excludeAbnormalFlag": 46,
+            "_limitTargetNum": 1,
+            "_maxTargetKey": "max_target",
+            "_maxNum": 1,
+            "_excludeOwner": 0,
+            "_sortByTauntAtLast": 0,
+            "_ignoreHitRange": 0,
+            "_checkUnitType": 0,
+            "_unitTypeMask": 0,
+            "_abilityInputTargetAsSortSource": 0,
+            "_enemyLevelMask": 7,
+            "_motionMask": 3,
+            "_allowNoneApplyWay": 1,
+            "_applyWay": 3,
+            "_filterByEnemiesKey": 1,
+            "_filterEnemyKeyMode": 0,
+            "_enemyKey": "enemy_9023_acdums",
+            "_filterByEnemiesMode": 1,
+            "_filterByEnemiesTag": 0,
+            "_enemyMode": 1,
+            "_enemyTag": "",
+            "_excludeDisappeared": 0,
+            "_excludeInCombat": 0,
+            "_filterBuff": 0,
+            "_buffKeyExcluded": 0,
+            "_buffKey": "",
+            "_checkReachableToOwner": 0,
+            "_avoidObstacleLike": 0,
+            "_checkOwnerCanBlockEnemy": 0,
+            "_filterUnbalance": 0,
+            "_filterNotInUnbalance": 0,
+            "_filterAbnormalImmune": 0,
+            "_abnormalFlagImmune": 42,
+            "_filterEnemyMassLevel": 0,
+            "_massCompareType": 0,
+            "_massLevel": 0
+          },
+          "sourceActionId": "7832002301509547356"
+        },
+        {
+          "index": 1,
+          "selector": {
+            "side": "enemy",
+            "range": "global",
+            "enemyKey": null,
+            "enemyMode": null,
+            "limit": 1,
+            "sort": "hatred-desc",
+            "ignoreTargetFree": false,
+            "forceIgnoreCamouflage": false,
+            "motionMask": 3,
+            "categoryMask": 1
+          },
+          "action": {
+            "damageType": "arts",
+            "atkScale": 1,
+            "shots": 3,
+            "interval": 0.25,
+            "offsets": [
+              0.0,
+              0.25,
+              0.5
+            ],
+            "firstShot": "animation-OnAttack",
+            "laterShots": "fixed-interval-after-first",
+            "animation": "Attack",
+            "maxAnimationScale": 1.0,
+            "affectedBySlowDown": true,
+            "targetSource": "selector",
+            "selectTargetTiming": "at-beginning",
+            "sourceTimingOptions": {
+              "_selectTargetSource": 1,
+              "_selectTargetTiming": 0,
+              "_timeMode": 0,
+              "_resetCdStrategy": 1,
+              "_interuptIfTargetDead": 0,
+              "_waitForAttackEvent": 1,
+              "_waitAttackEventForAllAttacks": 0,
+              "_refreshTimesOnCastStart": 0
+            },
+            "lifecycle": {
+              "waitForProjectileInvalid": false,
+              "notClearProjectileWhenCastEnd": false,
+              "fireAttackFinishWhenProjectileInvalid": false,
+              "emitToInputPosWhenTargetInvalid": false,
+              "emitToInputRootTileWhenTargetInvalid": false
+            }
+          },
+          "sourceSelectorOptions": {
+            "_targetSide": 2,
+            "_targetMotion": 3,
+            "_targetCategory": 1,
+            "_postFilter": 4,
+            "_ignoreTargetFree": 0,
+            "_onlyIgnoreSomeOfTargetFreeCase": 0,
+            "_abnormalFlag": 42,
+            "_abnormalCombo": 2,
+            "_ignoreAllyTargetFree": 0,
+            "_ignoreHealFree": 0,
+            "_ignoreMotionMode": 0,
+            "_forceIgnoreCamouflage": 0,
+            "_needProfessionMask": 0,
+            "_professionMask": 0,
+            "_excludeSomeAbnormalFlags": 0,
+            "_excludeAbnormalFlag": 46,
+            "_limitTargetNum": 1,
+            "_maxTargetKey": "max_target",
+            "_maxNum": 1,
+            "_excludeOwner": 0,
+            "_sortByTauntAtLast": 0,
+            "_ignoreHitRange": 0,
+            "_checkUnitType": 0,
+            "_unitTypeMask": 0,
+            "_abilityInputTargetAsSortSource": 0
+          },
+          "sourceActionId": "-8924723807157111460"
+        }
+      ],
+      "projectile": {
+        "kind": "circle",
+        "key": "projectile_enemy_acduml",
+        "speed": 10.0,
+        "lifeTime": 10.0,
+        "radius": 1.7999999523162842,
+        "scalable": true,
+        "extendable": false,
+        "maxHitTargets": null,
+        "targetSide": "enemy",
+        "ignoreCamouflage": true,
+        "includeTraceTargetAtEnd": true,
+        "targetFreePolicy": "source-projectile-hit-options",
+        "oncePerTarget": true,
+        "hitAt": "reach-target",
+        "stopWhenSourceInvalid": false,
+        "tracePolicy": "force-valid-trace-once-at-end",
+        "castEndPolicy": "emitted-projectiles-independent",
+        "movement": {
+          "traceTarget": true,
+          "flyToTargetLocationOnly": false,
+          "fixOnProjectileReached": true,
+          "clearTraceTargetWhenReached": true,
+          "forceReachedWhenTimeup": true,
+          "flyThroughDeathArea": false
+        },
+        "sourceOptions": {
+          "simple": {
+            "_randomDelayToBorn": 0.0,
+            "_bodyTransform": {
+              "m_FileID": 0,
+              "m_PathID": "-2724488329468224790"
+            },
+            "_keepAlreadyHitTime": -1.0,
+            "_mainEffect": "enemy_acduml_attack_trail",
+            "_clearMainEffectWhenReached": 1,
+            "_actionController": {
+              "_detachBuffsWhenTargetLeave": 0,
+              "_detachAllBuffsWhenStopped": 0,
+              "_onlyAddBuffsToTraceTarget": 0,
+              "_onlyAddBuffsToTargetOnce": 0,
+              "_dontAddBuffs": 0,
+              "_excludeAttachments": 0,
+              "_useSelfBlackboard": 0,
+              "_extraBuffsInTheEnd": [],
+              "_useExtraBuffsWhenStopHit": 0,
+              "_addExtraBuffsWhenReached": 0,
+              "_detachAllExtraBuffsWhenStopped": 0
+            },
+            "_fixDealHitTargetLeft": 1,
+            "_stopGraphicProjectileWhenClearMainEffect": 0,
+            "_overrideAudioSignal": "",
+            "_fireProjectileReachedEvent": 0,
+            "_eliminatableStatus": 0,
+            "_movementAdjustableStatus": 0,
+            "_managedBySource": 0,
+            "_projectileType": 0,
+            "_containsChildrenBehaviours": 0,
+            "_canHitSameTargetMultipleTimes": 0,
+            "_lifeTimeType": 1,
+            "_lifeTime": 10.0,
+            "_getLifeTimeFromBB": 0,
+            "_hitNumType": 2,
+            "_maxHitNum": 1,
+            "_getMaxHitNumFromBB": 0,
+            "_maxHitNumBBKey": "",
+            "_stopAfterMaxHit": 1,
+            "_stopAfterFirstHit": 0,
+            "_stopWhenSourceInvalid": 0,
+            "_alwaysHitTraceTargetInTheEnd": 1,
+            "_alwaysHitTraceTargetWhenReached": 0,
+            "_alwaysReachInTheEnd": 0,
+            "_limitedMaxHitNumToSourceBlockedCnt": 0,
+            "_allowZeroBlockCntLimit": 0
+          },
+          "movement": {
+            "_rotateToTarget": 1,
+            "_forceReachedWhenTimeup": 1,
+            "_useSourceDirection": 0,
+            "_useTargetDirection": 0,
+            "_useStartToTarget": 0,
+            "_awayFromSourceAsDirection": 0,
+            "_flyToTargetLocationOnly": 0,
+            "_useSourceDirectionRandomArcAngleStart": 0,
+            "_useSourceToTargetRandomArcAngleStart": 0,
+            "_useSourceDirectionArcAngleWithRatio": 0,
+            "_useSourceToTargetArcAngleWithRatio": 0,
+            "_sourceDirectionArcAngleRatio": 0.0,
+            "_flyToPredefinedLocation": 0,
+            "_predefinedLocation": 0,
+            "_freezeRotationZ": 0,
+            "_freezeRotationXY": 0,
+            "_exactMatchCameraForward": 0,
+            "_resetToTargetPosWhenReached": 0,
+            "_resetToTracetargetMapPosV3": 0,
+            "_handleWithIBuildableTarget": 0,
+            "_forceResetToTargetPosWhenReached": 0,
+            "_fixOnProjectileReached": 1,
+            "_onlyReachedInTime": 0.0,
+            "_moveType": 1,
+            "_moveTypeData": {
+              "data": []
+            },
+            "_speed": 10.0,
+            "_distance": 0.0,
+            "_comeBack": 0,
+            "_comeBackSpeedScale": 0.25,
+            "_delayToStart": 0.0,
+            "_delayAfterReached": 0.0,
+            "_delayToReachAfterHit": 0.0,
+            "_clearTraceTargetWhenReached": 1,
+            "_updateDelayTimeOnlyOnce": 0,
+            "_skipSmoothLerpDirection": 0,
+            "_addInertia": 0,
+            "_turnSpeed": 0.0,
+            "_useDynamicSpeed": 0,
+            "_deltaSpeedPerSec": 0.0,
+            "_finalSpeed": 0.0,
+            "_randomOffset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "_forceUseTargetMountPoint": 0
+          },
+          "hit": {
+            "_targetOptions": {
+              "targetSide": 2,
+              "targetMotion": 3,
+              "targetCategory": 1,
+              "enableAdvancedOptions": 1,
+              "ignoreTargetFree": 0,
+              "ignoreAllyTargetFree": 0,
+              "ignoreHealFree": 0,
+              "ignoreTargetSide": 0,
+              "excludeSomeAbnormalFlags": 0,
+              "excludeAbnormalFlag": 0,
+              "purposeMask": 0,
+              "professionMask": 0,
+              "checkUnitType": 0,
+              "unitTypeMask": 0,
+              "onlyIgnoreSomeOfTargetFreeCase": 0,
+              "abnormalFlag": 0,
+              "abnormalCombo": 0
+            },
+            "_goThroughWall": 1,
+            "_onlyCheckHitWhenReachTarget": 1,
+            "_onlyCheckHitWhenStop": 0,
+            "_canFlyThroughTheDeathArea": 0,
+            "_exceptTraceTarget": 0,
+            "_overridePurposeMaskWithTargetOptions": 0,
+            "_rangeToLoad": {
+              "m_FileID": 0,
+              "m_PathID": "-8327330991646156054"
+            },
+            "_ignoreCamouflage": 1,
+            "_ignoreRangeScale": 0,
+            "_exceptSource": 0,
+            "_mergeTraceTargetMotion": 0,
+            "_markReachedOnlyWhenTargetEnter": 0
+          },
+          "circle": {
+            "_extendable": 0,
+            "_scaleble": 1
+          }
+        },
+        "evidenceLevel": "Inferred"
+      },
+      "cooldown": {
+        "shared": true,
+        "sourceAbilityIndex": 0,
+        "interval": 3.0,
+        "clearInternalOnFinish": true,
+        "resetSubAbilityCooldown": true,
+        "updateDuringCasting": false,
+        "timeMode": 0
+      },
+      "selection": "first-eligible-source-order",
+      "completion": "animation-and-additional-shots",
+      "evidenceLevel": "Inferred",
+      "boundary": "Explicit source graph, selectors, counts, collider radius and flags are recovered. Ordered trigger fallback, shared scheduler integration, hatred tie ordering, scaled radius and arrival fallback are shared simulation inferences, not native timing proof. Independent enemy skills and mode transitions of target enemies remain separate.",
+      "action": {
+        "timing": {
+          "animation": "Attack",
+          "duration": 3.3333333,
+          "hit": 0.8333333,
+          "observedHits": [
+            0.8333333,
+            1.6,
+            1.8333334
+          ],
+          "hits": [
+            0.8333333
+          ],
+          "atkScale": 1.0,
+          "abilityType": "Torappu.Battle.Abilities.MultiRangedAttack",
+          "hitSequenceContract": "fixed-multi-interval-after-first-event-v1",
+          "playback": {
+            "rule": "native-attack-time-capped-animation",
+            "timeMode": 0,
+            "minScale": 0.1,
+            "maxScale": 1.0
+          }
+        },
+        "timeMode": 0,
+        "minAnimScale": 0.1,
+        "maxAnimScale": 1.0,
+        "atkScale": 1.0,
+        "damageType": "arts",
+        "delivery": "projectile",
+        "repeat": {
+          "count": 3,
+          "interval": 0.25,
+          "clock": "cast-clock"
+        },
+        "projectile": {
+          "kind": "circle",
+          "key": "projectile_enemy_acduml",
+          "speed": 10.0,
+          "lifeTime": 10.0,
+          "radius": 1.7999999523162842,
+          "scalable": true,
+          "extendable": false,
+          "maxHitTargets": null,
+          "targetSide": "enemy",
+          "ignoreCamouflage": true,
+          "includeTraceTargetAtEnd": true,
+          "targetFreePolicy": "source-projectile-hit-options",
+          "oncePerTarget": true,
+          "hitAt": "reach-target",
+          "stopWhenSourceInvalid": false,
+          "tracePolicy": "force-valid-trace-once-at-end",
+          "castEndPolicy": "emitted-projectiles-independent",
+          "movement": {
+            "traceTarget": true,
+            "flyToTargetLocationOnly": false,
+            "fixOnProjectileReached": true,
+            "clearTraceTargetWhenReached": true,
+            "forceReachedWhenTimeup": true,
+            "flyThroughDeathArea": false
+          },
+          "sourceOptions": {
+            "simple": {
+              "_randomDelayToBorn": 0.0,
+              "_bodyTransform": {
+                "m_FileID": 0,
+                "m_PathID": "-2724488329468224790"
+              },
+              "_keepAlreadyHitTime": -1.0,
+              "_mainEffect": "enemy_acduml_attack_trail",
+              "_clearMainEffectWhenReached": 1,
+              "_actionController": {
+                "_detachBuffsWhenTargetLeave": 0,
+                "_detachAllBuffsWhenStopped": 0,
+                "_onlyAddBuffsToTraceTarget": 0,
+                "_onlyAddBuffsToTargetOnce": 0,
+                "_dontAddBuffs": 0,
+                "_excludeAttachments": 0,
+                "_useSelfBlackboard": 0,
+                "_extraBuffsInTheEnd": [],
+                "_useExtraBuffsWhenStopHit": 0,
+                "_addExtraBuffsWhenReached": 0,
+                "_detachAllExtraBuffsWhenStopped": 0
+              },
+              "_fixDealHitTargetLeft": 1,
+              "_stopGraphicProjectileWhenClearMainEffect": 0,
+              "_overrideAudioSignal": "",
+              "_fireProjectileReachedEvent": 0,
+              "_eliminatableStatus": 0,
+              "_movementAdjustableStatus": 0,
+              "_managedBySource": 0,
+              "_projectileType": 0,
+              "_containsChildrenBehaviours": 0,
+              "_canHitSameTargetMultipleTimes": 0,
+              "_lifeTimeType": 1,
+              "_lifeTime": 10.0,
+              "_getLifeTimeFromBB": 0,
+              "_hitNumType": 2,
+              "_maxHitNum": 1,
+              "_getMaxHitNumFromBB": 0,
+              "_maxHitNumBBKey": "",
+              "_stopAfterMaxHit": 1,
+              "_stopAfterFirstHit": 0,
+              "_stopWhenSourceInvalid": 0,
+              "_alwaysHitTraceTargetInTheEnd": 1,
+              "_alwaysHitTraceTargetWhenReached": 0,
+              "_alwaysReachInTheEnd": 0,
+              "_limitedMaxHitNumToSourceBlockedCnt": 0,
+              "_allowZeroBlockCntLimit": 0
+            },
+            "movement": {
+              "_rotateToTarget": 1,
+              "_forceReachedWhenTimeup": 1,
+              "_useSourceDirection": 0,
+              "_useTargetDirection": 0,
+              "_useStartToTarget": 0,
+              "_awayFromSourceAsDirection": 0,
+              "_flyToTargetLocationOnly": 0,
+              "_useSourceDirectionRandomArcAngleStart": 0,
+              "_useSourceToTargetRandomArcAngleStart": 0,
+              "_useSourceDirectionArcAngleWithRatio": 0,
+              "_useSourceToTargetArcAngleWithRatio": 0,
+              "_sourceDirectionArcAngleRatio": 0.0,
+              "_flyToPredefinedLocation": 0,
+              "_predefinedLocation": 0,
+              "_freezeRotationZ": 0,
+              "_freezeRotationXY": 0,
+              "_exactMatchCameraForward": 0,
+              "_resetToTargetPosWhenReached": 0,
+              "_resetToTracetargetMapPosV3": 0,
+              "_handleWithIBuildableTarget": 0,
+              "_forceResetToTargetPosWhenReached": 0,
+              "_fixOnProjectileReached": 1,
+              "_onlyReachedInTime": 0.0,
+              "_moveType": 1,
+              "_moveTypeData": {
+                "data": []
+              },
+              "_speed": 10.0,
+              "_distance": 0.0,
+              "_comeBack": 0,
+              "_comeBackSpeedScale": 0.25,
+              "_delayToStart": 0.0,
+              "_delayAfterReached": 0.0,
+              "_delayToReachAfterHit": 0.0,
+              "_clearTraceTargetWhenReached": 1,
+              "_updateDelayTimeOnlyOnce": 0,
+              "_skipSmoothLerpDirection": 0,
+              "_addInertia": 0,
+              "_turnSpeed": 0.0,
+              "_useDynamicSpeed": 0,
+              "_deltaSpeedPerSec": 0.0,
+              "_finalSpeed": 0.0,
+              "_randomOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "_forceUseTargetMountPoint": 0
+            },
+            "hit": {
+              "_targetOptions": {
+                "targetSide": 2,
+                "targetMotion": 3,
+                "targetCategory": 1,
+                "enableAdvancedOptions": 1,
+                "ignoreTargetFree": 0,
+                "ignoreAllyTargetFree": 0,
+                "ignoreHealFree": 0,
+                "ignoreTargetSide": 0,
+                "excludeSomeAbnormalFlags": 0,
+                "excludeAbnormalFlag": 0,
+                "purposeMask": 0,
+                "professionMask": 0,
+                "checkUnitType": 0,
+                "unitTypeMask": 0,
+                "onlyIgnoreSomeOfTargetFreeCase": 0,
+                "abnormalFlag": 0,
+                "abnormalCombo": 0
+              },
+              "_goThroughWall": 1,
+              "_onlyCheckHitWhenReachTarget": 1,
+              "_onlyCheckHitWhenStop": 0,
+              "_canFlyThroughTheDeathArea": 0,
+              "_exceptTraceTarget": 0,
+              "_overridePurposeMaskWithTargetOptions": 0,
+              "_rangeToLoad": {
+                "m_FileID": 0,
+                "m_PathID": "-8327330991646156054"
+              },
+              "_ignoreCamouflage": 1,
+              "_ignoreRangeScale": 0,
+              "_exceptSource": 0,
+              "_mergeTraceTargetMotion": 0,
+              "_markReachedOnlyWhenTargetEnter": 0
+            },
+            "circle": {
+              "_extendable": 0,
+              "_scaleble": 1
+            }
+          },
+          "evidenceLevel": "Inferred"
+        }
+      }
+    }
+  },
+  "verification": {
+    "command": "python -m unittest discover -s tools -p test_enemy_selectable_attacks.py -v",
+    "tests": 9,
+    "passed": true,
+    "builder": "python tools/build_external_combat_data.py",
+    "builderPassed": true,
+    "generatedProfileDeltaFromPackage8": [
+      "enemy_9021_acduml_2"
+    ],
+    "runtimeTests": "Owned by root and launcher_port_tests; not claimed by this compile receipt."
+  },
+  "nativeBoundary": "No new native method body was scanned. Source enums and serialized fields are evidence; selection/scheduling/trace/cast-end policy remain explicit cross-source simulation inferences. Known protected timing and DEFAULT Buff blockers were not revisited."
+}

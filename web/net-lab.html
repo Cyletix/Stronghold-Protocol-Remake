@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>浏览器直连实验</title>
+<style>body{max-width:760px;margin:32px auto;padding:0 18px;background:#10141d;color:#eee;font:16px/1.6 system-ui}textarea,input{box-sizing:border-box;width:100%;background:#202838;color:#eee;border:1px solid #61708b;padding:10px}textarea{height:105px}button{padding:10px;margin:8px 8px 8px 0;cursor:pointer}button:disabled{cursor:default}#status{color:#7ce0ad}label{display:block;margin-top:18px}pre{white-space:pre-wrap;overflow-wrap:anywhere}details{margin-top:24px}</style>
+<h1>浏览器直连实验</h1>
+<p>仅测试两人连接、准备状态和延迟，尚未接入游戏。没有音乐。连接信息仅发给参与测试的朋友。</p>
+<p>发起人生成邀请 → 对方粘贴邀请并生成回复 → 发起人粘贴回复并确认。每次重新连接，两边都先点“重置”。</p>
+<details><summary>跨网络测试设置（可选）</summary><p>默认只尝试直接连接。跨网络可填写自己可用的 STUN/TURN；不内置公共服务，也不保证穿透成功。设置需在生成邀请/回复前填写，凭据仅留在当前页面内存。</p>
+<label>服务器地址<input id="ice" placeholder="stun:主机:端口 或 turn:主机:端口"></label>
+<label>TURN 用户名<input id="user" autocomplete="off"></label><label>TURN 临时密码<input id="password" type="password" autocomplete="off"></label></details>
+<button id="offer">生成邀请</button><button id="reset">重置</button>
+<label>发给对方的连接信息<textarea id="out" readonly></textarea></label>
+<label>粘贴对方的连接信息<textarea id="in"></textarea></label>
+<button id="answer">接收邀请并生成回复</button><button id="accept">确认对方回复</button>
+<p id="status" role="status">尚未连接</p>
+<button id="ready" disabled>切换准备状态</button><button id="ping" disabled>测一次延迟</button>
+<pre id="log" aria-live="polite"></pre>
+<script src="net-lab.js"></script></html>

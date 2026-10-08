@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>卫戍协议 Web 性能基线</title>
+  <style>
+    :root { color-scheme: dark; font-family: ui-monospace, "Cascadia Code", monospace; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #0d1117; color: #d7e0ea; }
+    header { display: flex; align-items: baseline; gap: 24px; padding: 12px 18px; }
+    h1 { margin: 0; font: 600 18px/1.4 system-ui, sans-serif; }
+    #status { color: #7ee787; }
+    canvas { display: block; width: 100vw; height: min(62.5vw, calc(100vh - 210px)); min-height: 360px; background: #111820; }
+    pre { margin: 0; padding: 14px 18px; white-space: pre-wrap; font-size: 12px; line-height: 1.5; }
+  </style>
+</head>
+<body>
+  <header><h1>当前架构风格压力基线</h1><span id="status">准备中</span></header>
+  <canvas id="stage"></canvas>
+  <pre id="result">等待运行…</pre>
+  <script src="perf.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "completed": true,
+  "recordedAt": "2026-09-14T15:05:00.306450+00:00",
+  "gameVersion": "room-game-20260915.1",
+  "scope": "Complete shared mode periodic group: movement multiplier, lethal live-maxHP self damage, direct named element ability and mode-scoped normal attack element",
+  "sourceContracts": {
+    "work/enemy-awake-contract.json": {
+      "sourceFingerprint": "32454aade6017fdccaae6a3a09a70dc538535132904de6f44f4c2b8934522353",
+      "fileSha256": "96d42cc91907a7cd7da2beee5a1c26430818cbe6eff487379ffc787f0be08c32"
+    },
+    "work/enemy-periodic-ability-contract.json": {
+      "sourceFingerprint": "c209f2d8b755aba00c4135c3ac93ef96c2c5644a26208690d268bbb995834f1e",
+      "fileSha256": "4d13eda3596ab6267068fc5d7195f7027a7a81eeedd8656d2d1733f80e5acbd7"
+    }
+  },
+  "periodicCounts": {
+    "groups": 2,
+    "enemies": 2,
+    "encounterGroups": 2,
+    "encounterEnemies": 2,
+    "capabilityKinds": 4,
+    "capabilityBindings": 8
+  },
+  "boundGroupIDs": [
+    "enemy_1151_dslntc_2|mode:1|periodic-ability-group",
+    "enemy_1151_dslntc|mode:1|periodic-ability-group"
+  ],
+  "skillCounts": {
+    "candidates": 27,
+    "selectedSkills": 4,
+    "selectedEnemies": 3,
+    "pendingSkills": 23,
+    "pendingEnemies": 13,
+    "deferredSkills": 5,
+    "deferredEnemies": 5,
+    "executablePendingSkills": 18,
+    "executablePendingEnemies": 8,
+    "encounterSelectedEnemies": 3
+  },
+  "basicActionGaps": {
+    "allEnemies": 435,
+    "encounterEnemies": 36
+  },
+  "validation": [
+    {
+      "suite": "tools/test_enemy_periodic_abilities.py",
+      "result": "passed",
+      "groups": 5
+    },
+    {
+      "suite": "periodic status, mode queue and foundation propagation fixtures",
+      "result": "passed",
+      "tests": 13
+    },
+    {
+      "suite": "node tools/_enemy_periodic_smoke.js",
+      "result": "passed"
+    },
+    {
+      "suite": "node tools/_enemy_self_cast_smoke.js",
+      "result": "passed"
+    },
+    {
+      "suite": "node tools/_enemy_ep_smoke.js",
+      "result": "passed"
+    },
+    {
+      "suite": "node tools/_enemy_skill_dispatch_smoke.js",
+      "result": "passed"
+    },
+    {
+      "suite": "node tools/_external_combat_smoke.js",
+      "result": "passed"
+    },
+    {
+      "suite": "node tools/check_docs.js",
+      "result": "passed",
+      "documents": 80,
+      "localLinks": 2327
+    }
+  ],
+  "sourceRefresh": {
+    "wholeCohortRescan": false,
+    "oldAwakeContractChanged": false,
+    "missingGeometrySupplemented": true,
+    "newNativeEntrancesRecorded": true
+  },
+  "refresh": {
+    "actionTemplateCacheHit": true,
+    "modeAnalysisSkipped": true,
+    "buffTemplateQueriesSkipped": true,
+    "dpsCompileSkipped": true,
+    "dpsCalculationSkipped": true
+  },
+  "boundary": "Separate complete operator groups, not new EnemySkills or whole-enemy completion. EP full formula, direct ability scheduling, mode reentry and same-time ordering retain explicit Inferred boundaries.",
+  "nextQueue": "work/enemy-mode-next-batch.json",
+  "automationChanged": false,
+  "packaged": false,
+  "published": false,
+  "nextSharedSlice": "work/enemy-skill-next-slice.json"
+}

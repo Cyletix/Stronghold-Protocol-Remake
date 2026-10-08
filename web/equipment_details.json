@@ -1,0 +1,4523 @@
+{
+  "eff_acarm040": {
+    "description": "每开启一次技能，获得<@ba.vup>5%</>的攻击力加成（最多叠加10次）",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "炎国短刀",
+        "desc": "每开启一次技能，获得<@ba.vup>5%</>的攻击力加成（最多叠加10次）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "炎国短刀",
+        "desc": "每开启一次技能，获得<@ba.vup>8%</>的攻击力加成（最多叠加10次）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm041": {
+    "description": "攻击力<@ba.vup>+15%</>",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "维式重锤",
+        "desc": "攻击力<@ba.vup>+15%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "维式重锤",
+        "desc": "攻击力<@ba.vup>+25%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm042": {
+    "description": "攻击力<@ba.vup>+30%</>；造成法术伤害附带相当于<@ba.vup>10%</>伤害的<$ba.dt.burning2>灼燃损伤</>",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "灼燃维式重锤",
+        "desc": "攻击力<@ba.vup>+30%</>；造成法术伤害附带相当于<@ba.vup>10%</>伤害的<$ba.dt.burning2>灼燃损伤</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "灼燃维式重锤",
+        "desc": "攻击力<@ba.vup>+50%</>；造成法术伤害附带相当于<@ba.vup>10%</>伤害的<$ba.dt.burning2>灼燃损伤</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm043": {
+    "description": "攻击力<@ba.vup>+25%</>；首次受到致命伤害时生命值不低于<@ba.vup>1</>，持续8秒",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "坚固维式重锤",
+        "desc": "攻击力<@ba.vup>+25%</>；首次受到致命伤害时生命值不低于<@ba.vup>1</>，持续8秒",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "坚固维式重锤",
+        "desc": "攻击力<@ba.vup>+45%</>；首次受到致命伤害时生命值不低于<@ba.vup>1</>，持续8秒",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm044": {
+    "description": "攻击力<@ba.vup>+25%</>；攻击速度<@ba.vup>+30</>",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "加速维式重锤",
+        "desc": "攻击力<@ba.vup>+25%</>；攻击速度<@ba.vup>+30</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "加速维式重锤",
+        "desc": "攻击力<@ba.vup>+45%</>；攻击速度<@ba.vup>+30</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm045": {
+    "description": "攻击力<@ba.vup>+20%</>；若携带者是地面干员则攻击时有10%概率使目标<$ba.tremble>战栗</>2秒",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "战栗维式重锤",
+        "desc": "攻击力<@ba.vup>+20%</>；若携带者是地面干员则攻击时有10%概率使目标<$ba.tremble>战栗</>2秒",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "战栗维式重锤",
+        "desc": "攻击力<@ba.vup>+35%</>；若携带者是地面干员则攻击时有10%概率使目标<$ba.tremble>战栗</>2秒",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm046": {
+    "description": "攻击力<@ba.vup>+40%</>，攻击速度<@ba.vdown>-10</>",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "阿戈尔重刃",
+        "desc": "攻击力<@ba.vup>+40%</>，攻击速度<@ba.vdown>-10</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "阿戈尔重刃",
+        "desc": "攻击力<@ba.vup>+60%</>，攻击速度<@ba.vdown>-10</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm047": {
+    "description": "防御力<@ba.vup>+20%</>",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "坚守盾牌",
+        "desc": "防御力<@ba.vup>+20%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "坚守盾牌",
+        "desc": "防御力<@ba.vup>+35%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm048": {
+    "description": "法术抗性<@ba.vup>+20</>，攻击使目标失去特殊能力<@ba.vup>5</>秒",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "奥术法阵",
+        "desc": "法术抗性<@ba.vup>+20</>，攻击使目标失去特殊能力<@ba.vup>5</>秒",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "奥术法阵",
+        "desc": "法术抗性<@ba.vup>+30</>，攻击使目标失去特殊能力<@ba.vup>5</>秒",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm049": {
+    "description": "生命值<@ba.vup>+25%</>；部署时若身前一格没有其他干员，生命值额外<@ba.vup>+15%</>",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "歌利亚头盔",
+        "desc": "生命值<@ba.vup>+25%</>；部署时若身前一格没有其他干员，生命值额外<@ba.vup>+15%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "歌利亚头盔",
+        "desc": "生命值<@ba.vup>+45%</>；部署时若身前一格没有其他干员，生命值额外<@ba.vup>+25%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm050": {
+    "description": "技力自然回复速度<@ba.vup>+0.15</>/秒",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "萨尔贡浓茶",
+        "desc": "技力自然回复速度<@ba.vup>+0.15</>/秒",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "萨尔贡浓茶",
+        "desc": "技力自然回复速度<@ba.vup>+0.25</>/秒",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm051": {
+    "description": "部署时，获得<@ba.vup>3</>点技力；每有一个同盟约的其他干员，额外获得<@ba.vup>3</>点技力",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "迅捷作战粮",
+        "desc": "部署时，获得<@ba.vup>3</>点技力；每有一个同盟约的其他干员，额外获得<@ba.vup>3</>点技力",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "迅捷作战粮",
+        "desc": "部署时，获得<@ba.vup>6</>点技力；每有一个同盟约的其他干员，额外获得<@ba.vup>6</>点技力",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm052": {
+    "description": "每次攻击或治疗后，本场战斗中攻击速度<@ba.vup>+1</>，最高60层",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "有限加速器",
+        "desc": "每次攻击或治疗后，本场战斗中攻击速度<@ba.vup>+1</>，最高60层",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "有限加速器",
+        "desc": "每次攻击或治疗后，本场战斗中攻击速度<@ba.vup>+2</>，最高60层",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm053": {
+    "description": "攻击无视目标<@ba.vup>25%</>法术抗性",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "激光发射器",
+        "desc": "攻击无视目标<@ba.vup>25%</>法术抗性",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "激光发射器",
+        "desc": "攻击无视目标<@ba.vup>45%</>法术抗性",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm054": {
+    "description": "更容易受到攻击，生命值<@ba.vup>+40%</>",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "蜂鸣器",
+        "desc": "更容易受到攻击，生命值<@ba.vup>+40%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "蜂鸣器",
+        "desc": "更容易受到攻击，生命值<@ba.vup>+60%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm055": {
+    "description": "首次受到伤害后获得<$ba.invisible>隐匿</>，持续15秒",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "伪装服",
+        "desc": "首次受到伤害后获得<$ba.invisible>隐匿</>，持续15秒",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "伪装服",
+        "desc": "首次受到伤害后获得<$ba.invisible>隐匿</>，持续25秒",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm056": {
+    "description": "再部署时间<@ba.vup>-30%</>，生命值<@ba.vdown>-30%</>",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "不屈弹射器",
+        "desc": "再部署时间<@ba.vup>-30%</>，生命值<@ba.vdown>-30%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "不屈弹射器",
+        "desc": "再部署时间<@ba.vup>-50%</>，生命值<@ba.vdown>-30%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm057": {
+    "description": "子弹类技能剩余一发子弹时有50%概率恢复40%的子弹（每次部署最多触发3次）",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "拉特兰桥夹",
+        "desc": "子弹类技能剩余一发子弹时有50%概率恢复40%的子弹（每次部署最多触发3次）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "拉特兰桥夹",
+        "desc": "子弹类技能剩余一发子弹时有60%概率恢复60%的子弹（每次部署最多触发3次）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm058": {
+    "description": "攻击时有3%概率使目标获得一层<$ba.palsy>麻痹</>",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "催泪瓦斯",
+        "desc": "攻击时有3%概率使目标获得一层<$ba.palsy>麻痹</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "催泪瓦斯",
+        "desc": "攻击时有5%概率使目标获得一层<$ba.palsy>麻痹</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm059": {
+    "description": "生命值大于70%时，免疫<$ba.stun>晕眩</>、<$ba.frozen>冻结</>等特殊状态",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "浓缩嗅盐",
+        "desc": "生命值大于70%时，免疫<$ba.stun>晕眩</>、<$ba.frozen>冻结</>等特殊状态",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "浓缩嗅盐",
+        "desc": "生命值大于40%时，免疫<$ba.stun>晕眩</>、<$ba.frozen>冻结</>等特殊状态",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm060": {
+    "description": "阻挡敌人时，受到来自非自身阻挡单位的伤害降低<@ba.vup>40%</>",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "防暴盾",
+        "desc": "阻挡敌人时，受到来自非自身阻挡单位的伤害降低<@ba.vup>40%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "防暴盾",
+        "desc": "阻挡敌人时，受到来自非自身阻挡单位的伤害降低<@ba.vup>70%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm061": {
+    "description": "治疗时有10%概率使目标获得1层<$ba.shield>护盾</>（最多1层）",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "护盾无人机",
+        "desc": "治疗时有10%概率使目标获得1层<$ba.shield>护盾</>（最多1层）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "护盾无人机",
+        "desc": "治疗时有15%概率使目标获得1层<$ba.shield>护盾</>（最多1层）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm062": {
+    "description": "攻击时有12%概率对目标施加1.5秒的<$ba.cold>寒冷</>",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "谢拉格不融冰",
+        "desc": "攻击时有12%概率对目标施加1.5秒的<$ba.cold>寒冷</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "谢拉格不融冰",
+        "desc": "攻击时有20%概率对目标施加1.5秒的<$ba.cold>寒冷</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm063": {
+    "description": "攻击距离自身3格及以上的目标时，伤害提高<@ba.vup>30%</>",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "精准狙击镜",
+        "desc": "攻击距离自身3格及以上的目标时，伤害提高<@ba.vup>30%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "精准狙击镜",
+        "desc": "攻击距离自身3格及以上的目标时，伤害提高<@ba.vup>50%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm064": {
+    "description": "每次部署后的10秒内，攻击时使目标<$ba.stun>晕眩</>2秒",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "突袭手雷",
+        "desc": "每次部署后的10秒内，攻击时使目标<$ba.stun>晕眩</>2秒",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "突袭手雷",
+        "desc": "每次部署后的15秒内，攻击时使目标<$ba.stun>晕眩</>2秒",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm065": {
+    "description": "每攻击1个目标，回复自身<@ba.vup>2%</>最大生命值",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "休眠子裔",
+        "desc": "每攻击1个目标，回复自身<@ba.vup>2%</>最大生命值",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "休眠子裔",
+        "desc": "每攻击1个目标，回复自身<@ba.vup>4%</>最大生命值",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm066": {
+    "description": "装备时销毁，并获得<@ba.vup>1</>资金",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "盟约之币",
+        "desc": "装备时销毁，并获得<@ba.vup>1</>资金",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "盟约之币",
+        "desc": "装备时销毁，并获得<@ba.vup>2</>资金",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm067": {
+    "description": "攻击力<@ba.vup>+30%</>，自身造成物理和法术伤害时，伤害类型转化为<$ba.weaknessatk>弱点伤害</>",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "双模机械臂",
+        "desc": "攻击力<@ba.vup>+30%</>，自身造成物理和法术伤害时，伤害类型转化为<$ba.weaknessatk>弱点伤害</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "双模机械臂",
+        "desc": "攻击力<@ba.vup>+50%</>，自身造成物理和法术伤害时，伤害类型转化为<$ba.weaknessatk>弱点伤害</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm068": {
+    "description": "战斗阶段被击倒时立刻复活（一场战斗仅<@ba.vup>1</>次）",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "M3茧甲",
+        "desc": "战斗阶段被击倒时立刻复活（一场战斗仅<@ba.vup>1</>次）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "M3茧甲",
+        "desc": "战斗阶段被击倒时立刻复活（一场战斗仅<@ba.vup>2</>次）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm069": {
+    "description": "装备时销毁，若已拥有至少2名该初始干员，则再获得1名该初始干员；否则随机获得1名同盟约初始干员",
+    "golden": false,
+    "talents": [
+      {
+        "name": "拟态物质",
+        "description": "本装备不会合并为进阶品质"
+      }
+    ],
+    "skills": [
+      {
+        "name": "拟态物质",
+        "desc": "装备时销毁，若已拥有至少2名该初始干员，则再获得1名该初始干员；否则随机获得1名同盟约初始干员",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "拟态物质",
+        "desc": "装备时销毁，若已拥有至少2名该初始干员，则再获得1名该初始干员；否则随机获得1名同盟约初始干员",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm070": {
+    "description": "装备时销毁，最大可部署人数变为9",
+    "golden": false,
+    "talents": [
+      {
+        "name": "人事部文档",
+        "description": "本装备不会合并为进阶品质"
+      }
+    ],
+    "skills": [
+      {
+        "name": "人事部文档",
+        "desc": "装备时销毁，最大可部署人数变为9",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "人事部文档",
+        "desc": "装备时销毁，最大可部署人数变为9",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm071": {
+    "description": "任意干员可装备，下个回合开始时销毁，并使该干员晋升为精锐干员",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "博士投影",
+        "desc": "任意干员可装备，下个回合开始时销毁，并使该干员晋升为精锐干员",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "博士投影",
+        "desc": "任意干员可装备，立即使该干员晋升为精锐干员",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm072": {
+    "description": "战斗结束后，装备者替换为高一阶的随机干员",
+    "golden": false,
+    "talents": [
+      {
+        "name": "拟态物质",
+        "description": "本装备不会合并为进阶品质"
+      }
+    ],
+    "skills": [
+      {
+        "name": "突变细胞",
+        "desc": "战斗结束后，装备者替换为高一阶的随机干员",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "突变细胞",
+        "desc": "战斗结束后，装备者替换为高一阶的随机干员",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm073": {
+    "description": "携带者获得额外盟约（由另一件携带装备而定）\\n<@ba.acrem>具体对应关系可在模拟中查看本装备天赋栏</>",
+    "golden": false,
+    "talents": [
+      {
+        "name": "变形同构体",
+        "description": "“炎国短刀”→【炎】盟约\\n“维式重锤”系列装备→【维多利亚】盟约\\n“阿戈尔重刃”→【阿戈尔】盟约\\n“坚守盾牌”→【坚守】盟约\\n“萨尔贡浓茶”→【萨尔贡】盟约\\n“不屈弹射器”→【不屈】盟约\\n“拉特兰桥夹”→【拉特兰】盟约\\n“谢拉格不融冰”→【谢拉格】盟约\\n“精准狙击镜”→【精准】盟约\\n“突袭手雷”→【突袭】盟约\\n“迅捷作战粮”→【迅捷】盟约\\n“卡西米尔竞技旗”→【卡西米尔】盟约\\n“叙拉古正装”→【叙拉古】盟约\\n“奥术法阵”→【奥术】盟约\\n本装备不会合并为进阶品质"
+      }
+    ],
+    "skills": [
+      {
+        "name": "变形同构体",
+        "desc": "携带者获得额外盟约（由另一件携带装备而定）\\n<@ba.acrem>具体对应关系可在模拟中查看本装备天赋栏</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "变形同构体",
+        "desc": "携带者获得额外盟约（由另一件携带装备而定）\\n<@ba.acrem>具体对应关系可在模拟中查看本装备天赋栏</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm074": {
+    "description": "每出售8名干员，额外获得一个与此装备携带者的同盟约初始干员（不高于当前调度中心等级）",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "商业包装方案",
+        "desc": "每出售8名干员，额外获得一个与此装备携带者的同盟约初始干员（不高于当前调度中心等级）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "商业包装方案",
+        "desc": "每出售7名干员，额外获得一个与此装备携带者的同盟约初始干员（不高于当前调度中心等级）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm075": {
+    "description": "装备时销毁，立即特殊刷新一次调度中心，出现三名与该干员有相同盟约的干员，免费获取其中一名！（不高于当前调度中心等级）",
+    "golden": false,
+    "talents": [
+      {
+        "name": "寻呼模块",
+        "description": "本装备不会合并为进阶品质"
+      }
+    ],
+    "skills": [
+      {
+        "name": "寻呼模块",
+        "desc": "装备时销毁，立即特殊刷新一次调度中心，出现三名与该干员有相同盟约的干员，免费获取其中一名！（不高于当前调度中心等级）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "寻呼模块",
+        "desc": "装备时销毁，立即特殊刷新一次调度中心，出现三名与该干员有相同盟约的干员，免费获取其中一名！（不高于当前调度中心等级）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm076": {
+    "description": "攻击力<@ba.vup>+40%</>；若携带者为【拉特兰】盟约干员，该干员每次攻击时，有35%概率额外对攻击范围内一名敌人发射子弹造成<@ba.vup>150%</>攻击力的物理伤害\\n<@ba.acrem>若该【拉特兰】盟约干员同时装备“拉特兰桥夹”，子弹伤害改为<@ba.vup>300%</>攻击力</>",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "铳骑之威",
+        "desc": "攻击力<@ba.vup>+40%</>；若携带者为【拉特兰】盟约干员，该干员每次攻击时，有35%概率额外对攻击范围内一名敌人发射子弹造成<@ba.vup>150%</>攻击力的物理伤害\\n<@ba.acrem>若该【拉特兰】盟约干员同时装备“拉特兰桥夹”，子弹伤害改为<@ba.vup>300%</>攻击力</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "铳骑之威",
+        "desc": "攻击力<@ba.vup>+60%</>；若携带者为【拉特兰】盟约干员，该干员每次攻击时，有35%概率额外对攻击范围内一名敌人发射子弹造成<@ba.vup>150%</>攻击力的物理伤害\\n<@ba.acrem>若该【拉特兰】盟约干员同时装备“拉特兰桥夹”，子弹伤害改为<@ba.vup>300%</>攻击力</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm077": {
+    "description": "生命值<@ba.vup>+45%</>；若携带者为【炎】盟约干员，本回合每获得过1名干员战斗开始后攻击速度<@ba.vup>+25</>（最多3层）\\n<@ba.acrem>若该【炎】盟约干员同时装备“炎国短刀”，每次获得干员时获得<@ba.vup>2</>资金（每回合最多3次）</>",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "天师古鼎",
+        "desc": "生命值<@ba.vup>+45%</>；若携带者为【炎】盟约干员，本回合每获得过1名干员战斗开始后攻击速度<@ba.vup>+25</>（最多3层）\\n<@ba.acrem>若该【炎】盟约干员同时装备“炎国短刀”，每次获得干员时获得<@ba.vup>2</>资金（每回合最多3次）</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "天师古鼎",
+        "desc": "生命值<@ba.vup>+70%</>；若携带者为【炎】盟约干员，本回合每获得过1名干员战斗开始后攻击速度<@ba.vup>+25</>（最多3层）\\n<@ba.acrem>若该【炎】盟约干员同时装备“炎国短刀”，每次获得干员时获得<@ba.vup>2</>资金（每回合最多3次）</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm078": {
+    "description": "获得<@ba.vup>180</>点<$ba.dmgresistance>伤害减免</>；若携带者为【阿戈尔】盟约干员，自身受到伤害时对伤害来源造成自身攻击力<@ba.vup>50%</>的法术伤害（每0.5秒最多触发一次）\\n<@ba.acrem>若该【阿戈尔】盟约干员同时装备“阿戈尔重刃”，则自身受到伤害时额外造成一次<@ba.vup>50%</>攻击力的法术伤害（每0.5秒最多触发一次）</>",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "海沟实验体",
+        "desc": "获得<@ba.vup>180</>点<$ba.dmgresistance>伤害减免</>；若携带者为【阿戈尔】盟约干员，自身受到伤害时对伤害来源造成自身攻击力<@ba.vup>50%</>的法术伤害（每0.5秒最多触发一次）\\n<@ba.acrem>若该【阿戈尔】盟约干员同时装备“阿戈尔重刃”，则自身受到伤害时额外造成一次<@ba.vup>50%</>攻击力的法术伤害（每0.5秒最多触发一次）</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "海沟实验体",
+        "desc": "获得<@ba.vup>300</>点<$ba.dmgresistance>伤害减免</>；若携带者为【阿戈尔】盟约干员，自身受到伤害时对伤害来源造成自身攻击力<@ba.vup>50%</>的法术伤害（每0.5秒最多触发一次）\\n<@ba.acrem>若该【阿戈尔】盟约干员同时装备“阿戈尔重刃”，则自身受到伤害时额外造成一次<@ba.vup>50%</>的攻击力的法术伤害（每0.5秒最多触发一次）</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm079": {
+    "description": "攻击速度<@ba.vup>+35</>；若携带者为【维多利亚】盟约干员，该干员获得当前场上所有维式重锤特殊效果\\n<@ba.acrem>若该【维多利亚】盟约干员同时装备“维式重锤”系列装备，该“维式重锤”装备特殊效果获得强化（效果变为2倍）</>",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "蒸汽之心",
+        "desc": "攻击速度<@ba.vup>+35</>；若携带者为【维多利亚】盟约干员，该干员获得当前场上所有维式重锤特殊效果\\n<@ba.acrem>若该【维多利亚】盟约干员同时装备“维式重锤”系列装备，该“维式重锤”装备特殊效果获得强化（效果变为2倍）</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "蒸汽之心",
+        "desc": "攻击速度<@ba.vup>+55</>；若携带者为【维多利亚】盟约干员，该干员获得当前场上所有维式重锤特殊效果\\n<@ba.acrem>若该【维多利亚】盟约干员同时装备“维式重锤”系列装备，该“维式重锤”装备特殊效果获得强化（效果变为2倍）</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm102": {
+    "description": "法术抗性<@ba.vup>+30</>；若携带者为【谢拉格】盟约干员，该干员攻击范围内被<$ba.cold>寒冷</>或<$ba.frozen>冻结</>的敌人每秒受到一次自身攻击力<@ba.vup>30%</>的法术伤害\\n<@ba.acrem>若该【谢拉格】盟约干员同时装备“谢拉格不融冰”，则使自身攻击范围内<$ba.cold>寒冷</>或<$ba.frozen>冻结</>的敌人每秒受到的法术伤害提升至<@ba.vup>100%</>攻击力</>",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "耶拉冈德之泪",
+        "desc": "法术抗性<@ba.vup>+30</>；若携带者为【谢拉格】盟约干员，该干员攻击范围内被<$ba.cold>寒冷</>或<$ba.frozen>冻结</>的敌人每秒受到一次自身攻击力<@ba.vup>30%</>的法术伤害\\n<@ba.acrem>若该【谢拉格】盟约干员同时装备“谢拉格不融冰”，则使自身攻击范围内<$ba.cold>寒冷</>或<$ba.frozen>冻结</>的敌人每秒受到的法术伤害提升至<@ba.vup>100%</>攻击力</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "耶拉冈德之泪",
+        "desc": "法术抗性<@ba.vup>+50</>；若携带者为【谢拉格】盟约干员，该干员攻击范围内被<$ba.cold>寒冷</>或<$ba.frozen>冻结</>的敌人每秒受到一次自身攻击力<@ba.vup>30%</>的法术伤害\\n<@ba.acrem>若该【谢拉格】盟约干员同时装备“谢拉格不融冰”，则使自身攻击范围内<$ba.cold>寒冷</>或<$ba.frozen>冻结</>的敌人每秒受到的法术伤害提升至<@ba.vup>100%</>攻击力</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm103": {
+    "description": "初始技力<@ba.vup>+30</>；若携带者为【萨尔贡】盟约干员，该干员首次技能结束时立刻回复<@ba.vup>30</>点技力\\n<@ba.acrem>若该【萨尔贡】盟约干员同时装备“萨尔贡浓茶”，每次开启技能时为全部【萨尔贡】干员回复<@ba.vup>3</>点技力</>",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "黄沙罗盘",
+        "desc": "初始技力<@ba.vup>+30</>；若携带者为【萨尔贡】盟约干员，该干员首次技能结束时立刻回复<@ba.vup>30</>点技力\\n<@ba.acrem>若该【萨尔贡】盟约干员同时装备“萨尔贡浓茶”，每次开启技能时为全部【萨尔贡】干员回复<@ba.vup>3</>点技力</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "黄沙罗盘",
+        "desc": "初始技力<@ba.vup>+50</>；若携带者为【萨尔贡】盟约干员，该干员首次技能结束时立刻回复<@ba.vup>30</>点技力\\n<@ba.acrem>若该【萨尔贡】盟约干员同时装备“萨尔贡浓茶”，每次开启技能时为全部【萨尔贡】干员回复<@ba.vup>3</>点技力</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm109": {
+    "description": "装备时，目标干员和本装备销毁并进行一次特殊刷新，出现两名与携带者同等阶的干员，免费获取其中一名\\n<@ba.rem>若在同盟模拟中且存在其他队友，下个休整期向相应盟约人数最多的队友发送1个原干员</>\\n<@ba.acrem>相应盟约人数相同则随机发送</>\\n<@ba.acrem>无法装备给自编干员</>",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "信标",
+        "desc": "装备时，目标干员和本装备销毁并进行一次特殊刷新，出现两名与携带者同等阶的干员，免费获取其中一名\\n<@ba.rem>若在同盟模拟中且存在其他队友，下个休整期向相应盟约人数最多的队友发送1个原干员</>\\n<@ba.acrem>相应盟约人数相同则随机发送</>\\n<@ba.acrem>无法装备给自编干员</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "信标",
+        "desc": "装备时，目标干员和本装备销毁并进行一次特殊刷新，出现两名与携带者同等阶的干员，免费获取其中一名\\n<@ba.rem>若在同盟模拟中且存在其他队友，下个休整期向相应盟约人数最多的队友发送1个原干员</>\\n<@ba.acrem>相应盟约人数相同则随机发送</>\\n<@ba.acrem>无法装备给自编干员</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm113": {
+    "description": "装备时销毁，之后每回合开始时额外获得<@ba.vup>1</>资金",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "精打细算玩偶",
+        "desc": "装备时销毁，之后每回合开始时额外获得<@ba.vup>1</>资金",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "精打细算玩偶",
+        "desc": "装备时销毁，之后每回合开始时额外获得<@ba.vup>2</>资金",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm114": {
+    "description": "装备时销毁，随机获得<@ba.vup>1</>名与该干员有相同盟约的干员",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "简易通讯机",
+        "desc": "装备时销毁，随机获得<@ba.vup>1</>名与该干员有相同盟约的干员",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "简易通讯机",
+        "desc": "装备时销毁，随机获得<@ba.vup>2</>名与该干员有相同盟约的干员",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm115": {
+    "description": "装备时销毁，随机获取当前调度中心内的<@ba.vup>1</>名干员 （调度中心中对应干员消失）",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "紧急调度券",
+        "desc": "装备时销毁，随机获取当前调度中心内的<@ba.vup>1</>名干员 （调度中心中对应干员消失）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "紧急调度券",
+        "desc": "装备时销毁，随机获取当前调度中心内的<@ba.vup>2</>名干员 （调度中心中对应干员消失）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm116": {
+    "description": "装备时销毁，下回合额外获得<@ba.vup>2</>资金",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "见钱眼开玩偶",
+        "desc": "装备时销毁，下回合额外获得<@ba.vup>2</>资金",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "见钱眼开玩偶",
+        "desc": "装备时销毁，下回合额外获得<@ba.vup>4</>资金",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm117": {
+    "description": "攻击力<@ba.vup>+40%</>，若与“天马之盔”一起装备，造成伤害时额外造成<@ba.vup>30%</>的真实伤害",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "天马之枪",
+        "desc": "攻击力<@ba.vup>+40%</>，若与“天马之盔”一起装备，造成伤害时额外造成<@ba.vup>30%</>的真实伤害",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "天马之枪",
+        "desc": "攻击力<@ba.vup>+60%</>，若与“天马之盔”一起装备，造成伤害时额外造成<@ba.vup>30%</>的真实伤害",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm118": {
+    "description": "生命值<@ba.vup>+50%</>，若与“天马之枪”一起装备，每秒回复<@ba.vup>8%</>最大生命值。",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "天马之盔",
+        "desc": "生命值<@ba.vup>+50%</>，若与“天马之枪”一起装备，每秒回复<@ba.vup>8%</>最大生命值。",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "天马之盔",
+        "desc": "生命值<@ba.vup>+75%</>，若与“天马之枪”一起装备，每秒回复<@ba.vup>8%</>最大生命值。",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm119": {
+    "description": "部署后<@ba.vup>15</>秒内造成的伤害提升至<@ba.vup>135%</>，随后逐渐衰减",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "卡西米尔竞技旗",
+        "desc": "部署后<@ba.vup>15</>秒内造成的伤害提升至<@ba.vup>135%</>，随后逐渐衰减",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "卡西米尔竞技旗",
+        "desc": "部署后<@ba.vup>15</>秒内造成的伤害提升至<@ba.vup>160%</>，随后逐渐衰减",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm120": {
+    "description": "再部署时间<@ba.vup>-40%</>；若携带者为【卡西米尔】盟约干员，开启技能后20s内，使攻击范围内敌人攻击速度<@ba.vup>-35%</>，移动速度<@ba.vup>-35%</>\\n<@ba.acrem>若该【卡西米尔】盟约干员同时装备“卡西米尔竞技旗”，该卡西米尔干员技能持续期间，攻击力<@ba.vup>+100%</>，且受到致命伤害时不撤退，技能结束后退场</>",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "骑士戒律",
+        "desc": "再部署时间<@ba.vup>-40%</>；若携带者为【卡西米尔】盟约干员，开启技能后20s内，使攻击范围内敌人攻击速度<@ba.vup>-35%</>，移动速度<@ba.vup>-35%</>\\n<@ba.acrem>若该【卡西米尔】盟约干员同时装备“卡西米尔竞技旗”，该卡西米尔干员技能持续期间，攻击力<@ba.vup>+100%</>，且受到致命伤害时不撤退，技能结束后退场</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "骑士戒律",
+        "desc": "再部署时间<@ba.vup>-60%</>；若携带者为【卡西米尔】盟约干员，开启技能后20s内，使攻击范围内敌人攻击速度<@ba.vup>-35%</>，移动速度<@ba.vup>-35%</>\\n<@ba.acrem>若该【卡西米尔】盟约干员同时装备“卡西米尔竞技旗”，该卡西米尔干员技能持续期间，攻击力<@ba.vup>+100%</>，且受到致命伤害时不撤退，技能结束后退场</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm121": {
+    "description": "攻击速度<@ba.vup>+15</>，携带者部署方向左右两侧的我方干员攻击速度<@ba.vup>+10</>",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "叙拉古正装",
+        "desc": "攻击速度<@ba.vup>+15</>，携带者部署方向左右两侧的我方干员攻击速度<@ba.vup>+10</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "叙拉古正装",
+        "desc": "攻击速度<@ba.vup>+25</>，携带者部署方向左右两侧的我方干员攻击速度<@ba.vup>+15</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm122": {
+    "description": "技力自然回复速度<@ba.vup>+0.2</>/秒；若携带者为【叙拉古】盟约干员，该干员处于隐匿状态时，攻击力逐渐提升至<@ba.vup>200%</>，持续至隐匿结束后首次造成伤害或干员离场\\n<@ba.acrem>若该【叙拉古】盟约干员同时装备“叙拉古正装”，该叙拉古干员失去隐匿后首次造成伤害时额外造成<@ba.vup>800%</>攻击力的真实伤害</>",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "家族徽章",
+        "desc": "技力自然回复速度<@ba.vup>+0.2</>/秒；若携带者为【叙拉古】盟约干员，该干员处于隐匿状态时，攻击力逐渐提升至<@ba.vup>200%</>，持续至隐匿结束后首次造成伤害或干员离场\\n<@ba.acrem>若该【叙拉古】盟约干员同时装备“叙拉古正装”，该叙拉古干员失去隐匿后首次造成伤害时额外造成<@ba.vup>800%</>攻击力的真实伤害</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "家族徽章",
+        "desc": "技力自然回复速度<@ba.vup>+0.35</>/秒；若携带者为【叙拉古】盟约干员，该干员处于隐匿状态时，攻击力逐渐提升至<@ba.vup>200%</>，持续至隐匿结束后首次造成伤害或干员离场\\n<@ba.acrem>若该【叙拉古】盟约干员同时装备“叙拉古正装”，该叙拉古干员失去隐匿后首次造成伤害时额外造成<@ba.vup>800%</>攻击力的真实伤害</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm123": {
+    "description": "装备时销毁，并随机获得<@ba.vup>1~6</>资金",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "骑士储蓄罐",
+        "desc": "装备时销毁，并随机获得<@ba.vup>1~6</>资金",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "骑士储蓄罐",
+        "desc": "装备时销毁，并随机获得<@ba.vup>2~12</>资金",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm124": {
+    "description": "装备时销毁，并使携带者所属盟约层数<@ba.vup>+3</>（无需激活盟约）",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "随身身份牌",
+        "desc": "装备时销毁，并使携带者所属盟约层数<@ba.vup>+3</>（无需激活盟约）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "随身身份牌",
+        "desc": "装备时销毁，并使携带者所属盟约层数<@ba.vup>+6</>（无需激活盟约）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acarm125": {
+    "description": "携带者每秒流失<@ba.vdown>60</>点生命值，攻击力<@ba.vup>+40%</>",
+    "golden": false,
+    "talents": [],
+    "skills": [
+      {
+        "name": "源石溶剂",
+        "desc": "携带者每秒流失<@ba.vdown>60</>点生命值，攻击力<@ba.vup>+40%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "源石溶剂",
+        "desc": "携带者每秒流失<@ba.vdown>60</>点生命值，攻击力<@ba.vup>+60%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acchal": {
+    "description": "拖拽至场上使用后，选择一项悬赏任务进行挑战",
+    "golden": false,
+    "talents": [
+      {
+        "name": null,
+        "description": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "教鞭",
+        "desc": "拖拽至场上使用后，选择一项悬赏任务进行挑战",
+        "rangeId": "0-1",
+        "rangeGrids": [
+          {
+            "row": 0,
+            "col": 0
+          }
+        ],
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_acchal_1"
+      }
+    ]
+  },
+  "eff_accopy": {
+    "description": "拖拽至场上使用后，获得范围内的干员（包括精锐状态和装备！）",
+    "golden": false,
+    "talents": [
+      {
+        "name": null,
+        "description": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "画卷",
+        "desc": "拖拽至场上使用后，获得范围内的干员（包括精锐状态和装备！）",
+        "rangeId": "1-1",
+        "rangeGrids": [
+          {
+            "row": 0,
+            "col": 0
+          },
+          {
+            "row": 0,
+            "col": 1
+          }
+        ],
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_accopy_1"
+      }
+    ]
+  },
+  "eff_acdisney": {
+    "description": "拖拽至场上使用后，选择一项特殊悬赏任务进行挑战；主动销毁时获得1份资金，并将“神秘顾客”传递给下一名玩家",
+    "golden": false,
+    "talents": [
+      {
+        "name": null,
+        "description": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "“神秘顾客”",
+        "desc": "拖拽至场上使用后，选择一项特殊悬赏任务进行挑战；主动销毁时获得1份资金，并将“神秘顾客”传递给下一名玩家",
+        "rangeId": "0-1",
+        "rangeGrids": [
+          {
+            "row": 0,
+            "col": 0
+          }
+        ],
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_acdisney_1"
+      }
+    ]
+  },
+  "eff_acgarm040": {
+    "description": "每开启一次技能，获得<@ba.vup>8%</>的攻击力加成（最多叠加10次）",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "炎国短刀",
+        "desc": "每开启一次技能，获得<@ba.vup>5%</>的攻击力加成（最多叠加10次）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "炎国短刀",
+        "desc": "每开启一次技能，获得<@ba.vup>8%</>的攻击力加成（最多叠加10次）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm041": {
+    "description": "攻击力<@ba.vup>+25%</>",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "维式重锤",
+        "desc": "攻击力<@ba.vup>+15%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "维式重锤",
+        "desc": "攻击力<@ba.vup>+25%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm042": {
+    "description": "攻击力<@ba.vup>+50%</>；造成法术伤害附带相当于<@ba.vup>10%</>伤害的<$ba.dt.burning2>灼燃损伤</>",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "灼燃维式重锤",
+        "desc": "攻击力<@ba.vup>+30%</>；造成法术伤害附带相当于<@ba.vup>10%</>伤害的<$ba.dt.burning2>灼燃损伤</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "灼燃维式重锤",
+        "desc": "攻击力<@ba.vup>+50%</>；造成法术伤害附带相当于<@ba.vup>10%</>伤害的<$ba.dt.burning2>灼燃损伤</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm043": {
+    "description": "攻击力<@ba.vup>+45%</>；首次受到致命伤害时生命值不低于<@ba.vup>1</>，持续8秒",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "坚固维式重锤",
+        "desc": "攻击力<@ba.vup>+25%</>；首次受到致命伤害时生命值不低于<@ba.vup>1</>，持续8秒",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "坚固维式重锤",
+        "desc": "攻击力<@ba.vup>+45%</>；首次受到致命伤害时生命值不低于<@ba.vup>1</>，持续8秒",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm044": {
+    "description": "攻击力<@ba.vup>+45%</>；攻击速度<@ba.vup>+30</>",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "加速维式重锤",
+        "desc": "攻击力<@ba.vup>+25%</>；攻击速度<@ba.vup>+30</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "加速维式重锤",
+        "desc": "攻击力<@ba.vup>+45%</>；攻击速度<@ba.vup>+30</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm045": {
+    "description": "攻击力<@ba.vup>+35%</>；若携带者是地面干员则攻击时有10%概率使目标<$ba.tremble>战栗</>2秒",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "战栗维式重锤",
+        "desc": "攻击力<@ba.vup>+20%</>；若携带者是地面干员则攻击时有10%概率使目标<$ba.tremble>战栗</>2秒",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "战栗维式重锤",
+        "desc": "攻击力<@ba.vup>+35%</>；若携带者是地面干员则攻击时有10%概率使目标<$ba.tremble>战栗</>2秒",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm046": {
+    "description": "攻击力<@ba.vup>+60%</>，攻击速度<@ba.vdown>-10</>",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "阿戈尔重刃",
+        "desc": "攻击力<@ba.vup>+40%</>，攻击速度<@ba.vdown>-10</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "阿戈尔重刃",
+        "desc": "攻击力<@ba.vup>+60%</>，攻击速度<@ba.vdown>-10</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm047": {
+    "description": "防御力<@ba.vup>+35%</>",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "坚守盾牌",
+        "desc": "防御力<@ba.vup>+20%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "坚守盾牌",
+        "desc": "防御力<@ba.vup>+35%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm048": {
+    "description": "法术抗性<@ba.vup>+30</>，攻击使目标失去特殊能力<@ba.vup>5</>秒",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "奥术法阵",
+        "desc": "法术抗性<@ba.vup>+20</>，攻击使目标失去特殊能力<@ba.vup>5</>秒",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "奥术法阵",
+        "desc": "法术抗性<@ba.vup>+30</>，攻击使目标失去特殊能力<@ba.vup>5</>秒",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm049": {
+    "description": "生命值<@ba.vup>+45%</>；部署时若身前一格没有其他干员，生命值额外<@ba.vup>+25%</>",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "歌利亚头盔",
+        "desc": "生命值<@ba.vup>+25%</>；部署时若身前一格没有其他干员，生命值额外<@ba.vup>+15%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "歌利亚头盔",
+        "desc": "生命值<@ba.vup>+45%</>；部署时若身前一格没有其他干员，生命值额外<@ba.vup>+25%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm050": {
+    "description": "技力自然回复速度<@ba.vup>+0.25</>/秒",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "萨尔贡浓茶",
+        "desc": "技力自然回复速度<@ba.vup>+0.15</>/秒",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "萨尔贡浓茶",
+        "desc": "技力自然回复速度<@ba.vup>+0.25</>/秒",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm051": {
+    "description": "部署时，获得<@ba.vup>6</>点技力；每有一个同盟约的其他干员，额外获得<@ba.vup>6</>点技力",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "迅捷作战粮",
+        "desc": "部署时，获得<@ba.vup>3</>点技力；每有一个同盟约的其他干员，额外获得<@ba.vup>3</>点技力",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "迅捷作战粮",
+        "desc": "部署时，获得<@ba.vup>6</>点技力；每有一个同盟约的其他干员，额外获得<@ba.vup>6</>点技力",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm052": {
+    "description": "每次攻击或治疗后，本场战斗中攻击速度<@ba.vup>+2</>，最高60层",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "有限加速器",
+        "desc": "每次攻击或治疗后，本场战斗中攻击速度<@ba.vup>+1</>，最高60层",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "有限加速器",
+        "desc": "每次攻击或治疗后，本场战斗中攻击速度<@ba.vup>+2</>，最高60层",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm053": {
+    "description": "攻击无视目标<@ba.vup>45%</>法术抗性",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "激光发射器",
+        "desc": "攻击无视目标<@ba.vup>25%</>法术抗性",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "激光发射器",
+        "desc": "攻击无视目标<@ba.vup>45%</>法术抗性",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm054": {
+    "description": "更容易受到攻击，生命值<@ba.vup>+60%</>",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "蜂鸣器",
+        "desc": "更容易受到攻击，生命值<@ba.vup>+40%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "蜂鸣器",
+        "desc": "更容易受到攻击，生命值<@ba.vup>+60%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm055": {
+    "description": "首次受到伤害后获得<$ba.invisible>隐匿</>，持续25秒",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "伪装服",
+        "desc": "首次受到伤害后获得<$ba.invisible>隐匿</>，持续15秒",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "伪装服",
+        "desc": "首次受到伤害后获得<$ba.invisible>隐匿</>，持续25秒",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm056": {
+    "description": "再部署时间<@ba.vup>-50%</>，生命值<@ba.vdown>-30%</>",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "不屈弹射器",
+        "desc": "再部署时间<@ba.vup>-30%</>，生命值<@ba.vdown>-30%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "不屈弹射器",
+        "desc": "再部署时间<@ba.vup>-50%</>，生命值<@ba.vdown>-30%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm057": {
+    "description": "子弹类技能剩余一发子弹时有60%概率恢复60%的子弹（每次部署最多触发3次）",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "拉特兰桥夹",
+        "desc": "子弹类技能剩余一发子弹时有50%概率恢复40%的子弹（每次部署最多触发3次）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "拉特兰桥夹",
+        "desc": "子弹类技能剩余一发子弹时有60%概率恢复60%的子弹（每次部署最多触发3次）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm058": {
+    "description": "攻击时有5%概率使目标获得一层<$ba.palsy>麻痹</>",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "催泪瓦斯",
+        "desc": "攻击时有3%概率使目标获得一层<$ba.palsy>麻痹</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "催泪瓦斯",
+        "desc": "攻击时有5%概率使目标获得一层<$ba.palsy>麻痹</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm059": {
+    "description": "生命值大于40%时，免疫<$ba.stun>晕眩</>、<$ba.frozen>冻结</>等特殊状态",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "浓缩嗅盐",
+        "desc": "生命值大于70%时，免疫<$ba.stun>晕眩</>、<$ba.frozen>冻结</>等特殊状态",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "浓缩嗅盐",
+        "desc": "生命值大于40%时，免疫<$ba.stun>晕眩</>、<$ba.frozen>冻结</>等特殊状态",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm060": {
+    "description": "阻挡敌人时，受到来自非自身阻挡单位的伤害降低<@ba.vup>70%</>",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "防暴盾",
+        "desc": "阻挡敌人时，受到来自非自身阻挡单位的伤害降低<@ba.vup>40%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "防暴盾",
+        "desc": "阻挡敌人时，受到来自非自身阻挡单位的伤害降低<@ba.vup>70%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm061": {
+    "description": "治疗时有15%概率使目标获得1层<$ba.shield>护盾</>（最多1层）",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "护盾无人机",
+        "desc": "治疗时有10%概率使目标获得1层<$ba.shield>护盾</>（最多1层）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "护盾无人机",
+        "desc": "治疗时有15%概率使目标获得1层<$ba.shield>护盾</>（最多1层）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm062": {
+    "description": "攻击时有20%概率对目标施加1.5秒的<$ba.cold>寒冷</>",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "谢拉格不融冰",
+        "desc": "攻击时有12%概率对目标施加1.5秒的<$ba.cold>寒冷</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "谢拉格不融冰",
+        "desc": "攻击时有20%概率对目标施加1.5秒的<$ba.cold>寒冷</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm063": {
+    "description": "攻击距离自身3格及以上的目标时，伤害提高<@ba.vup>50%</>",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "精准狙击镜",
+        "desc": "攻击距离自身3格及以上的目标时，伤害提高<@ba.vup>30%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "精准狙击镜",
+        "desc": "攻击距离自身3格及以上的目标时，伤害提高<@ba.vup>50%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm064": {
+    "description": "每次部署后的15秒内，攻击时使目标<$ba.stun>晕眩</>2秒",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "突袭手雷",
+        "desc": "每次部署后的10秒内，攻击时使目标<$ba.stun>晕眩</>2秒",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "突袭手雷",
+        "desc": "每次部署后的15秒内，攻击时使目标<$ba.stun>晕眩</>2秒",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm065": {
+    "description": "每攻击1个目标，回复自身<@ba.vup>4%</>最大生命值",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "休眠子裔",
+        "desc": "每攻击1个目标，回复自身<@ba.vup>2%</>最大生命值",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "休眠子裔",
+        "desc": "每攻击1个目标，回复自身<@ba.vup>4%</>最大生命值",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm066": {
+    "description": "装备时销毁，并获得<@ba.vup>2</>资金",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "盟约之币",
+        "desc": "装备时销毁，并获得<@ba.vup>1</>资金",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "盟约之币",
+        "desc": "装备时销毁，并获得<@ba.vup>2</>资金",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm067": {
+    "description": "攻击力<@ba.vup>+50%</>，自身造成物理和法术伤害时，伤害类型转化为<$ba.weaknessatk>弱点伤害</>",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "双模机械臂",
+        "desc": "攻击力<@ba.vup>+30%</>，自身造成物理和法术伤害时，伤害类型转化为<$ba.weaknessatk>弱点伤害</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "双模机械臂",
+        "desc": "攻击力<@ba.vup>+50%</>，自身造成物理和法术伤害时，伤害类型转化为<$ba.weaknessatk>弱点伤害</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm068": {
+    "description": "战斗阶段被击倒时立刻复活（一场战斗仅<@ba.vup>2</>次）",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "M3茧甲",
+        "desc": "战斗阶段被击倒时立刻复活（一场战斗仅<@ba.vup>1</>次）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "M3茧甲",
+        "desc": "战斗阶段被击倒时立刻复活（一场战斗仅<@ba.vup>2</>次）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm069": {
+    "description": "装备时销毁，若已拥有至少2名该初始干员，则再获得1名该初始干员；否则随机获得1名同盟约初始干员",
+    "golden": true,
+    "talents": [
+      {
+        "name": "拟态物质",
+        "description": "本装备不会合并为进阶品质"
+      }
+    ],
+    "skills": [
+      {
+        "name": "拟态物质",
+        "desc": "装备时销毁，若已拥有至少2名该初始干员，则再获得1名该初始干员；否则随机获得1名同盟约初始干员",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "拟态物质",
+        "desc": "装备时销毁，若已拥有至少2名该初始干员，则再获得1名该初始干员；否则随机获得1名同盟约初始干员",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm070": {
+    "description": "装备时销毁，最大可部署人数变为9",
+    "golden": true,
+    "talents": [
+      {
+        "name": "人事部文档",
+        "description": "本装备不会合并为进阶品质"
+      }
+    ],
+    "skills": [
+      {
+        "name": "人事部文档",
+        "desc": "装备时销毁，最大可部署人数变为9",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "人事部文档",
+        "desc": "装备时销毁，最大可部署人数变为9",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm071": {
+    "description": "任意干员可装备，立即使该干员晋升为精锐干员",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "博士投影",
+        "desc": "任意干员可装备，下个回合开始时销毁，并使该干员晋升为精锐干员",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "博士投影",
+        "desc": "任意干员可装备，立即使该干员晋升为精锐干员",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm072": {
+    "description": "战斗结束后，装备者替换为高一阶的随机干员",
+    "golden": true,
+    "talents": [
+      {
+        "name": "拟态物质",
+        "description": "本装备不会合并为进阶品质"
+      }
+    ],
+    "skills": [
+      {
+        "name": "突变细胞",
+        "desc": "战斗结束后，装备者替换为高一阶的随机干员",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "突变细胞",
+        "desc": "战斗结束后，装备者替换为高一阶的随机干员",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm073": {
+    "description": "携带者获得额外盟约（由另一件携带装备而定）\\n<@ba.acrem>具体对应关系可在模拟中查看本装备天赋栏</>",
+    "golden": true,
+    "talents": [
+      {
+        "name": "变形同构体",
+        "description": "“炎国短刀”→【炎】盟约\\n“维式重锤”系列装备→【维多利亚】盟约\\n“阿戈尔重刃”→【阿戈尔】盟约\\n“坚守盾牌”→【坚守】盟约\\n“萨尔贡浓茶”→【萨尔贡】盟约\\n“不屈弹射器”→【不屈】盟约\\n“拉特兰桥夹”→【拉特兰】盟约\\n“谢拉格不融冰”→【谢拉格】盟约\\n“精准狙击镜”→【精准】盟约\\n“突袭手雷”→【突袭】盟约\\n“迅捷作战粮”→【迅捷】盟约\\n“卡西米尔竞技旗”→【卡西米尔】盟约\\n“叙拉古正装”→【叙拉古】盟约\\n“奥术法阵”→【奥术】盟约\\n本装备不会合并为进阶品质"
+      }
+    ],
+    "skills": [
+      {
+        "name": "变形同构体",
+        "desc": "携带者获得额外盟约（由另一件携带装备而定）\\n<@ba.acrem>具体对应关系可在模拟中查看本装备天赋栏</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "变形同构体",
+        "desc": "携带者获得额外盟约（由另一件携带装备而定）\\n<@ba.acrem>具体对应关系可在模拟中查看本装备天赋栏</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm074": {
+    "description": "每出售7名干员，额外获得一个与此装备携带者的同盟约初始干员（不高于当前调度中心等级）",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "商业包装方案",
+        "desc": "每出售8名干员，额外获得一个与此装备携带者的同盟约初始干员（不高于当前调度中心等级）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "商业包装方案",
+        "desc": "每出售7名干员，额外获得一个与此装备携带者的同盟约初始干员（不高于当前调度中心等级）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm075": {
+    "description": "装备时销毁，立即特殊刷新一次调度中心，出现三名与该干员有相同盟约的干员，免费获取其中一名！（不高于当前调度中心等级）",
+    "golden": true,
+    "talents": [
+      {
+        "name": "寻呼模块",
+        "description": "本装备不会合并为进阶品质"
+      }
+    ],
+    "skills": [
+      {
+        "name": "寻呼模块",
+        "desc": "装备时销毁，立即特殊刷新一次调度中心，出现三名与该干员有相同盟约的干员，免费获取其中一名！（不高于当前调度中心等级）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "寻呼模块",
+        "desc": "装备时销毁，立即特殊刷新一次调度中心，出现三名与该干员有相同盟约的干员，免费获取其中一名！（不高于当前调度中心等级）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm076": {
+    "description": "攻击力<@ba.vup>+60%</>；若携带者为【拉特兰】盟约干员，该干员每次攻击时，有35%概率额外对攻击范围内一名敌人发射子弹造成<@ba.vup>150%</>攻击力的物理伤害\\n<@ba.acrem>若该【拉特兰】盟约干员同时装备“拉特兰桥夹”，子弹伤害改为<@ba.vup>300%</>攻击力</>",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "铳骑之威",
+        "desc": "攻击力<@ba.vup>+40%</>；若携带者为【拉特兰】盟约干员，该干员每次攻击时，有35%概率额外对攻击范围内一名敌人发射子弹造成<@ba.vup>150%</>攻击力的物理伤害\\n<@ba.acrem>若该【拉特兰】盟约干员同时装备“拉特兰桥夹”，子弹伤害改为<@ba.vup>300%</>攻击力</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "铳骑之威",
+        "desc": "攻击力<@ba.vup>+60%</>；若携带者为【拉特兰】盟约干员，该干员每次攻击时，有35%概率额外对攻击范围内一名敌人发射子弹造成<@ba.vup>150%</>攻击力的物理伤害\\n<@ba.acrem>若该【拉特兰】盟约干员同时装备“拉特兰桥夹”，子弹伤害改为<@ba.vup>300%</>攻击力</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm077": {
+    "description": "生命值<@ba.vup>+70%</>；若携带者为【炎】盟约干员，本回合每获得过1名干员战斗开始后攻击速度<@ba.vup>+25</>（最多3层）\\n<@ba.acrem>若该【炎】盟约干员同时装备“炎国短刀”，每次获得干员时获得<@ba.vup>2</>资金（每回合最多3次）</>",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "天师古鼎",
+        "desc": "生命值<@ba.vup>+45%</>；若携带者为【炎】盟约干员，本回合每获得过1名干员战斗开始后攻击速度<@ba.vup>+25</>（最多3层）\\n<@ba.acrem>若该【炎】盟约干员同时装备“炎国短刀”，每次获得干员时获得<@ba.vup>2</>资金（每回合最多3次）</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "天师古鼎",
+        "desc": "生命值<@ba.vup>+70%</>；若携带者为【炎】盟约干员，本回合每获得过1名干员战斗开始后攻击速度<@ba.vup>+25</>（最多3层）\\n<@ba.acrem>若该【炎】盟约干员同时装备“炎国短刀”，每次获得干员时获得<@ba.vup>2</>资金（每回合最多3次）</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm078": {
+    "description": "获得<@ba.vup>300</>点<$ba.dmgresistance>伤害减免</>；若携带者为【阿戈尔】盟约干员，自身受到伤害时对伤害来源造成自身攻击力<@ba.vup>50%</>的法术伤害（每0.5秒最多触发一次）\\n<@ba.acrem>若该【阿戈尔】盟约干员同时装备“阿戈尔重刃”，则自身受到伤害时额外造成一次<@ba.vup>50%</>的攻击力的法术伤害（每0.5秒最多触发一次）</>",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "海沟实验体",
+        "desc": "获得<@ba.vup>180</>点<$ba.dmgresistance>伤害减免</>；若携带者为【阿戈尔】盟约干员，自身受到伤害时对伤害来源造成自身攻击力<@ba.vup>50%</>的法术伤害（每0.5秒最多触发一次）\\n<@ba.acrem>若该【阿戈尔】盟约干员同时装备“阿戈尔重刃”，则自身受到伤害时额外造成一次<@ba.vup>50%</>攻击力的法术伤害（每0.5秒最多触发一次）</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "海沟实验体",
+        "desc": "获得<@ba.vup>300</>点<$ba.dmgresistance>伤害减免</>；若携带者为【阿戈尔】盟约干员，自身受到伤害时对伤害来源造成自身攻击力<@ba.vup>50%</>的法术伤害（每0.5秒最多触发一次）\\n<@ba.acrem>若该【阿戈尔】盟约干员同时装备“阿戈尔重刃”，则自身受到伤害时额外造成一次<@ba.vup>50%</>的攻击力的法术伤害（每0.5秒最多触发一次）</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm079": {
+    "description": "攻击速度<@ba.vup>+55</>；若携带者为【维多利亚】盟约干员，该干员获得当前场上所有维式重锤特殊效果\\n<@ba.acrem>若该【维多利亚】盟约干员同时装备“维式重锤”系列装备，该“维式重锤”装备特殊效果获得强化（效果变为2倍）</>",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "蒸汽之心",
+        "desc": "攻击速度<@ba.vup>+35</>；若携带者为【维多利亚】盟约干员，该干员获得当前场上所有维式重锤特殊效果\\n<@ba.acrem>若该【维多利亚】盟约干员同时装备“维式重锤”系列装备，该“维式重锤”装备特殊效果获得强化（效果变为2倍）</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "蒸汽之心",
+        "desc": "攻击速度<@ba.vup>+55</>；若携带者为【维多利亚】盟约干员，该干员获得当前场上所有维式重锤特殊效果\\n<@ba.acrem>若该【维多利亚】盟约干员同时装备“维式重锤”系列装备，该“维式重锤”装备特殊效果获得强化（效果变为2倍）</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm102": {
+    "description": "法术抗性<@ba.vup>+50</>；若携带者为【谢拉格】盟约干员，该干员攻击范围内被<$ba.cold>寒冷</>或<$ba.frozen>冻结</>的敌人每秒受到一次自身攻击力<@ba.vup>30%</>的法术伤害\\n<@ba.acrem>若该【谢拉格】盟约干员同时装备“谢拉格不融冰”，则使自身攻击范围内<$ba.cold>寒冷</>或<$ba.frozen>冻结</>的敌人每秒受到的法术伤害提升至<@ba.vup>100%</>攻击力</>",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "耶拉冈德之泪",
+        "desc": "法术抗性<@ba.vup>+30</>；若携带者为【谢拉格】盟约干员，该干员攻击范围内被<$ba.cold>寒冷</>或<$ba.frozen>冻结</>的敌人每秒受到一次自身攻击力<@ba.vup>30%</>的法术伤害\\n<@ba.acrem>若该【谢拉格】盟约干员同时装备“谢拉格不融冰”，则使自身攻击范围内<$ba.cold>寒冷</>或<$ba.frozen>冻结</>的敌人每秒受到的法术伤害提升至<@ba.vup>100%</>攻击力</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "耶拉冈德之泪",
+        "desc": "法术抗性<@ba.vup>+50</>；若携带者为【谢拉格】盟约干员，该干员攻击范围内被<$ba.cold>寒冷</>或<$ba.frozen>冻结</>的敌人每秒受到一次自身攻击力<@ba.vup>30%</>的法术伤害\\n<@ba.acrem>若该【谢拉格】盟约干员同时装备“谢拉格不融冰”，则使自身攻击范围内<$ba.cold>寒冷</>或<$ba.frozen>冻结</>的敌人每秒受到的法术伤害提升至<@ba.vup>100%</>攻击力</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm103": {
+    "description": "初始技力<@ba.vup>+50</>；若携带者为【萨尔贡】盟约干员，该干员首次技能结束时立刻回复<@ba.vup>30</>点技力\\n<@ba.acrem>若该【萨尔贡】盟约干员同时装备“萨尔贡浓茶”，每次开启技能时为全部【萨尔贡】干员回复<@ba.vup>3</>点技力</>",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "黄沙罗盘",
+        "desc": "初始技力<@ba.vup>+30</>；若携带者为【萨尔贡】盟约干员，该干员首次技能结束时立刻回复<@ba.vup>30</>点技力\\n<@ba.acrem>若该【萨尔贡】盟约干员同时装备“萨尔贡浓茶”，每次开启技能时为全部【萨尔贡】干员回复<@ba.vup>3</>点技力</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "黄沙罗盘",
+        "desc": "初始技力<@ba.vup>+50</>；若携带者为【萨尔贡】盟约干员，该干员首次技能结束时立刻回复<@ba.vup>30</>点技力\\n<@ba.acrem>若该【萨尔贡】盟约干员同时装备“萨尔贡浓茶”，每次开启技能时为全部【萨尔贡】干员回复<@ba.vup>3</>点技力</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm109": {
+    "description": "装备时，目标干员和本装备销毁并进行一次特殊刷新，出现两名与携带者同等阶的干员，免费获取其中一名\\n<@ba.rem>若在同盟模拟中且存在其他队友，下个休整期向相应盟约人数最多的队友发送1个原干员</>\\n<@ba.acrem>相应盟约人数相同则随机发送</>\\n<@ba.acrem>无法装备给自编干员</>",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "信标",
+        "desc": "装备时，目标干员和本装备销毁并进行一次特殊刷新，出现两名与携带者同等阶的干员，免费获取其中一名\\n<@ba.rem>若在同盟模拟中且存在其他队友，下个休整期向相应盟约人数最多的队友发送1个原干员</>\\n<@ba.acrem>相应盟约人数相同则随机发送</>\\n<@ba.acrem>无法装备给自编干员</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "信标",
+        "desc": "装备时，目标干员和本装备销毁并进行一次特殊刷新，出现两名与携带者同等阶的干员，免费获取其中一名\\n<@ba.rem>若在同盟模拟中且存在其他队友，下个休整期向相应盟约人数最多的队友发送1个原干员</>\\n<@ba.acrem>相应盟约人数相同则随机发送</>\\n<@ba.acrem>无法装备给自编干员</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm113": {
+    "description": "装备时销毁，之后每回合开始时额外获得<@ba.vup>2</>资金",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "精打细算玩偶",
+        "desc": "装备时销毁，之后每回合开始时额外获得<@ba.vup>1</>资金",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "精打细算玩偶",
+        "desc": "装备时销毁，之后每回合开始时额外获得<@ba.vup>2</>资金",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm114": {
+    "description": "装备时销毁，随机获得<@ba.vup>2</>名与该干员有相同盟约的干员",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "简易通讯机",
+        "desc": "装备时销毁，随机获得<@ba.vup>1</>名与该干员有相同盟约的干员",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "简易通讯机",
+        "desc": "装备时销毁，随机获得<@ba.vup>2</>名与该干员有相同盟约的干员",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm115": {
+    "description": "装备时销毁，随机获取当前调度中心内的<@ba.vup>2</>名干员 （调度中心中对应干员消失）",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "紧急调度券",
+        "desc": "装备时销毁，随机获取当前调度中心内的<@ba.vup>1</>名干员 （调度中心中对应干员消失）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "紧急调度券",
+        "desc": "装备时销毁，随机获取当前调度中心内的<@ba.vup>2</>名干员 （调度中心中对应干员消失）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm116": {
+    "description": "装备时销毁，下回合额外获得<@ba.vup>4</>资金",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "见钱眼开玩偶",
+        "desc": "装备时销毁，下回合额外获得<@ba.vup>2</>资金",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "见钱眼开玩偶",
+        "desc": "装备时销毁，下回合额外获得<@ba.vup>4</>资金",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm117": {
+    "description": "攻击力<@ba.vup>+60%</>，若与“天马之盔”一起装备，造成伤害时额外造成<@ba.vup>30%</>的真实伤害",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "天马之枪",
+        "desc": "攻击力<@ba.vup>+40%</>，若与“天马之盔”一起装备，造成伤害时额外造成<@ba.vup>30%</>的真实伤害",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "天马之枪",
+        "desc": "攻击力<@ba.vup>+60%</>，若与“天马之盔”一起装备，造成伤害时额外造成<@ba.vup>30%</>的真实伤害",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm118": {
+    "description": "生命值<@ba.vup>+75%</>，若与“天马之枪”一起装备，每秒回复<@ba.vup>8%</>最大生命值。",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "天马之盔",
+        "desc": "生命值<@ba.vup>+50%</>，若与“天马之枪”一起装备，每秒回复<@ba.vup>8%</>最大生命值。",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "天马之盔",
+        "desc": "生命值<@ba.vup>+75%</>，若与“天马之枪”一起装备，每秒回复<@ba.vup>8%</>最大生命值。",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm119": {
+    "description": "部署后<@ba.vup>15</>秒内造成的伤害提升至<@ba.vup>160%</>，随后逐渐衰减",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "卡西米尔竞技旗",
+        "desc": "部署后<@ba.vup>15</>秒内造成的伤害提升至<@ba.vup>135%</>，随后逐渐衰减",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "卡西米尔竞技旗",
+        "desc": "部署后<@ba.vup>15</>秒内造成的伤害提升至<@ba.vup>160%</>，随后逐渐衰减",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm120": {
+    "description": "再部署时间<@ba.vup>-60%</>；若携带者为【卡西米尔】盟约干员，开启技能后20s内，使攻击范围内敌人攻击速度<@ba.vup>-35%</>，移动速度<@ba.vup>-35%</>\\n<@ba.acrem>若该【卡西米尔】盟约干员同时装备“卡西米尔竞技旗”，该卡西米尔干员技能持续期间，攻击力<@ba.vup>+100%</>，且受到致命伤害时不撤退，技能结束后退场</>",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "骑士戒律",
+        "desc": "再部署时间<@ba.vup>-40%</>；若携带者为【卡西米尔】盟约干员，开启技能后20s内，使攻击范围内敌人攻击速度<@ba.vup>-35%</>，移动速度<@ba.vup>-35%</>\\n<@ba.acrem>若该【卡西米尔】盟约干员同时装备“卡西米尔竞技旗”，该卡西米尔干员技能持续期间，攻击力<@ba.vup>+100%</>，且受到致命伤害时不撤退，技能结束后退场</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "骑士戒律",
+        "desc": "再部署时间<@ba.vup>-60%</>；若携带者为【卡西米尔】盟约干员，开启技能后20s内，使攻击范围内敌人攻击速度<@ba.vup>-35%</>，移动速度<@ba.vup>-35%</>\\n<@ba.acrem>若该【卡西米尔】盟约干员同时装备“卡西米尔竞技旗”，该卡西米尔干员技能持续期间，攻击力<@ba.vup>+100%</>，且受到致命伤害时不撤退，技能结束后退场</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm121": {
+    "description": "攻击速度<@ba.vup>+25</>，携带者部署方向左右两侧的我方干员攻击速度<@ba.vup>+15</>",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "叙拉古正装",
+        "desc": "攻击速度<@ba.vup>+15</>，携带者部署方向左右两侧的我方干员攻击速度<@ba.vup>+10</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "叙拉古正装",
+        "desc": "攻击速度<@ba.vup>+25</>，携带者部署方向左右两侧的我方干员攻击速度<@ba.vup>+15</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm122": {
+    "description": "技力自然回复速度<@ba.vup>+0.35</>/秒；若携带者为【叙拉古】盟约干员，该干员处于隐匿状态时，攻击力逐渐提升至<@ba.vup>200%</>，持续至隐匿结束后首次造成伤害或干员离场\\n<@ba.acrem>若该【叙拉古】盟约干员同时装备“叙拉古正装”，该叙拉古干员失去隐匿后首次造成伤害时额外造成<@ba.vup>800%</>攻击力的真实伤害</>",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "家族徽章",
+        "desc": "技力自然回复速度<@ba.vup>+0.2</>/秒；若携带者为【叙拉古】盟约干员，该干员处于隐匿状态时，攻击力逐渐提升至<@ba.vup>200%</>，持续至隐匿结束后首次造成伤害或干员离场\\n<@ba.acrem>若该【叙拉古】盟约干员同时装备“叙拉古正装”，该叙拉古干员失去隐匿后首次造成伤害时额外造成<@ba.vup>800%</>攻击力的真实伤害</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "家族徽章",
+        "desc": "技力自然回复速度<@ba.vup>+0.35</>/秒；若携带者为【叙拉古】盟约干员，该干员处于隐匿状态时，攻击力逐渐提升至<@ba.vup>200%</>，持续至隐匿结束后首次造成伤害或干员离场\\n<@ba.acrem>若该【叙拉古】盟约干员同时装备“叙拉古正装”，该叙拉古干员失去隐匿后首次造成伤害时额外造成<@ba.vup>800%</>攻击力的真实伤害</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm123": {
+    "description": "装备时销毁，并随机获得<@ba.vup>2~12</>资金",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "骑士储蓄罐",
+        "desc": "装备时销毁，并随机获得<@ba.vup>1~6</>资金",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "骑士储蓄罐",
+        "desc": "装备时销毁，并随机获得<@ba.vup>2~12</>资金",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm124": {
+    "description": "装备时销毁，并使携带者所属盟约层数<@ba.vup>+6</>（无需激活盟约）",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "随身身份牌",
+        "desc": "装备时销毁，并使携带者所属盟约层数<@ba.vup>+3</>（无需激活盟约）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "随身身份牌",
+        "desc": "装备时销毁，并使携带者所属盟约层数<@ba.vup>+6</>（无需激活盟约）",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  },
+  "eff_acgarm125": {
+    "description": "携带者每秒流失<@ba.vdown>60</>点生命值，攻击力<@ba.vup>+60%</>",
+    "golden": true,
+    "talents": [],
+    "skills": [
+      {
+        "name": "源石溶剂",
+        "desc": "携带者每秒流失<@ba.vdown>60</>点生命值，攻击力<@ba.vup>+40%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      },
+      {
+        "name": "源石溶剂",
+        "desc": "携带者每秒流失<@ba.vdown>60</>点生命值，攻击力<@ba.vup>+60%</>",
+        "rangeId": null,
+        "rangeGrids": null,
+        "spType": 8,
+        "spIncrement": 1,
+        "skillType": "PASSIVE",
+        "durationType": "NONE",
+        "spCost": 0,
+        "initSp": 0,
+        "maxCharge": 0,
+        "duration": 0,
+        "blackboard": {},
+        "prefabId": "sktok_common_acarm"
+      }
+    ]
+  }
+}

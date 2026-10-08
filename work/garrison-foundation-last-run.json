@@ -1,0 +1,42 @@
+{
+  "steps": [
+    {
+      "script": "build_external_combat_data.py",
+      "result": {
+        "pendingEnemies": 435,
+        "pendingEncounterEnemies": 36,
+        "chainProjectileProfiles": 3,
+        "encounterChainProjectileProfiles": 2
+      }
+    },
+    {
+      "script": "classify_enemy_action_templates.py",
+      "result": {
+        "cacheHit": true,
+        "pendingEnemies": 435,
+        "pendingEncounterEnemies": 36
+      }
+    },
+    {
+      "script": "advance_enemy_modes.py",
+      "result": {
+        "planCacheHit": true,
+        "bindingCacheHit": true,
+        "sourceAnalysisSkipped": true,
+        "templateQueriesSkipped": true,
+        "dpsCalculationSkipped": true,
+        "runtimeRebuildSkipped": true,
+        "foundationPriorityCacheHit": true,
+        "nextFoundation": "skill-trigger-dispatch"
+      }
+    },
+    {
+      "script": "advance_community_templates.py",
+      "result": {
+        "compile_skipped": true,
+        "calculation_skipped": true,
+        "remaining": 98
+      }
+    }
+  ]
+}

@@ -1,0 +1,399 @@
+{
+  "sourceHashes": {
+    "data/ArknightsGameData/zh_CN/gamedata/excel/activity_table.json": "27d95d26e42dc9cd133ed568181ea389b056a4faaaee1a9952dde57fdf149e1f",
+    "data/ArknightsGameData/zh_CN/gamedata/levels/enemydata/enemy_database.json": "d3f494055a1ec0d672b5a8c86b291be310a2f7a458c932fd6807c0f8b67fd7a9",
+    "web/battle_data.json": "7270b410e4526079a986c291a152f30bf3048fce0c56528d070ddb50fa34088b",
+    "data/ArknightsGameData/zh_CN/gamedata/levels/activities/act1autochess/level_autochess_enemy_data.json": "820891cd1567e56894d1bd83217a3a33bcfef8f6aff81020ecae315adb916a4b"
+  },
+  "rosterCount": 112,
+  "seasons": {
+    "act2autochess": {
+      "shopEntries": 133,
+      "visibleFixedEntries": 112,
+      "uniqueVisibleFixed": 112,
+      "fixedCovered": 112,
+      "missing": [],
+      "tierMismatches": [],
+      "extraRoster": [],
+      "enemyGroups": {
+        "FLY": {
+          "members": 14,
+          "withoutRuntimeDefinition": [],
+          "notInTemplateWaves": [
+            "enemy_1041_lazerd",
+            "enemy_10083_hlbird",
+            "enemy_1355_mrfly",
+            "enemy_1017_defdrn",
+            "enemy_10084_hlegle",
+            "enemy_1407_hummbd",
+            "enemy_1005_yokai_3",
+            "enemy_1112_emppnt",
+            "enemy_1041_lazerd_2",
+            "enemy_9009_acfort",
+            "enemy_1355_mrfly_2"
+          ]
+        },
+        "TIMES": {
+          "members": 10,
+          "withoutRuntimeDefinition": [],
+          "notInTemplateWaves": [
+            "enemy_1195_sfyin_2",
+            "enemy_1195_sfyin",
+            "enemy_1197_sfshu",
+            "enemy_1288_duskls_2",
+            "enemy_1288_duskls",
+            "enemy_1292_duskld",
+            "enemy_1207_sfji",
+            "enemy_1199_sfjin",
+            "enemy_1197_sfshu_2"
+          ]
+        },
+        "ELEMENT": {
+          "members": 18,
+          "withoutRuntimeDefinition": [],
+          "notInTemplateWaves": [
+            "enemy_1161_tidmag",
+            "enemy_1158_divman",
+            "enemy_1160_hvyslr",
+            "enemy_1305_mhslim_2",
+            "enemy_1305_mhslim",
+            "enemy_2025_syufo",
+            "enemy_2021_syfish",
+            "enemy_1161_tidmag_2",
+            "enemy_1160_hvyslr_2",
+            "enemy_1439_dslntf",
+            "enemy_1148_dssbr",
+            "enemy_1148_dssbr_2",
+            "enemy_1275_dwlock_2",
+            "enemy_1229_darmy",
+            "enemy_1229_darmy_2",
+            "enemy_10067_ftsjc",
+            "enemy_10065_ftzlc"
+          ]
+        },
+        "DOT": {
+          "members": 12,
+          "withoutRuntimeDefinition": [],
+          "notInTemplateWaves": [
+            "enemy_1234_dsubrl",
+            "enemy_1433_dsbasi",
+            "enemy_1433_dsbasi_2",
+            "enemy_1272_nhtank",
+            "enemy_1267_nhpbr",
+            "enemy_1267_nhpbr_2",
+            "enemy_1270_nhstlk",
+            "enemy_1234_dsubrl_2",
+            "enemy_10122_uacann_2",
+            "enemy_1272_nhtank_2",
+            "enemy_1270_nhstlk_2",
+            "enemy_9006_actoxi"
+          ]
+        },
+        "INVISIBLE": {
+          "members": 17,
+          "withoutRuntimeDefinition": [],
+          "notInTemplateWaves": [
+            "enemy_1299_ymkilr",
+            "enemy_1043_zomsbr",
+            "enemy_1019_jshoot",
+            "enemy_10034_cnvsax",
+            "enemy_10042_prtrop_2",
+            "enemy_10043_sailor",
+            "enemy_10042_prtrop",
+            "enemy_1389_winbab_2",
+            "enemy_1381_winman",
+            "enemy_1019_jshoot_2",
+            "enemy_1299_ymkilr_2",
+            "enemy_1422_lrsldr_2",
+            "enemy_1404_msnip",
+            "enemy_1009_lurker",
+            "enemy_9008_acbunn",
+            "enemy_10031_cnvsld",
+            "enemy_1283_sgkill"
+          ]
+        },
+        "REFLECTION": {
+          "members": 13,
+          "withoutRuntimeDefinition": [],
+          "notInTemplateWaves": [
+            "enemy_1174_duholy",
+            "enemy_1166_dusbr",
+            "enemy_1170_dushld",
+            "enemy_1168_dumage",
+            "enemy_1165_duhond",
+            "enemy_1169_duphlx",
+            "enemy_1174_duholy_2",
+            "enemy_1166_dusbr_2",
+            "enemy_1170_dushld_2",
+            "enemy_1169_duphlx_2",
+            "enemy_1172_dugago",
+            "enemy_9011_acrefr",
+            "enemy_1175_dushdo_2"
+          ]
+        },
+        "SPECIAL": {
+          "members": 35,
+          "withoutRuntimeDefinition": [],
+          "notInTemplateWaves": [
+            "enemy_1010_demon_2",
+            "enemy_1071_dftman",
+            "enemy_1010_demon",
+            "enemy_1045_hammer",
+            "enemy_1043_zomsbr",
+            "enemy_1046_agent",
+            "enemy_1118_lidbox_2",
+            "enemy_1116_liprr",
+            "enemy_1116_liprr_2",
+            "enemy_1325_cbgpro_2",
+            "enemy_1325_cbgpro",
+            "enemy_1121_lifbos",
+            "enemy_1006_shield_3",
+            "enemy_1402_tgshd_2",
+            "enemy_1329_cbshld",
+            "enemy_1251_lysyta",
+            "enemy_1249_lysdb_2",
+            "enemy_1045_hammer_2",
+            "enemy_1061_zomshd",
+            "enemy_1387_winshd",
+            "enemy_1381_winman",
+            "enemy_1381_winman_2",
+            "enemy_1121_lifbos_2",
+            "enemy_1119_vofsd",
+            "enemy_1320_wdrrl_2",
+            "enemy_1422_lrsldr_2",
+            "enemy_10124_uashld_2",
+            "enemy_1328_cbjedi",
+            "enemy_1254_lypa_2",
+            "enemy_1425_lrcmra_2",
+            "enemy_1329_cbshld_2",
+            "enemy_1251_lysyta_2",
+            "enemy_1252_lysytb_2",
+            "enemy_1072_dlancer"
+          ]
+        }
+      },
+      "specialEntries": 67,
+      "enemyMembers": 116,
+      "runtimeEnemyDefinitions": 116,
+      "templateWaveMembers": 6
+    },
+    "act1autochess": {
+      "shopEntries": 100,
+      "visibleFixedEntries": 95,
+      "uniqueVisibleFixed": 95,
+      "fixedCovered": 95,
+      "missing": [],
+      "tierMismatches": [],
+      "extraRoster": [],
+      "enemyGroups": {
+        "FLY": {
+          "members": 14,
+          "withoutRuntimeDefinition": [],
+          "notInTemplateWaves": [
+            "enemy_1041_lazerd",
+            "enemy_10083_hlbird",
+            "enemy_1355_mrfly",
+            "enemy_1017_defdrn",
+            "enemy_10084_hlegle",
+            "enemy_1005_yokai_3",
+            "enemy_1112_emppnt",
+            "enemy_1041_lazerd_2",
+            "enemy_1321_wdarft",
+            "enemy_9009_acfort",
+            "enemy_1355_mrfly_2"
+          ]
+        },
+        "TIMES": {
+          "members": 8,
+          "withoutRuntimeDefinition": [],
+          "notInTemplateWaves": [
+            "enemy_1195_sfyin_2",
+            "enemy_1195_sfyin",
+            "enemy_1197_sfshu",
+            "enemy_1201_sfzhi",
+            "enemy_1207_sfji",
+            "enemy_1199_sfjin",
+            "enemy_1197_sfshu_2"
+          ]
+        },
+        "ELEMENT": {
+          "members": 17,
+          "withoutRuntimeDefinition": [],
+          "notInTemplateWaves": [
+            "enemy_1275_dwlock",
+            "enemy_1229_darmy",
+            "enemy_1229_darmy_2",
+            "enemy_1161_tidmag",
+            "enemy_1158_divman",
+            "enemy_1160_hvyslr",
+            "enemy_1305_mhslim_2",
+            "enemy_1305_mhslim",
+            "enemy_1161_tidmag_2",
+            "enemy_1160_hvyslr_2",
+            "enemy_1439_dslntf",
+            "enemy_1148_dssbr",
+            "enemy_1148_dssbr_2",
+            "enemy_1275_dwlock_2",
+            "enemy_10067_ftsjc",
+            "enemy_10065_ftzlc"
+          ]
+        },
+        "DOT": {
+          "members": 13,
+          "withoutRuntimeDefinition": [],
+          "notInTemplateWaves": [
+            "enemy_1234_dsubrl",
+            "enemy_1433_dsbasi",
+            "enemy_1433_dsbasi_2",
+            "enemy_1272_nhtank",
+            "enemy_1267_nhpbr",
+            "enemy_1267_nhpbr_2",
+            "enemy_1270_nhstlk",
+            "enemy_1234_dsubrl_2",
+            "enemy_1376_ltndru",
+            "enemy_1373_ltnhor_2",
+            "enemy_1272_nhtank_2",
+            "enemy_1270_nhstlk_2",
+            "enemy_9006_actoxi"
+          ]
+        },
+        "INVISIBLE": {
+          "members": 15,
+          "withoutRuntimeDefinition": [],
+          "notInTemplateWaves": [
+            "enemy_1299_ymkilr",
+            "enemy_1043_zomsbr",
+            "enemy_1019_jshoot",
+            "enemy_10034_cnvsax",
+            "enemy_10042_prtrop_2",
+            "enemy_10043_sailor",
+            "enemy_10042_prtrop",
+            "enemy_1299_ymkilr_2",
+            "enemy_1422_lrsldr_2",
+            "enemy_1019_jshoot_2",
+            "enemy_1404_msnip",
+            "enemy_1009_lurker",
+            "enemy_9008_acbunn",
+            "enemy_10031_cnvsld",
+            "enemy_1283_sgkill"
+          ]
+        },
+        "REFLECTION": {
+          "members": 12,
+          "withoutRuntimeDefinition": [],
+          "notInTemplateWaves": [
+            "enemy_1174_duholy",
+            "enemy_1166_dusbr",
+            "enemy_1170_dushld",
+            "enemy_1168_dumage",
+            "enemy_1165_duhond",
+            "enemy_1169_duphlx",
+            "enemy_1174_duholy_2",
+            "enemy_1166_dusbr_2",
+            "enemy_1170_dushld_2",
+            "enemy_1169_duphlx_2",
+            "enemy_9011_acrefr",
+            "enemy_1175_dushdo_2"
+          ]
+        },
+        "SPECIAL": {
+          "members": 28,
+          "withoutRuntimeDefinition": [],
+          "notInTemplateWaves": [
+            "enemy_1010_demon_2",
+            "enemy_1071_dftman",
+            "enemy_1010_demon",
+            "enemy_1045_hammer",
+            "enemy_1043_zomsbr",
+            "enemy_1046_agent",
+            "enemy_1118_lidbox_2",
+            "enemy_1116_liprr",
+            "enemy_1116_liprr_2",
+            "enemy_1121_lifbos",
+            "enemy_1254_lypa",
+            "enemy_1251_lysyta",
+            "enemy_1249_lysdb_2",
+            "enemy_1006_shield_3",
+            "enemy_1402_tgshd_2",
+            "enemy_1329_cbshld",
+            "enemy_1249_lysdb",
+            "enemy_1045_hammer_2",
+            "enemy_1061_zomshd",
+            "enemy_1422_lrsldr_2",
+            "enemy_1121_lifbos_2",
+            "enemy_1119_vofsd",
+            "enemy_1254_lypa_2",
+            "enemy_1425_lrcmra_2",
+            "enemy_1329_cbshld_2",
+            "enemy_1251_lysyta_2",
+            "enemy_1252_lysytb_2"
+          ]
+        }
+      },
+      "specialEntries": 60,
+      "enemyMembers": 105,
+      "runtimeEnemyDefinitions": 105,
+      "templateWaveMembers": 6
+    }
+  },
+  "waves": {
+    "files": 47,
+    "actions": 352,
+    "declaredEnemies": 747,
+    "uniqueEnemyIds": 39,
+    "templateActions": 261
+  },
+  "templates": [
+    {
+      "id": "enemy_1422_lrsldr",
+      "name": "萨卡兹枯朽前锋",
+      "actions": 49
+    },
+    {
+      "id": "enemy_1427_lrnazg",
+      "name": "“灵幛”",
+      "actions": 56
+    },
+    {
+      "id": "enemy_1425_lrcmra",
+      "name": "孽罪奇美拉",
+      "actions": 22
+    },
+    {
+      "id": "enemy_1005_yokai",
+      "name": "妖怪",
+      "actions": 45
+    },
+    {
+      "id": "enemy_1042_frostd",
+      "name": "寒霜",
+      "actions": 55
+    },
+    {
+      "id": "enemy_1040_bombd",
+      "name": "暴鸰",
+      "actions": 22
+    },
+    {
+      "id": "enemy_1000_gopro_2",
+      "name": "猎狗pro",
+      "actions": 12
+    },
+    {
+      "id": "enemy_1041_lazerd",
+      "name": "法术大师A1",
+      "actions": 0
+    }
+  ],
+  "runtime": {
+    "mode": "native-template-replacement",
+    "scope": "first wave / first fragment, six ground/air normal/elite/special templates",
+    "plan": "persisted per-run enemySeed and round plan shared by preview, battle, rest saves and room players",
+    "legacy": "compatible old rest saves without a plan retain legacy-source waves",
+    "unverified": [
+      "runtime token/extraEnemy insertion",
+      "original PRNG and concrete shuffle sequence",
+      "XLua hotfix and original server overrides"
+    ]
+  }
+}

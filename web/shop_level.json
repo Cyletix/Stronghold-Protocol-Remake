@@ -1,0 +1,38 @@
+[
+ {
+  "level": 1,
+  "charChessCount": 3,
+  "itemCount": 1,
+  "upgrade": 5
+ },
+ {
+  "level": 2,
+  "charChessCount": 4,
+  "itemCount": 1,
+  "upgrade": 8
+ },
+ {
+  "level": 3,
+  "charChessCount": 4,
+  "itemCount": 1,
+  "upgrade": 11
+ },
+ {
+  "level": 4,
+  "charChessCount": 5,
+  "itemCount": 1,
+  "upgrade": 12
+ },
+ {
+  "level": 5,
+  "charChessCount": 5,
+  "itemCount": 1,
+  "upgrade": 13
+ },
+ {
+  "level": 6,
+  "charChessCount": 5,
+  "itemCount": 1,
+  "upgrade": 99
+ }
+]

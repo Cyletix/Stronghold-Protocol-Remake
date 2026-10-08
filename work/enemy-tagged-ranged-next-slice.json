@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-14T23:53:47.365801+00:00",
+  "kind": "frozen-next-shared-slice",
+  "source": {
+    "path": "work/enemy-tagged-ranged-contract.json",
+    "sourceFingerprint": "7372ddb421f347ae40878502d1436e03984e7ef297c1b748f6283c75f447bbcd",
+    "section": "excludedCandidates"
+  },
+  "currentStatusSource": "work/enemy-mode-next-batch.json#skillDispatch",
+  "scope": "Cast-scoped attribute Buffs and multi-melee output, with the real phase entry required for ordinary encounter reachability.",
+  "members": [
+    {
+      "id": "enemy_1516_jakill|CAB-0df5f4c8c8dade07e2ee475a972da576:9066948497976449493:46",
+      "enemyId": "enemy_1516_jakill",
+      "name": "ArmorPiercing",
+      "modeIndices": [
+        1
+      ]
+    }
+  ],
+  "reusableCapabilities": [
+    "owner attack-recovery SP and cast recovery-stop gate",
+    "mode-owned action profiles",
+    "cast-time parameter snapshots",
+    "Buff attribute namespace resolution",
+    "host checkpoint entity rebinding"
+  ],
+  "requiredSharedWork": [
+    "MultiMeleeAttack repeats and source timing policy",
+    "BuffDuringCasting attachment/removal and DEF_PENETRATE consumer",
+    "complete jakill_skill_1_reborn_hit template",
+    "actual Reborn phase caller and lifecycle, preserving unimplemented extra actions"
+  ],
+  "frozenParameterHints": {
+    "times": 2,
+    "triggerDelta": 0.2,
+    "maxAnimScale": -1
+  },
+  "entryBoundary": "Mode 1 is compiled but ordinary source phase activation is not implemented. Explicit-mode tests cannot close automatic encounter reachability or whole-enemy completion. Resolve the actual Reborn entry as part of the slice.",
+  "method": "Read the fixed excluded candidate once. Reuse saved complete graphs. Fetch only genuinely missing fields or a new native entry; do not rescan the 27-component cohort or already bound skills.",
+  "completion": false,
+  "wholeEnemyCompletion": false
+}

@@ -1,0 +1,43 @@
+{
+  "task": "Complete seven mode template contracts and begin shared source-binding batch",
+  "fixedMembers": 189,
+  "fixedPrimaryClasses": 7,
+  "counts": {
+    "enemies": 189,
+    "templates": 7,
+    "operators": 46,
+    "crossClassOperators": 23,
+    "subclasses": 37
+  },
+  "bindings": {
+    "requestedTemplates": 61,
+    "matchedTemplates": 61,
+    "missingTemplates": 0,
+    "usages": 217,
+    "affectedEnemies": 99,
+    "switchTemplates": 39,
+    "sourceParameterBindings": 152
+  },
+  "cache": {
+    "plan": true,
+    "bindings": true,
+    "sourceAnalysisSkipped": true,
+    "templateQueriesSkipped": true,
+    "dpsCompileSkipped": true,
+    "dpsCalculationSkipped": true
+  },
+  "tests": {
+    "test_enemy_mode_reborn_plan.py": 3,
+    "test_enemy_mode_trigger_plan.py": 4,
+    "test_enemy_mode_selection_plan.py": 4,
+    "test_enemy_mode_buff_bindings.py": 4,
+    "test_enemy_mode_template_plan.py": 3,
+    "test_advance_enemy_modes.py": 2
+  },
+  "renderer": "Seven contract cards, four dependency groups, 189 stable members, available/missing template graphs and active/deferred lookup scopes checked",
+  "docs": "77 documents, 2281 links passed",
+  "completedDataStep": "resolve-buff-template-graph",
+  "deferredGenericEntityLookups": 63,
+  "runtimeChanged": false,
+  "fullPhaseTransitionsCompleted": 0
+}

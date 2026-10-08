@@ -1,0 +1,15 @@
+{
+  "batch": "room-game-20260918.8",
+  "before": "work/garrison-checked-before-20260918.8.json",
+  "output": "work/garrison-skill-batch-acceptance-20260918-8.json",
+  "validations": [
+    ".runtime/skill-mode-ammo-receipts.json",
+    "tools/test_skill_mode_ammo.py",
+    "tools/_finite_ammo_programs_smoke.js",
+    "tools/_source_target_priority_smoke.js"
+  ],
+  "tasks": {
+    "op/char_498_inside/skill/skchr_inside_1/source-mode-body": "2026-09-18 .8 有限弹药限定源主体：本技能全部10源等级随同组20等级/180发通过，8实际赛季普通精锐配置、4次主机恢复（两技能各中途/末发）通过；实际出手扣弹、卫戍通知、SP锁、末发冻结及耗尽/结束/死亡清理，S2远程武器优先与仇恨真实消费者已核。ON_SPELL_ON枚举已证，精确原生进度源/事件帧与飞行对仇恨顺序保留模型边界，完整天赋模组另核，不勾整技能。",
+    "op/char_498_inside/skill/skchr_inside_2/source-mode-body": "2026-09-18 .8 有限弹药限定源主体：本技能全部10源等级随同组20等级/180发通过，8实际赛季普通精锐配置、4次主机恢复（两技能各中途/末发）通过；实际出手扣弹、卫戍通知、SP锁、末发冻结及耗尽/结束/死亡清理，S2远程武器优先与仇恨真实消费者已核。ON_SPELL_ON枚举已证，精确原生进度源/事件帧与飞行对仇恨顺序保留模型边界，完整天赋模组另核，不勾整技能。"
+  }
+}

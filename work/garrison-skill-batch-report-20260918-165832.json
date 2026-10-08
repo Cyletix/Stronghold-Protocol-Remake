@@ -1,0 +1,3735 @@
+{
+  "schemaVersion": 1,
+  "rule": "garrison-provider-bindings-union-v1",
+  "scope": {
+    "charIds": [
+      "char_017_huang",
+      "char_1012_skadi2",
+      "char_1014_nearl2",
+      "char_1016_agoat2",
+      "char_1019_siege2",
+      "char_1020_reed2",
+      "char_1021_kroos2",
+      "char_1023_ghost2",
+      "char_1026_gvial2",
+      "char_1028_texas2",
+      "char_102_texas",
+      "char_1031_slent2",
+      "char_1032_excu2",
+      "char_1033_swire2",
+      "char_1034_jesca2",
+      "char_1038_whitw2",
+      "char_1039_thorn2",
+      "char_103_angel",
+      "char_1040_blaze2",
+      "char_1041_angel2",
+      "char_1045_svash2",
+      "char_1046_sbell2",
+      "char_1047_halo2",
+      "char_107_liskam",
+      "char_108_silent",
+      "char_109_fmout",
+      "char_126_shotst",
+      "char_127_estell",
+      "char_128_plosis",
+      "char_133_mm",
+      "char_134_ifrit",
+      "char_135_halo",
+      "char_136_hsguma",
+      "char_140_whitew",
+      "char_143_ghost",
+      "char_145_prove",
+      "char_150_snakek",
+      "char_171_bldsk",
+      "char_172_svrash",
+      "char_173_slchan",
+      "char_174_slbell",
+      "char_181_flower",
+      "char_183_skgoat",
+      "char_196_sunbr",
+      "char_198_blackd",
+      "char_199_yak",
+      "char_2012_typhon",
+      "char_2015_dusk",
+      "char_2026_yu",
+      "char_202_demkni",
+      "char_206_gnosis",
+      "char_213_mostma",
+      "char_215_mantic",
+      "char_218_cuttle",
+      "char_222_bpipe",
+      "char_230_savage",
+      "char_237_gravel",
+      "char_243_waaifu",
+      "char_245_cello",
+      "char_249_mlyss",
+      "char_253_greyy",
+      "char_254_vodfox",
+      "char_258_podego",
+      "char_263_skadi",
+      "char_264_f12yin",
+      "char_271_spikes",
+      "char_279_excu",
+      "char_290_vigna",
+      "char_291_aglina",
+      "char_294_ayer",
+      "char_300_phenxi",
+      "char_304_zebra",
+      "char_306_leizi",
+      "char_308_swire",
+      "char_311_mudrok",
+      "char_332_archet",
+      "char_337_utage",
+      "char_341_sntlla",
+      "char_344_beewax",
+      "char_345_folnic",
+      "char_348_ceylon",
+      "char_350_surtr",
+      "char_355_ethan",
+      "char_358_lisa",
+      "char_373_lionhd",
+      "char_377_gdglow",
+      "char_381_bubble",
+      "char_388_mint",
+      "char_391_rosmon",
+      "char_4004_pudd",
+      "char_4010_etlchi",
+      "char_4013_kjera",
+      "char_4016_kazema",
+      "char_4026_vulpis",
+      "char_4036_forcer",
+      "char_4039_horn",
+      "char_4040_rockr",
+      "char_4042_lumen",
+      "char_4045_heidi",
+      "char_4051_akkord",
+      "char_4054_malist",
+      "char_4056_titi",
+      "char_4058_pepe",
+      "char_4064_mlynar",
+      "char_4079_haini",
+      "char_4080_lin",
+      "char_4082_qiubai",
+      "char_4087_ines",
+      "char_4100_caper",
+      "char_4114_harold",
+      "char_4116_blkkgt",
+      "char_4119_wanqin",
+      "char_4121_zuole",
+      "char_4122_grabds",
+      "char_4134_cetsyr",
+      "char_4137_udflow",
+      "char_4138_narant",
+      "char_4139_papyrs",
+      "char_4145_ulpia",
+      "char_4146_nymph",
+      "char_4148_philae",
+      "char_4151_tinman",
+      "char_4162_cathy",
+      "char_4163_rosesa",
+      "char_416_zumama",
+      "char_4191_tippi",
+      "char_4193_lemuen",
+      "char_4194_rmixer",
+      "char_4196_reckpr",
+      "char_4207_branch",
+      "char_420_flamtl",
+      "char_4211_snhunt",
+      "char_422_aurora",
+      "char_423_blemsh",
+      "char_426_billro",
+      "char_427_vigil",
+      "char_430_fartth",
+      "char_431_ashlok",
+      "char_437_mizuki",
+      "char_440_pinecn",
+      "char_446_aroma",
+      "char_449_glider",
+      "char_450_necras",
+      "char_469_indigo",
+      "char_472_pasngr",
+      "char_473_mberry",
+      "char_474_glady",
+      "char_491_humus",
+      "char_494_vendla",
+      "char_496_wildmn",
+      "char_498_inside",
+      "char_600_cpione",
+      "char_601_cguard",
+      "char_602_cdfend",
+      "char_603_csnipe",
+      "char_604_ccast",
+      "char_605_cmedic",
+      "char_606_csuppo",
+      "char_607_cspec",
+      "char_608_acpion",
+      "char_609_acguad",
+      "char_610_acfend",
+      "char_611_acnipe",
+      "char_612_accast",
+      "char_613_acmedc",
+      "char_614_acsupo",
+      "char_615_acspec",
+      "char_616_pithst",
+      "char_617_sharp2"
+    ],
+    "fixedCharIds": [
+      "char_017_huang",
+      "char_1012_skadi2",
+      "char_1014_nearl2",
+      "char_1016_agoat2",
+      "char_1019_siege2",
+      "char_1020_reed2",
+      "char_1021_kroos2",
+      "char_1023_ghost2",
+      "char_1026_gvial2",
+      "char_1028_texas2",
+      "char_102_texas",
+      "char_1031_slent2",
+      "char_1032_excu2",
+      "char_1033_swire2",
+      "char_1034_jesca2",
+      "char_1038_whitw2",
+      "char_1039_thorn2",
+      "char_103_angel",
+      "char_1040_blaze2",
+      "char_1041_angel2",
+      "char_1045_svash2",
+      "char_1046_sbell2",
+      "char_1047_halo2",
+      "char_107_liskam",
+      "char_108_silent",
+      "char_109_fmout",
+      "char_126_shotst",
+      "char_127_estell",
+      "char_128_plosis",
+      "char_133_mm",
+      "char_134_ifrit",
+      "char_135_halo",
+      "char_136_hsguma",
+      "char_140_whitew",
+      "char_143_ghost",
+      "char_145_prove",
+      "char_150_snakek",
+      "char_171_bldsk",
+      "char_172_svrash",
+      "char_174_slbell",
+      "char_181_flower",
+      "char_196_sunbr",
+      "char_198_blackd",
+      "char_199_yak",
+      "char_2012_typhon",
+      "char_2015_dusk",
+      "char_2026_yu",
+      "char_202_demkni",
+      "char_206_gnosis",
+      "char_213_mostma",
+      "char_215_mantic",
+      "char_218_cuttle",
+      "char_222_bpipe",
+      "char_230_savage",
+      "char_237_gravel",
+      "char_243_waaifu",
+      "char_245_cello",
+      "char_249_mlyss",
+      "char_253_greyy",
+      "char_258_podego",
+      "char_263_skadi",
+      "char_264_f12yin",
+      "char_271_spikes",
+      "char_279_excu",
+      "char_290_vigna",
+      "char_291_aglina",
+      "char_294_ayer",
+      "char_300_phenxi",
+      "char_304_zebra",
+      "char_306_leizi",
+      "char_308_swire",
+      "char_311_mudrok",
+      "char_332_archet",
+      "char_337_utage",
+      "char_341_sntlla",
+      "char_345_folnic",
+      "char_348_ceylon",
+      "char_350_surtr",
+      "char_355_ethan",
+      "char_358_lisa",
+      "char_373_lionhd",
+      "char_377_gdglow",
+      "char_381_bubble",
+      "char_388_mint",
+      "char_391_rosmon",
+      "char_4004_pudd",
+      "char_4010_etlchi",
+      "char_4013_kjera",
+      "char_4016_kazema",
+      "char_4026_vulpis",
+      "char_4036_forcer",
+      "char_4039_horn",
+      "char_4040_rockr",
+      "char_4042_lumen",
+      "char_4045_heidi",
+      "char_4054_malist",
+      "char_4056_titi",
+      "char_4058_pepe",
+      "char_4064_mlynar",
+      "char_4079_haini",
+      "char_4080_lin",
+      "char_4082_qiubai",
+      "char_4087_ines",
+      "char_4100_caper",
+      "char_4114_harold",
+      "char_4116_blkkgt",
+      "char_4119_wanqin",
+      "char_4121_zuole",
+      "char_4122_grabds",
+      "char_4134_cetsyr",
+      "char_4137_udflow",
+      "char_4138_narant",
+      "char_4139_papyrs",
+      "char_4145_ulpia",
+      "char_4146_nymph",
+      "char_4148_philae",
+      "char_4151_tinman",
+      "char_4162_cathy",
+      "char_4163_rosesa",
+      "char_416_zumama",
+      "char_4191_tippi",
+      "char_4193_lemuen",
+      "char_4194_rmixer",
+      "char_4196_reckpr",
+      "char_4207_branch",
+      "char_420_flamtl",
+      "char_4211_snhunt",
+      "char_422_aurora",
+      "char_423_blemsh",
+      "char_426_billro",
+      "char_427_vigil",
+      "char_430_fartth",
+      "char_431_ashlok",
+      "char_437_mizuki",
+      "char_440_pinecn",
+      "char_446_aroma",
+      "char_449_glider",
+      "char_450_necras",
+      "char_469_indigo",
+      "char_472_pasngr",
+      "char_473_mberry",
+      "char_474_glady",
+      "char_491_humus",
+      "char_494_vendla",
+      "char_496_wildmn",
+      "char_498_inside"
+    ],
+    "skillIds": [
+      "skchr_accast_1",
+      "skchr_accast_2",
+      "skchr_accast_3",
+      "skchr_acfend_1",
+      "skchr_acfend_2",
+      "skchr_acfend_3",
+      "skchr_acguad_1",
+      "skchr_acguad_2",
+      "skchr_acguad_3",
+      "skchr_acmedc_1",
+      "skchr_acmedc_2",
+      "skchr_acmedc_3",
+      "skchr_acnipe_1",
+      "skchr_acnipe_2",
+      "skchr_acnipe_3",
+      "skchr_acpion_1",
+      "skchr_acpion_2",
+      "skchr_acpion_3",
+      "skchr_acspec_1",
+      "skchr_acspec_2",
+      "skchr_acspec_3",
+      "skchr_acsupo_1",
+      "skchr_acsupo_2",
+      "skchr_acsupo_3",
+      "skchr_aglina_1",
+      "skchr_aglina_2",
+      "skchr_aglina_3",
+      "skchr_agoat2_1",
+      "skchr_agoat2_2",
+      "skchr_agoat2_3",
+      "skchr_akkord_1",
+      "skchr_akkord_2",
+      "skchr_angel2_1",
+      "skchr_angel2_2",
+      "skchr_angel2_3",
+      "skchr_angel_1",
+      "skchr_angel_2",
+      "skchr_angel_3",
+      "skchr_archet_1",
+      "skchr_archet_2",
+      "skchr_archet_3",
+      "skchr_aroma_1",
+      "skchr_aroma_2",
+      "skchr_ashlok_2",
+      "skchr_aurora_1",
+      "skchr_aurora_2",
+      "skchr_ayer_1",
+      "skchr_ayer_2",
+      "skchr_beewax_1",
+      "skchr_beewax_2",
+      "skchr_billro_1",
+      "skchr_billro_2",
+      "skchr_billro_3",
+      "skchr_blackd_2",
+      "skchr_blaze2_1",
+      "skchr_blaze2_2",
+      "skchr_blaze2_3",
+      "skchr_bldsk_1",
+      "skchr_bldsk_2",
+      "skchr_blemsh_1",
+      "skchr_blemsh_2",
+      "skchr_blemsh_3",
+      "skchr_blkkgt_1",
+      "skchr_blkkgt_2",
+      "skchr_blkkgt_3",
+      "skchr_bpipe_2",
+      "skchr_bpipe_3",
+      "skchr_branch_1",
+      "skchr_branch_2",
+      "skchr_bubble_2",
+      "skchr_caper_1",
+      "skchr_caper_2",
+      "skchr_cathy_1",
+      "skchr_cathy_2",
+      "skchr_cello_1",
+      "skchr_cello_2",
+      "skchr_cello_3",
+      "skchr_cetsyr_1",
+      "skchr_cetsyr_2",
+      "skchr_cetsyr_3",
+      "skchr_ceylon_1",
+      "skchr_ceylon_2",
+      "skchr_cuttle_2",
+      "skchr_demkni_1",
+      "skchr_demkni_2",
+      "skchr_demkni_3",
+      "skchr_dusk_1",
+      "skchr_dusk_2",
+      "skchr_dusk_3",
+      "skchr_estell_2",
+      "skchr_ethan_1",
+      "skchr_ethan_2",
+      "skchr_etlchi_1",
+      "skchr_etlchi_2",
+      "skchr_etlchi_3",
+      "skchr_excu2_1",
+      "skchr_excu2_2",
+      "skchr_excu2_3",
+      "skchr_excu_1",
+      "skchr_excu_2",
+      "skchr_f12yin_1",
+      "skchr_f12yin_2",
+      "skchr_f12yin_3",
+      "skchr_fartth_2",
+      "skchr_fartth_3",
+      "skchr_flamtl_1",
+      "skchr_flamtl_2",
+      "skchr_flamtl_3",
+      "skchr_flower_2",
+      "skchr_fmout_2",
+      "skchr_folnic_1",
+      "skchr_folnic_2",
+      "skchr_forcer_1",
+      "skchr_forcer_2",
+      "skchr_gdglow_1",
+      "skchr_gdglow_2",
+      "skchr_gdglow_3",
+      "skchr_ghost2_1",
+      "skchr_ghost2_2",
+      "skchr_ghost2_3",
+      "skchr_ghost_2",
+      "skchr_glady_1",
+      "skchr_glady_2",
+      "skchr_glady_3",
+      "skchr_glider_1",
+      "skchr_glider_2",
+      "skchr_gnosis_1",
+      "skchr_gnosis_2",
+      "skchr_gnosis_3",
+      "skchr_grabds_1",
+      "skchr_grabds_2",
+      "skchr_gravel_1",
+      "skchr_gravel_2",
+      "skchr_greyy_2",
+      "skchr_gvial2_1",
+      "skchr_gvial2_2",
+      "skchr_gvial2_3",
+      "skchr_haini_1",
+      "skchr_haini_2",
+      "skchr_halo2_1",
+      "skchr_halo2_2",
+      "skchr_halo2_3",
+      "skchr_halo_1",
+      "skchr_halo_2",
+      "skchr_harold_2",
+      "skchr_heidi_1",
+      "skchr_heidi_2",
+      "skchr_horn_1",
+      "skchr_horn_2",
+      "skchr_horn_3",
+      "skchr_hsguma_1",
+      "skchr_hsguma_2",
+      "skchr_hsguma_3",
+      "skchr_huang_1",
+      "skchr_huang_2",
+      "skchr_huang_3",
+      "skchr_humus_1",
+      "skchr_humus_2",
+      "skchr_ifrit_1",
+      "skchr_ifrit_2",
+      "skchr_ifrit_3",
+      "skchr_indigo_1",
+      "skchr_indigo_2",
+      "skchr_ines_1",
+      "skchr_ines_2",
+      "skchr_ines_3",
+      "skchr_inside_1",
+      "skchr_inside_2",
+      "skchr_jesca2_1",
+      "skchr_jesca2_2",
+      "skchr_jesca2_3",
+      "skchr_kazema_1",
+      "skchr_kazema_2",
+      "skchr_kjera_2",
+      "skchr_kroos2_1",
+      "skchr_kroos2_2",
+      "skchr_leizi_2",
+      "skchr_lemuen_1",
+      "skchr_lemuen_2",
+      "skchr_lemuen_3",
+      "skchr_lin_1",
+      "skchr_lin_2",
+      "skchr_lin_3",
+      "skchr_lionhd_2",
+      "skchr_lisa_1",
+      "skchr_lisa_2",
+      "skchr_lisa_3",
+      "skchr_liskam_1",
+      "skchr_liskam_2",
+      "skchr_lumen_1",
+      "skchr_lumen_2",
+      "skchr_lumen_3",
+      "skchr_malist_2",
+      "skchr_mantic_1",
+      "skchr_mantic_2",
+      "skchr_mberry_1",
+      "skchr_mberry_2",
+      "skchr_mint_1",
+      "skchr_mint_2",
+      "skchr_mizuki_1",
+      "skchr_mizuki_2",
+      "skchr_mizuki_3",
+      "skchr_mlynar_1",
+      "skchr_mlynar_2",
+      "skchr_mlynar_3",
+      "skchr_mlyss_1",
+      "skchr_mlyss_2",
+      "skchr_mlyss_3",
+      "skchr_mm_1",
+      "skchr_mm_2",
+      "skchr_mostma_2",
+      "skchr_mostma_3",
+      "skchr_mudrok_2",
+      "skchr_mudrok_3",
+      "skchr_narant_1",
+      "skchr_narant_2",
+      "skchr_narant_3",
+      "skchr_nearl2_1",
+      "skchr_nearl2_2",
+      "skchr_nearl2_3",
+      "skchr_necras_1",
+      "skchr_necras_2",
+      "skchr_necras_3",
+      "skchr_nymph_1",
+      "skchr_nymph_2",
+      "skchr_nymph_3",
+      "skchr_papyrs_1",
+      "skchr_papyrs_2",
+      "skchr_pasngr_1",
+      "skchr_pasngr_2",
+      "skchr_pasngr_3",
+      "skchr_pepe_1",
+      "skchr_pepe_2",
+      "skchr_pepe_3",
+      "skchr_phenxi_1",
+      "skchr_phenxi_2",
+      "skchr_phenxi_3",
+      "skchr_philae_1",
+      "skchr_philae_2",
+      "skchr_pinecn_1",
+      "skchr_pinecn_2",
+      "skchr_pithst_1",
+      "skchr_plosis_2",
+      "skchr_podego_1",
+      "skchr_podego_2",
+      "skchr_prove_1",
+      "skchr_prove_2",
+      "skchr_pudd_2",
+      "skchr_qiubai_1",
+      "skchr_qiubai_2",
+      "skchr_qiubai_3",
+      "skchr_reckpr_1",
+      "skchr_reckpr_2",
+      "skchr_reed2_2",
+      "skchr_reed2_3",
+      "skchr_rmixer_1",
+      "skchr_rmixer_2",
+      "skchr_rmixer_3",
+      "skchr_rockr_2",
+      "skchr_rosesa_1",
+      "skchr_rosesa_2",
+      "skchr_rosmon_1",
+      "skchr_rosmon_2",
+      "skchr_rosmon_3",
+      "skchr_savage_1",
+      "skchr_savage_2",
+      "skchr_sbell2_1",
+      "skchr_sbell2_2",
+      "skchr_sbell2_3",
+      "skchr_sharp2_1",
+      "skchr_shotst_1",
+      "skchr_shotst_2",
+      "skchr_siege2_1",
+      "skchr_siege2_2",
+      "skchr_siege2_3",
+      "skchr_silent_2",
+      "skchr_skadi2_1",
+      "skchr_skadi2_2",
+      "skchr_skadi2_3",
+      "skchr_skadi_2",
+      "skchr_skadi_3",
+      "skchr_skgoat_2",
+      "skchr_slbell_1",
+      "skchr_slbell_2",
+      "skchr_slchan_1",
+      "skchr_slchan_2",
+      "skchr_slent2_1",
+      "skchr_slent2_2",
+      "skchr_slent2_3",
+      "skchr_snakek_2",
+      "skchr_snhunt_1",
+      "skchr_snhunt_2",
+      "skchr_sntlla_2",
+      "skchr_spikes_1",
+      "skchr_spikes_2",
+      "skchr_sunbr_1",
+      "skchr_sunbr_2",
+      "skchr_surtr_1",
+      "skchr_surtr_2",
+      "skchr_surtr_3",
+      "skchr_svash2_1",
+      "skchr_svash2_2",
+      "skchr_svash2_3",
+      "skchr_svrash_1",
+      "skchr_svrash_2",
+      "skchr_svrash_3",
+      "skchr_swire2_1",
+      "skchr_swire2_2",
+      "skchr_swire2_3",
+      "skchr_swire_1",
+      "skchr_swire_2",
+      "skchr_texas2_1",
+      "skchr_texas2_2",
+      "skchr_texas2_3",
+      "skchr_texas_2",
+      "skchr_thorn2_1",
+      "skchr_thorn2_2",
+      "skchr_thorn2_3",
+      "skchr_tinman_1",
+      "skchr_tinman_2",
+      "skchr_tippi_1",
+      "skchr_tippi_2",
+      "skchr_titi_1",
+      "skchr_titi_2",
+      "skchr_titi_3",
+      "skchr_typhon_2",
+      "skchr_typhon_3",
+      "skchr_udflow_1",
+      "skchr_udflow_2",
+      "skchr_ulpia_1",
+      "skchr_ulpia_2",
+      "skchr_ulpia_3",
+      "skchr_utage_1",
+      "skchr_utage_2",
+      "skchr_vendla_2",
+      "skchr_vigil_1",
+      "skchr_vigil_2",
+      "skchr_vigil_3",
+      "skchr_vigna_1",
+      "skchr_vigna_2",
+      "skchr_vodfox_1",
+      "skchr_vodfox_2",
+      "skchr_vulpis_1",
+      "skchr_vulpis_2",
+      "skchr_vulpis_3",
+      "skchr_waaifu_1",
+      "skchr_waaifu_2",
+      "skchr_wanqin_2",
+      "skchr_whitew_1",
+      "skchr_whitew_2",
+      "skchr_whitw2_1",
+      "skchr_whitw2_2",
+      "skchr_whitw2_3",
+      "skchr_wildmn_1",
+      "skchr_wildmn_2",
+      "skchr_yak_1",
+      "skchr_yak_2",
+      "skchr_yu_1",
+      "skchr_yu_2",
+      "skchr_yu_3",
+      "skchr_zebra_1",
+      "skchr_zebra_2",
+      "skchr_zumama_1",
+      "skchr_zumama_2",
+      "skchr_zumama_3",
+      "skchr_zuole_1",
+      "skchr_zuole_2",
+      "skchr_zuole_3",
+      "skcom_assist_cost[3]",
+      "skcom_atk_up[1]",
+      "skcom_atk_up[2]",
+      "skcom_atk_up[3]",
+      "skcom_born_up[1]",
+      "skcom_born_up[2]",
+      "skcom_born_up[3]",
+      "skcom_charge_cost[1]",
+      "skcom_charge_cost[2]",
+      "skcom_charge_cost[3]",
+      "skcom_def_up[1]",
+      "skcom_def_up[2]",
+      "skcom_def_up[3]",
+      "skcom_heal_up[1]",
+      "skcom_heal_up[2]",
+      "skcom_heal_up[3]",
+      "skcom_magic_rage[1]",
+      "skcom_magic_rage[2]",
+      "skcom_magic_rage[3]",
+      "skcom_quickattack[3]"
+    ],
+    "fixedSkillIds": [
+      "skchr_aglina_1",
+      "skchr_aglina_2",
+      "skchr_aglina_3",
+      "skchr_agoat2_1",
+      "skchr_agoat2_2",
+      "skchr_agoat2_3",
+      "skchr_angel2_1",
+      "skchr_angel2_2",
+      "skchr_angel2_3",
+      "skchr_angel_1",
+      "skchr_angel_2",
+      "skchr_angel_3",
+      "skchr_archet_1",
+      "skchr_archet_2",
+      "skchr_archet_3",
+      "skchr_aroma_1",
+      "skchr_aroma_2",
+      "skchr_ashlok_2",
+      "skchr_aurora_1",
+      "skchr_aurora_2",
+      "skchr_ayer_1",
+      "skchr_ayer_2",
+      "skchr_billro_1",
+      "skchr_billro_2",
+      "skchr_billro_3",
+      "skchr_blackd_2",
+      "skchr_blaze2_1",
+      "skchr_blaze2_2",
+      "skchr_blaze2_3",
+      "skchr_bldsk_1",
+      "skchr_bldsk_2",
+      "skchr_blemsh_1",
+      "skchr_blemsh_2",
+      "skchr_blemsh_3",
+      "skchr_blkkgt_1",
+      "skchr_blkkgt_2",
+      "skchr_blkkgt_3",
+      "skchr_bpipe_2",
+      "skchr_bpipe_3",
+      "skchr_branch_1",
+      "skchr_branch_2",
+      "skchr_bubble_2",
+      "skchr_caper_1",
+      "skchr_caper_2",
+      "skchr_cathy_1",
+      "skchr_cathy_2",
+      "skchr_cello_1",
+      "skchr_cello_2",
+      "skchr_cello_3",
+      "skchr_cetsyr_1",
+      "skchr_cetsyr_2",
+      "skchr_cetsyr_3",
+      "skchr_ceylon_1",
+      "skchr_ceylon_2",
+      "skchr_cuttle_2",
+      "skchr_demkni_1",
+      "skchr_demkni_2",
+      "skchr_demkni_3",
+      "skchr_dusk_1",
+      "skchr_dusk_2",
+      "skchr_dusk_3",
+      "skchr_estell_2",
+      "skchr_ethan_1",
+      "skchr_ethan_2",
+      "skchr_etlchi_1",
+      "skchr_etlchi_2",
+      "skchr_etlchi_3",
+      "skchr_excu2_1",
+      "skchr_excu2_2",
+      "skchr_excu2_3",
+      "skchr_excu_1",
+      "skchr_excu_2",
+      "skchr_f12yin_1",
+      "skchr_f12yin_2",
+      "skchr_f12yin_3",
+      "skchr_fartth_2",
+      "skchr_fartth_3",
+      "skchr_flamtl_1",
+      "skchr_flamtl_2",
+      "skchr_flamtl_3",
+      "skchr_flower_2",
+      "skchr_fmout_2",
+      "skchr_folnic_1",
+      "skchr_folnic_2",
+      "skchr_forcer_1",
+      "skchr_forcer_2",
+      "skchr_gdglow_1",
+      "skchr_gdglow_2",
+      "skchr_gdglow_3",
+      "skchr_ghost2_1",
+      "skchr_ghost2_2",
+      "skchr_ghost2_3",
+      "skchr_ghost_2",
+      "skchr_glady_1",
+      "skchr_glady_2",
+      "skchr_glady_3",
+      "skchr_glider_1",
+      "skchr_glider_2",
+      "skchr_gnosis_1",
+      "skchr_gnosis_2",
+      "skchr_gnosis_3",
+      "skchr_grabds_1",
+      "skchr_grabds_2",
+      "skchr_gravel_1",
+      "skchr_gravel_2",
+      "skchr_greyy_2",
+      "skchr_gvial2_1",
+      "skchr_gvial2_2",
+      "skchr_gvial2_3",
+      "skchr_haini_1",
+      "skchr_haini_2",
+      "skchr_halo2_1",
+      "skchr_halo2_2",
+      "skchr_halo2_3",
+      "skchr_halo_1",
+      "skchr_halo_2",
+      "skchr_harold_2",
+      "skchr_heidi_1",
+      "skchr_heidi_2",
+      "skchr_horn_1",
+      "skchr_horn_2",
+      "skchr_horn_3",
+      "skchr_hsguma_1",
+      "skchr_hsguma_2",
+      "skchr_hsguma_3",
+      "skchr_huang_1",
+      "skchr_huang_2",
+      "skchr_huang_3",
+      "skchr_humus_1",
+      "skchr_humus_2",
+      "skchr_ifrit_1",
+      "skchr_ifrit_2",
+      "skchr_ifrit_3",
+      "skchr_indigo_1",
+      "skchr_indigo_2",
+      "skchr_ines_1",
+      "skchr_ines_2",
+      "skchr_ines_3",
+      "skchr_inside_1",
+      "skchr_inside_2",
+      "skchr_jesca2_1",
+      "skchr_jesca2_2",
+      "skchr_jesca2_3",
+      "skchr_kazema_1",
+      "skchr_kazema_2",
+      "skchr_kjera_2",
+      "skchr_kroos2_1",
+      "skchr_kroos2_2",
+      "skchr_leizi_2",
+      "skchr_lemuen_1",
+      "skchr_lemuen_2",
+      "skchr_lemuen_3",
+      "skchr_lin_1",
+      "skchr_lin_2",
+      "skchr_lin_3",
+      "skchr_lionhd_2",
+      "skchr_lisa_1",
+      "skchr_lisa_2",
+      "skchr_lisa_3",
+      "skchr_liskam_1",
+      "skchr_liskam_2",
+      "skchr_lumen_1",
+      "skchr_lumen_2",
+      "skchr_lumen_3",
+      "skchr_malist_2",
+      "skchr_mantic_1",
+      "skchr_mantic_2",
+      "skchr_mberry_1",
+      "skchr_mberry_2",
+      "skchr_mint_1",
+      "skchr_mint_2",
+      "skchr_mizuki_1",
+      "skchr_mizuki_2",
+      "skchr_mizuki_3",
+      "skchr_mlynar_1",
+      "skchr_mlynar_2",
+      "skchr_mlynar_3",
+      "skchr_mlyss_1",
+      "skchr_mlyss_2",
+      "skchr_mlyss_3",
+      "skchr_mm_1",
+      "skchr_mm_2",
+      "skchr_mostma_2",
+      "skchr_mostma_3",
+      "skchr_mudrok_2",
+      "skchr_mudrok_3",
+      "skchr_narant_1",
+      "skchr_narant_2",
+      "skchr_narant_3",
+      "skchr_nearl2_1",
+      "skchr_nearl2_2",
+      "skchr_nearl2_3",
+      "skchr_necras_1",
+      "skchr_necras_2",
+      "skchr_necras_3",
+      "skchr_nymph_1",
+      "skchr_nymph_2",
+      "skchr_nymph_3",
+      "skchr_papyrs_1",
+      "skchr_papyrs_2",
+      "skchr_pasngr_1",
+      "skchr_pasngr_2",
+      "skchr_pasngr_3",
+      "skchr_pepe_1",
+      "skchr_pepe_2",
+      "skchr_pepe_3",
+      "skchr_phenxi_1",
+      "skchr_phenxi_2",
+      "skchr_phenxi_3",
+      "skchr_philae_1",
+      "skchr_philae_2",
+      "skchr_pinecn_1",
+      "skchr_pinecn_2",
+      "skchr_plosis_2",
+      "skchr_podego_1",
+      "skchr_podego_2",
+      "skchr_prove_1",
+      "skchr_prove_2",
+      "skchr_pudd_2",
+      "skchr_qiubai_1",
+      "skchr_qiubai_2",
+      "skchr_qiubai_3",
+      "skchr_reckpr_1",
+      "skchr_reckpr_2",
+      "skchr_reed2_2",
+      "skchr_reed2_3",
+      "skchr_rmixer_1",
+      "skchr_rmixer_2",
+      "skchr_rmixer_3",
+      "skchr_rockr_2",
+      "skchr_rosesa_1",
+      "skchr_rosesa_2",
+      "skchr_rosmon_1",
+      "skchr_rosmon_2",
+      "skchr_rosmon_3",
+      "skchr_savage_1",
+      "skchr_savage_2",
+      "skchr_sbell2_1",
+      "skchr_sbell2_2",
+      "skchr_sbell2_3",
+      "skchr_shotst_1",
+      "skchr_shotst_2",
+      "skchr_siege2_1",
+      "skchr_siege2_2",
+      "skchr_siege2_3",
+      "skchr_silent_2",
+      "skchr_skadi2_1",
+      "skchr_skadi2_2",
+      "skchr_skadi2_3",
+      "skchr_skadi_2",
+      "skchr_skadi_3",
+      "skchr_slbell_1",
+      "skchr_slbell_2",
+      "skchr_slent2_1",
+      "skchr_slent2_2",
+      "skchr_slent2_3",
+      "skchr_snakek_2",
+      "skchr_snhunt_1",
+      "skchr_snhunt_2",
+      "skchr_sntlla_2",
+      "skchr_spikes_1",
+      "skchr_spikes_2",
+      "skchr_sunbr_1",
+      "skchr_sunbr_2",
+      "skchr_surtr_1",
+      "skchr_surtr_2",
+      "skchr_surtr_3",
+      "skchr_svash2_1",
+      "skchr_svash2_2",
+      "skchr_svash2_3",
+      "skchr_svrash_1",
+      "skchr_svrash_2",
+      "skchr_svrash_3",
+      "skchr_swire2_1",
+      "skchr_swire2_2",
+      "skchr_swire2_3",
+      "skchr_swire_1",
+      "skchr_swire_2",
+      "skchr_texas2_1",
+      "skchr_texas2_2",
+      "skchr_texas2_3",
+      "skchr_texas_2",
+      "skchr_thorn2_1",
+      "skchr_thorn2_2",
+      "skchr_thorn2_3",
+      "skchr_tinman_1",
+      "skchr_tinman_2",
+      "skchr_tippi_1",
+      "skchr_tippi_2",
+      "skchr_titi_1",
+      "skchr_titi_2",
+      "skchr_titi_3",
+      "skchr_typhon_2",
+      "skchr_typhon_3",
+      "skchr_udflow_1",
+      "skchr_udflow_2",
+      "skchr_ulpia_1",
+      "skchr_ulpia_2",
+      "skchr_ulpia_3",
+      "skchr_utage_1",
+      "skchr_utage_2",
+      "skchr_vendla_2",
+      "skchr_vigil_1",
+      "skchr_vigil_2",
+      "skchr_vigil_3",
+      "skchr_vigna_1",
+      "skchr_vigna_2",
+      "skchr_vulpis_1",
+      "skchr_vulpis_2",
+      "skchr_vulpis_3",
+      "skchr_waaifu_1",
+      "skchr_waaifu_2",
+      "skchr_wanqin_2",
+      "skchr_whitew_1",
+      "skchr_whitew_2",
+      "skchr_whitw2_1",
+      "skchr_whitw2_2",
+      "skchr_whitw2_3",
+      "skchr_wildmn_1",
+      "skchr_wildmn_2",
+      "skchr_yak_1",
+      "skchr_yak_2",
+      "skchr_yu_1",
+      "skchr_yu_2",
+      "skchr_yu_3",
+      "skchr_zebra_1",
+      "skchr_zebra_2",
+      "skchr_zumama_1",
+      "skchr_zumama_2",
+      "skchr_zumama_3",
+      "skchr_zuole_1",
+      "skchr_zuole_2",
+      "skchr_zuole_3",
+      "skcom_assist_cost[3]",
+      "skcom_atk_up[2]",
+      "skcom_atk_up[3]",
+      "skcom_charge_cost[2]",
+      "skcom_charge_cost[3]",
+      "skcom_def_up[2]",
+      "skcom_def_up[3]",
+      "skcom_heal_up[2]",
+      "skcom_heal_up[3]",
+      "skcom_magic_rage[2]",
+      "skcom_magic_rage[3]",
+      "skcom_quickattack[3]"
+    ],
+    "identities": [
+      {
+        "charId": "char_017_huang",
+        "fixed": true,
+        "skillIds": [
+          "skchr_huang_1",
+          "skchr_huang_2",
+          "skchr_huang_3"
+        ]
+      },
+      {
+        "charId": "char_1012_skadi2",
+        "fixed": true,
+        "skillIds": [
+          "skchr_skadi2_1",
+          "skchr_skadi2_2",
+          "skchr_skadi2_3"
+        ]
+      },
+      {
+        "charId": "char_1014_nearl2",
+        "fixed": true,
+        "skillIds": [
+          "skchr_nearl2_1",
+          "skchr_nearl2_2",
+          "skchr_nearl2_3"
+        ]
+      },
+      {
+        "charId": "char_1016_agoat2",
+        "fixed": true,
+        "skillIds": [
+          "skchr_agoat2_1",
+          "skchr_agoat2_2",
+          "skchr_agoat2_3"
+        ]
+      },
+      {
+        "charId": "char_1019_siege2",
+        "fixed": true,
+        "skillIds": [
+          "skchr_siege2_1",
+          "skchr_siege2_2",
+          "skchr_siege2_3"
+        ]
+      },
+      {
+        "charId": "char_1020_reed2",
+        "fixed": true,
+        "skillIds": [
+          "skchr_reed2_2",
+          "skchr_reed2_3",
+          "skcom_quickattack[3]"
+        ]
+      },
+      {
+        "charId": "char_1021_kroos2",
+        "fixed": true,
+        "skillIds": [
+          "skchr_kroos2_1",
+          "skchr_kroos2_2"
+        ]
+      },
+      {
+        "charId": "char_1023_ghost2",
+        "fixed": true,
+        "skillIds": [
+          "skchr_ghost2_1",
+          "skchr_ghost2_2",
+          "skchr_ghost2_3"
+        ]
+      },
+      {
+        "charId": "char_1026_gvial2",
+        "fixed": true,
+        "skillIds": [
+          "skchr_gvial2_1",
+          "skchr_gvial2_2",
+          "skchr_gvial2_3"
+        ]
+      },
+      {
+        "charId": "char_1028_texas2",
+        "fixed": true,
+        "skillIds": [
+          "skchr_texas2_1",
+          "skchr_texas2_2",
+          "skchr_texas2_3"
+        ]
+      },
+      {
+        "charId": "char_102_texas",
+        "fixed": true,
+        "skillIds": [
+          "skchr_texas_2",
+          "skcom_charge_cost[3]"
+        ]
+      },
+      {
+        "charId": "char_1031_slent2",
+        "fixed": true,
+        "skillIds": [
+          "skchr_slent2_1",
+          "skchr_slent2_2",
+          "skchr_slent2_3"
+        ]
+      },
+      {
+        "charId": "char_1032_excu2",
+        "fixed": true,
+        "skillIds": [
+          "skchr_excu2_1",
+          "skchr_excu2_2",
+          "skchr_excu2_3"
+        ]
+      },
+      {
+        "charId": "char_1033_swire2",
+        "fixed": true,
+        "skillIds": [
+          "skchr_swire2_1",
+          "skchr_swire2_2",
+          "skchr_swire2_3"
+        ]
+      },
+      {
+        "charId": "char_1034_jesca2",
+        "fixed": true,
+        "skillIds": [
+          "skchr_jesca2_1",
+          "skchr_jesca2_2",
+          "skchr_jesca2_3"
+        ]
+      },
+      {
+        "charId": "char_1038_whitw2",
+        "fixed": true,
+        "skillIds": [
+          "skchr_whitw2_1",
+          "skchr_whitw2_2",
+          "skchr_whitw2_3"
+        ]
+      },
+      {
+        "charId": "char_1039_thorn2",
+        "fixed": true,
+        "skillIds": [
+          "skchr_thorn2_1",
+          "skchr_thorn2_2",
+          "skchr_thorn2_3"
+        ]
+      },
+      {
+        "charId": "char_103_angel",
+        "fixed": true,
+        "skillIds": [
+          "skchr_angel_1",
+          "skchr_angel_2",
+          "skchr_angel_3"
+        ]
+      },
+      {
+        "charId": "char_1040_blaze2",
+        "fixed": true,
+        "skillIds": [
+          "skchr_blaze2_1",
+          "skchr_blaze2_2",
+          "skchr_blaze2_3"
+        ]
+      },
+      {
+        "charId": "char_1041_angel2",
+        "fixed": true,
+        "skillIds": [
+          "skchr_angel2_1",
+          "skchr_angel2_2",
+          "skchr_angel2_3"
+        ]
+      },
+      {
+        "charId": "char_1045_svash2",
+        "fixed": true,
+        "skillIds": [
+          "skchr_svash2_1",
+          "skchr_svash2_2",
+          "skchr_svash2_3"
+        ]
+      },
+      {
+        "charId": "char_1046_sbell2",
+        "fixed": true,
+        "skillIds": [
+          "skchr_sbell2_1",
+          "skchr_sbell2_2",
+          "skchr_sbell2_3"
+        ]
+      },
+      {
+        "charId": "char_1047_halo2",
+        "fixed": true,
+        "skillIds": [
+          "skchr_halo2_1",
+          "skchr_halo2_2",
+          "skchr_halo2_3"
+        ]
+      },
+      {
+        "charId": "char_107_liskam",
+        "fixed": true,
+        "skillIds": [
+          "skchr_liskam_1",
+          "skchr_liskam_2"
+        ]
+      },
+      {
+        "charId": "char_108_silent",
+        "fixed": true,
+        "skillIds": [
+          "skchr_silent_2",
+          "skcom_heal_up[3]"
+        ]
+      },
+      {
+        "charId": "char_109_fmout",
+        "fixed": true,
+        "skillIds": [
+          "skchr_fmout_2",
+          "skcom_magic_rage[2]"
+        ]
+      },
+      {
+        "charId": "char_126_shotst",
+        "fixed": true,
+        "skillIds": [
+          "skchr_shotst_1",
+          "skchr_shotst_2"
+        ]
+      },
+      {
+        "charId": "char_127_estell",
+        "fixed": true,
+        "skillIds": [
+          "skchr_estell_2",
+          "skcom_atk_up[2]"
+        ]
+      },
+      {
+        "charId": "char_128_plosis",
+        "fixed": true,
+        "skillIds": [
+          "skchr_plosis_2",
+          "skcom_heal_up[3]"
+        ]
+      },
+      {
+        "charId": "char_133_mm",
+        "fixed": true,
+        "skillIds": [
+          "skchr_mm_1",
+          "skchr_mm_2"
+        ]
+      },
+      {
+        "charId": "char_134_ifrit",
+        "fixed": true,
+        "skillIds": [
+          "skchr_ifrit_1",
+          "skchr_ifrit_2",
+          "skchr_ifrit_3"
+        ]
+      },
+      {
+        "charId": "char_135_halo",
+        "fixed": true,
+        "skillIds": [
+          "skchr_halo_1",
+          "skchr_halo_2"
+        ]
+      },
+      {
+        "charId": "char_136_hsguma",
+        "fixed": true,
+        "skillIds": [
+          "skchr_hsguma_1",
+          "skchr_hsguma_2",
+          "skchr_hsguma_3"
+        ]
+      },
+      {
+        "charId": "char_140_whitew",
+        "fixed": true,
+        "skillIds": [
+          "skchr_whitew_1",
+          "skchr_whitew_2"
+        ]
+      },
+      {
+        "charId": "char_143_ghost",
+        "fixed": true,
+        "skillIds": [
+          "skchr_ghost_2",
+          "skcom_atk_up[3]"
+        ]
+      },
+      {
+        "charId": "char_145_prove",
+        "fixed": true,
+        "skillIds": [
+          "skchr_prove_1",
+          "skchr_prove_2"
+        ]
+      },
+      {
+        "charId": "char_150_snakek",
+        "fixed": true,
+        "skillIds": [
+          "skchr_snakek_2",
+          "skcom_def_up[2]"
+        ]
+      },
+      {
+        "charId": "char_171_bldsk",
+        "fixed": true,
+        "skillIds": [
+          "skchr_bldsk_1",
+          "skchr_bldsk_2"
+        ]
+      },
+      {
+        "charId": "char_172_svrash",
+        "fixed": true,
+        "skillIds": [
+          "skchr_svrash_1",
+          "skchr_svrash_2",
+          "skchr_svrash_3"
+        ]
+      },
+      {
+        "charId": "char_173_slchan",
+        "fixed": false,
+        "skillIds": [
+          "skchr_slchan_1",
+          "skchr_slchan_2"
+        ]
+      },
+      {
+        "charId": "char_174_slbell",
+        "fixed": true,
+        "skillIds": [
+          "skchr_slbell_1",
+          "skchr_slbell_2"
+        ]
+      },
+      {
+        "charId": "char_181_flower",
+        "fixed": true,
+        "skillIds": [
+          "skchr_flower_2",
+          "skcom_heal_up[2]"
+        ]
+      },
+      {
+        "charId": "char_183_skgoat",
+        "fixed": false,
+        "skillIds": [
+          "skchr_skgoat_2",
+          "skcom_atk_up[2]"
+        ]
+      },
+      {
+        "charId": "char_196_sunbr",
+        "fixed": true,
+        "skillIds": [
+          "skchr_sunbr_1",
+          "skchr_sunbr_2"
+        ]
+      },
+      {
+        "charId": "char_198_blackd",
+        "fixed": true,
+        "skillIds": [
+          "skchr_blackd_2",
+          "skcom_charge_cost[2]"
+        ]
+      },
+      {
+        "charId": "char_199_yak",
+        "fixed": true,
+        "skillIds": [
+          "skchr_yak_1",
+          "skchr_yak_2"
+        ]
+      },
+      {
+        "charId": "char_2012_typhon",
+        "fixed": true,
+        "skillIds": [
+          "skchr_typhon_2",
+          "skchr_typhon_3",
+          "skcom_quickattack[3]"
+        ]
+      },
+      {
+        "charId": "char_2015_dusk",
+        "fixed": true,
+        "skillIds": [
+          "skchr_dusk_1",
+          "skchr_dusk_2",
+          "skchr_dusk_3"
+        ]
+      },
+      {
+        "charId": "char_2026_yu",
+        "fixed": true,
+        "skillIds": [
+          "skchr_yu_1",
+          "skchr_yu_2",
+          "skchr_yu_3"
+        ]
+      },
+      {
+        "charId": "char_202_demkni",
+        "fixed": true,
+        "skillIds": [
+          "skchr_demkni_1",
+          "skchr_demkni_2",
+          "skchr_demkni_3"
+        ]
+      },
+      {
+        "charId": "char_206_gnosis",
+        "fixed": true,
+        "skillIds": [
+          "skchr_gnosis_1",
+          "skchr_gnosis_2",
+          "skchr_gnosis_3"
+        ]
+      },
+      {
+        "charId": "char_213_mostma",
+        "fixed": true,
+        "skillIds": [
+          "skchr_mostma_2",
+          "skchr_mostma_3",
+          "skcom_atk_up[3]"
+        ]
+      },
+      {
+        "charId": "char_215_mantic",
+        "fixed": true,
+        "skillIds": [
+          "skchr_mantic_1",
+          "skchr_mantic_2"
+        ]
+      },
+      {
+        "charId": "char_218_cuttle",
+        "fixed": true,
+        "skillIds": [
+          "skchr_cuttle_2",
+          "skcom_atk_up[3]"
+        ]
+      },
+      {
+        "charId": "char_222_bpipe",
+        "fixed": true,
+        "skillIds": [
+          "skchr_bpipe_2",
+          "skchr_bpipe_3",
+          "skcom_quickattack[3]"
+        ]
+      },
+      {
+        "charId": "char_230_savage",
+        "fixed": true,
+        "skillIds": [
+          "skchr_savage_1",
+          "skchr_savage_2"
+        ]
+      },
+      {
+        "charId": "char_237_gravel",
+        "fixed": true,
+        "skillIds": [
+          "skchr_gravel_1",
+          "skchr_gravel_2"
+        ]
+      },
+      {
+        "charId": "char_243_waaifu",
+        "fixed": true,
+        "skillIds": [
+          "skchr_waaifu_1",
+          "skchr_waaifu_2"
+        ]
+      },
+      {
+        "charId": "char_245_cello",
+        "fixed": true,
+        "skillIds": [
+          "skchr_cello_1",
+          "skchr_cello_2",
+          "skchr_cello_3"
+        ]
+      },
+      {
+        "charId": "char_249_mlyss",
+        "fixed": true,
+        "skillIds": [
+          "skchr_mlyss_1",
+          "skchr_mlyss_2",
+          "skchr_mlyss_3"
+        ]
+      },
+      {
+        "charId": "char_253_greyy",
+        "fixed": true,
+        "skillIds": [
+          "skchr_greyy_2",
+          "skcom_magic_rage[2]"
+        ]
+      },
+      {
+        "charId": "char_254_vodfox",
+        "fixed": false,
+        "skillIds": [
+          "skchr_vodfox_1",
+          "skchr_vodfox_2"
+        ]
+      },
+      {
+        "charId": "char_258_podego",
+        "fixed": true,
+        "skillIds": [
+          "skchr_podego_1",
+          "skchr_podego_2"
+        ]
+      },
+      {
+        "charId": "char_263_skadi",
+        "fixed": true,
+        "skillIds": [
+          "skchr_skadi_2",
+          "skchr_skadi_3",
+          "skcom_quickattack[3]"
+        ]
+      },
+      {
+        "charId": "char_264_f12yin",
+        "fixed": true,
+        "skillIds": [
+          "skchr_f12yin_1",
+          "skchr_f12yin_2",
+          "skchr_f12yin_3"
+        ]
+      },
+      {
+        "charId": "char_271_spikes",
+        "fixed": true,
+        "skillIds": [
+          "skchr_spikes_1",
+          "skchr_spikes_2"
+        ]
+      },
+      {
+        "charId": "char_279_excu",
+        "fixed": true,
+        "skillIds": [
+          "skchr_excu_1",
+          "skchr_excu_2"
+        ]
+      },
+      {
+        "charId": "char_290_vigna",
+        "fixed": true,
+        "skillIds": [
+          "skchr_vigna_1",
+          "skchr_vigna_2"
+        ]
+      },
+      {
+        "charId": "char_291_aglina",
+        "fixed": true,
+        "skillIds": [
+          "skchr_aglina_1",
+          "skchr_aglina_2",
+          "skchr_aglina_3"
+        ]
+      },
+      {
+        "charId": "char_294_ayer",
+        "fixed": true,
+        "skillIds": [
+          "skchr_ayer_1",
+          "skchr_ayer_2"
+        ]
+      },
+      {
+        "charId": "char_300_phenxi",
+        "fixed": true,
+        "skillIds": [
+          "skchr_phenxi_1",
+          "skchr_phenxi_2",
+          "skchr_phenxi_3"
+        ]
+      },
+      {
+        "charId": "char_304_zebra",
+        "fixed": true,
+        "skillIds": [
+          "skchr_zebra_1",
+          "skchr_zebra_2"
+        ]
+      },
+      {
+        "charId": "char_306_leizi",
+        "fixed": true,
+        "skillIds": [
+          "skchr_leizi_2",
+          "skcom_atk_up[3]"
+        ]
+      },
+      {
+        "charId": "char_308_swire",
+        "fixed": true,
+        "skillIds": [
+          "skchr_swire_1",
+          "skchr_swire_2"
+        ]
+      },
+      {
+        "charId": "char_311_mudrok",
+        "fixed": true,
+        "skillIds": [
+          "skchr_mudrok_2",
+          "skchr_mudrok_3",
+          "skcom_def_up[3]"
+        ]
+      },
+      {
+        "charId": "char_332_archet",
+        "fixed": true,
+        "skillIds": [
+          "skchr_archet_1",
+          "skchr_archet_2",
+          "skchr_archet_3"
+        ]
+      },
+      {
+        "charId": "char_337_utage",
+        "fixed": true,
+        "skillIds": [
+          "skchr_utage_1",
+          "skchr_utage_2"
+        ]
+      },
+      {
+        "charId": "char_341_sntlla",
+        "fixed": true,
+        "skillIds": [
+          "skchr_sntlla_2",
+          "skcom_quickattack[3]"
+        ]
+      },
+      {
+        "charId": "char_344_beewax",
+        "fixed": false,
+        "skillIds": [
+          "skchr_beewax_1",
+          "skchr_beewax_2"
+        ]
+      },
+      {
+        "charId": "char_345_folnic",
+        "fixed": true,
+        "skillIds": [
+          "skchr_folnic_1",
+          "skchr_folnic_2"
+        ]
+      },
+      {
+        "charId": "char_348_ceylon",
+        "fixed": true,
+        "skillIds": [
+          "skchr_ceylon_1",
+          "skchr_ceylon_2"
+        ]
+      },
+      {
+        "charId": "char_350_surtr",
+        "fixed": true,
+        "skillIds": [
+          "skchr_surtr_1",
+          "skchr_surtr_2",
+          "skchr_surtr_3"
+        ]
+      },
+      {
+        "charId": "char_355_ethan",
+        "fixed": true,
+        "skillIds": [
+          "skchr_ethan_1",
+          "skchr_ethan_2"
+        ]
+      },
+      {
+        "charId": "char_358_lisa",
+        "fixed": true,
+        "skillIds": [
+          "skchr_lisa_1",
+          "skchr_lisa_2",
+          "skchr_lisa_3"
+        ]
+      },
+      {
+        "charId": "char_373_lionhd",
+        "fixed": true,
+        "skillIds": [
+          "skchr_lionhd_2",
+          "skcom_atk_up[3]"
+        ]
+      },
+      {
+        "charId": "char_377_gdglow",
+        "fixed": true,
+        "skillIds": [
+          "skchr_gdglow_1",
+          "skchr_gdglow_2",
+          "skchr_gdglow_3"
+        ]
+      },
+      {
+        "charId": "char_381_bubble",
+        "fixed": true,
+        "skillIds": [
+          "skchr_bubble_2",
+          "skcom_def_up[2]"
+        ]
+      },
+      {
+        "charId": "char_388_mint",
+        "fixed": true,
+        "skillIds": [
+          "skchr_mint_1",
+          "skchr_mint_2"
+        ]
+      },
+      {
+        "charId": "char_391_rosmon",
+        "fixed": true,
+        "skillIds": [
+          "skchr_rosmon_1",
+          "skchr_rosmon_2",
+          "skchr_rosmon_3"
+        ]
+      },
+      {
+        "charId": "char_4004_pudd",
+        "fixed": true,
+        "skillIds": [
+          "skchr_pudd_2",
+          "skcom_magic_rage[2]"
+        ]
+      },
+      {
+        "charId": "char_4010_etlchi",
+        "fixed": true,
+        "skillIds": [
+          "skchr_etlchi_1",
+          "skchr_etlchi_2",
+          "skchr_etlchi_3"
+        ]
+      },
+      {
+        "charId": "char_4013_kjera",
+        "fixed": true,
+        "skillIds": [
+          "skchr_kjera_2",
+          "skcom_atk_up[3]"
+        ]
+      },
+      {
+        "charId": "char_4016_kazema",
+        "fixed": true,
+        "skillIds": [
+          "skchr_kazema_1",
+          "skchr_kazema_2"
+        ]
+      },
+      {
+        "charId": "char_4026_vulpis",
+        "fixed": true,
+        "skillIds": [
+          "skchr_vulpis_1",
+          "skchr_vulpis_2",
+          "skchr_vulpis_3"
+        ]
+      },
+      {
+        "charId": "char_4036_forcer",
+        "fixed": true,
+        "skillIds": [
+          "skchr_forcer_1",
+          "skchr_forcer_2"
+        ]
+      },
+      {
+        "charId": "char_4039_horn",
+        "fixed": true,
+        "skillIds": [
+          "skchr_horn_1",
+          "skchr_horn_2",
+          "skchr_horn_3"
+        ]
+      },
+      {
+        "charId": "char_4040_rockr",
+        "fixed": true,
+        "skillIds": [
+          "skchr_rockr_2",
+          "skcom_magic_rage[3]"
+        ]
+      },
+      {
+        "charId": "char_4042_lumen",
+        "fixed": true,
+        "skillIds": [
+          "skchr_lumen_1",
+          "skchr_lumen_2",
+          "skchr_lumen_3"
+        ]
+      },
+      {
+        "charId": "char_4045_heidi",
+        "fixed": true,
+        "skillIds": [
+          "skchr_heidi_1",
+          "skchr_heidi_2"
+        ]
+      },
+      {
+        "charId": "char_4051_akkord",
+        "fixed": false,
+        "skillIds": [
+          "skchr_akkord_1",
+          "skchr_akkord_2"
+        ]
+      },
+      {
+        "charId": "char_4054_malist",
+        "fixed": true,
+        "skillIds": [
+          "skchr_malist_2",
+          "skcom_quickattack[3]"
+        ]
+      },
+      {
+        "charId": "char_4056_titi",
+        "fixed": true,
+        "skillIds": [
+          "skchr_titi_1",
+          "skchr_titi_2",
+          "skchr_titi_3"
+        ]
+      },
+      {
+        "charId": "char_4058_pepe",
+        "fixed": true,
+        "skillIds": [
+          "skchr_pepe_1",
+          "skchr_pepe_2",
+          "skchr_pepe_3"
+        ]
+      },
+      {
+        "charId": "char_4064_mlynar",
+        "fixed": true,
+        "skillIds": [
+          "skchr_mlynar_1",
+          "skchr_mlynar_2",
+          "skchr_mlynar_3"
+        ]
+      },
+      {
+        "charId": "char_4079_haini",
+        "fixed": true,
+        "skillIds": [
+          "skchr_haini_1",
+          "skchr_haini_2"
+        ]
+      },
+      {
+        "charId": "char_4080_lin",
+        "fixed": true,
+        "skillIds": [
+          "skchr_lin_1",
+          "skchr_lin_2",
+          "skchr_lin_3"
+        ]
+      },
+      {
+        "charId": "char_4082_qiubai",
+        "fixed": true,
+        "skillIds": [
+          "skchr_qiubai_1",
+          "skchr_qiubai_2",
+          "skchr_qiubai_3"
+        ]
+      },
+      {
+        "charId": "char_4087_ines",
+        "fixed": true,
+        "skillIds": [
+          "skchr_ines_1",
+          "skchr_ines_2",
+          "skchr_ines_3"
+        ]
+      },
+      {
+        "charId": "char_4100_caper",
+        "fixed": true,
+        "skillIds": [
+          "skchr_caper_1",
+          "skchr_caper_2"
+        ]
+      },
+      {
+        "charId": "char_4114_harold",
+        "fixed": true,
+        "skillIds": [
+          "skchr_harold_2",
+          "skcom_heal_up[3]"
+        ]
+      },
+      {
+        "charId": "char_4116_blkkgt",
+        "fixed": true,
+        "skillIds": [
+          "skchr_blkkgt_1",
+          "skchr_blkkgt_2",
+          "skchr_blkkgt_3"
+        ]
+      },
+      {
+        "charId": "char_4119_wanqin",
+        "fixed": true,
+        "skillIds": [
+          "skchr_wanqin_2",
+          "skcom_assist_cost[3]"
+        ]
+      },
+      {
+        "charId": "char_4121_zuole",
+        "fixed": true,
+        "skillIds": [
+          "skchr_zuole_1",
+          "skchr_zuole_2",
+          "skchr_zuole_3"
+        ]
+      },
+      {
+        "charId": "char_4122_grabds",
+        "fixed": true,
+        "skillIds": [
+          "skchr_grabds_1",
+          "skchr_grabds_2"
+        ]
+      },
+      {
+        "charId": "char_4134_cetsyr",
+        "fixed": true,
+        "skillIds": [
+          "skchr_cetsyr_1",
+          "skchr_cetsyr_2",
+          "skchr_cetsyr_3"
+        ]
+      },
+      {
+        "charId": "char_4137_udflow",
+        "fixed": true,
+        "skillIds": [
+          "skchr_udflow_1",
+          "skchr_udflow_2"
+        ]
+      },
+      {
+        "charId": "char_4138_narant",
+        "fixed": true,
+        "skillIds": [
+          "skchr_narant_1",
+          "skchr_narant_2",
+          "skchr_narant_3"
+        ]
+      },
+      {
+        "charId": "char_4139_papyrs",
+        "fixed": true,
+        "skillIds": [
+          "skchr_papyrs_1",
+          "skchr_papyrs_2"
+        ]
+      },
+      {
+        "charId": "char_4145_ulpia",
+        "fixed": true,
+        "skillIds": [
+          "skchr_ulpia_1",
+          "skchr_ulpia_2",
+          "skchr_ulpia_3"
+        ]
+      },
+      {
+        "charId": "char_4146_nymph",
+        "fixed": true,
+        "skillIds": [
+          "skchr_nymph_1",
+          "skchr_nymph_2",
+          "skchr_nymph_3"
+        ]
+      },
+      {
+        "charId": "char_4148_philae",
+        "fixed": true,
+        "skillIds": [
+          "skchr_philae_1",
+          "skchr_philae_2"
+        ]
+      },
+      {
+        "charId": "char_4151_tinman",
+        "fixed": true,
+        "skillIds": [
+          "skchr_tinman_1",
+          "skchr_tinman_2"
+        ]
+      },
+      {
+        "charId": "char_4162_cathy",
+        "fixed": true,
+        "skillIds": [
+          "skchr_cathy_1",
+          "skchr_cathy_2"
+        ]
+      },
+      {
+        "charId": "char_4163_rosesa",
+        "fixed": true,
+        "skillIds": [
+          "skchr_rosesa_1",
+          "skchr_rosesa_2"
+        ]
+      },
+      {
+        "charId": "char_416_zumama",
+        "fixed": true,
+        "skillIds": [
+          "skchr_zumama_1",
+          "skchr_zumama_2",
+          "skchr_zumama_3"
+        ]
+      },
+      {
+        "charId": "char_4191_tippi",
+        "fixed": true,
+        "skillIds": [
+          "skchr_tippi_1",
+          "skchr_tippi_2"
+        ]
+      },
+      {
+        "charId": "char_4193_lemuen",
+        "fixed": true,
+        "skillIds": [
+          "skchr_lemuen_1",
+          "skchr_lemuen_2",
+          "skchr_lemuen_3"
+        ]
+      },
+      {
+        "charId": "char_4194_rmixer",
+        "fixed": true,
+        "skillIds": [
+          "skchr_rmixer_1",
+          "skchr_rmixer_2",
+          "skchr_rmixer_3"
+        ]
+      },
+      {
+        "charId": "char_4196_reckpr",
+        "fixed": true,
+        "skillIds": [
+          "skchr_reckpr_1",
+          "skchr_reckpr_2"
+        ]
+      },
+      {
+        "charId": "char_4207_branch",
+        "fixed": true,
+        "skillIds": [
+          "skchr_branch_1",
+          "skchr_branch_2"
+        ]
+      },
+      {
+        "charId": "char_420_flamtl",
+        "fixed": true,
+        "skillIds": [
+          "skchr_flamtl_1",
+          "skchr_flamtl_2",
+          "skchr_flamtl_3"
+        ]
+      },
+      {
+        "charId": "char_4211_snhunt",
+        "fixed": true,
+        "skillIds": [
+          "skchr_snhunt_1",
+          "skchr_snhunt_2"
+        ]
+      },
+      {
+        "charId": "char_422_aurora",
+        "fixed": true,
+        "skillIds": [
+          "skchr_aurora_1",
+          "skchr_aurora_2"
+        ]
+      },
+      {
+        "charId": "char_423_blemsh",
+        "fixed": true,
+        "skillIds": [
+          "skchr_blemsh_1",
+          "skchr_blemsh_2",
+          "skchr_blemsh_3"
+        ]
+      },
+      {
+        "charId": "char_426_billro",
+        "fixed": true,
+        "skillIds": [
+          "skchr_billro_1",
+          "skchr_billro_2",
+          "skchr_billro_3"
+        ]
+      },
+      {
+        "charId": "char_427_vigil",
+        "fixed": true,
+        "skillIds": [
+          "skchr_vigil_1",
+          "skchr_vigil_2",
+          "skchr_vigil_3"
+        ]
+      },
+      {
+        "charId": "char_430_fartth",
+        "fixed": true,
+        "skillIds": [
+          "skchr_fartth_2",
+          "skchr_fartth_3",
+          "skcom_quickattack[3]"
+        ]
+      },
+      {
+        "charId": "char_431_ashlok",
+        "fixed": true,
+        "skillIds": [
+          "skchr_ashlok_2",
+          "skcom_atk_up[3]"
+        ]
+      },
+      {
+        "charId": "char_437_mizuki",
+        "fixed": true,
+        "skillIds": [
+          "skchr_mizuki_1",
+          "skchr_mizuki_2",
+          "skchr_mizuki_3"
+        ]
+      },
+      {
+        "charId": "char_440_pinecn",
+        "fixed": true,
+        "skillIds": [
+          "skchr_pinecn_1",
+          "skchr_pinecn_2"
+        ]
+      },
+      {
+        "charId": "char_446_aroma",
+        "fixed": true,
+        "skillIds": [
+          "skchr_aroma_1",
+          "skchr_aroma_2"
+        ]
+      },
+      {
+        "charId": "char_449_glider",
+        "fixed": true,
+        "skillIds": [
+          "skchr_glider_1",
+          "skchr_glider_2"
+        ]
+      },
+      {
+        "charId": "char_450_necras",
+        "fixed": true,
+        "skillIds": [
+          "skchr_necras_1",
+          "skchr_necras_2",
+          "skchr_necras_3"
+        ]
+      },
+      {
+        "charId": "char_469_indigo",
+        "fixed": true,
+        "skillIds": [
+          "skchr_indigo_1",
+          "skchr_indigo_2"
+        ]
+      },
+      {
+        "charId": "char_472_pasngr",
+        "fixed": true,
+        "skillIds": [
+          "skchr_pasngr_1",
+          "skchr_pasngr_2",
+          "skchr_pasngr_3"
+        ]
+      },
+      {
+        "charId": "char_473_mberry",
+        "fixed": true,
+        "skillIds": [
+          "skchr_mberry_1",
+          "skchr_mberry_2"
+        ]
+      },
+      {
+        "charId": "char_474_glady",
+        "fixed": true,
+        "skillIds": [
+          "skchr_glady_1",
+          "skchr_glady_2",
+          "skchr_glady_3"
+        ]
+      },
+      {
+        "charId": "char_491_humus",
+        "fixed": true,
+        "skillIds": [
+          "skchr_humus_1",
+          "skchr_humus_2"
+        ]
+      },
+      {
+        "charId": "char_494_vendla",
+        "fixed": true,
+        "skillIds": [
+          "skchr_vendla_2",
+          "skcom_magic_rage[3]"
+        ]
+      },
+      {
+        "charId": "char_496_wildmn",
+        "fixed": true,
+        "skillIds": [
+          "skchr_wildmn_1",
+          "skchr_wildmn_2"
+        ]
+      },
+      {
+        "charId": "char_498_inside",
+        "fixed": true,
+        "skillIds": [
+          "skchr_inside_1",
+          "skchr_inside_2"
+        ]
+      },
+      {
+        "charId": "char_600_cpione",
+        "fixed": false,
+        "skillIds": [
+          "skcom_charge_cost[1]",
+          "skcom_charge_cost[2]",
+          "skcom_charge_cost[3]"
+        ]
+      },
+      {
+        "charId": "char_601_cguard",
+        "fixed": false,
+        "skillIds": [
+          "skcom_atk_up[1]",
+          "skcom_atk_up[2]",
+          "skcom_atk_up[3]"
+        ]
+      },
+      {
+        "charId": "char_602_cdfend",
+        "fixed": false,
+        "skillIds": [
+          "skcom_def_up[1]",
+          "skcom_def_up[2]",
+          "skcom_def_up[3]"
+        ]
+      },
+      {
+        "charId": "char_603_csnipe",
+        "fixed": false,
+        "skillIds": [
+          "skcom_atk_up[1]",
+          "skcom_atk_up[2]",
+          "skcom_atk_up[3]"
+        ]
+      },
+      {
+        "charId": "char_604_ccast",
+        "fixed": false,
+        "skillIds": [
+          "skcom_magic_rage[1]",
+          "skcom_magic_rage[2]",
+          "skcom_magic_rage[3]"
+        ]
+      },
+      {
+        "charId": "char_605_cmedic",
+        "fixed": false,
+        "skillIds": [
+          "skcom_heal_up[1]",
+          "skcom_heal_up[2]",
+          "skcom_heal_up[3]"
+        ]
+      },
+      {
+        "charId": "char_606_csuppo",
+        "fixed": false,
+        "skillIds": [
+          "skcom_magic_rage[1]",
+          "skcom_magic_rage[2]",
+          "skcom_magic_rage[3]"
+        ]
+      },
+      {
+        "charId": "char_607_cspec",
+        "fixed": false,
+        "skillIds": [
+          "skcom_born_up[1]",
+          "skcom_born_up[2]",
+          "skcom_born_up[3]"
+        ]
+      },
+      {
+        "charId": "char_608_acpion",
+        "fixed": false,
+        "skillIds": [
+          "skchr_acpion_1",
+          "skchr_acpion_2",
+          "skchr_acpion_3"
+        ]
+      },
+      {
+        "charId": "char_609_acguad",
+        "fixed": false,
+        "skillIds": [
+          "skchr_acguad_1",
+          "skchr_acguad_2",
+          "skchr_acguad_3"
+        ]
+      },
+      {
+        "charId": "char_610_acfend",
+        "fixed": false,
+        "skillIds": [
+          "skchr_acfend_1",
+          "skchr_acfend_2",
+          "skchr_acfend_3"
+        ]
+      },
+      {
+        "charId": "char_611_acnipe",
+        "fixed": false,
+        "skillIds": [
+          "skchr_acnipe_1",
+          "skchr_acnipe_2",
+          "skchr_acnipe_3"
+        ]
+      },
+      {
+        "charId": "char_612_accast",
+        "fixed": false,
+        "skillIds": [
+          "skchr_accast_1",
+          "skchr_accast_2",
+          "skchr_accast_3"
+        ]
+      },
+      {
+        "charId": "char_613_acmedc",
+        "fixed": false,
+        "skillIds": [
+          "skchr_acmedc_1",
+          "skchr_acmedc_2",
+          "skchr_acmedc_3"
+        ]
+      },
+      {
+        "charId": "char_614_acsupo",
+        "fixed": false,
+        "skillIds": [
+          "skchr_acsupo_1",
+          "skchr_acsupo_2",
+          "skchr_acsupo_3"
+        ]
+      },
+      {
+        "charId": "char_615_acspec",
+        "fixed": false,
+        "skillIds": [
+          "skchr_acspec_1",
+          "skchr_acspec_2",
+          "skchr_acspec_3"
+        ]
+      },
+      {
+        "charId": "char_616_pithst",
+        "fixed": false,
+        "skillIds": [
+          "skchr_pithst_1"
+        ]
+      },
+      {
+        "charId": "char_617_sharp2",
+        "fixed": false,
+        "skillIds": [
+          "skchr_sharp2_1"
+        ]
+      }
+    ],
+    "sources": {
+      "docs/checklists/implementation-checklist.json#garrison-identity-projection": "3fbe1bd8ca9e21e13ee217c44b885ca1535c45079df5834a89cc18063f1e37a4"
+    }
+  },
+  "baseline": "work/garrison-skill-batch-baseline-20260918-163405.json",
+  "providers": {
+    "client-programs": {
+      "data": "web/client_program_data.js",
+      "dataSha256": "43d168f81e2e2672782633831fc96bca4942e1ccce12d96cb6922012dd9597b7",
+      "rejectionReport": "work/client-program-batch-report.json",
+      "reportPresent": true,
+      "profileCount": 30,
+      "newProfileIds": [],
+      "garrisonMemberIds": [
+        "char_1020_reed2/skcom_quickattack[3]",
+        "char_108_silent/skcom_heal_up[3]",
+        "char_109_fmout/skcom_magic_rage[2]",
+        "char_127_estell/skchr_estell_2",
+        "char_127_estell/skcom_atk_up[2]",
+        "char_128_plosis/skcom_heal_up[3]",
+        "char_134_ifrit/skchr_ifrit_1",
+        "char_136_hsguma/skchr_hsguma_1",
+        "char_143_ghost/skcom_atk_up[3]",
+        "char_150_snakek/skcom_def_up[2]",
+        "char_181_flower/skchr_flower_2",
+        "char_181_flower/skcom_heal_up[2]",
+        "char_183_skgoat/skcom_atk_up[2]",
+        "char_199_yak/skchr_yak_1",
+        "char_199_yak/skchr_yak_2",
+        "char_2012_typhon/skcom_quickattack[3]",
+        "char_213_mostma/skcom_atk_up[3]",
+        "char_218_cuttle/skcom_atk_up[3]",
+        "char_222_bpipe/skcom_quickattack[3]",
+        "char_253_greyy/skcom_magic_rage[2]",
+        "char_263_skadi/skcom_quickattack[3]",
+        "char_290_vigna/skchr_vigna_1",
+        "char_290_vigna/skchr_vigna_2",
+        "char_306_leizi/skcom_atk_up[3]",
+        "char_311_mudrok/skcom_def_up[3]",
+        "char_341_sntlla/skcom_quickattack[3]",
+        "char_358_lisa/skchr_lisa_1",
+        "char_373_lionhd/skcom_atk_up[3]",
+        "char_381_bubble/skcom_def_up[2]",
+        "char_4004_pudd/skcom_magic_rage[2]",
+        "char_4013_kjera/skcom_atk_up[3]",
+        "char_4040_rockr/skcom_magic_rage[3]",
+        "char_4054_malist/skcom_quickattack[3]",
+        "char_4114_harold/skcom_heal_up[3]",
+        "char_4137_udflow/skchr_udflow_1",
+        "char_430_fartth/skcom_quickattack[3]",
+        "char_431_ashlok/skcom_atk_up[3]",
+        "char_494_vendla/skcom_magic_rage[3]",
+        "char_601_cguard/skcom_atk_up[1]",
+        "char_601_cguard/skcom_atk_up[2]",
+        "char_601_cguard/skcom_atk_up[3]",
+        "char_602_cdfend/skcom_def_up[1]",
+        "char_602_cdfend/skcom_def_up[2]",
+        "char_602_cdfend/skcom_def_up[3]",
+        "char_603_csnipe/skcom_atk_up[1]",
+        "char_603_csnipe/skcom_atk_up[2]",
+        "char_603_csnipe/skcom_atk_up[3]",
+        "char_604_ccast/skcom_magic_rage[1]",
+        "char_604_ccast/skcom_magic_rage[2]",
+        "char_604_ccast/skcom_magic_rage[3]",
+        "char_605_cmedic/skcom_heal_up[1]",
+        "char_605_cmedic/skcom_heal_up[2]",
+        "char_605_cmedic/skcom_heal_up[3]",
+        "char_606_csuppo/skcom_magic_rage[1]",
+        "char_606_csuppo/skcom_magic_rage[2]",
+        "char_606_csuppo/skcom_magic_rage[3]",
+        "char_610_acfend/skchr_acfend_1"
+      ]
+    },
+    "next-attack": {
+      "data": "web/next_attack_skill_data.js",
+      "dataSha256": "9a6dc28dbd158f917ef050939d45cb98856f03bdf2c974f04ef99cef74df1053",
+      "rejectionReport": "work/next-attack-batch-report.json",
+      "reportPresent": true,
+      "profileCount": 16,
+      "newProfileIds": [],
+      "garrisonMemberIds": [
+        "char_017_huang/skchr_huang_1",
+        "char_126_shotst/skchr_shotst_1",
+        "char_133_mm/skchr_mm_1",
+        "char_196_sunbr/skchr_sunbr_1",
+        "char_202_demkni/skchr_demkni_1",
+        "char_222_bpipe/skchr_bpipe_2",
+        "char_230_savage/skchr_savage_1",
+        "char_264_f12yin/skchr_f12yin_1",
+        "char_294_ayer/skchr_ayer_1",
+        "char_4010_etlchi/skchr_etlchi_1",
+        "char_4051_akkord/skchr_akkord_1",
+        "char_4079_haini/skchr_haini_1",
+        "char_4122_grabds/skchr_grabds_1",
+        "char_4163_rosesa/skchr_rosesa_1",
+        "char_4196_reckpr/skchr_reckpr_1",
+        "char_446_aroma/skchr_aroma_1"
+      ]
+    },
+    "skill-modes": {
+      "data": "web/skill_mode_data.js",
+      "dataSha256": "7ae7f1f680c38fcfacb65388c17154427bb5d5bb23fb03958b07d508deb03935",
+      "rejectionReport": "work/skill-mode-batch-report.json",
+      "reportPresent": true,
+      "profileCount": 39,
+      "newProfileIds": [
+        "skchr_accast_2",
+        "skchr_ceylon_2",
+        "skchr_slbell_1",
+        "skchr_slbell_2"
+      ],
+      "garrisonMemberIds": [
+        "char_017_huang/skchr_huang_2",
+        "char_1014_nearl2/skchr_nearl2_1",
+        "char_103_angel/skchr_angel_2",
+        "char_145_prove/skchr_prove_2",
+        "char_150_snakek/skchr_snakek_2",
+        "char_172_svrash/skchr_svrash_3",
+        "char_174_slbell/skchr_slbell_1",
+        "char_174_slbell/skchr_slbell_2",
+        "char_215_mantic/skchr_mantic_2",
+        "char_218_cuttle/skchr_cuttle_2",
+        "char_222_bpipe/skchr_bpipe_3",
+        "char_237_gravel/skchr_gravel_1",
+        "char_237_gravel/skchr_gravel_2",
+        "char_243_waaifu/skchr_waaifu_1",
+        "char_258_podego/skchr_podego_1",
+        "char_263_skadi/skchr_skadi_2",
+        "char_263_skadi/skchr_skadi_3",
+        "char_271_spikes/skchr_spikes_1",
+        "char_271_spikes/skchr_spikes_2",
+        "char_279_excu/skchr_excu_2",
+        "char_290_vigna/skchr_vigna_1",
+        "char_290_vigna/skchr_vigna_2",
+        "char_291_aglina/skchr_aglina_1",
+        "char_306_leizi/skchr_leizi_2",
+        "char_332_archet/skchr_archet_3",
+        "char_337_utage/skchr_utage_1",
+        "char_337_utage/skchr_utage_2",
+        "char_348_ceylon/skchr_ceylon_2",
+        "char_358_lisa/skchr_lisa_2",
+        "char_472_pasngr/skchr_pasngr_2",
+        "char_496_wildmn/skchr_wildmn_1",
+        "char_607_cspec/skcom_born_up[1]",
+        "char_607_cspec/skcom_born_up[2]",
+        "char_607_cspec/skcom_born_up[3]",
+        "char_609_acguad/skchr_acguad_2",
+        "char_612_accast/skchr_accast_2",
+        "char_614_acsupo/skchr_acsupo_1",
+        "char_614_acsupo/skchr_acsupo_2",
+        "char_615_acspec/skchr_acspec_2"
+      ]
+    },
+    "direct-actions": {
+      "data": "web/direct_skill_data.js",
+      "dataSha256": "d5dbda8c59d25ab27d89ffcbba4dd3dc1c5ff61d767c50d75401a2eb93931402",
+      "rejectionReport": "work/direct-skill-batch-report.json",
+      "reportPresent": true,
+      "profileCount": 6,
+      "newProfileIds": [],
+      "garrisonMemberIds": [
+        "char_102_texas/skchr_texas_2",
+        "char_202_demkni/skchr_demkni_2",
+        "char_230_savage/skchr_savage_2",
+        "char_4026_vulpis/skchr_vulpis_2",
+        "char_440_pinecn/skchr_pinecn_1",
+        "char_608_acpion/skchr_acpion_1"
+      ]
+    }
+  },
+  "members": {
+    "char_1020_reed2/skcom_quickattack[3]": {
+      "charId": "char_1020_reed2",
+      "skillId": "skcom_quickattack[3]",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_108_silent/skcom_heal_up[3]": {
+      "charId": "char_108_silent",
+      "skillId": "skcom_heal_up[3]",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_109_fmout/skcom_magic_rage[2]": {
+      "charId": "char_109_fmout",
+      "skillId": "skcom_magic_rage[2]",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_127_estell/skchr_estell_2": {
+      "charId": "char_127_estell",
+      "skillId": "skchr_estell_2",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_127_estell/skcom_atk_up[2]": {
+      "charId": "char_127_estell",
+      "skillId": "skcom_atk_up[2]",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_128_plosis/skcom_heal_up[3]": {
+      "charId": "char_128_plosis",
+      "skillId": "skcom_heal_up[3]",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_134_ifrit/skchr_ifrit_1": {
+      "charId": "char_134_ifrit",
+      "skillId": "skchr_ifrit_1",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_136_hsguma/skchr_hsguma_1": {
+      "charId": "char_136_hsguma",
+      "skillId": "skchr_hsguma_1",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_143_ghost/skcom_atk_up[3]": {
+      "charId": "char_143_ghost",
+      "skillId": "skcom_atk_up[3]",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_150_snakek/skcom_def_up[2]": {
+      "charId": "char_150_snakek",
+      "skillId": "skcom_def_up[2]",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_181_flower/skchr_flower_2": {
+      "charId": "char_181_flower",
+      "skillId": "skchr_flower_2",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_181_flower/skcom_heal_up[2]": {
+      "charId": "char_181_flower",
+      "skillId": "skcom_heal_up[2]",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_183_skgoat/skcom_atk_up[2]": {
+      "charId": "char_183_skgoat",
+      "skillId": "skcom_atk_up[2]",
+      "fixed": false,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_199_yak/skchr_yak_1": {
+      "charId": "char_199_yak",
+      "skillId": "skchr_yak_1",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_199_yak/skchr_yak_2": {
+      "charId": "char_199_yak",
+      "skillId": "skchr_yak_2",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_2012_typhon/skcom_quickattack[3]": {
+      "charId": "char_2012_typhon",
+      "skillId": "skcom_quickattack[3]",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_213_mostma/skcom_atk_up[3]": {
+      "charId": "char_213_mostma",
+      "skillId": "skcom_atk_up[3]",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_218_cuttle/skcom_atk_up[3]": {
+      "charId": "char_218_cuttle",
+      "skillId": "skcom_atk_up[3]",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_222_bpipe/skcom_quickattack[3]": {
+      "charId": "char_222_bpipe",
+      "skillId": "skcom_quickattack[3]",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_253_greyy/skcom_magic_rage[2]": {
+      "charId": "char_253_greyy",
+      "skillId": "skcom_magic_rage[2]",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_263_skadi/skcom_quickattack[3]": {
+      "charId": "char_263_skadi",
+      "skillId": "skcom_quickattack[3]",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_290_vigna/skchr_vigna_1": {
+      "charId": "char_290_vigna",
+      "skillId": "skchr_vigna_1",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs",
+        "skill-modes"
+      ]
+    },
+    "char_290_vigna/skchr_vigna_2": {
+      "charId": "char_290_vigna",
+      "skillId": "skchr_vigna_2",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs",
+        "skill-modes"
+      ]
+    },
+    "char_306_leizi/skcom_atk_up[3]": {
+      "charId": "char_306_leizi",
+      "skillId": "skcom_atk_up[3]",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_311_mudrok/skcom_def_up[3]": {
+      "charId": "char_311_mudrok",
+      "skillId": "skcom_def_up[3]",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_341_sntlla/skcom_quickattack[3]": {
+      "charId": "char_341_sntlla",
+      "skillId": "skcom_quickattack[3]",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_358_lisa/skchr_lisa_1": {
+      "charId": "char_358_lisa",
+      "skillId": "skchr_lisa_1",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_373_lionhd/skcom_atk_up[3]": {
+      "charId": "char_373_lionhd",
+      "skillId": "skcom_atk_up[3]",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_381_bubble/skcom_def_up[2]": {
+      "charId": "char_381_bubble",
+      "skillId": "skcom_def_up[2]",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_4004_pudd/skcom_magic_rage[2]": {
+      "charId": "char_4004_pudd",
+      "skillId": "skcom_magic_rage[2]",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_4013_kjera/skcom_atk_up[3]": {
+      "charId": "char_4013_kjera",
+      "skillId": "skcom_atk_up[3]",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_4040_rockr/skcom_magic_rage[3]": {
+      "charId": "char_4040_rockr",
+      "skillId": "skcom_magic_rage[3]",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_4054_malist/skcom_quickattack[3]": {
+      "charId": "char_4054_malist",
+      "skillId": "skcom_quickattack[3]",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_4114_harold/skcom_heal_up[3]": {
+      "charId": "char_4114_harold",
+      "skillId": "skcom_heal_up[3]",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_4137_udflow/skchr_udflow_1": {
+      "charId": "char_4137_udflow",
+      "skillId": "skchr_udflow_1",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_430_fartth/skcom_quickattack[3]": {
+      "charId": "char_430_fartth",
+      "skillId": "skcom_quickattack[3]",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_431_ashlok/skcom_atk_up[3]": {
+      "charId": "char_431_ashlok",
+      "skillId": "skcom_atk_up[3]",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_494_vendla/skcom_magic_rage[3]": {
+      "charId": "char_494_vendla",
+      "skillId": "skcom_magic_rage[3]",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_601_cguard/skcom_atk_up[1]": {
+      "charId": "char_601_cguard",
+      "skillId": "skcom_atk_up[1]",
+      "fixed": false,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_601_cguard/skcom_atk_up[2]": {
+      "charId": "char_601_cguard",
+      "skillId": "skcom_atk_up[2]",
+      "fixed": false,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_601_cguard/skcom_atk_up[3]": {
+      "charId": "char_601_cguard",
+      "skillId": "skcom_atk_up[3]",
+      "fixed": false,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_602_cdfend/skcom_def_up[1]": {
+      "charId": "char_602_cdfend",
+      "skillId": "skcom_def_up[1]",
+      "fixed": false,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_602_cdfend/skcom_def_up[2]": {
+      "charId": "char_602_cdfend",
+      "skillId": "skcom_def_up[2]",
+      "fixed": false,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_602_cdfend/skcom_def_up[3]": {
+      "charId": "char_602_cdfend",
+      "skillId": "skcom_def_up[3]",
+      "fixed": false,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_603_csnipe/skcom_atk_up[1]": {
+      "charId": "char_603_csnipe",
+      "skillId": "skcom_atk_up[1]",
+      "fixed": false,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_603_csnipe/skcom_atk_up[2]": {
+      "charId": "char_603_csnipe",
+      "skillId": "skcom_atk_up[2]",
+      "fixed": false,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_603_csnipe/skcom_atk_up[3]": {
+      "charId": "char_603_csnipe",
+      "skillId": "skcom_atk_up[3]",
+      "fixed": false,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_604_ccast/skcom_magic_rage[1]": {
+      "charId": "char_604_ccast",
+      "skillId": "skcom_magic_rage[1]",
+      "fixed": false,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_604_ccast/skcom_magic_rage[2]": {
+      "charId": "char_604_ccast",
+      "skillId": "skcom_magic_rage[2]",
+      "fixed": false,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_604_ccast/skcom_magic_rage[3]": {
+      "charId": "char_604_ccast",
+      "skillId": "skcom_magic_rage[3]",
+      "fixed": false,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_605_cmedic/skcom_heal_up[1]": {
+      "charId": "char_605_cmedic",
+      "skillId": "skcom_heal_up[1]",
+      "fixed": false,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_605_cmedic/skcom_heal_up[2]": {
+      "charId": "char_605_cmedic",
+      "skillId": "skcom_heal_up[2]",
+      "fixed": false,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_605_cmedic/skcom_heal_up[3]": {
+      "charId": "char_605_cmedic",
+      "skillId": "skcom_heal_up[3]",
+      "fixed": false,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_606_csuppo/skcom_magic_rage[1]": {
+      "charId": "char_606_csuppo",
+      "skillId": "skcom_magic_rage[1]",
+      "fixed": false,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_606_csuppo/skcom_magic_rage[2]": {
+      "charId": "char_606_csuppo",
+      "skillId": "skcom_magic_rage[2]",
+      "fixed": false,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_606_csuppo/skcom_magic_rage[3]": {
+      "charId": "char_606_csuppo",
+      "skillId": "skcom_magic_rage[3]",
+      "fixed": false,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_610_acfend/skchr_acfend_1": {
+      "charId": "char_610_acfend",
+      "skillId": "skchr_acfend_1",
+      "fixed": false,
+      "newExplicitPath": false,
+      "providers": [
+        "client-programs"
+      ]
+    },
+    "char_017_huang/skchr_huang_1": {
+      "charId": "char_017_huang",
+      "skillId": "skchr_huang_1",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "next-attack"
+      ]
+    },
+    "char_126_shotst/skchr_shotst_1": {
+      "charId": "char_126_shotst",
+      "skillId": "skchr_shotst_1",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "next-attack"
+      ]
+    },
+    "char_133_mm/skchr_mm_1": {
+      "charId": "char_133_mm",
+      "skillId": "skchr_mm_1",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "next-attack"
+      ]
+    },
+    "char_196_sunbr/skchr_sunbr_1": {
+      "charId": "char_196_sunbr",
+      "skillId": "skchr_sunbr_1",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "next-attack"
+      ]
+    },
+    "char_202_demkni/skchr_demkni_1": {
+      "charId": "char_202_demkni",
+      "skillId": "skchr_demkni_1",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "next-attack"
+      ]
+    },
+    "char_222_bpipe/skchr_bpipe_2": {
+      "charId": "char_222_bpipe",
+      "skillId": "skchr_bpipe_2",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "next-attack"
+      ]
+    },
+    "char_230_savage/skchr_savage_1": {
+      "charId": "char_230_savage",
+      "skillId": "skchr_savage_1",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "next-attack"
+      ]
+    },
+    "char_264_f12yin/skchr_f12yin_1": {
+      "charId": "char_264_f12yin",
+      "skillId": "skchr_f12yin_1",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "next-attack"
+      ]
+    },
+    "char_294_ayer/skchr_ayer_1": {
+      "charId": "char_294_ayer",
+      "skillId": "skchr_ayer_1",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "next-attack"
+      ]
+    },
+    "char_4010_etlchi/skchr_etlchi_1": {
+      "charId": "char_4010_etlchi",
+      "skillId": "skchr_etlchi_1",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "next-attack"
+      ]
+    },
+    "char_4051_akkord/skchr_akkord_1": {
+      "charId": "char_4051_akkord",
+      "skillId": "skchr_akkord_1",
+      "fixed": false,
+      "newExplicitPath": false,
+      "providers": [
+        "next-attack"
+      ]
+    },
+    "char_4079_haini/skchr_haini_1": {
+      "charId": "char_4079_haini",
+      "skillId": "skchr_haini_1",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "next-attack"
+      ]
+    },
+    "char_4122_grabds/skchr_grabds_1": {
+      "charId": "char_4122_grabds",
+      "skillId": "skchr_grabds_1",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "next-attack"
+      ]
+    },
+    "char_4163_rosesa/skchr_rosesa_1": {
+      "charId": "char_4163_rosesa",
+      "skillId": "skchr_rosesa_1",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "next-attack"
+      ]
+    },
+    "char_4196_reckpr/skchr_reckpr_1": {
+      "charId": "char_4196_reckpr",
+      "skillId": "skchr_reckpr_1",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "next-attack"
+      ]
+    },
+    "char_446_aroma/skchr_aroma_1": {
+      "charId": "char_446_aroma",
+      "skillId": "skchr_aroma_1",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "next-attack"
+      ]
+    },
+    "char_017_huang/skchr_huang_2": {
+      "charId": "char_017_huang",
+      "skillId": "skchr_huang_2",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_1014_nearl2/skchr_nearl2_1": {
+      "charId": "char_1014_nearl2",
+      "skillId": "skchr_nearl2_1",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_103_angel/skchr_angel_2": {
+      "charId": "char_103_angel",
+      "skillId": "skchr_angel_2",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_145_prove/skchr_prove_2": {
+      "charId": "char_145_prove",
+      "skillId": "skchr_prove_2",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_150_snakek/skchr_snakek_2": {
+      "charId": "char_150_snakek",
+      "skillId": "skchr_snakek_2",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_172_svrash/skchr_svrash_3": {
+      "charId": "char_172_svrash",
+      "skillId": "skchr_svrash_3",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_174_slbell/skchr_slbell_1": {
+      "charId": "char_174_slbell",
+      "skillId": "skchr_slbell_1",
+      "fixed": true,
+      "newExplicitPath": true,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_174_slbell/skchr_slbell_2": {
+      "charId": "char_174_slbell",
+      "skillId": "skchr_slbell_2",
+      "fixed": true,
+      "newExplicitPath": true,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_215_mantic/skchr_mantic_2": {
+      "charId": "char_215_mantic",
+      "skillId": "skchr_mantic_2",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_218_cuttle/skchr_cuttle_2": {
+      "charId": "char_218_cuttle",
+      "skillId": "skchr_cuttle_2",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_222_bpipe/skchr_bpipe_3": {
+      "charId": "char_222_bpipe",
+      "skillId": "skchr_bpipe_3",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_237_gravel/skchr_gravel_1": {
+      "charId": "char_237_gravel",
+      "skillId": "skchr_gravel_1",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_237_gravel/skchr_gravel_2": {
+      "charId": "char_237_gravel",
+      "skillId": "skchr_gravel_2",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_243_waaifu/skchr_waaifu_1": {
+      "charId": "char_243_waaifu",
+      "skillId": "skchr_waaifu_1",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_258_podego/skchr_podego_1": {
+      "charId": "char_258_podego",
+      "skillId": "skchr_podego_1",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_263_skadi/skchr_skadi_2": {
+      "charId": "char_263_skadi",
+      "skillId": "skchr_skadi_2",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_263_skadi/skchr_skadi_3": {
+      "charId": "char_263_skadi",
+      "skillId": "skchr_skadi_3",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_271_spikes/skchr_spikes_1": {
+      "charId": "char_271_spikes",
+      "skillId": "skchr_spikes_1",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_271_spikes/skchr_spikes_2": {
+      "charId": "char_271_spikes",
+      "skillId": "skchr_spikes_2",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_279_excu/skchr_excu_2": {
+      "charId": "char_279_excu",
+      "skillId": "skchr_excu_2",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_291_aglina/skchr_aglina_1": {
+      "charId": "char_291_aglina",
+      "skillId": "skchr_aglina_1",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_306_leizi/skchr_leizi_2": {
+      "charId": "char_306_leizi",
+      "skillId": "skchr_leizi_2",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_332_archet/skchr_archet_3": {
+      "charId": "char_332_archet",
+      "skillId": "skchr_archet_3",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_337_utage/skchr_utage_1": {
+      "charId": "char_337_utage",
+      "skillId": "skchr_utage_1",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_337_utage/skchr_utage_2": {
+      "charId": "char_337_utage",
+      "skillId": "skchr_utage_2",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_348_ceylon/skchr_ceylon_2": {
+      "charId": "char_348_ceylon",
+      "skillId": "skchr_ceylon_2",
+      "fixed": true,
+      "newExplicitPath": true,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_358_lisa/skchr_lisa_2": {
+      "charId": "char_358_lisa",
+      "skillId": "skchr_lisa_2",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_472_pasngr/skchr_pasngr_2": {
+      "charId": "char_472_pasngr",
+      "skillId": "skchr_pasngr_2",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_496_wildmn/skchr_wildmn_1": {
+      "charId": "char_496_wildmn",
+      "skillId": "skchr_wildmn_1",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_607_cspec/skcom_born_up[1]": {
+      "charId": "char_607_cspec",
+      "skillId": "skcom_born_up[1]",
+      "fixed": false,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_607_cspec/skcom_born_up[2]": {
+      "charId": "char_607_cspec",
+      "skillId": "skcom_born_up[2]",
+      "fixed": false,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_607_cspec/skcom_born_up[3]": {
+      "charId": "char_607_cspec",
+      "skillId": "skcom_born_up[3]",
+      "fixed": false,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_609_acguad/skchr_acguad_2": {
+      "charId": "char_609_acguad",
+      "skillId": "skchr_acguad_2",
+      "fixed": false,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_612_accast/skchr_accast_2": {
+      "charId": "char_612_accast",
+      "skillId": "skchr_accast_2",
+      "fixed": false,
+      "newExplicitPath": true,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_614_acsupo/skchr_acsupo_1": {
+      "charId": "char_614_acsupo",
+      "skillId": "skchr_acsupo_1",
+      "fixed": false,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_614_acsupo/skchr_acsupo_2": {
+      "charId": "char_614_acsupo",
+      "skillId": "skchr_acsupo_2",
+      "fixed": false,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_615_acspec/skchr_acspec_2": {
+      "charId": "char_615_acspec",
+      "skillId": "skchr_acspec_2",
+      "fixed": false,
+      "newExplicitPath": false,
+      "providers": [
+        "skill-modes"
+      ]
+    },
+    "char_102_texas/skchr_texas_2": {
+      "charId": "char_102_texas",
+      "skillId": "skchr_texas_2",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "direct-actions"
+      ]
+    },
+    "char_202_demkni/skchr_demkni_2": {
+      "charId": "char_202_demkni",
+      "skillId": "skchr_demkni_2",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "direct-actions"
+      ]
+    },
+    "char_230_savage/skchr_savage_2": {
+      "charId": "char_230_savage",
+      "skillId": "skchr_savage_2",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "direct-actions"
+      ]
+    },
+    "char_4026_vulpis/skchr_vulpis_2": {
+      "charId": "char_4026_vulpis",
+      "skillId": "skchr_vulpis_2",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "direct-actions"
+      ]
+    },
+    "char_440_pinecn/skchr_pinecn_1": {
+      "charId": "char_440_pinecn",
+      "skillId": "skchr_pinecn_1",
+      "fixed": true,
+      "newExplicitPath": false,
+      "providers": [
+        "direct-actions"
+      ]
+    },
+    "char_608_acpion/skchr_acpion_1": {
+      "charId": "char_608_acpion",
+      "skillId": "skchr_acpion_1",
+      "fixed": false,
+      "newExplicitPath": false,
+      "providers": [
+        "direct-actions"
+      ]
+    }
+  },
+  "stats": {
+    "fixedAssociations": 363,
+    "expandedAssociations": 423,
+    "fixedExplicitBefore": 147,
+    "fixedNewExplicit": 3,
+    "fixedExplicitAfter": 150,
+    "fixedPendingAfter": 213,
+    "expandedExplicitBefore": 182,
+    "expandedNewExplicit": 4,
+    "expandedExplicitAfter": 186,
+    "expandedPendingAfter": 237
+  },
+  "boundaries": [
+    "Counts join generated profile ownership with Garrison identities. They are explicit execution paths, not whole-skill acceptance.",
+    "Existing bindings must be preserved; all new skill IDs must belong to the Garrison source roster.",
+    "Unknown or unsupported sibling behavior stays in provider rejection reports. No asset extraction, DPS regeneration or manual-checklist marking is performed."
+  ]
+}

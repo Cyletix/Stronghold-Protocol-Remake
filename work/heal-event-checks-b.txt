@@ -1,0 +1,63 @@
+PASS boss_runtime_integration
+PASS boss_victory
+PASS boss_art
+PASS paired_battle
+PASS hidden_boss_rules
+PASS decision_confirm
+PASS settlement
+PASS settlement_review
+PASS boss_source
+PASS boss_formation
+PASS video_flow
+PASS decision_reward
+PASS deployment_cost
+PASS battle_feedback
+PASS shop_source
+PASS room_server
+PASS room_game_runtime
+PASS room_game_server
+PASS room_game_client
+PASS room_battle_runtime
+PASS room_battle_session
+PASS room_battle_server
+PASS room_launcher
+PASS round data
+PASS battle data
+PASS enemy encounter inputs
+PASS enemy death spawn source
+PASS enemy death spawn lifecycle
+PASS enemy prop hit counts
+PASS enemy passive source
+PASS enemy permanent block-free
+PASS enemy child damage transfer
+PASS achunt marked death cleanup
+PASS shop item source
+PASS shop item eligibility
+PASS equipment protection source
+PASS equipment protection impacts
+PASS equipment skill stacks source
+PASS equipment skill stacks runtime
+PASS training config source
+PASS training source economy
+PASS training source runtime
+PASS enemy template replacement
+PASS enemy plan source phases
+PASS enemy runtime integration
+PASS setup/routes
+PASS economy/terrain
+PASS training
+PASS skill_timing
+PASS mode_rounds
+PASS source_battles
+PASS source_wave
+PASS source_mode
+PASS source_consumers
+PASS source_coordinates
+PASS shop_economy
+PASS projectile_lifecycle
+PASS simulation_clock
+PASS rest_save
+PASS bond_shop_regression
+PASS responsive_camera
+PASS audio_preference
+GAME CHECK OK 62 checks (53.0s)

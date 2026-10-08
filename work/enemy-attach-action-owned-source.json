@@ -1,0 +1,667 @@
+{
+  "source": "client-logic-database",
+  "sourceSha256": "36d499444dd469cdf5b188e9e2a245a523f3472c470aa94818644aebf5618095",
+  "bundle": "assets/AB/Android/battle/enm_pfb_6.ab",
+  "bundleSha256": "95b7742ed24284c7e28a0beb31f1c3eb056f4f3effe40602cab4ecb21292dd2a",
+  "rootGameObjectId": "2853595878373590395",
+  "nodes": {
+    "2853595878373590395": {
+      "pathId": "2853595878373590395",
+      "unityType": "GameObject",
+      "fields": {
+        "m_Component": [
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": "-7645642028656949893"
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": "-3150289406525635205"
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": "-6591779302775519877"
+            }
+          }
+        ],
+        "m_Layer": 12,
+        "m_Name": "Attack",
+        "m_Tag": 0,
+        "m_IsActive": true
+      }
+    },
+    "-6591779302775519877": {
+      "pathId": "-6591779302775519877",
+      "unityType": "MonoBehaviour",
+      "fields": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": "2853595878373590395"
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": "-550693537895634864"
+        },
+        "m_Name": "",
+        "_hitEffects": [],
+        "_castEffects": [
+          {
+            "_directionType": 0,
+            "_effects": [
+              "enemy_emppnt_attack_01_start_02",
+              "",
+              "",
+              ""
+            ],
+            "_oneshot": 1,
+            "_startEvent": 2,
+            "_endEvent": 3,
+            "_onlyOnce": 0,
+            "_useFourDirectionalFace": 0,
+            "_delayIfFirstAttack": 0.0,
+            "_hookEffectAfterFirstAttack": ""
+          }
+        ],
+        "_attachEffects": [],
+        "_inputTargetEffects": [],
+        "_castTargetEffects": [],
+        "_convertCastEndToAttachFinish": 0,
+        "_recalculatePlaybackSpeed": 0,
+        "_preDelayFactor": 0.0
+      },
+      "fieldShape": "bddc643f1659a6a3"
+    },
+    "-3150289406525635205": {
+      "pathId": "-3150289406525635205",
+      "unityType": "MonoBehaviour",
+      "fields": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": "2853595878373590395"
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": "4156651312234227407"
+        },
+        "m_Name": "",
+        "_selector": {
+          "m_FileID": 0,
+          "m_PathID": "-1308437885939022469"
+        },
+        "_metadata": {
+          "namedAsAlias": "",
+          "blackboardPrefix": ""
+        },
+        "_interruptAbilityOnDetach": 0,
+        "_attachPassiveBuffsOnDummy": 1,
+        "_ignoreIfOwnerDead": 0,
+        "_forceAsDmgOrHealAbility": 0,
+        "_waitForAttackEvent": 1,
+        "_interuptIfTargetDead": 0,
+        "_resetCdStrategy": 1,
+        "_selectTargetSource": 1,
+        "_selectTargetTiming": 1,
+        "_timeMode": 0,
+        "_alwaysIncludeTarget": 1,
+        "_allowNoTarget": 0,
+        "_animKey": "Attack",
+        "_endAnimKey": "Move",
+        "_downAnimKey": "",
+        "_downEndAnimKey": "",
+        "_upAnimKey": "",
+        "_upEndAnimKey": "",
+        "_cooldown": 0.0,
+        "_cooldownKey": "duration",
+        "_preDelay": 0.0,
+        "_escapeTime": 0.0,
+        "_faceToTarget": 1,
+        "_faceToDefault": 0,
+        "_faceToFront": 0,
+        "_faceToFirstCastTarget": 0,
+        "_forceFaceToDirection": 0,
+        "_activeBuffs": [],
+        "_maxAnimScale": 1.0,
+        "_onlyPlayEndAnimWhenIsLastAbility": 0,
+        "_ignorePalsyInterrupt": 0,
+        "_atkScale": 1.0,
+        "_atkScaleKey": "atk_scale",
+        "_attackType": 1,
+        "_elementDamageType": 0,
+        "_epDamageRatio": 0.0,
+        "_useDynamicAttackType": 0,
+        "_deliveryParaWhenReplaceActionNode": 0,
+        "_projectileKey": "projectile_enemy_emppnt",
+        "_mountPointType": 2,
+        "_useMountGroup": 0,
+        "_mountGroup": {
+          "loopType": 0,
+          "mountPoints": []
+        },
+        "_damageType": 1,
+        "_waitForProjectileInvalid": 0,
+        "_notClearProjectileWhenCastEnd": 0,
+        "_fireAttackFinishWhenProjectileInvalid": 0,
+        "_minPostDelayWhenProjectileInvalid": 0.0,
+        "_waitForAnimEndWhenProjectileInvalid": 0,
+        "_projectileDestination": 2,
+        "_extraDamageType": 0,
+        "_emitToInputPosWhenTargetIsInvalid": 0,
+        "_emitToInputRootTileWhenTargetIsInvalid": 0,
+        "_useCachedAtkOnly": 1,
+        "_transferSource": 0,
+        "_extraProjectileKeys": [],
+        "_fireCreateProjectileEvent": 0
+      },
+      "fieldShape": "be08f05d896ac9ca"
+    },
+    "-7645642028656949893": {
+      "pathId": "-7645642028656949893",
+      "unityType": "Transform",
+      "fields": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": "2853595878373590395"
+        },
+        "m_LocalRotation": {
+          "x": -0.0,
+          "y": -0.0,
+          "z": -0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [
+          {
+            "m_FileID": 0,
+            "m_PathID": "2090200296502134139"
+          }
+        ],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": "1962013299981157755"
+        }
+      }
+    },
+    "5154568062461281659": {
+      "pathId": "5154568062461281659",
+      "unityType": "GameObject",
+      "fields": {
+        "m_Component": [
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": "2090200296502134139"
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": "8411214315658872187"
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": "-8859144820616002181"
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": "-8691602202312178309"
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": "-1308437885939022469"
+            }
+          }
+        ],
+        "m_Layer": 12,
+        "m_Name": "Trigger",
+        "m_Tag": 0,
+        "m_IsActive": true
+      }
+    },
+    "-1308437885939022469": {
+      "pathId": "-1308437885939022469",
+      "unityType": "MonoBehaviour",
+      "fields": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": "5154568062461281659"
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": "8052272509195254976"
+        },
+        "m_Name": "",
+        "_targetSide": 2,
+        "_targetMotion": 3,
+        "_targetCategory": 1,
+        "_postFilter": 4,
+        "_ignoreTargetFree": 0,
+        "_onlyIgnoreSomeOfTargetFreeCase": 0,
+        "_abnormalFlag": 20,
+        "_abnormalCombo": 1,
+        "_ignoreAllyTargetFree": 0,
+        "_ignoreHealFree": 0,
+        "_forceIgnoreCamouflage": 0,
+        "_needProfessionMask": 0,
+        "_professionMask": 0,
+        "_limitTargetNum": 1,
+        "_maxTargetKey": "max_target",
+        "_maxNum": 1,
+        "_excludeOwner": 0,
+        "_sortByTauntAtLast": 1,
+        "_ignoreHitRange": 0,
+        "_checkUnitType": 0,
+        "_unitTypeMask": 0,
+        "_abilityInputTargetAsSortSource": 0,
+        "_secondaryFilter": 3,
+        "_filterTag": "",
+        "_buffKey": "mark_neutral[effect]",
+        "_withoutThisBuff": 0,
+        "_filterBuffSource": 0,
+        "_buffKeyPairs": [],
+        "_excludeEnemyInRootTileAtFirst": ""
+      },
+      "fieldShape": "4f56a65d1667a5ea"
+    },
+    "-8691602202312178309": {
+      "pathId": "-8691602202312178309",
+      "unityType": "MonoBehaviour",
+      "fields": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": "5154568062461281659"
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": "8607874384982393801"
+        },
+        "m_Name": "",
+        "_keepTarget": 0,
+        "_minTargetNum": 1,
+        "_overrideSearchTargetTick": -1
+      },
+      "fieldShape": "9ab0c85bbaa0c2e1"
+    },
+    "-8859144820616002181": {
+      "pathId": "-8859144820616002181",
+      "unityType": "CircleCollider2D",
+      "fields": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": "5154568062461281659"
+        },
+        "m_Enabled": 1,
+        "m_Density": 1.0,
+        "m_Material": {
+          "m_FileID": 0,
+          "m_PathID": "0"
+        },
+        "m_IsTrigger": true,
+        "m_UsedByEffector": false,
+        "m_UsedByComposite": false,
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "m_Radius": 4.0
+      }
+    },
+    "8411214315658872187": {
+      "pathId": "8411214315658872187",
+      "unityType": "MonoBehaviour",
+      "fields": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": "5154568062461281659"
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": "6185056810787956083"
+        },
+        "m_Name": "",
+        "_extendable": 0,
+        "_scaleble": 0
+      },
+      "fieldShape": "a9c754f78ce08c58"
+    },
+    "2090200296502134139": {
+      "pathId": "2090200296502134139",
+      "unityType": "Transform",
+      "fields": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": "5154568062461281659"
+        },
+        "m_LocalRotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": "-7645642028656949893"
+        }
+      }
+    }
+  },
+  "ancestors": [
+    {
+      "gameObject": {
+        "pathId": "2853595878373590395",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-7645642028656949893"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-3150289406525635205"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-6591779302775519877"
+              }
+            }
+          ],
+          "m_Layer": 12,
+          "m_Name": "Attack",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "transform": {
+        "pathId": "-7645642028656949893",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "2853595878373590395"
+          },
+          "m_LocalRotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [
+            {
+              "m_FileID": 0,
+              "m_PathID": "2090200296502134139"
+            }
+          ],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "1962013299981157755"
+          }
+        }
+      }
+    },
+    {
+      "gameObject": {
+        "pathId": "2605195282563466619",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "1962013299981157755"
+              }
+            }
+          ],
+          "m_Layer": 9,
+          "m_Name": "Body",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "transform": {
+        "pathId": "1962013299981157755",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "2605195282563466619"
+          },
+          "m_LocalRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [
+            {
+              "m_FileID": 0,
+              "m_PathID": "-7645642028656949893"
+            }
+          ],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "7668553591568926075"
+          }
+        }
+      }
+    },
+    {
+      "gameObject": {
+        "pathId": "959983942552913275",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "7668553591568926075"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "5500900743873693051"
+              }
+            }
+          ],
+          "m_Layer": 9,
+          "m_Name": "Default",
+          "m_Tag": 0,
+          "m_IsActive": true
+        }
+      },
+      "transform": {
+        "pathId": "7668553591568926075",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "959983942552913275"
+          },
+          "m_LocalRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [
+            {
+              "m_FileID": 0,
+              "m_PathID": "1962013299981157755"
+            }
+          ],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "-9035979009141897861"
+          }
+        }
+      }
+    },
+    {
+      "gameObject": {
+        "pathId": "-2534595712224000645",
+        "unityType": "GameObject",
+        "fields": {
+          "m_Component": [
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-9035979009141897861"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-2442221703820868229"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "-1062740961360083589"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "3697202805705475451"
+              }
+            },
+            {
+              "component": {
+                "m_FileID": 0,
+                "m_PathID": "6127989558748775803"
+              }
+            }
+          ],
+          "m_Layer": 9,
+          "m_Name": "enemy_1112_emppnt",
+          "m_Tag": 5,
+          "m_IsActive": true
+        }
+      },
+      "transform": {
+        "pathId": "-9035979009141897861",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-2534595712224000645"
+          },
+          "m_LocalRotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 4.230000019073486,
+            "y": 2.109999895095825,
+            "z": -1.2000000476837158
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [
+            {
+              "m_FileID": 0,
+              "m_PathID": "-6607525245561993861"
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": "7668553591568926075"
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": "-6913073225013197445"
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": "-3125489437289609861"
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": "-6570777837366082181"
+            }
+          ],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          }
+        }
+      }
+    }
+  ]
+}

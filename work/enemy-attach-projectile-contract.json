@@ -1,0 +1,900 @@
+{
+  "schemaVersion": 1,
+  "rule": "cached-attach-to-target-area-delivery-assessment-v1",
+  "status": "closed-source-with-explicit-simulation-policies",
+  "boundRuntime": false,
+  "inputs": {
+    "work/enemy-next-shared-worklist-20260918.json": "259a767beab3890ae899e96c195b7b47fdd92271372cb24811d9f93356b0ab17",
+    "work/enemy-next-ordinary-source-selection.json": "1c7a3522db46451150a1f527f538e4c0c1a336056aafeac0e0afe0d216be9033",
+    "work/enemy-next-shared-provider-selection.json": "c360f886b712618d1295b5bd4ad5639626b975fcb8b670d1699f1c70c7c08ff7",
+    "work/enemy-attach-action-owned-source.json": "184078e39cb09bddeb2387152166cfa3a6093905c7c546209aafec1f62d9a544",
+    "work/enemy-attach-projectile-owned-source.json": "cec8019035bd39bb5898eb6ccbf90c11a34dba1db06715815fd466462be91633",
+    "work/client-logic/skill-ammo-target-enums.json": "25342d428f63c7ef0c2ea4e75d0e85fb9ead666c0da356761de0685ee6100241",
+    "work/client-logic/selector-post-filter-enum.json": "eef8cb1ffbb348a15cce1a530e1314dadcaa829f75810050f008b41f3f82106a",
+    "work/client-logic/skill-target-timing-enum.json": "e416aff169d7b001ff5cc4fbfed71a4d3f5b088790ddcff028d9388e6efe6d35",
+    "work/client-logic/native-ammo-selector/contract.json": "4bde1dd225d7ca7ae107a666b6b97f7b8560e216047392cbd242b08fe55162eb",
+    "web/enemy_encounters.json": "6d31cb6ca23923e357d833dcf3c93da3d6d2012ccd4d389c268801afc63cf96e",
+    "work/client-logic/native-ammo-selector/62742_OnPostFilter.asm": "840bec57d8177bdd55047ea896f6d1877ff4909d2926adbd2fdf3d0f39bfa1c6",
+    "work/client-logic/native-ammo-selector/62744__CheckSecondFilter.asm": "8f0fd40e41a48d6d015611ea28873cff9b32273bea7609b749ce758e9e1a0eca",
+    "work/client-logic/native-enemy-tagged-ranged/61912_InitCollidersIfNot.asm": "b73f4f2d183b42ca524debb0b61f4a80f81b3a9feb062e7b4fafcddd5c3a64e6",
+    "work/enemy-attach-projectile-destination-enum.json": "35e669619c6b21a3b621a579395235960182d773685e78b706492c09e5fcee71",
+    "work/client-logic/script-types.json": "1fc6554278c7432c6ba9aa68b6332ee6cabbc3b8ef9a8f1b6394d838d49af041",
+    "data/ArknightsGameData/zh_CN/gamedata/buff_table.json": "366876f94b336364e243f1a14171b5395240d66c79f86cfb16038cc75ed8e0c3",
+    "work/client-logic/buff-templates.json": "f8cc1f74e426d0111803d68154335a748bfee377a2d826d84135f60a41280d24",
+    "work/client-logic/bundles/battle/prefabs/[uc]projectiles.ab.json": "5fa76222ae24a8d5bff935ad7d4219df58ffacac03ea761f98d3d4df136a9505"
+  },
+  "members": {
+    "enemy_1112_emppnt": {
+      "name": "帝国炮火先兆者",
+      "sourceAction": {
+        "pathID": "-3150289406525635205",
+        "cabin": "CAB-0b81ba3070e9ea008a822bead4d3e7fb",
+        "scriptType": "Torappu.Battle.Abilities.RangedAttack",
+        "fields": {
+          "_selector": {
+            "m_FileID": 0,
+            "m_PathID": -1308437885939022469
+          },
+          "_metadata": {
+            "namedAsAlias": "",
+            "blackboardPrefix": ""
+          },
+          "_interruptAbilityOnDetach": 0,
+          "_attachPassiveBuffsOnDummy": 1,
+          "_ignoreIfOwnerDead": 0,
+          "_forceAsDmgOrHealAbility": 0,
+          "_waitForAttackEvent": 1,
+          "_interuptIfTargetDead": 0,
+          "_resetCdStrategy": 1,
+          "_selectTargetSource": 1,
+          "_selectTargetTiming": 1,
+          "_timeMode": 0,
+          "_alwaysIncludeTarget": 1,
+          "_allowNoTarget": 0,
+          "_animKey": "Attack",
+          "_endAnimKey": "Move",
+          "_downAnimKey": "",
+          "_downEndAnimKey": "",
+          "_upAnimKey": "",
+          "_upEndAnimKey": "",
+          "_cooldown": 0.0,
+          "_cooldownKey": "duration",
+          "_preDelay": 0.0,
+          "_escapeTime": 0.0,
+          "_faceToTarget": 1,
+          "_faceToDefault": 0,
+          "_faceToFront": 0,
+          "_faceToFirstCastTarget": 0,
+          "_checkFaceToFirstCastTargetDownAttack": 0,
+          "_forceFaceToDirection": 0,
+          "_activeBuffs": [],
+          "_maxAnimScale": 1.0,
+          "_onlyPlayEndAnimWhenIsLastAbility": 0,
+          "_ignorePalsyInterrupt": 0,
+          "_affectedBySlowDown": 1,
+          "_atkScale": 1.0,
+          "_atkScaleKey": "atk_scale",
+          "_attackType": 1,
+          "_elementDamageType": 0,
+          "_epDamageRatio": 0.0,
+          "_useDynamicAttackType": 0,
+          "_deliveryParaWhenReplaceActionNode": 0,
+          "_projectileKey": "projectile_enemy_emppnt",
+          "_mountPointType": 2,
+          "_useMountGroup": 0,
+          "_mountGroup": {
+            "loopType": 0,
+            "mountPoints": []
+          },
+          "_damageType": 1,
+          "_waitForProjectileInvalid": 0,
+          "_notClearProjectileWhenCastEnd": 0,
+          "_fireAttackFinishWhenProjectileInvalid": 0,
+          "_minPostDelayWhenProjectileInvalid": 0.0,
+          "_waitForAnimEndWhenProjectileInvalid": 0,
+          "_projectileDestination": 2,
+          "_extraDamageType": 0,
+          "_emitToInputPosWhenTargetIsInvalid": 0,
+          "_emitToInputRootTileWhenTargetIsInvalid": 0,
+          "_useCachedAtkOnly": 1,
+          "_transferSource": 0,
+          "_extraProjectileKeys": [],
+          "_fireCreateProjectileEvent": 0
+        }
+      },
+      "sourceRelatedComponents": [
+        {
+          "pathID": "-8691602202312178309",
+          "scriptType": "Torappu.Battle.SelectorTrigger",
+          "fields": {
+            "_keepTarget": 0,
+            "_minTargetNum": 1,
+            "_overrideSearchTargetTick": -1
+          }
+        },
+        {
+          "pathID": "-3150289406525635205",
+          "scriptType": "Torappu.Battle.Abilities.RangedAttack",
+          "fields": {
+            "_selector": {
+              "m_FileID": 0,
+              "m_PathID": -1308437885939022469
+            },
+            "_metadata": {
+              "namedAsAlias": "",
+              "blackboardPrefix": ""
+            },
+            "_interruptAbilityOnDetach": 0,
+            "_attachPassiveBuffsOnDummy": 1,
+            "_ignoreIfOwnerDead": 0,
+            "_forceAsDmgOrHealAbility": 0,
+            "_waitForAttackEvent": 1,
+            "_interuptIfTargetDead": 0,
+            "_resetCdStrategy": 1,
+            "_selectTargetSource": 1,
+            "_selectTargetTiming": 1,
+            "_timeMode": 0,
+            "_alwaysIncludeTarget": 1,
+            "_allowNoTarget": 0,
+            "_animKey": "Attack",
+            "_endAnimKey": "Move",
+            "_downAnimKey": "",
+            "_downEndAnimKey": "",
+            "_upAnimKey": "",
+            "_upEndAnimKey": "",
+            "_cooldown": 0.0,
+            "_cooldownKey": "duration",
+            "_preDelay": 0.0,
+            "_escapeTime": 0.0,
+            "_faceToTarget": 1,
+            "_faceToDefault": 0,
+            "_faceToFront": 0,
+            "_faceToFirstCastTarget": 0,
+            "_checkFaceToFirstCastTargetDownAttack": 0,
+            "_forceFaceToDirection": 0,
+            "_activeBuffs": [],
+            "_maxAnimScale": 1.0,
+            "_onlyPlayEndAnimWhenIsLastAbility": 0,
+            "_ignorePalsyInterrupt": 0,
+            "_affectedBySlowDown": 1,
+            "_atkScale": 1.0,
+            "_atkScaleKey": "atk_scale",
+            "_attackType": 1,
+            "_elementDamageType": 0,
+            "_epDamageRatio": 0.0,
+            "_useDynamicAttackType": 0,
+            "_deliveryParaWhenReplaceActionNode": 0,
+            "_projectileKey": "projectile_enemy_emppnt",
+            "_mountPointType": 2,
+            "_useMountGroup": 0,
+            "_mountGroup": {
+              "loopType": 0,
+              "mountPoints": []
+            },
+            "_damageType": 1,
+            "_waitForProjectileInvalid": 0,
+            "_notClearProjectileWhenCastEnd": 0,
+            "_fireAttackFinishWhenProjectileInvalid": 0,
+            "_minPostDelayWhenProjectileInvalid": 0.0,
+            "_waitForAnimEndWhenProjectileInvalid": 0,
+            "_projectileDestination": 2,
+            "_extraDamageType": 0,
+            "_emitToInputPosWhenTargetIsInvalid": 0,
+            "_emitToInputRootTileWhenTargetIsInvalid": 0,
+            "_useCachedAtkOnly": 1,
+            "_transferSource": 0,
+            "_extraProjectileKeys": [],
+            "_fireCreateProjectileEvent": 0
+          }
+        },
+        {
+          "pathID": "-1308437885939022469",
+          "scriptType": "Torappu.Battle.SecondaryFilterAdvancedSelector",
+          "fields": {
+            "_targetSide": 2,
+            "_targetMotion": 3,
+            "_targetCategory": 1,
+            "_postFilter": 4,
+            "_ignoreTargetFree": 0,
+            "_onlyIgnoreSomeOfTargetFreeCase": 0,
+            "_abnormalFlag": 20,
+            "_abnormalCombo": 1,
+            "_ignoreAllyTargetFree": 0,
+            "_ignoreHealFree": 0,
+            "_ignoreMotionMode": 0,
+            "_forceIgnoreCamouflage": 0,
+            "_needProfessionMask": 0,
+            "_professionMask": 0,
+            "_excludeSomeAbnormalFlags": 0,
+            "_excludeAbnormalFlag": 46,
+            "_limitTargetNum": 1,
+            "_maxTargetKey": "max_target",
+            "_maxNum": 1,
+            "_excludeOwner": 0,
+            "_sortByTauntAtLast": 1,
+            "_ignoreHitRange": 0,
+            "_checkUnitType": 0,
+            "_unitTypeMask": 0,
+            "_abilityInputTargetAsSortSource": 0,
+            "_secondaryFilter": 3,
+            "_filterTag": "",
+            "_buffKey": "mark_neutral[effect]",
+            "_withoutThisBuff": 0,
+            "_filterBuffSource": 0,
+            "_buffKeyPairs": [],
+            "_excludeEnemyInRootTileAtFirst": ""
+          }
+        },
+        {
+          "pathID": "8411214315658872187",
+          "scriptType": "Torappu.Battle.CircleRange",
+          "fields": {
+            "_extendable": 0,
+            "_scaleble": 0
+          }
+        }
+      ],
+      "modeBindings": {
+        "enemyId": "enemy_1112_emppnt",
+        "name": "帝国炮火先兆者",
+        "inEncounterPool": true,
+        "complete": true,
+        "modes": [
+          {
+            "modeIndex": 0,
+            "modePathID": 5500900743873693051,
+            "channels": {
+              "combat": {
+                "reference": {
+                  "m_FileID": 0,
+                  "m_PathID": -3150289406525635205
+                },
+                "cabin": "CAB-0b81ba3070e9ea008a822bead4d3e7fb",
+                "pathID": -3150289406525635205,
+                "fields": {
+                  "_selector": {
+                    "m_FileID": 0,
+                    "m_PathID": -1308437885939022469
+                  },
+                  "_metadata": {
+                    "namedAsAlias": "",
+                    "blackboardPrefix": ""
+                  },
+                  "_interruptAbilityOnDetach": 0,
+                  "_attachPassiveBuffsOnDummy": 1,
+                  "_ignoreIfOwnerDead": 0,
+                  "_forceAsDmgOrHealAbility": 0,
+                  "_waitForAttackEvent": 1,
+                  "_interuptIfTargetDead": 0,
+                  "_resetCdStrategy": 1,
+                  "_selectTargetSource": 1,
+                  "_selectTargetTiming": 1,
+                  "_timeMode": 0,
+                  "_alwaysIncludeTarget": 1,
+                  "_allowNoTarget": 0,
+                  "_animKey": "Attack",
+                  "_endAnimKey": "Move",
+                  "_downAnimKey": "",
+                  "_downEndAnimKey": "",
+                  "_upAnimKey": "",
+                  "_upEndAnimKey": "",
+                  "_cooldown": 0.0,
+                  "_cooldownKey": "duration",
+                  "_preDelay": 0.0,
+                  "_escapeTime": 0.0,
+                  "_faceToTarget": 1,
+                  "_faceToDefault": 0,
+                  "_faceToFront": 0,
+                  "_faceToFirstCastTarget": 0,
+                  "_checkFaceToFirstCastTargetDownAttack": 0,
+                  "_forceFaceToDirection": 0,
+                  "_activeBuffs": [],
+                  "_maxAnimScale": 1.0,
+                  "_onlyPlayEndAnimWhenIsLastAbility": 0,
+                  "_ignorePalsyInterrupt": 0,
+                  "_affectedBySlowDown": 1,
+                  "_atkScale": 1.0,
+                  "_atkScaleKey": "atk_scale",
+                  "_attackType": 1,
+                  "_elementDamageType": 0,
+                  "_epDamageRatio": 0.0,
+                  "_useDynamicAttackType": 0,
+                  "_deliveryParaWhenReplaceActionNode": 0,
+                  "_projectileKey": "projectile_enemy_emppnt",
+                  "_mountPointType": 2,
+                  "_useMountGroup": 0,
+                  "_mountGroup": {
+                    "loopType": 0,
+                    "mountPoints": []
+                  },
+                  "_damageType": 1,
+                  "_waitForProjectileInvalid": 0,
+                  "_notClearProjectileWhenCastEnd": 0,
+                  "_fireAttackFinishWhenProjectileInvalid": 0,
+                  "_minPostDelayWhenProjectileInvalid": 0.0,
+                  "_waitForAnimEndWhenProjectileInvalid": 0,
+                  "_projectileDestination": 2,
+                  "_extraDamageType": 0,
+                  "_emitToInputPosWhenTargetIsInvalid": 0,
+                  "_emitToInputRootTileWhenTargetIsInvalid": 0,
+                  "_useCachedAtkOnly": 1,
+                  "_transferSource": 0,
+                  "_extraProjectileKeys": [],
+                  "_fireCreateProjectileEvent": 0
+                },
+                "scriptPathID": 4156651312234227407,
+                "status": "direct-damage-root"
+              },
+              "attack": {
+                "reference": {
+                  "m_FileID": 0,
+                  "m_PathID": -3150289406525635205
+                },
+                "cabin": "CAB-0b81ba3070e9ea008a822bead4d3e7fb",
+                "pathID": -3150289406525635205,
+                "fields": {
+                  "_selector": {
+                    "m_FileID": 0,
+                    "m_PathID": -1308437885939022469
+                  },
+                  "_metadata": {
+                    "namedAsAlias": "",
+                    "blackboardPrefix": ""
+                  },
+                  "_interruptAbilityOnDetach": 0,
+                  "_attachPassiveBuffsOnDummy": 1,
+                  "_ignoreIfOwnerDead": 0,
+                  "_forceAsDmgOrHealAbility": 0,
+                  "_waitForAttackEvent": 1,
+                  "_interuptIfTargetDead": 0,
+                  "_resetCdStrategy": 1,
+                  "_selectTargetSource": 1,
+                  "_selectTargetTiming": 1,
+                  "_timeMode": 0,
+                  "_alwaysIncludeTarget": 1,
+                  "_allowNoTarget": 0,
+                  "_animKey": "Attack",
+                  "_endAnimKey": "Move",
+                  "_downAnimKey": "",
+                  "_downEndAnimKey": "",
+                  "_upAnimKey": "",
+                  "_upEndAnimKey": "",
+                  "_cooldown": 0.0,
+                  "_cooldownKey": "duration",
+                  "_preDelay": 0.0,
+                  "_escapeTime": 0.0,
+                  "_faceToTarget": 1,
+                  "_faceToDefault": 0,
+                  "_faceToFront": 0,
+                  "_faceToFirstCastTarget": 0,
+                  "_checkFaceToFirstCastTargetDownAttack": 0,
+                  "_forceFaceToDirection": 0,
+                  "_activeBuffs": [],
+                  "_maxAnimScale": 1.0,
+                  "_onlyPlayEndAnimWhenIsLastAbility": 0,
+                  "_ignorePalsyInterrupt": 0,
+                  "_affectedBySlowDown": 1,
+                  "_atkScale": 1.0,
+                  "_atkScaleKey": "atk_scale",
+                  "_attackType": 1,
+                  "_elementDamageType": 0,
+                  "_epDamageRatio": 0.0,
+                  "_useDynamicAttackType": 0,
+                  "_deliveryParaWhenReplaceActionNode": 0,
+                  "_projectileKey": "projectile_enemy_emppnt",
+                  "_mountPointType": 2,
+                  "_useMountGroup": 0,
+                  "_mountGroup": {
+                    "loopType": 0,
+                    "mountPoints": []
+                  },
+                  "_damageType": 1,
+                  "_waitForProjectileInvalid": 0,
+                  "_notClearProjectileWhenCastEnd": 0,
+                  "_fireAttackFinishWhenProjectileInvalid": 0,
+                  "_minPostDelayWhenProjectileInvalid": 0.0,
+                  "_waitForAnimEndWhenProjectileInvalid": 0,
+                  "_projectileDestination": 2,
+                  "_extraDamageType": 0,
+                  "_emitToInputPosWhenTargetIsInvalid": 0,
+                  "_emitToInputRootTileWhenTargetIsInvalid": 0,
+                  "_useCachedAtkOnly": 1,
+                  "_transferSource": 0,
+                  "_extraProjectileKeys": [],
+                  "_fireCreateProjectileEvent": 0
+                },
+                "scriptPathID": 4156651312234227407,
+                "status": "direct-damage-root"
+              }
+            },
+            "animationAliases": []
+          }
+        ]
+      },
+      "projectileSource": {
+        "status": "source-fields-retrieved",
+        "source": {
+          "assetPath": "dyn/battle/prefabs/[uc]projectiles/projectile_enemy_emppnt.prefab",
+          "reference": {
+            "m_FileID": 0,
+            "m_PathID": "-619213101382661339"
+          }
+        },
+        "completeMonoBehaviourCoverage": true,
+        "failures": [],
+        "components": {
+          "5265639341831392037": {
+            "gameObjectPathID": "-619213101382661339",
+            "gameObjectName": "projectile_enemy_emppnt",
+            "script": {
+              "status": "resolved",
+              "type": "Torappu.Battle.SimpleProjectile",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "-8797129986015012478",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            },
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-619213101382661339"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-8797129986015012478"
+              },
+              "m_Name": "",
+              "_randomDelayToBorn": 0.0,
+              "_bodyTransform": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "_keepAlreadyHitTime": -1.0,
+              "_mainEffect": "enemy_emppnt_attack_01_trail",
+              "_clearMainEffectWhenReached": 0,
+              "_actionController": {
+                "_detachBuffsWhenTargetLeave": 0,
+                "_detachAllBuffsWhenStopped": 0,
+                "_onlyAddBuffsToTraceTarget": 0,
+                "_onlyAddBuffsToTargetOnce": 0,
+                "_dontAddBuffs": 0,
+                "_excludeAttachments": 0,
+                "_useSelfBlackboard": 0,
+                "_extraBuffsInTheEnd": [],
+                "_useExtraBuffsWhenStopHit": 0,
+                "_addExtraBuffsWhenReached": 0,
+                "_detachAllExtraBuffsWhenStopped": 0
+              },
+              "_fixDealHitTargetLeft": 0,
+              "_stopGraphicProjectileWhenClearMainEffect": 0,
+              "_overrideAudioSignal": "",
+              "_fireProjectileReachedEvent": 0,
+              "_eliminatableStatus": 0,
+              "_movementAdjustableStatus": 0,
+              "_managedBySource": 0,
+              "_projectileType": 0,
+              "_containsChildrenBehaviours": 0,
+              "_canHitSameTargetMultipleTimes": 0,
+              "_lifeTimeType": 1,
+              "_lifeTime": 10.0,
+              "_getLifeTimeFromBB": 0,
+              "_hitNumType": 2,
+              "_maxHitNum": 1,
+              "_getMaxHitNumFromBB": 0,
+              "_maxHitNumBBKey": "",
+              "_stopAfterMaxHit": 0,
+              "_stopAfterFirstHit": 0,
+              "_stopWhenSourceInvalid": 0,
+              "_alwaysHitTraceTargetInTheEnd": 0,
+              "_alwaysHitTraceTargetWhenReached": 0,
+              "_alwaysReachInTheEnd": 1,
+              "_limitedMaxHitNumToSourceBlockedCnt": 0,
+              "_allowZeroBlockCntLimit": 0
+            }
+          },
+          "-7735524921054295259": {
+            "gameObjectPathID": "-619213101382661339",
+            "gameObjectName": "projectile_enemy_emppnt",
+            "script": {
+              "status": "resolved",
+              "type": "Torappu.Battle.Projectiles.EffectBehaviour",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "6834194400804168919",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            },
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-619213101382661339"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6834194400804168919"
+              },
+              "m_Name": "",
+              "_effectsWhenStart": [],
+              "_effectsWhenReached": [
+                "enemy_emppnt_attack_01_hit"
+              ],
+              "_effectsWhenHit": [],
+              "_effectsToTargetWhenStart": [
+                "enemy_emppnt_attack_01_start"
+              ],
+              "_effectsToTileWhenStart": [],
+              "_effectsWhenStop": [],
+              "_effectOnTrigger": [],
+              "_onlyPlayHitEffectOnTraceTarget": 0,
+              "_onlyPlayHitEffectOnNotTraceTarget": 0,
+              "_onlyPlayHitEffectOnce": 0,
+              "_clearHitEffectOnStop": 0,
+              "_clearPlayEffectOnStop": 0,
+              "_clearEffectsOnTileOnStop": 0,
+              "_clearReachedEffectWhenStop": 0,
+              "_alwaysPlayStartEffects": 1,
+              "_playStartEffectOnlyOnProjectile": 0,
+              "_useSourceFaceVector": 0,
+              "_useSourceFaceVectorOnHit": 0,
+              "_forceReachTargetGround": 0,
+              "_followTargetGround": 0,
+              "_replaceMainEffectWhenReach": 0,
+              "_mainEffectToReplace": "",
+              "_useTraceTargetWhenReach": 0,
+              "_setReachEffectOnProjectile": 0,
+              "_syncEffectScaleViaProjectile": 0
+            }
+          },
+          "-6634548127984547035": {
+            "gameObjectPathID": "-619213101382661339",
+            "gameObjectName": "projectile_enemy_emppnt",
+            "script": {
+              "status": "resolved",
+              "type": "Torappu.Battle.Projectiles.HitBehaviour",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "-3494225671239136090",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            },
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-619213101382661339"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-3494225671239136090"
+              },
+              "m_Name": "",
+              "_targetOptions": {
+                "targetSide": 2,
+                "targetMotion": 3,
+                "targetCategory": 1,
+                "enableAdvancedOptions": 1,
+                "ignoreTargetFree": 0,
+                "ignoreAllyTargetFree": 0,
+                "ignoreHealFree": 0,
+                "ignoreTargetSide": 0,
+                "excludeSomeAbnormalFlags": 0,
+                "excludeAbnormalFlag": 0,
+                "purposeMask": 0,
+                "professionMask": 0,
+                "checkUnitType": 0,
+                "unitTypeMask": 0,
+                "onlyIgnoreSomeOfTargetFreeCase": 0,
+                "abnormalFlag": 0,
+                "abnormalCombo": 0
+              },
+              "_goThroughWall": 1,
+              "_onlyCheckHitWhenReachTarget": 1,
+              "_onlyCheckHitWhenStop": 0,
+              "_canFlyThroughTheDeathArea": 0,
+              "_exceptTraceTarget": 0,
+              "_overridePurposeMaskWithTargetOptions": 0,
+              "_rangeToLoad": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "_ignoreCamouflage": 1,
+              "_ignoreRangeScale": 0,
+              "_exceptSource": 0,
+              "_mergeTraceTargetMotion": 0,
+              "_markReachedOnlyWhenTargetEnter": 0
+            }
+          },
+          "-2731905538226156763": {
+            "gameObjectPathID": "-619213101382661339",
+            "gameObjectName": "projectile_enemy_emppnt",
+            "script": {
+              "status": "resolved",
+              "type": "Torappu.Battle.Projectiles.AttachToTarget",
+              "scriptCab": "CAB-658d74aab777086fc32b93f385be999a",
+              "scriptPathID": "740622368551806873",
+              "scriptBundle": "assets/AB/Android/anon/787628af8cacd60eaae9af1d9c0afa14.bin",
+              "scriptBundleSha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+            },
+            "fields": {
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-619213101382661339"
+              },
+              "m_Enabled": 1,
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "740622368551806873"
+              },
+              "m_Name": "",
+              "_rotateToTarget": 0,
+              "_forceReachedWhenTimeup": 0,
+              "_useSourceDirection": 0,
+              "_useTargetDirection": 0,
+              "_useStartToTarget": 0,
+              "_awayFromSourceAsDirection": 0,
+              "_flyToTargetLocationOnly": 0,
+              "_useSourceDirectionRandomArcAngleStart": 0,
+              "_useSourceToTargetRandomArcAngleStart": 0,
+              "_useSourceDirectionArcAngleWithRatio": 0,
+              "_useSourceToTargetArcAngleWithRatio": 0,
+              "_sourceDirectionArcAngleRatio": 0.0,
+              "_flyToPredefinedLocation": 0,
+              "_predefinedLocation": 0,
+              "_freezeRotationZ": 0,
+              "_freezeRotationXY": 0,
+              "_exactMatchCameraForward": 0,
+              "_resetToTargetPosWhenReached": 0,
+              "_resetToTracetargetMapPosV3": 0,
+              "_handleWithIBuildableTarget": 0,
+              "_forceResetToTargetPosWhenReached": 0,
+              "_fixOnProjectileReached": 0,
+              "_onlyReachedInTime": 0.0,
+              "_keepUpdate": 0,
+              "_attachToMountPoint": 0,
+              "_ignoreMountPointHeight": 0,
+              "_mountPointType": 1,
+              "_checkReached": 1,
+              "_delayAfterReached": 0,
+              "_updateDelayTimeOnlyOnce": 0,
+              "_delayTime": 0.0,
+              "_extraDelayTime": 0.0,
+              "_delayToStart": 3.0,
+              "_immediatelyReach": 0,
+              "_stopIfTargetDead": 0,
+              "_stopIfTargetDisappeared": 0,
+              "_followTarget": 0
+            }
+          }
+        }
+      },
+      "actionOwnedSource": "work/enemy-attach-action-owned-source.json",
+      "projectileOwnedSource": "work/enemy-attach-projectile-owned-source.json",
+      "crossSnapshotFieldComparison": {
+        "Torappu.Battle.SelectorTrigger": {
+          "onlyCN": {},
+          "onlyJP": {},
+          "changed": {}
+        },
+        "Torappu.Battle.Abilities.RangedAttack": {
+          "onlyCN": {
+            "_checkFaceToFirstCastTargetDownAttack": 0,
+            "_affectedBySlowDown": 1
+          },
+          "onlyJP": {},
+          "changed": {}
+        },
+        "Torappu.Battle.SecondaryFilterAdvancedSelector": {
+          "onlyCN": {
+            "_ignoreMotionMode": 0,
+            "_excludeSomeAbnormalFlags": 0,
+            "_excludeAbnormalFlag": 46
+          },
+          "onlyJP": {},
+          "changed": {}
+        },
+        "Torappu.Battle.CircleRange": {
+          "onlyCN": {},
+          "onlyJP": {},
+          "changed": {}
+        }
+      },
+      "timing": {
+        "animation": "Attack",
+        "duration": 1.1666666,
+        "hit": 0.3333333,
+        "playback": {
+          "rule": "native-attack-time-capped-animation",
+          "timeMode": 0,
+          "minScale": 0.1,
+          "maxScale": 1.0
+        }
+      },
+      "timingSha256": "e15586a36f2f20e312460e4ef8a0d96009a2e0b269016fbf3d95e24d7889a22e",
+      "proposedSharedIR": {
+        "kind": "delayed-static-area-projectile",
+        "binding": {
+          "modeIndex": 0,
+          "channels": [
+            "combat",
+            "attack"
+          ],
+          "sharedAction": true
+        },
+        "selection": {
+          "side": "opponent",
+          "motion": "all",
+          "categoryMask": 1,
+          "maxTargets": 1,
+          "limitKey": "max_target",
+          "postOrder": "hatred-descending",
+          "priorityBuff": {
+            "key": "mark_neutral[effect]",
+            "without": false,
+            "filterSource": false
+          },
+          "sortByTauntAtLast": true,
+          "timing": "BEFORE_SPELL_START",
+          "sourceTimingRaw": 1,
+          "range": {
+            "prefabRadius": 4.0,
+            "databaseRadius": 2,
+            "policy": "positive owner current-mode rangeRadius replaces serialized fallback; _scaleble=0, saved CircleRange native contract"
+          },
+          "priorityPolicy": "exact-key marked group first, then hatred and stable deployment order; final comparer precedence is a simulation model, not native proof",
+          "fallback": "retain unmarked candidates; secondaryFilter3 is not a hard eligibility filter with sortByTauntAtLast=true"
+        },
+        "schedule": {
+          "sourceAnimation": {
+            "animation": "Attack",
+            "duration": 1.1666666,
+            "hit": 0.3333333,
+            "playback": {
+              "rule": "native-attack-time-capped-animation",
+              "timeMode": 0,
+              "minScale": 0.1,
+              "maxScale": 1.0
+            }
+          },
+          "cooldown": "existing ordinary attackTime",
+          "release": "source OnAttack",
+          "scaleCap": 1.0,
+          "waitForProjectile": false
+        },
+        "packet": {
+          "projectileKey": "projectile_enemy_emppnt",
+          "damageType": "phys",
+          "atkScale": 1.0,
+          "attackTypeRaw": 1,
+          "cachedSourcePower": true,
+          "activeBuffs": [],
+          "placement": {
+            "destinationRaw": 2,
+            "followTarget": false,
+            "keepUpdating": false,
+            "attachToMountPoint": false,
+            "destination": "INPUT_VECTOR3",
+            "capture": "on-emission",
+            "policy": "freeze selected target current 2D position at OnAttack emission; precise native input capture frame and height projection are not asserted"
+          },
+          "delay": 3.0,
+          "maxLifetime": 10.0,
+          "arrival": {
+            "checkReached": true,
+            "immediatelyReach": false,
+            "forceReachOnLifetimeEnd": true
+          },
+          "area": {
+            "shape": "circle",
+            "radius": 1.2000000476837158,
+            "rangeScale": "shared source range scale (ignoreRangeScale=false)",
+            "side": "opponent",
+            "motion": "all",
+            "categoryMask": 1,
+            "ignoreCamouflage": true,
+            "respectTargetFree": true,
+            "hitAt": "reach",
+            "perTargetOnce": true,
+            "maxHitTargets": null,
+            "forceTraceHit": false,
+            "policy": "only eligible current entities inside locked area; no forced single-target fallback"
+          },
+          "lifecycle": {
+            "stopIfTargetDead": false,
+            "stopIfTargetDisappeared": false,
+            "stopWhenSourceInvalid": false,
+            "managedBySource": false,
+            "notClearProjectileWhenCastEnd": false,
+            "castEndPolicy": "emitted-projectiles-independent simulation contract; raw source flag retained"
+          }
+        },
+        "persistentState": [
+          "owner/target top-level existing projectile refs",
+          "frozen x/y/ATK/type/area/source parameters",
+          "resolveAt/life",
+          "resolved guard and optional hit IDs"
+        ]
+      },
+      "resolvedDependencies": [
+        {
+          "kind": "source-range",
+          "evidence": "61912_InitCollidersIfNot.asm 0x213bac0..0x213bb9c, _scaleble=0 replaces collider with options.radius; reuses existing tagged-ranged contract",
+          "effectiveRadius": 2
+        },
+        {
+          "kind": "secondary-selector",
+          "evidence": "62744 0x2178754..0x2178810: SPECIFIED_BUFF3 calls ContainsBuff. 62742 0x2177f44..0x217809c: sortByTauntAtLast=true reorders matching prefix without removing unmatched candidates, then final sort before limit. Final comparer is not recovered."
+        },
+        {
+          "kind": "destination-enum",
+          "evidence": "work/enemy-attach-projectile-destination-enum.json; exact cached metadata default field84429:2=INPUT_VECTOR3"
+        }
+      ],
+      "implementationDependencies": [
+        {
+          "kind": "source-range-initialization-policy",
+          "facts": "Action CircleCollider radius4, ancestors identity scale, CircleRange extendable/scaleble false; CN encounter rangeRadius2.",
+          "needed": "Reuse saved native owner range replacement; no additional source work needed."
+        },
+        {
+          "kind": "secondary-selector-composition",
+          "facts": "SPECIFIED_BUFF3 + mark_neutral[effect], HATRED_DES4, sortByTauntAtLast=true.",
+          "needed": "Implement marked group first / same-group hatred as explicit stable simulation policy; retain unmarked fallback. Do not claim unrecovered final native comparator order."
+        },
+        {
+          "kind": "environment-marker-producer",
+          "facts": "mark_neutral[effect] absent from current buff_table and buff-template maps; no existing web/src consumer/producer found.",
+          "needed": "Accept a generic explicit source marker query for future providers; without marker producer only the unmarked fallback is naturally reachable. Marker priority tests must be marked fixtures."
+        },
+        {
+          "kind": "attachment-anchor-and-delay-clock",
+          "facts": "destinationRaw2, delayToStart3, followTarget0, keepUpdate0, checkReached1, immediatelyReach0.",
+          "needed": "INPUT_VECTOR3 enum is bound; freeze 2D target position at emission and resolve after delayToStart as explicit frame/height model."
+        },
+        {
+          "kind": "ordinary-source-target-timing",
+          "facts": "SelectTargetTiming1 is BEFORE_SPELL_START; current ordinary engine freezes a target when attack scheduling starts.",
+          "needed": "Keep existing ordinary schedule-start target selection and emit-time position capture as explicit source-phase mapping."
+        },
+        {
+          "kind": "delayed-area-lifecycle-and-restore",
+          "facts": "3s delay can outlive1.1666666s action; source invalid/target dead/disappeared stop flags false, force trace flags false, force reach at lifetime end true.",
+          "needed": "Existing projectile queue needs frozen area packet and one arrival guard. Preserve owner-death independence under declared model, area hits when traced target leaves/dies, expiry not double-hit, pool reset and host restoration."
+        }
+      ],
+      "implementationReady": true
+    }
+  },
+  "implementationPlan": {
+    "minimumSharedFiles": [
+      "new bounded attach-area compiler/helper",
+      "web/src/simulation/external-combat.js provider contract",
+      "shared enemy selector exact Buff priority query",
+      "web/engine.js source packet release/area arrival/pool reset",
+      "existing room projectile refs/state serializer (only if nested refs introduced; avoid them)"
+    ],
+    "reuse": [
+      "ArkExternalCombat.actionTiming cap",
+      "ArkClientPrograms.targetPriority",
+      "ArkEnemySkills.validTarget",
+      "B.projectiles and resolveAt/life",
+      "enemyDamagePacketToOperator/inflictDamage",
+      "existing owner/target host link restoration"
+    ],
+    "acceptance": [
+      "delayed3s never instantaneous",
+      "single cached ATK packet physical area1.2, no force trace hit",
+      "marked-priority fixture and unmarked real fallback",
+      "selected target movement/death after emission does not retarget frozen area",
+      "source dies after emission",
+      "max lifetime one arrival only",
+      "ordinary cooldown and post-animation movement continue",
+      "projectile pool reset",
+      "host checkpoint before area arrival"
+    ]
+  },
+  "boundaries": [
+    "Source fields and complete cached component ownership are preserved; proposed phase, range and lifetime models are not native conclusions.",
+    "Only already saved ASM, enum/contract files and five cached metadata default entries were read. No native library scan, extraction or disassembly was performed.",
+    "One actual-pool source only; no extrapolated coverage or whole-enemy completion claim."
+  ]
+}

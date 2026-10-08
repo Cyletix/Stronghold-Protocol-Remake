@@ -1,0 +1,42 @@
+{
+  "date": "2026-09-14",
+  "scope": "shared blocked-mode provider and complete Buff event compiler",
+  "pythonTests": {
+    "test_enemy_mode_events.py": 9,
+    "test_enemy_mode_blocked_provider.py": 2,
+    "test_enemy_mode_auto_trigger_cache.py": 1,
+    "test_enemy_mode_runtime_overlay.py": 2,
+    "test_enemy_mode_buff_bindings.py": 4,
+    "test_advance_enemy_modes.py": 3
+  },
+  "pythonPassed": 21,
+  "runtimeSmokes": [
+    "_enemy_mode_providers_smoke.js",
+    "_external_combat_smoke.js"
+  ],
+  "docs": {
+    "passed": true,
+    "documents": 77,
+    "localLinks": 2287
+  },
+  "gameVersion": "room-game-20260914.26",
+  "cache": {
+    "planCacheHit": true,
+    "bindingCacheHit": true,
+    "sourceAnalysisSkipped": true,
+    "templateQueriesSkipped": true,
+    "dpsCalculationSkipped": true,
+    "runtimeRebuildSkipped": true
+  },
+  "sourceHashes": {
+    "tools/enemy_mode_events.py": "ddfa3f6666eed0f6366280f71a63e4f26d927cbf5372d1313efc718c870d1827",
+    "tools/enemy_mode_blocked_provider.py": "e5a48ad7d375237f137be21e8d9fb08ffa9b1431f2e1dcc06f256e507927e45f",
+    "tools/build_external_combat_data.py": "ac0c3d009d6c850b054a49b1162de60c925ea5c88dcc8f8610b78e87ff9df70e",
+    "tools/advance_enemy_modes.py": "ca342fae6d536709d62f5b7e653a9408d7017e2909a09be37023a5d93a79e2f1",
+    "tools/inspect_enemy_mode_auto_triggers.py": "f4f96d2b90a4ae3857f39f32258cb2d1047fd28400332d89e0c32efd53e05c69",
+    "web/src/simulation/external-combat.js": "65b4882fedb73ab13ab9d2dfea7f85c7d9dd892a6a7c591509eea0e1b9d7e847",
+    "web/engine.js": "4d554809bb9236508863bffb56fbcc84d3d860093fff776abe0aaae9496ab093",
+    "web/external_combat_data.js": "db55a16fe7d77daae0a43bec5d16758aa509bc18437c2a0677a2d292e0fcb57a"
+  },
+  "boundary": "Implementation tests, not original-client equivalence. Provider target/attachment and silence lifecycle remain Inferred."
+}

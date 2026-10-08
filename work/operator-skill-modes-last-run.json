@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "completed": true,
+  "recordedAt": "2026-09-17T09:00:37.023583+00:00",
+  "scope": "Shared timed attack/heal skill-mode bodies: four skills, source-selected action/selector and existing self-Buff program execution.",
+  "sourceContract": {
+    "path": "work/operator-mode-next-group.json",
+    "sourceFingerprint": "4918cca1a8e6d2b6a640dcfe0273a057b7f0cc47b73f679bf2854baf4a5abde2",
+    "fileSha256": "99eaae7a2ff1219affa7dab614b84959f80b908deb190ac49de1ecbf5f86adb2"
+  },
+  "gameVersion": "room-game-20260917.1",
+  "catalog": "c045911d8ab9e511",
+  "restMigrationFrom": "7b3f9ff84c113bb4",
+  "members": [
+    "skchr_spikes_1",
+    "skchr_spikes_2",
+    "skchr_podego_1",
+    "skchr_prove_2"
+  ],
+  "validation": [
+    {
+      "suite": "tools/build_skill_mode_data.py --check",
+      "result": "passed",
+      "sourceLevels": 40
+    },
+    {
+      "suite": "node tools/_operator_skill_modes_smoke.js",
+      "result": "passed",
+      "levelExecutions": 40,
+      "seasonVariants": 8,
+      "hostModeRepresentatives": 2
+    },
+    {
+      "suite": "node tools/_client_programs_smoke.js",
+      "result": "passed"
+    },
+    {
+      "suite": "node tools/_operator_combat_smoke.js",
+      "result": "passed"
+    },
+    {
+      "suite": "node tools/_next_attack_skills_smoke.js",
+      "result": "passed"
+    },
+    {
+      "suite": "node tools/_source_consumers_smoke.js",
+      "result": "passed"
+    },
+    {
+      "suite": "node tools/_source_battles_smoke.js",
+      "result": "passed"
+    },
+    {
+      "suite": "node tools/_rest_save_smoke.js",
+      "result": "passed"
+    },
+    {
+      "suite": "tools/test_enemy_skill_dispatch.py",
+      "result": "passed",
+      "groups": 5
+    },
+    {
+      "suite": "frozen EnemySkill input anchor propagation",
+      "result": "passed",
+      "boundary": "Removing only newly generated sourceTags reconstructs the exact pinned encounter SHA; frozen component fingerprint unchanged."
+    },
+    {
+      "suite": "node tools/audit_implementation_checklist.js --scope-skill-modes --check",
+      "result": "passed"
+    },
+    {
+      "suite": "node tools/check_docs.js",
+      "result": "passed",
+      "documents": 80,
+      "localLinks": 2383
+    },
+    {
+      "suite": "mode.js generated consistency, runtime syntax and changed tracked whitespace",
+      "result": "passed"
+    }
+  ],
+  "checklist": {
+    "checked": 508,
+    "tasks": 6335,
+    "previousAcceptedPreserved": 504,
+    "newLimitedBodies": 4,
+    "scope": "Only current source-mode facts and four independent body subitems; old text/notes/basis preserved without claiming historical revalidation."
+  },
+  "coverage": {
+    "fixedExplicitSkills": 125,
+    "fixedSkills": 363,
+    "extendedExplicitSkills": 154,
+    "extendedSkills": 423
+  },
+  "packageReceipt": "work/operator-skill-modes-package.json",
+  "packageCompleted": true,
+  "boundaries": [
+    "Existing action phase, multi-hit spacing and projectile speed conventions",
+    "Complete native hatred/FSM and talent/module combinations remain outside this body scope",
+    "Podenco source heal projectile remains mapped to existing instant medical action",
+    "No whole-skill or whole-character completion inferred from the four body acceptances"
+  ],
+  "nextSharedClass": "Channeling/no-attack self-recovery mode group, from saved excluded candidates skchr_snakek_2 and skchr_utage_1",
+  "dpsRecalculated": false,
+  "automationChanged": false,
+  "uploadedOrPublished": false,
+  "ongoingPackagingPolicy": "Every completed major item is packaged after its required validation."
+}

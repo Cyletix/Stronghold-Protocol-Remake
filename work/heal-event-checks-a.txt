@@ -1,0 +1,49 @@
+PASS elemental combat
+PASS elemental source skills
+PASS elemental source
+PASS operator skill levels source
+PASS operator skill levels consumers
+PASS marksman source skills
+PASS vanguard source skills
+PASS medic source skills
+PASS periodic medic source skills
+PASS protective medic source skills
+PASS medic talent SP events
+PASS medical drone inventory and deployment
+PASS medical SP module effects
+PASS medical profession attack-speed aura
+PASS Beeswax source skills and obelisk
+PASS Dusk skills and freeling lifecycle
+PASS Click released funnel
+PASS Goldenglow and Rockrock client funnels
+PASS operator combat
+PASS contact and attack boundaries
+PASS flying enemies and blocking
+PASS operator library
+PASS season roster slots
+PASS DIY roster source
+PASS DIY selection and runtime
+PASS operator mechanics audit
+PASS loadout and items
+FAIL strategy item rewards
+node:assert:150
+  throw new AssertionError(obj);
+  ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+'reactive' !== 'stat'
+
+    at evalmachine.<anonymous>:25:42
+    at Script.runInContext (node:vm:149:12)
+    at Object.runInContext (node:vm:301:6)
+    at Object.run (D:\OneDrive\Project\ArknightsResearch\卫戍协议复刻\tools\_browser_fixture.js:13:49)
+    at main (D:\OneDrive\Project\ArknightsResearch\卫戍协议复刻\tools\_items_smoke.js:6:4) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 'reactive',
+  expected: 'stat',
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+

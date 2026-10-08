@@ -1,0 +1,12 @@
+{
+  "batch": "room-game-20260918.10",
+  "before": "work/garrison-checked-before-20260918.10.json",
+  "output": "work/garrison-skill-batch-acceptance-20260918-10.json",
+  "validations": [".runtime/skill-mode-self-buffs-receipts.json", "tools/test_skill_mode_self_buffs.py", "tools/_skill_mode_self_buffs_smoke.js", "tools/_self_buff_consumers_smoke.js", "work/skill-self-buff-batch-contract.json"],
+  "tasks": {
+    "op/char_107_liskam/skill/skchr_liskam_1/source-mode-body": "2026-09-18 .10 有限自身Buff限定主体：本项10源等级随同组40等级/8主机恢复通过；雷蛇与折桠act2普通精锐共4实际配置已核。根duration=-1仍取有限Buff黑板8秒，一次格挡消耗仅结束自身，独立DEF保留；零伤害、前置command盾、未耗盾恢复及耗尽不重置通过，旧部署盾回归通过。伤害事件/盾顺序与原生帧保留模型，完整天赋模组/整技能另核。",
+    "op/char_4207_branch/skill/skchr_branch_1/source-mode-body": "2026-09-18 .10 有限自身Buff限定主体：本项10源等级随同组40等级/8主机恢复通过；雷蛇与折桠act2普通精锐共4实际配置已核。源派生状态抗性随父Buff结束撤销，与外来Aura在相同override组只择优一次，撤外来后保留自身、结束恢复基础抗性；旧Aura成员回归通过。DEFAULT竞争/同级顺序是明确模型，完整天赋模组/整技能另核。",
+    "op/char_611_acnipe/skill/skchr_acnipe_1/source-mode-body": "2026-09-18 .10 有限自身Buff限定主体：本项10源等级随同组40等级/8主机恢复通过，扩展身份验证不冒称固定商店可选。固定DEF穿透进入真实物理伤害消费者，与比例、天赋固定、动作防御比例组合通过，不覆写敌DEF、不影响Arts；结束/到期撤销。先比例后固定为明确模型，完整天赋模组/整技能另核。",
+    "op/char_608_acpion/skill/skchr_acpion_2/source-mode-body": "2026-09-18 .10 有限自身Buff限定主体：本项10源等级随同组40等级/8主机恢复通过，扩展身份验证不冒称固定商店可选。比例DEF穿透接真实物理消费者，源interval/trig_cnt/cost沿onSkillDp逐次派发；首跳等待、次数耗尽、父到期/死亡和保存恢复不重复回费。比例后固定和精确周期帧保留模型，完整天赋模组/整技能另核。"
+  }
+}

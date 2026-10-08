@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-09-18T15:44:33.608656+09:00",
+  "gameVersion": "room-game-20260918.4",
+  "catalog": "7c51b3928c330f86",
+  "basis": "Frozen source snapshot before full package copy; later workspace development must not be used for comparison",
+  "files": {
+    "web/engine.js": {
+      "sha256": "206927599c3709ace15bdb7b55a15b23284c68668deb9f6611fd85a2a9cdb6be",
+      "bytes": 196660
+    },
+    "web/src/simulation/operator-combat.js": {
+      "sha256": "fd138e37e4e76f72875b1186cc23bb4c5066551c4177b3e31433c59f9a7ca014",
+      "bytes": 49642
+    },
+    "web/src/simulation/client-programs.js": {
+      "sha256": "dc1abd7cfaf233f8a91c416b8c9b8148bb3df9fd91de5dbe5756fec33cb298cf",
+      "bytes": 11076
+    },
+    "web/src/simulation/skill-modes.js": {
+      "sha256": "e0bb3c0232e206dd04276b3b9338ed6af6832a6cfb11f80aec95028e267f1f77",
+      "bytes": 3908
+    },
+    "web/src/simulation/common-skills.js": {
+      "sha256": "2cece4a5f8cb1bfac0e98bb95af57a06cedc35cb2acd89d27c29553320525c12",
+      "bytes": 5709
+    },
+    "web/src/simulation/direct-skill-actions.js": {
+      "sha256": "0695c064997504606500b8f98f04cc00feeaac6097e035b33a264d388b38440d",
+      "bytes": 3356
+    },
+    "web/client_program_data.js": {
+      "sha256": "43d168f81e2e2672782633831fc96bca4942e1ccce12d96cb6922012dd9597b7",
+      "bytes": 78862
+    },
+    "web/next_attack_skill_data.js": {
+      "sha256": "afc1225252387e3eef50d5f881867f5c4e6ed7c512daa8310618a9a0846550d9",
+      "bytes": 16643
+    },
+    "web/skill_mode_data.js": {
+      "sha256": "0d6a6bc9f33b2fc732a85b7728ab3a1ed9b047a56bcb46b1695b4df86663c124",
+      "bytes": 124218
+    },
+    "web/direct_skill_data.js": {
+      "sha256": "15b762c6651c0265e2552d1fc3cb9fac9922ed54b32f4554a7d61c05b6464190",
+      "bytes": 8273
+    },
+    "tools/room_server.js": {
+      "sha256": "7836a3716b0d1a1ceb333034e9ca65f022d1ffd67d4d5fa9cae0183350a86827",
+      "bytes": 32784
+    },
+    "web/room-game.js": {
+      "sha256": "c6993650cfdf18808742c5c279f1075236dbe515e6529261ee05056c9040a50f",
+      "bytes": 40372
+    },
+    "web/room-presence.js": {
+      "sha256": "70124eef9d08328046c770b4bae06e4ceafad14f251f97f9c1d80ebbd263affb",
+      "bytes": 7939
+    },
+    "web/mode.js": {
+      "sha256": "2752cadb68a68003c26d6dc6c549e35930c826270de902d0de6c0345515152a4",
+      "bytes": 325335
+    },
+    "web/mode/save.js": {
+      "sha256": "eddeab3595f57eeaf7d00bd9ad03d4b73b0afed9bc82eceedeff1323817a1c09",
+      "bytes": 16742
+    },
+    "web/mode/rules.js": {
+      "sha256": "ea6bc23a9ed2d27437f5377670f8a7558546daa45d884d4d58de95f27876661d",
+      "bytes": 52217
+    },
+    "web/mode/debug.js": {
+      "sha256": "2e5471b07ae7df9c46479dc9a780b42642d5d49afdfa9049c20d235ab8f22f48",
+      "bytes": 15813
+    },
+    "web/index.html": {
+      "sha256": "2ea7c65deb3f3d5e8982d3a979aa5a4c3d3ef4f0e0ee7c2224e42831eb0dd7d4",
+      "bytes": 22967
+    },
+    "tools/lib/listen-port.js": {
+      "sha256": "caeb7f93cc720cd4f5d5455d0d88a3b8081bb49abb4939c50a0b4f191eb32d18",
+      "bytes": 1212
+    },
+    "tools/lib/room-game-runtime.js": {
+      "sha256": "69229084854c8b817828a44f60b4157c49ab031321c407673755ca39b04ad8b7",
+      "bytes": 40307
+    },
+    "tools/room-launcher.js": {
+      "sha256": "519baf60f31b56061a8e1782340f64555b051a4a51c676de17385430d0dc59fd",
+      "bytes": 14522
+    },
+    "tools/room-online.js": {
+      "sha256": "e92d33a9988e928f1970c0011fbb1a45eec81c2053721b194ac579371d58f4e3",
+      "bytes": 12632
+    },
+    "tools/start-room.js": {
+      "sha256": "931d05690da3c10690a0225e7f728d2ea7bff849b98b7cdbe5d559d8a719697b",
+      "bytes": 4652
+    },
+    ".runtime/node-win-x64/node.exe": {
+      "sha256": "0d0f5e39f9f3d9587bc19f73eab3c2c9c4903fd02d6dbf9c853dd81b3d95fad4",
+      "bytes": 86997320
+    },
+    ".runtime/node-win-x64/LICENSE": {
+      "sha256": "8cc9bb466b19fc7e7cc99d03e9df1132021fda8b01eea2624c58bb372dbef576",
+      "bytes": 148217
+    },
+    ".runtime/easytier-v2.6.4-x64/easytier-core.exe": {
+      "sha256": "da7eb2d24b5416f3d3407636949e964a0750e3f9dc53a828cb6799a57ead445d",
+      "bytes": 24395776
+    },
+    ".runtime/easytier-v2.6.4-x64/easytier-cli.exe": {
+      "sha256": "d8783e851e944b44a9b71b39fd02f227ec0a2a82b3165c55ead5dd32dcde53a1",
+      "bytes": 9973248
+    },
+    ".runtime/easytier-v2.6.4-x64/Packet.dll": {
+      "sha256": "c7c03a87eac7243ccbe331554624b18803010b740e311fc8cfddb573096eacac",
+      "bytes": 220032
+    },
+    ".runtime/easytier-v2.6.4-x64/wintun.dll": {
+      "sha256": "e5da8447dc2c320edc0fc52fa01885c103de8c118481f683643cacc3220dafce",
+      "bytes": 427552
+    },
+    ".runtime/easytier-v2.6.4-x64/WinDivert64.sys": {
+      "sha256": "8da085332782708d8767bcace5327a6ec7283c17cfb85e40b03cd2323a90ddc2",
+      "bytes": 94144
+    },
+    ".runtime/easytier-v2.6.4-x64/verified-files.json": {
+      "sha256": "7065f8e76b23be35f35cb38dca49c36f4db4eab8b2e5f4673a585887772d96e3",
+      "bytes": 758
+    }
+  }
+}

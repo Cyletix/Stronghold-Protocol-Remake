@@ -1,0 +1,37 @@
+{
+  "batch": "room-game-20260918.5",
+  "newLimitedTasks": [
+    "op/char_196_sunbr/skill/skchr_sunbr_1/source-next-attack-body",
+    "op/char_202_demkni/skill/skchr_demkni_1/source-next-attack-body",
+    "op/char_4163_rosesa/skill/skchr_rosesa_1/source-next-attack-body",
+    "op/char_4196_reckpr/skill/skchr_reckpr_1/source-next-attack-body",
+    "op/char_215_mantic/skill/skchr_mantic_2/source-mode-body",
+    "op/char_218_cuttle/skill/skchr_cuttle_2/source-mode-body",
+    "op/char_306_leizi/skill/skchr_leizi_2/source-mode-body",
+    "op/char_472_pasngr/skill/skchr_pasngr_2/source-mode-body",
+    "op/char_614_acsupo/skill/skchr_acsupo_2/source-mode-body",
+    "op/char_102_texas/skill/skchr_texas_2/source-direct-body"
+  ],
+  "retainedHistoricalTasks": [
+    "op/char_4163_rosesa/skill/skchr_rosesa_1",
+    "op/char_4196_reckpr/skill/skchr_reckpr_1"
+  ],
+  "checked": 548,
+  "stats": {
+    "fixedAssociations": 363,
+    "expandedAssociations": 423,
+    "fixedExplicitBefore": 139,
+    "fixedNewExplicit": 2,
+    "fixedExplicitAfter": 141,
+    "fixedPendingAfter": 222,
+    "expandedExplicitBefore": 172,
+    "expandedNewExplicit": 3,
+    "expandedExplicitAfter": 175,
+    "expandedPendingAfter": 248
+  },
+  "notes": {
+    "next-attack": "2026-09-18；下一次治疗公共模板批次4项。6项编译合同、40源等级、12实际赛季普通/精锐配置、8次主机恢复通过；见 `_next_heal_skills_smoke.js`。血量门槛、充能、空耗保护、友方弹体及失效目标清理按源图执行；治疗弹体高度为二维近似，精确动画时点与完整天赋模组另核。仅限定主体。",
+    "skill-modes": "2026-09-18；模式命中状态/链式投递批次5项。50源等级、12实际赛季组合、4次主机恢复通过；链式另核4种实际特质/模组参数。见 `_skill_mode_hit_buffs_smoke.js`、`_skill_mode_chain_smoke.js`；精确key、生命阈值、最低防御排序、每跳状态及发射后冻结参数已核。链跃同帧和同距离排序为仿真模型，未把模组全量组合与精确动画升级为原版事实。",
+    "direct-actions": "2026-09-18；公共分轮施放与寿命末尾投递接入。新增德克萨斯S2为旧实现迁移；10源等级、4实际赛季组合、2次主机恢复通过，旧50级/12赛季/10恢复回归通过；8项编译合同。见 `_direct_skill_projectiles_smoke.js` 与 `work/direct-skill-batch-verification.json`。目标与攻击逐轮取值、施放/SP锁、已发/未发投递清理及RNG恢复已核；ALL全选依赖源描述交叉推断，精确动画相位及完整天赋模组另核。"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "createdAt": "2026-09-18T02:57:33.699008+09:00",
+  "issue": {
+    "summary": "Default Universal launcher failed on excluded TCP port 8100 before serving the homepage.",
+    "rootInvestigation": {
+      "excludedTcpRanges": [
+        "7944-8043",
+        "8044-8143"
+      ],
+      "affectedDefaultPorts": [
+        8003,
+        8100
+      ],
+      "observedOriginalError": "listen EACCES 127.0.0.1:8100",
+      "evidenceOwner": "root"
+    }
+  },
+  "gameVersion": "room-game-20260917.1",
+  "packageDirectory": "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\dist\\Arknights-Game-Universal-Windows-x64-20260918-025154-da88f5",
+  "fullPackage": {
+    "path": "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\dist\\Arknights-Game-Universal-Windows-x64-20260918-025154-da88f5.zip",
+    "bytes": 339247102,
+    "sha256": "3800a5e6daf75c6cac582ad6d3a1ec34acd83fdede67269c84fef262ea326f05",
+    "sidecarMatches": true
+  },
+  "updatePackage": {
+    "path": "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\dist\\Arknights-Room-Update-Windows-x64-20260918-025643-cf7905.zip",
+    "bytes": 15489,
+    "sha256": "2a85e47779a0c7edddd2117e5c528b78d4270ccfac9d927d528ae62990c89759",
+    "sidecarMatches": true,
+    "baseDirectory": "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\dist\\Arknights-Game-Universal-Windows-x64-20260917-175428-d72fc5",
+    "targetDirectory": "D:\\OneDrive\\Project\\ArknightsResearch\\卫戍协议复刻\\dist\\Arknights-Game-Universal-Windows-x64-20260918-025154-da88f5",
+    "changedFileCount": 5,
+    "changedFiles": [
+      "package-info.json",
+      "tools/lib/listen-port.js",
+      "tools/room-launcher.js",
+      "tools/room-online.js",
+      "tools/start-room.js"
+    ],
+    "readme": "卫戍协议-覆盖更新说明.txt",
+    "allPayloadsMatchFullZip": true
+  },
+  "metadata": {
+    "createdAt": "2026-09-18T02:52:51.9353791+09:00",
+    "platform": "Windows",
+    "architecture": "x64",
+    "bundledNode": true,
+    "bundledEasyTier": true,
+    "role": "universal",
+    "entry": "开始游戏.cmd",
+    "scope": "universal room runtime and full game assets"
+  },
+  "affectedRuntimeFileChecks": [
+    {
+      "path": "tools/lib/listen-port.js",
+      "sha256": "caeb7f93cc720cd4f5d5455d0d88a3b8081bb49abb4939c50a0b4f191eb32d18",
+      "sourceFullPackageFullZipUpdateZipMatch": true
+    },
+    {
+      "path": "tools/room-launcher.js",
+      "sha256": "519baf60f31b56061a8e1782340f64555b051a4a51c676de17385430d0dc59fd",
+      "sourceFullPackageFullZipUpdateZipMatch": true
+    },
+    {
+      "path": "tools/room-online.js",
+      "sha256": "e92d33a9988e928f1970c0011fbb1a45eec81c2053721b194ac579371d58f4e3",
+      "sourceFullPackageFullZipUpdateZipMatch": true
+    },
+    {
+      "path": "tools/start-room.js",
+      "sha256": "931d05690da3c10690a0225e7f728d2ea7bff849b98b7cdbe5d559d8a719697b",
+      "sourceFullPackageFullZipUpdateZipMatch": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "full Universal package",
+      "command": "powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File tools/package-room.ps1",
+      "exitCode": 0
+    },
+    {
+      "name": "packaged LAN and default Universal launcher",
+      "command": "node tools/_room_package_smoke.js dist/Arknights-Game-Universal-Windows-x64-20260918-025154-da88f5",
+      "exitCode": 0,
+      "results": [
+        "ROOM PACKAGE OK bundled Node x64, no system Node, unrelated CWD, actual lobby and game runtime",
+        "ROOM DEFAULT PACKAGE LAUNCHER OK preferred 8100 -> 1350, no system Node, unrelated CWD, actual homepage, authenticated status and solo page"
+      ],
+      "defaultLaunchArguments": [
+        "-NoBrowser"
+      ],
+      "defaultPreferredPort": 8100,
+      "defaultActualPort": 1350,
+      "noLocalOnlyOrPortOverride": true
+    },
+    {
+      "name": "existing SHA-based update generator",
+      "command": "powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File tools/package-room-update.ps1 -BasePath dist\\Arknights-Game-Universal-Windows-x64-20260917-175428-d72fc5 -NewPath dist\\Arknights-Game-Universal-Windows-x64-20260918-025154-da88f5",
+      "exitCode": 0
+    },
+    {
+      "name": "source, staged package, full ZIP and update ZIP affected-file hashes",
+      "exitCode": 0
+    }
+  ],
+  "workspaceChecksReportedByRoot": [
+    "node tools/_launcher_port_smoke.js (controlled EACCES/address-in-use, 65535 boundary, other error propagation, real main and host HTTP)",
+    "node tools/_room_launcher_smoke.js",
+    "node tools/_room_home_smoke.js (legacy fixture updated; no production change)"
+  ],
+  "previousPackagesPreserved": true,
+  "notes": [
+    "No repeated full-package copy or duplicate smoke run for the small overlay.",
+    "Update contains four affected runtime files and package-info.json; game-version files are identical to the base package.",
+    "No web gameplay modifications are included in the update."
+  ]
+}

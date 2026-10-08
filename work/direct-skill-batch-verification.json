@@ -1,0 +1,341 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "batch": "20260918.5",
+  "inputs": {
+    "work/client-logic/program-compilation.json": "972bc0d63070e03acf8733c82e8480a29a92952c01bce07ff1f8240eb169c0b3",
+    "data/ArknightsGameData/zh_CN/gamedata/excel/skill_table.json": "9eaaecacd024b8e2177ddb44e0c306bed609b53ef79d2e6446dda9dae49d6435",
+    "data/ArknightsGameData/zh_CN/gamedata/excel/character_table.json": "05fddd1e746d66be22580b51e9e44be75b38aef95169477b2e55150b89a2fed7",
+    "work/client-logic/bundles/battle/prefabs/[uc]projectiles.ab.json": "5fa76222ae24a8d5bff935ad7d4219df58ffacac03ea761f98d3d4df136a9505",
+    "work/client-logic/script-types.json": "1fc6554278c7432c6ba9aa68b6332ee6cabbc3b8ef9a8f1b6394d838d49af041",
+    "work/client-logic/buff-templates.json": "f8cc1f74e426d0111803d68154335a748bfee377a2d826d84135f60a41280d24",
+    "data/ArknightsGameData/zh_CN/gamedata/buff_table.json": "366876f94b336364e243f1a14171b5395240d66c79f86cfb16038cc75ed8e0c3",
+    "work/client-logic/native-enemy-skill-sp/Torappu.Battle.AbilityStandard_Event-enum.json": "562e277eac3454f9ec65d3e1bb7e863a67d6aa14181e63ea90780def87c4c598",
+    "work/client-logic/native-direct-selector/contract.json": "265da03b69bd4d01ed9ed375309623e6541d50846ace13d94ab6cdf195ca3914",
+    "tools/build_direct_skill_data.py": "c238097eb3c167034c84387aece9c719ee74ccf623694f354a847c1fbd79f200",
+    "tools/direct_skill_compiler.py": "b677927517cd3e1d3ea7a876201a170f232e1a3eba0636fca9459b36f193dfc5",
+    "tools/next_attack_compiler.py": "e4b1d814d0cdfb626f39d3392281adb7ef8732431973713accea816858c6d23b",
+    "tools/next_attack_hit_buffs.py": "83166b4d721c7463d77d3984a41a744912e7589d491f50504dd97c713984480c",
+    "tools/enemy_chain_projectiles.py": "ba2a06ce22f647ad444005892c09176fa1f389fa79921cf89160e7cfd0f1540b",
+    "tools/enemy_hit_sequences.py": "d8e57b198bf2a4fd3d6c74ba5e8191254c60d157faf216abdb22ae900b98361c",
+    "tools/garrison_skill_scope.py": "030c9f9f4c85d0153a7eb71408da6ee5adad4564ccad93f6b89208beed99af76",
+    "web/src/simulation/direct-skill-actions.js": "91b5788f09c87559c721666f136b892d000accadd3342fde981fe7a84fa4a6d2",
+    "web/src/simulation/operator-combat.js": "1be6b10681a42284a4cd5c31a45bcccf6e741567e7322616541834f30eb05aeb",
+    "web/engine.js": "0997f184d924f080e4ba4420cdf5c158592f3cb8a3a946983e2923d7917351f3",
+    "tools/test_direct_skill_compiler.py": "d340c380303e6e3faf0d8016017bdacb7811ae78ed11c1eecca08325a6c49494",
+    "tools/_direct_skill_actions_smoke.js": "447060410d0bbdaefdedcbfa3eef49aa417eae63d15a936942a6793ea151b236",
+    "tools/_direct_skill_projectiles_smoke.js": "047c447fb03655f695b4ffccfdde71337bc4fa398f05a62822d926e44194d8ad",
+    "work/direct-skill-candidate-inventory-20260918.json": "d03c6a53b7a81c9fbdf7ad993e45a93ca805375755bd221a2e74884f2a65e65c",
+    "work/direct-skill-projectile-assessment-20260918.5.json": "ba58961842fd5afe4062c88f386718a3d2af0191f06872dfedffb5b52d62c55e"
+  },
+  "tests": {
+    "python tools/test_direct_skill_compiler.py": {
+      "passed": 8
+    },
+    "node tools/_direct_skill_actions_smoke.js": {
+      "sourceLevels": 50,
+      "actualSeasonVariants": 12,
+      "hostReplays": 10,
+      "boundary": "Complete source CastSkill numeric/target/action bodies; no unknown sibling action is discarded. JP 36.7.22 component graphs are bound to current CN source levels with exact key and prefab checks. Direct resolution uses shared geometry, targeting priority and damage/heal hooks. Timed source bodies consume preDelay, inter-spell intervals, per-spell target/power snapshots and complete delivery graphs; random birth delay uses the shared seeded uniform generator. Source preDelay/timeMode are retained; native protected animation hit-frame/lock and precise event phase are not recovered. ALL selector without a bound target key uses source descriptions plus the ALL enum; protected getter/tie-breaking are not claimed. Melee hit-Buff versus damage event order, shared status reapplication and hit-cancellation rules remain runtime boundaries until protected native paths are recovered. No basic-attack SP or onBasicAttackHit is generated. Talent/module closure is not whole-operator completion.",
+      "receipts": [
+        {
+          "charId": "char_608_acpion",
+          "skillId": "skchr_acpion_1",
+          "level": 1
+        },
+        {
+          "charId": "char_608_acpion",
+          "skillId": "skchr_acpion_1",
+          "level": 2
+        },
+        {
+          "charId": "char_608_acpion",
+          "skillId": "skchr_acpion_1",
+          "level": 3
+        },
+        {
+          "charId": "char_608_acpion",
+          "skillId": "skchr_acpion_1",
+          "level": 4
+        },
+        {
+          "charId": "char_608_acpion",
+          "skillId": "skchr_acpion_1",
+          "level": 5
+        },
+        {
+          "charId": "char_608_acpion",
+          "skillId": "skchr_acpion_1",
+          "level": 6
+        },
+        {
+          "charId": "char_608_acpion",
+          "skillId": "skchr_acpion_1",
+          "level": 7
+        },
+        {
+          "charId": "char_608_acpion",
+          "skillId": "skchr_acpion_1",
+          "level": 8
+        },
+        {
+          "charId": "char_608_acpion",
+          "skillId": "skchr_acpion_1",
+          "level": 9
+        },
+        {
+          "charId": "char_608_acpion",
+          "skillId": "skchr_acpion_1",
+          "level": 10
+        },
+        {
+          "charId": "char_202_demkni",
+          "skillId": "skchr_demkni_2",
+          "level": 1
+        },
+        {
+          "charId": "char_202_demkni",
+          "skillId": "skchr_demkni_2",
+          "level": 2
+        },
+        {
+          "charId": "char_202_demkni",
+          "skillId": "skchr_demkni_2",
+          "level": 3
+        },
+        {
+          "charId": "char_202_demkni",
+          "skillId": "skchr_demkni_2",
+          "level": 4
+        },
+        {
+          "charId": "char_202_demkni",
+          "skillId": "skchr_demkni_2",
+          "level": 5
+        },
+        {
+          "charId": "char_202_demkni",
+          "skillId": "skchr_demkni_2",
+          "level": 6
+        },
+        {
+          "charId": "char_202_demkni",
+          "skillId": "skchr_demkni_2",
+          "level": 7
+        },
+        {
+          "charId": "char_202_demkni",
+          "skillId": "skchr_demkni_2",
+          "level": 8
+        },
+        {
+          "charId": "char_202_demkni",
+          "skillId": "skchr_demkni_2",
+          "level": 9
+        },
+        {
+          "charId": "char_202_demkni",
+          "skillId": "skchr_demkni_2",
+          "level": 10
+        },
+        {
+          "charId": "char_440_pinecn",
+          "skillId": "skchr_pinecn_1",
+          "level": 1
+        },
+        {
+          "charId": "char_440_pinecn",
+          "skillId": "skchr_pinecn_1",
+          "level": 2
+        },
+        {
+          "charId": "char_440_pinecn",
+          "skillId": "skchr_pinecn_1",
+          "level": 3
+        },
+        {
+          "charId": "char_440_pinecn",
+          "skillId": "skchr_pinecn_1",
+          "level": 4
+        },
+        {
+          "charId": "char_440_pinecn",
+          "skillId": "skchr_pinecn_1",
+          "level": 5
+        },
+        {
+          "charId": "char_440_pinecn",
+          "skillId": "skchr_pinecn_1",
+          "level": 6
+        },
+        {
+          "charId": "char_440_pinecn",
+          "skillId": "skchr_pinecn_1",
+          "level": 7
+        },
+        {
+          "charId": "char_440_pinecn",
+          "skillId": "skchr_pinecn_1",
+          "level": 8
+        },
+        {
+          "charId": "char_440_pinecn",
+          "skillId": "skchr_pinecn_1",
+          "level": 9
+        },
+        {
+          "charId": "char_440_pinecn",
+          "skillId": "skchr_pinecn_1",
+          "level": 10
+        },
+        {
+          "charId": "char_230_savage",
+          "skillId": "skchr_savage_2",
+          "level": 1
+        },
+        {
+          "charId": "char_230_savage",
+          "skillId": "skchr_savage_2",
+          "level": 2
+        },
+        {
+          "charId": "char_230_savage",
+          "skillId": "skchr_savage_2",
+          "level": 3
+        },
+        {
+          "charId": "char_230_savage",
+          "skillId": "skchr_savage_2",
+          "level": 4
+        },
+        {
+          "charId": "char_230_savage",
+          "skillId": "skchr_savage_2",
+          "level": 5
+        },
+        {
+          "charId": "char_230_savage",
+          "skillId": "skchr_savage_2",
+          "level": 6
+        },
+        {
+          "charId": "char_230_savage",
+          "skillId": "skchr_savage_2",
+          "level": 7
+        },
+        {
+          "charId": "char_230_savage",
+          "skillId": "skchr_savage_2",
+          "level": 8
+        },
+        {
+          "charId": "char_230_savage",
+          "skillId": "skchr_savage_2",
+          "level": 9
+        },
+        {
+          "charId": "char_230_savage",
+          "skillId": "skchr_savage_2",
+          "level": 10
+        },
+        {
+          "charId": "char_4026_vulpis",
+          "skillId": "skchr_vulpis_2",
+          "level": 1
+        },
+        {
+          "charId": "char_4026_vulpis",
+          "skillId": "skchr_vulpis_2",
+          "level": 2
+        },
+        {
+          "charId": "char_4026_vulpis",
+          "skillId": "skchr_vulpis_2",
+          "level": 3
+        },
+        {
+          "charId": "char_4026_vulpis",
+          "skillId": "skchr_vulpis_2",
+          "level": 4
+        },
+        {
+          "charId": "char_4026_vulpis",
+          "skillId": "skchr_vulpis_2",
+          "level": 5
+        },
+        {
+          "charId": "char_4026_vulpis",
+          "skillId": "skchr_vulpis_2",
+          "level": 6
+        },
+        {
+          "charId": "char_4026_vulpis",
+          "skillId": "skchr_vulpis_2",
+          "level": 7
+        },
+        {
+          "charId": "char_4026_vulpis",
+          "skillId": "skchr_vulpis_2",
+          "level": 8
+        },
+        {
+          "charId": "char_4026_vulpis",
+          "skillId": "skchr_vulpis_2",
+          "level": 9
+        },
+        {
+          "charId": "char_4026_vulpis",
+          "skillId": "skchr_vulpis_2",
+          "level": 10
+        }
+      ]
+    },
+    "node tools/_direct_skill_projectiles_smoke.js": {
+      "passed": true,
+      "sourceLevels": 10,
+      "actualSeasonVariants": 4,
+      "hostReplays": 2,
+      "boundary": "source preDelay/interval and uniform shared RNG delivery; native animation phase and recovery remain explicit boundaries",
+      "checks": [
+        "multi-round independent target/power",
+        "one SP charge and one source cost event",
+        "partial interval SP lock",
+        "queued cast and emitted projectile restore",
+        "seeded RNG state restore",
+        "owner death leaves fired delivery",
+        "interruption cancels future waves",
+        "exactly initialized pooled packet"
+      ]
+    }
+  },
+  "stats": {
+    "candidates": 51,
+    "accepted": 6,
+    "acceptedFixed": 5,
+    "rejected": 45,
+    "sourceLevels": 60
+  },
+  "newProviderMembers": [
+    "skchr_texas_2"
+  ],
+  "newExplicitSkillCount": 0,
+  "classification": "Texas S2 migrates an existing explicit implementation to the structural direct provider; no skill-ID allowlist",
+  "source": {
+    "evidence_id": "jp-36.7.22-client-logic",
+    "source_version": "JP 36.7.22 (local XAPK label; bundle hashes authoritative)",
+    "evidence_database_sha256": "36d499444dd469cdf5b188e9e2a245a523f3472c470aa94818644aebf5618095",
+    "artifact_hashes": {
+      "bundles/battle/prefabs/[uc]skills.ab.json": "25ef1235e954dbe9d38f41918f8f9c764a9b9d1552873752a722da42e296aedb",
+      "skill-index.json": "643ff660b636185119e5b1c5766bb1c6bf7e1f8c433a1db619eb8e1a50a2e446",
+      "buff-templates.json": "f8cc1f74e426d0111803d68154335a748bfee377a2d826d84135f60a41280d24"
+    },
+    "script_supplement": "jp-36.7.22-script-types-r1",
+    "boundary": "Executable expression mapping with explicit model boundaries, not complete native execution recovery. Rejected component fields remain research input."
+  },
+  "boundary": "Complete source CastSkill numeric/target/action bodies; no unknown sibling action is discarded. JP 36.7.22 component graphs are bound to current CN source levels with exact key and prefab checks. Direct resolution uses shared geometry, targeting priority and damage/heal hooks. Timed source bodies consume preDelay, inter-spell intervals, per-spell target/power snapshots and complete delivery graphs; random birth delay uses the shared seeded uniform generator. Source preDelay/timeMode are retained; native protected animation hit-frame/lock and precise event phase are not recovered. ALL selector without a bound target key uses source descriptions plus the ALL enum; protected getter/tie-breaking are not claimed. Melee hit-Buff versus damage event order, shared status reapplication and hit-cancellation rules remain runtime boundaries until protected native paths are recovered. No basic-attack SP or onBasicAttackHit is generated. Talent/module closure is not whole-operator completion.",
+  "hostRestore": "Combat state excludes decorative particles; timed queue and in-flight delivery also explicitly compare top-level seeded RNG state",
+  "nextBatchAssessment": {
+    "path": "work/direct-skill-projectile-assessment-20260918.5.json",
+    "sha256": "ba58961842fd5afe4062c88f386718a3d2af0191f06872dfedffb5b52d62c55e"
+  }
+}

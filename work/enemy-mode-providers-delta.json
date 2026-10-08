@@ -1,0 +1,44 @@
+{
+  "rule": "enemy-root-blocked-mode-provider-v1",
+  "before": {
+    "autoModeProviders": 0,
+    "autoModeProviderEnemies": 0
+  },
+  "after": {
+    "autoModeProviders": 2,
+    "autoModeProviderEnemies": 2,
+    "encounterAutoModeProviderEnemies": 0
+  },
+  "acceptedEnemyIDs": [
+    "enemy_4001_toxcar",
+    "enemy_4001_toxcar_2"
+  ],
+  "rejectedEnemyIDs": [
+    "enemy_1218_bomscr",
+    "enemy_1218_bomscr_2",
+    "enemy_1580_mnchrn",
+    "enemy_2013_csbot"
+  ],
+  "otherEnemyMechanismsRemainPending": true,
+  "pendingBasicActionEnemies": 438,
+  "fullPhaseTransitionsCompleted": 0,
+  "report": "work/external-combat-import-report.json",
+  "validation": "work/enemy-mode-providers-validation.json",
+  "next": {
+    "family": "hp-ratio-checker",
+    "priority": "next-shared-provider",
+    "candidateFamily": "hp-ratio-toggle",
+    "candidateTable": "work/enemy-mode-auto-trigger-candidates.json",
+    "after": "reuse-existing-blocked-buff-mode-binding",
+    "scope": "mode-transition-only",
+    "existingContractScope": "The complete blocked managed-Buff switch graph executes on predicate edges, including carrier silence removal/restoration. Native predicate/parameters are known; Buff target and attach/detach use an explicit inference. Other mounted abilities and complete enemy phases remain pending.",
+    "requiredOperators": [
+      "hp-ratio-checker",
+      "toggle-buff-lifecycle",
+      "buff-template-dispatch",
+      "switch-mode"
+    ],
+    "instruction": "Reuse the current provider, target and full-event-graph contracts. Prepare the next shared HP-checker provider from the saved candidate table; verify its threshold and lifecycle contract before enabling it. Do not reread or reimplement the already bound provider IDs.",
+    "acceptance": "Only accept a complete HP condition to Buff to mode-event chain with its own bound target and lifecycle; unknown sibling actions and other enemy states remain pending."
+  }
+}

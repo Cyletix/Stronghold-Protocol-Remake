@@ -1,0 +1,5277 @@
+{
+ "char_498_inside": {
+  "name": "隐现",
+  "seasonBond": "lateranoShip",
+  "regBonds": [
+   "swiftShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_16_a",
+    "eventType": "IN_BATTLE",
+    "kind": "GAIN_BUFF",
+    "desc": "【拉特兰】每叠加5层，本干员攻击速度<@ba.vup>+1</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_eff_attrByBond"
+     },
+     {
+      "key": "divide_num",
+      "value": 5,
+      "valueStr": null
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "lateranoShip"
+     },
+     {
+      "key": "attack_speed",
+      "value": 1,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "GAIN_BUFF",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "lateranoShip"
+     ],
+     "perDivide": 5
+    }
+   }
+  ]
+ },
+ "char_199_yak": {
+  "name": "角峰",
+  "seasonBond": "kjeragShip",
+  "regBonds": [
+   "steadShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_25_a",
+    "eventType": "SERVER_GAIN",
+    "kind": "SERVER_ADD_BOND_CHESS_ALL",
+    "desc": "<获得时>自身所属盟约层数<@ba.vup>+2</>（无需激活盟约）",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 2,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_CHESS_ALL",
+     "eventType": "SERVER_GAIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_306_leizi": {
+  "name": "惊蛰",
+  "seasonBond": "yanShip",
+  "regBonds": [],
+  "garrison": [
+   {
+    "id": "garrison_30_a",
+    "eventType": "SERVER_GAIN",
+    "kind": "SERVER_ADD_BOND_METHOD",
+    "desc": "<获得时>获得等于当前调度中心等级的【炎】层数（无需激活盟约）",
+    "blackboard": [
+     {
+      "key": "add_method",
+      "value": 0,
+      "valueStr": "shoplv"
+     },
+     {
+      "key": "bond",
+      "value": 0,
+      "valueStr": "yanShip"
+     },
+     {
+      "key": "multi",
+      "value": 1,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_METHOD",
+     "eventType": "SERVER_GAIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4137_udflow": {
+  "name": "深巡",
+  "seasonBond": "egirShip",
+  "regBonds": [],
+  "garrison": [
+   {
+    "id": "garrison_18_a",
+    "eventType": "IN_BATTLE",
+    "kind": "GAIN_BUFF",
+    "desc": "攻击海怪敌人时攻击力提升至<@ba.vup>150%</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_eff_attack_enemy"
+     },
+     {
+      "key": "check_tag",
+      "value": 0,
+      "valueStr": "seamonster"
+     },
+     {
+      "key": "atk",
+      "value": 1.5,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "GAIN_BUFF",
+     "eventType": "IN_BATTLE",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_290_vigna": {
+  "name": "红豆",
+  "seasonBond": null,
+  "regBonds": [
+   "indomShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_04_a",
+    "eventType": "SERVER_PRICE",
+    "kind": "SERVER_CHESS_PRICE",
+    "desc": "购买价格为<@ba.vup>1</>",
+    "blackboard": [
+     {
+      "key": "price",
+      "value": 1,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_CHESS_PRICE",
+     "eventType": "SERVER_PRICE",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_494_vendla": {
+  "name": "刺玫",
+  "seasonBond": "victoriaShip",
+  "regBonds": [
+   "deputShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_154_a",
+    "eventType": "SERVER_PREP_FIN",
+    "kind": "SERVER_ADD_BOND",
+    "desc": "<休整期结束时>使已激活的【维多利亚】层数<@ba.vup>+1</>",
+    "blackboard": [
+     {
+      "key": "bond",
+      "value": 0,
+      "valueStr": "victoriaShip"
+     },
+     {
+      "key": "count",
+      "value": 1,
+      "valueStr": null
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_target_inboard"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND",
+     "eventType": "SERVER_PREP_FIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_145_prove": {
+  "name": "普罗旺斯",
+  "seasonBond": "siracusaShip",
+  "regBonds": [],
+  "garrison": [
+   {
+    "id": "garrison_113_a",
+    "eventType": "SERVER_GAIN",
+    "kind": "SERVER_GAIN_FREE_REFRESH_COUNT",
+    "desc": "<获得时>获得1次免费刷新",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 1,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_GAIN_FREE_REFRESH_COUNT",
+     "eventType": "SERVER_GAIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_102_texas": {
+  "name": "德克萨斯",
+  "seasonBond": "siracusaShip",
+  "regBonds": [
+   "soloShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_120_a",
+    "eventType": "SERVER_CHESS_SOLD",
+    "kind": "SERVER_GAIN_FREE_REFRESH_COUNT",
+    "desc": "<售出时>获得1次免费刷新",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 1,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_GAIN_FREE_REFRESH_COUNT",
+     "eventType": "SERVER_CHESS_SOLD",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4100_caper": {
+  "name": "跃跃",
+  "seasonBond": null,
+  "regBonds": [
+   "preciShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_19_a",
+    "eventType": "IN_BATTLE",
+    "kind": "GAIN_BUFF",
+    "desc": "攻击无人机敌人时攻击力提升至<@ba.vup>150%</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_eff_attack_enemy"
+     },
+     {
+      "key": "check_tag",
+      "value": 0,
+      "valueStr": "drone"
+     },
+     {
+      "key": "atk",
+      "value": 1.5,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "GAIN_BUFF",
+     "eventType": "IN_BATTLE",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_196_sunbr": {
+  "name": "古米",
+  "seasonBond": null,
+  "regBonds": [
+   "steadShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_08_a",
+    "eventType": "IN_BATTLE",
+    "kind": "GAIN_BUFF",
+    "desc": "技力自然恢复速度<@ba.vup>+0.15/秒</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "attr_common_global_buff"
+     },
+     {
+      "key": "sp_recovery_per_sec",
+      "value": 0.15,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "GAIN_BUFF",
+     "eventType": "IN_BATTLE",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_183_skgoat": {
+  "name": "地灵",
+  "seasonBond": null,
+  "regBonds": [
+   "miraShip",
+   "visiShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_25_a",
+    "eventType": "SERVER_GAIN",
+    "kind": "SERVER_ADD_BOND_CHESS_ALL",
+    "desc": "<获得时>自身所属盟约层数<@ba.vup>+2</>（无需激活盟约）",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 2,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_CHESS_ALL",
+     "eventType": "SERVER_GAIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_127_estell": {
+  "name": "艾丝黛尔",
+  "seasonBond": "sargonShip",
+  "regBonds": [],
+  "garrison": [
+   {
+    "id": "garrison_25_a",
+    "eventType": "SERVER_GAIN",
+    "kind": "SERVER_ADD_BOND_CHESS_ALL",
+    "desc": "<获得时>自身所属盟约层数<@ba.vup>+2</>（无需激活盟约）",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 2,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_CHESS_ALL",
+     "eventType": "SERVER_GAIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_258_podego": {
+  "name": "波登可",
+  "seasonBond": null,
+  "regBonds": [
+   "deputShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_102_a",
+    "eventType": "SERVER_PREP_FIN",
+    "kind": "SERVER_ADD_BOND_ACTIVATED_MOST_LAYER",
+    "desc": "<休整期结束时>当前激活且层数最多的盟约层数<@ba.vup>+1</>，此干员在整备区时也有效",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 1,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_ACTIVATED_MOST_LAYER",
+     "eventType": "SERVER_PREP_FIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_253_greyy": {
+  "name": "格雷伊",
+  "seasonBond": null,
+  "regBonds": [
+   "skillfulShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_67_a",
+    "eventType": "SERVER_CHESS_SOLD",
+    "kind": "SERVER_ONCE_GOLD",
+    "desc": "<售出时>进入下个休整期额外获得1资金",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 1,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ONCE_GOLD",
+     "eventType": "SERVER_CHESS_SOLD",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_616_pithst": {
+  "name": "盟约·辅助干员",
+  "seasonBond": null,
+  "regBonds": [
+   "maniShip",
+   "emptyShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_03_a",
+    "eventType": "IN_BATTLE",
+    "kind": "GAIN_BUFF",
+    "desc": "攻击力和生命值+<@ba.vup>20%</>",
+    "blackboard": [
+     {
+      "key": "atk",
+      "value": 1.2,
+      "valueStr": null
+     },
+     {
+      "key": "max_hp",
+      "value": 1.2,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "GAIN_BUFF",
+     "eventType": "IN_BATTLE",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4151_tinman": {
+  "name": "锡人",
+  "seasonBond": null,
+  "regBonds": [
+   "investShip",
+   "swiftShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_25_a",
+    "eventType": "SERVER_GAIN",
+    "kind": "SERVER_ADD_BOND_CHESS_ALL",
+    "desc": "<获得时>自身所属盟约层数<@ba.vup>+2</>（无需激活盟约）",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 2,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_CHESS_ALL",
+     "eventType": "SERVER_GAIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_469_indigo": {
+  "name": "深靛",
+  "seasonBond": null,
+  "regBonds": [
+   "arcaneShip",
+   "preciShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_25_a",
+    "eventType": "SERVER_GAIN",
+    "kind": "SERVER_ADD_BOND_CHESS_ALL",
+    "desc": "<获得时>自身所属盟约层数<@ba.vup>+2</>（无需激活盟约）",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 2,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_CHESS_ALL",
+     "eventType": "SERVER_GAIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_337_utage": {
+  "name": "宴",
+  "seasonBond": null,
+  "regBonds": [
+   "raidShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_01_a",
+    "eventType": "IN_BATTLE",
+    "kind": "GAIN_BUFF",
+    "desc": "<战斗中>造成的伤害变为弱点伤害（基于敌人的防御力和法术抗性变换物理和法术伤害）",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_eff_chaos"
+     }
+    ],
+    "rule": {
+     "kind": "GAIN_BUFF",
+     "eventType": "IN_BATTLE",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_496_wildmn": {
+  "name": "野鬃",
+  "seasonBond": "kazimierzShip",
+  "regBonds": [
+   "swiftShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_25_a",
+    "eventType": "SERVER_GAIN",
+    "kind": "SERVER_ADD_BOND_CHESS_ALL",
+    "desc": "<获得时>自身所属盟约层数<@ba.vup>+2</>（无需激活盟约）",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 2,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_CHESS_ALL",
+     "eventType": "SERVER_GAIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_107_liskam": {
+  "name": "雷蛇",
+  "seasonBond": null,
+  "regBonds": [
+   "indomShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_158_a",
+    "eventType": "SERVER_PREP_FIN",
+    "kind": "SERVER_ADD_BOND",
+    "desc": "<休整期结束时>使已激活的【不屈】层数<@ba.vup>+1</>",
+    "blackboard": [
+     {
+      "key": "bond",
+      "value": 0,
+      "valueStr": "indomShip"
+     },
+     {
+      "key": "count",
+      "value": 1,
+      "valueStr": null
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_target_inboard"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND",
+     "eventType": "SERVER_PREP_FIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_279_excu": {
+  "name": "送葬人",
+  "seasonBond": "lateranoShip",
+  "regBonds": [
+   "preciShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_138_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "<战斗中>首次击倒敌人时，使已激活的【精准】【拉特兰】层数<@ba.vup>+3</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_event_selfkillenemy"
+     },
+     {
+      "key": "check_cnt",
+      "value": 1,
+      "valueStr": null
+     },
+     {
+      "key": "bond_type",
+      "value": 0,
+      "valueStr": "bond_by_id"
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "lateranoShip,preciShip"
+     },
+     {
+      "key": "bond_add_type",
+      "value": 0,
+      "valueStr": "by_count"
+     },
+     {
+      "key": "bond_add_count",
+      "value": 3,
+      "valueStr": null
+     },
+     {
+      "key": "max_add_count_per_battle",
+      "value": 3,
+      "valueStr": null
+     },
+     {
+      "key": "garrison_key",
+      "value": 0,
+      "valueStr": "garrison_138_a"
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "lateranoShip,preciShip"
+     ],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_108_silent": {
+  "name": "赫默",
+  "seasonBond": null,
+  "regBonds": [
+   "visiShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_80_a",
+    "eventType": "SERVER_PREP_START",
+    "kind": "SERVER_ADD_BOND_CHESS_ALL",
+    "desc": "<进入休整期时>使自身已激活的盟约层数<@ba.vup>+2</>",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 2,
+      "valueStr": null
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_target_inboard"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_CHESS_ALL",
+     "eventType": "SERVER_PREP_START",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_173_slchan": {
+  "name": "崖心",
+  "seasonBond": "kjeragShip",
+  "regBonds": [
+   "indomShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_41_a",
+    "eventType": "SERVER_GAIN",
+    "kind": "SERVER_ADD_BOND_CHESS_ALL",
+    "desc": "<获得时>自身所属盟约层数<@ba.vup>+3</>（无需激活盟约）",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 3,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_CHESS_ALL",
+     "eventType": "SERVER_GAIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4122_grabds": {
+  "name": "小满",
+  "seasonBond": "yanShip",
+  "regBonds": [
+   "skillfulShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_31_a",
+    "eventType": "SERVER_PREP_FIN",
+    "kind": "SERVER_ADD_BOND_METHOD",
+    "desc": "<休整期结束时>本回合每获得过1名干员，使已激活的【炎】层数<@ba.vup>+1</>",
+    "blackboard": [
+     {
+      "key": "add_method",
+      "value": 0,
+      "valueStr": "round_gain_char"
+     },
+     {
+      "key": "bond",
+      "value": 0,
+      "valueStr": "yanShip"
+     },
+     {
+      "key": "multi",
+      "value": 1,
+      "valueStr": null
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_target_inboard"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_METHOD",
+     "eventType": "SERVER_PREP_FIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4114_harold": {
+  "name": "哈洛德",
+  "seasonBond": "kjeragShip",
+  "regBonds": [],
+  "garrison": [
+   {
+    "id": "garrison_09_a",
+    "eventType": "IN_BATTLE",
+    "kind": "GAIN_BUFF",
+    "desc": "攻击力和生命值+<@ba.vup>20%</>；核心盟约每叠加3层，本干员攻击力和生命值<@ba.vup>+1%</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_eff_attrByBond"
+     },
+     {
+      "key": "divide_num",
+      "value": 3,
+      "valueStr": null
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "yanShip,kjeragShip,sargonShip,lateranoShip,victoriaShip,egirShip,kazimierzShip,siracusaShip"
+     },
+     {
+      "key": "atk",
+      "value": 0.01,
+      "valueStr": null
+     },
+     {
+      "key": "max_hp",
+      "value": 0.01,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "GAIN_BUFF",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "yanShip,kjeragShip,sargonShip,lateranoShip,victoriaShip,egirShip,kazimierzShip,siracusaShip"
+     ],
+     "perDivide": 3
+    }
+   },
+   {
+    "id": "garrison_03_a",
+    "eventType": "IN_BATTLE",
+    "kind": "GAIN_BUFF",
+    "desc": "攻击力和生命值+<@ba.vup>20%</>",
+    "blackboard": [
+     {
+      "key": "atk",
+      "value": 1.2,
+      "valueStr": null
+     },
+     {
+      "key": "max_hp",
+      "value": 1.2,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "GAIN_BUFF",
+     "eventType": "IN_BATTLE",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4139_papyrs": {
+  "name": "莎草",
+  "seasonBond": "sargonShip",
+  "regBonds": [],
+  "garrison": [
+   {
+    "id": "garrison_42_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "<战斗中>首次开启技能时，使已激活的【萨尔贡】层数<@ba.vup>+5</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_event_useskill"
+     },
+     {
+      "key": "bond_type",
+      "value": 0,
+      "valueStr": "bond_by_id"
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "sargonShip"
+     },
+     {
+      "key": "bond_add_type",
+      "value": 0,
+      "valueStr": "by_count"
+     },
+     {
+      "key": "bond_add_count",
+      "value": 5,
+      "valueStr": null
+     },
+     {
+      "key": "max_add_count_per_battle",
+      "value": 5,
+      "valueStr": null
+     },
+     {
+      "key": "garrison_key",
+      "value": 0,
+      "valueStr": "garrison_42_a"
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "sargonShip"
+     ],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_143_ghost": {
+  "name": "幽灵鲨",
+  "seasonBond": "egirShip",
+  "regBonds": [],
+  "garrison": [
+   {
+    "id": "garrison_46_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "<战斗中>自身被击倒时，使已激活的【阿戈尔】层数<@ba.vup>+3</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_event_selfdead"
+     },
+     {
+      "key": "bond_type",
+      "value": 0,
+      "valueStr": "bond_by_id"
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "egirShip"
+     },
+     {
+      "key": "bond_add_type",
+      "value": 0,
+      "valueStr": "by_count"
+     },
+     {
+      "key": "bond_add_count",
+      "value": 3,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "egirShip"
+     ],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_381_bubble": {
+  "name": "泡泡",
+  "seasonBond": "sargonShip",
+  "regBonds": [
+   "steadShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_15_a",
+    "eventType": "IN_BATTLE",
+    "kind": "GAIN_BUFF",
+    "desc": "【萨尔贡】【坚守】每叠加3层，本干员防御力<@ba.vup>+1%</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_eff_attrByBond"
+     },
+     {
+      "key": "divide_num",
+      "value": 3,
+      "valueStr": null
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "sargonShip,steadShip"
+     },
+     {
+      "key": "def",
+      "value": 0.01,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "GAIN_BUFF",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "sargonShip,steadShip"
+     ],
+     "perDivide": 3
+    }
+   }
+  ]
+ },
+ "char_491_humus": {
+  "name": "休谟斯",
+  "seasonBond": null,
+  "regBonds": [
+   "raidShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_77_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "<战斗中>每击倒2名敌人时，使已激活的【突袭】层数<@ba.vup>+1</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_event_selfkillenemy"
+     },
+     {
+      "key": "check_cnt",
+      "value": 2,
+      "valueStr": null
+     },
+     {
+      "key": "bond_type",
+      "value": 0,
+      "valueStr": "bond_by_id"
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "raidShip"
+     },
+     {
+      "key": "bond_add_type",
+      "value": 0,
+      "valueStr": "by_count"
+     },
+     {
+      "key": "bond_add_count",
+      "value": 1,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "raidShip"
+     ],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4040_rockr": {
+  "name": "洛洛",
+  "seasonBond": "victoriaShip",
+  "regBonds": [
+   "arcaneShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_91_a",
+    "eventType": "SERVER_GAIN",
+    "kind": "SERVER_POOL_EQUIP",
+    "desc": "<获得时>随机制造1件洛洛的定制品",
+    "blackboard": [
+     {
+      "key": "pool",
+      "value": 0,
+      "valueStr": "pool_equip_rockr"
+     },
+     {
+      "key": "count",
+      "value": 1,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_POOL_EQUIP",
+     "eventType": "SERVER_GAIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4016_kazema": {
+  "name": "风丸",
+  "seasonBond": null,
+  "regBonds": [
+   "miraShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_93_a",
+    "eventType": "IN_BATTLE",
+    "kind": "NONE",
+    "desc": "只需2个相同的本干员即可合成精锐",
+    "blackboard": [],
+    "rule": {
+     "kind": "NONE",
+     "eventType": "IN_BATTLE",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_237_gravel": {
+  "name": "砾",
+  "seasonBond": "kazimierzShip",
+  "regBonds": [
+   "indomShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_75_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "<部署时>使已激活的【卡西米尔】层数<@ba.vup>+1</>\n<被击倒时>使已激活的【不屈】层数<@ba.vup>+2</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_event_selfdead"
+     },
+     {
+      "key": "bond_type",
+      "value": 0,
+      "valueStr": "bond_by_id"
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "indomShip"
+     },
+     {
+      "key": "bond_add_type",
+      "value": 0,
+      "valueStr": "by_count"
+     },
+     {
+      "key": "bond_add_count",
+      "value": 2,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "indomShip"
+     ],
+     "perDivide": null
+    }
+   },
+   {
+    "id": "garrison_143_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "<部署时>使已激活的【卡西米尔】层数<@ba.vup>+1</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act2autochess_gar_event_onstart"
+     },
+     {
+      "key": "bond_type",
+      "value": 0,
+      "valueStr": "bond_by_id"
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "kazimierzShip"
+     },
+     {
+      "key": "bond_add_type",
+      "value": 0,
+      "valueStr": "by_count"
+     },
+     {
+      "key": "bond_add_count",
+      "value": 1,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "kazimierzShip"
+     ],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4191_tippi": {
+  "name": "蒂比",
+  "seasonBond": null,
+  "regBonds": [
+   "swiftShip",
+   "skillfulShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_80_a",
+    "eventType": "SERVER_PREP_START",
+    "kind": "SERVER_ADD_BOND_CHESS_ALL",
+    "desc": "<进入休整期时>使自身已激活的盟约层数<@ba.vup>+2</>",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 2,
+      "valueStr": null
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_target_inboard"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_CHESS_ALL",
+     "eventType": "SERVER_PREP_START",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_181_flower": {
+  "name": "调香师",
+  "seasonBond": null,
+  "regBonds": [
+   "deputShip",
+   "emptyShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_81_a",
+    "eventType": "SERVER_PREP_FIN",
+    "kind": "SERVER_ADD_BOND_ACTIVATED_MOST_LAYER",
+    "desc": "<休整期结束时>当前激活且层数最多的盟约层数<@ba.vup>+2</>，此干员在整备区时也有效",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 2,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_ACTIVATED_MOST_LAYER",
+     "eventType": "SERVER_PREP_FIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4051_akkord": {
+  "name": "协律",
+  "seasonBond": null,
+  "regBonds": [
+   "arcaneShip",
+   "deputShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_130_a",
+    "eventType": "SERVER_GAIN",
+    "kind": "SERVER_ADD_BOND_CHESS_ALL",
+    "desc": "<获得时>自身所属盟约层数<@ba.vup>+4</>（无需激活盟约）",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 4,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_CHESS_ALL",
+     "eventType": "SERVER_GAIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_140_whitew": {
+  "name": "拉普兰德",
+  "seasonBond": "siracusaShip",
+  "regBonds": [],
+  "garrison": [
+   {
+    "id": "garrison_123_a",
+    "eventType": "SERVER_REFRESH_SHOP",
+    "kind": "SERVER_GAIN_BOND_LAYER_BY_REFRESH_CNT",
+    "desc": "<刷新时>若为本回合首次主动刷新，使已激活的【叙拉古】层数<@ba.vup>+4</>，此干员在整备区时也有效",
+    "blackboard": [
+     {
+      "key": "refresh_cnt",
+      "value": 1,
+      "valueStr": null
+     },
+     {
+      "key": "bond",
+      "value": 0,
+      "valueStr": "siracusaShip"
+     },
+     {
+      "key": "layer",
+      "value": 4,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_GAIN_BOND_LAYER_BY_REFRESH_CNT",
+     "eventType": "SERVER_REFRESH_SHOP",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4207_branch": {
+  "name": "折桠",
+  "seasonBond": null,
+  "regBonds": [
+   "steadShip",
+   "soloShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_69_a",
+    "eventType": "SERVER_PREP_FIN",
+    "kind": "SERVER_ADD_BOND",
+    "desc": "<休整期结束时>使已激活的【坚守】层数<@ba.vup>+4</>",
+    "blackboard": [
+     {
+      "key": "bond",
+      "value": 0,
+      "valueStr": "steadShip"
+     },
+     {
+      "key": "count",
+      "value": 4,
+      "valueStr": null
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_target_inboard"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND",
+     "eventType": "SERVER_PREP_FIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_431_ashlok": {
+  "name": "灰毫",
+  "seasonBond": "kazimierzShip",
+  "regBonds": [
+   "steadShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_105_a",
+    "eventType": "SERVER_GAIN",
+    "kind": "SERVER_ADD_BOND_ACTIVATED_MOST_LAYER",
+    "desc": "<获得时>当前激活且层数最多的盟约层数<@ba.vup>+3</>",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 3,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_ACTIVATED_MOST_LAYER",
+     "eventType": "SERVER_GAIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_103_angel": {
+  "name": "能天使",
+  "seasonBond": "lateranoShip",
+  "regBonds": [
+   "miraShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_26_a",
+    "eventType": "SERVER_GAIN",
+    "kind": "SERVER_ONCE_GOLD",
+    "desc": "<获得时>使下个休整期额外获得<@ba.vup>1</>资金",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 1,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ONCE_GOLD",
+     "eventType": "SERVER_GAIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_294_ayer": {
+  "name": "断崖",
+  "seasonBond": null,
+  "regBonds": [
+   "skillfulShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_47_a",
+    "eventType": "SERVER_PREP_FIN",
+    "kind": "SERVER_ADD_BOND_POSITION",
+    "desc": "<休整期结束时>使自身及身后一格干员的已激活盟约分别各层数<@ba.vup>+3</>",
+    "blackboard": [
+     {
+      "key": "dir",
+      "value": 0,
+      "valueStr": "behind"
+     },
+     {
+      "key": "count",
+      "value": 3,
+      "valueStr": null
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_target_inboard"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_POSITION",
+     "eventType": "SERVER_PREP_FIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_308_swire": {
+  "name": "诗怀雅",
+  "seasonBond": "yanShip",
+  "regBonds": [
+   "visiShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_133_a",
+    "eventType": "SERVER_GAIN",
+    "kind": "SERVER_GAIN_EQUIP",
+    "desc": "<获得时>获得1个“盟约之币”",
+    "blackboard": [
+     {
+      "key": "chess",
+      "value": 0,
+      "valueStr": "chess_item_1_03_e_a"
+     },
+     {
+      "key": "count",
+      "value": 1,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_GAIN_EQUIP",
+     "eventType": "SERVER_GAIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_1033_swire2": {
+  "name": "琳琅诗怀雅",
+  "seasonBond": "yanShip",
+  "regBonds": [
+   "investShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_98_a",
+    "eventType": "SERVER_PREP_FIN",
+    "kind": "SERVER_ONCE_GOLD_WITH_BOND_CONDITION",
+    "desc": "<休整期结束时>使下个休整期额外获得<@ba.vup>1</>资金（若已激活【炎】/【投资人】此特质在整备区也有效）",
+    "blackboard": [
+     {
+      "key": "bond",
+      "value": 0,
+      "valueStr": "yanShip,investShip"
+     },
+     {
+      "key": "count",
+      "value": 1,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ONCE_GOLD_WITH_BOND_CONDITION",
+     "eventType": "SERVER_PREP_FIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_263_skadi": {
+  "name": "斯卡蒂",
+  "seasonBond": "egirShip",
+  "regBonds": [
+   "steadShip",
+   "raidShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_38_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "<战斗中>每击倒2名单位时，使已激活的【阿戈尔】【坚守】【突袭】层数<@ba.vup>+1</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_event_selfkillenemy"
+     },
+     {
+      "key": "check_cnt",
+      "value": 2,
+      "valueStr": null
+     },
+     {
+      "key": "bond_type",
+      "value": 0,
+      "valueStr": "bond_by_id"
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "egirShip,steadShip,raidShip"
+     },
+     {
+      "key": "bond_add_type",
+      "value": 0,
+      "valueStr": "by_count"
+     },
+     {
+      "key": "bond_add_count",
+      "value": 1,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "egirShip,steadShip,raidShip"
+     ],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4148_philae": {
+  "name": "菲莱",
+  "seasonBond": "sargonShip",
+  "regBonds": [],
+  "garrison": [
+   {
+    "id": "garrison_43_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "<战斗中>开启技能时，使已激活的【萨尔贡】层数<@ba.vup>+6</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_event_useskill"
+     },
+     {
+      "key": "bond_type",
+      "value": 0,
+      "valueStr": "bond_by_id"
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "sargonShip"
+     },
+     {
+      "key": "bond_add_type",
+      "value": 0,
+      "valueStr": "by_count"
+     },
+     {
+      "key": "bond_add_count",
+      "value": 6,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "sargonShip"
+     ],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4036_forcer": {
+  "name": "见行者",
+  "seasonBond": "lateranoShip",
+  "regBonds": [],
+  "garrison": [
+   {
+    "id": "garrison_47_a",
+    "eventType": "SERVER_PREP_FIN",
+    "kind": "SERVER_ADD_BOND_POSITION",
+    "desc": "<休整期结束时>使自身及身后一格干员的已激活盟约分别各层数<@ba.vup>+3</>",
+    "blackboard": [
+     {
+      "key": "dir",
+      "value": 0,
+      "valueStr": "behind"
+     },
+     {
+      "key": "count",
+      "value": 3,
+      "valueStr": null
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_target_inboard"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_POSITION",
+     "eventType": "SERVER_PREP_FIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_388_mint": {
+  "name": "薄绿",
+  "seasonBond": "victoriaShip",
+  "regBonds": [],
+  "garrison": [
+   {
+    "id": "garrison_48_a",
+    "eventType": "SERVER_PREP_FIN",
+    "kind": "SERVER_ADD_BOND_METHOD",
+    "desc": "<休整期结束时>场上每有1名不同阶的【维多利亚】干员，使已激活的【维多利亚】层数<@ba.vup>+2</>",
+    "blackboard": [
+     {
+      "key": "add_method",
+      "value": 0,
+      "valueStr": "same_bond_diff_lv"
+     },
+     {
+      "key": "bond",
+      "value": 0,
+      "valueStr": "victoriaShip"
+     },
+     {
+      "key": "multi",
+      "value": 2,
+      "valueStr": null
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_target_inboard"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_METHOD",
+     "eventType": "SERVER_PREP_FIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4079_haini": {
+  "name": "海霓",
+  "seasonBond": "egirShip",
+  "regBonds": [
+   "arcaneShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_131_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "<战斗中>首次击倒敌人或我方干员时，使已激活的【阿戈尔】【奥术】层数<@ba.vup>+3</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_event_selfkillenemy"
+     },
+     {
+      "key": "check_cnt",
+      "value": 1,
+      "valueStr": null
+     },
+     {
+      "key": "bond_type",
+      "value": 0,
+      "valueStr": "bond_by_id"
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "egirShip,arcaneShip"
+     },
+     {
+      "key": "bond_add_type",
+      "value": 0,
+      "valueStr": "by_count"
+     },
+     {
+      "key": "bond_add_count",
+      "value": 3,
+      "valueStr": null
+     },
+     {
+      "key": "max_add_count_per_battle",
+      "value": 3,
+      "valueStr": null
+     },
+     {
+      "key": "garrison_key",
+      "value": 0,
+      "valueStr": "garrison_131_a"
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "egirShip,arcaneShip"
+     ],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_440_pinecn": {
+  "name": "松果",
+  "seasonBond": null,
+  "regBonds": [
+   "swiftShip",
+   "emptyShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_116_a",
+    "eventType": "SERVER_CHESS_SOLD",
+    "kind": "SERVER_SELL_CHESS_GAIN_SPECIAL_GOODS",
+    "desc": "<售出时>进行一次<@ba.vup>I阶</>干员的免费特殊招募\n本干员合成为精锐状态后，上述特殊招募变为<@ba.vup>V阶</>干员",
+    "blackboard": [
+     {
+      "key": "pool1",
+      "value": 0,
+      "valueStr": "pool_chess_shop_1_reward"
+     },
+     {
+      "key": "pool2",
+      "value": 0,
+      "valueStr": "pool_chess_shop_1_reward"
+     },
+     {
+      "key": "pool3",
+      "value": 0,
+      "valueStr": "pool_chess_shop_1_reward"
+     },
+     {
+      "key": "pool4",
+      "value": 0,
+      "valueStr": "pool_chess_shop_1_reward"
+     },
+     {
+      "key": "pool5",
+      "value": 0,
+      "valueStr": "pool_chess_shop_1_reward"
+     },
+     {
+      "key": "pool6",
+      "value": 0,
+      "valueStr": "pool_chess_shop_1_reward"
+     },
+     {
+      "key": "max_pool",
+      "value": 0,
+      "valueStr": "pool_chess_shop_1_reward"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_SELL_CHESS_GAIN_SPECIAL_GOODS",
+     "eventType": "SERVER_CHESS_SOLD",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4211_snhunt": {
+  "name": "雪猎",
+  "seasonBond": "kjeragShip",
+  "regBonds": [
+   "preciShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_111_a",
+    "eventType": "SERVER_GAIN",
+    "kind": "SERVER_ADD_BOND_CHESS_ALL",
+    "desc": "<获得时>自身所属盟约层数<@ba.vup>+5</>（无需激活盟约）",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 5,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_CHESS_ALL",
+     "eventType": "SERVER_GAIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_423_blemsh": {
+  "name": "瑕光",
+  "seasonBond": "kazimierzShip",
+  "regBonds": [
+   "raidShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_106_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "<部署时>使自身已激活的盟约层数<@ba.vup>+4</>（每场作战至多12层）",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act2autochess_gar_event_onstart"
+     },
+     {
+      "key": "bond_type",
+      "value": 0,
+      "valueStr": "bond_self"
+     },
+     {
+      "key": "bond_add_type",
+      "value": 0,
+      "valueStr": "by_count"
+     },
+     {
+      "key": "bond_add_count",
+      "value": 4,
+      "valueStr": null
+     },
+     {
+      "key": "max_add_count_per_battle",
+      "value": 12,
+      "valueStr": null
+     },
+     {
+      "key": "garrison_key",
+      "value": 0,
+      "valueStr": "garrison_106_a"
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4054_malist": {
+  "name": "至简",
+  "seasonBond": "sargonShip",
+  "regBonds": [
+   "skillfulShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_13_a",
+    "eventType": "SERVER_PRICE",
+    "kind": "SERVER_CHESS_PRICE",
+    "desc": "购买价格为<@ba.vup>1</>",
+    "blackboard": [
+     {
+      "key": "price",
+      "value": 2,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_CHESS_PRICE",
+     "eventType": "SERVER_PRICE",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_174_slbell": {
+  "name": "初雪",
+  "seasonBond": "kjeragShip",
+  "regBonds": [
+   "visiShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_28_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "<战斗中>每当范围内1名敌人进入冻结时，有50%概率使已激活的【谢拉格】层数<@ba.vup>+1</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_event_enemy_abflag_inrange"
+     },
+     {
+      "key": "check_ab_flag",
+      "value": 16,
+      "valueStr": null
+     },
+     {
+      "key": "bond_add_count",
+      "value": 1,
+      "valueStr": null
+     },
+     {
+      "key": "bond_type",
+      "value": 0,
+      "valueStr": "bond_by_id"
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "kjeragShip"
+     },
+     {
+      "key": "bond_add_type",
+      "value": 0,
+      "valueStr": "by_count"
+     },
+     {
+      "key": "prob",
+      "value": 0.5,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "kjeragShip"
+     ],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_254_vodfox": {
+  "name": "巫恋",
+  "seasonBond": "siracusaShip",
+  "regBonds": [
+   "deputShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_132_a",
+    "eventType": "SERVER_CHESS_SOLD",
+    "kind": "SERVER_GAIN_FREE_REFRESH_COUNT",
+    "desc": "<售出时>获得2次免费刷新",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 2,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_GAIN_FREE_REFRESH_COUNT",
+     "eventType": "SERVER_CHESS_SOLD",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_150_snakek": {
+  "name": "蛇屠箱",
+  "seasonBond": null,
+  "regBonds": [
+   "steadShip",
+   "indomShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_70_a",
+    "eventType": "SERVER_PREP_FIN",
+    "kind": "SERVER_ADD_BOND_METHOD",
+    "desc": "<休整期结束时>同一行每有1名干员，使已激活的【坚守】层数<@ba.vup>+1</>",
+    "blackboard": [
+     {
+      "key": "add_method",
+      "value": 0,
+      "valueStr": "same_row"
+     },
+     {
+      "key": "bond",
+      "value": 0,
+      "valueStr": "steadShip"
+     },
+     {
+      "key": "multi",
+      "value": 1,
+      "valueStr": null
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_target_inboard"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_METHOD",
+     "eventType": "SERVER_PREP_FIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_126_shotst": {
+  "name": "流星",
+  "seasonBond": "kazimierzShip",
+  "regBonds": [
+   "soloShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_137_a",
+    "eventType": "IN_BATTLE",
+    "kind": "GAIN_BUFF",
+    "desc": "<战斗中>攻击力和生命值+<@ba.vup>25%</>，造成的伤害变为弱点伤害（基于敌人的防御力和法术抗性变换物理和法术伤害）",
+    "blackboard": [
+     {
+      "key": "atk",
+      "value": 1.25,
+      "valueStr": null
+     },
+     {
+      "key": "max_hp",
+      "value": 1.25,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "GAIN_BUFF",
+     "eventType": "IN_BATTLE",
+     "bondIds": [],
+     "perDivide": null
+    }
+   },
+   {
+    "id": "garrison_01_a",
+    "eventType": "IN_BATTLE",
+    "kind": "GAIN_BUFF",
+    "desc": "<战斗中>造成的伤害变为弱点伤害（基于敌人的防御力和法术抗性变换物理和法术伤害）",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_eff_chaos"
+     }
+    ],
+    "rule": {
+     "kind": "GAIN_BUFF",
+     "eventType": "IN_BATTLE",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4026_vulpis": {
+  "name": "忍冬",
+  "seasonBond": "siracusaShip",
+  "regBonds": [
+   "swiftShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_71_a",
+    "eventType": "SERVER_GAIN",
+    "kind": "SERVER_ADD_BOND_CHESS_ALL",
+    "desc": "<获得时>自身所属盟约层数<@ba.vup>+6</>（无需激活盟约）",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 6,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_CHESS_ALL",
+     "eventType": "SERVER_GAIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_427_vigil": {
+  "name": "伺夜",
+  "seasonBond": "siracusaShip",
+  "regBonds": [
+   "miraShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_152_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "<战斗中>造成的伤害变为弱点伤害（基于敌人的防御力和法术抗性变换物理和法术伤害），前3次击倒敌人时使已激活的【叙拉古】层数<@ba.vup>+2</>、【奇迹】层数<@ba.vup>+1</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_event_selfkillenemy"
+     },
+     {
+      "key": "check_cnt",
+      "value": 1,
+      "valueStr": null
+     },
+     {
+      "key": "bond_type",
+      "value": 0,
+      "valueStr": "bond_by_id"
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "siracusaShip"
+     },
+     {
+      "key": "bond_add_type",
+      "value": 0,
+      "valueStr": "by_count"
+     },
+     {
+      "key": "bond_add_count",
+      "value": 2,
+      "valueStr": null
+     },
+     {
+      "key": "max_add_count_per_battle",
+      "value": 6,
+      "valueStr": null
+     },
+     {
+      "key": "garrison_key",
+      "value": 0,
+      "valueStr": "garrison_152_a"
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "siracusaShip"
+     ],
+     "perDivide": null
+    }
+   },
+   {
+    "id": "garrison_153_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "【152】<战斗中>造成的伤害变为弱点伤害（基于敌人的防御力和法术抗性变换物理和法术伤害），前3次击倒敌人时使已激活的【叙拉古】层数<@ba.vup>+2</>、【奇迹】层数<@ba.vup>+1</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_event_selfkillenemy"
+     },
+     {
+      "key": "check_cnt",
+      "value": 1,
+      "valueStr": null
+     },
+     {
+      "key": "bond_type",
+      "value": 0,
+      "valueStr": "bond_by_id"
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "miraShip"
+     },
+     {
+      "key": "bond_add_type",
+      "value": 0,
+      "valueStr": "by_count"
+     },
+     {
+      "key": "bond_add_count",
+      "value": 1,
+      "valueStr": null
+     },
+     {
+      "key": "max_add_count_per_battle",
+      "value": 3,
+      "valueStr": null
+     },
+     {
+      "key": "garrison_key",
+      "value": 0,
+      "valueStr": "garrison_153_a"
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "miraShip"
+     ],
+     "perDivide": null
+    }
+   },
+   {
+    "id": "garrison_01_a",
+    "eventType": "IN_BATTLE",
+    "kind": "GAIN_BUFF",
+    "desc": "<战斗中>造成的伤害变为弱点伤害（基于敌人的防御力和法术抗性变换物理和法术伤害）",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_eff_chaos"
+     }
+    ],
+    "rule": {
+     "kind": "GAIN_BUFF",
+     "eventType": "IN_BATTLE",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4013_kjera": {
+  "name": "耶拉",
+  "seasonBond": "kjeragShip",
+  "regBonds": [
+   "deputShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_92_a",
+    "eventType": "SERVER_GAIN",
+    "kind": "SERVER_GAIN_EQUIP",
+    "desc": "<获得时>获得1件“谢拉格不融冰”",
+    "blackboard": [
+     {
+      "key": "chess",
+      "value": 0,
+      "valueStr": "chess_item_5_02_e_a"
+     },
+     {
+      "key": "count",
+      "value": 1,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_GAIN_EQUIP",
+     "eventType": "SERVER_GAIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_332_archet": {
+  "name": "空弦",
+  "seasonBond": "lateranoShip",
+  "regBonds": [
+   "skillfulShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_150_a",
+    "eventType": "SERVER_PREP_START",
+    "kind": "SERVER_ADD_BOND_POSITION",
+    "desc": "<进入休整期时>使自身及身前一格干员的已激活盟约分别各层数<@ba.vup>+3</>",
+    "blackboard": [
+     {
+      "key": "dir",
+      "value": 0,
+      "valueStr": "front"
+     },
+     {
+      "key": "count",
+      "value": 3,
+      "valueStr": null
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_target_inboard"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_POSITION",
+     "eventType": "SERVER_PREP_START",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4194_rmixer": {
+  "name": "信仰搅拌机",
+  "seasonBond": "lateranoShip",
+  "regBonds": [
+   "steadShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_14_a",
+    "eventType": "IN_BATTLE",
+    "kind": "GAIN_BUFF",
+    "desc": "【拉特兰】【坚守】每叠加3层，本干员防御力<@ba.vup>+1%</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_eff_attrByBond"
+     },
+     {
+      "key": "divide_num",
+      "value": 3,
+      "valueStr": null
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "lateranoShip,steadShip"
+     },
+     {
+      "key": "def",
+      "value": 0.01,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "GAIN_BUFF",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "lateranoShip,steadShip"
+     ],
+     "perDivide": 3
+    }
+   }
+  ]
+ },
+ "char_213_mostma": {
+  "name": "莫斯提马",
+  "seasonBond": "lateranoShip",
+  "regBonds": [
+   "arcaneShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_22_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "<战斗中>自身<@ba.vup>周围4格</>的干员每消耗6发弹药，使已激活的【拉特兰】层数<@ba.vup>+1</>",
+    "blackboard": [
+     {
+      "key": "at_root",
+      "value": 1,
+      "valueStr": null
+     },
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_event_consume_ammo"
+     },
+     {
+      "key": "consume_count",
+      "value": 6,
+      "valueStr": null
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "lateranoShip"
+     },
+     {
+      "key": "bond_type",
+      "value": 0,
+      "valueStr": "bond_by_id"
+     },
+     {
+      "key": "bond_add_type",
+      "value": 0,
+      "valueStr": "by_count"
+     },
+     {
+      "key": "bond_add_count",
+      "value": 1,
+      "valueStr": null
+     },
+     {
+      "key": "range_id",
+      "value": 0,
+      "valueStr": "x-5"
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "lateranoShip"
+     ],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4087_ines": {
+  "name": "伊内丝",
+  "seasonBond": null,
+  "regBonds": [
+   "visiShip",
+   "raidShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_104_a",
+    "eventType": "SERVER_PREP_FIN",
+    "kind": "SERVER_ADD_BOND_CHESS_ALL",
+    "desc": "<休整期结束时>使自身已激活的盟约层数<@ba.vup>+5</>",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 5,
+      "valueStr": null
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_target_inboard"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_CHESS_ALL",
+     "eventType": "SERVER_PREP_FIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_344_beewax": {
+  "name": "蜜蜡",
+  "seasonBond": "sargonShip",
+  "regBonds": [
+   "deputShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_49_a",
+    "eventType": "SERVER_GAIN",
+    "kind": "SERVER_GAIN_EQUIP",
+    "desc": "<获得时>获得1件“迅捷作战粮”",
+    "blackboard": [
+     {
+      "key": "chess",
+      "value": 0,
+      "valueStr": "chess_item_3_05_e_a"
+     },
+     {
+      "key": "count",
+      "value": 1,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_GAIN_EQUIP",
+     "eventType": "SERVER_GAIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_1021_kroos2": {
+  "name": "寒芒克洛丝",
+  "seasonBond": null,
+  "regBonds": [
+   "preciShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_73_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "<战斗开始时>使身前一格干员获得特质“开启技能时使已激活【精准】层数<@ba.vup>+1</>”（每场战斗至多10层）",
+    "blackboard": [
+     {
+      "key": "give_garrison_id",
+      "value": 0,
+      "valueStr": "garrison_96_a"
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_222_bpipe": {
+  "name": "风笛",
+  "seasonBond": "victoriaShip",
+  "regBonds": [
+   "visiShip",
+   "indomShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_50_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "<战斗中>前3次击倒敌人时，使已激活的【维多利亚】【远见】【不屈】层数<@ba.vup>+2</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_event_selfkillenemy"
+     },
+     {
+      "key": "check_cnt",
+      "value": 1,
+      "valueStr": null
+     },
+     {
+      "key": "bond_type",
+      "value": 0,
+      "valueStr": "bond_by_id"
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "victoriaShip,visiShip,indomShip"
+     },
+     {
+      "key": "bond_add_type",
+      "value": 0,
+      "valueStr": "by_count"
+     },
+     {
+      "key": "bond_add_count",
+      "value": 2,
+      "valueStr": null
+     },
+     {
+      "key": "max_add_count_per_battle",
+      "value": 6,
+      "valueStr": null
+     },
+     {
+      "key": "garrison_key",
+      "value": 0,
+      "valueStr": "garrison_50_a"
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "victoriaShip,visiShip,indomShip"
+     ],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4163_rosesa": {
+  "name": "瑰盐",
+  "seasonBond": null,
+  "regBonds": [
+   "emptyShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_82_a",
+    "eventType": "SERVER_CHESS_SOLD",
+    "kind": "SERVER_TRIGGER_ANOTHER",
+    "desc": "<售出时>触发场上一名拥有“休整期结束时”的干员的特质（优先触发部署位置更靠上的和更靠右的）",
+    "blackboard": [
+     {
+      "key": "scope",
+      "value": 0,
+      "valueStr": "farright"
+     },
+     {
+      "key": "event",
+      "value": 0,
+      "valueStr": "SERVER_PREP_FIN"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_TRIGGER_ANOTHER",
+     "eventType": "SERVER_CHESS_SOLD",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_437_mizuki": {
+  "name": "水月",
+  "seasonBond": "egirShip",
+  "regBonds": [
+   "soloShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_07_a",
+    "eventType": "IN_BATTLE",
+    "kind": "GAIN_BUFF",
+    "desc": "【阿戈尔】每叠加3层，本干员攻击力<@ba.vup>+1%</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_eff_attrByBond"
+     },
+     {
+      "key": "divide_num",
+      "value": 3,
+      "valueStr": null
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "egirShip"
+     },
+     {
+      "key": "atk",
+      "value": 0.01,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "GAIN_BUFF",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "egirShip"
+     ],
+     "perDivide": 3
+    }
+   }
+  ]
+ },
+ "char_446_aroma": {
+  "name": "阿罗玛",
+  "seasonBond": "siracusaShip",
+  "regBonds": [
+   "arcaneShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_122_a",
+    "eventType": "SERVER_PREP_FIN",
+    "kind": "SERVER_ADD_REFRESH_CNT_MULTIPLIER_BOND_LAYER",
+    "desc": "<休整期结束时>本回合每刷新过1次，使已激活的【叙拉古】【奥术】层数<@ba.vup>+2</>（至多6层）",
+    "blackboard": [
+     {
+      "key": "bond",
+      "value": 0,
+      "valueStr": "siracusaShip,arcaneShip"
+     },
+     {
+      "key": "multiplier",
+      "value": 2,
+      "valueStr": null
+     },
+     {
+      "key": "max_layer",
+      "value": 6,
+      "valueStr": null
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_target_inboard"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_REFRESH_CNT_MULTIPLIER_BOND_LAYER",
+     "eventType": "SERVER_PREP_FIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4162_cathy": {
+  "name": "凯瑟琳",
+  "seasonBond": "victoriaShip",
+  "regBonds": [
+   "skillfulShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_127_a",
+    "eventType": "SERVER_PREP_START",
+    "kind": "SERVER_GAIN_RANDOM_EQUIP_CHESS_IN_POOL",
+    "desc": "<进入休整期时>若当前为奇数回合，获得1件随机装备",
+    "blackboard": [
+     {
+      "key": "pool",
+      "value": 0,
+      "valueStr": "pool_equip_normal"
+     },
+     {
+      "key": "round_list",
+      "value": 0,
+      "valueStr": "1,3,5,7,9,11,13,15"
+     },
+     {
+      "key": "count",
+      "value": 1,
+      "valueStr": null
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_target_inboard"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_GAIN_RANDOM_EQUIP_CHESS_IN_POOL",
+     "eventType": "SERVER_PREP_START",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_474_glady": {
+  "name": "歌蕾蒂娅",
+  "seasonBond": "egirShip",
+  "regBonds": [],
+  "garrison": [
+   {
+    "id": "garrison_39_a",
+    "eventType": "SERVER_PREP_START",
+    "kind": "SERVER_POOL_CHAR",
+    "desc": "<进入休整期时>若同一行有3名干员，获得1个斯卡蒂、幽灵鲨或深巡",
+    "blackboard": [
+     {
+      "key": "pool",
+      "value": 0,
+      "valueStr": "pool_chess_glady"
+     },
+     {
+      "key": "count",
+      "value": 1,
+      "valueStr": null
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_same_row"
+     },
+     {
+      "key": "check_count",
+      "value": 3,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_POOL_CHAR",
+     "eventType": "SERVER_PREP_START",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_206_gnosis": {
+  "name": "灵知",
+  "seasonBond": "kjeragShip",
+  "regBonds": [
+   "skillfulShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_111_a",
+    "eventType": "SERVER_GAIN",
+    "kind": "SERVER_ADD_BOND_CHESS_ALL",
+    "desc": "<获得时>自身所属盟约层数<@ba.vup>+5</>（无需激活盟约）",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 5,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_CHESS_ALL",
+     "eventType": "SERVER_GAIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_373_lionhd": {
+  "name": "莱恩哈特",
+  "seasonBond": null,
+  "regBonds": [
+   "swiftShip",
+   "preciShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_51_a",
+    "eventType": "SERVER_PREP_FIN",
+    "kind": "SERVER_ADD_BOND_CHESS_ALL",
+    "desc": "<休整期结束时>使自身已激活的盟约层数<@ba.vup>+5</>",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 5,
+      "valueStr": null
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_target_inboard"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_CHESS_ALL",
+     "eventType": "SERVER_PREP_FIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4196_reckpr": {
+  "name": "录武官",
+  "seasonBond": "yanShip",
+  "regBonds": [
+   "miraShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_156_a",
+    "eventType": "SERVER_GAIN",
+    "kind": "SERVER_ADD_MULTIPLE_BOND",
+    "desc": "<获得时>【炎】层数<@ba.vup>+6</>、【奇迹】层数<@ba.vup>+3</>（无需激活盟约）",
+    "blackboard": [
+     {
+      "key": "bond",
+      "value": 0,
+      "valueStr": "yanShip,miraShip"
+     },
+     {
+      "key": "count",
+      "value": 0,
+      "valueStr": "6,3"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_MULTIPLE_BOND",
+     "eventType": "SERVER_GAIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   },
+   {
+    "id": "garrison_157_a",
+    "eventType": "SERVER_GAIN",
+    "kind": "SERVER_ADD_BOND",
+    "desc": "<获得时>【炎】层数<@ba.vup>+6</>、【奇迹】层数<@ba.vup>+3</>（无需激活盟约）",
+    "blackboard": [
+     {
+      "key": "bond",
+      "value": 0,
+      "valueStr": "miraShip"
+     },
+     {
+      "key": "count",
+      "value": 3,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND",
+     "eventType": "SERVER_GAIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_1028_texas2": {
+  "name": "缄默德克萨斯",
+  "seasonBond": "siracusaShip",
+  "regBonds": [
+   "raidShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_114_a",
+    "eventType": "SERVER_PREP_START",
+    "kind": "SERVER_GAIN_FREE_REFRESH_COUNT",
+    "desc": "<进入休整期时>获得1次免费刷新",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 1,
+      "valueStr": null
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_target_inboard"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_GAIN_FREE_REFRESH_COUNT",
+     "eventType": "SERVER_PREP_START",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_136_hsguma": {
+  "name": "星熊",
+  "seasonBond": "yanShip",
+  "regBonds": [],
+  "garrison": [
+   {
+    "id": "garrison_65_a",
+    "eventType": "SERVER_GAIN",
+    "kind": "SERVER_ADD_BOND_CHESS_ALL",
+    "desc": "<获得时>自身所属盟约层数<@ba.vup>+8</>（无需激活盟约）",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 8,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_CHESS_ALL",
+     "eventType": "SERVER_GAIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_311_mudrok": {
+  "name": "泥岩",
+  "seasonBond": null,
+  "regBonds": [
+   "soloShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_21_a",
+    "eventType": "SERVER_CHESS_SOLD",
+    "kind": "SERVER_ONCE_GOLD",
+    "desc": "<售出时>进入下个休整期额外获得2资金",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 2,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ONCE_GOLD",
+     "eventType": "SERVER_CHESS_SOLD",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_420_flamtl": {
+  "name": "焰尾",
+  "seasonBond": "kazimierzShip",
+  "regBonds": [],
+  "garrison": [
+   {
+    "id": "garrison_149_a",
+    "eventType": "SERVER_GAIN",
+    "kind": "SERVER_POOL_CHAR",
+    "desc": "<获得时>获得1个野鬃或灰毫，小概率获得远牙",
+    "blackboard": [
+     {
+      "key": "pool",
+      "value": 0,
+      "valueStr": "pool_char_pinus"
+     },
+     {
+      "key": "count",
+      "value": 1,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_POOL_CHAR",
+     "eventType": "SERVER_GAIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_430_fartth": {
+  "name": "远牙",
+  "seasonBond": "kazimierzShip",
+  "regBonds": [
+   "preciShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_148_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "<战斗开始时>使同一行最右边一名干员获得特质“<部署时>使已激活的【卡西米尔】【精准】层数<@ba.vup>+4</>（每场作战至多24层）”",
+    "blackboard": [
+     {
+      "key": "give_garrison_id",
+      "value": 0,
+      "valueStr": "garrison_108_a"
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_128_plosis": {
+  "name": "白面鸮",
+  "seasonBond": null,
+  "regBonds": [
+   "deputShip",
+   "skillfulShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_86_a",
+    "eventType": "SERVER_PREP_START",
+    "kind": "SERVER_FRONT_SAME_EFFECT_PREP_START",
+    "desc": "身前一格干员若为“进入休整期时”特质，本干员的特质与其相同",
+    "blackboard": [],
+    "rule": {
+     "kind": "SERVER_FRONT_SAME_EFFECT_PREP_START",
+     "eventType": "SERVER_PREP_START",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_172_svrash": {
+  "name": "银灰",
+  "seasonBond": "kjeragShip",
+  "regBonds": [],
+  "garrison": [
+   {
+    "id": "garrison_28_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "<战斗中>每当范围内1名敌人进入冻结时，有50%概率使已激活的【谢拉格】层数<@ba.vup>+1</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_event_enemy_abflag_inrange"
+     },
+     {
+      "key": "check_ab_flag",
+      "value": 16,
+      "valueStr": null
+     },
+     {
+      "key": "bond_add_count",
+      "value": 1,
+      "valueStr": null
+     },
+     {
+      "key": "bond_type",
+      "value": 0,
+      "valueStr": "bond_by_id"
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "kjeragShip"
+     },
+     {
+      "key": "bond_add_type",
+      "value": 0,
+      "valueStr": "by_count"
+     },
+     {
+      "key": "prob",
+      "value": 0.5,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "kjeragShip"
+     ],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_1026_gvial2": {
+  "name": "百炼嘉维尔",
+  "seasonBond": "sargonShip",
+  "regBonds": [],
+  "garrison": [
+   {
+    "id": "garrison_128_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "<战斗中>开启技能时，使已激活的【萨尔贡】层数<@ba.vup>+9</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_event_useskill"
+     },
+     {
+      "key": "bond_type",
+      "value": 0,
+      "valueStr": "bond_by_id"
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "sargonShip"
+     },
+     {
+      "key": "bond_add_type",
+      "value": 0,
+      "valueStr": "by_count"
+     },
+     {
+      "key": "bond_add_count",
+      "value": 9,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "sargonShip"
+     ],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_426_billro": {
+  "name": "卡涅利安",
+  "seasonBond": "sargonShip",
+  "regBonds": [
+   "deputShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_49_a",
+    "eventType": "SERVER_GAIN",
+    "kind": "SERVER_GAIN_EQUIP",
+    "desc": "<获得时>获得1件“迅捷作战粮”",
+    "blackboard": [
+     {
+      "key": "chess",
+      "value": 0,
+      "valueStr": "chess_item_3_05_e_a"
+     },
+     {
+      "key": "count",
+      "value": 1,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_GAIN_EQUIP",
+     "eventType": "SERVER_GAIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4134_cetsyr": {
+  "name": "魔王",
+  "seasonBond": null,
+  "regBonds": [
+   "emptyShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_59_a",
+    "eventType": "IN_BATTLE",
+    "kind": "GAIN_BUFF",
+    "desc": "<战斗中>战斗中当本干员身前一格的干员因特质使层数提升时，使其额外层数<@ba.vup>+1</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_event_addition_cnt"
+     },
+     {
+      "key": "range_id",
+      "value": 0,
+      "valueStr": "1-1"
+     },
+     {
+      "key": "extra_cnt",
+      "value": 1,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "GAIN_BUFF",
+     "eventType": "IN_BATTLE",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_171_bldsk": {
+  "name": "华法琳",
+  "seasonBond": null,
+  "regBonds": [
+   "miraShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_72_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "<战斗开始时>使身前一格干员获得特质“开启技能时使自身所属已激活盟约层数<@ba.vup>+1</>”（每场战斗至多7层）",
+    "blackboard": [
+     {
+      "key": "give_garrison_id",
+      "value": 0,
+      "valueStr": "garrison_95_a"
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4146_nymph": {
+  "name": "妮芙",
+  "seasonBond": null,
+  "regBonds": [
+   "swiftShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_56_a",
+    "eventType": "SERVER_PREP_FIN",
+    "kind": "SERVER_ADD_BOND_METHOD",
+    "desc": "<休整期结束时>整备区每有1个干员，使已激活的【迅捷】层数<@ba.vup>+2</>",
+    "blackboard": [
+     {
+      "key": "add_method",
+      "value": 0,
+      "valueStr": "hand_count"
+     },
+     {
+      "key": "bond",
+      "value": 0,
+      "valueStr": "swiftShip"
+     },
+     {
+      "key": "multi",
+      "value": 2,
+      "valueStr": null
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_target_inboard"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_METHOD",
+     "eventType": "SERVER_PREP_FIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_1032_excu2": {
+  "name": "圣约送葬人",
+  "seasonBond": "lateranoShip",
+  "regBonds": [
+   "visiShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_23_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "<战斗中>自身每消耗7发子弹，使已激活的【拉特兰】层数<@ba.vup>+7</>、【远见】层数<@ba.vup>+3</>（每场战斗分别至多触发7次）",
+    "blackboard": [
+     {
+      "key": "at_root",
+      "value": 1,
+      "valueStr": null
+     },
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_event_consume_ammo"
+     },
+     {
+      "key": "range_id",
+      "value": 0,
+      "valueStr": "0-1"
+     },
+     {
+      "key": "consume_count",
+      "value": 7,
+      "valueStr": null
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "lateranoShip"
+     },
+     {
+      "key": "bond_type",
+      "value": 0,
+      "valueStr": "bond_by_id"
+     },
+     {
+      "key": "bond_add_type",
+      "value": 0,
+      "valueStr": "by_count"
+     },
+     {
+      "key": "bond_add_count",
+      "value": 7,
+      "valueStr": null
+     },
+     {
+      "key": "max_add_count_per_battle",
+      "value": 49,
+      "valueStr": null
+     },
+     {
+      "key": "garrison_key",
+      "value": 0,
+      "valueStr": "garrison_23_a"
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "lateranoShip"
+     ],
+     "perDivide": null
+    }
+   },
+   {
+    "id": "garrison_55_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "【23】<战斗中>自身每消耗7发子弹，使已激活的【拉特兰】层数<@ba.vup>+7</>、【远见】层数<@ba.vup>+3</>（【远见】每场战斗至多21层）",
+    "blackboard": [
+     {
+      "key": "at_root",
+      "value": 1,
+      "valueStr": null
+     },
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_event_consume_ammo"
+     },
+     {
+      "key": "range_id",
+      "value": 0,
+      "valueStr": "0-1"
+     },
+     {
+      "key": "consume_count",
+      "value": 7,
+      "valueStr": null
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "visiShip"
+     },
+     {
+      "key": "bond_type",
+      "value": 0,
+      "valueStr": "bond_by_id"
+     },
+     {
+      "key": "bond_add_type",
+      "value": 0,
+      "valueStr": "by_count"
+     },
+     {
+      "key": "bond_add_count",
+      "value": 3,
+      "valueStr": null
+     },
+     {
+      "key": "max_add_count_per_battle",
+      "value": 21,
+      "valueStr": null
+     },
+     {
+      "key": "garrison_key",
+      "value": 0,
+      "valueStr": "garrison_55_a"
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "visiShip"
+     ],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4056_titi": {
+  "name": "缇缇",
+  "seasonBond": "sargonShip",
+  "regBonds": [
+   "preciShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_125_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "<战斗中>每当范围内有敌人或干员进入<@ba.vup>沉睡</>或<@ba.vup>晕眩</>时，使已激活的【萨尔贡】【精准】层数<@ba.vup>+1</>（每场战斗至多24层）",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act2autochess_gar_event_allyenemy_sleepstun_inrange"
+     },
+     {
+      "key": "bond_type",
+      "value": 0,
+      "valueStr": "bond_by_id"
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "sargonShip,preciShip"
+     },
+     {
+      "key": "bond_add_type",
+      "value": 0,
+      "valueStr": "by_count"
+     },
+     {
+      "key": "bond_add_count",
+      "value": 1,
+      "valueStr": null
+     },
+     {
+      "key": "max_add_count_per_battle",
+      "value": 24,
+      "valueStr": null
+     },
+     {
+      "key": "garrison_key",
+      "value": 0,
+      "valueStr": "garrison_125_a"
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "sargonShip,preciShip"
+     ],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_1040_blaze2": {
+  "name": "烛煌",
+  "seasonBond": "victoriaShip",
+  "regBonds": [],
+  "garrison": [
+   {
+    "id": "garrison_35_a",
+    "eventType": "SERVER_GAIN",
+    "kind": "SERVER_ADD_BOND",
+    "desc": "<获得时>【炎】【维多利亚】层数<@ba.vup>+5</>（无需激活盟约）",
+    "blackboard": [
+     {
+      "key": "bond",
+      "value": 0,
+      "valueStr": "yanShip,victoriaShip"
+     },
+     {
+      "key": "count",
+      "value": 5,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND",
+     "eventType": "SERVER_GAIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4145_ulpia": {
+  "name": "乌尔比安",
+  "seasonBond": "egirShip",
+  "regBonds": [],
+  "garrison": [
+   {
+    "id": "garrison_12_a",
+    "eventType": "IN_BATTLE",
+    "kind": "GAIN_BUFF",
+    "desc": "【阿戈尔】每叠加2层，本干员攻击力<@ba.vup>+1%</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_eff_attrByBond"
+     },
+     {
+      "key": "divide_num",
+      "value": 2,
+      "valueStr": null
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "egirShip"
+     },
+     {
+      "key": "atk",
+      "value": 0.01,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "GAIN_BUFF",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "egirShip"
+     ],
+     "perDivide": 2
+    }
+   }
+  ]
+ },
+ "char_4010_etlchi": {
+  "name": "隐德来希",
+  "seasonBond": null,
+  "regBonds": [
+   "indomShip",
+   "skillfulShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_10_a",
+    "eventType": "IN_BATTLE",
+    "kind": "GAIN_BUFF",
+    "desc": "核心盟约每叠加3层，本干员攻击力和生命值<@ba.vup>+1%</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_eff_attrByBond"
+     },
+     {
+      "key": "divide_num",
+      "value": 3,
+      "valueStr": null
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "yanShip,kjeragShip,sargonShip,lateranoShip,victoriaShip,egirShip,kazimierzShip,siracusaShip"
+     },
+     {
+      "key": "atk",
+      "value": 0.01,
+      "valueStr": null
+     },
+     {
+      "key": "max_hp",
+      "value": 0.01,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "GAIN_BUFF",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "yanShip,kjeragShip,sargonShip,lateranoShip,victoriaShip,egirShip,kazimierzShip,siracusaShip"
+     ],
+     "perDivide": 3
+    }
+   }
+  ]
+ },
+ "char_350_surtr": {
+  "name": "史尔特尔",
+  "seasonBond": null,
+  "regBonds": [
+   "raidShip",
+   "arcaneShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_107_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "<部署时>使已激活的【突袭】层数<@ba.vup>+8</>（每场作战至多50层）",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act2autochess_gar_event_onstart"
+     },
+     {
+      "key": "bond_type",
+      "value": 0,
+      "valueStr": "bond_by_id"
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "raidShip"
+     },
+     {
+      "key": "bond_add_type",
+      "value": 0,
+      "valueStr": "by_count"
+     },
+     {
+      "key": "bond_add_count",
+      "value": 8,
+      "valueStr": null
+     },
+     {
+      "key": "max_add_count_per_battle",
+      "value": 50,
+      "valueStr": null
+     },
+     {
+      "key": "garrison_key",
+      "value": 0,
+      "valueStr": "garrison_107_a"
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "raidShip"
+     ],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4039_horn": {
+  "name": "号角",
+  "seasonBond": "victoriaShip",
+  "regBonds": [],
+  "garrison": [
+   {
+    "id": "garrison_61_a",
+    "eventType": "SERVER_PREP_FIN",
+    "kind": "SERVER_ADD_ACT_BOND_DIFF_LV_MOST_LAYER",
+    "desc": "<休整期结束时>当前已激活且层数最多的盟约每有1名不同阶干员在场，层数<@ba.vup>+2</>",
+    "blackboard": [
+     {
+      "key": "multi",
+      "value": 2,
+      "valueStr": null
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_target_inboard"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_ACT_BOND_DIFF_LV_MOST_LAYER",
+     "eventType": "SERVER_PREP_FIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_358_lisa": {
+  "name": "铃兰",
+  "seasonBond": "siracusaShip",
+  "regBonds": [
+   "emptyShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_60_a",
+    "eventType": "SERVER_PREP_START",
+    "kind": "SERVER_TRIGGER_ANOTHER",
+    "desc": "<进入休整期时>触发身前一格的其他干员的“获得时”类效果",
+    "blackboard": [
+     {
+      "key": "scope",
+      "value": 0,
+      "valueStr": "front"
+     },
+     {
+      "key": "event",
+      "value": 0,
+      "valueStr": "SERVER_GAIN"
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_target_inboard"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_TRIGGER_ANOTHER",
+     "eventType": "SERVER_PREP_START",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_202_demkni": {
+  "name": "塞雷娅",
+  "seasonBond": null,
+  "regBonds": [
+   "steadShip",
+   "soloShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_99_a",
+    "eventType": "SERVER_PREP_FIN",
+    "kind": "SERVER_FRONT_SAME_EFFECT_PREP_FIN",
+    "desc": "身前一格干员若为“休整期结束时”特质，本干员的特质与其相同",
+    "blackboard": [],
+    "rule": {
+     "kind": "SERVER_FRONT_SAME_EFFECT_PREP_FIN",
+     "eventType": "SERVER_PREP_FIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_2015_dusk": {
+  "name": "夕",
+  "seasonBond": "yanShip",
+  "regBonds": [
+   "arcaneShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_119_a",
+    "eventType": "SERVER_PREP_FIN",
+    "kind": "SERVER_ADD_BOND_METHOD",
+    "desc": "<休整期结束时>当前休整期每获得过一名干员，使已激活的【炎】【奥术】层数<@ba.vup>+2</>",
+    "blackboard": [
+     {
+      "key": "add_method",
+      "value": 0,
+      "valueStr": "round_gain_char"
+     },
+     {
+      "key": "bond",
+      "value": 0,
+      "valueStr": "yanShip,arcaneShip"
+     },
+     {
+      "key": "multi",
+      "value": 2,
+      "valueStr": null
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_target_inboard"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_METHOD",
+     "eventType": "SERVER_PREP_FIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_1023_ghost2": {
+  "name": "归溟幽灵鲨",
+  "seasonBond": "egirShip",
+  "regBonds": [
+   "indomShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_40_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "<战斗中>自身被击倒或替身与本体进行切换时，使已激活的【阿戈尔】层数<@ba.vup>+5</>、【不屈】层数<@ba.vup>+5</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_event_selfdead"
+     },
+     {
+      "key": "bond_type",
+      "value": 0,
+      "valueStr": "bond_by_id"
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "egirShip,indomShip"
+     },
+     {
+      "key": "bond_add_type",
+      "value": 0,
+      "valueStr": "by_count"
+     },
+     {
+      "key": "bond_add_count",
+      "value": 5,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "egirShip,indomShip"
+     ],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_1045_svash2": {
+  "name": "凛御银灰",
+  "seasonBond": "kjeragShip",
+  "regBonds": [
+   "investShip",
+   "swiftShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_126_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "<战斗开始时>使身前一格【谢拉格】干员获得特质“范围内1名敌人进入冻结时，有60%概率使已激活的【谢拉格】层数<@ba.vup>+1</>”",
+    "blackboard": [
+     {
+      "key": "check_bond_id",
+      "value": 0,
+      "valueStr": "kjeragShip"
+     },
+     {
+      "key": "give_garrison_id",
+      "value": 0,
+      "valueStr": "garrison_29_a"
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_1039_thorn2": {
+  "name": "引星棘刺",
+  "seasonBond": null,
+  "regBonds": [
+   "swiftShip",
+   "miraShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_79_a",
+    "eventType": "SERVER_PREP_FIN",
+    "kind": "SERVER_ADD_BOND_POSITION",
+    "desc": "<休整期结束时>使自身及身前一格干员的已激活盟约分别各层数<@ba.vup>+4</>",
+    "blackboard": [
+     {
+      "key": "dir",
+      "value": 0,
+      "valueStr": "front"
+     },
+     {
+      "key": "count",
+      "value": 4,
+      "valueStr": null
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_target_inboard"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_POSITION",
+     "eventType": "SERVER_PREP_FIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_264_f12yin": {
+  "name": "山",
+  "seasonBond": null,
+  "regBonds": [
+   "investShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_34_a",
+    "eventType": "SERVER_PREP_FIN",
+    "kind": "SERVER_ADD_BOND_METHOD",
+    "desc": "<休整期结束时>本回合每获得过1名干员，使已激活的【投资人】层数<@ba.vup>+1</>",
+    "blackboard": [
+     {
+      "key": "add_method",
+      "value": 0,
+      "valueStr": "round_gain_char"
+     },
+     {
+      "key": "bond",
+      "value": 0,
+      "valueStr": "investShip"
+     },
+     {
+      "key": "multi",
+      "value": 1,
+      "valueStr": null
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_target_inboard"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_METHOD",
+     "eventType": "SERVER_PREP_FIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4064_mlynar": {
+  "name": "玛恩纳",
+  "seasonBond": "kazimierzShip",
+  "regBonds": [],
+  "garrison": [
+   {
+    "id": "garrison_115_a",
+    "eventType": "IN_BATTLE",
+    "kind": "GAIN_BUFF",
+    "desc": "【卡西米尔】每叠加5层，本干员部署后100秒内<@ba.vup>基础攻击力</>+10、<@ba.vup>基础生命值</>+50",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act2autochess_gar_eff_attrByBond_add_onstart"
+     },
+     {
+      "key": "divide_num",
+      "value": 5,
+      "valueStr": null
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "kazimierzShip"
+     },
+     {
+      "key": "atk",
+      "value": 10,
+      "valueStr": null
+     },
+     {
+      "key": "max_hp",
+      "value": 50,
+      "valueStr": null
+     },
+     {
+      "key": "duration",
+      "value": 100,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "GAIN_BUFF",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "kazimierzShip"
+     ],
+     "perDivide": 5
+    }
+   }
+  ]
+ },
+ "char_291_aglina": {
+  "name": "安洁莉娜",
+  "seasonBond": "siracusaShip",
+  "regBonds": [
+   "miraShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_147_a",
+    "eventType": "SERVER_PREP_FIN",
+    "kind": "SERVER_ADD_REFRESH_CNT_MULTIPLIER_BOND_LAYER",
+    "desc": "<休整期结束时>本回合每刷新过1次，使已激活的【叙拉古】层数<@ba.vup>+4</>（每回合至多12层）",
+    "blackboard": [
+     {
+      "key": "bond",
+      "value": 0,
+      "valueStr": "siracusaShip"
+     },
+     {
+      "key": "multiplier",
+      "value": 4,
+      "valueStr": null
+     },
+     {
+      "key": "max_layer",
+      "value": 12,
+      "valueStr": null
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_target_inboard"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_REFRESH_CNT_MULTIPLIER_BOND_LAYER",
+     "eventType": "SERVER_PREP_FIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_341_sntlla": {
+  "name": "寒檀",
+  "seasonBond": null,
+  "regBonds": [
+   "visiShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_141_a",
+    "eventType": "SERVER_PREP_START",
+    "kind": "SERVER_ADD_BOND",
+    "desc": "<进入休整期时><休整期结束时>使已激活的【远见】层数<@ba.vup>+4</>",
+    "blackboard": [
+     {
+      "key": "bond",
+      "value": 0,
+      "valueStr": "visiShip"
+     },
+     {
+      "key": "count",
+      "value": 4,
+      "valueStr": null
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_target_inboard"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND",
+     "eventType": "SERVER_PREP_START",
+     "bondIds": [],
+     "perDivide": null
+    }
+   },
+   {
+    "id": "garrison_142_a",
+    "eventType": "SERVER_PREP_FIN",
+    "kind": "SERVER_ADD_BOND",
+    "desc": "<休整期结束时>使已激活的【远见】层数<@ba.vup>+4</>",
+    "blackboard": [
+     {
+      "key": "bond",
+      "value": 0,
+      "valueStr": "visiShip"
+     },
+     {
+      "key": "count",
+      "value": 4,
+      "valueStr": null
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_target_inboard"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND",
+     "eventType": "SERVER_PREP_FIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4193_lemuen": {
+  "name": "蕾缪安",
+  "seasonBond": "lateranoShip",
+  "regBonds": [
+   "preciShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_24_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "<战斗中>自身每消耗10发子弹，若同一行有3名干员，使已激活的【拉特兰】【精准】层数<@ba.vup>+2</>",
+    "blackboard": [
+     {
+      "key": "at_root",
+      "value": 1,
+      "valueStr": null
+     },
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_event_consume_ammo"
+     },
+     {
+      "key": "range_id",
+      "value": 0,
+      "valueStr": "0-1"
+     },
+     {
+      "key": "consume_count",
+      "value": 10,
+      "valueStr": null
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "lateranoShip,preciShip"
+     },
+     {
+      "key": "bond_type",
+      "value": 0,
+      "valueStr": "bond_by_id"
+     },
+     {
+      "key": "bond_add_type",
+      "value": 0,
+      "valueStr": "by_count"
+     },
+     {
+      "key": "bond_add_count",
+      "value": 2,
+      "valueStr": null
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_same_row"
+     },
+     {
+      "key": "check_count",
+      "value": 3,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "lateranoShip,preciShip"
+     ],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_1046_sbell2": {
+  "name": "圣聆初雪",
+  "seasonBond": "kjeragShip",
+  "regBonds": [
+   "arcaneShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_05_a",
+    "eventType": "IN_BATTLE",
+    "kind": "GAIN_BUFF",
+    "desc": "【谢拉格】【奥术】每叠加3层，本干员攻击力<@ba.vup>+1%</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_eff_attrByBond"
+     },
+     {
+      "key": "divide_num",
+      "value": 3,
+      "valueStr": null
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "kjeragShip,arcaneShip"
+     },
+     {
+      "key": "atk",
+      "value": 0.01,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "GAIN_BUFF",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "kjeragShip,arcaneShip"
+     ],
+     "perDivide": 3
+    }
+   }
+  ]
+ },
+ "char_2026_yu": {
+  "name": "余",
+  "seasonBond": "yanShip",
+  "regBonds": [
+   "steadShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_37_a",
+    "eventType": "SERVER_PREP_START",
+    "kind": "SERVER_MOST_BOND",
+    "desc": "<进入休整期时>若同一行有3名干员，随机获得1名当前人数最多盟约的干员",
+    "blackboard": [
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_same_row"
+     },
+     {
+      "key": "check_count",
+      "value": 3,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_MOST_BOND",
+     "eventType": "SERVER_PREP_START",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_1012_skadi2": {
+  "name": "浊心斯卡蒂",
+  "seasonBond": "egirShip",
+  "regBonds": [],
+  "garrison": [
+   {
+    "id": "garrison_84_a",
+    "eventType": "IN_BATTLE",
+    "kind": "GAIN_BUFF",
+    "desc": "【阿戈尔】每叠加10层，本干员每秒回复50生命，自然技力回复速度+0.15/秒",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_eff_attrByBond"
+     },
+     {
+      "key": "divide_num",
+      "value": 10,
+      "valueStr": null
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "egirShip"
+     },
+     {
+      "key": "hp_recovery_per_sec",
+      "value": 50,
+      "valueStr": null
+     },
+     {
+      "key": "sp_recovery_per_sec",
+      "value": 0.15,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "GAIN_BUFF",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "egirShip"
+     ],
+     "perDivide": 10
+    }
+   }
+  ]
+ },
+ "char_472_pasngr": {
+  "name": "异客",
+  "seasonBond": "sargonShip",
+  "regBonds": [
+   "swiftShip",
+   "preciShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_100_a",
+    "eventType": "IN_BATTLE",
+    "kind": "GAIN_BUFF",
+    "desc": "【萨尔贡】【迅捷】【精准】每叠加3层，本干员攻击力<@ba.vup>+2%</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_eff_attrByBond"
+     },
+     {
+      "key": "divide_num",
+      "value": 3,
+      "valueStr": null
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "sargonShip,swiftShip,preciShip"
+     },
+     {
+      "key": "atk",
+      "value": 0.02,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "GAIN_BUFF",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "sargonShip,swiftShip,preciShip"
+     ],
+     "perDivide": 3
+    }
+   }
+  ]
+ },
+ "char_4058_pepe": {
+  "name": "佩佩",
+  "seasonBond": "sargonShip",
+  "regBonds": [
+   "indomShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_94_a",
+    "eventType": "SERVER_PREP_START",
+    "kind": "SERVER_POOL_EQUIP",
+    "desc": "<进入休整期时>获得1件“盟约之币”或“萨尔贡浓茶”，有小概率发现“黄沙罗盘”",
+    "blackboard": [
+     {
+      "key": "pool",
+      "value": 0,
+      "valueStr": "pool_equip_pepe"
+     },
+     {
+      "key": "count",
+      "value": 1,
+      "valueStr": null
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_target_inboard"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_POOL_EQUIP",
+     "eventType": "SERVER_PREP_START",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_1019_siege2": {
+  "name": "维娜·维多利亚",
+  "seasonBond": "victoriaShip",
+  "regBonds": [
+   "miraShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_53_a",
+    "eventType": "SERVER_PREP_FIN",
+    "kind": "SERVER_ADD_BOND_METHOD",
+    "desc": "<休整期结束时>场上每有1名不同阶的【维多利亚】/【奇迹】干员使已激活的【维多利亚】层数<@ba.vup>+3</>/【奇迹】层数<@ba.vup>+2</>",
+    "blackboard": [
+     {
+      "key": "add_method",
+      "value": 0,
+      "valueStr": "same_bond_diff_lv"
+     },
+     {
+      "key": "bond",
+      "value": 0,
+      "valueStr": "victoriaShip"
+     },
+     {
+      "key": "multi",
+      "value": 3,
+      "valueStr": null
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_target_inboard"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_METHOD",
+     "eventType": "SERVER_PREP_FIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   },
+   {
+    "id": "garrison_54_a",
+    "eventType": "SERVER_PREP_FIN",
+    "kind": "SERVER_ADD_BOND_METHOD",
+    "desc": "<休整期结束时>场上每有1名不同阶的【维多利亚】/【奇迹】干员使已激活的【维多利亚】层数<@ba.vup>+3</>/【奇迹】层数<@ba.vup>+2</>",
+    "blackboard": [
+     {
+      "key": "add_method",
+      "value": 0,
+      "valueStr": "same_bond_diff_lv"
+     },
+     {
+      "key": "bond",
+      "value": 0,
+      "valueStr": "miraShip"
+     },
+     {
+      "key": "multi",
+      "value": 2,
+      "valueStr": null
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_target_inboard"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_METHOD",
+     "eventType": "SERVER_PREP_FIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_1020_reed2": {
+  "name": "焰影苇草",
+  "seasonBond": "victoriaShip",
+  "regBonds": [
+   "preciShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_11_a",
+    "eventType": "IN_BATTLE",
+    "kind": "GAIN_BUFF",
+    "desc": "【维多利亚】每叠加3层，本干员攻击速度<@ba.vup>+1</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_eff_attrByBond"
+     },
+     {
+      "key": "divide_num",
+      "value": 3,
+      "valueStr": null
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "victoriaShip"
+     },
+     {
+      "key": "attack_speed",
+      "value": 1,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "GAIN_BUFF",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "victoriaShip"
+     ],
+     "perDivide": 3
+    }
+   }
+  ]
+ },
+ "char_245_cello": {
+  "name": "塑心",
+  "seasonBond": "lateranoShip",
+  "regBonds": [],
+  "garrison": [
+   {
+    "id": "garrison_90_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "<战斗中>开启技能时，同一行每有1名干员，当前已激活且层数最多的盟约层数<@ba.vup>+1</>（每场作战至多10层）",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_event_useskill"
+     },
+     {
+      "key": "bond_type",
+      "value": 0,
+      "valueStr": "bond_actived_maxstack"
+     },
+     {
+      "key": "bond_add_type",
+      "value": 0,
+      "valueStr": "by_charcount_samerow"
+     },
+     {
+      "key": "bond_add_count_multi",
+      "value": 1,
+      "valueStr": null
+     },
+     {
+      "key": "max_add_count_per_battle",
+      "value": 10,
+      "valueStr": null
+     },
+     {
+      "key": "garrison_key",
+      "value": 0,
+      "valueStr": "garrison_90_a"
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_249_mlyss": {
+  "name": "缪尔赛思",
+  "seasonBond": null,
+  "regBonds": [
+   "maniShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_76_a",
+    "eventType": "SERVER_GAIN",
+    "kind": "SERVER_GAIN_EQUIP",
+    "desc": "<获得时>获得1个“变形同构体”",
+    "blackboard": [
+     {
+      "key": "chess",
+      "value": 0,
+      "valueStr": "chess_item_6_09_e_a"
+     },
+     {
+      "key": "count",
+      "value": 1,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_GAIN_EQUIP",
+     "eventType": "SERVER_GAIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_391_rosmon": {
+  "name": "迷迭香",
+  "seasonBond": null,
+  "regBonds": [
+   "preciShip",
+   "visiShip",
+   "emptyShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_09_a",
+    "eventType": "IN_BATTLE",
+    "kind": "GAIN_BUFF",
+    "desc": "攻击力和生命值+<@ba.vup>20%</>；核心盟约每叠加3层，本干员攻击力和生命值<@ba.vup>+1%</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_eff_attrByBond"
+     },
+     {
+      "key": "divide_num",
+      "value": 3,
+      "valueStr": null
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "yanShip,kjeragShip,sargonShip,lateranoShip,victoriaShip,egirShip,kazimierzShip,siracusaShip"
+     },
+     {
+      "key": "atk",
+      "value": 0.01,
+      "valueStr": null
+     },
+     {
+      "key": "max_hp",
+      "value": 0.01,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "GAIN_BUFF",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "yanShip,kjeragShip,sargonShip,lateranoShip,victoriaShip,egirShip,kazimierzShip,siracusaShip"
+     ],
+     "perDivide": 3
+    }
+   },
+   {
+    "id": "garrison_03_a",
+    "eventType": "IN_BATTLE",
+    "kind": "GAIN_BUFF",
+    "desc": "攻击力和生命值+<@ba.vup>20%</>",
+    "blackboard": [
+     {
+      "key": "atk",
+      "value": 1.2,
+      "valueStr": null
+     },
+     {
+      "key": "max_hp",
+      "value": 1.2,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "GAIN_BUFF",
+     "eventType": "IN_BATTLE",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_1041_angel2": {
+  "name": "新约能天使",
+  "seasonBond": "lateranoShip",
+  "regBonds": [],
+  "garrison": [
+   {
+    "id": "garrison_32_a",
+    "eventType": "SERVER_GAIN",
+    "kind": "SERVER_ONCE_GOLD",
+    "desc": "<获得时>使下个休整期额外获得<@ba.vup>2</>资金",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 2,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ONCE_GOLD",
+     "eventType": "SERVER_GAIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4042_lumen": {
+  "name": "流明",
+  "seasonBond": null,
+  "regBonds": [
+   "deputShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_57_a",
+    "eventType": "SERVER_PREP_FIN",
+    "kind": "SERVER_ADD_BOND_IN_HAND",
+    "desc": "<休整期结束时>整备区中每名干员所在的已激活盟约分别层数<@ba.vup>+2</>",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 2,
+      "valueStr": null
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_target_inboard"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_IN_HAND",
+     "eventType": "SERVER_PREP_FIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4082_qiubai": {
+  "name": "仇白",
+  "seasonBond": "yanShip",
+  "regBonds": [
+   "raidShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_101_a",
+    "eventType": "IN_BATTLE",
+    "kind": "GAIN_BUFF",
+    "desc": "【炎】【突袭】每叠加3层，本干员攻击束缚和停顿状态的敌人造成的伤害提升<@ba.vup>1%</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act2autochess_gar_eff_ab_damageScaleByBond"
+     },
+     {
+      "key": "divide_num",
+      "value": 3,
+      "valueStr": null
+     },
+     {
+      "key": "check_ab_flag",
+      "value": 13,
+      "valueStr": null
+     },
+     {
+      "key": "check_sluggish",
+      "value": 1,
+      "valueStr": null
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "yanShip,raidShip"
+     },
+     {
+      "key": "damage_scale_per_stack",
+      "value": 0.01,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "GAIN_BUFF",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "yanShip,raidShip"
+     ],
+     "perDivide": 3
+    }
+   }
+  ]
+ },
+ "char_1047_halo2": {
+  "name": "溯光星源",
+  "seasonBond": null,
+  "regBonds": [
+   "arcaneShip",
+   "skillfulShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_121_a",
+    "eventType": "SERVER_PREP_FIN",
+    "kind": "SERVER_ADD_BOND_ROUND_COIN_COST",
+    "desc": "<休整期结束时>本回合每花费<@ba.vup>3</>资金，使已激活的【灵巧】【奥术】层数<@ba.vup>+2</>",
+    "blackboard": [
+     {
+      "key": "layer",
+      "value": 2,
+      "valueStr": null
+     },
+     {
+      "key": "bond",
+      "value": 0,
+      "valueStr": "skillfulShip,arcaneShip"
+     },
+     {
+      "key": "count",
+      "value": 3,
+      "valueStr": null
+     },
+     {
+      "key": "conditionkey",
+      "value": 0,
+      "valueStr": "character_target_inboard"
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_ROUND_COIN_COST",
+     "eventType": "SERVER_PREP_FIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_1014_nearl2": {
+  "name": "耀骑士临光",
+  "seasonBond": "kazimierzShip",
+  "regBonds": [
+   "raidShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_145_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "<战斗开始时>使<@ba.vup>自身</>和<@ba.vup>身前一格</>干员获得特质“【卡西米尔】每叠加3层，本干员再部署时间<@ba.vup>-1.5%</>，攻击速度<@ba.vup>+0.5</>”",
+    "blackboard": [
+     {
+      "key": "give_garrison_id",
+      "value": 0,
+      "valueStr": "garrison_144_a"
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [],
+     "perDivide": null
+    }
+   },
+   {
+    "id": "garrison_144_a",
+    "eventType": "IN_BATTLE",
+    "kind": "GAIN_BUFF",
+    "desc": "【145】【卡西米尔】每叠加3层，本干员再部署时间<@ba.vup>-1.5%</>，攻击速度<@ba.vup>+0.5</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_eff_respawnTimeByBond"
+     },
+     {
+      "key": "divide_num",
+      "value": 3,
+      "valueStr": null
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "kazimierzShip"
+     },
+     {
+      "key": "respawn_time",
+      "value": -0.015,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "GAIN_BUFF",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "kazimierzShip"
+     ],
+     "perDivide": 3
+    }
+   },
+   {
+    "id": "garrison_159_a",
+    "eventType": "IN_BATTLE",
+    "kind": "GAIN_BUFF",
+    "desc": "【145】【卡西米尔】每叠加3层，本干员攻击速度<@ba.vup>+0.5</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_eff_attrByBond"
+     },
+     {
+      "key": "divide_num",
+      "value": 3,
+      "valueStr": null
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "kazimierzShip"
+     },
+     {
+      "key": "attack_speed",
+      "value": 0.5,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "GAIN_BUFF",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "kazimierzShip"
+     ],
+     "perDivide": 3
+    }
+   },
+   {
+    "id": "garrison_160_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "【145】<战斗开始时>使<@ba.vup>自身</>和<@ba.vup>身前一格</>干员获得特质“【卡西米尔】每叠加3层，攻击速度<@ba.vup>+0.5</>”",
+    "blackboard": [
+     {
+      "key": "give_garrison_id",
+      "value": 0,
+      "valueStr": "garrison_159_a"
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_1038_whitw2": {
+  "name": "荒芜拉普兰德",
+  "seasonBond": "siracusaShip",
+  "regBonds": [],
+  "garrison": [
+   {
+    "id": "garrison_118_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "<战斗中>击倒敌人时，使已激活的【叙拉古】层数<@ba.vup>+2</>\\n<@ba.rem>将荒芜拉普兰德合成为精锐即可在战斗中使所有【叙拉古】干员获得该效果</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_event_selfkillenemy"
+     },
+     {
+      "key": "check_cnt",
+      "value": 1,
+      "valueStr": null
+     },
+     {
+      "key": "bond_type",
+      "value": 0,
+      "valueStr": "bond_by_id"
+     },
+     {
+      "key": "bond_id",
+      "value": 0,
+      "valueStr": "siracusaShip"
+     },
+     {
+      "key": "bond_add_type",
+      "value": 0,
+      "valueStr": "by_count"
+     },
+     {
+      "key": "bond_add_count",
+      "value": 2,
+      "valueStr": null
+     },
+     {
+      "key": "max_add_count_per_battle",
+      "value": 100,
+      "valueStr": null
+     },
+     {
+      "key": "garrison_key",
+      "value": 0,
+      "valueStr": "garrison_118_a"
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [
+      "siracusaShip"
+     ],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_4116_blkkgt": {
+  "name": "锏",
+  "seasonBond": "kjeragShip",
+  "regBonds": [
+   "swiftShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_155_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "<获得时>自身所属的盟约层数<@ba.vup>+8</>\\n<部署时>使自身已激活的盟约层数<@ba.vup>+8</>（至多24层）",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act2autochess_gar_event_onstart"
+     },
+     {
+      "key": "bond_type",
+      "value": 0,
+      "valueStr": "bond_self"
+     },
+     {
+      "key": "bond_add_type",
+      "value": 0,
+      "valueStr": "by_count"
+     },
+     {
+      "key": "bond_add_count",
+      "value": 8,
+      "valueStr": null
+     },
+     {
+      "key": "max_add_count_per_battle",
+      "value": 24,
+      "valueStr": null
+     },
+     {
+      "key": "garrison_key",
+      "value": 0,
+      "valueStr": "garrison_155_a"
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [],
+     "perDivide": null
+    }
+   },
+   {
+    "id": "garrison_65_a",
+    "eventType": "SERVER_GAIN",
+    "kind": "SERVER_ADD_BOND_CHESS_ALL",
+    "desc": "<获得时>自身所属盟约层数<@ba.vup>+8</>（无需激活盟约）",
+    "blackboard": [
+     {
+      "key": "count",
+      "value": 8,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "SERVER_ADD_BOND_CHESS_ALL",
+     "eventType": "SERVER_GAIN",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ },
+ "char_1016_agoat2": {
+  "name": "纯烬艾雅法拉",
+  "seasonBond": null,
+  "regBonds": [
+   "deputShip"
+  ],
+  "garrison": [
+   {
+    "id": "garrison_140_a",
+    "eventType": "IN_BATTLE",
+    "kind": "ADD_BOND",
+    "desc": "<战斗中>开启技能时，当前已激活且层数最多的盟约层数<@ba.vup>+3</>",
+    "blackboard": [
+     {
+      "key": "key",
+      "value": 0,
+      "valueStr": "act1autochess_gar_event_useskill"
+     },
+     {
+      "key": "bond_type",
+      "value": 0,
+      "valueStr": "bond_actived_maxstack"
+     },
+     {
+      "key": "bond_add_type",
+      "value": 0,
+      "valueStr": "by_count"
+     },
+     {
+      "key": "bond_add_count",
+      "value": 3,
+      "valueStr": null
+     }
+    ],
+    "rule": {
+     "kind": "ADD_BOND",
+     "eventType": "IN_BATTLE",
+     "bondIds": [],
+     "perDivide": null
+    }
+   }
+  ]
+ }
+}

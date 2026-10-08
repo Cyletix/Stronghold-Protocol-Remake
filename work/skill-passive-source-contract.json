@@ -1,0 +1,930 @@
+{
+  "schemaVersion": 1,
+  "rule": "complete-passive-skill-schema-and-owned-attachment-v1",
+  "sourceGraphSha256": "972bc0d63070e03acf8733c82e8480a29a92952c01bce07ff1f8240eb169c0b3",
+  "members": {
+    "skchr_mantic_1": {
+      "components": [
+        {
+          "node_id": "-1376986505446771679",
+          "type": "Torappu.Battle.PassiveSkill",
+          "script": {
+            "status": "resolved",
+            "type": "Torappu.Battle.PassiveSkill",
+            "assembly": "Assembly-CSharp.dll",
+            "script_cab": "CAB-658d74aab777086fc32b93f385be999a",
+            "script_path_id": "-2816356044270894278",
+            "script_bundle_sha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+          },
+          "fields": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "-9154685868805671903"
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "-2816356044270894278"
+            },
+            "m_Name": "",
+            "_maxTriggerTime": -1,
+            "_allowSpRecoveryWhenAffecting": 0,
+            "_limitGlobalTriggerTime": 0,
+            "_hidden": 0,
+            "_showSpBarEvenHidden": 0,
+            "_showSpAsBulletMode": 0,
+            "_showSpRatioAsProgress": 0,
+            "_playCharWordVoice": 1,
+            "_playCharWordWithPassiveType": 0,
+            "_canCastWithNoSp": 0,
+            "_canSilenced": 0,
+            "_canUseInAbnormalState": 0,
+            "_defaultModeIndex": 1,
+            "_attackBlackboardModeIndex": 1,
+            "_extraAttackBlackboardModeIndices": [],
+            "_rangeIdModeIndex": 1,
+            "_extraRangeIdModeIndices": [],
+            "_rangeIdUsageType": 7,
+            "_writeDurationToAttackBlackboard": 0,
+            "_attachSignalIds": 0,
+            "_extraAbilities": [],
+            "_useEscapeTime": 0,
+            "_earlySkillFinishAtAttackFinished": 0,
+            "_showProgressToNext": 0,
+            "_hideSkillStackCount": 0,
+            "_hideHudSkillStackCount": 0,
+            "_playSkillBeginAnim": 0,
+            "_beginAnim": "",
+            "_beginAnimDown": "",
+            "_beginEffect": [],
+            "_useFaceVector": 0,
+            "_beginAnimValidator": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "_availableValidator": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "_attachInDummy": 1
+          }
+        },
+        {
+          "node_id": "3235640779202671649",
+          "type": "Torappu.Battle.Abilities.PassiveAttachmentAbility",
+          "script": {
+            "status": "resolved",
+            "type": "Torappu.Battle.Abilities.PassiveAttachmentAbility",
+            "assembly": "Assembly-CSharp.dll",
+            "script_cab": "CAB-658d74aab777086fc32b93f385be999a",
+            "script_path_id": "-8004000125733044417",
+            "script_bundle_sha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+          },
+          "fields": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "-9154685868805671903"
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "-8004000125733044417"
+            },
+            "m_Name": "",
+            "_selector": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "_metadata": {
+              "namedAsAlias": "",
+              "blackboardPrefix": ""
+            },
+            "_interruptAbilityOnDetach": 0,
+            "_attachPassiveBuffsOnDummy": 1,
+            "_ignoreIfOwnerDead": 0,
+            "_forceAsDmgOrHealAbility": 0,
+            "_buffs": [],
+            "_additiveActiveBuffs": [
+              {
+                "attributes": {
+                  "abnormalFlags": [],
+                  "abnormalImmunes": [],
+                  "abnormalAntis": [],
+                  "abnormalCombos": [],
+                  "abnormalComboImmunes": [],
+                  "attributeModifiers": [
+                    {
+                      "attributeType": 6,
+                      "formulaItem": 3,
+                      "value": 0.0,
+                      "loadFromBlackboard": 1,
+                      "fetchBaseValueFromSourceEntity": 0
+                    }
+                  ]
+                },
+                "buffKey": "mantic_s_1",
+                "loadFromDB": 0,
+                "isDurableBuff": 0,
+                "isDamageMissable": 0,
+                "isSilenceable": 0,
+                "isStunnable": 0,
+                "isFreezable": 0,
+                "isLevitatable": 0,
+                "statusResistable": 2,
+                "templateKey": "empty",
+                "disableOverride": 0,
+                "overrideKey": "",
+                "overrideType": 0,
+                "maxStackCnt": 1,
+                "refreshRemainingTimeWhenStackMax": 0,
+                "clearAllStackCntWhenTimeUp": 0,
+                "maxValidStackCnt": -1,
+                "independentCharacterSource": 0,
+                "overrideEffectKey": "buff_slowdown",
+                "overrideOnEventPriority": 0,
+                "onEventPriority": 0,
+                "audioSignal": "",
+                "lifeTimeType": 1,
+                "takeSnapshotWhenExtend": 0,
+                "durationKey": "",
+                "lifeTime": 0.0,
+                "triggerLifeType": 0,
+                "triggerCnt": 0,
+                "triggerInterval": -1.0,
+                "waitFirstTriggerInterval": 1,
+                "firstTriggerInterval": -1.0,
+                "priority": -1,
+                "priorityBBKeys": [],
+                "stripBlackboardParamsWithBuffKey": 0,
+                "blackboard": [],
+                "enableInitDirectionFromSource": 0
+              }
+            ],
+            "_targetFamilyMask": 3,
+            "_targetValidator": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "_probKey": ""
+          }
+        }
+      ],
+      "levels": [
+        {
+          "name": "蝎毒",
+          "rangeId": null,
+          "description": "每次攻击会在<@ba.vup>{duration}</>秒内令命中目标移动速度<@ba.vup>-{-move_speed:0%}</>",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "spData": {
+            "spType": 8,
+            "levelUpCost": null,
+            "maxChargeTime": 0,
+            "spCost": 0,
+            "initSp": 0,
+            "increment": 0.0
+          },
+          "prefabId": "skchr_mantic_1",
+          "duration": -1.0,
+          "blackboard": [
+            {
+              "key": "move_speed",
+              "value": -0.23,
+              "valueStr": null
+            },
+            {
+              "key": "duration",
+              "value": 3.0,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "蝎毒",
+          "rangeId": null,
+          "description": "每次攻击会在<@ba.vup>{duration}</>秒内令命中目标移动速度<@ba.vup>-{-move_speed:0%}</>",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "spData": {
+            "spType": 8,
+            "levelUpCost": null,
+            "maxChargeTime": 0,
+            "spCost": 0,
+            "initSp": 0,
+            "increment": 0.0
+          },
+          "prefabId": "skchr_mantic_1",
+          "duration": -1.0,
+          "blackboard": [
+            {
+              "key": "move_speed",
+              "value": -0.25,
+              "valueStr": null
+            },
+            {
+              "key": "duration",
+              "value": 3.0,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "蝎毒",
+          "rangeId": null,
+          "description": "每次攻击会在<@ba.vup>{duration}</>秒内令命中目标移动速度<@ba.vup>-{-move_speed:0%}</>",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "spData": {
+            "spType": 8,
+            "levelUpCost": null,
+            "maxChargeTime": 0,
+            "spCost": 0,
+            "initSp": 0,
+            "increment": 0.0
+          },
+          "prefabId": "skchr_mantic_1",
+          "duration": -1.0,
+          "blackboard": [
+            {
+              "key": "move_speed",
+              "value": -0.27,
+              "valueStr": null
+            },
+            {
+              "key": "duration",
+              "value": 3.0,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "蝎毒",
+          "rangeId": null,
+          "description": "每次攻击会在<@ba.vup>{duration}</>秒内令命中目标移动速度<@ba.vup>-{-move_speed:0%}</>",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "spData": {
+            "spType": 8,
+            "levelUpCost": null,
+            "maxChargeTime": 0,
+            "spCost": 0,
+            "initSp": 0,
+            "increment": 0.0
+          },
+          "prefabId": "skchr_mantic_1",
+          "duration": -1.0,
+          "blackboard": [
+            {
+              "key": "move_speed",
+              "value": -0.29,
+              "valueStr": null
+            },
+            {
+              "key": "duration",
+              "value": 3.5,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "蝎毒",
+          "rangeId": null,
+          "description": "每次攻击会在<@ba.vup>{duration}</>秒内令命中目标移动速度<@ba.vup>-{-move_speed:0%}</>",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "spData": {
+            "spType": 8,
+            "levelUpCost": null,
+            "maxChargeTime": 0,
+            "spCost": 0,
+            "initSp": 0,
+            "increment": 0.0
+          },
+          "prefabId": "skchr_mantic_1",
+          "duration": -1.0,
+          "blackboard": [
+            {
+              "key": "move_speed",
+              "value": -0.31,
+              "valueStr": null
+            },
+            {
+              "key": "duration",
+              "value": 3.5,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "蝎毒",
+          "rangeId": null,
+          "description": "每次攻击会在<@ba.vup>{duration}</>秒内令命中目标移动速度<@ba.vup>-{-move_speed:0%}</>",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "spData": {
+            "spType": 8,
+            "levelUpCost": null,
+            "maxChargeTime": 0,
+            "spCost": 0,
+            "initSp": 0,
+            "increment": 0.0
+          },
+          "prefabId": "skchr_mantic_1",
+          "duration": -1.0,
+          "blackboard": [
+            {
+              "key": "move_speed",
+              "value": -0.33,
+              "valueStr": null
+            },
+            {
+              "key": "duration",
+              "value": 3.5,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "蝎毒",
+          "rangeId": null,
+          "description": "每次攻击会在<@ba.vup>{duration}</>秒内令命中目标移动速度<@ba.vup>-{-move_speed:0%}</>",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "spData": {
+            "spType": 8,
+            "levelUpCost": null,
+            "maxChargeTime": 0,
+            "spCost": 0,
+            "initSp": 0,
+            "increment": 0.0
+          },
+          "prefabId": "skchr_mantic_1",
+          "duration": -1.0,
+          "blackboard": [
+            {
+              "key": "move_speed",
+              "value": -0.35,
+              "valueStr": null
+            },
+            {
+              "key": "duration",
+              "value": 4.0,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "蝎毒",
+          "rangeId": null,
+          "description": "每次攻击会在<@ba.vup>{duration}</>秒内令命中目标移动速度<@ba.vup>-{-move_speed:0%}</>",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "spData": {
+            "spType": 8,
+            "levelUpCost": null,
+            "maxChargeTime": 0,
+            "spCost": 0,
+            "initSp": 0,
+            "increment": 0.0
+          },
+          "prefabId": "skchr_mantic_1",
+          "duration": -1.0,
+          "blackboard": [
+            {
+              "key": "move_speed",
+              "value": -0.4,
+              "valueStr": null
+            },
+            {
+              "key": "duration",
+              "value": 4.0,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "蝎毒",
+          "rangeId": null,
+          "description": "每次攻击会在<@ba.vup>{duration}</>秒内令命中目标移动速度<@ba.vup>-{-move_speed:0%}</>",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "spData": {
+            "spType": 8,
+            "levelUpCost": null,
+            "maxChargeTime": 0,
+            "spCost": 0,
+            "initSp": 0,
+            "increment": 0.0
+          },
+          "prefabId": "skchr_mantic_1",
+          "duration": -1.0,
+          "blackboard": [
+            {
+              "key": "move_speed",
+              "value": -0.45,
+              "valueStr": null
+            },
+            {
+              "key": "duration",
+              "value": 4.0,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "蝎毒",
+          "rangeId": null,
+          "description": "每次攻击会在<@ba.vup>{duration}</>秒内令命中目标移动速度<@ba.vup>-{-move_speed:0%}</>",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "spData": {
+            "spType": 8,
+            "levelUpCost": null,
+            "maxChargeTime": 0,
+            "spCost": 0,
+            "initSp": 0,
+            "increment": 0.0
+          },
+          "prefabId": "skchr_mantic_1",
+          "duration": -1.0,
+          "blackboard": [
+            {
+              "key": "move_speed",
+              "value": -0.5,
+              "valueStr": null
+            },
+            {
+              "key": "duration",
+              "value": 5.0,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "skchr_zumama_1": {
+      "components": [
+        {
+          "node_id": "-4802678534699493363",
+          "type": "Torappu.Battle.PassiveSkill",
+          "script": {
+            "status": "resolved",
+            "type": "Torappu.Battle.PassiveSkill",
+            "assembly": "Assembly-CSharp.dll",
+            "script_cab": "CAB-658d74aab777086fc32b93f385be999a",
+            "script_path_id": "-2816356044270894278",
+            "script_bundle_sha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+          },
+          "fields": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "-5061119516582946803"
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "-2816356044270894278"
+            },
+            "m_Name": "",
+            "_maxTriggerTime": -1,
+            "_allowSpRecoveryWhenAffecting": 0,
+            "_limitGlobalTriggerTime": 0,
+            "_hidden": 0,
+            "_showSpBarEvenHidden": 0,
+            "_showSpAsBulletMode": 0,
+            "_showSpRatioAsProgress": 0,
+            "_playCharWordVoice": 1,
+            "_playCharWordWithPassiveType": 0,
+            "_canCastWithNoSp": 0,
+            "_canSilenced": 0,
+            "_canUseInAbnormalState": 0,
+            "_defaultModeIndex": -1,
+            "_attackBlackboardModeIndex": -1,
+            "_extraAttackBlackboardModeIndices": [],
+            "_rangeIdModeIndex": -1,
+            "_extraRangeIdModeIndices": [],
+            "_rangeIdUsageType": 7,
+            "_writeDurationToAttackBlackboard": 0,
+            "_attachSignalIds": 0,
+            "_extraAbilities": [],
+            "_useEscapeTime": 0,
+            "_earlySkillFinishAtAttackFinished": 0,
+            "_showProgressToNext": 0,
+            "_hideSkillStackCount": 0,
+            "_hideHudSkillStackCount": 0,
+            "_playSkillBeginAnim": 0,
+            "_beginAnim": "",
+            "_beginAnimDown": "",
+            "_beginEffect": [],
+            "_useFaceVector": 0,
+            "_beginAnimValidator": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "_availableValidator": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "_attachInDummy": 1
+          }
+        },
+        {
+          "node_id": "3554766796922869773",
+          "type": "Torappu.Battle.Abilities.PassiveBuffAbility",
+          "script": {
+            "status": "resolved",
+            "type": "Torappu.Battle.Abilities.PassiveBuffAbility",
+            "assembly": "Assembly-CSharp.dll",
+            "script_cab": "CAB-658d74aab777086fc32b93f385be999a",
+            "script_path_id": "3800760148018415462",
+            "script_bundle_sha256": "cec3e04633d6166a305bc4fd3c20cc36add42c77caffacdb9cb2c7e069053ea3"
+          },
+          "fields": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "-5061119516582946803"
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "3800760148018415462"
+            },
+            "m_Name": "",
+            "_selector": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "_metadata": {
+              "namedAsAlias": "",
+              "blackboardPrefix": ""
+            },
+            "_interruptAbilityOnDetach": 0,
+            "_attachPassiveBuffsOnDummy": 1,
+            "_ignoreIfOwnerDead": 0,
+            "_forceAsDmgOrHealAbility": 0,
+            "_buffs": [
+              {
+                "attributes": {
+                  "abnormalFlags": [],
+                  "abnormalImmunes": [],
+                  "abnormalAntis": [],
+                  "abnormalCombos": [],
+                  "abnormalComboImmunes": [],
+                  "attributeModifiers": [
+                    {
+                      "attributeType": 1,
+                      "formulaItem": 1,
+                      "value": 0.0,
+                      "loadFromBlackboard": 1,
+                      "fetchBaseValueFromSourceEntity": 0
+                    },
+                    {
+                      "attributeType": 2,
+                      "formulaItem": 1,
+                      "value": 0.0,
+                      "loadFromBlackboard": 1,
+                      "fetchBaseValueFromSourceEntity": 0
+                    }
+                  ]
+                },
+                "buffKey": "zumama_s_1",
+                "loadFromDB": 0,
+                "isDurableBuff": 0,
+                "isDamageMissable": 0,
+                "isSilenceable": 0,
+                "isStunnable": 0,
+                "isFreezable": 0,
+                "isLevitatable": 0,
+                "statusResistable": 2,
+                "templateKey": "empty",
+                "disableOverride": 0,
+                "overrideKey": "",
+                "overrideType": 0,
+                "maxStackCnt": 1,
+                "refreshRemainingTimeWhenStackMax": 0,
+                "clearAllStackCntWhenTimeUp": 0,
+                "maxValidStackCnt": -1,
+                "independentCharacterSource": 0,
+                "overrideEffectKey": "zumama_skill_01_buff_F",
+                "overrideOnEventPriority": 0,
+                "onEventPriority": 0,
+                "audioSignal": "",
+                "lifeTimeType": 2,
+                "takeSnapshotWhenExtend": 0,
+                "durationKey": "",
+                "lifeTime": 0.0,
+                "triggerLifeType": 0,
+                "triggerCnt": 0,
+                "triggerInterval": -1.0,
+                "waitFirstTriggerInterval": 1,
+                "firstTriggerInterval": -1.0,
+                "priority": -1,
+                "priorityBBKeys": [],
+                "stripBlackboardParamsWithBuffKey": 0,
+                "blackboard": [],
+                "enableInitDirectionFromSource": 0
+              }
+            ]
+          }
+        }
+      ],
+      "levels": [
+        {
+          "name": "轻型挂斧",
+          "rangeId": null,
+          "description": "攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "spData": {
+            "spType": 8,
+            "levelUpCost": null,
+            "maxChargeTime": 0,
+            "spCost": 0,
+            "initSp": 0,
+            "increment": 0.0
+          },
+          "prefabId": "skchr_zumama_1",
+          "duration": 0.0,
+          "blackboard": [
+            {
+              "key": "def",
+              "value": 0.1,
+              "valueStr": null
+            },
+            {
+              "key": "atk",
+              "value": 0.1,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "轻型挂斧",
+          "rangeId": null,
+          "description": "攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "spData": {
+            "spType": 8,
+            "levelUpCost": null,
+            "maxChargeTime": 0,
+            "spCost": 0,
+            "initSp": 0,
+            "increment": 0.0
+          },
+          "prefabId": "skchr_zumama_1",
+          "duration": 0.0,
+          "blackboard": [
+            {
+              "key": "def",
+              "value": 0.11,
+              "valueStr": null
+            },
+            {
+              "key": "atk",
+              "value": 0.11,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "轻型挂斧",
+          "rangeId": null,
+          "description": "攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "spData": {
+            "spType": 8,
+            "levelUpCost": null,
+            "maxChargeTime": 0,
+            "spCost": 0,
+            "initSp": 0,
+            "increment": 0.0
+          },
+          "prefabId": "skchr_zumama_1",
+          "duration": 0.0,
+          "blackboard": [
+            {
+              "key": "def",
+              "value": 0.12,
+              "valueStr": null
+            },
+            {
+              "key": "atk",
+              "value": 0.12,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "轻型挂斧",
+          "rangeId": null,
+          "description": "攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "spData": {
+            "spType": 8,
+            "levelUpCost": null,
+            "maxChargeTime": 0,
+            "spCost": 0,
+            "initSp": 0,
+            "increment": 0.0
+          },
+          "prefabId": "skchr_zumama_1",
+          "duration": 0.0,
+          "blackboard": [
+            {
+              "key": "def",
+              "value": 0.14,
+              "valueStr": null
+            },
+            {
+              "key": "atk",
+              "value": 0.14,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "轻型挂斧",
+          "rangeId": null,
+          "description": "攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "spData": {
+            "spType": 8,
+            "levelUpCost": null,
+            "maxChargeTime": 0,
+            "spCost": 0,
+            "initSp": 0,
+            "increment": 0.0
+          },
+          "prefabId": "skchr_zumama_1",
+          "duration": 0.0,
+          "blackboard": [
+            {
+              "key": "def",
+              "value": 0.15,
+              "valueStr": null
+            },
+            {
+              "key": "atk",
+              "value": 0.15,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "轻型挂斧",
+          "rangeId": null,
+          "description": "攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "spData": {
+            "spType": 8,
+            "levelUpCost": null,
+            "maxChargeTime": 0,
+            "spCost": 0,
+            "initSp": 0,
+            "increment": 0.0
+          },
+          "prefabId": "skchr_zumama_1",
+          "duration": 0.0,
+          "blackboard": [
+            {
+              "key": "def",
+              "value": 0.16,
+              "valueStr": null
+            },
+            {
+              "key": "atk",
+              "value": 0.16,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "轻型挂斧",
+          "rangeId": null,
+          "description": "攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "spData": {
+            "spType": 8,
+            "levelUpCost": null,
+            "maxChargeTime": 0,
+            "spCost": 0,
+            "initSp": 0,
+            "increment": 0.0
+          },
+          "prefabId": "skchr_zumama_1",
+          "duration": 0.0,
+          "blackboard": [
+            {
+              "key": "def",
+              "value": 0.18,
+              "valueStr": null
+            },
+            {
+              "key": "atk",
+              "value": 0.18,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "轻型挂斧",
+          "rangeId": null,
+          "description": "攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "spData": {
+            "spType": 8,
+            "levelUpCost": null,
+            "maxChargeTime": 0,
+            "spCost": 0,
+            "initSp": 0,
+            "increment": 0.0
+          },
+          "prefabId": "skchr_zumama_1",
+          "duration": 0.0,
+          "blackboard": [
+            {
+              "key": "def",
+              "value": 0.2,
+              "valueStr": null
+            },
+            {
+              "key": "atk",
+              "value": 0.2,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "轻型挂斧",
+          "rangeId": null,
+          "description": "攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "spData": {
+            "spType": 8,
+            "levelUpCost": null,
+            "maxChargeTime": 0,
+            "spCost": 0,
+            "initSp": 0,
+            "increment": 0.0
+          },
+          "prefabId": "skchr_zumama_1",
+          "duration": 0.0,
+          "blackboard": [
+            {
+              "key": "def",
+              "value": 0.22,
+              "valueStr": null
+            },
+            {
+              "key": "atk",
+              "value": 0.22,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "name": "轻型挂斧",
+          "rangeId": null,
+          "description": "攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "spData": {
+            "spType": 8,
+            "levelUpCost": null,
+            "maxChargeTime": 0,
+            "spCost": 0,
+            "initSp": 0,
+            "increment": 0.0
+          },
+          "prefabId": "skchr_zumama_1",
+          "duration": 0.0,
+          "blackboard": [
+            {
+              "key": "def",
+              "value": 0.25,
+              "valueStr": null
+            },
+            {
+              "key": "atk",
+              "value": 0.25,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "boundaries": [
+    "Passive attach lifecycle is modeled as a pure source binding, not an active cast or SP lock.",
+    "PassiveAttachment feeds its finite additive Buff to each successful source mode hit; native exact attach/attack frame order is not recovered.",
+    "All copied templates/fields and source levels are retained; no skill-ID allowlist is used for admission."
+  ]
+}

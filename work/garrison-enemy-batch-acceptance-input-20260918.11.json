@@ -1,0 +1,16 @@
+{
+  "batch": "20260918.11-enemy-auras",
+  "scope": "enemy-auras",
+  "before": "work/garrison-enemy-checked-before-20260918.11.json",
+  "output": "work/garrison-enemy-batch-acceptance-20260918-11.json",
+  "validations": [
+    "work/enemy-aura-contract.json",
+    "work/enemy-aura-sluggish-source.json",
+    ".runtime/enemy-auras-receipts.json",
+    "tools/_enemy_auras_smoke.js"
+  ],
+  "tasks": {
+    "enemy/enemy_1234_dsubrl/talent/source-aura-body": "2026-09-18：enemy_auras.py完整三Talent与空普通模式校验，tools/_enemy_auras_smoke.js真实两成员spawn/半径0.5/首次1秒/退出重入/多来源/死亡、实际法伤105或120与当前攻击力神经、零伤/盾/skip不派、受击SP为0且无伪普攻、精确sluggish写入与读取覆盖及其它减速保留、抵抗/免疫通过；双来源.65中段存档后2秒恢复损HP450/神经30，battle与RNG一致，见.runtime/enemy-auras-receipts.json。静态圆跨版本映射、首周期、正伤事件门和覆盖胜者为显式模型；只勾三Talent限定主体，不等同整敌或阶段闭环。",
+    "enemy/enemy_1234_dsubrl_2/talent/source-aura-body": "2026-09-18：enemy_auras.py完整三Talent与空普通模式校验，tools/_enemy_auras_smoke.js真实两成员spawn/半径0.5/首次1秒/退出重入/多来源/死亡、实际法伤105或120与当前攻击力神经、零伤/盾/skip不派、受击SP为0且无伪普攻、精确sluggish写入与读取覆盖及其它减速保留、抵抗/免疫通过；双来源.65中段存档后2秒恢复损HP450/神经30，battle与RNG一致，见.runtime/enemy-auras-receipts.json。静态圆跨版本映射、首周期、正伤事件门和覆盖胜者为显式模型；只勾三Talent限定主体，不等同整敌或阶段闭环。"
+  }
+}

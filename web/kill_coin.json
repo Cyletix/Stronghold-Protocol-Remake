@@ -1,0 +1,656 @@
+[
+ {
+  "enemyId": "enemy_1041_lazerd_2",
+  "round": 1,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_1439_dslntf",
+  "round": 1,
+  "count": 1,
+  "coin": 3
+ },
+ {
+  "enemyId": "enemy_1299_ymkilr",
+  "round": 1,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_10084_hlegle",
+  "round": 1,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_1026_aghost",
+  "round": 1,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_1006_shield",
+  "round": 1,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_1404_msnip",
+  "round": 1,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_1299_ymkilr",
+  "round": 99,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_1007_slime",
+  "round": 1,
+  "count": 1,
+  "coin": 0
+ },
+ {
+  "enemyId": "enemy_2001_duckmi",
+  "round": 1,
+  "count": 1,
+  "coin": 3
+ },
+ {
+  "enemyId": "enemy_2002_bearmi",
+  "round": 1,
+  "count": 1,
+  "coin": 3
+ },
+ {
+  "enemyId": "enemy_2034_sythef",
+  "round": 1,
+  "count": 1,
+  "coin": 3
+ },
+ {
+  "enemyId": "enemy_2085_skzjxd",
+  "round": 1,
+  "count": 1,
+  "coin": 3
+ },
+ {
+  "enemyId": "enemy_1500_skulsr",
+  "round": 1,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_1501_demonk",
+  "round": 1,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_1502_crowns",
+  "round": 1,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_1511_mdrock",
+  "round": 1,
+  "count": 1,
+  "coin": 4
+ },
+ {
+  "enemyId": "enemy_1513_dekght",
+  "round": 1,
+  "count": 1,
+  "coin": 3
+ },
+ {
+  "enemyId": "enemy_1513_dekght_2",
+  "round": 1,
+  "count": 1,
+  "coin": 3
+ },
+ {
+  "enemyId": "enemy_2005_axetro",
+  "round": 1,
+  "count": 1,
+  "coin": 4
+ },
+ {
+  "enemyId": "enemy_2004_balloon",
+  "round": 1,
+  "count": 1,
+  "coin": 3
+ },
+ {
+  "enemyId": "enemy_1516_jakill",
+  "round": 1,
+  "count": 1,
+  "coin": 4
+ },
+ {
+  "enemyId": "enemy_1504_cqbw",
+  "round": 1,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_1509_mousek",
+  "round": 1,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_1050_lslime",
+  "round": 1,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_1001_bigbo",
+  "round": 1,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_1517_xi",
+  "round": 1,
+  "count": 1,
+  "coin": 4
+ },
+ {
+  "enemyId": "enemy_1525_blkswb",
+  "round": 1,
+  "count": 1,
+  "coin": 5
+ },
+ {
+  "enemyId": "enemy_1535_wlfmster",
+  "round": 1,
+  "count": 1,
+  "coin": 5
+ },
+ {
+  "enemyId": "enemy_2008_flking",
+  "round": 1,
+  "count": 1,
+  "coin": 4
+ },
+ {
+  "enemyId": "enemy_2003_rockman",
+  "round": 1,
+  "count": 1,
+  "coin": 5
+ },
+ {
+  "enemyId": "enemy_10118_ymgprc",
+  "round": 1,
+  "count": 1,
+  "coin": 3
+ },
+ {
+  "enemyId": "enemy_1512_mcmstr",
+  "round": 1,
+  "count": 1,
+  "coin": 5
+ },
+ {
+  "enemyId": "enemy_1539_reid",
+  "round": 1,
+  "count": 1,
+  "coin": 6
+ },
+ {
+  "enemyId": "enemy_2048_smgrd",
+  "round": 1,
+  "count": 1,
+  "coin": 3
+ },
+ {
+  "enemyId": "enemy_2050_smsha",
+  "round": 1,
+  "count": 1,
+  "coin": 3
+ },
+ {
+  "enemyId": "enemy_2052_smgia",
+  "round": 1,
+  "count": 1,
+  "coin": 3
+ },
+ {
+  "enemyId": "enemy_9006_actoxi",
+  "round": 99,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_9007_acelem",
+  "round": 99,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_9008_acbunn",
+  "round": 99,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_9009_acfort",
+  "round": 99,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_9010_acpupp",
+  "round": 99,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_9011_acrefr",
+  "round": 99,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_1005_yokai",
+  "round": 2,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_1040_bombd",
+  "round": 2,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_1041_lazerd",
+  "round": 2,
+  "count": 1,
+  "coin": 3
+ },
+ {
+  "enemyId": "enemy_1195_sfyin",
+  "round": 2,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_1203_sfhu",
+  "round": 2,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_1209_sfden",
+  "round": 2,
+  "count": 1,
+  "coin": 3
+ },
+ {
+  "enemyId": "enemy_1148_dssbr",
+  "round": 2,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_1161_tidmag",
+  "round": 2,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_1162_magmot",
+  "round": 2,
+  "count": 1,
+  "coin": 3
+ },
+ {
+  "enemyId": "enemy_1267_nhpbr_2",
+  "round": 2,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_1270_nhstlk",
+  "round": 2,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_1272_nhtank",
+  "round": 2,
+  "count": 1,
+  "coin": 3
+ },
+ {
+  "enemyId": "enemy_1019_jshoot",
+  "round": 2,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_1023_jmage",
+  "round": 2,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_1299_ymkilr",
+  "round": 2,
+  "count": 1,
+  "coin": 3
+ },
+ {
+  "enemyId": "enemy_1169_duphlx",
+  "round": 2,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_1168_dumage",
+  "round": 2,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_1174_duholy",
+  "round": 2,
+  "count": 1,
+  "coin": 3
+ },
+ {
+  "enemyId": "enemy_1092_mdgint",
+  "round": 1,
+  "count": 1,
+  "coin": 3
+ },
+ {
+  "enemyId": "enemy_1302_ymtro_2",
+  "round": 1,
+  "count": 1,
+  "coin": 3
+ },
+ {
+  "enemyId": "enemy_1062_rager_2",
+  "round": 1,
+  "count": 1,
+  "coin": 3
+ },
+ {
+  "enemyId": "enemy_1415_mmkabi_2",
+  "round": 1,
+  "count": 1,
+  "coin": 3
+ },
+ {
+  "enemyId": "enemy_1364_spnaxe_2",
+  "round": 1,
+  "count": 1,
+  "coin": 3
+ },
+ {
+  "enemyId": "enemy_1273_stmgun_2",
+  "round": 1,
+  "count": 1,
+  "coin": 3
+ },
+ {
+  "enemyId": "enemy_10144_xdelk_2",
+  "round": 1,
+  "count": 1,
+  "coin": 3
+ },
+ {
+  "enemyId": "enemy_10159_mntrjn",
+  "round": 1,
+  "count": 1,
+  "coin": 3
+ },
+ {
+  "enemyId": "enemy_10141_xdpeng_2",
+  "round": 1,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_10127_rkmbst_2",
+  "round": 1,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_10097_crshd",
+  "round": 1,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_10081_mpplai",
+  "round": 1,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_1041_lazerd_2",
+  "round": 1,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_1321_wdarft",
+  "round": 1,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_1203_sfhu_2",
+  "round": 1,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_1207_sfji_2",
+  "round": 1,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_10067_ftsjc",
+  "round": 1,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_1439_dslntf_2",
+  "round": 1,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_9006_actoxi",
+  "round": 1,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_1272_nhtank_2",
+  "round": 1,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_1404_msnip",
+  "round": 1,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_1283_sgkill_2",
+  "round": 1,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_1170_dushld_2",
+  "round": 1,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_1172_dugago_2",
+  "round": 1,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_10138_xdsnow",
+  "round": 2,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_10156_mncrer",
+  "round": 2,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_10112_ymgds",
+  "round": 2,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_2009_csaudc",
+  "round": 2,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_10116_ymgtop",
+  "round": 2,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_10162_mnctpt",
+  "round": 2,
+  "count": 1,
+  "coin": 3
+ },
+ {
+  "enemyId": "enemy_10094_crstf",
+  "round": 2,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_10073_mpcar",
+  "round": 2,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_1021_bslime",
+  "round": 2,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_10087_hlchgr",
+  "round": 2,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_1025_reveng",
+  "round": 2,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_10098_crhro",
+  "round": 2,
+  "count": 1,
+  "coin": 3
+ },
+ {
+  "enemyId": "enemy_10040_cnvbln",
+  "round": 2,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_10001_trslim",
+  "round": 2,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_1165_duhond_2",
+  "round": 2,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_10045_parrot",
+  "round": 2,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_10044_wintun",
+  "round": 2,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_10099_crvln",
+  "round": 2,
+  "count": 1,
+  "coin": 3
+ },
+ {
+  "enemyId": "enemy_1267_nhpbr",
+  "round": 2,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_1197_sfshu",
+  "round": 2,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_1009_lurker",
+  "round": 2,
+  "count": 1,
+  "coin": 1
+ },
+ {
+  "enemyId": "enemy_10018_sgrobh",
+  "round": 2,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_1183_mlasrt",
+  "round": 2,
+  "count": 1,
+  "coin": 2
+ },
+ {
+  "enemyId": "enemy_10054_cjhot",
+  "round": 2,
+  "count": 1,
+  "coin": 3
+ }
+]

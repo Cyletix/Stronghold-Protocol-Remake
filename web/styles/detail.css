@@ -1,0 +1,146 @@
+/* ===== 干员详情抽屉组件（od-*，hand-detail 与 shop-preview 共用） =====
+   .od-header 是 2D HUD 坐标平面：子元素全部绝对定位锚点，不用 flex/grid 自动分配
+   层次：art(立绘背景) → fade(左侧可读性) → txt(HUD+detail，全不透明) */
+/* HUD 层：上半屏坐标平面（顶部贴卡片顶，底部贴 HP bar，左右为卡片宽度） */
+.od-header{position:relative;flex:none;width:100%;height:425px;min-height:425px;padding:0;margin:0;display:block;}
+/* 左上：职业图标（官方 OBB 高清 PNG） */
+.od-skill-icon{position:absolute;left:15px;top:124px;width:60px;height:60px;margin:0;z-index:20;object-fit:contain;filter:drop-shadow(0 0 6px rgba(0,0,0,0.6));}
+/* 装备/装置详情：主图标（比职业图标大，主信息）+ 名称 + 效果 */
+.eq-main-icon{position:absolute;left:14px;top:120px;width:82px;height:82px;margin:0;z-index:20;object-fit:contain;filter:drop-shadow(0 0 6px rgba(0,0,0,0.6));}
+.eq-name{position:absolute;left:14px;top:210px;margin:0;z-index:20;font-size:22px;line-height:1;font-weight:700;color:#fff;text-shadow:0 1px 4px #000;white-space:nowrap;}
+.eq-effect{position:absolute;left:15px;top:290px;right:15px;margin:0;z-index:20;font-size:13px;line-height:1.6;color:#cbd0dc;}
+/* 名字（图标下方） */
+.od-namerow{position:absolute;left:15px;top:198px;display:flex;align-items:baseline;gap:5px;width:max-content;margin:0;z-index:20;min-width:0;white-space:nowrap;}
+.od-title{font-size:22px;line-height:1;font-weight:700;white-space:nowrap;color:#fff;text-shadow:0 1px 4px #000;}
+.od-app{font-size:12px;line-height:1;white-space:nowrap;opacity:.65;color:#9aa0b0;font-weight:normal;letter-spacing:0.5px;}
+/* 等阶 + 精英化 + LV 同行 */
+.od-tierrow{position:absolute;left:15px;top:240px;display:flex;align-items:center;gap:7px;width:max-content;margin:0;z-index:20;height:34px;}
+.od-tierbadge{flex:none;display:flex;align-items:center;justify-content:center;min-width:34px;height:34px;padding:0 6px;background:rgba(0,0,0,0.5);border:1px solid;border-radius:4px;font-size:16px;font-weight:bold;line-height:1.3;}
+.od-eliteicon{flex:none;display:flex;align-items:center;justify-content:center;height:34px;padding:0 6px;background:rgba(12,15,22,0.6);border:1px solid rgba(140,150,170,0.4);border-radius:4px;color:#ffd54f;font-size:15px;font-weight:bold;letter-spacing:1px;}
+.od-lvrow{display:inline-flex;align-items:baseline;gap:3px;color:#8a93a6;font-size:12px;line-height:1;white-space:nowrap;}
+.od-lvrow b{font-size:25px;line-height:1;font-weight:bold;color:#fff;text-shadow:0 1px 5px #000;font-variant-numeric:tabular-nums;}
+.od-lvrow .od-elite{color:#ffd54f;font-weight:bold;font-size:13px;margin-left:4px;}
+.od-elite{color:#ffd54f;font-weight:bold;}
+/* 左下：五维数值（紧凑两列 grid，紧贴 HP 横线上方） */
+.od-stat-list{position:absolute;left:15px;top:290px;display:grid;grid-template-columns:38px max-content;column-gap:8px;row-gap:4px;width:max-content;padding:0;margin:0;list-style:none;z-index:20;font-size:14px;color:#9aa0b0;}
+.od-stat-list li{display:contents;}
+.od-stat-list li span{grid-column:1;white-space:nowrap;color:#8a93a6;}
+.od-stat-list li b{grid-column:2;white-space:nowrap;text-align:left;font-variant-numeric:tabular-nums;color:#eaf4ff;font-weight:bold;}
+/* 右栏 HUD 基础容器 */
+.od-widget{background:rgba(12,15,22,0.6);border:1px solid rgba(140,150,170,0.35);border-radius:3px;padding:6px 4px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;overflow:visible;}
+/* 中下：攻击范围（固定锚点） */
+.od-rangebox{position:absolute;left:117px;top:290px;width:114px;height:114px;box-sizing:border-box;margin:0;z-index:20;}
+/* 右下：盟约（固定锚点） */
+.od-bond{position:absolute;left:252px;top:290px;width:200px;height:114px;box-sizing:border-box;margin:0;z-index:20;display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:8px;padding:8px;}
+.od-wlabel{font-size:10px;color:#8a93a6;text-align:center;margin-top:4px;letter-spacing:1px;line-height:1.2;}
+.od-range{display:flex;justify-content:center;align-items:center;width:100%;flex:1;min-width:0;min-height:0;}
+/* 攻击范围：2D 矩阵，统一 20px 方格 + 居中，不随容器撑满变形 */
+.od-rangegrid{display:grid;gap:2px;grid-auto-flow:row;place-content:center;grid-auto-rows:var(--range-cell,20px);}
+.od-rangegrid span{display:block;width:var(--range-cell,20px);height:var(--range-cell,20px);box-sizing:border-box;}
+.od-rangebox .od-wlabel{display:block;width:100%;margin-top:4px;text-align:center;white-space:nowrap;font-size:10px;line-height:1.15;}
+/* 盟约：大图标（约范围 60%）+ 名字在下方 */
+.od-bonditem{display:flex;flex-direction:column;align-items:center;gap:4px;flex:none;}
+.od-bondicon{width:68px;height:68px;object-fit:contain;border-radius:6px;background:rgba(10,14,20,0.5);border:1px solid rgba(140,150,170,0.35);}
+.od-bondname{font-size:11px;color:#d7dce6;text-align:center;line-height:1.2;max-width:76px;}
+/* HP bar：固定到 Hero/Detail 边界 */
+.od-hpbar{position:absolute;left:10px;right:10px;top:420px;height:14px;margin:0;z-index:40;}
+.od-hptrack{position:absolute;left:0;right:0;top:4px;height:8px;background:rgba(10,15,21,0.92);border-radius:0;overflow:hidden;border:1px solid rgba(79,208,232,0.5);}
+.od-hpfill{height:100%;background:linear-gradient(90deg,#1f9cc0,#4fd0e8);}
+.od-hpbadge{position:absolute;right:0;top:0;width:auto;margin:0;white-space:nowrap;z-index:2;height:11px;line-height:11px;padding:0 8px;background:#22a8c9;color:#fff;font-size:10px;font-weight:bold;border-radius:0;}
+/* 下半区 Detail 覆盖层：向下渐深 */
+.od-body{flex:1 1 auto;min-height:0;position:relative;display:flex;flex-direction:column;overflow:hidden;background:none;margin:0;padding:0;z-index:10;}
+/* 黑色 detail 面板：从 50% 起渐到黑（覆盖层在内容之后、文字之前），让立绘不干扰文字 */
+.od-body::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:linear-gradient(180deg,rgba(7,11,16,0.50) 0%,rgba(7,11,16,0.52) 8%,rgba(7,11,16,0.58) 18%,rgba(7,11,16,0.70) 32%,rgba(7,11,16,0.88) 55%,rgba(7,11,16,0.96) 100%);}
+.od-body > *{position:relative;z-index:1;}
+.od-equip{overflow-y:auto;}
+/* Tabs */
+.od-tabs{flex:none;position:relative;display:grid;grid-template-columns:repeat(4,1fr);height:54px;padding:0;margin:0;}
+.od-tab{position:relative;display:flex;align-items:center;justify-content:center;height:54px;padding:0;margin:0;line-height:1;background:none;border:none;border-bottom:2px solid rgba(255,255,255,0.1);color:#8a93a6;font-size:13px;cursor:pointer;user-select:none;}
+.od-tab.on{color:#fff;font-weight:bold;}
+.od-tab.on::after{content:"";position:absolute;left:10%;right:10%;bottom:0;height:2px;background:#4fd0e8;}
+.od-tabbody{flex:1 1 auto;min-height:0;overflow-y:auto;font-size:13px;color:#cbd0dc;line-height:1.6;padding:14px 12px 0;}
+.od-empty{color:#6b7385;font-size:12px;text-align:center;padding:14px 0;}
+.od-sec{margin-top:6px;padding-top:7px;border-top:1px solid rgba(255,255,255,0.10);font-size:12px;line-height:1.6;color:#cbd0dc;}
+.od-sec:first-child{margin-top:0;padding-top:0;border-top:none;}
+.od-tiericon{display:inline-block;vertical-align:middle;width:30px;height:30px;margin-right:4px;object-fit:contain;filter:drop-shadow(0 1px 2px rgba(0,0,0,0.7));}
+.od-sk-icon{display:inline-block;vertical-align:middle;width:34px;height:34px;margin-right:6px;object-fit:contain;filter:drop-shadow(0 0 3px rgba(0,0,0,0.6));}
+.od-sk-name{color:#ffd54f;font-size:13px;}
+.od-tal-name{color:#b9a5ff;}
+.od-hl{color:#8fb7ff;}
+.od-num{color:#4fd0e8;}
+.od-tag{font-size:10px;color:#8fb7ff;background:rgba(40,45,58,0.8);border:1px solid #3a4052;border-radius:3px;padding:0 5px;margin-left:4px;}
+.od-feat{background:rgba(26,33,44,0.7);border-left:2px solid #4fd0e8;border-radius:3px;padding:6px 8px;margin-bottom:6px;font-size:12px;color:#cfd6e4;line-height:1.6;}
+.od-trait{display:grid;grid-template-columns:72px minmax(0,1fr);column-gap:12px;align-items:start;padding:8px 0;margin-bottom:6px;border-bottom:1px solid rgba(255,255,255,0.08);}
+.od-trait:last-child{border-bottom:none;}
+.od-itemicon{width:72px;height:72px;flex:none;border-radius:3px;background:#141a22;border:1px solid #3a4354;overflow:hidden;display:flex;align-items:center;justify-content:center;position:relative;}
+.od-itemicon img{display:block;width:100%;height:100%;object-fit:contain;}
+.od-itemicon.od-gold{border-color:#c9a227;box-shadow:0 0 0 1px rgba(201,162,39,0.35);}
+.od-itemdesc{min-width:0;padding-right:8px;}
+.od-itemdesc h4{margin:1px 0 5px;font-size:14px;color:#fff;font-weight:bold;line-height:1.2;}
+.od-itemdesc p{margin:0;font-size:12.5px;color:#b8c0cf;line-height:1.48;overflow-wrap:break-word;}
+.od-goldtag{font-size:9px;color:#0d0f16;background:#e8c14d;border-radius:2px;padding:0 4px;vertical-align:middle;font-weight:bold;}
+.od-trait .ba-tag.ba-vup{color:#5ecfff;background:rgba(79,195,247,0.12);border-bottom-color:rgba(79,195,247,0.6);}
+.od-equip-desc{margin-top:8px;font-size:12.5px;color:#cbd0dc;line-height:1.7;}
+/* 商店预览购买确认按钮（手牌详情复用同一按钮） */
+#shop-preview .buy-confirm{pointer-events:auto;}
+#hand-detail .buy-confirm{pointer-events:auto;background:#2e7d32;color:#fff;border:none;border-radius:6px;padding:6px 12px;font-size:12px;cursor:pointer;font-weight:bold;box-shadow:0 2px 8px rgba(0,0,0,0.55);}
+/* 富文本词条（天赋/技能里的 <$ba.*>/<@ba.*> 等）：高亮关键词 + 下划虚线提示 tooltip */
+.ba-tag{color:#e8d27a;background:rgba(255,213,79,0.10);border-bottom:1px dotted rgba(255,213,79,0.55);padding:0 2px;border-radius:2px;cursor:help;}
+.ba-tag.ba-kw{color:#7ec7ff;background:rgba(79,195,247,0.10);border-bottom-color:rgba(79,195,247,0.55);}
+.ba-tag.ba-vup{color:#8bc34a;}
+.ba-tag.ba-vdown{color:#ef9a9a;}
+.ba-tag.ba-enemy{color:#ef9a9a;}
+.ba-tag.ba-drop{color:#ce93d8;}
+/* 剩余可放置角色提示（右下角气泡，浮于棋盘之上） */
+#placement{position:absolute;right:16px;bottom:calc(var(--shop-h) + 58px);z-index:11;background:rgba(16,18,26,0.9);border:1px solid #3a3f52;border-radius:999px;padding:6px 14px;font-size:13px;color:#e8e8f0;box-shadow:0 4px 14px rgba(0,0,0,0.5);}
+#placement #placement-num{font-size:20px;font-weight:bold;color:#ffd54f;margin-right:4px;}
+#opinfo{position:absolute;top:56px;left:16px;z-index:20;width:224px;background:rgba(16,18,26,0.92);border:1px solid #3a3f52;border-radius:10px;padding:10px;box-shadow:0 6px 24px rgba(0,0,0,0.5);display:none;backdrop-filter:blur(4px);}
+#opinfo .oi-head{display:flex;gap:8px;align-items:flex-start;}
+#opinfo .oi-port{width:74px;height:74px;border-radius:8px;object-fit:cover;background:#222;flex:none;border:1px solid #444;}
+#opinfo .oi-name{font-size:15px;font-weight:bold;color:#fff;line-height:1.25;}
+#opinfo .oi-app{font-size:11px;color:#9aa0b0;}
+#opinfo .oi-elite{font-size:11px;color:#ffd54f;margin-top:2px;}
+#opinfo .oi-lv{font-size:12px;color:#8fb7ff;margin-top:2px;}
+#opinfo .oi-hpbar{height:9px;background:#2a3040;border-radius:5px;margin:7px 0 2px;overflow:hidden;position:relative;}
+#opinfo .oi-hpfill{height:100%;background:linear-gradient(90deg,#4caf50,#8bc34a);border-radius:5px;}
+#opinfo .oi-hptxt{font-size:11px;color:#e8e8f0;text-align:right;margin-bottom:6px;}
+#opinfo .oi-stats{display:flex;flex-wrap:wrap;gap:4px 10px;font-size:12px;color:#cbd0dc;margin:4px 0 8px;}
+#opinfo .oi-stats b{color:#ffd54f;}
+#opinfo .oi-skill{margin-top:6px;padding-top:8px;border-top:1px solid #3a3f52;font-size:12px;line-height:1.6;}
+#opinfo .oi-skill .sk-name{font-size:13px;font-weight:bold;color:#ffd54f;}
+#opinfo .oi-skill .sk-tag{font-size:10px;color:#8fb7ff;}
+#opinfo .oi-skill .sk-desc{color:#9aa0b0;font-size:11.5px;}
+#opinfo .oi-talent{margin-top:6px;padding-top:8px;border-top:1px solid #3a3f52;font-size:11.5px;line-height:1.6;color:#b9a5ff;}
+
+#opinfo .oi-range{margin-top:6px;font-size:11px;color:#8fb7ff;}
+#opinfo .oi-close{position:absolute;top:6px;right:8px;background:none;border:none;color:#9aa0b0;font-size:15px;cursor:pointer;line-height:1;}
+#cv{display:block;width:100vw;height:100vh;border:none;background:transparent;}
+#side{position:absolute;right:16px;bottom:16px;z-index:18;width:236px;padding:10px;background:rgba(16,18,26,0.94);border:1px solid #3a3f52;border-radius:10px;display:none;box-shadow:0 6px 24px rgba(0,0,0,0.55);backdrop-filter:blur(4px);}
+#side.show{display:block;}
+.selected-panel{background:#1c202b;border:1px solid #3a3f52;border-radius:10px;padding:10px;}
+.lbl{font-size:13px;color:#8fb7ff;margin:10px 0 6px;font-weight:bold;}
+.cards{display:flex;flex-wrap:wrap;gap:6px;}
+.card{background:#1c202b;border:2px solid #555;border-radius:6px;padding:5px 7px;font-size:12px;cursor:pointer;line-height:1.35;user-select:none;min-width:64px;}
+.card:hover{background:#2a3040;}
+.card.sel{border-color:#ffd54f;background:#2a3040;}
+.card img{width:34px;height:34px;display:block;margin:2px auto;border-radius:4px;object-fit:cover;background:#333;}
+.card .nm{font-weight:bold;text-align:center;}
+.card .rt{color:#9aa0b0;text-align:center;font-size:11px;}
+.card .cs{color:#ffd54f;text-align:center;margin-top:2px;}
+.st{color:#4fc3f7;font-size:11px;}
+.mini{background:#2a3040;color:#e8e8f0;border:1px solid #444;border-radius:4px;padding:2px 8px;font-size:12px;cursor:pointer;margin-left:4px;}
+.mini:hover{background:#3a4358;}
+.tip{color:#9aa0b0;font-size:12px;line-height:1.7;margin-top:4px;}
+.bond{display:inline-flex;align-items:center;gap:6px;background:#1a241f;border:1px solid #2e4d3a;border-radius:18px;padding:3px 12px 3px 3px;font-size:13px;white-space:nowrap;}
+.bond b{color:#4fc3f7;font-size:13px;}
+.bond .bd{color:#9aa0b0;font-size:11.5px;margin:0;line-height:1.3;}
+.bond .ring{width:26px;height:26px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;background:#16332a;border:2px solid #4fc3f7;color:#4fc3f7;font-weight:bold;font-size:13px;}
+
+/* 文字保持清晰，背景暗层单独向右消失，避免详情形成黑色硬边。 */
+.tactical-control{display:block;min-height:44px;min-width:160px;max-width:100%;margin:12px 0;padding:10px 18px;border:1px solid #74baa8;background:#153c33;color:#cbffee;font:700 16px sans-serif;cursor:pointer}.tactical-control:hover{background:#216252}.tactical-control:disabled{opacity:.45;cursor:default}#hand-detail.equip .txt>p{max-width:330px;line-height:1.7}
+#hand-detail.tactical-detail{top:76px;bottom:auto;left:12px;width:min(310px,calc(100vw - 24px));height:auto;max-height:calc(100dvh - 190px);overflow:auto;border:1px solid #487e70;background:linear-gradient(100deg,#102820f5,#102820d9);padding:16px;box-sizing:border-box;scrollbar-color:#4f9d89 #102820}
+#hand-detail.tactical-detail .txt{position:relative;inset:auto;overflow:visible;display:block;font-size:14px}
+#hand-detail.tactical-detail h2{margin:0 0 10px;color:#65ebc9;font-size:23px}#hand-detail.tactical-detail p{margin:8px 0;line-height:1.55}#hand-detail.tactical-detail .tactical-control{width:100%}
+.od-body::before{-webkit-mask-image:linear-gradient(90deg,#000 0%,#000 45%,transparent 100%);mask-image:linear-gradient(90deg,#000 0%,#000 45%,transparent 100%);}
+
+#hand-detail.equip .od-header,#shop-preview.equip .od-header{height:290px;min-height:290px}#hand-detail.equip .od-tabbody,#shop-preview.equip .od-tabbody{font-size:14px;line-height:1.65;scrollbar-color:#498675 #10201c}

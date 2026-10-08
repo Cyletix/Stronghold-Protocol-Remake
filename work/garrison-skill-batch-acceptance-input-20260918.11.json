@@ -1,0 +1,16 @@
+{
+  "batch": "20260918.11-end-effects",
+  "before": "work/garrison-checked-before-20260918.11.json",
+  "output": "work/garrison-skill-batch-acceptance-20260918-11.json",
+  "validations": [
+    "work/skill-mode-end-effects-batch-contract.json",
+    ".runtime/skill-mode-end-effects-receipts.json",
+    "tools/_skill_mode_end_effects_smoke.js",
+    "tools/_skill_end_effect_consumers_smoke.js"
+  ],
+  "tasks": {
+    "op/char_422_aurora/skill/skchr_aurora_1/source-mode-body": "2026-09-18：完整CastSkill余图与结束后自身状态统一接入，极光有限抵抗及雷蛇概率命中保持原模式；tools/_skill_mode_end_effects_smoke.js通过30源等级、6真实赛季普通/精锐配置、9次主机恢复。tools/_skill_end_effect_consumers_smoke.js核自然行动/阻挡/装备/状态事件、真实净化保留armed、死亡复活；0/1概率不耗RNG、每目标一次。源图与原生开启武装/非affecting一次AddBuff见work/skill-mode-end-effects-batch-contract.json；结束原因、同键最长截止及独立目标随机为模型，仅限定主体，不勾整技能/天赋模组。",
+    "op/char_109_fmout/skill/skchr_fmout_2/source-mode-body": "2026-09-18：完整CastSkill余图与结束后自身状态统一接入，极光有限抵抗及雷蛇概率命中保持原模式；tools/_skill_mode_end_effects_smoke.js通过30源等级、6真实赛季普通/精锐配置、9次主机恢复。tools/_skill_end_effect_consumers_smoke.js核自然行动/阻挡/装备/状态事件、真实净化保留armed、死亡复活；0/1概率不耗RNG、每目标一次。源图与原生开启武装/非affecting一次AddBuff见work/skill-mode-end-effects-batch-contract.json；结束原因、同键最长截止及独立目标随机为模型，仅限定主体，不勾整技能/天赋模组。",
+    "op/char_107_liskam/skill/skchr_liskam_2/source-mode-body": "2026-09-18：完整CastSkill余图与结束后自身状态统一接入，极光有限抵抗及雷蛇概率命中保持原模式；tools/_skill_mode_end_effects_smoke.js通过30源等级、6真实赛季普通/精锐配置、9次主机恢复。tools/_skill_end_effect_consumers_smoke.js核自然行动/阻挡/装备/状态事件、真实净化保留armed、死亡复活；0/1概率不耗RNG、每目标一次。源图与原生开启武装/非affecting一次AddBuff见work/skill-mode-end-effects-batch-contract.json；结束原因、同键最长截止及独立目标随机为模型，仅限定主体，不勾整技能/天赋模组。"
+  }
+}

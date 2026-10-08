@@ -1,0 +1,16 @@
+{
+  "char_118_yuki":    { "effects": [{ "type": "buff_range", "power": 1 }], "note": "敌飙：攻击范围+" },
+  "char_302_glaze":   { "effects": [{ "type": "buff_range", "power": 1 }, { "type": "slow", "power": 0.4 }], "note": "阻挡弹：扩范围+停顿" },
+  "char_457_blitz":   { "effects": [{ "type": "slow", "power": 0.6 }], "note": "闪光护盾：晕眩+沉默（近似强减速）" },
+  "char_101_sora":    { "effects": [{ "type": "slow", "power": 0.6 }], "note": "睡眠之歌：沉睡（近似强减速）" },
+  "char_343_tknogi":  { "effects": [{ "type": "dodge", "power": 0.3 }], "note": "迹无：友军闪避（近似自身闪避）" },
+  "char_215_mantic":  { "effects": [{ "type": "slow", "power": 0.35 }], "note": "蝎毒：攻击减速" },
+  "char_241_panda":   { "effects": [{ "type": "slow", "power": 0.35 }], "note": "铁意六合：推+减速（近似减速）" },
+  "char_4036_forcer": { "effects": [{ "type": "slow", "power": 0.35 }], "note": "护身射击：推+晕眩（近似减速）" },
+  "char_248_mgllan":  { "effects": [{ "type": "slow", "power": 0.4 }], "note": "高效制冷模块：停顿" },
+  "char_4134_cetsyr": { "effects": [{ "type": "heal_self", "power": 0.05 }], "note": "往昔萦绕身旁：攻击回血（近似自疗）" },
+  "char_615_acspec":  { "effects": [{ "type": "dodge", "power": 0.3 }], "note": "物理的服从：闪避" },
+  "char_4123_ela":    { "effects": [{ "type": "slow", "power": 0.4 }], "note": "眩目阻滞：停顿+命中率（近似减速）" },
+  "char_282_catap":   { "effects": [{ "type": "aoe_damage", "power": 1.2 }], "note": "爆破范围提升：溅射（近似范围伤害）" },
+  "char_137_brownb":  { "effects": [{ "type": "dodge", "power": 0.25 }], "note": "高机动：物理闪避" }
+}

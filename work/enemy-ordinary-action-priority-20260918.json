@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "scope": "Read-only classification of the already frozen 13 actual-pool ordinary-action/channel gaps; no new extraction.",
+  "sources": {
+    "work/garrison-projectile-priority-action-cache.json": "188bf57f852a512408f767620a35ffe06ca5dcd94bcc4bd791a169556f125ad6",
+    "work/garrison-projectile-priority-resource-cache.json": "824491523dda0d3406c00ce05f77cde408c0240554293ec79115bab37f85e739",
+    "work/enemy-mode-channels.json": "724ddcad312bdf6e20f31dd04851254a71fb0d6b20d79b135ab239c345709092"
+  },
+  "nextSharedGroup": {
+    "memberSuffix": "acduml/_2; exact IDs must be resolved from cited frozen source",
+    "capabilities": [
+      "AbilitySelectableGroup branches with shared cooldown",
+      "MultiRangedAttack additional shots every 0.25 seconds",
+      "CircleRange projectile hit including enemy_9023_acdums selected mode"
+    ],
+    "closed": false
+  },
+  "boundaries": [
+    "Existing nextSharedProvider affected=8 has directCandidate=0; not eight ready integrations.",
+    "dsubrl/_2 have empty ordinary attacks and Aura; missing Aura is not two missing normal attacks.",
+    "lrcmra/_2 environment entry is already deferred; bombd already has a protected-native blocker.",
+    "emppnt AttachToTarget/lifetime delivery is a separate contract; ltnhor_2 still lacks mode entry, not its already integrated two skills.",
+    "Do not repeat per-enemy source inspection until implementing one complete shared group."
+  ]
+}

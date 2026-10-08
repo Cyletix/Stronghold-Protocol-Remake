@@ -1,0 +1,23 @@
+'use strict';
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),f=require('./_browser_fixture')();f.ctx.assert=assert;
+const classes=new Set(),badge={textContent:'',classList:{toggle:(key,on)=>on?classes.add(key):classes.delete(key)},setAttribute(key,value){this[key]=value;}};
+f.el('refresh-btn').querySelector=()=>badge;
+(async()=>{
+ await f.run('initMode();');await f.run(`chooseBand('band_amiya');
+ const cues=[];playSfx=name=>cues.push(name);
+ const entries=ROSTER_LIST.filter(e=>e.position==='MELEE'&&!G.bannedOperators.includes(e.charId)).slice(0,2);
+ const z=modeBattleZoneRows(BDATA.level),cells=[];
+ for(let row=z.lb;row<z.rb;row++)for(let col=0;col<BDATA.level.cols;col++)if(entries.every(e=>isDeployable(row,col,e)))cells.push({row,col});
+ assert.ok(cells.length>=3);G.ops=entries.map((entry,i)=>({id:i+1,charId:entry.charId,entry,row:null,col:null,equip:[],dir:'up'}));
+ onDeploy({id:1},cells[0].row,cells[0].col,'up');onDeploy({id:2},cells[1].row,cells[1].col,'up');assert.equal(cues.length,2);
+ cues.length=0;onMoveOp(1,cells[2].row,cells[2].col,'right');assert.deepEqual(cues,['b_char_set']);
+ onMoveOp(1,cells[1].row,cells[1].col,'left');assert.equal(cues.length,2,'a two-unit swap plays one cue');
+ onMoveOp(1,-1,-1,'up');assert.equal(cues.length,2,'rejected move is silent');
+ onMoveOp(1,cells[1].row,cells[1].col,'up');assert.equal(cues.length,2,'rotation without movement is silent');
+ G._garrisonFreeRefresh=2;renderShop();`);
+ assert.equal(badge.textContent,'FREE');assert.equal(classes.has('free'),true);assert.match(badge['aria-label'],/2/);
+ const money=f.run('G.money');f.run('refreshShop()');assert.equal(f.run('G.money'),money);assert.equal(badge.textContent,'FREE');assert.match(badge['aria-label'],/1/);
+ f.run('refreshShop()');assert.equal(f.run('G.money'),money);assert.equal(badge.textContent,'①');assert.equal(classes.has('free'),false);
+ const css=fs.readFileSync(path.join(__dirname,'../web/styles/shop.css'),'utf8');assert.match(css,/\.fab-cost\.free\{[^}]*border-radius:0/);
+ console.log('HUD FEEDBACK OK move/swap cue once, invalid/rotation silence, rectangular FREE consumes real vouchers and restores paid badge');
+})().catch(e=>{console.error(e);process.exitCode=1;});

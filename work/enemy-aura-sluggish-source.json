@@ -1,0 +1,59 @@
+{
+  "source": "data/ArknightsGameData/zh_CN/gamedata/buff_table.json",
+  "sha256": "366876f94b336364e243f1a14171b5395240d66c79f86cfb16038cc75ed8e0c3",
+  "buff": {
+    "attributes": {
+      "abnormalFlags": null,
+      "abnormalImmunes": null,
+      "abnormalAntis": null,
+      "abnormalCombos": null,
+      "abnormalComboImmunes": null,
+      "attributeModifiers": [
+        {
+          "attributeType": "MOVE_SPEED",
+          "formulaItem": "FINAL_SCALER",
+          "value": -0.8,
+          "loadFromBlackboard": false,
+          "fetchBaseValueFromSourceEntity": false
+        }
+      ]
+    },
+    "buffKey": "sluggish",
+    "loadFromDB": false,
+    "isDurableBuff": false,
+    "isDamageMissable": true,
+    "isSilenceable": false,
+    "isStunnable": false,
+    "isFreezable": false,
+    "isLevitatable": false,
+    "isGroundBoundable": false,
+    "statusResistable": "AUTOMATIC",
+    "templateKey": "empty",
+    "disableOverride": false,
+    "overrideKey": null,
+    "overrideType": "DEFAULT",
+    "maxStackCnt": 1,
+    "refreshRemainingTimeWhenStackMax": false,
+    "clearAllStackCntWhenTimeUp": false,
+    "maxValidStackCnt": -1,
+    "independentCharacterSource": false,
+    "overrideEffectKey": "buff_sluggish",
+    "overrideOnEventPriority": false,
+    "onEventPriority": "DEFAULT",
+    "audioSignal": null,
+    "lifeTimeType": "LIMITED",
+    "takeSnapshotWhenExtend": false,
+    "durationKey": "sluggish",
+    "lifeTime": 0.0,
+    "triggerLifeType": "IMMEDIATELY",
+    "triggerCnt": 0,
+    "triggerInterval": -1.0,
+    "waitFirstTriggerInterval": true,
+    "firstTriggerInterval": -1.0,
+    "priority": -1,
+    "priorityBBKeys": null,
+    "stripBlackboardParamsWithBuffKey": false,
+    "blackboard": null,
+    "enableInitDirectionFromSource": false
+  }
+}

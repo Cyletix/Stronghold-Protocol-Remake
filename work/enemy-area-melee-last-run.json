@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "completed": true,
+  "recordedAt": "2026-09-14T21:56:08.083217+00:00",
+  "gameVersion": "room-game-20260915.2",
+  "scope": "Complete shared selector/cooldown/direct-area-melee subclass plus generic source successful-cast cooldown correction",
+  "sourceContracts": {
+    "work/enemy-area-melee-contract.json": {
+      "sourceFingerprint": "aafe4370cd6c070c901afcb668145b6bd81651ec83e2b40ea7755bca73757d54",
+      "fileSha256": "3345fa186649fc0ec4acc1ad34418547bc27fbe92aae7e9192ddd3c98ee8e65a"
+    },
+    "work/enemy-skill-sp-contract.json": {
+      "sourceFingerprint": "24c9a8d57cd4a2da7d6c895fbaa78b6bdb081460a2ea7ab225bf1b6453747eaf",
+      "fileSha256": "1741d76be4b8c91563c63159b7cf259ca8b8dd74fd09015bbab887b0a5f05937"
+    },
+    "work/enemy-awake-contract.json": {
+      "sourceFingerprint": "32454aade6017fdccaae6a3a09a70dc538535132904de6f44f4c2b8934522353",
+      "fileSha256": "96d42cc91907a7cd7da2beee5a1c26430818cbe6eff487379ffc787f0be08c32"
+    },
+    "work/enemy-periodic-ability-contract.json": {
+      "sourceFingerprint": "c209f2d8b755aba00c4135c3ac93ef96c2c5644a26208690d268bbb995834f1e",
+      "fileSha256": "4d13eda3596ab6267068fc5d7195f7027a7a81eeedd8656d2d1733f80e5acbd7"
+    }
+  },
+  "newSkillIDs": [
+    "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:8351245699733844426:60"
+  ],
+  "skillCounts": {
+    "candidates": 27,
+    "selectedSkills": 5,
+    "selectedEnemies": 4,
+    "pendingSkills": 22,
+    "pendingEnemies": 13,
+    "deferredSkills": 5,
+    "deferredEnemies": 5,
+    "executablePendingSkills": 17,
+    "executablePendingEnemies": 8,
+    "encounterSelectedEnemies": 4
+  },
+  "periodicCounts": {
+    "groups": 2,
+    "enemies": 2,
+    "encounterGroups": 2,
+    "encounterEnemies": 2,
+    "capabilityKinds": 4,
+    "capabilityBindings": 8
+  },
+  "basicActionGaps": {
+    "allEnemies": 435,
+    "encounterEnemies": 36
+  },
+  "validation": [
+    {
+      "suite": "tools/test_enemy_area_melee_skills.py",
+      "result": "passed",
+      "groups": 6
+    },
+    {
+      "suite": "tools/test_enemy_skill_dispatch.py",
+      "result": "passed",
+      "groups": 5
+    },
+    {
+      "suite": "node tools/_enemy_area_melee_smoke.js",
+      "result": "passed"
+    },
+    {
+      "suite": "node tools/_enemy_skill_dispatch_smoke.js",
+      "result": "passed"
+    },
+    {
+      "suite": "node tools/_enemy_self_cast_smoke.js",
+      "result": "passed"
+    },
+    {
+      "suite": "node tools/_enemy_periodic_smoke.js",
+      "result": "passed"
+    },
+    {
+      "suite": "node tools/_external_combat_smoke.js",
+      "result": "passed"
+    },
+    {
+      "suite": "node tools/check_docs.js",
+      "result": "passed",
+      "documents": 80,
+      "localLinks": 2332
+    },
+    {
+      "suite": "changed runtime syntax and tracked diff whitespace",
+      "result": "passed"
+    }
+  ],
+  "sourceRefresh": {
+    "oldContractsChanged": false,
+    "wholeCohortRescan": false,
+    "focusedGeometryAndNativeSupplement": true
+  },
+  "refresh": {
+    "actionTemplateCacheHit": true,
+    "modeSourceAnalysisSkipped": true,
+    "buffTemplateQueriesSkipped": true,
+    "dpsCompileSkipped": true,
+    "dpsCalculationSkipped": true
+  },
+  "boundary": "One complete shared skill subclass. Other Boss skills, whole-enemy completion and missing modes remain pending. Target ordering, Melee override bridge, active/inactive cooldown ticking, ordinary cooldown pause and mid-cast attack speed updates keep explicit Inferred boundaries.",
+  "nextSharedSlice": {
+    "family": "SP, tag filtering and attached Buff ranged skills",
+    "representative": "enemy_1516_jakill:IronSandStorm",
+    "source": "work/enemy-skill-next-slice.json#recommendedSlice.nextAfterThis"
+  },
+  "automationChanged": false,
+  "packaged": false,
+  "published": false
+}

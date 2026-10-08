@@ -1,0 +1,1170 @@
+{
+  "schemaVersion": 1,
+  "rule": "cast-armed-after-affecting-owner-status-v1",
+  "sources": {
+    "work/skill-controller-public-closures-20260918.json": "99f274db0c334a44493598b09b4a3d1beedf845c6c404cb53fbc9961d2376308",
+    "work/client-logic/buff-templates.json": "f8cc1f74e426d0111803d68154335a748bfee377a2d826d84135f60a41280d24",
+    "data/ArknightsGameData/zh_CN/gamedata/buff_table.json": "366876f94b336364e243f1a14171b5395240d66c79f86cfb16038cc75ed8e0c3",
+    "data/ArknightsGameData/zh_CN/gamedata/excel/skill_table.json": "9eaaecacd024b8e2177ddb44e0c306bed609b53ef79d2e6446dda9dae49d6435",
+    "work/client-logic/native-enemy-bomb/evidence.json": "d47fc9029b0f3ddd6e1a331d307e4e3e471366c3a173b35c3b6fcac398494a01",
+    "work/client-logic/native-enemy-bomb/77537_SetData.asm": "5e1814809bdad2ca8e7db288f04dd09bc3fc480f76cb353cfe9bc4a14aafcb97",
+    "work/client-logic/native-enemy-bomb/77538_OnEvent.asm": "51b58894826ecab38b220c4c31664c24e631c5c29c6cfa743d29ece8cf5b6807",
+    "work/client-logic/native-enemy-bomb/77541_OnTick.asm": "a6542cfb1d8195b5acf7c81b5e9da9cda60927424b86e89e9b15da35f3ed5417",
+    "work/client-logic/native-enemy-bomb/77542_OnStopAffect.asm": "0c662da249c6af9fc3f28e7b05248253968c659249a8922bfa4682ea561328eb",
+    "work/client-logic/native-enemy-skill-sp/Torappu.Battle.AbilityStandard_Event-enum.json": "562e277eac3454f9ec65d3e1bb7e863a67d6aa14181e63ea90780def87c4c598"
+  },
+  "sourceFingerprint": "6318a7f0e80c6a2f4431fe01889b48735f8ba8f1d5d565701eb9dbf4c62703b2",
+  "nativeObservations": {
+    "reset": "SetData clears offset 0x29",
+    "arm": "OnEvent compares event 2 then sets offset 0x29",
+    "poll": "OnTick onlyCheck offset 0x28 false + armed offset 0x29 true + ability not affecting; clears armed before AddBuff(owner,owner,ability.blackboard)",
+    "stop": "OnStopAffect adds Buffs only if offset 0x28 true; all admitted source fields have false"
+  },
+  "lifecycleModel": {
+    "arm": "accepted cast start",
+    "emit": "first live attached transition to not-affecting",
+    "completionReasons": [
+      "expire",
+      "live-manual-end",
+      "live-interruption"
+    ],
+    "discardReasons": [
+      "death",
+      "retreat",
+      "removed",
+      "pre-cast-cancel"
+    ],
+    "frameOrdering": "restore active mode and detach skill layers before evaluating end-status resistance",
+    "nativeReasonDispatchProven": false
+  },
+  "integration": {
+    "compiler": "Call compile_end_effects before final all-level key equality; admit only its fully consumed companion type, then preserve all remaining parent graph checks.",
+    "programField": "endEffects",
+    "runtimeState": "A plain JSON per-cast armed state plus source-owned status records outside active clientProgramState.",
+    "runtimeApi": {
+      "validate": "validate(endEffects, blackboard)",
+      "start": "start(unit,time) -> boolean; freeze durations into skillEndEffectState",
+      "finish": "finish(unit,time,reason=\"end\") -> added count; after active skill/program cleanup",
+      "stunned": "stunned(unit,time) -> boolean; sourceSkillEndStatuses only, no raw timer writes",
+      "hasBuff": "hasBuff(unit,key,time) -> exact-key boolean",
+      "clear": "clear(unit,{cancelPending:false}); dispel keeps pending armed effect, death/reset passes true"
+    },
+    "start": "Arm only after successful cast start; no effect during construction, rejected cast or pre-cast cancellation.",
+    "finish": "Consume once for a live attached owner after restoring active skill layers; discard armed state on death/removal/retreat.",
+    "consumers": [
+      {
+        "path": "web/engine.js",
+        "entry": "operatorCanAct",
+        "needed": "Read source-owned stun alongside legacy timers."
+      },
+      {
+        "path": "web/src/simulation/operator-combat.js",
+        "entry": "blockerAvailable",
+        "needed": "Stunned owners cannot maintain an available blocker."
+      },
+      {
+        "path": "web/engine.js",
+        "entry": "abnormalHealingState / performHealingAction abnormal-clear branch",
+        "needed": "Recognize owned stun for abnormal healing and clear its status record with the legacy timer; never leave a stale exact-key Buff after dispel."
+      },
+      {
+        "path": "web/engine.js",
+        "entry": "notifyGarrisonStatuses",
+        "needed": "Feed owned stun into status transition notifications and clear the observed state at expiry or dispel."
+      },
+      {
+        "path": "web/engine.js",
+        "entry": "tryKill / respawnOperators",
+        "needed": "Clear both per-cast armed state and owned end statuses; a later life cannot inherit either."
+      },
+      {
+        "path": "web/src/simulation/operator-combat.js",
+        "entry": "sourceBuffActive",
+        "needed": "If status storage is separate, exact-key queries must include the new owned record."
+      },
+      {
+        "path": "tools/lib/room-game-runtime.js",
+        "entry": "capture / restore",
+        "needed": "Plain IDs and times serialize through existing unit state; verify before-completion and after-status snapshots once."
+      }
+    ],
+    "legacyProviderBoundary": "Ghost S2 is already explicit and is a migration-only same-shape member. Do not run its legacy expire stun and the new endEffects contract simultaneously."
+  },
+  "counts": {
+    "companionAccepted": 4,
+    "companionRejected": 3,
+    "wholeSkillsAccepted": 0
+  },
+  "accepted": {
+    "skchr_aurora_1": {
+      "name": "极光",
+      "skillName": "固守家园",
+      "charId": "char_422_aurora",
+      "netNewCandidate": true,
+      "legacyExplicitHandler": false,
+      "wholeSkillAccepted": false,
+      "levelCount": 10,
+      "source": {
+        "prefabId": "skchr_aurora_1",
+        "graphPointer": "work/client-logic/program-compilation.json#/rejections/skchr_aurora_1/components",
+        "graphSha256": "4cd9c08bd47d5a24c38cc6df5366010dd13922bd8f4d508c5a2d35037d4d3579",
+        "levelsSha256": "e57d5e0b62640c4c98be25e5f1267f66a67bbb0c9a49e1ebf2c2707f6d769ad3",
+        "characterBundleSha256": "4a4dc0a96e28aaef45287fea4fcbe4374d82027b7225293221ab75767dc7b7aa"
+      },
+      "completeCachedClosure": {
+        "path": "work/skill-controller-public-closures-20260918.json",
+        "memberPointer": "/members/skchr_aurora_1",
+        "componentRefs": [
+          "cd5871c24b0ebfb4b5a0e0cc0766ae7db3dbdd9eaa41b499ce7c31dc11d30488",
+          "fcaf1fffccec160ea22f2c1f2d3a63b74847f26b75df9066f54e35ade4414952",
+          "30319480ee353826b577e218faef635d2b8953a9a93f8a03e22efc470baf2248",
+          "77d7e7d8c52d13650e916fb5637b98d69554ddf44f0fa94efbbf4b93714f3048",
+          "1bdd2f059e2ed48f2ca02e9816e1cd50283892c3a83b7b08d4bb8c2d8ecea3a4",
+          "fc75bdf8bf9bcec1d426b2a4ef49ad3d81c4aa1ac7d34a0dc7db012bb36fe8f7",
+          "657d47f35536010e91ae4d8a3667ae974a43a19eedcc3d0399916399d38654aa",
+          "df53217c21d91d31fc58e00673c4344b2c65486cffe63c298bbb636a636ac18a",
+          "bd5f47f0eeb227eafe66d9ccebfa6ec777f228f5ff8333cf505647e2dc918353",
+          "42c3c8f34c14bf505b6e40b5378fd868f6ad40831bec6a49a164a71379899ab7",
+          "0828cb5851e5447aa5dbbcc6755b5ec3412fbf2bb9b4136076398470c148a90b",
+          "aa4beff4a5e2fd7f2f1b924833fa82d6b8fd708d6a2a1d99019ae1ecb4e479b7",
+          "6670add772aa2fc255b4908f375d2f94aa17bafd4e06acf4a6df237f0ef857b8"
+        ],
+        "buffClosure": {
+          "buffs": [
+            {
+              "origin": "-7018671530958025259/_buffs/0",
+              "resolvedSha256": "bdf70cba2f9978e69712c9703483b83853107b02c4407243034064ff0a8507a8",
+              "buffKey": "aurora_s_1",
+              "templateKey": "switch_mode_restart_fsm",
+              "loadedKey": null
+            },
+            {
+              "origin": "-7018671530958025259/_buffs/1",
+              "resolvedSha256": "3da375ed113a6171184df87d642e16eca3d6cf4fecd11f5586708a5c2c8f0fc1",
+              "buffKey": "status_resistance[limit]",
+              "templateKey": "empty",
+              "loadedKey": "status_resistance[limit]"
+            },
+            {
+              "origin": "8318217267252399573/_buffs/0",
+              "resolvedSha256": "87b75a694a8af2e7c6d69a8377f346e7f26ecaf7ac06bba87e4c2ddd729306e2",
+              "buffKey": "stun",
+              "templateKey": "empty",
+              "loadedKey": "stun"
+            },
+            {
+              "origin": "-5961295807620682023/_activeBuffs/0",
+              "resolvedSha256": "18e855beb973428dd341ca0c4f568aff43a84f2c52eb17a44d80b77d6eeab511",
+              "buffKey": "",
+              "templateKey": "empty",
+              "loadedKey": null
+            }
+          ],
+          "templates": {
+            "switch_mode_restart_fsm": "8786fb99be816a3e0cfae6018d2703bddad67a234bcc8284e66ab35f4b711bea",
+            "empty": "eca58ee7744db98ad540402d6e2b91af372ff277301d6fc85865f9a28851aeb6"
+          },
+          "actions": [
+            {
+              "template": "switch_mode_restart_fsm",
+              "event": 0,
+              "path": "/0",
+              "type": "SwitchMode",
+              "fields": {
+                "_modeIndex": 1,
+                "_loadModeFromBlackboard": true,
+                "_restoreDefault": false,
+                "_restartFSM": true,
+                "_targetType": "TARGET"
+              }
+            },
+            {
+              "template": "switch_mode_restart_fsm",
+              "event": 1,
+              "path": "/0",
+              "type": "SwitchMode",
+              "fields": {
+                "_modeIndex": 0,
+                "_loadModeFromBlackboard": false,
+                "_restoreDefault": true,
+                "_restartFSM": true,
+                "_targetType": "TARGET"
+              }
+            }
+          ],
+          "unresolved": []
+        },
+        "selectedModes": [
+          {
+            "index": 0,
+            "sourcePathId": "-7796134067283595559",
+            "roles": {
+              "_attack": [
+                "MeleeAttack",
+                "UberEffectEmitter"
+              ],
+              "_combat": [],
+              "_attackTrigger": [
+                "SelectorTrigger",
+                "AutoLoadBoxRange",
+                "BlockedOrAdvancedSelector"
+              ]
+            },
+            "generalComponents": [],
+            "componentRefs": [
+              "77d7e7d8c52d13650e916fb5637b98d69554ddf44f0fa94efbbf4b93714f3048",
+              "1bdd2f059e2ed48f2ca02e9816e1cd50283892c3a83b7b08d4bb8c2d8ecea3a4",
+              "fc75bdf8bf9bcec1d426b2a4ef49ad3d81c4aa1ac7d34a0dc7db012bb36fe8f7",
+              "657d47f35536010e91ae4d8a3667ae974a43a19eedcc3d0399916399d38654aa",
+              "df53217c21d91d31fc58e00673c4344b2c65486cffe63c298bbb636a636ac18a"
+            ]
+          },
+          {
+            "index": 1,
+            "sourcePathId": "2319555817342660313",
+            "roles": {
+              "_attack": [
+                "MeleeAttack",
+                "UberEffectEmitter"
+              ],
+              "_combat": [],
+              "_attackTrigger": [
+                "SelectorTrigger",
+                "AutoLoadBoxRange",
+                "BlockedOrAdvancedSelector"
+              ]
+            },
+            "generalComponents": [],
+            "componentRefs": [
+              "bd5f47f0eeb227eafe66d9ccebfa6ec777f228f5ff8333cf505647e2dc918353",
+              "42c3c8f34c14bf505b6e40b5378fd868f6ad40831bec6a49a164a71379899ab7",
+              "0828cb5851e5447aa5dbbcc6755b5ec3412fbf2bb9b4136076398470c148a90b",
+              "aa4beff4a5e2fd7f2f1b924833fa82d6b8fd708d6a2a1d99019ae1ecb4e479b7",
+              "6670add772aa2fc255b4908f375d2f94aa17bafd4e06acf4a6df237f0ef857b8"
+            ]
+          }
+        ]
+      },
+      "rootComponents": [
+        {
+          "node_id": "8318217267252399573",
+          "type": "Torappu.Battle.Abilities.BuffAfterAffecting",
+          "fields": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "6330916428260347349"
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "7085803614365642631"
+            },
+            "m_Name": "",
+            "_buffs": [
+              {
+                "attributes": {
+                  "abnormalFlags": [],
+                  "abnormalImmunes": [],
+                  "abnormalAntis": [],
+                  "abnormalCombos": [],
+                  "abnormalComboImmunes": [],
+                  "attributeModifiers": []
+                },
+                "buffKey": "stun",
+                "loadFromDB": 1,
+                "isDurableBuff": 0,
+                "isDamageMissable": 0,
+                "isSilenceable": 0,
+                "isStunnable": 0,
+                "isFreezable": 0,
+                "isLevitatable": 0,
+                "statusResistable": 2,
+                "templateKey": "empty",
+                "disableOverride": 0,
+                "overrideKey": "",
+                "overrideType": 0,
+                "maxStackCnt": 1,
+                "refreshRemainingTimeWhenStackMax": 0,
+                "clearAllStackCntWhenTimeUp": 0,
+                "maxValidStackCnt": -1,
+                "independentCharacterSource": 0,
+                "overrideEffectKey": "",
+                "overrideOnEventPriority": 0,
+                "onEventPriority": 0,
+                "audioSignal": "",
+                "lifeTimeType": 1,
+                "takeSnapshotWhenExtend": 0,
+                "durationKey": "",
+                "lifeTime": 0.0,
+                "triggerLifeType": 0,
+                "triggerCnt": 0,
+                "triggerInterval": -1.0,
+                "waitFirstTriggerInterval": 1,
+                "firstTriggerInterval": -1.0,
+                "priority": -1,
+                "priorityBBKeys": [],
+                "stripBlackboardParamsWithBuffKey": 0,
+                "blackboard": [],
+                "enableInitDirectionFromSource": 0
+              }
+            ],
+            "_onlyCheckOnStopAffect": 0
+          }
+        }
+      ],
+      "endEffects": [
+        {
+          "kind": "after-affecting",
+          "armEvent": 2,
+          "pollWhileAttached": true,
+          "onlyCheckOnStopAffect": false,
+          "oncePerCast": true,
+          "buffs": [
+            {
+              "kind": "stun",
+              "key": "stun",
+              "duration": {
+                "key": "stun"
+              },
+              "target": "owner",
+              "sourceId": "owner",
+              "statusResistable": "automatic",
+              "maxStack": 1,
+              "independentSource": false,
+              "refresh": "shared-max-expiry-model",
+              "damageMissable": true,
+              "source": {
+                "buffSha256": "9bb3451a0381cea836ba97b572a66dd0b134f8e48f3b3a13965b3b4f7474707b",
+                "rawLifetime": 0.0,
+                "databaseKey": "stun",
+                "databaseSha256": "87b75a694a8af2e7c6d69a8377f346e7f26ecaf7ac06bba87e4c2ddd729306e2",
+                "templateKey": "empty",
+                "templateSha256": "eca58ee7744db98ad540402d6e2b91af372ff277301d6fc85865f9a28851aeb6"
+              }
+            }
+          ],
+          "source": {
+            "componentType": "Torappu.Battle.Abilities.BuffAfterAffecting",
+            "componentId": "8318217267252399573",
+            "componentSha256": "30319480ee353826b577e218faef635d2b8953a9a93f8a03e22efc470baf2248",
+            "nativeRule": "cast-armed-after-affecting-owner-status-v1",
+            "rawOnlyCheckOnStopAffect": 0
+          }
+        }
+      ],
+      "consumedKeys": [
+        "stun"
+      ],
+      "remainingLevelKeys": [
+        "block_cnt",
+        "def",
+        "one_minus_status_resistance"
+      ],
+      "remainingRootTypes": {
+        "CastSkill": 1,
+        "ActiveBuffAbility": 1
+      },
+      "followingGates": [
+        {
+          "kind": "selected-mode-controller-not-counterfactually-compiled",
+          "indices": [
+            1
+          ]
+        },
+        {
+          "kind": "full-level-blackboard-consumption-not-proven",
+          "keys": [
+            "block_cnt",
+            "def",
+            "one_minus_status_resistance",
+            "stun"
+          ]
+        }
+      ]
+    },
+    "skchr_fmout_2": {
+      "name": "远山",
+      "skillName": "命运",
+      "charId": "char_109_fmout",
+      "netNewCandidate": true,
+      "legacyExplicitHandler": false,
+      "wholeSkillAccepted": false,
+      "levelCount": 10,
+      "source": {
+        "prefabId": "skchr_fmout_2",
+        "graphPointer": "work/client-logic/program-compilation.json#/rejections/skchr_fmout_2/components",
+        "graphSha256": "bfaa9784a46e97ac0189ac93ad7a955449b607dcac7f855c5ce66b5e891d3130",
+        "levelsSha256": "44ba5d2c84015d32be7c3b4c1aa52a1bb821b311e64dfd487f31592540a1aeb2",
+        "characterBundleSha256": "3dba4b1f88fb60c92bf95e245be650b94f74438b2d98ab645025a20d98ad0146"
+      },
+      "completeCachedClosure": {
+        "path": "work/skill-controller-public-closures-20260918.json",
+        "memberPointer": "/members/skchr_fmout_2",
+        "componentRefs": [
+          "51ef93fae84ba5d5170c32b79d70cc56c4665c655f915d1fda6acf9af9be44f3",
+          "77b0628bc235479d48d5b071b4501c782de246e8a399b7bb99af0b09e86c900b",
+          "2a7b168adfcfa8f257e5b3fee7eccc4a3d3ae093ff278865fd6b018aa1f70a2b",
+          "6ed1ca94d3d170d420a04b0d36964177f2cdb7b65445213f8ddaf6085ff04122",
+          "52900ed58be33dbc2bcb9251e9d9d7b5db94c75dacca1099cfa0f0d6f7d885ec",
+          "620b1796b504c76762097fc5542ce1ee3511c0c9d6f98d209e486401aa73e71a",
+          "13487a95522e28a161e509d567a5bf2b99ccd830c99a9eb530ec3b2a2e2ad352",
+          "9cd33043cf52a32e6b1c0ab64ed592b8acbf0ede27a47b3a2dcf78ccb123ad8b",
+          "35fe87c3ad520ab8f68e2f224149b8d776bc8a653fb85f2cbca8e491c892a375",
+          "05c057a8fd1942d40a69de34e812607de210314f02e9ad9e72300ed70ceea5d2",
+          "99582e36dc4792c397701483e09dc2528aca1d13964c60ca95fc714050b9c86b",
+          "55ab615a93f224b2a52cef535ec71443a8e7bc398eb87cd22dc3c245f4896a30",
+          "bc309a5003bbc3574cad75b692cad1305841d5a76815475b9965736a808b3a84",
+          "e8073afc5faa86ae4fedafcdf54c5af1c1d31ad2de3c8eab129e367bbf6c823a",
+          "8b2ac8448089ac68acaa07ac3b1f799835b711f621cd87d658203a4aef7993b3",
+          "6277929ac2a88f47ff7dd8313b2fc9c7303e1b64d1733a3349898eb4ae830b8a",
+          "4eded8e8a369ec9ba0e6f481405a67a60afd50d96819feb57b654231212580b1"
+        ],
+        "buffClosure": {
+          "buffs": [
+            {
+              "origin": "4542555102751421051/_buffs/0",
+              "resolvedSha256": "323c740d38af6481b2dea02d807552829c8ac7ea817086a5eb965711bcf44f0f",
+              "buffKey": "fmout_s_2[after]",
+              "templateKey": "empty",
+              "loadedKey": null
+            },
+            {
+              "origin": "6725545258989908603/_buffs/0",
+              "resolvedSha256": "7621040918911df176a133e873f71c9cf8e56c2d633e4888d4a53494fc3f557a",
+              "buffKey": "fmout_s_2",
+              "templateKey": "switch_mode",
+              "loadedKey": null
+            }
+          ],
+          "templates": {
+            "empty": "eca58ee7744db98ad540402d6e2b91af372ff277301d6fc85865f9a28851aeb6",
+            "switch_mode": "3ac947cf2a687f74921fc0bea1980cab9e586c9ee48128c39d7095840c4109ae"
+          },
+          "actions": [
+            {
+              "template": "switch_mode",
+              "event": 0,
+              "path": "/0",
+              "type": "SwitchMode",
+              "fields": {
+                "_modeIndex": 1,
+                "_loadModeFromBlackboard": true,
+                "_restoreDefault": false,
+                "_restartFSM": false,
+                "_targetType": "TARGET"
+              }
+            },
+            {
+              "template": "switch_mode",
+              "event": 1,
+              "path": "/0",
+              "type": "SwitchMode",
+              "fields": {
+                "_modeIndex": 0,
+                "_loadModeFromBlackboard": false,
+                "_restoreDefault": true,
+                "_restartFSM": false,
+                "_targetType": "TARGET"
+              }
+            }
+          ],
+          "unresolved": []
+        },
+        "selectedModes": [
+          {
+            "index": 0,
+            "sourcePathId": "9125592335033944518",
+            "roles": {
+              "_attack": [
+                "MeleeAttack",
+                "UberEffectEmitter"
+              ],
+              "_combat": [],
+              "_attackTrigger": [
+                "SelectorTrigger",
+                "AutoLoadBoxRange",
+                "AdvancedSelector"
+              ]
+            },
+            "generalComponents": [],
+            "componentRefs": [
+              "6ed1ca94d3d170d420a04b0d36964177f2cdb7b65445213f8ddaf6085ff04122",
+              "52900ed58be33dbc2bcb9251e9d9d7b5db94c75dacca1099cfa0f0d6f7d885ec",
+              "620b1796b504c76762097fc5542ce1ee3511c0c9d6f98d209e486401aa73e71a",
+              "13487a95522e28a161e509d567a5bf2b99ccd830c99a9eb530ec3b2a2e2ad352",
+              "9cd33043cf52a32e6b1c0ab64ed592b8acbf0ede27a47b3a2dcf78ccb123ad8b",
+              "35fe87c3ad520ab8f68e2f224149b8d776bc8a653fb85f2cbca8e491c892a375",
+              "05c057a8fd1942d40a69de34e812607de210314f02e9ad9e72300ed70ceea5d2"
+            ]
+          },
+          {
+            "index": 1,
+            "sourcePathId": "-8530703348665890362",
+            "roles": {
+              "_attack": [
+                "MeleeAttack",
+                "UberEffectEmitter"
+              ],
+              "_combat": [],
+              "_attackTrigger": [
+                "SelectorTrigger",
+                "AutoLoadBoxRange",
+                "AdvancedSelector"
+              ]
+            },
+            "generalComponents": [],
+            "componentRefs": [
+              "99582e36dc4792c397701483e09dc2528aca1d13964c60ca95fc714050b9c86b",
+              "55ab615a93f224b2a52cef535ec71443a8e7bc398eb87cd22dc3c245f4896a30",
+              "bc309a5003bbc3574cad75b692cad1305841d5a76815475b9965736a808b3a84",
+              "e8073afc5faa86ae4fedafcdf54c5af1c1d31ad2de3c8eab129e367bbf6c823a",
+              "8b2ac8448089ac68acaa07ac3b1f799835b711f621cd87d658203a4aef7993b3",
+              "6277929ac2a88f47ff7dd8313b2fc9c7303e1b64d1733a3349898eb4ae830b8a",
+              "4eded8e8a369ec9ba0e6f481405a67a60afd50d96819feb57b654231212580b1"
+            ]
+          }
+        ]
+      },
+      "rootComponents": [
+        {
+          "node_id": "4542555102751421051",
+          "type": "Torappu.Battle.Abilities.BuffAfterAffecting",
+          "fields": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "-8294721385077280133"
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "7085803614365642631"
+            },
+            "m_Name": "",
+            "_buffs": [
+              {
+                "attributes": {
+                  "abnormalFlags": [
+                    0
+                  ],
+                  "abnormalImmunes": [],
+                  "abnormalAntis": [],
+                  "abnormalCombos": [],
+                  "abnormalComboImmunes": [],
+                  "attributeModifiers": []
+                },
+                "buffKey": "fmout_s_2[after]",
+                "loadFromDB": 0,
+                "isDurableBuff": 0,
+                "isDamageMissable": 0,
+                "isSilenceable": 0,
+                "isStunnable": 0,
+                "isFreezable": 0,
+                "isLevitatable": 0,
+                "statusResistable": 2,
+                "templateKey": "empty",
+                "disableOverride": 0,
+                "overrideKey": "",
+                "overrideType": 0,
+                "maxStackCnt": 1,
+                "refreshRemainingTimeWhenStackMax": 0,
+                "clearAllStackCntWhenTimeUp": 0,
+                "maxValidStackCnt": -1,
+                "independentCharacterSource": 0,
+                "overrideEffectKey": "buff_stun",
+                "overrideOnEventPriority": 0,
+                "onEventPriority": 0,
+                "audioSignal": "",
+                "lifeTimeType": 1,
+                "takeSnapshotWhenExtend": 0,
+                "durationKey": "time",
+                "lifeTime": 0.0,
+                "triggerLifeType": 0,
+                "triggerCnt": 0,
+                "triggerInterval": -1.0,
+                "waitFirstTriggerInterval": 1,
+                "firstTriggerInterval": -1.0,
+                "priority": -1,
+                "priorityBBKeys": [],
+                "stripBlackboardParamsWithBuffKey": 0,
+                "blackboard": [],
+                "enableInitDirectionFromSource": 0
+              }
+            ],
+            "_onlyCheckOnStopAffect": 0
+          }
+        }
+      ],
+      "endEffects": [
+        {
+          "kind": "after-affecting",
+          "armEvent": 2,
+          "pollWhileAttached": true,
+          "onlyCheckOnStopAffect": false,
+          "oncePerCast": true,
+          "buffs": [
+            {
+              "kind": "stun",
+              "key": "fmout_s_2[after]",
+              "duration": {
+                "key": "time"
+              },
+              "target": "owner",
+              "sourceId": "owner",
+              "statusResistable": "automatic",
+              "maxStack": 1,
+              "independentSource": false,
+              "refresh": "shared-max-expiry-model",
+              "damageMissable": false,
+              "source": {
+                "buffSha256": "323c740d38af6481b2dea02d807552829c8ac7ea817086a5eb965711bcf44f0f",
+                "rawLifetime": 0.0,
+                "templateKey": "empty",
+                "templateSha256": "eca58ee7744db98ad540402d6e2b91af372ff277301d6fc85865f9a28851aeb6"
+              }
+            }
+          ],
+          "source": {
+            "componentType": "Torappu.Battle.Abilities.BuffAfterAffecting",
+            "componentId": "4542555102751421051",
+            "componentSha256": "77b0628bc235479d48d5b071b4501c782de246e8a399b7bb99af0b09e86c900b",
+            "nativeRule": "cast-armed-after-affecting-owner-status-v1",
+            "rawOnlyCheckOnStopAffect": 0
+          }
+        }
+      ],
+      "consumedKeys": [
+        "time"
+      ],
+      "remainingLevelKeys": [
+        "atk"
+      ],
+      "remainingRootTypes": {
+        "CastSkill": 1,
+        "ActiveBuffAbility": 1
+      },
+      "followingGates": [
+        {
+          "kind": "selected-mode-controller-not-counterfactually-compiled",
+          "indices": [
+            1
+          ]
+        },
+        {
+          "kind": "full-level-blackboard-consumption-not-proven",
+          "keys": [
+            "atk",
+            "time"
+          ]
+        }
+      ]
+    },
+    "skchr_ghost_2": {
+      "name": "幽灵鲨",
+      "skillName": "肉斩骨断",
+      "charId": "char_143_ghost",
+      "netNewCandidate": false,
+      "legacyExplicitHandler": true,
+      "wholeSkillAccepted": false,
+      "levelCount": 10,
+      "source": {
+        "prefabId": "skchr_ghost_2",
+        "graphPointer": "work/client-logic/program-compilation.json#/rejections/skchr_ghost_2/components",
+        "graphSha256": "eb3c7a9ad498fb56fd0f7a429a14937b0b28d4162a6c96365640a8e107ad1f27",
+        "levelsSha256": "4e823d128b8a415446ea4cc4e7c785456a92e68db1cf5d133190943e5b5c6336",
+        "characterBundleSha256": null
+      },
+      "completeCachedClosure": {
+        "path": "work/skill-controller-public-closures-20260918.json",
+        "memberPointer": "/members/skchr_ghost_2",
+        "componentRefs": [
+          "6bc484c3d1c0e3d290d56964b1761bb899acef9f5294472ab819c2dc08bc1085",
+          "27c7fd35a0765eb123bb120d3611c16a07fb2cd03a1d830286d638e56b0279cc",
+          "2465e69c8b0a0af21de60e7f806d20f1533da779b197b73a5103ac04993d526b"
+        ],
+        "buffClosure": {
+          "buffs": [
+            {
+              "origin": "-4966655046772306389/_buffs/0",
+              "resolvedSha256": "204f6c326770f9515e45b32b672e48c79c887009940478ea8961053846e8935a",
+              "buffKey": "ghost_s_2",
+              "templateKey": "empty",
+              "loadedKey": null
+            },
+            {
+              "origin": "8232165838470860331/_buffs/0",
+              "resolvedSha256": "79ab410dc0e67ec5c02909a7584c6638c223fac771ab87caa665453d017ec218",
+              "buffKey": "stun",
+              "templateKey": "empty",
+              "loadedKey": null
+            }
+          ],
+          "templates": {
+            "empty": "eca58ee7744db98ad540402d6e2b91af372ff277301d6fc85865f9a28851aeb6"
+          },
+          "actions": [],
+          "unresolved": []
+        },
+        "selectedModes": []
+      },
+      "rootComponents": [
+        {
+          "node_id": "8232165838470860331",
+          "type": "Torappu.Battle.Abilities.BuffAfterAffecting",
+          "fields": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "-1290611322659123669"
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "7085803614365642631"
+            },
+            "m_Name": "",
+            "_buffs": [
+              {
+                "attributes": {
+                  "abnormalFlags": [
+                    0
+                  ],
+                  "abnormalImmunes": [],
+                  "abnormalAntis": [],
+                  "abnormalCombos": [],
+                  "abnormalComboImmunes": [],
+                  "attributeModifiers": []
+                },
+                "buffKey": "stun",
+                "loadFromDB": 0,
+                "isDurableBuff": 0,
+                "isDamageMissable": 0,
+                "isSilenceable": 0,
+                "isStunnable": 0,
+                "isFreezable": 0,
+                "isLevitatable": 0,
+                "statusResistable": 2,
+                "templateKey": "empty",
+                "disableOverride": 0,
+                "overrideKey": "",
+                "overrideType": 0,
+                "maxStackCnt": 1,
+                "refreshRemainingTimeWhenStackMax": 0,
+                "clearAllStackCntWhenTimeUp": 0,
+                "maxValidStackCnt": -1,
+                "independentCharacterSource": 0,
+                "overrideEffectKey": "buff_stun",
+                "overrideOnEventPriority": 0,
+                "onEventPriority": 0,
+                "audioSignal": "",
+                "lifeTimeType": 1,
+                "takeSnapshotWhenExtend": 0,
+                "durationKey": "stun",
+                "lifeTime": 0.0,
+                "triggerLifeType": 0,
+                "triggerCnt": 0,
+                "triggerInterval": -1.0,
+                "waitFirstTriggerInterval": 1,
+                "firstTriggerInterval": -1.0,
+                "priority": -1,
+                "priorityBBKeys": [],
+                "stripBlackboardParamsWithBuffKey": 0,
+                "blackboard": [],
+                "enableInitDirectionFromSource": 0
+              }
+            ],
+            "_onlyCheckOnStopAffect": 0
+          }
+        }
+      ],
+      "endEffects": [
+        {
+          "kind": "after-affecting",
+          "armEvent": 2,
+          "pollWhileAttached": true,
+          "onlyCheckOnStopAffect": false,
+          "oncePerCast": true,
+          "buffs": [
+            {
+              "kind": "stun",
+              "key": "stun",
+              "duration": {
+                "key": "stun"
+              },
+              "target": "owner",
+              "sourceId": "owner",
+              "statusResistable": "automatic",
+              "maxStack": 1,
+              "independentSource": false,
+              "refresh": "shared-max-expiry-model",
+              "damageMissable": false,
+              "source": {
+                "buffSha256": "79ab410dc0e67ec5c02909a7584c6638c223fac771ab87caa665453d017ec218",
+                "rawLifetime": 0.0,
+                "templateKey": "empty",
+                "templateSha256": "eca58ee7744db98ad540402d6e2b91af372ff277301d6fc85865f9a28851aeb6"
+              }
+            }
+          ],
+          "source": {
+            "componentType": "Torappu.Battle.Abilities.BuffAfterAffecting",
+            "componentId": "8232165838470860331",
+            "componentSha256": "27c7fd35a0765eb123bb120d3611c16a07fb2cd03a1d830286d638e56b0279cc",
+            "nativeRule": "cast-armed-after-affecting-owner-status-v1",
+            "rawOnlyCheckOnStopAffect": 0
+          }
+        }
+      ],
+      "consumedKeys": [
+        "stun"
+      ],
+      "remainingLevelKeys": [
+        "atk"
+      ],
+      "remainingRootTypes": {
+        "ActiveBuffAbility": 1,
+        "CastSkill": 1
+      },
+      "followingGates": [
+        {
+          "kind": "full-level-blackboard-consumption-not-proven",
+          "keys": [
+            "atk",
+            "stun"
+          ]
+        }
+      ]
+    },
+    "skchr_liskam_2": {
+      "name": "雷蛇",
+      "skillName": "反击电弧",
+      "charId": "char_107_liskam",
+      "netNewCandidate": true,
+      "legacyExplicitHandler": false,
+      "wholeSkillAccepted": false,
+      "levelCount": 10,
+      "source": {
+        "prefabId": "skchr_liskam_2",
+        "graphPointer": "work/client-logic/program-compilation.json#/rejections/skchr_liskam_2/components",
+        "graphSha256": "a24537e7d4791decafd0b9e9508c3abc09f4327896ad62d0c756e82fa5fbb64b",
+        "levelsSha256": "b38b040bf098fde69cfd16e2b22a5ca9346d9f3a0cfb7ac829007fd49585489b",
+        "characterBundleSha256": "dce162f5247142c784c65f4b2586f3d61723fece431416d8a16c9d5141c3cd3e"
+      },
+      "completeCachedClosure": {
+        "path": "work/skill-controller-public-closures-20260918.json",
+        "memberPointer": "/members/skchr_liskam_2",
+        "componentRefs": [
+          "fe07f0aeb7cd0de142107fc61609b311d5d60b3a5d2d1cff612b925d716acd15",
+          "3bc011490e4ae2eb4bbfad915f7260a41323e4026350b26e14d96ceac07dfbeb",
+          "e3a4ce799ae1ebe7f419e003fe9908ef3036c42c9043587586ae1bb0d873e18e",
+          "90aee83029b8f3e8144ec884827c026d937596f1baba879db17b8fb0302af04c",
+          "4a8288d675fc8a269135c72ee03e36421d278b70358ed69ba1cc8b4b8ab7abea",
+          "c1c80435a8383742c9810e4bca1f31e3ec3bd5d4daa4b78cc7b1d0209a0c570a",
+          "14ab10b68c2b9e7cb51d728788a9f3cf8ede7e789fd5fa75d1dbf3719f2b479b",
+          "704c09376cbd65e7b61fc4460fb1f61482ce0ff0837139fe589123b194540c29",
+          "734c9f514fb55e8fe4e9e506f502a44c5a10abbf01285874bd9575d49411d22d",
+          "9e5a3a781046664fd70eaaf521c40fd3c0a7621f40ff057713cd3056f4b14919",
+          "94690c8512f4c4d9ac508011f6bc263ec560bf029ee7a51ec128e965224cb551",
+          "e47de5cbbbfac09ddda8f44a763d26c6151051527f9aeab3aed96deeb2a993dc",
+          "cb50bd6d0f10d906e2f1ceea73e2867ed7150b2d0144796be75027a9eb2f28dc",
+          "46ce8c21bc4196b6602b6cc76db401cacaedb0882809825754bfb4bc6fc01c35"
+        ],
+        "buffClosure": {
+          "buffs": [
+            {
+              "origin": "-7685028656650581038/_buffs/0",
+              "resolvedSha256": "1cb80c627fe93665fccd969de5bea93481dcf2fc8e42ab6a2071f0f5f72a1d4a",
+              "buffKey": "liskam_s_2",
+              "templateKey": "switch_mode",
+              "loadedKey": null
+            },
+            {
+              "origin": "3340873293715475410/_buffs/0",
+              "resolvedSha256": "2769f23be0e1a45117db8afc1d098b989ff6ff96d4489d606924542593a27e86",
+              "buffKey": "stun",
+              "templateKey": "empty",
+              "loadedKey": null
+            },
+            {
+              "origin": "717124958171766031/_activeBuffs/0",
+              "resolvedSha256": "79ab410dc0e67ec5c02909a7584c6638c223fac771ab87caa665453d017ec218",
+              "buffKey": "stun",
+              "templateKey": "empty",
+              "loadedKey": null
+            }
+          ],
+          "templates": {
+            "switch_mode": "3ac947cf2a687f74921fc0bea1980cab9e586c9ee48128c39d7095840c4109ae",
+            "empty": "eca58ee7744db98ad540402d6e2b91af372ff277301d6fc85865f9a28851aeb6"
+          },
+          "actions": [
+            {
+              "template": "switch_mode",
+              "event": 0,
+              "path": "/0",
+              "type": "SwitchMode",
+              "fields": {
+                "_modeIndex": 1,
+                "_loadModeFromBlackboard": true,
+                "_restoreDefault": false,
+                "_restartFSM": false,
+                "_targetType": "TARGET"
+              }
+            },
+            {
+              "template": "switch_mode",
+              "event": 1,
+              "path": "/0",
+              "type": "SwitchMode",
+              "fields": {
+                "_modeIndex": 0,
+                "_loadModeFromBlackboard": false,
+                "_restoreDefault": true,
+                "_restartFSM": false,
+                "_targetType": "TARGET"
+              }
+            }
+          ],
+          "unresolved": []
+        },
+        "selectedModes": [
+          {
+            "index": 0,
+            "sourcePathId": "-5200302221345088241",
+            "roles": {
+              "_attack": [
+                "MeleeAttack",
+                "ThreePartOneshotAnimation",
+                "UberEffectEmitter"
+              ],
+              "_combat": [],
+              "_attackTrigger": [
+                "SelectorTrigger",
+                "AutoLoadBoxRange",
+                "BlockedOrAdvancedSelector"
+              ]
+            },
+            "generalComponents": [],
+            "componentRefs": [
+              "90aee83029b8f3e8144ec884827c026d937596f1baba879db17b8fb0302af04c",
+              "4a8288d675fc8a269135c72ee03e36421d278b70358ed69ba1cc8b4b8ab7abea",
+              "c1c80435a8383742c9810e4bca1f31e3ec3bd5d4daa4b78cc7b1d0209a0c570a",
+              "14ab10b68c2b9e7cb51d728788a9f3cf8ede7e789fd5fa75d1dbf3719f2b479b",
+              "704c09376cbd65e7b61fc4460fb1f61482ce0ff0837139fe589123b194540c29",
+              "734c9f514fb55e8fe4e9e506f502a44c5a10abbf01285874bd9575d49411d22d"
+            ]
+          },
+          {
+            "index": 1,
+            "sourcePathId": "-7308865306858349297",
+            "roles": {
+              "_attack": [
+                "MeleeAttack",
+                "UberEffectEmitter"
+              ],
+              "_combat": [],
+              "_attackTrigger": [
+                "SelectorTrigger",
+                "AutoLoadBoxRange",
+                "BlockedOrAdvancedSelector"
+              ]
+            },
+            "generalComponents": [],
+            "componentRefs": [
+              "9e5a3a781046664fd70eaaf521c40fd3c0a7621f40ff057713cd3056f4b14919",
+              "94690c8512f4c4d9ac508011f6bc263ec560bf029ee7a51ec128e965224cb551",
+              "e47de5cbbbfac09ddda8f44a763d26c6151051527f9aeab3aed96deeb2a993dc",
+              "cb50bd6d0f10d906e2f1ceea73e2867ed7150b2d0144796be75027a9eb2f28dc",
+              "46ce8c21bc4196b6602b6cc76db401cacaedb0882809825754bfb4bc6fc01c35"
+            ]
+          }
+        ]
+      },
+      "rootComponents": [
+        {
+          "node_id": "3340873293715475410",
+          "type": "Torappu.Battle.Abilities.BuffAfterAffecting",
+          "fields": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "-1751837430246929454"
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "7085803614365642631"
+            },
+            "m_Name": "",
+            "_buffs": [
+              {
+                "attributes": {
+                  "abnormalFlags": [
+                    0
+                  ],
+                  "abnormalImmunes": [],
+                  "abnormalAntis": [],
+                  "abnormalCombos": [],
+                  "abnormalComboImmunes": [],
+                  "attributeModifiers": []
+                },
+                "buffKey": "stun",
+                "loadFromDB": 0,
+                "isDurableBuff": 0,
+                "isDamageMissable": 0,
+                "isSilenceable": 0,
+                "isStunnable": 0,
+                "isFreezable": 0,
+                "isLevitatable": 0,
+                "statusResistable": 2,
+                "templateKey": "empty",
+                "disableOverride": 0,
+                "overrideKey": "",
+                "overrideType": 0,
+                "maxStackCnt": 1,
+                "refreshRemainingTimeWhenStackMax": 0,
+                "clearAllStackCntWhenTimeUp": 0,
+                "maxValidStackCnt": -1,
+                "independentCharacterSource": 0,
+                "overrideEffectKey": "buff_stun",
+                "overrideOnEventPriority": 0,
+                "onEventPriority": 0,
+                "audioSignal": "",
+                "lifeTimeType": 1,
+                "takeSnapshotWhenExtend": 0,
+                "durationKey": "stun",
+                "lifeTime": 5.0,
+                "triggerLifeType": 0,
+                "triggerCnt": 0,
+                "triggerInterval": -1.0,
+                "waitFirstTriggerInterval": 1,
+                "firstTriggerInterval": -1.0,
+                "priority": -1,
+                "priorityBBKeys": [],
+                "stripBlackboardParamsWithBuffKey": 0,
+                "blackboard": [],
+                "enableInitDirectionFromSource": 0
+              }
+            ],
+            "_onlyCheckOnStopAffect": 0
+          }
+        }
+      ],
+      "endEffects": [
+        {
+          "kind": "after-affecting",
+          "armEvent": 2,
+          "pollWhileAttached": true,
+          "onlyCheckOnStopAffect": false,
+          "oncePerCast": true,
+          "buffs": [
+            {
+              "kind": "stun",
+              "key": "stun",
+              "duration": {
+                "key": "stun"
+              },
+              "target": "owner",
+              "sourceId": "owner",
+              "statusResistable": "automatic",
+              "maxStack": 1,
+              "independentSource": false,
+              "refresh": "shared-max-expiry-model",
+              "damageMissable": false,
+              "source": {
+                "buffSha256": "2769f23be0e1a45117db8afc1d098b989ff6ff96d4489d606924542593a27e86",
+                "rawLifetime": 5.0,
+                "templateKey": "empty",
+                "templateSha256": "eca58ee7744db98ad540402d6e2b91af372ff277301d6fc85865f9a28851aeb6"
+              }
+            }
+          ],
+          "source": {
+            "componentType": "Torappu.Battle.Abilities.BuffAfterAffecting",
+            "componentId": "3340873293715475410",
+            "componentSha256": "3bc011490e4ae2eb4bbfad915f7260a41323e4026350b26e14d96ceac07dfbeb",
+            "nativeRule": "cast-armed-after-affecting-owner-status-v1",
+            "rawOnlyCheckOnStopAffect": 0
+          }
+        }
+      ],
+      "consumedKeys": [
+        "stun"
+      ],
+      "remainingLevelKeys": [
+        "atk",
+        "attack@buff_prob",
+        "attack@max_target",
+        "attack@stun",
+        "base_attack_time"
+      ],
+      "remainingRootTypes": {
+        "ActiveBuffAbility": 1,
+        "CastSkill": 1
+      },
+      "followingGates": [
+        {
+          "kind": "selected-mode-controller-not-counterfactually-compiled",
+          "indices": [
+            1
+          ]
+        },
+        {
+          "kind": "full-level-blackboard-consumption-not-proven",
+          "keys": [
+            "atk",
+            "attack@buff_prob",
+            "attack@max_target",
+            "attack@stun",
+            "base_attack_time",
+            "stun"
+          ]
+        }
+      ]
+    }
+  },
+  "rejections": {
+    "skchr_blaze2_2": {
+      "source": {
+        "prefabId": "skchr_blaze2_2",
+        "graphPointer": "work/client-logic/program-compilation.json#/rejections/skchr_blaze2_2/components",
+        "graphSha256": "db6f80def411c4125481ddbe36b7b5b82eabb9b9342817b8db3fde57549b1caf",
+        "levelsSha256": "6c91479a05e49970b75785a4fcee3afb082bf02652426027af323eed3360e57c",
+        "characterBundleSha256": "6bb584c9bb477da2d5af5fd51d33e1aa719cdc2a3179a33a31deae138859121e"
+      },
+      "reason": "unsupported-end-effect-field",
+      "path": "end-effects/buffs/0/lifeTimeType",
+      "actual": 0
+    },
+    "skchr_blkkgt_3": {
+      "source": {
+        "prefabId": "skchr_blkkgt_3",
+        "graphPointer": "work/client-logic/program-compilation.json#/rejections/skchr_blkkgt_3/components",
+        "graphSha256": "94576cc6974b7a5632166058b27ee46ef9ada2d7577f8f54333b12fe3aa1a964",
+        "levelsSha256": "ac25eaac17ad84c7b9bb098fe4a1af90276de9ead128137ef3627df8ef566c7f",
+        "characterBundleSha256": null
+      },
+      "reason": "unsupported-end-effect-field",
+      "path": "end-effects/buffs/0/lifeTimeType",
+      "actual": 0
+    },
+    "skchr_necras_1": {
+      "source": {
+        "prefabId": "skchr_necras_1",
+        "graphPointer": "work/client-logic/program-compilation.json#/rejections/skchr_necras_1/components",
+        "graphSha256": "aab9bcdda747957e144bb9ea3a47ae24789e9bcbdc6c3e7523aca189d9e2d68b",
+        "levelsSha256": "78ed924e473a229ac440489cd42934b9f10ddedea51956f957dae4e5e907ee39",
+        "characterBundleSha256": null
+      },
+      "reason": "unsupported-end-effect-field",
+      "path": "end-effects/buffs/0/lifeTimeType",
+      "actual": 0
+    }
+  },
+  "boundaries": [
+    "Cached native SetData clears the armed flag; ON_CAST_START (2) arms it. With onlyCheckOnStopAffect=false, OnTick clears the flag and adds owner Buffs once when the ability is no longer affecting. OnStopAffect does not add Buffs for this flag value.",
+    "The native methods do not branch on a named completion reason. Mapping natural completion and live attached interruption/manual completion to the next not-affecting poll is a simulation lifecycle boundary; no unconditional generic skill-end stun is inferred.",
+    "Death, retreat, removal and cancellation before cast start discard the simulation armed state. No status or deferred end action survives redeployment; native destruction-versus-tick ordering is not newly proved.",
+    "The simulation removes active skill layers before resolving after-affecting status resistance. Exact native within-frame detach/poll ordering is not claimed.",
+    "Finite status keeps its Buff key, owner source and own expiry, respects immunity and current status resistance, and survives ordinary active-mode restoration. Shared DEFAULT max-expiry refresh remains the existing simulation boundary.",
+    "This companion certificate is not whole-skill admission. Remaining active Buffs, selected attacks, selectors, probabilities and all source level keys must still close in the parent mode compiler.",
+    "JP cached component/native evidence applied to CN source levels is cross-snapshot inference. No APP extraction or native re-disassembly is performed by this compiler."
+  ]
+}

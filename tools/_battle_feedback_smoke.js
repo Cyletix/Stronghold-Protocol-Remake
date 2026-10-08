@@ -1,0 +1,22 @@
+'use strict';
+const assert=require('assert/strict'),waves=require('../web/src/simulation/wave-scheduler');
+const s=waves.create([{postDelay:100,fragments:[{actions:[{actionType:'SPAWN',key:'x',count:2,interval:1}]}]}]);
+assert.equal(waves.pending(s),2);waves.advance(s,0,()=>false);assert.equal(waves.pending(s),1);waves.advance(s,1,()=>false);assert.equal(waves.pending(s),0);assert.equal(s.done,false);
+const f=require('./_browser_fixture')();f.ctx.assert=assert;
+f.run(`(async()=>{
+ await initMode();chooseBand('band_amiya');
+ const oldOps=B.operators;B.operators=[{id:3,row:6,col:4},{id:1,row:4,col:4},{id:2,row:5,col:4}];assert.equal(equipTargetAt(5,4).id,2);B.operators.reverse();assert.equal(equipTargetAt(5,4).id,2);B.operators=oldOps;
+ showDecision();assert.notEqual(document.getElementById('decision-modal').style.display,'flex');
+ const money=G.money;applyDecision('tactic');assert.equal(G.money,money);
+ const limit=preparationLimit();updatePreparationClock(7);assert.equal(G.prepareRemaining,limit-7);updatePreparationClock(limit);assert.equal(G.prepareRemaining,0);assert.equal(G.phase,'battle');
+ startBattleRound();B.spawn=[];B.enemies=[];B.shield=5;B.waveScheduler=ArkWaves.create([{preDelay:100,fragments:[]}]);B.roundTime=B.roundLimit;
+ update(0,0);assert.equal(B.win,true,'empty battlefield with only source delay must not lose');
+ startRound(2);startBattleRound();B.spawn=[];B.enemies=[];B.shield=5;
+ B.waveScheduler=ArkWaves.create([{fragments:[{preDelay:10000,actions:[{actionType:'SPAWN',key:'future',count:2}]}]}]);B.roundTime=B.roundLimit;
+ update(0,0);assert.equal(B.win,false);assert.equal(B.endReason,'timeout');assert.equal(B.endCounts.pending,2);
+ let simulated=0;update=(dt,real)=>{simulated+=dt;assert.equal(real,0);};render=()=>{};
+ B.phase='battle';B.over=false;B.roundTime=0;last=null;simulationClock=null;setPaused(false);setGameSpeed(1);
+ for(let i=0;i<=60;i++)loop(i*1000/60);
+ assert.ok(Math.abs(simulated-2)<1e-6,'covenant remains 2x even if practice speed was 1x');assert.ok(Math.abs(B.roundTime-1)<1e-6,'HUD time is real time');
+ console.log('BATTLE FEEDBACK OK tail delay, pending-enemy failure, first-round decision guard, preparation countdown and independent 2x/1x clocks');
+})()`).catch(e=>{console.error(e);process.exitCode=1;});

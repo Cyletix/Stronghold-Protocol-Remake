@@ -1,0 +1,5 @@
+fsb5>=0.9.4
+# 客户端原生逻辑取证：extract_client_logic.py 的 ARM64 指令样本
+capstone>=5.0,<6
+# 敌人动画缺口批量解析；入口修正该版本固定宽度数字的字节序
+spine-asset==1.1.1

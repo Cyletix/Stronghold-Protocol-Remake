@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-09-18T17:32:44.291863+09:00",
+  "scope": "enemy-selectable-attacks",
+  "command": "node tools/_enemy_selectable_checklist_scope_smoke.js",
+  "passed": true,
+  "preview": "work\\enemy-selectable-checklist-preview\\docs\\checklists\\implementation-checklist.json",
+  "historicalTaskCount": 6391,
+  "checkedBefore": 564,
+  "checkedPreview": 564,
+  "newUnacceptedTaskIds": [
+    "enemy/enemy_9021_acduml_2/basic/source-selectable-attack-body"
+  ],
+  "historicalTasksBasisNotesChecksPreserved": true,
+  "historicalFactsAndOtherProviderScopesPreserved": true,
+  "acceptanceWriterTest": "Isolated in-memory fs only; parent task and wrong scope rejected; real files unchanged.",
+  "productionChecklistWritten": false,
+  "toolHashes": {
+    "tools/audit_implementation_checklist.js": "ab2e1059b9d3bca1fbf5264fc8427c6e599011000bfaeca1616abd22686ddfb4",
+    "tools/record_garrison_acceptance.js": "4756010b694616866c71a7627f48e663047875e70a374ac7a36562904fc9ed07",
+    "tools/_enemy_selectable_checklist_scope_smoke.js": "7f1dd42d0b6c6065b7cae50ea51cbd01c0be3313db05abc314ab9bbadfc7d955"
+  }
+}

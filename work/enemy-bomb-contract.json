@@ -1,0 +1,1130 @@
+{
+  "schemaVersion": 1,
+  "sourceVersion": "CN frozen skill group + JP 36.7.22 projectile + attributed Spine",
+  "inputs": {
+    "work/enemy-skill-dispatch-candidates.json": "428b95418e4ee2b4a1b03379f015cf6d3f59e5d3e7f590e8f89f630195b4450b",
+    "work/client-logic/script-types.json": "1fc6554278c7432c6ba9aa68b6332ee6cabbc3b8ef9a8f1b6394d838d49af041",
+    "work/client-logic/bundles/battle/prefabs/[uc]projectiles.ab.json": "5fa76222ae24a8d5bff935ad7d4219df58ffacac03ea761f98d3d4df136a9505",
+    "work/enemy-animation-supplement.json": "db4d3ef989615b5f2bcec2e6dc844dab8bd7a0201d546a4581f0e7cb3118659a"
+  },
+  "candidate": {
+    "id": "enemy_1040_bombd|CAB-c66709e8e44223eecca4bce9fbf48f83:8530485036149232392:19",
+    "enemyId": "enemy_1040_bombd",
+    "sourceRef": {
+      "cache": "work/enemy-mode-dispatch-catalog.json",
+      "enemyId": "enemy_1040_bombd",
+      "componentKey": "CAB-c66709e8e44223eecca4bce9fbf48f83:8530485036149232392:19",
+      "fieldPath": "/_trigger"
+    },
+    "name": "Boomb",
+    "triggerType": "SelectorTrigger",
+    "trigger": {
+      "componentKey": "CAB-c66709e8e44223eecca4bce9fbf48f83:8380158705594585864:18",
+      "scriptType": "Torappu.Battle.SelectorTrigger",
+      "fields": {
+        "_keepTarget": 0,
+        "_minTargetNum": 1,
+        "_overrideSearchTargetTick": -1
+      }
+    },
+    "skillFields": {
+      "_familyMask": 3,
+      "_trigger": {
+        "m_FileID": 0,
+        "m_PathID": 8380158705594585864
+      },
+      "_checkParentActive": 0,
+      "_maxTriggerTime": 1,
+      "_resetMainAbilityCdWhenCastEnd": 0,
+      "_resetCdWaitFirstPeriod": 1,
+      "_overwriteInitCooldown": -1,
+      "_ignoreSilence": 1,
+      "_immuneStunWhenAffecting": 0,
+      "_addEnemyIdToSignalId": 0,
+      "_castLikeAttack": 0
+    },
+    "ownership": {
+      "componentKey": "CAB-c66709e8e44223eecca4bce9fbf48f83:8530485036149232392:19",
+      "pathID": "8530485036149232392",
+      "scriptType": "Torappu.Battle.EnemySkill",
+      "status": "shared-fields-match",
+      "sharedFieldDifferences": [],
+      "schemaDifferences": [],
+      "gameObjectPathID": "-3123806488408239352",
+      "jpEnabled": 1,
+      "jpNodeSha256": "9ce2bcbb2cbda4ac1cb7c626b2314541210d331c3c405d5263f8dfdeff52d17d",
+      "ancestorGameObjects": [
+        {
+          "pathID": "-3123806488408239352",
+          "name": "Boomb"
+        },
+        {
+          "pathID": "-8687789523396472056",
+          "name": "Skills"
+        },
+        {
+          "pathID": "-7765826918359182584",
+          "name": "enemy_1040_bombd"
+        }
+      ],
+      "hierarchyStatus": "resolved",
+      "ownershipOverlayEligible": false,
+      "modeIndicesFromAncestorGameObjects": [],
+      "structuralLocation": "unresolved-or-cross-source-field-mismatch"
+    },
+    "provider": {
+      "evidenceStage": "declared",
+      "structurallyMounted": false,
+      "structuralLocation": "unresolved-or-cross-source-field-mismatch",
+      "modeIndices": [],
+      "declaredStructuralModeIndices": [],
+      "entryPaths": [],
+      "sourceActivity": "not-proven-by-mounting-or-reachability"
+    },
+    "modeIndices": [],
+    "compiledOwnerModes": [],
+    "initiallyMountedInCompiledMode": false,
+    "databaseSkillBindings": [
+      {
+        "prefabKey": "boomb",
+        "priority": 0,
+        "cooldown": 1,
+        "initCooldown": 1,
+        "spCost": 0,
+        "blackboard": [
+          {
+            "key": "move_speed",
+            "value": 2,
+            "valueStr": null
+          }
+        ]
+      }
+    ],
+    "nameBindingEvidenceLevel": "Inferred-casefold-matching",
+    "abilityTypes": [
+      "BuffAfterAffecting",
+      "RangedAttack"
+    ],
+    "sameGameObjectComponents": {
+      "CAB-c66709e8e44223eecca4bce9fbf48f83:-1034233473134767352:8": {
+        "sourceComponentIndex": 8,
+        "cabin": "CAB-c66709e8e44223eecca4bce9fbf48f83",
+        "pathID": "-1034233473134767352",
+        "scriptPathID": "4156651312234227407",
+        "scriptType": "Torappu.Battle.Abilities.RangedAttack",
+        "scriptTypeCandidates": [
+          "Torappu.Battle.Abilities.RangedAttack"
+        ],
+        "sourceClass": "Ability",
+        "fields": {
+          "_selector": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "_metadata": {
+            "namedAsAlias": "",
+            "blackboardPrefix": ""
+          },
+          "_interruptAbilityOnDetach": 0,
+          "_attachPassiveBuffsOnDummy": 1,
+          "_ignoreIfOwnerDead": 0,
+          "_forceAsDmgOrHealAbility": 0,
+          "_waitForAttackEvent": 1,
+          "_interuptIfTargetDead": 0,
+          "_resetCdStrategy": 1,
+          "_selectTargetSource": 2,
+          "_selectTargetTiming": 0,
+          "_timeMode": 0,
+          "_alwaysIncludeTarget": 1,
+          "_allowNoTarget": 0,
+          "_animKey": "Attack",
+          "_endAnimKey": "Idle_2",
+          "_downAnimKey": "",
+          "_downEndAnimKey": "",
+          "_upAnimKey": "",
+          "_upEndAnimKey": "",
+          "_cooldown": 0.0,
+          "_cooldownKey": "duration",
+          "_preDelay": 0.0,
+          "_escapeTime": 0.0,
+          "_faceToTarget": 1,
+          "_faceToDefault": 0,
+          "_faceToFront": 0,
+          "_faceToFirstCastTarget": 0,
+          "_checkFaceToFirstCastTargetDownAttack": 0,
+          "_forceFaceToDirection": 0,
+          "_activeBuffs": [],
+          "_maxAnimScale": 1.0,
+          "_onlyPlayEndAnimWhenIsLastAbility": 0,
+          "_ignorePalsyInterrupt": 0,
+          "_affectedBySlowDown": 1,
+          "_atkScale": 1.0,
+          "_atkScaleKey": "atk_scale",
+          "_attackType": 0,
+          "_elementDamageType": 0,
+          "_epDamageRatio": 0.0,
+          "_useDynamicAttackType": 1,
+          "_deliveryParaWhenReplaceActionNode": 0,
+          "_projectileKey": "projectile_bombd",
+          "_mountPointType": 2,
+          "_useMountGroup": 0,
+          "_mountGroup": {
+            "loopType": 0,
+            "mountPoints": []
+          },
+          "_damageType": 1,
+          "_waitForProjectileInvalid": 0,
+          "_notClearProjectileWhenCastEnd": 0,
+          "_fireAttackFinishWhenProjectileInvalid": 1,
+          "_minPostDelayWhenProjectileInvalid": 0.667,
+          "_waitForAnimEndWhenProjectileInvalid": 0,
+          "_projectileDestination": 0,
+          "_extraDamageType": 0,
+          "_emitToInputPosWhenTargetIsInvalid": 0,
+          "_emitToInputRootTileWhenTargetIsInvalid": 0,
+          "_useCachedAtkOnly": 0,
+          "_transferSource": 0,
+          "_extraProjectileKeys": [],
+          "_fireCreateProjectileEvent": 0
+        },
+        "serializedGraphs": [],
+        "retainedSourceMetadata": {}
+      },
+      "CAB-c66709e8e44223eecca4bce9fbf48f83:5732880406891385608:16": {
+        "sourceComponentIndex": 16,
+        "cabin": "CAB-c66709e8e44223eecca4bce9fbf48f83",
+        "pathID": "5732880406891385608",
+        "scriptPathID": "7085803614365642631",
+        "scriptType": "Torappu.Battle.Abilities.BuffAfterAffecting",
+        "scriptTypeCandidates": [
+          "Torappu.Battle.Abilities.BuffAfterAffecting"
+        ],
+        "sourceClass": "Other",
+        "fields": {
+          "_buffs": [
+            {
+              "attributes": {
+                "abnormalFlags": [],
+                "abnormalImmunes": [],
+                "abnormalAntis": [],
+                "abnormalCombos": [],
+                "abnormalComboImmunes": [],
+                "attributeModifiers": [
+                  {
+                    "attributeType": 6,
+                    "formulaItem": 3,
+                    "value": 0.0,
+                    "loadFromBlackboard": 1,
+                    "fetchBaseValueFromSourceEntity": 0
+                  }
+                ]
+              },
+              "buffKey": "bomb_s",
+              "loadFromDB": 0,
+              "isDurableBuff": 0,
+              "isDamageMissable": 0,
+              "isSilenceable": 0,
+              "isStunnable": 0,
+              "isFreezable": 0,
+              "isLevitatable": 0,
+              "isGroundBoundable": 0,
+              "statusResistable": 2,
+              "templateKey": "switch_mode_restart_fsm",
+              "disableOverride": 0,
+              "overrideKey": "",
+              "overrideType": 0,
+              "maxStackCnt": 1,
+              "refreshRemainingTimeWhenStackMax": 0,
+              "clearAllStackCntWhenTimeUp": 0,
+              "maxValidStackCnt": -1,
+              "independentCharacterSource": 0,
+              "overrideEffectKey": "",
+              "overrideOnEventPriority": 0,
+              "onEventPriority": 0,
+              "audioSignal": "",
+              "lifeTimeType": 2,
+              "takeSnapshotWhenExtend": 0,
+              "durationKey": "",
+              "lifeTime": 5.0,
+              "triggerLifeType": 0,
+              "triggerCnt": 0,
+              "triggerInterval": -1.0,
+              "waitFirstTriggerInterval": 1,
+              "firstTriggerInterval": -1.0,
+              "priority": -1,
+              "priorityBBKeys": [],
+              "stripBlackboardParamsWithBuffKey": 0,
+              "blackboard": [
+                {
+                  "key": "mode",
+                  "value": 1.0,
+                  "valueStr": ""
+                }
+              ],
+              "enableInitDirectionFromSource": 0
+            }
+          ],
+          "_onlyCheckOnStopAffect": 0
+        },
+        "serializedGraphs": [],
+        "retainedSourceMetadata": {}
+      },
+      "CAB-c66709e8e44223eecca4bce9fbf48f83:8530485036149232392:19": {
+        "sourceComponentIndex": 19,
+        "cabin": "CAB-c66709e8e44223eecca4bce9fbf48f83",
+        "pathID": "8530485036149232392",
+        "scriptPathID": "-5087399121287503180",
+        "scriptType": "Torappu.Battle.EnemySkill",
+        "scriptTypeCandidates": [
+          "Torappu.Battle.EnemySkill"
+        ],
+        "sourceClass": "EnemySkill",
+        "fields": {
+          "_familyMask": 3,
+          "_trigger": {
+            "m_FileID": 0,
+            "m_PathID": 8380158705594585864
+          },
+          "_checkParentActive": 0,
+          "_maxTriggerTime": 1,
+          "_resetMainAbilityCdWhenCastEnd": 0,
+          "_resetCdWaitFirstPeriod": 1,
+          "_overwriteInitCooldown": -1,
+          "_ignoreSilence": 1,
+          "_immuneStunWhenAffecting": 0,
+          "_addEnemyIdToSignalId": 0,
+          "_castLikeAttack": 0
+        },
+        "serializedGraphs": [],
+        "retainedSourceMetadata": {}
+      }
+    },
+    "componentDependencies": {
+      "CAB-c66709e8e44223eecca4bce9fbf48f83:8380158705594585864:18": {
+        "sourceComponentIndex": 18,
+        "cabin": "CAB-c66709e8e44223eecca4bce9fbf48f83",
+        "pathID": "8380158705594585864",
+        "scriptPathID": "8607874384982393801",
+        "scriptType": "Torappu.Battle.SelectorTrigger",
+        "scriptTypeCandidates": [
+          "Torappu.Battle.SelectorTrigger"
+        ],
+        "sourceClass": "Other",
+        "fields": {
+          "_keepTarget": 0,
+          "_minTargetNum": 1,
+          "_overrideSearchTargetTick": -1
+        },
+        "serializedGraphs": [],
+        "retainedSourceMetadata": {}
+      }
+    },
+    "actionTypes": [],
+    "buffDeclarations": [
+      {
+        "componentKey": "CAB-c66709e8e44223eecca4bce9fbf48f83:5732880406891385608:16",
+        "fieldPath": "/_buffs/0",
+        "fields": {
+          "attributes": {
+            "abnormalFlags": [],
+            "abnormalImmunes": [],
+            "abnormalAntis": [],
+            "abnormalCombos": [],
+            "abnormalComboImmunes": [],
+            "attributeModifiers": [
+              {
+                "attributeType": 6,
+                "formulaItem": 3,
+                "value": 0.0,
+                "loadFromBlackboard": 1,
+                "fetchBaseValueFromSourceEntity": 0
+              }
+            ]
+          },
+          "buffKey": "bomb_s",
+          "loadFromDB": 0,
+          "isDurableBuff": 0,
+          "isDamageMissable": 0,
+          "isSilenceable": 0,
+          "isStunnable": 0,
+          "isFreezable": 0,
+          "isLevitatable": 0,
+          "isGroundBoundable": 0,
+          "statusResistable": 2,
+          "templateKey": "switch_mode_restart_fsm",
+          "disableOverride": 0,
+          "overrideKey": "",
+          "overrideType": 0,
+          "maxStackCnt": 1,
+          "refreshRemainingTimeWhenStackMax": 0,
+          "clearAllStackCntWhenTimeUp": 0,
+          "maxValidStackCnt": -1,
+          "independentCharacterSource": 0,
+          "overrideEffectKey": "",
+          "overrideOnEventPriority": 0,
+          "onEventPriority": 0,
+          "audioSignal": "",
+          "lifeTimeType": 2,
+          "takeSnapshotWhenExtend": 0,
+          "durationKey": "",
+          "lifeTime": 5.0,
+          "triggerLifeType": 0,
+          "triggerCnt": 0,
+          "triggerInterval": -1.0,
+          "waitFirstTriggerInterval": 1,
+          "firstTriggerInterval": -1.0,
+          "priority": -1,
+          "priorityBBKeys": [],
+          "stripBlackboardParamsWithBuffKey": 0,
+          "blackboard": [
+            {
+              "key": "mode",
+              "value": 1.0,
+              "valueStr": ""
+            }
+          ],
+          "enableInitDirectionFromSource": 0
+        },
+        "templateRef": "switch_mode_restart_fsm"
+      }
+    ],
+    "missingContracts": [
+      "enemy-skill-scheduler-and-lifecycle-not-compiled",
+      "initial-mode-profile-not-compiled",
+      "ownership-overlay-not-eligible"
+    ],
+    "implementationReady": false
+  },
+  "projectile": {
+    "asset": [
+      "dyn/battle/prefabs/[uc]projectiles/projectile_bombd.prefab",
+      {
+        "preloadIndex": 25075,
+        "preloadSize": 13,
+        "asset": {
+          "m_FileID": 0,
+          "m_PathID": "180640146046766117"
+        }
+      }
+    ],
+    "nodes": {
+      "-7693809595149267931": {
+        "pathId": "-7693809595149267931",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "180640146046766117"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "6834194400804168919"
+          },
+          "m_Name": "",
+          "_effectsWhenStart": [],
+          "_effectsWhenReached": [
+            "bombd_attack_01_range"
+          ],
+          "_effectsWhenHit": [],
+          "_effectsToTargetWhenStart": [],
+          "_effectsToTileWhenStart": [],
+          "_effectsWhenStop": [],
+          "_effectOnTrigger": [],
+          "_onlyPlayHitEffectOnTraceTarget": 1,
+          "_onlyPlayHitEffectOnNotTraceTarget": 0,
+          "_onlyPlayHitEffectOnce": 0,
+          "_clearHitEffectOnStop": 0,
+          "_clearPlayEffectOnStop": 0,
+          "_clearEffectsOnTileOnStop": 0,
+          "_clearReachedEffectWhenStop": 0,
+          "_alwaysPlayStartEffects": 0,
+          "_playStartEffectOnlyOnProjectile": 0,
+          "_useSourceFaceVector": 0,
+          "_useSourceFaceVectorOnHit": 0,
+          "_forceReachTargetGround": 0,
+          "_followTargetGround": 0,
+          "_replaceMainEffectWhenReach": 0,
+          "_mainEffectToReplace": "",
+          "_useTraceTargetWhenReach": 0,
+          "_setReachEffectOnProjectile": 0,
+          "_syncEffectScaleViaProjectile": 0
+        },
+        "fieldShape": "9ef2cce7440786cf",
+        "scriptType": "Torappu.Battle.Projectiles.EffectBehaviour"
+      },
+      "-7347860655888282587": {
+        "pathId": "-7347860655888282587",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "180640146046766117"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "2199810253607412256"
+          },
+          "m_Name": "",
+          "_rotateToTarget": 1,
+          "_forceReachedWhenTimeup": 1,
+          "_useSourceDirection": 0,
+          "_useTargetDirection": 0,
+          "_useStartToTarget": 0,
+          "_awayFromSourceAsDirection": 0,
+          "_flyToTargetLocationOnly": 0,
+          "_useSourceDirectionRandomArcAngleStart": 0,
+          "_useSourceToTargetRandomArcAngleStart": 0,
+          "_useSourceDirectionArcAngleWithRatio": 0,
+          "_useSourceToTargetArcAngleWithRatio": 0,
+          "_sourceDirectionArcAngleRatio": 0.0,
+          "_flyToPredefinedLocation": 0,
+          "_predefinedLocation": 0,
+          "_freezeRotationZ": 0,
+          "_freezeRotationXY": 0,
+          "_exactMatchCameraForward": 1,
+          "_resetToTargetPosWhenReached": 0,
+          "_resetToTracetargetMapPosV3": 0,
+          "_handleWithIBuildableTarget": 0,
+          "_forceResetToTargetPosWhenReached": 0,
+          "_fixOnProjectileReached": 0,
+          "_onlyReachedInTime": 0.0,
+          "_moveType": 1,
+          "_moveTypeData": {
+            "data": []
+          },
+          "_speed": 5.0,
+          "_distance": 0.0,
+          "_comeBack": 0,
+          "_comeBackSpeedScale": 0.25,
+          "_delayToStart": 0.0,
+          "_delayAfterReached": 0.0,
+          "_delayToReachAfterHit": 0.0,
+          "_clearTraceTargetWhenReached": 1,
+          "_updateDelayTimeOnlyOnce": 0,
+          "_skipSmoothLerpDirection": 0,
+          "_addInertia": 0,
+          "_turnSpeed": 0.0,
+          "_useDynamicSpeed": 0,
+          "_deltaSpeedPerSec": 0.0,
+          "_finalSpeed": 0.0,
+          "_randomOffset": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "_forceUseTargetMountPoint": 0,
+          "_fallingTime": 0.30000001192092896,
+          "_fallingSpeed": 0.699999988079071
+        },
+        "fieldShape": "a89cca5e6e82a644",
+        "scriptType": "Torappu.Battle.Projectiles.BombdMovement"
+      },
+      "-1333669992805643227": {
+        "pathId": "-1333669992805643227",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "180640146046766117"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "-8797129986015012478"
+          },
+          "m_Name": "",
+          "_randomDelayToBorn": 0.0,
+          "_bodyTransform": {
+            "m_FileID": 0,
+            "m_PathID": "7254287960062086181"
+          },
+          "_keepAlreadyHitTime": -1.0,
+          "_mainEffect": "bombd_attack_01_trail",
+          "_clearMainEffectWhenReached": 0,
+          "_actionController": {
+            "_detachBuffsWhenTargetLeave": 0,
+            "_detachAllBuffsWhenStopped": 0,
+            "_onlyAddBuffsToTraceTarget": 0,
+            "_onlyAddBuffsToTargetOnce": 0,
+            "_dontAddBuffs": 0,
+            "_excludeAttachments": 0,
+            "_useSelfBlackboard": 0,
+            "_extraBuffsInTheEnd": [],
+            "_useExtraBuffsWhenStopHit": 0,
+            "_addExtraBuffsWhenReached": 0,
+            "_detachAllExtraBuffsWhenStopped": 0
+          },
+          "_fixDealHitTargetLeft": 0,
+          "_stopGraphicProjectileWhenClearMainEffect": 0,
+          "_overrideAudioSignal": "",
+          "_fireProjectileReachedEvent": 0,
+          "_eliminatableStatus": 0,
+          "_movementAdjustableStatus": 0,
+          "_managedBySource": 0,
+          "_projectileType": 0,
+          "_containsChildrenBehaviours": 0,
+          "_canHitSameTargetMultipleTimes": 0,
+          "_lifeTimeType": 1,
+          "_lifeTime": 10.0,
+          "_getLifeTimeFromBB": 0,
+          "_hitNumType": 2,
+          "_maxHitNum": 1,
+          "_getMaxHitNumFromBB": 0,
+          "_maxHitNumBBKey": "",
+          "_stopAfterMaxHit": 1,
+          "_stopAfterFirstHit": 0,
+          "_stopWhenSourceInvalid": 0,
+          "_alwaysHitTraceTargetInTheEnd": 1,
+          "_alwaysHitTraceTargetWhenReached": 0,
+          "_alwaysReachInTheEnd": 0,
+          "_limitedMaxHitNumToSourceBlockedCnt": 0,
+          "_allowZeroBlockCntLimit": 0
+        },
+        "fieldShape": "2af792379c25a51f",
+        "scriptType": "Torappu.Battle.SimpleProjectile"
+      },
+      "167268145056697381": {
+        "pathId": "167268145056697381",
+        "unityType": "Transform",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "180640146046766117"
+          },
+          "m_LocalRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "m_LocalPosition": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "m_LocalScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "m_Children": [
+            {
+              "m_FileID": 0,
+              "m_PathID": "7254287960062086181"
+            }
+          ],
+          "m_Father": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          }
+        }
+      },
+      "6117227030252407845": {
+        "pathId": "6117227030252407845",
+        "unityType": "BoxCollider2D",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "180640146046766117"
+          },
+          "m_Enabled": 1,
+          "m_Density": 1.0,
+          "m_Material": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "m_IsTrigger": true,
+          "m_UsedByEffector": false,
+          "m_UsedByComposite": false,
+          "m_Offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "m_SpriteTilingProperty": {
+            "border": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0,
+              "w": 0.0
+            },
+            "pivot": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "oldSize": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "newSize": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "adaptiveTilingThreshold": 0.0,
+            "drawMode": 0,
+            "adaptiveTiling": false
+          },
+          "m_AutoTiling": false,
+          "m_Size": {
+            "x": 3.0,
+            "y": 3.0
+          },
+          "m_EdgeRadius": 0.0
+        }
+      },
+      "7170865150408313893": {
+        "pathId": "7170865150408313893",
+        "unityType": "MonoBehaviour",
+        "fields": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "180640146046766117"
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "-3494225671239136090"
+          },
+          "m_Name": "",
+          "_targetOptions": {
+            "targetSide": 2,
+            "targetMotion": 3,
+            "targetCategory": 1,
+            "enableAdvancedOptions": 1,
+            "ignoreTargetFree": 0,
+            "ignoreAllyTargetFree": 0,
+            "ignoreHealFree": 0,
+            "ignoreTargetSide": 0,
+            "excludeSomeAbnormalFlags": 0,
+            "excludeAbnormalFlag": 0,
+            "purposeMask": 0,
+            "professionMask": 0,
+            "checkUnitType": 0,
+            "unitTypeMask": 0,
+            "onlyIgnoreSomeOfTargetFreeCase": 0,
+            "abnormalFlag": 0,
+            "abnormalCombo": 0
+          },
+          "_goThroughWall": 1,
+          "_onlyCheckHitWhenReachTarget": 1,
+          "_onlyCheckHitWhenStop": 0,
+          "_canFlyThroughTheDeathArea": 0,
+          "_exceptTraceTarget": 0,
+          "_overridePurposeMaskWithTargetOptions": 0,
+          "_rangeToLoad": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "_ignoreCamouflage": 1,
+          "_ignoreRangeScale": 0,
+          "_exceptSource": 0,
+          "_mergeTraceTargetMotion": 0,
+          "_markReachedOnlyWhenTargetEnter": 0
+        },
+        "fieldShape": "a845655334073b4b",
+        "scriptType": "Torappu.Battle.Projectiles.HitBehaviour"
+      }
+    }
+  },
+  "animation": {
+    "animations": {
+      "Attack": {
+        "duration": 1.0,
+        "events": [
+          {
+            "event": "OnAttack",
+            "t": 0.2666667
+          }
+        ]
+      },
+      "Default": {
+        "duration": 0.0,
+        "events": []
+      },
+      "Default_2": {
+        "duration": 0.0,
+        "events": []
+      },
+      "Die": {
+        "duration": 1.0,
+        "events": []
+      },
+      "Die_2": {
+        "duration": 1.0,
+        "events": []
+      },
+      "Idle": {
+        "duration": 2.0,
+        "events": []
+      },
+      "Idle_2": {
+        "duration": 2.0,
+        "events": []
+      },
+      "Move_Begin": {
+        "duration": 0.3333333,
+        "events": []
+      },
+      "Move_Begin_2": {
+        "duration": 0.3333333,
+        "events": []
+      },
+      "Move_End": {
+        "duration": 0.3333333,
+        "events": []
+      },
+      "Move_End_2": {
+        "duration": 0.3333333,
+        "events": []
+      },
+      "Move_Loop": {
+        "duration": 2.0,
+        "events": []
+      },
+      "Move_Loop_2": {
+        "duration": 2.0,
+        "events": []
+      }
+    },
+    "source": {
+      "path": "models_enemies/5025_bmbdfd/enemy_1040_bombd.skel",
+      "gitBlob": "c38f879ac3afea54258d6a75b1f66da76823793b",
+      "sha256": "992ba3dd97b118db6a98dcd6a49da2557177989a1df9b3273d4f2b7e9df25e4f",
+      "spineVersion": "3.8.99"
+    }
+  },
+  "native": {
+    "sha256": "d95820e25938778b8865571741c7d626d70662f82bc5bb3badf058fbd1e595af",
+    "methods": [
+      {
+        "index": 72585,
+        "method": "OnInit",
+        "type": "Torappu.Battle.Projectiles.BombdMovement",
+        "address": "0x243e8d8",
+        "instructions": 0,
+        "file": "72585_OnInit.asm"
+      },
+      {
+        "index": 72586,
+        "method": "OnTick",
+        "type": "Torappu.Battle.Projectiles.BombdMovement",
+        "address": "0x243ebc0",
+        "instructions": 0,
+        "file": "72586_OnTick.asm"
+      },
+      {
+        "index": 77537,
+        "method": "SetData",
+        "type": "Torappu.Battle.Abilities.BuffAfterAffecting",
+        "address": "0x25bbc9c",
+        "instructions": 35,
+        "file": "77537_SetData.asm"
+      },
+      {
+        "index": 77538,
+        "method": "OnEvent",
+        "type": "Torappu.Battle.Abilities.BuffAfterAffecting",
+        "address": "0x25bbd28",
+        "instructions": 38,
+        "file": "77538_OnEvent.asm"
+      },
+      {
+        "index": 77541,
+        "method": "OnTick",
+        "type": "Torappu.Battle.Abilities.BuffAfterAffecting",
+        "address": "0x25bbee4",
+        "instructions": 109,
+        "file": "77541_OnTick.asm"
+      },
+      {
+        "index": 77542,
+        "method": "OnStopAffect",
+        "type": "Torappu.Battle.Abilities.BuffAfterAffecting",
+        "address": "0x25bc098",
+        "instructions": 83,
+        "file": "77542_OnStopAffect.asm"
+      }
+    ],
+    "layouts": [
+      {
+        "type": "Torappu.Battle.Projectiles.BombdMovement",
+        "typeIndex": 10696,
+        "fields": [
+          {
+            "index": 81511,
+            "name": "_fallingTime",
+            "typeIndex": 60221,
+            "rawOffset": 308,
+            "offset": 308,
+            "offsetStatus": "plausible",
+            "nativeType": {
+              "il2CppTypeIndex": 60221,
+              "kind": 12,
+              "attrs": 1,
+              "byref": false,
+              "typeName": "float"
+            }
+          },
+          {
+            "index": 81512,
+            "name": "_fallingSpeed",
+            "typeIndex": 60221,
+            "rawOffset": 312,
+            "offset": 312,
+            "offsetStatus": "plausible",
+            "nativeType": {
+              "il2CppTypeIndex": 60221,
+              "kind": 12,
+              "attrs": 1,
+              "byref": false,
+              "typeName": "float"
+            }
+          },
+          {
+            "index": 81513,
+            "name": "m_fallingTime",
+            "typeIndex": 60221,
+            "rawOffset": 316,
+            "offset": 316,
+            "offsetStatus": "plausible",
+            "nativeType": {
+              "il2CppTypeIndex": 60221,
+              "kind": 12,
+              "attrs": 1,
+              "byref": false,
+              "typeName": "float"
+            }
+          },
+          {
+            "index": 81514,
+            "name": "m_fallingDir",
+            "typeIndex": 67074,
+            "rawOffset": 320,
+            "offset": 320,
+            "offsetStatus": "plausible",
+            "nativeType": {
+              "il2CppTypeIndex": 67074,
+              "kind": 17,
+              "attrs": 1,
+              "byref": false,
+              "typeName": "UnityEngine.Vector3",
+              "definitionIndex": 38913
+            }
+          },
+          {
+            "index": 81515,
+            "name": "__Hotfix0_OnInit",
+            "typeIndex": 40449,
+            "rawOffset": 0,
+            "offset": 0,
+            "offsetStatus": "plausible",
+            "nativeType": {
+              "il2CppTypeIndex": 40449,
+              "kind": 18,
+              "attrs": 17,
+              "byref": false,
+              "typeName": "XLua.DelegateBridge",
+              "definitionIndex": 580
+            }
+          },
+          {
+            "index": 81516,
+            "name": "__Hotfix0_OnTick",
+            "typeIndex": 40449,
+            "rawOffset": 8,
+            "offset": 8,
+            "offsetStatus": "plausible",
+            "nativeType": {
+              "il2CppTypeIndex": 40449,
+              "kind": 18,
+              "attrs": 17,
+              "byref": false,
+              "typeName": "XLua.DelegateBridge",
+              "definitionIndex": 580
+            }
+          },
+          {
+            "index": 81517,
+            "name": "_c__Hotfix0_ctor",
+            "typeIndex": 40449,
+            "rawOffset": 16,
+            "offset": 16,
+            "offsetStatus": "plausible",
+            "nativeType": {
+              "il2CppTypeIndex": 40449,
+              "kind": 18,
+              "attrs": 17,
+              "byref": false,
+              "typeName": "XLua.DelegateBridge",
+              "definitionIndex": 580
+            }
+          }
+        ]
+      },
+      {
+        "type": "Torappu.Battle.Abilities.BuffAfterAffecting",
+        "typeIndex": 11216,
+        "fields": [
+          {
+            "index": 87607,
+            "name": "_buffs",
+            "typeIndex": 25047,
+            "rawOffset": 32,
+            "offset": 32,
+            "offsetStatus": "plausible",
+            "nativeType": {
+              "il2CppTypeIndex": 25047,
+              "kind": 29,
+              "attrs": 1,
+              "byref": false
+            }
+          },
+          {
+            "index": 87608,
+            "name": "_onlyCheckOnStopAffect",
+            "typeIndex": 34597,
+            "rawOffset": 40,
+            "offset": 40,
+            "offsetStatus": "plausible",
+            "nativeType": {
+              "il2CppTypeIndex": 34597,
+              "kind": 2,
+              "attrs": 1,
+              "byref": false,
+              "typeName": "bool"
+            }
+          },
+          {
+            "index": 87609,
+            "name": "m_waitForAffectingEnd",
+            "typeIndex": 34597,
+            "rawOffset": 41,
+            "offset": 41,
+            "offsetStatus": "plausible",
+            "nativeType": {
+              "il2CppTypeIndex": 34597,
+              "kind": 2,
+              "attrs": 1,
+              "byref": false,
+              "typeName": "bool"
+            }
+          },
+          {
+            "index": 87610,
+            "name": "__Hotfix0_SetData",
+            "typeIndex": 40449,
+            "rawOffset": 0,
+            "offset": 0,
+            "offsetStatus": "plausible",
+            "nativeType": {
+              "il2CppTypeIndex": 40449,
+              "kind": 18,
+              "attrs": 17,
+              "byref": false,
+              "typeName": "XLua.DelegateBridge",
+              "definitionIndex": 580
+            }
+          },
+          {
+            "index": 87611,
+            "name": "__Hotfix0_OnEvent",
+            "typeIndex": 40449,
+            "rawOffset": 8,
+            "offset": 8,
+            "offsetStatus": "plausible",
+            "nativeType": {
+              "il2CppTypeIndex": 40449,
+              "kind": 18,
+              "attrs": 17,
+              "byref": false,
+              "typeName": "XLua.DelegateBridge",
+              "definitionIndex": 580
+            }
+          },
+          {
+            "index": 87612,
+            "name": "__Hotfix0_GatherBuffs",
+            "typeIndex": 40449,
+            "rawOffset": 16,
+            "offset": 16,
+            "offsetStatus": "plausible",
+            "nativeType": {
+              "il2CppTypeIndex": 40449,
+              "kind": 18,
+              "attrs": 17,
+              "byref": false,
+              "typeName": "XLua.DelegateBridge",
+              "definitionIndex": 580
+            }
+          },
+          {
+            "index": 87613,
+            "name": "__Hotfix0_GatherEffects",
+            "typeIndex": 40449,
+            "rawOffset": 24,
+            "offset": 24,
+            "offsetStatus": "plausible",
+            "nativeType": {
+              "il2CppTypeIndex": 40449,
+              "kind": 18,
+              "attrs": 17,
+              "byref": false,
+              "typeName": "XLua.DelegateBridge",
+              "definitionIndex": 580
+            }
+          },
+          {
+            "index": 87614,
+            "name": "__Hotfix0_OnTick",
+            "typeIndex": 40449,
+            "rawOffset": 32,
+            "offset": 32,
+            "offsetStatus": "plausible",
+            "nativeType": {
+              "il2CppTypeIndex": 40449,
+              "kind": 18,
+              "attrs": 17,
+              "byref": false,
+              "typeName": "XLua.DelegateBridge",
+              "definitionIndex": 580
+            }
+          },
+          {
+            "index": 87615,
+            "name": "__Hotfix0_OnStopAffect",
+            "typeIndex": 40449,
+            "rawOffset": 40,
+            "offset": 40,
+            "offsetStatus": "plausible",
+            "nativeType": {
+              "il2CppTypeIndex": 40449,
+              "kind": 18,
+              "attrs": 17,
+              "byref": false,
+              "typeName": "XLua.DelegateBridge",
+              "definitionIndex": 580
+            }
+          },
+          {
+            "index": 87616,
+            "name": "_c__Hotfix0_ctor",
+            "typeIndex": 40449,
+            "rawOffset": 48,
+            "offset": 48,
+            "offsetStatus": "plausible",
+            "nativeType": {
+              "il2CppTypeIndex": 40449,
+              "kind": 18,
+              "attrs": 17,
+              "byref": false,
+              "typeName": "XLua.DelegateBridge",
+              "definitionIndex": 580
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "boundary": "Source group, not whole-skill acceptance. Cross-version application, root skill mounting and final BuffAfterAffecting transition remain separate from source timing/geometry parameters."
+}

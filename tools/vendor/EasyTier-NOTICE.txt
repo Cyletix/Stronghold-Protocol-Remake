@@ -1,0 +1,9 @@
+EasyTier 2.6.4 is distributed as an unmodified, independent executable.
+License: GNU LGPL version 3, see EasyTier-LICENSE.txt.
+Exact source release: https://github.com/EasyTier/EasyTier/tree/v2.6.4
+Source download: https://github.com/EasyTier/EasyTier/archive/refs/tags/v2.6.4.zip
+Official binaries: https://github.com/EasyTier/EasyTier/releases/tag/v2.6.4
+
+The launcher invokes EasyTier through its command line and loopback RPC.
+It enables no-TUN mode and does not install the bundled driver files.
+The GUI installer is not installed or redistributed by this launcher.

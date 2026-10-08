@@ -1,0 +1,56 @@
+PASS elemental combat
+PASS elemental source
+PASS operator skill levels consumers
+PASS vanguard source skills
+PASS periodic medic source skills
+PASS medic talent SP events
+PASS medical SP module effects
+PASS Beeswax source skills and obelisk
+PASS Click released funnel
+PASS operator combat
+PASS flying enemies and blocking
+PASS season roster slots
+PASS DIY selection and runtime
+PASS loadout and items
+PASS detail catalogs
+PASS garrison source
+PASS basic attack profiles
+PASS common deployment-cost skills
+PASS common skill account-level expansion
+PASS mystic storage and Indigo
+PASS tactical reinforcements and flowing shapes
+PASS Blacknight and source sleep rules
+PASS common buff families and attribute layers
+PASS debug and enemy effects
+PASS enemy cold mechanics
+PASS local solo
+PASS HUD feedback
+PASS render surfaces and recovery
+PASS terrain placement
+PASS boss_mechanics
+PASS boss_victory
+PASS paired_battle
+PASS decision_confirm
+PASS settlement_review
+PASS boss_formation
+PASS decision_reward
+PASS battle_feedback
+PASS room_server
+PASS room_game_server
+PASS room_battle_runtime
+PASS room_battle_server
+PASS round data
+PASS enemy encounter inputs
+PASS enemy death spawn lifecycle
+PASS shop item source
+PASS enemy template replacement
+PASS enemy runtime integration
+PASS economy/terrain
+PASS skill_timing
+PASS source_battles
+PASS source_mode
+PASS source_coordinates
+PASS projectile_lifecycle
+PASS rest_save
+PASS responsive_camera
+GAME CHECK OK 55 checks (47.8s)

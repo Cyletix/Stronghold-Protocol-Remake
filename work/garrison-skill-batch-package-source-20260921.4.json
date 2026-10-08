@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-09-21T21:13:32.190750+09:00",
+  "gameVersion": "room-game-20260921.4",
+  "catalog": "074e43fb3c2c55ab",
+  "files": {
+    "web/engine.js": {
+      "sha256": "80e5f7878f5e6b9ff7dd128b0005e8b0245e05748420968c502214539917e66b",
+      "bytes": 207988
+    },
+    "web/src/simulation/operator-combat.js": {
+      "sha256": "f0c8e0ab4ac083d7f157513c11eb200034e0bb819362ba86d4173e34d7def6b5",
+      "bytes": 56092
+    },
+    "web/src/simulation/client-programs.js": {
+      "sha256": "0a70614adbba354da92c348c3017034fe1afc81ff1798d42302fbbe545eb5f25",
+      "bytes": 20717
+    },
+    "web/src/simulation/skill-modes.js": {
+      "sha256": "201e638c976974e6348ce3b2df25a9445fec6f7529e0037002f0967394cf6ab4",
+      "bytes": 15350
+    },
+    "web/src/simulation/common-skills.js": {
+      "sha256": "2cece4a5f8cb1bfac0e98bb95af57a06cedc35cb2acd89d27c29553320525c12",
+      "bytes": 5709
+    },
+    "web/src/simulation/direct-skill-actions.js": {
+      "sha256": "91b5788f09c87559c721666f136b892d000accadd3342fde981fe7a84fa4a6d2",
+      "bytes": 5408
+    },
+    "web/client_program_data.js": {
+      "sha256": "43d168f81e2e2672782633831fc96bca4942e1ccce12d96cb6922012dd9597b7",
+      "bytes": 78862
+    },
+    "web/next_attack_skill_data.js": {
+      "sha256": "47a5b64af5695d45ef792f949d2eaedb434d98a1025c8807538fb3ec299a4013",
+      "bytes": 24739
+    },
+    "web/skill_mode_data.js": {
+      "sha256": "98e6a24a355aeb8ab51eca6692b92037f02f3d74753d792f6519be7d742be28c",
+      "bytes": 460963
+    },
+    "web/direct_skill_data.js": {
+      "sha256": "825636377dd0708ddaab34cb363738333cabf416f29f647edf6599d2411a7c31",
+      "bytes": 10788
+    },
+    "tools/room_server.js": {
+      "sha256": "47cb883092498ee8d30457066e68fe848939ca4a8db7c6a16d4830898b3718f6",
+      "bytes": 33113
+    },
+    "web/room-game.js": {
+      "sha256": "fa59afad88eaaff5b75a7aa4eda19ae84e5a7ca9d9b0d6fe96d54ccf4f696e74",
+      "bytes": 40794
+    },
+    "web/room-presence.js": {
+      "sha256": "edd75a34c79a43cd9de01113ddc1e20bad8f180212c94f8e47762b716bf3c9d4",
+      "bytes": 8010
+    },
+    "web/mode.js": {
+      "sha256": "9c8683a58bf0420ccbb3c60d5d514a4fd2c5328efe839e0b7ac37508514a6872",
+      "bytes": 325745
+    },
+    "web/mode/save.js": {
+      "sha256": "ab214d7855d6dbe8641673c5a07ab021f88b9d5a7c7415f968fbda3033762ba5",
+      "bytes": 17152
+    },
+    "web/mode/rules.js": {
+      "sha256": "ea6bc23a9ed2d27437f5377670f8a7558546daa45d884d4d58de95f27876661d",
+      "bytes": 52217
+    },
+    "web/mode/debug.js": {
+      "sha256": "2e5471b07ae7df9c46479dc9a780b42642d5d49afdfa9049c20d235ab8f22f48",
+      "bytes": 15813
+    },
+    "web/index.html": {
+      "sha256": "ba8841c913990db6572648fc98ada4e5cad1662f405197e06682bd7789ecdc86",
+      "bytes": 23826
+    },
+    "tools/lib/listen-port.js": {
+      "sha256": "caeb7f93cc720cd4f5d5455d0d88a3b8081bb49abb4939c50a0b4f191eb32d18",
+      "bytes": 1212
+    },
+    "tools/lib/room-game-runtime.js": {
+      "sha256": "69229084854c8b817828a44f60b4157c49ab031321c407673755ca39b04ad8b7",
+      "bytes": 40307
+    },
+    "tools/room-launcher.js": {
+      "sha256": "519baf60f31b56061a8e1782340f64555b051a4a51c676de17385430d0dc59fd",
+      "bytes": 14522
+    },
+    "tools/room-online.js": {
+      "sha256": "e92d33a9988e928f1970c0011fbb1a45eec81c2053721b194ac579371d58f4e3",
+      "bytes": 12632
+    },
+    "tools/start-room.js": {
+      "sha256": "931d05690da3c10690a0225e7f728d2ea7bff849b98b7cdbe5d559d8a719697b",
+      "bytes": 4652
+    },
+    ".runtime/node-win-x64/node.exe": {
+      "sha256": "0d0f5e39f9f3d9587bc19f73eab3c2c9c4903fd02d6dbf9c853dd81b3d95fad4",
+      "bytes": 86997320
+    },
+    ".runtime/node-win-x64/LICENSE": {
+      "sha256": "8cc9bb466b19fc7e7cc99d03e9df1132021fda8b01eea2624c58bb372dbef576",
+      "bytes": 148217
+    },
+    ".runtime/easytier-v2.6.4-x64/easytier-core.exe": {
+      "sha256": "da7eb2d24b5416f3d3407636949e964a0750e3f9dc53a828cb6799a57ead445d",
+      "bytes": 24395776
+    },
+    ".runtime/easytier-v2.6.4-x64/easytier-cli.exe": {
+      "sha256": "d8783e851e944b44a9b71b39fd02f227ec0a2a82b3165c55ead5dd32dcde53a1",
+      "bytes": 9973248
+    },
+    ".runtime/easytier-v2.6.4-x64/Packet.dll": {
+      "sha256": "c7c03a87eac7243ccbe331554624b18803010b740e311fc8cfddb573096eacac",
+      "bytes": 220032
+    },
+    ".runtime/easytier-v2.6.4-x64/wintun.dll": {
+      "sha256": "e5da8447dc2c320edc0fc52fa01885c103de8c118481f683643cacc3220dafce",
+      "bytes": 427552
+    },
+    ".runtime/easytier-v2.6.4-x64/WinDivert64.sys": {
+      "sha256": "8da085332782708d8767bcace5327a6ec7283c17cfb85e40b03cd2323a90ddc2",
+      "bytes": 94144
+    },
+    ".runtime/easytier-v2.6.4-x64/verified-files.json": {
+      "sha256": "7065f8e76b23be35f35cb38dca49c36f4db4eab8b2e5f4673a585887772d96e3",
+      "bytes": 758
+    },
+    "web/src/simulation/medic-skills.js": {
+      "sha256": "cb0506766a346b92f1f44450cd8a0376143defb39122671c2718bcbe42f87678",
+      "bytes": 15316
+    },
+    "web/src/simulation/skill-auras.js": {
+      "sha256": "67366ec7faad53a54fb8afed0ceba3106bb3cee89f8d12e6f5cbd1f31451d27e",
+      "bytes": 8149
+    },
+    "web/src/simulation/attributes.js": {
+      "sha256": "43c12d79f7aef6fdd203c300afd27425e869d0199d03de669e366180afbb7b53",
+      "bytes": 2985
+    },
+    "web/src/simulation/hunter.js": {
+      "sha256": "285e8dec719da61da1269d037b4dc78c0947c128af899bce009edf314e7f26bb",
+      "bytes": 5998
+    },
+    "web/src/simulation/enemy-cold.js": {
+      "sha256": "59655593f1601c920cc7acc55fb5150852df9f563db790b1c0af21136d1600cf",
+      "bytes": 2135
+    },
+    "web/src/simulation/enemy-skills.js": {
+      "sha256": "11266677fd79a2906f5cf540fbdc980add14d15eb38251b8205cd36a0c8deb35",
+      "bytes": 19507
+    },
+    "web/src/simulation/mystic.js": {
+      "sha256": "f33891626d1d11b9126ada2e6db4a4b67c57f4b8162755116acc64d70c1805dc",
+      "bytes": 5499
+    },
+    "web/src/simulation/skill-blockees.js": {
+      "sha256": "8c46263c982145e862e22861280f8e87d66889a7864b0abba60228fc0e40b414",
+      "bytes": 6204
+    },
+    "web/src/simulation/enemy-selective-attacks.js": {
+      "sha256": "2feb368e9c0cc456329e0459178582572b3117194db0ddaf6e352460e5230b09",
+      "bytes": 8158
+    },
+    "web/external_combat_data.js": {
+      "sha256": "d11b307db0c6c51cca81f9bca18d183e8f5185b9e79f8b1a8bf3561eb7eb222e",
+      "bytes": 499541
+    },
+    "web/src/simulation/enemy-hover.js": {
+      "sha256": "36629bb34630894fdab2c654b511e449e24e639d6a2c0e4ab0397307b69c327c",
+      "bytes": 2097
+    },
+    "web/src/simulation/skill-self-buffs.js": {
+      "sha256": "454785e666ad099b8ca4026106909164b0ba3aca8cc864c9abb76da7fd01711e",
+      "bytes": 5592
+    },
+    "web/src/simulation/skill-end-effects.js": {
+      "sha256": "543f5a1b4b4ce0489e145b03698ac4c1df6b92dff944ba0a7187060526b40265",
+      "bytes": 5118
+    },
+    "web/src/simulation/enemy-auras.js": {
+      "sha256": "febdd25f5f379df37b0306a15c43ba1b9efbccd4a26386c203aba708c4f54fd8",
+      "bytes": 6076
+    },
+    "web/src/simulation/dollkeeper.js": {
+      "sha256": "4de3b4372a38bd2e2c891f62cb3e0db5e8e3a52c62ab092438616545f21bca20",
+      "bytes": 10919
+    },
+    "web/src/simulation/equip-protection.js": {
+      "sha256": "9edc6b89e7572b944dc429823341c079f36e272d0708c70d5b7546a860772be3",
+      "bytes": 1277
+    },
+    "web/src/simulation/enemy-attached-projectiles.js": {
+      "sha256": "a6744530e75635a3a8d633024be2b28d23016925e9177337c9ba085a1570ac32",
+      "bytes": 3619
+    },
+    "web/src/render/battle-presentation.js": {
+      "sha256": "ad1feea92865245a13d223863b6431953e36a88dbe577f25e511cb2b389e9d30",
+      "bytes": 16729
+    },
+    "web/src/simulation/ability-flow.js": {
+      "sha256": "7bc70e788c3ae9ec9bbeb86ade530b422c3424ceca045854ee42d84fe8041c40",
+      "bytes": 4429
+    }
+  }
+}

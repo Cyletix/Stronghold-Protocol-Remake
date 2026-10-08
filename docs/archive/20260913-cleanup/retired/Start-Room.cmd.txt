@@ -1,0 +1,6 @@
+@echo off
+setlocal
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0tools\start-room.ps1" %*
+set "ROOM_EXIT_CODE=%ERRORLEVEL%"
+if not "%ROOM_EXIT_CODE%"=="0" pause
+exit /b %ROOM_EXIT_CODE%

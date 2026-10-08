@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "scope": "Frozen direct-cast batch after .4; no ID allowlist, no new APP extraction",
+  "sourceInventory": "work/direct-skill-candidate-inventory-20260918.json",
+  "sourceInventorySha256": "d03c6a53b7a81c9fbdf7ad993e45a93ca805375755bd221a2e74884f2a65e65c",
+  "acceptedFamily": {
+    "rule": "complete-lifetime-end-trace-target-projectile-v1",
+    "members": [
+      "skchr_texas_2"
+    ],
+    "sourceLevels": 10,
+    "structure": "MultiRangedAttack + complete no-movement SimpleProjectile + renderer-only siblings + ordinary source stun + once-only cost",
+    "extensionTest": "Equivalent future skill and character IDs compile unchanged"
+  },
+  "selectorQualification": {
+    "evidence": "work/client-logic/native-direct-selector/contract.json",
+    "boundary": "Cross-source inference backed by ALL enum and every current CN level explicitly naming all enemies; protected getter is not native verified"
+  },
+  "otherGroups": {
+    "sequenceParallel": "Every listed source group also owns additional gameplay dependencies; no wrapper-only partial profile emitted",
+    "projectile_chr_archet_s2": "Root structural audit: BounceProjectile + BouncedAdvancedMovement + BounceHitBehaviour, distinct from ChainLightning; needs its complete bounce family",
+    "projectile_shotst_s2": "Root structural audit: missing subtree reference m_PathID 5669051929219745485 in cached projectile bundle; source-incomplete, not reduced to direct damage"
+  },
+  "nativeBoundary": "No repeated animation or DEFAULT re-extraction. New selector getter bounded inspection fixed as protected and recorded once."
+}

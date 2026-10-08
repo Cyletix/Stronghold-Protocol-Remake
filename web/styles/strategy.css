@@ -1,0 +1,133 @@
+/* ===== 卫戍协议 · 两屏开局：确认本局信息 / 选择策略 ===== */
+#setup{background:rgba(8,10,16,0.97);}
+.setup-step{position:relative;width:100vw;height:100vh;box-sizing:border-box;padding:72px 40px 48px;display:flex;flex-direction:column;color:#e8e8f0;}
+.setup-head{position:absolute;top:0;left:0;right:0;height:76px;display:flex;align-items:center;gap:12px;padding:0 32px;z-index:3;border-bottom:1px solid rgba(255,255,255,.08);}
+.setup-head .setup-back{width:32px;height:32px;padding:0;background:#252a36;color:#b7bcc8;font-size:15px;border:none;border-radius:6px;cursor:pointer;opacity:.9;transition:opacity .15s,background .15s,color .15s;display:flex;align-items:center;justify-content:center;flex:none;}
+.setup-head .brand{font-size:18px;font-weight:800;color:#ffd54f;letter-spacing:1px;text-shadow:0 1px 3px #000;}
+.setup-head .stepno{margin-left:44px;font-size:24px;color:#e8e8f0;font-weight:700;display:flex;align-items:baseline;gap:14px;}
+.setup-head .stepno b{margin-right:0;font-size:38px;color:#35e3c1;line-height:1;}
+.setup-head .setup-bgm{margin-left:auto;width:32px;height:32px;padding:0;background:#252a36;color:#b7bcc8;font-size:15px;border:none;border-radius:6px;cursor:pointer;opacity:.9;transition:opacity .15s,background .15s,color .15s,filter .15s;display:flex;align-items:center;justify-content:center;flex:none;}
+.setup-head .setup-bgm.muted{background:#14171e;color:#4a5160;opacity:.5;filter:grayscale(1);}
+/* 第一屏：确认本局信息 */
+#setup-info .diff-row,#setup-info .match-row{display:flex;align-items:center;gap:12px;background:rgba(16,18,26,0.72);border:1px solid #2a2f3d;border-radius:10px;padding:10px 20px;margin-bottom:18px;}
+#setup-info .diff-label{color:#8fb7ff;font-size:14px;font-weight:600;flex:none;}
+#setup-info .diff-row select,#setup-info .match-row select{flex:none;background:#0f1117;border:1px solid #3a3f52;border-radius:6px;color:#e8e8f0;padding:6px 10px;font-size:14px;outline:none;}
+#setup-info .diff-row select:focus,#setup-info .match-row select:focus{border-color:#7ce0ad;}
+#setup-info .diff-row,#setup-info .match-row{flex-wrap:wrap;}
+#setup-info .diff-row select,#setup-info .match-row select{max-width:100%;min-width:0;}
+#setup-info .diff-note{overflow-wrap:anywhere;}
+#setup-info .diff-note{font-size:12px;color:#9aa0b0;}
+#setup-info .blk{background:rgba(16,18,26,0.72);border:1px solid #2a2f3d;border-radius:10px;padding:14px 20px;margin-bottom:18px;}
+#setup-info .blk-title{color:#8fb7ff;font-size:15px;font-weight:600;margin-bottom:14px;display:flex;align-items:center;gap:12px;}
+#setup-info .blk-title .warn{color:#ffb74d;font-size:12px;font-weight:normal;}
+.boss-row{display:flex;align-items:flex-start;gap:18px;}
+.boss-img{width:136px;height:136px;border-radius:8px;object-fit:cover;background:#1c202b;border:1px solid #3a3f52;flex:none;}
+.boss-text{flex:1;min-width:0;}
+.boss-name{font-size:21px;font-weight:700;color:#ffd54f;margin-bottom:6px;}
+.boss-desc{font-size:12px;color:#9aa0b0;line-height:1.6;}
+.enemy-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px;}
+.enemy-tags .tag{font-size:12px;color:#7ce0ad;border-color:rgba(80,174,126,0.7);background:rgba(18,58,43,0.5);}
+.bond-meta{display:flex;gap:16px;flex-wrap:wrap;}
+.setup-bond-icon{box-sizing:border-box;width:58px;height:58px;flex:none;border-radius:50%;background:#1c202b;border:2px solid #3a3f52;display:flex;align-items:center;justify-content:center;position:relative;overflow:visible;}
+.setup-bond-icon>img{display:block;width:72%;height:72%;object-fit:contain;}
+.setup-bond-icon .bond-missing{position:absolute;top:-5px;right:-8px;z-index:1;color:#ff6868;background:#10121a;border-radius:3px;padding:0 2px;font-size:12px;font-weight:700;line-height:16px;white-space:nowrap;}
+.bond-cell{display:flex;flex-direction:column;align-items:center;gap:4px;width:auto;min-width:104px;max-width:210px;}
+.bond-cell.have .setup-bond-icon{border-color:#ffd54f;box-shadow:0 0 12px rgba(255,213,79,0.4);}
+.bond-cell.lack .setup-bond-icon{border-color:#e57373;box-shadow:0 0 12px rgba(229,115,115,0.4);}
+.bond-cell .bn{font-size:12px;color:#cbd0dc;}
+.bond-cell .bb{font-size:10px;color:#9aa0b0;text-align:center;word-break:break-all;line-height:1.3;}
+.pick-card .pc-bans{font-size:11px;color:#ef9a9a;line-height:1.5;text-align:left;max-height:110px;overflow-y:auto;padding:8px 10px;background:rgba(229,57,53,0.10);border:1px solid rgba(229,57,53,0.35);border-radius:6px;width:100%;box-sizing:border-box;}
+.bond-cell.lack .bb{color:#ef9a9a;}
+#setup-info{overflow-y:auto;padding-bottom:84px;}
+#setup-info .foot{position:fixed;right:36px;bottom:28px;display:flex;align-items:center;gap:18px;z-index:30;}
+#setup-info .ready-count{font-size:13px;color:#cbd0dc;}
+.setup-ready{background:rgba(229,57,53,0.32);color:#fff;border:1px solid rgba(229,57,53,0.75);border-radius:6px;padding:12px 28px;font-size:15px;font-weight:700;cursor:pointer;letter-spacing:1px;box-shadow:0 2px 12px rgba(0,0,0,0.5);}
+.setup-ready:hover{background:rgba(229,57,53,0.5);}
+/* 第二屏：选择策略（左玩家 / 中策略矩阵 / 右弹卡） */
+#setup-pick{display:none;}
+#setup-pick .pick-body{flex:1;display:flex;align-items:stretch;min-height:0;}
+.pick-left{flex:0 0 50%;transition:flex-basis .28s ease;position:relative;display:block;overflow:hidden;border-right:1px solid rgba(255,255,255,.10);}
+.pick-left.open{flex-basis:25%;}
+.pick-mid{flex:0 0 50%;transition:flex-basis .28s ease;overflow:hidden;}
+.pick-card{flex:0 0 0;transition:flex-basis .28s ease;position:relative;background:linear-gradient(180deg,rgba(8,72,61,.68) 0%,rgba(6,46,42,.44) 45%,rgba(8,11,16,.92) 82%);border-left:1px solid rgba(255,255,255,.12);overflow:hidden;}
+.pick-card.open{flex-basis:25%;}
+#pick-players{position:absolute;left:28px;right:28px;top:26%;}
+.pick-left .player{display:flex;align-items:center;gap:12px;padding:14px 18px;border-bottom:1px solid #22262f;}
+.pick-left .player .pav{width:48px;height:48px;border-radius:50%;object-fit:cover;background:#1c202b;border:2px solid #3a3f52;flex:none;}
+.pick-left .player .pname{font-size:15px;color:#e8e8f0;font-weight:600;}
+.pick-left .player .pband{font-size:12px;color:#9aa0b0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.pick-left .player.me{background:rgba(28,58,44,0.35);border-left:3px solid #7ce0ad;}
+.band-matrix{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;padding:64px 18px 24px;box-sizing:border-box;justify-content:center;align-content:start;width:100%;height:100%;overflow-y:auto;overflow-x:hidden;scrollbar-width:none;}
+.band-matrix::-webkit-scrollbar{display:none;}
+.band-cell{position:relative;width:100%;padding:0;box-sizing:border-box;aspect-ratio:1/1;background:rgba(21,25,32,.48);border:1px solid rgba(180,190,200,.24);border-radius:0;overflow:visible;cursor:pointer;}
+.band-cell:hover{border-color:#ffd54f;}
+.band-cell img{width:100%;height:100%;object-fit:contain;background:transparent;display:block;filter:saturate(.72) brightness(.78);}
+.band-cell.sel{border-color:transparent;box-shadow:none;outline:3px solid #27e3ba;outline-offset:-3px;}
+.band-selected-label{position:absolute;top:-18px;left:50%;transform:translateX(-50%);color:#27e3ba;font-size:10px;letter-spacing:.7px;z-index:2;white-space:nowrap;}
+.band-selected-arrow{position:absolute;left:50%;bottom:-10px;transform:translateX(-50%);width:0;height:0;border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:8px solid #27e3ba;z-index:2;}
+.pick-card .pc-in{position:relative;display:flex;flex-direction:column;align-items:stretch;height:100%;padding:72px 34px 30px;gap:0;overflow:hidden;}
+.pick-card .pc-in img{width:230px;height:230px;align-self:center;object-fit:contain;border:none;border-radius:0;background:transparent;filter:saturate(.62) brightness(.84) sepia(.05);}
+.pick-card .pc-hp{margin-top:14px;text-align:center;font-size:15px;color:#e9d45a;font-weight:700;}
+.pick-card .pc-name{margin-top:16px;font-size:26px;line-height:1.15;color:#fff;font-weight:700;text-align:left;}
+.pick-card .pc-eff{margin-top:24px;font-size:14px;line-height:1.7;color:rgba(235,240,244,.88);text-align:left;}
+.pick-card .pc-pick{margin-top:auto;width:100%;height:72px;background:rgba(238,240,240,.92);color:#090b0f;border:2px solid #fff;border-radius:0;font-size:22px;font-weight:800;cursor:pointer;box-shadow:0 0 0 1px rgba(0,0,0,.5),0 4px 16px rgba(0,0,0,.4);}
+/* 主界面：玩家昵称输入 */
+.menu-name{display:flex;align-items:center;gap:10px;margin-bottom:16px;color:#e8e8f0;font-size:13px;}
+.menu-name label{flex:none;color:#9aa0b0;}
+.menu-name input{flex:1;min-width:0;background:#0f1117;border:1px solid #3a3f52;border-radius:6px;color:#e8e8f0;padding:8px 12px;font-size:14px;outline:none;}
+.menu-name input:focus{border-color:#7ce0ad;}
+/* 第一屏：本局禁用干员（盟约在左，干员头像矩阵在右） */
+.banned-ops{display:flex;flex-direction:column;gap:8px;}
+.banned-row{display:flex;align-items:center;gap:16px;padding:6px 0;border-bottom:1px solid #232833;}
+.banned-row .setup-bond-icon{width:46px;height:46px;}
+.banned-row .bond-nm{width:84px;font-size:15px;font-weight:600;color:#e8e8f0;flex:none;}
+.banned-row .opps{display:flex;gap:10px;flex-wrap:wrap;flex:1;min-width:0;}
+.banned-row .op{position:relative;width:70px;flex:none;}
+.banned-row .op img{width:70px;height:86px;object-fit:cover;border-radius:5px;border:1px solid #444;background:#14161e;display:block;}
+.banned-row .op .tier{position:absolute;bottom:3px;left:3px;background:rgba(0,0,0,0.7);color:#ffd54f;font-size:11px;font-weight:700;border-radius:3px;padding:0 4px;line-height:1.4;}
+.banned-none{color:#5a6274;font-size:12px;}
+.roster-list .roster-tier{display:flex;align-items:baseline;gap:10px;margin-bottom:8px;}
+.roster-list .rt-tier{flex:none;width:22px;text-align:center;color:#ffd54f;font-size:13px;font-weight:700;}
+.roster-list .rt-ops{display:flex;flex-wrap:wrap;gap:5px;}
+.roster-op{font-size:12px;padding:2px 8px;border-radius:4px;border:1px solid #3a3f52;color:#cbd0dc;}
+.roster-op.concess{border-color:rgba(124,224,173,0.6);color:#7ce0ad;background:rgba(18,58,43,0.35);}
+.roster-op.proto{border-color:rgba(255,213,79,0.6);color:#ffd54f;background:rgba(58,48,16,0.35);}
+
+#fail-flash{position:fixed;inset:0;z-index:29;pointer-events:none;opacity:0;transition:opacity .5s ease;background:radial-gradient(130% 130% at 50% 45%,rgba(150,10,20,0) 55%,rgba(150,10,20,0.55) 100%);}
+#fail-flash.on{opacity:1;}
+
+/* HUD 可视化布局编辑器（F2 进入编辑 / F3 导出 CSS） */
+body.hud-layout-editing #hand-detail .od-skill-icon,
+body.hud-layout-editing #hand-detail .od-namerow,
+body.hud-layout-editing #hand-detail .od-tierrow,
+body.hud-layout-editing #hand-detail .od-stat-list,
+body.hud-layout-editing #hand-detail .od-rangebox,
+body.hud-layout-editing #hand-detail .od-bond,
+body.hud-layout-editing #hand-detail .od-hpbar {
+    cursor: move !important;
+    outline: 1px dashed #4fd0e8;
+    outline-offset: 2px;
+    user-select: none;
+}
+/* 右下角调整大小手柄 */
+.hud-rs{position:absolute;right:-6px;bottom:-6px;width:12px;height:12px;background:#4fd0e8;border:1px solid #0b1c26;border-radius:2px;cursor:nwse-resize;z-index:10001;display:none;}
+body.hud-layout-editing #hand-detail .hud-rs{display:block;}
+
+/* 房间沿用原有 1/2 情报、2/2 策略与 flex-basis 弹出动画。 */
+.room-strategy #menu{display:none!important}
+.room-strategy .setup-step{height:100dvh}
+.room-setup-status{flex:none;margin:14px 0 10px;padding:8px 12px;border:1px solid #2d4e47;border-radius:7px;background:#10201d}
+.room-setup-status p{margin:0;font-size:12px;line-height:1.6;overflow-wrap:anywhere}
+#room-info-players{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px}
+#room-info-players .room-player{display:flex;align-items:center;gap:7px;min-width:130px;border:0;background:transparent;color:#c9dfd7;padding:0;text-align:left}
+#room-info-players img{width:30px;height:30px;object-fit:cover;border-radius:50%}
+#room-info-players b,#room-info-players small{display:block;font-size:11px}
+.room-setup-status[hidden],#covenant-entry[hidden],#game-settings[hidden],#game-home-return[hidden]{display:none!important}
+.room-strategy #boss-desc{white-space:pre-line}
+.room-strategy .pick-card .pc-in{box-sizing:border-box;overflow-y:auto}
+.room-strategy .pick-card .pc-in img{max-width:100%;flex:none}
+.room-strategy .pick-card .pc-pick{flex:none}
+.room-strategy .pc-pick:disabled{opacity:.5;cursor:wait}
+@media(max-width:900px){.room-strategy #setup-pick{overflow:auto}.room-strategy #setup-pick .pick-body{min-width:960px;min-height:500px;flex:none}.room-strategy .setup-head{padding-inline:16px}.room-strategy .setup-head .stepno{margin-left:4px;font-size:18px;gap:5px}.room-strategy .setup-head .stepno b{font-size:26px}.room-strategy .setup-head .brand{font-size:15px}.room-strategy #setup-info{padding-inline:16px}.room-strategy #setup-info .foot{right:16px;bottom:12px}.room-strategy #setup-info .ready-count{display:none}}
+@media(max-height:600px){.room-strategy #setup-pick{overflow:auto}.room-strategy #setup-pick .pick-body{min-height:500px;flex:none}}
+#covenant-entry,#game-settings{margin-top:20px;padding:14px;border:1px solid #34564d;border-radius:7px;background:#10201d;color:#d6e7e0;font-size:13px;line-height:1.7}#game-settings label{display:block;margin-top:14px}#game-home-return{display:inline-block;margin-bottom:14px;color:#afdcd0}

@@ -1,0 +1,669 @@
+{
+  "schemaVersion": 1,
+  "rule": "frozen-executable-skill-next-shared-slice-v1",
+  "status": "proposed-shared-implementation-unit-not-compilable",
+  "inputs": {
+    "frozenSkillPriority": {
+      "path": "work/garrison-skill-dispatch-priority.json",
+      "sha256": "4f76386a080cb783ba44727e8f81df876c89f1fd5e53daafb34063b0623843b8"
+    },
+    "currentNextBatch": {
+      "path": "work/enemy-mode-next-batch.json",
+      "sha256": "7b0e9255be66f8369cc7a68c37117761e19e66800300c78fac74980186d39d0f"
+    }
+  },
+  "sourceFingerprint": "529783e1920fa7a8bea3699ef47166ba30350855a3714ab997daf1aceae28231",
+  "selectionSource": "work/enemy-mode-next-batch.json#skillDispatch.executablePendingSkillIDs",
+  "counts": {
+    "candidateSkillComponents": 27,
+    "alreadySelectedSkillComponents": 4,
+    "pendingSkillComponents": 23,
+    "environmentDeferredSkillComponents": 5,
+    "executablePendingSkillComponents": 18,
+    "executablePendingEnemies": 8,
+    "nonBossSkillComponents": 3,
+    "nonBossEnemies": 3,
+    "bossSkillComponents": 15,
+    "bossEnemies": 5,
+    "initiallyMountedBossSelectorComponents": 5
+  },
+  "groups": {
+    "nonBoss": [
+      {
+        "enemyId": "enemy_10044_wintun",
+        "name": "咸鳞汁推荐者",
+        "sourceLevelType": "NORMAL",
+        "compiledModes": [
+          1
+        ],
+        "initialMode": null,
+        "dedicatedBossProfilePresent": false,
+        "savedBlockerSummary": "BlockedBoom is mounted only under mode 1; initialMode is absent. AlwaysTrigger does not prove automatic activation or a reachable mode entrance.",
+        "skills": [
+          {
+            "skillID": "enemy_10044_wintun|CAB-9932efcd454c1307fe7ebddc8a79559b:-4456446739223598299:4",
+            "name": "BlockedBoom",
+            "triggerType": "AlwaysTrigger",
+            "modeIndices": [
+              1
+            ],
+            "initiallyMountedInCompiledMode": false,
+            "structurallyMounted": true,
+            "abilityTypes": [
+              "BuffToOwner",
+              "ProjectileToTileAbility",
+              "UberEffectEmitter"
+            ],
+            "actionTypes": [],
+            "frozenMissingContracts": [
+              "enemy-skill-scheduler-and-lifecycle-not-compiled",
+              "initial-mode-profile-not-compiled"
+            ],
+            "currentCompilerRejections": [
+              "unsupported-trigger:AlwaysTrigger"
+            ]
+          }
+        ]
+      },
+      {
+        "enemyId": "enemy_1040_bombd",
+        "name": "暴鸰",
+        "sourceLevelType": "ELITE",
+        "compiledModes": [],
+        "initialMode": null,
+        "dedicatedBossProfilePresent": false,
+        "savedBlockerSummary": "Boomb owner overlay is ineligible; no compiled owner or initial mode. Existing SelectorTrigger alone cannot establish an active owner.",
+        "skills": [
+          {
+            "skillID": "enemy_1040_bombd|CAB-c66709e8e44223eecca4bce9fbf48f83:8530485036149232392:19",
+            "name": "Boomb",
+            "triggerType": "SelectorTrigger",
+            "modeIndices": [],
+            "initiallyMountedInCompiledMode": false,
+            "structurallyMounted": false,
+            "abilityTypes": [
+              "BuffAfterAffecting",
+              "RangedAttack"
+            ],
+            "actionTypes": [],
+            "frozenMissingContracts": [
+              "enemy-skill-scheduler-and-lifecycle-not-compiled",
+              "initial-mode-profile-not-compiled",
+              "ownership-overlay-not-eligible"
+            ],
+            "currentCompilerRejections": [
+              "unresolved-or-inactive-skill-owner"
+            ]
+          }
+        ]
+      },
+      {
+        "enemyId": "enemy_2025_syufo",
+        "name": "掠海漂移体",
+        "sourceLevelType": "ELITE",
+        "compiledModes": [
+          0,
+          1
+        ],
+        "initialMode": 0,
+        "dedicatedBossProfilePresent": false,
+        "savedBlockerSummary": "RecoverAnim is mounted only under mode 1, while initialMode is 0. No database skill-name binding or actual mode-1 entry is saved in these tables.",
+        "skills": [
+          {
+            "skillID": "enemy_2025_syufo|CAB-45917fb008d9d99f506436a9f5988d3d:2910056970623200212:17",
+            "name": "RecoverAnim",
+            "triggerType": "AlwaysTrigger",
+            "modeIndices": [
+              1
+            ],
+            "initiallyMountedInCompiledMode": false,
+            "structurallyMounted": true,
+            "abilityTypes": [
+              "AnimatedActionToOwnerAbility"
+            ],
+            "actionTypes": [],
+            "frozenMissingContracts": [
+              "enemy-skill-scheduler-and-lifecycle-not-compiled",
+              "no-db-skill-name-binding"
+            ],
+            "currentCompilerRejections": [
+              "unsupported-trigger:AlwaysTrigger"
+            ]
+          }
+        ]
+      }
+    ],
+    "boss": [
+      {
+        "enemyId": "enemy_1512_mcmstr",
+        "name": "“巨大的丑东西”",
+        "sourceLevelType": "BOSS",
+        "compiledModes": [
+          1
+        ],
+        "initialMode": null,
+        "dedicatedBossProfilePresent": false,
+        "savedBlockerSummary": "Initial mode is absent. Reborning explosion has a null trigger; CutTree additionally requires an uncompiled mode 0, tile trigger, token spawn and InstantKill.",
+        "skills": [
+          {
+            "skillID": "enemy_1512_mcmstr|CAB-0df5f4c8c8dade07e2ee475a972da576:-6583151510869566880:10",
+            "name": "bomb[reborning]",
+            "triggerType": "null-reference",
+            "modeIndices": [],
+            "initiallyMountedInCompiledMode": false,
+            "structurallyMounted": true,
+            "abilityTypes": [
+              "MeleeAttack",
+              "UberEffectEmitter"
+            ],
+            "actionTypes": [],
+            "frozenMissingContracts": [
+              "enemy-skill-scheduler-and-lifecycle-not-compiled",
+              "null-trigger-not-automatic-cast",
+              "initial-mode-profile-not-compiled",
+              "boss-runtime-compatibility-required"
+            ],
+            "currentCompilerRejections": [
+              "dedicated-boss-or-boss-lifecycle-not-supported"
+            ]
+          },
+          {
+            "skillID": "enemy_1512_mcmstr|CAB-0df5f4c8c8dade07e2ee475a972da576:3561960064050666080:20",
+            "name": "CutTree",
+            "triggerType": "TileTrigger",
+            "modeIndices": [
+              0
+            ],
+            "initiallyMountedInCompiledMode": false,
+            "structurallyMounted": true,
+            "abilityTypes": [
+              "SpawnTokenOnTileAbility",
+              "UberEffectEmitter"
+            ],
+            "actionTypes": [
+              "InstantKill"
+            ],
+            "frozenMissingContracts": [
+              "enemy-skill-scheduler-and-lifecycle-not-compiled",
+              "initial-mode-profile-not-compiled",
+              "owner-mode-profile-not-compiled",
+              "boss-runtime-compatibility-required"
+            ],
+            "currentCompilerRejections": [
+              "dedicated-boss-or-boss-lifecycle-not-supported"
+            ]
+          }
+        ]
+      },
+      {
+        "enemyId": "enemy_1516_jakill",
+        "name": "杰斯顿·威廉姆斯",
+        "sourceLevelType": "BOSS",
+        "compiledModes": [
+          0,
+          1
+        ],
+        "initialMode": 0,
+        "dedicatedBossProfilePresent": false,
+        "savedBlockerSummary": "Only mode-0 IronSandStorm has an initial compiled owner. It additionally declares SP cost, tag/buff-key selector filtering and an active Buff. Mode-1 ArmorPiercing needs its real stage entry and complete casting Buff/multimelee contract.",
+        "skills": [
+          {
+            "skillID": "enemy_1516_jakill|CAB-0df5f4c8c8dade07e2ee475a972da576:-3090488545889101355:11",
+            "name": "IronSandStorm",
+            "triggerType": "SelectorTrigger",
+            "modeIndices": [
+              0
+            ],
+            "initiallyMountedInCompiledMode": true,
+            "structurallyMounted": true,
+            "abilityTypes": [
+              "RangedAttack",
+              "UberEffectEmitter"
+            ],
+            "actionTypes": [],
+            "frozenMissingContracts": [
+              "enemy-skill-scheduler-and-lifecycle-not-compiled",
+              "boss-runtime-compatibility-required"
+            ],
+            "currentCompilerRejections": [
+              "dedicated-boss-or-boss-lifecycle-not-supported"
+            ]
+          },
+          {
+            "skillID": "enemy_1516_jakill|CAB-0df5f4c8c8dade07e2ee475a972da576:9066948497976449493:46",
+            "name": "ArmorPiercing",
+            "triggerType": "SelectorTrigger",
+            "modeIndices": [
+              1
+            ],
+            "initiallyMountedInCompiledMode": false,
+            "structurallyMounted": true,
+            "abilityTypes": [
+              "BuffDuringCasting",
+              "MultiMeleeAttack",
+              "UberEffectEmitter"
+            ],
+            "actionTypes": [],
+            "frozenMissingContracts": [
+              "enemy-skill-scheduler-and-lifecycle-not-compiled",
+              "boss-runtime-compatibility-required"
+            ],
+            "currentCompilerRejections": [
+              "dedicated-boss-or-boss-lifecycle-not-supported"
+            ]
+          }
+        ]
+      },
+      {
+        "enemyId": "enemy_1517_xi",
+        "name": "“自在”",
+        "sourceLevelType": "BOSS",
+        "compiledModes": [
+          0
+        ],
+        "initialMode": 0,
+        "dedicatedBossProfilePresent": false,
+        "savedBlockerSummary": "Mode-0 selectors have initial compiled owners, but require global unique marking, dynamic tile-mode actions or a channelled shield/burst group. Mode 1 is not compiled.",
+        "skills": [
+          {
+            "skillID": "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-4294630265555608891:18",
+            "name": "CrossAttackMark",
+            "triggerType": "SelectorTrigger",
+            "modeIndices": [
+              0
+            ],
+            "initiallyMountedInCompiledMode": true,
+            "structurallyMounted": true,
+            "abilityTypes": [
+              "GloballUniqueBuffAbility"
+            ],
+            "actionTypes": [],
+            "frozenMissingContracts": [
+              "enemy-skill-scheduler-and-lifecycle-not-compiled",
+              "boss-runtime-compatibility-required"
+            ],
+            "currentCompilerRejections": [
+              "dedicated-boss-or-boss-lifecycle-not-supported"
+            ]
+          },
+          {
+            "skillID": "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-5267374164800791867:13",
+            "name": "CrossAttackMarkReborn",
+            "triggerType": "SelectorTrigger",
+            "modeIndices": [
+              1
+            ],
+            "initiallyMountedInCompiledMode": false,
+            "structurallyMounted": true,
+            "abilityTypes": [
+              "AbilityParallelGroup"
+            ],
+            "actionTypes": [],
+            "frozenMissingContracts": [
+              "enemy-skill-scheduler-and-lifecycle-not-compiled",
+              "owner-mode-profile-not-compiled",
+              "boss-runtime-compatibility-required"
+            ],
+            "currentCompilerRejections": [
+              "dedicated-boss-or-boss-lifecycle-not-supported"
+            ]
+          },
+          {
+            "skillID": "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:-8818478906179413307:0",
+            "name": "CrossAttack",
+            "triggerType": "SelectorTrigger",
+            "modeIndices": [
+              0
+            ],
+            "initiallyMountedInCompiledMode": true,
+            "structurallyMounted": true,
+            "abilityTypes": [
+              "RangedAttackWithExtraActions",
+              "UberEffectEmitter"
+            ],
+            "actionTypes": [
+              "SwitchDynamicBuffTileMode"
+            ],
+            "frozenMissingContracts": [
+              "enemy-skill-scheduler-and-lifecycle-not-compiled",
+              "boss-runtime-compatibility-required"
+            ],
+            "currentCompilerRejections": [
+              "dedicated-boss-or-boss-lifecycle-not-supported"
+            ]
+          },
+          {
+            "skillID": "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:1246068199843470021:35",
+            "name": "ShieldBurstReborn",
+            "triggerType": "SelectorTrigger",
+            "modeIndices": [
+              1
+            ],
+            "initiallyMountedInCompiledMode": false,
+            "structurallyMounted": true,
+            "abilityTypes": [
+              "BuffDuringCasting",
+              "MeleeAttack",
+              "ThreePartChannelingAnimation",
+              "UberEffectEmitter"
+            ],
+            "actionTypes": [],
+            "frozenMissingContracts": [
+              "enemy-skill-scheduler-and-lifecycle-not-compiled",
+              "owner-mode-profile-not-compiled",
+              "boss-runtime-compatibility-required"
+            ],
+            "currentCompilerRejections": [
+              "dedicated-boss-or-boss-lifecycle-not-supported"
+            ]
+          },
+          {
+            "skillID": "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:130561785783622341:32",
+            "name": "CrossAttack",
+            "triggerType": "SelectorTrigger",
+            "modeIndices": [
+              1
+            ],
+            "initiallyMountedInCompiledMode": false,
+            "structurallyMounted": true,
+            "abilityTypes": [
+              "RangedAttackWithExtraActions",
+              "UberEffectEmitter"
+            ],
+            "actionTypes": [
+              "SwitchDynamicBuffTileMode"
+            ],
+            "frozenMissingContracts": [
+              "enemy-skill-scheduler-and-lifecycle-not-compiled",
+              "owner-mode-profile-not-compiled",
+              "boss-runtime-compatibility-required"
+            ],
+            "currentCompilerRejections": [
+              "dedicated-boss-or-boss-lifecycle-not-supported"
+            ]
+          },
+          {
+            "skillID": "enemy_1517_xi|CAB-0df5f4c8c8dade07e2ee475a972da576:7680127453822098117:66",
+            "name": "ShieldBurst",
+            "triggerType": "SelectorTrigger",
+            "modeIndices": [
+              0
+            ],
+            "initiallyMountedInCompiledMode": true,
+            "structurallyMounted": true,
+            "abilityTypes": [
+              "BuffDuringCasting",
+              "MeleeAttack",
+              "ThreePartChannelingAnimation",
+              "UberEffectEmitter"
+            ],
+            "actionTypes": [],
+            "frozenMissingContracts": [
+              "enemy-skill-scheduler-and-lifecycle-not-compiled",
+              "boss-runtime-compatibility-required"
+            ],
+            "currentCompilerRejections": [
+              "dedicated-boss-or-boss-lifecycle-not-supported"
+            ]
+          }
+        ]
+      },
+      {
+        "enemyId": "enemy_1525_blkswb",
+        "name": "锏",
+        "sourceLevelType": "BOSS",
+        "compiledModes": [
+          0
+        ],
+        "initialMode": 0,
+        "dedicatedBossProfilePresent": false,
+        "savedBlockerSummary": "Mode-0 CircleAttack has the simplest complete action shape to target next. Blink has a null trigger and conditional blink/damage actions; mode-1 skills lack a compiled owner/entry. Boss compatibility remains unresolved.",
+        "skills": [
+          {
+            "skillID": "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:-2530988810614148662:21",
+            "name": "Blink2",
+            "triggerType": "null-reference",
+            "modeIndices": [
+              1
+            ],
+            "initiallyMountedInCompiledMode": false,
+            "structurallyMounted": true,
+            "abilityTypes": [
+              "ActionToOwner",
+              "ActiveBuffAbility",
+              "UberEffectEmitter"
+            ],
+            "actionTypes": [
+              "AlwaysNext",
+              "BlinkNode",
+              "CheckBlocked",
+              "CreateBuffToBlockee",
+              "IfElse"
+            ],
+            "frozenMissingContracts": [
+              "enemy-skill-scheduler-and-lifecycle-not-compiled",
+              "null-trigger-not-automatic-cast",
+              "owner-mode-profile-not-compiled",
+              "boss-runtime-compatibility-required"
+            ],
+            "currentCompilerRejections": [
+              "dedicated-boss-or-boss-lifecycle-not-supported"
+            ]
+          },
+          {
+            "skillID": "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:8351245699733844426:60",
+            "name": "CircleAttack",
+            "triggerType": "SelectorTrigger",
+            "modeIndices": [
+              0
+            ],
+            "initiallyMountedInCompiledMode": true,
+            "structurallyMounted": true,
+            "abilityTypes": [
+              "MeleeAttack",
+              "UberEffectEmitter"
+            ],
+            "actionTypes": [],
+            "frozenMissingContracts": [
+              "enemy-skill-scheduler-and-lifecycle-not-compiled",
+              "boss-runtime-compatibility-required"
+            ],
+            "currentCompilerRejections": [
+              "dedicated-boss-or-boss-lifecycle-not-supported"
+            ]
+          },
+          {
+            "skillID": "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:8737699305577116106:63",
+            "name": "Blink",
+            "triggerType": "null-reference",
+            "modeIndices": [
+              0
+            ],
+            "initiallyMountedInCompiledMode": true,
+            "structurallyMounted": true,
+            "abilityTypes": [
+              "ActionToOwner",
+              "ActiveBuffAbility",
+              "UberEffectEmitter"
+            ],
+            "actionTypes": [
+              "AlwaysNext",
+              "BlinkNode",
+              "CheckBlocked",
+              "CreateBuffToBlockee",
+              "IfElse"
+            ],
+            "frozenMissingContracts": [
+              "enemy-skill-scheduler-and-lifecycle-not-compiled",
+              "null-trigger-not-automatic-cast",
+              "boss-runtime-compatibility-required"
+            ],
+            "currentCompilerRejections": [
+              "dedicated-boss-or-boss-lifecycle-not-supported"
+            ]
+          },
+          {
+            "skillID": "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:881252940262207946:40",
+            "name": "CircleAttack2",
+            "triggerType": "SelectorTrigger",
+            "modeIndices": [
+              1
+            ],
+            "initiallyMountedInCompiledMode": false,
+            "structurallyMounted": true,
+            "abilityTypes": [
+              "MultiMeleeAttack",
+              "UberEffectEmitter"
+            ],
+            "actionTypes": [],
+            "frozenMissingContracts": [
+              "enemy-skill-scheduler-and-lifecycle-not-compiled",
+              "owner-mode-profile-not-compiled",
+              "boss-runtime-compatibility-required"
+            ],
+            "currentCompilerRejections": [
+              "dedicated-boss-or-boss-lifecycle-not-supported"
+            ]
+          }
+        ]
+      },
+      {
+        "enemyId": "enemy_2004_balloon",
+        "name": "喷气人",
+        "sourceLevelType": "BOSS",
+        "compiledModes": [],
+        "initialMode": null,
+        "dedicatedBossProfilePresent": false,
+        "savedBlockerSummary": "Root-mounted TakeOff has no compiled initial mode; active Buff/flight lifecycle and Boss compatibility remain unresolved.",
+        "skills": [
+          {
+            "skillID": "enemy_2004_balloon|CAB-45917fb008d9d99f506436a9f5988d3d:3219529385410557550:14",
+            "name": "TakeOff",
+            "triggerType": "SelectorTrigger",
+            "modeIndices": [],
+            "initiallyMountedInCompiledMode": false,
+            "structurallyMounted": true,
+            "abilityTypes": [
+              "ActiveBuffAbility"
+            ],
+            "actionTypes": [],
+            "frozenMissingContracts": [
+              "enemy-skill-scheduler-and-lifecycle-not-compiled",
+              "initial-mode-profile-not-compiled",
+              "boss-runtime-compatibility-required"
+            ],
+            "currentCompilerRejections": [
+              "dedicated-boss-or-boss-lifecycle-not-supported"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "recommendedSlice": {
+    "id": "selector-cooldown-direct-area-melee",
+    "label": "冷却型选择器范围近战技能完整合同",
+    "representativeSkillID": "enemy_1525_blkswb|CAB-0df5f4c8c8dade07e2ee475a972da576:8351245699733844426:60",
+    "representativeEnemyID": "enemy_1525_blkswb",
+    "skillKey": "CircleAttack",
+    "implementationReady": false,
+    "currentlyCompilable": false,
+    "initialCompiledMode": 0,
+    "rationale": "All three remaining non-Boss records have unresolved entry or ownership. CircleAttack is a mode-0 initial-owner SelectorTrigger with one MeleeAttack and no declared extra Buff/action group, so it is the smallest grounded next public operator class. This is a planning inference, not proof of native execution or current compiler acceptance.",
+    "savedContractFacts": {
+      "trigger": {
+        "componentKey": "CAB-0df5f4c8c8dade07e2ee475a972da576:3278229044560261578:48",
+        "scriptType": "Torappu.Battle.SelectorTrigger",
+        "fields": {
+          "_keepTarget": 0,
+          "_minTargetNum": 1,
+          "_overrideSearchTargetTick": -1
+        }
+      },
+      "databaseSkillBindings": [
+        {
+          "prefabKey": "CircleAttack",
+          "priority": 0,
+          "cooldown": 15,
+          "initCooldown": 15,
+          "spCost": 0,
+          "blackboard": [
+            {
+              "key": "atk_scale",
+              "value": 1,
+              "valueStr": null
+            },
+            {
+              "key": "range_radius",
+              "value": 1.5,
+              "valueStr": null
+            }
+          ]
+        }
+      ],
+      "abilityTypes": [
+        "MeleeAttack",
+        "UberEffectEmitter"
+      ],
+      "actionTypes": [],
+      "buffDeclarationCount": 0,
+      "meleeFields": {
+        "_animKey": "A_Skill2",
+        "_timeMode": 0,
+        "_selectTargetTiming": 1,
+        "_selectTargetSource": 1,
+        "_alwaysIncludeTarget": 1,
+        "_allowNoTarget": 1,
+        "_interruptAbilityOnDetach": 0,
+        "_waitForAttackEvent": 1,
+        "_affectedBySlowDown": 1,
+        "_damageType": 1,
+        "_atkScale": 1.0,
+        "_atkScaleKey": "atk_scale"
+      }
+    },
+    "requiredCompletePublicContracts": [
+      "A bounded compatibility rule for source BOSS records with this complete group and a proven active mode; retain dedicated-executor and other unresolved Boss lifecycle ownership.",
+      "Cooldown/init-cooldown based SelectorTrigger scheduling with complete skill priority, charge/cast and interruption semantics; reuse existing owner scheduler instead of hardcoding CircleAttack.",
+      "Direct MeleeAttack damage delivery with dynamic atk_scale, complete animation timing and source selector range/range_radius consumption.",
+      "Resolve the saved _selectTargetTiming=1 and include-target/allow-no-target fields into an explicit selection event contract, including target changes during windup; do not substitute the ranged locked-target behavior by assumption.",
+      "Complete mode attachment/detachment and one-time hit/end-event behavior, with plain saved cast/cooldown state and existing room restore support."
+    ],
+    "reuse": [
+      "existing owner skill scheduler",
+      "existing geometric range filtering",
+      "existing direct damage calculation",
+      "existing animation/cast state",
+      "existing plain-data room persistence"
+    ],
+    "laterConsumersNotIncluded": [
+      {
+        "enemyId": "enemy_1525_blkswb",
+        "skillKey": "CircleAttack2",
+        "reason": "MultiMeleeAttack plus uncompiled mode-1 owner/real stage entry remains separate."
+      },
+      {
+        "enemyId": "enemy_1517_xi",
+        "skillKey": "ShieldBurst / ShieldBurstReborn",
+        "reason": "Direct melee is only one part of the complete casting Buff, shield and channelled animation contract."
+      }
+    ],
+    "nextAfterThis": {
+      "enemyId": "enemy_1516_jakill",
+      "skillKey": "IronSandStorm",
+      "reason": "Initial mode 0 exists, but SP, tag/buff-key filtering and declared active Buff need their complete shared extension."
+    }
+  },
+  "evidence": {
+    "facts": "All member IDs, classifications, component shapes, ownership/mode fields and rejections are copied from the two frozen/current cache inputs.",
+    "inference": "Next-slice priority and required public implementation boundaries are a planning judgment over those cached facts.",
+    "unknowns": "Actual activation is not proven by hierarchy mounting. The source selector enum/event behavior, exact range/animation consumption and limited Boss compatibility still require contract closure during implementation."
+  },
+  "boundary": [
+    "executablePending means not environment-deferred; it is not implementationReady or an established live entrance.",
+    "Do not use frozen priority.recommendation or nextSharedContract as a dispatch instruction: they are the already-bound horn-skill snapshot.",
+    "Do not auto-cast AlwaysTrigger or null-reference triggers, invent mode entrances, or silently relax Boss compatibility.",
+    "No original source was fetched, no existing source contract was changed, and no runtime/compiler or next-batch generator was changed for this summary.",
+    "Do not deduct any pending skill or claim whole-enemy completion from this proposal."
+  ]
+}

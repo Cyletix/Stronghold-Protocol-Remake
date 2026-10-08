@@ -1,0 +1,13 @@
+{
+  "batch": "20260921.3-on-spell-extra-heal",
+  "before": "work/garrison-skill-batch-before-20260921-3.json",
+  "output": "work/garrison-skill-batch-acceptance-20260921-3.json",
+  "scope": "garrison-batches",
+  "validations": [
+    "tools/test_next_attack_compound.py",
+    ".runtime/next-attack-compound-receipts.json"
+  ],
+  "tasks": {
+    "op/char_423_blemsh/skill/skchr_blemsh_1/source-next-attack-body": "2026-09-21：完整主动作/并行根/ON_ABILITY_SPELL_ON监听/别名治疗10等级、2真实赛季配置和3次主机恢复通过；主攻击与附加治疗各自倍率/目标，零敌保留充能、空治疗不阻止伤害、单次消耗及无重复监听。既有下一击/下一次治疗消费者回归通过；精确帧相位、完整天赋模组另核。"
+  }
+}

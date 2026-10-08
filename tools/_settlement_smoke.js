@@ -1,0 +1,27 @@
+'use strict';
+const assert=require('assert/strict'),f=require('./_browser_fixture')();f.ctx.assert=assert;
+f.run(`(async()=>{
+ await initMode();chooseBand('band_amiya');updateRunClock(13.25);startBattleRound();
+ const e={enemyId:'test',hp:0,maxHp:5};killEnemy(e);killEnemy(e);assert.equal(B.stats.kills,1,'death only counted once');
+ B.roundTime=4;onBattleEnd(true,roundShield(1));onBattleEnd(true,roundShield(1));assert.equal(G.roundResults.length,1);
+ assert.equal(G.roundResults[0].kills,1);endRun(true);
+ const s=G.settlement;assert.equal(s.passed,1);assert.equal(s.elapsed,13);assert.equal(document.getElementById('settlement').style.display,'flex');
+ assert.match(document.getElementById('settlement').innerHTML,/模拟完成/);assert.match(document.getElementById('settlement').innerHTML,/下一步/);
+ renderSettlement(2);assert.match(document.getElementById('settlement').innerHTML,/作战回顾/);assert.match(document.getElementById('settlement').innerHTML,/返回主页/);
+ updateRunClock(50);assert.equal(G.runElapsed,13.25);showSettlement(false);assert.equal(G.settlement,s,'result cannot be awarded or overwritten twice');
+ chooseBand('band_amiya');assert.equal(document.getElementById('settlement').style.display,'none');assert.equal(G.roundResults.length,0);
+ startBattleRound();G.life=0;onBattleEnd(false,0);endRun(false);assert.equal(G.settlement.passed,0);assert.equal(G.phase,'over');assert.match(document.getElementById('settlement').innerHTML,/模拟结束/);
+ chooseBand('band_amiya');G.roundResults=[{round:14,hidden:false,win:true,life:20,lifeLost:0,kills:4,leaks:0,battleSeconds:10,bossId:'boss_4'},{round:15,hidden:true,win:false,life:0,lifeLost:20,kills:0,leaks:1,battleSeconds:15,bossId:'boss_8'}];G.secretCore=true;endRun(true);
+ assert.equal(G.settlement.passed,14);assert.equal(G.settlement.hiddenAttempted,true);assert.equal(G.settlement.hiddenDefeated,false);
+ chooseBand('band_amiya');G.runElapsed=18;startBattleRound();onBattleEnd(true,roundShield(1));startRound(2);const saved=encodeRestSave();assert.equal(decodeRestSave(saved).session.roundResults.length,1);
+ const envelope=JSON.parse(saved),payload=JSON.parse(envelope.body);payload.session.roundResults[0].round='<script>';envelope.body=JSON.stringify(payload);envelope.checksum=saveHash(envelope.body);assert.throws(()=>decodeRestSave(JSON.stringify(envelope)),/回合记录损坏/);
+ const member=ROSTER_LIST.find(e=>e.regBonds.includes('steadShip')),equip=EQUIPS.find(e=>e.name);
+ G.ops=[{id:91,charId:member.charId,entry:member,row:3,col:2,elite:true,equip:[null,equip]}];G.activeBonds={steadShip:2};G.addLayers={steadShip:17};
+ const snapshot=makeSettlement(false);assert.equal(snapshot.bonds[0].layers,19,'settlement captures added layers, not just the member count');
+ assert.deepEqual(snapshot.operators[0].training,trainingProfile(member,true));assert.equal(snapshot.operators[0].equipment.length,2);assert.equal(snapshot.operators[0].equipment[0],null);assert.equal(snapshot.operators[0].equipment[1].name,equip.name,'equipment slot order is retained');
+ G.addLayers.steadShip=999;G.ops[0].elite=false;G.ops[0].equip=[];assert.equal(snapshot.bonds[0].layers,19);assert.equal(snapshot.operators[0].training.level,trainingProfile(member,true).level,'result training is a frozen run value');
+ const stages=bondDetailStages('steadShip').stages;assert.deepEqual(stages.filter(s=>s.kind==='members').map(s=>s.need),[2,3]);assert.match(stages[1].text,/40%/);
+ assert.deepEqual(bondDetailStages('yanShip').stages.filter(s=>s.kind==='members').map(s=>s.need),[3,6,9]);assert.ok(bondDetailStages('swiftShip').stages.some(s=>s.kind==='layers'&&s.need===40),'layer thresholds stay separate from headcount');
+ G.settlement=snapshot;renderSettlement(1);const html=document.getElementById('settlement').innerHTML;assert.ok(html.includes('bond_avatars/icon_steadShip.png'));assert.match(html,/autochess_level_/);assert.equal((html.match(/class="settlement-equip /g)||[]).length,2);assert.match(html,/settlement-training/);
+ console.log('SETTLEMENT OK actual counters, two pages, no duplicate records, hidden separate, failure retention, save validation');
+})()`).catch(e=>{console.error(e);process.exitCode=1;});

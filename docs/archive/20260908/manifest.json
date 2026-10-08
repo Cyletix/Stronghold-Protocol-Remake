@@ -1,0 +1,77 @@
+[
+  {
+    "file": "README.md",
+    "bytes": 3336,
+    "sha256": "092e95aa0f520b4e087fd11aab6d10d9bdff99462276bdca245ad045e7f65dce"
+  },
+  {
+    "file": "TASKPLAN.md",
+    "bytes": 25998,
+    "sha256": "309d57adc8814502d3f19b908353cbe41fe098517fa812b71b4d4180475bdb7c"
+  },
+  {
+    "file": "docs/architecture.md",
+    "bytes": 5250,
+    "sha256": "9c502e0a0403a6f971e1d125c923344b32ceb9ea1d1b11d2f1d181c201971c55"
+  },
+  {
+    "file": "docs/mode-architecture.md",
+    "bytes": 8870,
+    "sha256": "86066b14a18c346a60e41d2cb4982e7122ced3e90e236b13591a9affea5ca1ef"
+  },
+  {
+    "file": "docs/mode-spec.md",
+    "bytes": 5559,
+    "sha256": "71495dd372768efa58ce7dda4d6ff5d62697979d719a7de9cf97a59691b7510c"
+  },
+  {
+    "file": "docs/data-inventory.md",
+    "bytes": 7849,
+    "sha256": "0e364872ef8e7e718f8bb48fe34b82f2db7d1c1f66bb739e87044bd8d0c15789"
+  },
+  {
+    "file": "docs/data-progress.md",
+    "bytes": 23784,
+    "sha256": "563346f23430edbf785aacdf509ff27859533bae7fc2e958ef57962605ae666a"
+  },
+  {
+    "file": "docs/findings.md",
+    "bytes": 36590,
+    "sha256": "98f10e4cf1f3ac7035d874a56ace0b69aecec3600b643b4bca29cb2ff12cf3f3"
+  },
+  {
+    "file": "docs/asset-map.md",
+    "bytes": 6242,
+    "sha256": "18141c4334bb7205bd582eb4879b0aa90364a1714be0551ee250b4661f7e65d6"
+  },
+  {
+    "file": "docs/asset-pipeline.md",
+    "bytes": 4934,
+    "sha256": "ae7968cb21a576a04cd7c2aff35bd49eec664cc0a4ea7f0510208b491b281681"
+  },
+  {
+    "file": "docs/op-data-audit.md",
+    "bytes": 8457,
+    "sha256": "fb7f77c870ff6eb8be44ba40f34130213d759b6f4afdd89ebd16c086b1737973"
+  },
+  {
+    "file": "docs/HANDOFF.md",
+    "bytes": 10621,
+    "sha256": "b6830b71db8607a253376e4ec05c4772ca393177063ec577a3a6af338bb7a038"
+  },
+  {
+    "file": "docs/roadmap.md",
+    "bytes": 2901,
+    "sha256": "f4323b8475ca93714827691e66d88b20e8c9cab7e151a7374e9f5ee7b5391c45"
+  },
+  {
+    "file": "docs/research-workflow.md",
+    "bytes": 5059,
+    "sha256": "ec6ba147bbb8b6a1af75479d16eed77ef5a722941177d0677df70afa1396d5b1"
+  },
+  {
+    "file": "docs/toolchain.md",
+    "bytes": 4736,
+    "sha256": "7eb2d0e4affe80f9855fb658f269ee9185f7ec3a2052982cb0051cd4105cbb04"
+  }
+]

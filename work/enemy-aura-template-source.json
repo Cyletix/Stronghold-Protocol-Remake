@@ -1,0 +1,181 @@
+{
+  "empty": {
+    "templateKey": "empty",
+    "effectKey": "",
+    "onEventPriority": 0,
+    "eventToActions": {
+      "_items": []
+    }
+  },
+  "enemy_dsubrl_aoe[aura]": {
+    "templateKey": "enemy_dsubrl_aoe[aura]",
+    "effectKey": "",
+    "onEventPriority": 0,
+    "eventToActions": {
+      "_items": [
+        {
+          "key": 2,
+          "value": {
+            "SerializedState": "[{\"_sourceType\":\"SOURCE\",\"_targetType\":\"TARGET\",\"_damageType\":\"MAGICAL\",\"_atkScaleVar\":\"atk_scale\",\"_defaultAtkScale\":1.0,\"_applyWay\":\"NONE\",\"_baseOnHostAtk\":false,\"_emitSourceOnCalculateDamage\":false,\"_attackType\":\"NORMAL\",\"_forceUseProjectileCachedAtk\":false,\"_ignoreForSp\":true,\"_ignoreMissFlag\":\"NONE\",\"_ignoreCancelReasonMask\":\"NONE\",\"_modifierKey\":\"\",\"_assignRealDamageToBB\":false,\"_assignFinalDamageToBB\":false,\"_skipModifierEvent\":false,\"_noSource\":false,\"_onlyUseSourceOnCalculateDamage\":false,\"_getCachedAtkFromBlackboard\":false,\"_cachedAtkKey\":\"atk\",\"_setSharedFlag\":false,\"_sharedFlagIndex\":\"IS_CONTINUOUS\",\"$type\":\"Torappu.Battle.Action.Nodes+AdvancedApplyDamage\"},{\"_targetType\":\"BUFF_OWNER\",\"_sourceType\":\"BUFF_SOURCE\",\"_effectKey\":\"enemy_dsubrl_attack_hit\",\"_useSourceFaceVactor\":false,\"_useSourceToTargetDirection\":false,\"_useConstDirection\":false,\"_constDirection\":\"UP\",\"_createEffectHoldBySource\":false,\"_useAttackPlaybackSpeed\":false,\"_manualSetPlaybackSpeed\":false,\"_blackboardKey\":\"\",\"_playbackSpeed\":1.0,\"$type\":\"Torappu.Battle.Action.Nodes+CreateEffect\"}]",
+            "SerializedObjectReferences": [],
+            "decodedActions": [
+              {
+                "_sourceType": "SOURCE",
+                "_targetType": "TARGET",
+                "_damageType": "MAGICAL",
+                "_atkScaleVar": "atk_scale",
+                "_defaultAtkScale": 1.0,
+                "_applyWay": "NONE",
+                "_baseOnHostAtk": false,
+                "_emitSourceOnCalculateDamage": false,
+                "_attackType": "NORMAL",
+                "_forceUseProjectileCachedAtk": false,
+                "_ignoreForSp": true,
+                "_ignoreMissFlag": "NONE",
+                "_ignoreCancelReasonMask": "NONE",
+                "_modifierKey": "",
+                "_assignRealDamageToBB": false,
+                "_assignFinalDamageToBB": false,
+                "_skipModifierEvent": false,
+                "_noSource": false,
+                "_onlyUseSourceOnCalculateDamage": false,
+                "_getCachedAtkFromBlackboard": false,
+                "_cachedAtkKey": "atk",
+                "_setSharedFlag": false,
+                "_sharedFlagIndex": "IS_CONTINUOUS",
+                "$type": "Torappu.Battle.Action.Nodes+AdvancedApplyDamage"
+              },
+              {
+                "_targetType": "BUFF_OWNER",
+                "_sourceType": "BUFF_SOURCE",
+                "_effectKey": "enemy_dsubrl_attack_hit",
+                "_useSourceFaceVactor": false,
+                "_useSourceToTargetDirection": false,
+                "_useConstDirection": false,
+                "_constDirection": "UP",
+                "_createEffectHoldBySource": false,
+                "_useAttackPlaybackSpeed": false,
+                "_manualSetPlaybackSpeed": false,
+                "_blackboardKey": "",
+                "_playbackSpeed": 1.0,
+                "$type": "Torappu.Battle.Action.Nodes+CreateEffect"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "trap_creep_ep_damage": {
+    "templateKey": "trap_creep_ep_damage",
+    "effectKey": "",
+    "onEventPriority": 0,
+    "eventToActions": {
+      "_items": [
+        {
+          "key": 11,
+          "value": {
+            "SerializedState": "[{\"_buff\":{\"attributes\":{\"abnormalFlags\":[],\"abnormalImmunes\":[],\"abnormalAntis\":[],\"abnormalCombos\":[],\"abnormalComboImmunes\":[],\"attributeModifiers\":[]},\"buffKey\":\"creep_ep_damage\",\"loadFromDB\":false,\"isDurableBuff\":false,\"isDamageMissable\":false,\"isSilenceable\":false,\"isStunnable\":false,\"isFreezable\":false,\"isLevitatable\":false,\"statusResistable\":\"AUTOMATIC\",\"templateKey\":\"trap_creep_apply_ep_damage\",\"disableOverride\":true,\"overrideKey\":null,\"overrideType\":\"DEFAULT\",\"maxStackCnt\":1,\"refreshRemainingTimeWhenStackMax\":false,\"clearAllStackCntWhenTimeUp\":false,\"maxValidStackCnt\":-1,\"independentCharacterSource\":false,\"overrideEffectKey\":null,\"overrideOnEventPriority\":false,\"onEventPriority\":\"DEFAULT\",\"audioSignal\":null,\"lifeTimeType\":\"IMMEDIATELY\",\"takeSnapshotWhenExtend\":false,\"durationKey\":null,\"lifeTime\":0.0,\"triggerLifeType\":\"IMMEDIATELY\",\"triggerCnt\":0,\"triggerInterval\":-1.0,\"waitFirstTriggerInterval\":true,\"firstTriggerInterval\":-1.0,\"priority\":-1,\"priorityBBKeys\":[],\"stripBlackboardParamsWithBuffKey\":false,\"blackboard\":[],\"enableInitDirectionFromSource\":false},\"_buffOwner\":\"MODIFIER_TARGET\",\"_useSpecialBuffSource\":false,\"_specialBuffSource\":\"BUFF_SOURCE\",\"_isDerivedBuff\":false,\"_finishDerivedBuffIfParentFinish\":false,\"_inherateSourceProjectileFromParentBuff\":false,\"_hookEffectKeyFromSourceProjectile\":false,\"$type\":\"Torappu.Battle.Action.Nodes+CreateBuff\"}]",
+            "SerializedObjectReferences": [],
+            "decodedActions": [
+              {
+                "_buff": {
+                  "attributes": {
+                    "abnormalFlags": [],
+                    "abnormalImmunes": [],
+                    "abnormalAntis": [],
+                    "abnormalCombos": [],
+                    "abnormalComboImmunes": [],
+                    "attributeModifiers": []
+                  },
+                  "buffKey": "creep_ep_damage",
+                  "loadFromDB": false,
+                  "isDurableBuff": false,
+                  "isDamageMissable": false,
+                  "isSilenceable": false,
+                  "isStunnable": false,
+                  "isFreezable": false,
+                  "isLevitatable": false,
+                  "statusResistable": "AUTOMATIC",
+                  "templateKey": "trap_creep_apply_ep_damage",
+                  "disableOverride": true,
+                  "overrideKey": null,
+                  "overrideType": "DEFAULT",
+                  "maxStackCnt": 1,
+                  "refreshRemainingTimeWhenStackMax": false,
+                  "clearAllStackCntWhenTimeUp": false,
+                  "maxValidStackCnt": -1,
+                  "independentCharacterSource": false,
+                  "overrideEffectKey": null,
+                  "overrideOnEventPriority": false,
+                  "onEventPriority": "DEFAULT",
+                  "audioSignal": null,
+                  "lifeTimeType": "IMMEDIATELY",
+                  "takeSnapshotWhenExtend": false,
+                  "durationKey": null,
+                  "lifeTime": 0.0,
+                  "triggerLifeType": "IMMEDIATELY",
+                  "triggerCnt": 0,
+                  "triggerInterval": -1.0,
+                  "waitFirstTriggerInterval": true,
+                  "firstTriggerInterval": -1.0,
+                  "priority": -1,
+                  "priorityBBKeys": [],
+                  "stripBlackboardParamsWithBuffKey": false,
+                  "blackboard": [],
+                  "enableInitDirectionFromSource": false
+                },
+                "_buffOwner": "MODIFIER_TARGET",
+                "_useSpecialBuffSource": false,
+                "_specialBuffSource": "BUFF_SOURCE",
+                "_isDerivedBuff": false,
+                "_finishDerivedBuffIfParentFinish": false,
+                "_inherateSourceProjectileFromParentBuff": false,
+                "_hookEffectKeyFromSourceProjectile": false,
+                "$type": "Torappu.Battle.Action.Nodes+CreateBuff"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "trap_creep_apply_ep_damage": {
+    "templateKey": "trap_creep_apply_ep_damage",
+    "effectKey": "",
+    "onEventPriority": 0,
+    "eventToActions": {
+      "_items": [
+        {
+          "key": 0,
+          "value": {
+            "SerializedState": "[{\"_elementDamageType\":\"SANITY\",\"_sourceType\":\"BUFF_SOURCE\",\"_isFixedEpDamage\":false,\"_baseOnHostAtk\":false,\"_baseOnEnemyHostAtk\":false,\"_fixedEpDamageKey\":null,\"_fixedEpDamage\":0.0,\"_noSource\":false,\"_forceUseProjectileCachedAtk\":false,\"_multiplyWithBuffValidStackCnt\":false,\"_buffKey\":null,\"_buffSourceType\":\"BUFF_OWNER\",\"_targetType\":\"TARGET\",\"_isEnvElementDamage\":false,\"_loadElementTypeFromBb\":false,\"_fixedEpDamageScale\":\"\",\"_epDamageScale\":\"ep_damage_ratio\",\"$type\":\"Torappu.Battle.Action.Nodes+ApplyElementDamage\"}]",
+            "SerializedObjectReferences": [],
+            "decodedActions": [
+              {
+                "_elementDamageType": "SANITY",
+                "_sourceType": "BUFF_SOURCE",
+                "_isFixedEpDamage": false,
+                "_baseOnHostAtk": false,
+                "_baseOnEnemyHostAtk": false,
+                "_fixedEpDamageKey": null,
+                "_fixedEpDamage": 0.0,
+                "_noSource": false,
+                "_forceUseProjectileCachedAtk": false,
+                "_multiplyWithBuffValidStackCnt": false,
+                "_buffKey": null,
+                "_buffSourceType": "BUFF_OWNER",
+                "_targetType": "TARGET",
+                "_isEnvElementDamage": false,
+                "_loadElementTypeFromBb": false,
+                "_fixedEpDamageScale": "",
+                "_epDamageScale": "ep_damage_ratio",
+                "$type": "Torappu.Battle.Action.Nodes+ApplyElementDamage"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
